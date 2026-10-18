@@ -1,0 +1,80 @@
+\section{Coefficient-Gram proof and implementation audit}
+\label{app:gram}
+The three follow-up computations use the previously frozen Kyriienko
+IR and source commit \texttt{0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4}.
+Data variables are $(\arccos x_0,\arccos x_1)$ on an open rectangle,
+so distinct real Fourier modes satisfy the independence hypothesis.
+Heisenberg Pauli propagation carries a Gaussian-rational coefficient
+and its $K$ parameter derivatives per data-frequency term. Constant
+modes are separated; conjugate-frequency symmetry is checked exactly.
+The rational-point coefficient bases have 8, 44, and 72 real
+nonconstant columns. These are witness bases, not a claim of minimum
+global Fourier support. Modes zero in both value and first derivative
+at that point cannot affect its Gram Jacobian.
+
+For $C\in\mathbb R^{m\times A}$, forming all Gram derivatives from
+stored coefficient derivatives takes $O(KmA^2)$ arithmetic operations
+and at most $O(KA^2)$ output storage; exact coefficient bit lengths and
+the preceding Fourier propagation cost are additional. Sparse
+Pauli-frequency propagation can grow exponentially. The implemented
+gate class is narrower than Corollary~\ref{cor:gramdecision}: fixed
+Cliffords, data-only rotations, and single unscaled parameter
+rotations in the frozen constructors. It computes a rational-point
+rank witness, not a complete symbolic rank solver for all that
+corollary's inputs.
+
+The upper-bound audit checks the ordering in Eq.~\eqref{eq:kyriform},
+the two exact Clifford-transported endpoint generators, and complete
+XYZ orbits on each measured support. In the last Euler block, a
+source tangent inducing a left $X$ rotation is
+\begin{equation}
+ (v_a,v_b,v_c)=
+ \left(\frac{\sin c}{\sin b},\cos c,
+       -\frac{\sin c\cos b}{\sin b}\right).
+\end{equation}
+It is independent of the first-block $c_0$ direction. Their products
+with the exact witness Gram Jacobian vanish. The global upper proof
+uses the output orbits on regular charts, not just these point checks.
+Multiplying by $\sin b$ removes the chart denominator and gives the
+globally defined analytic field
+\begin{equation}
+ w=(\sin c,\ \cos c\sin b,\ -\sin c\cos b).
+\end{equation}
+The identity $D G\,w=0$ extends analytically through chart singularities,
+but $w$ itself can vanish, for example at $b=c=0$. Independence of
+two null directions is generic, not guaranteed at every parameter
+assignment. The moving field is not a constant deletion direction.
+
+Twenty random four-input probes per setting compare reconstructed
+Fourier features with the pinned source simulator. The maximum
+feature discrepancy is $3.09\times10^{-15}$; distance and analytic
+distance-gradient discrepancies are at most $1.29\times10^{-14}$ and
+$1.38\times10^{-14}$. Sixty source-coordinate central differences
+at step $10^{-6}$ agree within $4.42\times10^{-9}$. These tests check
+implementation consistency and do not replace exact minors or the
+analytic upper proof. This dedicated implementation was run locally;
+the server rerun uses the separate 30-setting Fourier audit to certify
+the same three ranks (Table~\ref{tab:reproscope}).
+
+\subsection{An affine-head distinction}
+For an unrestricted affine head $w^Tf_\theta(x)+a$, with a freely
+adjustable scalar bias and independent $\{1,h_j\}$, the hypothesis
+class at fixed $\theta$ is determined by the row space of $C(\theta)$.
+Indeed the nonconstant coefficient vectors are exactly
+$\{w^TC(\theta):w\in\mathbb R^m\}$. Equality of those sets is
+necessary and sufficient for equality of hypothesis classes.
+This is not equality of fixed predictors or training trajectories.
+Without free bias the offset must be retained; regularization or
+constraints on $w$ also change the equivalence contract. Variable
+matrix ranks require separate rank strata rather than one fixed
+Grassmannian. We do not report a QNN experiment for this observation.
+
+\subsection{Resource accounting is schedule specific}
+For the non-cross-gate-cached schedule used in the main text, with
+fixed positive $T,N,B,s$, comparison of two arms gives
+$\Delta C=2TNB\Delta A$ and $\Delta S=s\Delta C$.
+Thus zero circuit-setting reduction is equivalent to zero reduction
+in its trainable fused-angle tasks. This is an accounting identity
+for that schedule, not a necessity theorem for all compilers,
+optimal measurements, wall time, or shots at fixed accuracy. A lower
+kernel differential rank alone does not imply a reduced schedule.

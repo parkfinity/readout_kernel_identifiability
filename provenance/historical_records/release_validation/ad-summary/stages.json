@@ -1,0 +1,8 @@
+[
+  {
+    "stage": "ad_category_reaggregation",
+    "exit_code": 0,
+    "seconds": 0.076565959,
+    "log": "ad_category_reaggregation.log"
+  }
+]

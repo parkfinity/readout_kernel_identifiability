@@ -1,0 +1,65 @@
+Readout and metric design pilot v1 (frozen before the first run)
+Date: 2026-10-04. This protocol records the experimental design and scope.
+
+Scope: the existing 30 frozen fixed-frequency settings, ten source circuits
+from YZ-CX, Hubregtsen and Kyriienko, widths 2 and 4. All successes and failures
+are retained. This is a restricted census, not a population prevalence estimate.
+Data: synthetic continuous inputs uniform in (-0.95,0.95)^2, transformed by
+the source encoding (raw or arccos). No classification labels or vision data.
+
+Stage A: metric-only recovery, fixed observed features and measurement schedule.
+Compare trace-one identity, deterministic diagonal spectrum 1..4, 16 random
+diagonal metrics, and 16 random dense SPD metrics with eigenvalues in [1,4]
+before trace normalization. The first random candidate is an untuned baseline.
+Select a diagonal and a dense candidate by worst design-point numerical rank,
+then mean log smallest retained singular value. Never change theta to fit M.
+Keep the selected M fixed on independent validation theta and inputs.
+Three design theta, five validation theta; 96 independent pairs per theta.
+Rank tolerances 1e-8, 1e-9, 1e-10 with absolute floor 1e-11. These are numerical
+diagnostics, NOT exact generic rank certificates. Centered feature rank removes
+input-independent translations, which no distance kernel can recover.
+
+Stage B: measurement-budget readout selection on the same ten circuits.
+Candidate bank: all Pauli words of weight <=2. Measurement choices: every
+local product basis in {X,Y,Z}^n. A basis supplies every compatible candidate
+observable from the same bit strings, not one separate circuit per Pauli word.
+Budgets: 1,2,3 bases. Compare standard Z...Z then X...X then Y...Y, 16 random
+ordered schedules, and greedy rank/conditioning selection on design points.
+All arms use the SAME deterministic diagonal weighting of selected observables,
+trace normalized; no simultaneous metric tuning. Validate on held-out points.
+Greedy is not claimed globally optimal. Record scoring cost and selected bases.
+Fixed-budget means measurement settings; it does not establish equal precision.
+
+Stage C: exact analytical controls.
+Hubregtsen 4q1L local Z: any diagonal fixed metric has generic rank 2; a dense
+fixed SPD metric can reach 3 but cannot reach centered-feature rank 4, because
+the data basis has dimension 2. Supply symbolic formulas and exact minor.
+For 2q metric recovery, obtain exact modular Fourier-Gram minors where feasible.
+A nonzero minor certifies a lower bound only; zero does not certify inactivity.
+Use the source symbol count only as a universal upper bound. Do not promote
+sampled numeric ranks to exact equalities without a matching upper certificate.
+
+Stage D: ideal finite-shot simulation, not hardware/noise mitigation.
+Preselected circuits: YZ-CX 2q1L local XYZ, Kyriienko 2q1L local XYZ,
+Hubregtsen 4q1L local Z. Use the Stage A selected dense metric and exactly
+the same readout and basis schedule as identity in each circuit.
+Choose a local direction from the identity-kernel Jacobian nullspace that the
+selected metric detects, at an independent theta. If none, report skip.
+Perturb theta symmetrically by total 0.1 radians in that unit direction.
+16 fresh input pairs, total shots per input/state: 256,1024,4096; 128 replicates.
+Draw joint bit strings per basis, respecting within-basis covariance. Split
+shots into independent halves to form unbiased squared-distance estimates.
+Report ideal signal, empirical bias, SD, SNR and sign-detection rate. Do not
+estimate exact rank from noisy derivatives and do not claim accuracy benefit.
+
+Validation: copied engine hashes; analytic gradients vs independent dense
+statevector central differences; covariance/measurement tests; metric positivity
+and trace; theta/input design-validation split. Tests and result provenance are
+included. No paid QPU jobs, external data upload or manuscript replacement.
+
+Explicitly NOT completed by this pilot: comparison to a supervised metric
+learner (requires a fixed task/labels), generalization performance, full noisy
+hardware study, independent proof review, global optimality or novelty proof.
+Prior-art starting points: https://arxiv.org/abs/2501.05663 and
+https://arxiv.org/abs/2211.05225. Learning observables/quantum metric learning
+already exist; the target here is recoverability of lost kernel directions.

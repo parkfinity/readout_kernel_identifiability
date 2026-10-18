@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "mode": "audit",
+  "elapsed_seconds": 94.483028334,
+  "core_verdict": null,
+  "core_warnings": 0,
+  "stages": 15,
+  "scope": "See README.txt and CLAIM_MAP.txt; audit and smoke are NOT full reruns."
+}

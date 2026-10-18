@@ -1,0 +1,56 @@
+\subsection{Global normal form and parameter combinations}
+\label{sec:normalform}
+Write $\phi_j(x)=\arccos x_j$ for the two inputs in Fig.~\ref{fig:witness}.
+Signed Clifford conjugation and commuting same-Pauli fusion give
+\begin{align}
+ U_\theta(x)&=R_{X_0}(a)R_{X_1}(b)R_{X_0X_1}(c),\\
+ a&=\theta_0\phi_0+\theta_2,\nonumber\\
+ b&=(\theta_1+\theta_5)\phi_1+\theta_3+\theta_7,\nonumber\\
+ c&=\theta_4\phi_0+\theta_6.\label{eq:normal}
+\end{align}
+All three generators commute. Starting from $|00\rangle$, the two local
+Bloch vectors are $(0,-\sin a\cos c,\cos a\cos c)$ and
+$(0,-\sin b\cos c,\cos b\cos c)$. Thus unit-weight local XYZ distance is
+\begin{align}
+ d^2(x,x')={}&2[\cos^2c(x)+\cos^2c(x')]\nonumber\\
+ &-2\cos c(x)\cos c(x')\nonumber\\
+ &\quad\times\big\{\cos[a(x)-a(x')]\nonumber\\
+ &\hspace{16mm}+\cos[b(x)-b(x')]\big\}.\label{eq:closed}
+\end{align}
+The Gaussian kernel therefore factors through
+\begin{equation}
+ \beta=A\theta=(\theta_0,\theta_1+\theta_5,\theta_4,\theta_6)^T.
+ \label{eq:beta}
+\end{equation}
+The factorization gives an upper bound of four on the number of necessary
+combinations. The matching lower bound is proved below, establishing
+minimality among smooth factorizations for this fixed initial state and
+readout. Five retained symbols therefore overcount the effective
+representation. The common biases in $a,b$
+cancel from pairwise differences, while the bias in $c$ generally does
+not. This separation uses the specified initial state and readout;
+it is not the universal-state quantifier of Theorem~\ref{thm:output}.
+
+An independently evaluated source circuit and dense matrix product
+agree in 1,000 random two-input conditions: maximum unitary error up to
+global phase is $7.36\times10^{-16}$, distance error is
+$7.11\times10^{-15}$, and kernel error is $9.44\times10^{-16}$.
+The analytic identities, rather than these finite probes, explain the
+factorization. This representative circuit is consequently an
+explanatory example, not evidence that global Pauli optimization fails.
+
+Reparameterization does not automatically preserve ordinary gradient
+updates. If $L(\theta)=\ell(A\theta)$, then
+$\nabla_\theta L=A^T\nabla_\beta\ell$ and an ascent step induces
+\begin{equation}
+ \begin{gathered}
+ \beta_{t+1}=\beta_t+\eta AA^T\nabla_\beta\ell(\beta_t),\\
+ AA^T=\diag(1,2,1,1).
+ \end{gathered}
+ \label{eq:pushforward}
+\end{equation}
+Twenty steps with this metric preserve the source-coordinate kernel
+trace to $6.67\times10^{-16}$ in a fixed diagnostic; using the identity
+metric instead changes the final Gram matrix by $5.52\times10^{-3}$.
+This diagnostic is not an accuracy comparison. Other optimizers and
+coordinate regularizers need their own transformation rules.

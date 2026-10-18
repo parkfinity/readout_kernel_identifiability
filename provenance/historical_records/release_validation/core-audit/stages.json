@@ -1,0 +1,8 @@
+[
+  {
+    "stage": "core_audit",
+    "exit_code": 0,
+    "seconds": 62.589791375,
+    "log": "core_audit.log"
+  }
+]

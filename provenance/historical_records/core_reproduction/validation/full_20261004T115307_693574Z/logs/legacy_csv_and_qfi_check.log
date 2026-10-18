@@ -1,0 +1,123 @@
+{
+  "scope": "New symbolic sanity check and archived CSV reaggregation; no new model training or QPU experiment.",
+  "sympy_version": "1.14.0",
+  "inputs_sha256": {
+    "phase_a_candidate_results.csv": "fa23e5b121d299dba71a372e9dc7c0ec3106a4a089e169b986558f3e27581808",
+    "wivf_exact_matched_results.csv": "b579f22b997778d585209e6c9d17a136f52b86edbc9f819d1b0436d8161568d9",
+    "y92x_matched_typeii_typeiii_results.csv": "55e9bd022673167e66db511f3761ca59e19ce6fa818d8c3d9518388c9fc4206c"
+  },
+  "QFI_counterexample": {
+    "state": "Ry(theta) Ry(x) |0>",
+    "state_SLD_QFI": "1",
+    "real_QGT": "1/4",
+    "fidelity_kernel": "cos((x - xprime)/2)**2",
+    "XYZ_distance_squared": "2 - 2*cos(x - xprime)",
+    "fidelity_derivative": "0 identically",
+    "XYZ_distance_derivative": "0 identically",
+    "Z_distance_derivative_at_theta0_x0_xprime_pi_over_2": "2",
+    "passed": true
+  },
+  "matched_classical": {
+    "row_count": 40,
+    "training_rerun": false,
+    "groups": [
+      {
+        "dataset": "moons",
+        "model": "PQK",
+        "n_trials": 10,
+        "kta_before_mean": 0.3076012842955768,
+        "kta_after_mean": 0.3335281240826313,
+        "accuracy_after_mean": 0.9125,
+        "accuracy_after_sample_sd": 0.05472468973568207
+      },
+      {
+        "dataset": "moons",
+        "model": "classical",
+        "n_trials": 10,
+        "kta_before_mean": 0.2891905478982365,
+        "kta_after_mean": 0.3973768695517396,
+        "accuracy_after_mean": 0.90625,
+        "accuracy_after_sample_sd": 0.06750771560841522
+      },
+      {
+        "dataset": "wine",
+        "model": "PQK",
+        "n_trials": 10,
+        "kta_before_mean": 0.3175006257766766,
+        "kta_after_mean": 0.4075951567005733,
+        "accuracy_after_mean": 0.9346153846153846,
+        "accuracy_after_sample_sd": 0.025959559911944326
+      },
+      {
+        "dataset": "wine",
+        "model": "classical",
+        "n_trials": 10,
+        "kta_before_mean": 0.22119716562685227,
+        "kta_after_mean": 0.34965530305712916,
+        "accuracy_after_mean": 0.9134615384615384,
+        "accuracy_after_sample_sd": 0.0365440841377929
+      }
+    ]
+  },
+  "matched_TypeII_III": {
+    "row_count": 40,
+    "training_rerun": false,
+    "groups": [
+      {
+        "dataset": "moons",
+        "model": "TypeII",
+        "n_trials": 10,
+        "kta_before_mean": 0.33730734406366497,
+        "kta_after_mean": 0.3544435085540897,
+        "accuracy_after_mean": 0.946875,
+        "accuracy_after_sample_sd": 0.03623443152276268,
+        "initial_gradient_norm_mean": 0.058941721661312896
+      },
+      {
+        "dataset": "moons",
+        "model": "properIII",
+        "n_trials": 10,
+        "kta_before_mean": 0.3297268784535763,
+        "kta_after_mean": 0.345474238919668,
+        "accuracy_after_mean": 0.946875,
+        "accuracy_after_sample_sd": 0.03623443152276268,
+        "initial_gradient_norm_mean": 0.05614872847531833
+      },
+      {
+        "dataset": "wine",
+        "model": "TypeII",
+        "n_trials": 10,
+        "kta_before_mean": 0.32879215862104866,
+        "kta_after_mean": 0.39496435511526784,
+        "accuracy_after_mean": 0.9403846153846154,
+        "accuracy_after_sample_sd": 0.03198711525608884,
+        "initial_gradient_norm_mean": 0.12530359856193551
+      },
+      {
+        "dataset": "wine",
+        "model": "properIII",
+        "n_trials": 10,
+        "kta_before_mean": 0.343034692083523,
+        "kta_after_mean": 0.3877535179837707,
+        "accuracy_after_mean": 0.9403846153846154,
+        "accuracy_after_sample_sd": 0.03676828307615381,
+        "initial_gradient_norm_mean": 0.10857207150412461
+      }
+    ]
+  },
+  "phase_a": {
+    "rows": 1692,
+    "categories": 47,
+    "raw_candidates": 36,
+    "conservative_embedding_keys": 4,
+    "minimal_inequivalent_class_count_proven": false,
+    "candidate_reduction_fraction": 0.8888888888888888,
+    "unbatched_pair_tasks_before": 135360,
+    "unbatched_pair_tasks_after": 15040,
+    "max_kernel_difference": 5.995204332975845e-15,
+    "stabilized_AUROC_mismatches": 0,
+    "hardware_experiment": false,
+    "circuit_replay_rerun": false,
+    "scope": "Archived terminal-heavy fidelity candidates; not an adaptive PQK search or new-baseline increment."
+  }
+}

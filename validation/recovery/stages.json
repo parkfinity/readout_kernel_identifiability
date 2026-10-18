@@ -1,0 +1,32 @@
+[
+  {
+    "stage": "experiment",
+    "exit_code": 0,
+    "seconds": 5.722469375,
+    "log": "experiment.log"
+  },
+  {
+    "stage": "exact_controls",
+    "exit_code": 0,
+    "seconds": 4.195479042,
+    "log": "exact_controls.log"
+  },
+  {
+    "stage": "verify_certificates",
+    "exit_code": 0,
+    "seconds": 0.45504841600000034,
+    "log": "verify_certificates.log"
+  },
+  {
+    "stage": "followup",
+    "exit_code": 0,
+    "seconds": 1.2225567500000007,
+    "log": "followup.log"
+  },
+  {
+    "stage": "correlation_control",
+    "exit_code": 0,
+    "seconds": 0.3495630829999996,
+    "log": "correlation_control.log"
+  }
+]

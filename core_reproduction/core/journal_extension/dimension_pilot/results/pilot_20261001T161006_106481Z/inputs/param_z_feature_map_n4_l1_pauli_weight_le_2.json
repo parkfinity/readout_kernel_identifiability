@@ -1,0 +1,222 @@
+{
+  "n": 4,
+  "count": 4,
+  "program": [
+    {
+      "op": "H",
+      "wires": [
+        0
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "ZIII",
+      "terms": [
+        [
+          1.0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "op": "H",
+      "wires": [
+        1
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IZII",
+      "terms": [
+        [
+          1.0,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "op": "H",
+      "wires": [
+        2
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIZI",
+      "terms": [
+        [
+          1.0,
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "op": "H",
+      "wires": [
+        3
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIZ",
+      "terms": [
+        [
+          1.0,
+          3,
+          3
+        ]
+      ]
+    }
+  ],
+  "ids": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "data_expressions": [
+    "a0",
+    "a1",
+    "a0",
+    "a1"
+  ],
+  "observables": [
+    "IIIX",
+    "IIIY",
+    "IIIZ",
+    "IIXI",
+    "IIXX",
+    "IIXY",
+    "IIXZ",
+    "IIYI",
+    "IIYX",
+    "IIYY",
+    "IIYZ",
+    "IIZI",
+    "IIZX",
+    "IIZY",
+    "IIZZ",
+    "IXII",
+    "IXIX",
+    "IXIY",
+    "IXIZ",
+    "IXXI",
+    "IXYI",
+    "IXZI",
+    "IYII",
+    "IYIX",
+    "IYIY",
+    "IYIZ",
+    "IYXI",
+    "IYYI",
+    "IYZI",
+    "IZII",
+    "IZIX",
+    "IZIY",
+    "IZIZ",
+    "IZXI",
+    "IZYI",
+    "IZZI",
+    "XIII",
+    "XIIX",
+    "XIIY",
+    "XIIZ",
+    "XIXI",
+    "XIYI",
+    "XIZI",
+    "XXII",
+    "XYII",
+    "XZII",
+    "YIII",
+    "YIIX",
+    "YIIY",
+    "YIIZ",
+    "YIXI",
+    "YIYI",
+    "YIZI",
+    "YXII",
+    "YYII",
+    "YZII",
+    "ZIII",
+    "ZIIX",
+    "ZIIY",
+    "ZIIZ",
+    "ZIXI",
+    "ZIYI",
+    "ZIZI",
+    "ZXII",
+    "ZYII",
+    "ZZII"
+  ],
+  "weights": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ]
+}

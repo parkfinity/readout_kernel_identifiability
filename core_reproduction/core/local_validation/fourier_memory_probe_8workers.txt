@@ -1,0 +1,4 @@
+Fourier-Gram run_experiment.py --workers 8, Python 3.8.20 + SymPy 1.13.3, macOS arm64 (scratch copy of journal_extension/)
+sum of RSS over the main process and its worker processes, sampled every 1 s
+max_total_rss_MB=6260 processes_at_max=10
+largest single process (stage_status.json): ~1.34 GB

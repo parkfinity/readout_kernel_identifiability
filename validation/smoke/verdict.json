@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "mode": "smoke",
+  "exit_code": 0,
+  "source_layout_reconstruction": true,
+  "source_files_byte_identical": true,
+  "result_directory": "runtime/runs/smoke_20261008T054641_466849Z",
+  "scope": "Only the selected workflow was run; no new science or altered reference evidence."
+}

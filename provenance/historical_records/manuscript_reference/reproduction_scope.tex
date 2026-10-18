@@ -1,0 +1,37 @@
+\paragraph{Cross-environment reproduction.}
+The reference computations used Python~3.9.6 and SymPy~1.14.0 on
+macOS arm64. The pinned Linux x86\_64 reruns used Python~3.8.10,
+NumPy~1.24.4 and SymPy~1.13.3, with Qiskit~1.2.4 for the scaling
+study. Jointly, the two full reruns passed all 3,376 strict
+comparisons without warnings. These checks compare certificate
+contents and provenance; they are not 3,376 independent experiments.
+The reruns use the same code, not independent implementations or
+formal proof verification.
+
+\begin{table}[t]
+\caption{Reproduction scope. Matching certificates establish
+cross-environment reproducibility within the listed implementation
+scope, not a new census or an independent proof system.}
+\label{tab:reproscope}
+\begin{tabular}{>{\raggedright\arraybackslash}p{.29\columnwidth}
+                >{\raggedright\arraybackslash}p{.63\columnwidth}}
+\toprule
+Calculation & Reproduction and matched evidence\\
+\midrule
+30-setting Fourier audit (App.~\ref{app:followup})
+& Full Linux rerun, including bounded symbolic expansion: 30 ranks,
+7 rational and 60 modular minors; 195 active and 57 inactive entries,
+none undecided.\\[4pt]
+Kyriienko scaling (App.~\ref{app:kyriscaling})
+& Full Linux rerun: all 12 ranks, exact minors, Jacobian payload
+hashes and generated IR hashes agree.\\[4pt]
+Dedicated three-setting Gram calculation (App.~\ref{app:gram})
+& Local execution only. The separate 30-setting audit reproduces the
+same three ranks, not this dedicated implementation.\\[4pt]
+Earlier extension audit (App.~\ref{app:extension})
+& Server replay of saved evidence, not a new discovery run: 30
+setting checks, 195 activity witnesses, 27 nonzero minors, structural
+verdicts and the nonlinear certificate.\\
+\bottomrule
+\end{tabular}
+\end{table}

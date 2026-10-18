@@ -1,0 +1,177 @@
+{
+ "copied_files": {
+  "exact_engine.py": {
+   "copy_sha256": "01d52e292e472b98d9e3616a95168d6f40125603de6312a272e9e1bf2cee85bf",
+   "original_sha256": "01d52e292e472b98d9e3616a95168d6f40125603de6312a272e9e1bf2cee85bf",
+   "identical": true
+  },
+  "interval_engine.py": {
+   "copy_sha256": "1595e5a30cd2ef68816b7664742a5fe377e47bfd3514f8c892a754edfbbd7948",
+   "original_sha256": "1595e5a30cd2ef68816b7664742a5fe377e47bfd3514f8c892a754edfbbd7948",
+   "identical": true
+  }
+ },
+ "frozen_inputs": {
+  "yz_cx_encoding_circuit_n2_l1_local_xyz": {
+   "file_sha256": "3eff723027d1e17f5631a4dc1597fde21886e77d0226dbba199718a2a2b926a8",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "yz_cx_encoding_circuit_n2_l1_local_z": {
+   "file_sha256": "76280af2c3f760b4dfe97f1bbfef76b7efe3db7bbfa744f910612d1baeb02ffe",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "yz_cx_encoding_circuit_n2_l1_pauli_weight_le_2": {
+   "file_sha256": "cf895492690b7963228d60c67f2c1ad5ca38d521c7d6163d0153e163c7aec3bb",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "yz_cx_encoding_circuit_n2_l2_local_xyz": {
+   "file_sha256": "d1f6029d1c6f72748f5409453af341219566daa437553f765b4016b316755859",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "yz_cx_encoding_circuit_n2_l2_local_z": {
+   "file_sha256": "d06d19bc385a4178b2d267235069893182c02605329c109c0dc2d093b2ce74e2",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "yz_cx_encoding_circuit_n2_l2_pauli_weight_le_2": {
+   "file_sha256": "543d6a7296c86808f926bf9337a31eabbf884f78dd73cfdf7e6ec144599cc614",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "yz_cx_encoding_circuit_n4_l1_local_xyz": {
+   "file_sha256": "c5f95cca1270254a94ae627d1f26df3146c8ac6f2d1808b2761ca457e07aeacc",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "yz_cx_encoding_circuit_n4_l1_local_z": {
+   "file_sha256": "24e02526cdab790076093d0ef5ea75a98e626efd06e6518e09b79ed210000468",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "yz_cx_encoding_circuit_n4_l1_pauli_weight_le_2": {
+   "file_sha256": "08ac5ecf0d2ea20a72c7f6c3249cb97a6d3a94503feff612bb0864d2d963be87",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "yz_cx_encoding_circuit_n4_l2_local_xyz": {
+   "file_sha256": "3441f3bf44b1260d23561bd94c084a1d6e01704d1097c70ce921812082013fd5",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "yz_cx_encoding_circuit_n4_l2_local_z": {
+   "file_sha256": "7b5989895a1399d04554d1626dcc6860577eb35170ea19971692ada7ee98f863",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "yz_cx_encoding_circuit_n4_l2_pauli_weight_le_2": {
+   "file_sha256": "5d50f645494d7dd489e20c9cf2c3a29be73be75e02a5c795f2b2b00a1cf7bf1e",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "hubregtsen_encoding_circuit_n2_l1_local_xyz": {
+   "file_sha256": "fa1a10bdebbb9eec3e6faa8507c5ae6c2d66c794562c9e0c47279fd830711cc3",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "hubregtsen_encoding_circuit_n2_l1_local_z": {
+   "file_sha256": "1835ebd343e9efd6b326c7a06a1bbca8de00307c763793b01f25ede86fde9476",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "hubregtsen_encoding_circuit_n2_l1_pauli_weight_le_2": {
+   "file_sha256": "d3e6a24beb7a0bd3b304f8a03294535fdba6c8f5208d630e36d20485459baadd",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "hubregtsen_encoding_circuit_n2_l2_local_xyz": {
+   "file_sha256": "b3ad5dd00a6d9c283c2d8d6d13bbbb93313faa2d17686a4851dfc0923e59c4aa",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "hubregtsen_encoding_circuit_n2_l2_local_z": {
+   "file_sha256": "f789dcaa2ff67a5fdeaf1e2db5d42e145d1e2e0848db24948d06b56b55577b12",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "hubregtsen_encoding_circuit_n2_l2_pauli_weight_le_2": {
+   "file_sha256": "9788ebadb16e1474b3172213ddbde91cdf758c88f02d1dc57662eabf0932f4e6",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "hubregtsen_encoding_circuit_n4_l1_local_xyz": {
+   "file_sha256": "188acf5da80de8510581cfb0ce29616267f4aff1a9d8f1142b11c588eec66100",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "hubregtsen_encoding_circuit_n4_l1_local_z": {
+   "file_sha256": "4bf5c7cb70a970332c1824bcb5444656e7b219dbb757833f588e6d6409f9c735",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "hubregtsen_encoding_circuit_n4_l1_pauli_weight_le_2": {
+   "file_sha256": "713b5f171bf24805261a1d5e03d69d09fb3304b290e1c373f8bbebfe61cf619d",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "hubregtsen_encoding_circuit_n4_l2_local_xyz": {
+   "file_sha256": "eb959d72efc5ee362c305fc171f51bc9f22e9b7798463dc81642c92d59bbad51",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "hubregtsen_encoding_circuit_n4_l2_local_z": {
+   "file_sha256": "e131e487fe4c65d8a19848fbb784823e65d2e20e049b4470dab892eb01b42fa1",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "hubregtsen_encoding_circuit_n4_l2_pauli_weight_le_2": {
+   "file_sha256": "b00c895dffb30c15313ae440b3fa270bfbb2ed9a1e22a2bff33194a6bd2ae93b",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "kyriienko_nonlinear_encoding_circuit_n2_l1_local_xyz": {
+   "file_sha256": "bb94df413d984e45c826763dcf08f7933920923c2f57780706a8cc7e597477d1",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "kyriienko_nonlinear_encoding_circuit_n2_l1_local_z": {
+   "file_sha256": "fd9a42d130df940eebfe05b24840c3db29eaf59402542a2848e08c2af3e12ed0",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "kyriienko_nonlinear_encoding_circuit_n2_l1_pauli_weight_le_2": {
+   "file_sha256": "0dd2293e29e836cf0b306427d6c45c776445fb6f714a7b0a7dff91212e4d27ad",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "kyriienko_nonlinear_encoding_circuit_n4_l1_local_xyz": {
+   "file_sha256": "68b4bbf36d59eb39739644c7fce8e503be4f4d17759c7f910eb1b0b0f57318b3",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "kyriienko_nonlinear_encoding_circuit_n4_l1_local_z": {
+   "file_sha256": "baaa43d41a3129703efa4f50af02e22d6f33871a2c1d75a6c21a4a012848ac5b",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  },
+  "kyriienko_nonlinear_encoding_circuit_n4_l1_pauli_weight_le_2": {
+   "file_sha256": "4d9eea8b4a6daf29a144877e20abe97ce496003fb6ff1ca844a930da77c1678c",
+   "matches_scope_file_sha256": true,
+   "info_hash_matches_scope_source_sha256": true
+  }
+ },
+ "scope_sha256": "aa4ca2d672c2726a62ea92f4a1b69ee84a0e1949e2f8d236e640c5a4e5e28f11",
+ "manuscript_table_file": "manuscript_census_reference/extension_results.tex",
+ "manuscript_table_sha256": "a80467e0ef717d5e5d7d85c12d1c4f6ae6400716eb1031f2d42352904f2f4c1f",
+ "structural_closure_sha256": "98cf997876929fb5b8be9b218a224c425a3bc52331e0fe1b2ec10b60a46b2835",
+ "nonlinear_hubregtsen_sha256": "3feea9da5554edaa1effd7da5f321c2f41a273feeff9688f3ec9ac4e8c983fc1",
+ "original_results_manifest_sha256": "3b7b237921a186959334fa15d5b7c38a270f217fb86490a20e792d8efb5f2c07",
+ "code_sha256": {
+  "fourier_gram.py": "d457d17fa016c497ff161673cb9baf68b5c114ab243491b4dd7e40497a50e9fc",
+  "run_experiment.py": "e1dfd50428007444241be44078961d54c8b166dc837e7aaa357a049048887997",
+  "test_fourier_gram.py": "74e5dedae4bcba238e060fa01c000a52b050600ec515e368517f133842b4767c"
+ }
+}

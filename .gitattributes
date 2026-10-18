@@ -1,0 +1,2 @@
+# Keep certificate/source bytes unchanged on all platforms.
+* -text

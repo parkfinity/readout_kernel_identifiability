@@ -1,0 +1,19 @@
+test_exact_d2_vs_dense_n6 (test_kyriienko_scaling.TestEngines) ... ok
+test_exact_d2_vs_independent_dense_random (test_kyriienko_scaling.TestEngines) ... ok
+test_exact_gradient_vs_finite_difference (test_kyriienko_scaling.TestEngines) ... ok
+test_float_engine_vs_dense_vs_qiskit_random (test_kyriienko_scaling.TestEngines) ... ok
+test_anisotropic_readout_loses_gauges (test_kyriienko_scaling.TestExactAlgebra) ... ok
+test_euler_identity (test_kyriienko_scaling.TestExactAlgebra) ... ok
+test_gunit (test_kyriienko_scaling.TestExactAlgebra) ... ok
+test_linear_algebra (test_kyriienko_scaling.TestExactAlgebra) ... ok
+test_two_copy_invariance_and_controls (test_kyriienko_scaling.TestExactAlgebra) ... ok
+test_core_copy_identical (test_kyriienko_scaling.TestProvenance) ... ok
+test_formula_check_rejects_modified_ir (test_kyriienko_scaling.TestProvenance) ... ok
+test_frozen_ir_reproduced_n2_n4 (test_kyriienko_scaling.TestProvenance) ... ok
+test_source_formula_and_kyriform_all_sizes (test_kyriienko_scaling.TestProvenance) ... ok
+test_ranks (test_kyriienko_scaling.TestReproduceKnownRanks) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 2.493s
+
+OK

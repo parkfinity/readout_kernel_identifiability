@@ -1,0 +1,148 @@
+\subsection{A dimension formula for a restricted Z-readout family}
+\label{sec:hubfamily}
+The nonlinear example extends to a structural family, rather than to
+every depth or readout of the named source constructor.
+\begin{proposition}[Grouped single-layer Z features]\label{prop:hubfamily}
+Let $n\ge d\ge1$, and let $\sigma:\{1,\ldots,n\}\to\{1,\ldots,d\}$
+be surjective. Prepare $|+\rangle^{\otimes n}$, apply
+$R_y(\theta_q)R_z(x_{\sigma(q)})$ on each qubit, and then any diagonal
+unitary. Use local Z readout with fixed positive weights $w_q$, fixed
+$\gamma>0$, and $x\in(-1,1)^d$. The generic kernel rank and minimum
+global smooth factor dimension are $d$. Every retained $\theta_q$
+is individually active, and any constant-linear factorization of
+these $n$ coordinates has rank at least $n$.
+\end{proposition}
+\begin{proof}
+The diagonal tail commutes with Z. The measured features are
+$f_q=-\sin\theta_q\cos x_{\sigma(q)}$, whence
+\begin{align}
+ d^2_\theta(x,x')&=\sum_{j=1}^d\beta_j(\theta)
+                    (\cos x_j-\cos x'_j)^2,\\
+ \beta_j(\theta)&=\sum_{q:\sigma(q)=j}w_q\sin^2\theta_q.
+\end{align}
+This is a global smooth $d$-coordinate factorization. Set every
+$\theta_q=\pi/4$, choose one representative $q_j$ per group and input
+pairs $(0,(\pi/4)e_j)$. The distance-Jacobian minor in columns $q_j$
+is diagonal with entries $w_{q_j}(1-1/\sqrt2)^2>0$.
+Thus the generic rank and minimum factor dimension equal $d$.
+Each coordinate derivative is a nonzero function. If a constant
+vector $v$ annihilates every distance derivative, independent variation
+of angles in each group gives $v_qw_q=0$ for every $q$. A
+rank-deficient constant-linear factor would provide such a nonzero
+vector, a contradiction.
+\end{proof}
+The four-qubit, two-input, one-layer Hubregtsen instance is a member
+with $w_q=1$. Data re-uploading, non-diagonal final gates, tied angles,
+and other readouts are outside this formula. It proves a kernel
+dimension law, not deletion of every retained angle or shot savings.
+
+\subsection{Kyriienko-type gauge bounds and scaling certificates}
+\label{sec:kyrifamily}
+For $n\ge2$, consider Eq.~\eqref{eq:kyriform} with $n$ Euler blocks
+and $K=3n$ independent angles, a fixed data-only encoding
+$D(x)$, a fixed entangler $E$, and unit readout weights. The source
+constructor uses the forward nearest-neighbor CNOT entangler
+$E=E_{\rm o}E_{\rm e}$: $E_{\rm e}=\prod_j\mathrm{CX}_{2j,2j+1}$
+acts first and $E_{\rm o}=\prod_j\mathrm{CX}_{2j+1,2j+2}$ second.
+For $n=2,4$ this is the entangler of Sec.~\ref{sec:gramkyri}. Let
+$\mathfrak{lu}=\bigoplus_q\mathfrak{su}(2)_q$ be the Lie algebra of
+traceless single-qubit generators, that is, of products of
+single-qubit unitaries with the global phase ignored, and let
+$\mathfrak s_E=\mathfrak{lu}\cap E^\dagger\mathfrak{lu}E$
+contain the local output generators that $E$ carries back into the
+Euler blocks.
+\begin{proposition}[Kyriienko-type upper bounds]\label{prop:kyribounds}
+(i) If $E$ commutes with $Z_0$ and $X_{n-1}$, then isotropic local XYZ
+and complete weight-at-most-$k$ readout with $k<n$ satisfy
+\begin{equation}
+ r\le3n-2.\label{eq:kyrifamilyupper}
+\end{equation}
+For the forward nearest-neighbor CNOT entangler,
+$\mathfrak s_E=\mathrm{span}\{iZ_0,iX_{n-1}\}$, so
+$\dim\mathfrak s_E=2$ for every $n\ge2$.
+(ii) If $E$ is any CNOT network, then under local Z readout with any
+positive weights the trailing angles $c_0,\ldots,c_{n-1}$ are globally
+kernel-inactive, and $r\le2n$.
+(iii) For complete Pauli readout ($k=n$), $r=0$ for every fixed $E$.
+\end{proposition}
+\begin{proof}
+(i) By Proposition~\ref{prop:gauge}(i), output rotations about $Z_0$
+and $X_{n-1}$, which preserve every Pauli weight, are readout gauges.
+Commuting through $E$, they become left
+rotations of the first and last Euler blocks. On a regular chart
+($\sin b_q\ne0$) the Euler map is locally invertible, so they give two
+independent parameter tangents annihilating every $\partial d^2$;
+analyticity extends the vanishing higher minors.
+
+For the dimension, conjugation by $\mathrm{CX}_{c,t}$ permutes signed
+Pauli words: it fixes $Z_c$ and $X_t$ and maps $X_c\mapsto X_cX_t$,
+$Y_c\mapsto Y_cX_t$, $Z_t\mapsto Z_cZ_t$, and $Y_t\mapsto Z_cY_t$.
+Distinct words cannot cancel, so $Y\in\mathfrak{lu}$ satisfies
+$EYE^\dagger\in\mathfrak{lu}$ if and only if each single-qubit word
+in $Y$ has a weight-one image. Each layer acts on disjoint pairs and
+maps nonidentity restrictions to nonidentity restrictions. A two-site
+image under $E_{\rm e}$ occupies sites $2j,2j+1$, which lie in
+different pairs of $E_{\rm o}$, so its weight stays at least two. A
+weight-one image thus requires a word fixed by $E_{\rm e}$: $Z_q$ for
+even $q<n-1$, $X_q$ for odd $q$, or any word on the unpaired site
+$n-1$ for odd $n$. Then $E_{\rm o}$ maps $Z_q\mapsto Z_{q-1}Z_q$ for
+even $q\ge2$, $X_q\mapsto X_qX_{q+1}$ for odd $q<n-1$, and
+$Z_{n-1},Y_{n-1}$ to two-site words for odd $n$, while fixing $Z_0$
+and $X_{n-1}$.
+
+(ii) A CNOT network permutes computational basis states, so
+$\Delta(c)=E[\bigotimes_qR_z(c_q)]E^\dagger$ is diagonal and
+$U_\theta(x)=\Delta(c)E[\bigotimes_qR_x(b_q)R_z(a_q)]D(x)$. Diagonal
+unitaries commute with every $Z_j$, so no local-Z feature depends on
+$c$, and the $n$ columns $\partial_{c_q}d^2$ vanish identically.
+Equivalently, Theorem~\ref{thm:transport} carries each generator $Z_q$
+to a Z string commuting with the readout.
+
+(iii) With unit weights, $d^2=2^n\Tr[(\rho_x-\rho_{x'})^2]$, and the
+data-independent unitary after $D(x)$ cancels from this
+Hilbert--Schmidt distance; readout assumptions are essential.
+\end{proof}
+Since connected universal gauges are products of single-qubit
+unitaries (Proposition~\ref{prop:gauge}(ii), from
+Ref.~\cite{cpr2019locality}) and $\dim\mathfrak s_E=2$ exactly, they
+alone cannot certify $r<3n-2$ for the source entangler. Matching lower
+bounds are certified only at fixed sizes. A separate scaling
+computation extends the frozen source-to-IR route to $n=6,8$; these
+six settings are not added to the 54-setting census. At one rational
+parameter point it finds exact nonzero minors of the
+$\partial_\theta d^2$ Jacobian over 45 input pairs, of orders equal to
+the entries of Table~\ref{tab:kyriscaling}, and it reproduces the
+census ranks at $n=2,4$. With Proposition~\ref{prop:kyribounds}, these
+minors certify $r=3n-2$ for local XYZ ($n=2,4,6,8$) and
+weight-at-most-two readout ($n=4,6,8$), and $r=2n$ for local Z
+($n=2,4,6,8$).
+
+\begin{table}[t]
+\caption{Certified generic ranks for the Kyriienko-type family: exact
+nonzero minors match Proposition~\ref{prop:kyribounds}. Rows $n=2,4$
+repeat census values (Table~\ref{tab:extension}); rows $n=6,8$ form a
+separate scaling extension outside the 54-setting census. The dagger
+marks $k=n$, where part (iii) gives $r=0$.}
+\label{tab:kyriscaling}
+\begin{tabular}{rrrrr}
+\toprule
+$n$ & $K$ & $r_{XYZ}$ & $r_{\le2}$ & $r_Z$\\
+2&6&4&$0^\dagger$&4\\
+4&12&10&10&8\\
+6&18&16&16&12\\
+8&24&22&22&16\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+These certificates cover even $n$ only; for odd $n$ every qubit
+encodes both inputs, and no odd size has an exact certificate.
+Floating-point Jacobian ranks equal $3n-2$ for local XYZ at every
+$n=2,\ldots,12$, and for complete weight-at-most-$k$ readout at the
+five tested pairs $(n,k)$ with $2\le k<n\le5$. This is numerical
+evidence only.
+Equality for all $n$ remains open. A block-cover lower-bound route
+works when a finite direct-summand condition on the data modes holds,
+but Chebyshev frequency resonances violate that condition at $n=5,7$
+and $n=12$, although the numerical rank there is still $3n-2$
+(Appendix~\ref{app:kyriscaling}).

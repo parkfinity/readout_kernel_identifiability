@@ -1,0 +1,39 @@
+\begin{table*}[t]
+\caption{Objects and certification targets of related approaches.
+Entries describe the cited works' objectives, not impossibility
+results for other tasks. In the last row, $r$ is generic kernel
+differential rank; the fixed-basis assumptions and exact decision
+subclass are stated in Sec.~\ref{sec:gram}.}
+\label{tab:contracts}
+\centering
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.20\textwidth}>{\raggedright\arraybackslash}p{.22\textwidth}>{\raggedright\arraybackslash}p{.31\textwidth}>{\raggedright\arraybackslash}p{.19\textwidth}@{}}
+\toprule
+Approach & Object preserved or characterized & Principal output & Measurement specification\\
+\midrule
+Parametric equivalence\newline Peham; Ross--Wesley \cite{peham,rosswesley}
+& Unitary equivalence, including global-phase variants
+& Symbolic checks; finite cutoffs for supported all-parameter identities
+& No particular readout required\\[4pt]
+Dead-gate elimination \cite{deadgate}
+& Contributory measurement-outcome distribution
+& Removal of gates irrelevant to the specified outcomes
+& Specified measurement outcomes\\[4pt]
+Clifford extraction and absorption\newline QuCLEAR \cite{quclear}
+& Observable expectations or classically corrected outcomes
+& Circuit reduction with Clifford processing transferred to measurement or classical computation
+& Observables or postprocessing may change\\[4pt]
+State geometry\newline Funcke; Haug \cite{funcke,haug}
+& State-manifold dimension and effective quantum dimension
+& Redundant-parameter identification and dimension-preserving pruning
+& State geometry before a chosen kernel readout\\[4pt]
+Fourier/coefficient analysis\newline Schuld; Campbell \cite{schuldFourier,CHM}
+& Feature spectra and coefficient-space geometry
+& Encoding-dependent modes; harmonic matrices, coefficient Jacobians and training kernels
+& Observable enters the coefficient representation\\[4pt]
+This work: coefficient-Gram identifiability
+& Projected Gaussian kernel at fixed readout and metric
+& $G=C^TMC$: all-input equivalence, global coordinate inactivity, and exact certificates for $r$
+& Fixed readout and metric define the equivalence\\
+\bottomrule
+\end{tabular}
+\end{table*}

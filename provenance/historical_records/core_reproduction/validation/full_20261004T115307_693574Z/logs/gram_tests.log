@@ -1,0 +1,16 @@
+test_distance_gram_matches_statevector (test_fourier_gram.FourierGramTests) ... ok
+test_euler_field_closed_form (test_fourier_gram.FourierGramTests) ... ok
+test_exact_modular_numeric_coefficients_agree (test_fourier_gram.FourierGramTests) ... ok
+test_fixed_frequency_detection (test_fourier_gram.FourierGramTests) ... ok
+test_hubregtsen_gram_is_beta_diagonal_and_rank_two (test_fourier_gram.FourierGramTests) ... ok
+test_invariance_checks (test_fourier_gram.FourierGramTests) ... ok
+test_known_inactive_symbol_has_vanishing_gram_derivative (test_fourier_gram.FourierGramTests) ... ok
+test_kyriienko_brackets_close (test_fourier_gram.FourierGramTests) ... ok
+test_modular_minor_certificate (test_fourier_gram.FourierGramTests) ... ok
+test_semantics_match_copied_interval_engine (test_fourier_gram.FourierGramTests) ... ok
+test_symbolic_checks_of_null_fields_and_negative_controls (test_fourier_gram.FourierGramTests) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.972s
+
+OK

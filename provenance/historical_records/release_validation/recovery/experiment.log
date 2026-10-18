@@ -1,0 +1,57 @@
+hubregtsen_encoding_circuit_n2_l1_local_xyz {'identity': [0, 0, 0, 0, 0], 'fixed_diagonal': [2, 2, 2, 2, 2], 'random_diagonal': [2, 2, 2, 2, 2], 'random_dense': [2, 2, 2, 2, 2], 'selected_diagonal': [2, 2, 2, 2, 2], 'selected_dense': [2, 2, 2, 2, 2]}
+hubregtsen_encoding_circuit_n2_l1_local_z {'identity': [2, 2, 2, 2, 2], 'fixed_diagonal': [2, 2, 2, 2, 2], 'random_diagonal': [2, 2, 2, 2, 2], 'random_dense': [2, 2, 2, 2, 2], 'selected_diagonal': [2, 2, 2, 2, 2], 'selected_dense': [2, 2, 2, 2, 2]}
+hubregtsen_encoding_circuit_n2_l1_pauli_weight_le_2 {'identity': [0, 0, 0, 0, 0], 'fixed_diagonal': [2, 2, 2, 2, 2], 'random_diagonal': [2, 2, 2, 2, 2], 'random_dense': [2, 2, 2, 2, 2], 'selected_diagonal': [2, 2, 2, 2, 2], 'selected_dense': [2, 2, 2, 2, 2]}
+hubregtsen_encoding_circuit_n2_l2_local_xyz {'identity': [2, 2, 2, 2, 2], 'fixed_diagonal': [4, 4, 4, 4, 4], 'random_diagonal': [4, 4, 4, 4, 4], 'random_dense': [4, 4, 4, 4, 4], 'selected_diagonal': [4, 4, 4, 4, 4], 'selected_dense': [4, 4, 4, 4, 4]}
+hubregtsen_encoding_circuit_n2_l2_local_z {'identity': [4, 4, 4, 4, 4], 'fixed_diagonal': [4, 4, 4, 4, 4], 'random_diagonal': [4, 4, 4, 4, 4], 'random_dense': [4, 4, 4, 4, 4], 'selected_diagonal': [4, 4, 4, 4, 4], 'selected_dense': [4, 4, 4, 4, 4]}
+hubregtsen_encoding_circuit_n2_l2_pauli_weight_le_2 {'identity': [2, 2, 2, 2, 2], 'fixed_diagonal': [4, 4, 4, 4, 4], 'random_diagonal': [4, 4, 4, 4, 4], 'random_dense': [4, 4, 4, 4, 4], 'selected_diagonal': [4, 4, 4, 4, 4], 'selected_dense': [4, 4, 4, 4, 4]}
+hubregtsen_encoding_circuit_n4_l1_local_xyz {'identity': [8, 8, 8, 8, 8], 'fixed_diagonal': [8, 8, 8, 8, 8], 'random_diagonal': [8, 8, 8, 8, 8], 'random_dense': [8, 8, 8, 8, 8], 'selected_diagonal': [8, 8, 8, 8, 8], 'selected_dense': [8, 8, 8, 8, 8]}
+hubregtsen_encoding_circuit_n4_l1_local_z {'identity': [2, 2, 2, 2, 2], 'fixed_diagonal': [2, 2, 2, 2, 2], 'random_diagonal': [2, 2, 2, 2, 2], 'random_dense': [3, 3, 3, 3, 3], 'selected_diagonal': [2, 2, 2, 2, 2], 'selected_dense': [3, 3, 3, 3, 3]}
+hubregtsen_encoding_circuit_n4_l1_pauli_weight_le_2 {'identity': [8, 8, 8, 8, 8], 'fixed_diagonal': [8, 8, 8, 8, 8], 'random_diagonal': [8, 8, 8, 8, 8], 'random_dense': [8, 8, 8, 8, 8], 'selected_diagonal': [8, 8, 8, 8, 8], 'selected_dense': [8, 8, 8, 8, 8]}
+hubregtsen_encoding_circuit_n4_l2_local_xyz {'identity': [16, 16, 16, 16, 16], 'fixed_diagonal': [16, 16, 16, 16, 16], 'random_diagonal': [16, 16, 16, 16, 16], 'random_dense': [16, 16, 16, 16, 16], 'selected_diagonal': [16, 16, 16, 16, 16], 'selected_dense': [16, 16, 16, 16, 16]}
+hubregtsen_encoding_circuit_n4_l2_local_z {'identity': [12, 12, 12, 12, 12], 'fixed_diagonal': [12, 12, 12, 12, 12], 'random_diagonal': [12, 12, 12, 12, 12], 'random_dense': [12, 12, 12, 12, 12], 'selected_diagonal': [12, 12, 12, 12, 12], 'selected_dense': [12, 12, 12, 12, 12]}
+hubregtsen_encoding_circuit_n4_l2_pauli_weight_le_2 {'identity': [16, 16, 16, 16, 16], 'fixed_diagonal': [16, 16, 16, 16, 16], 'random_diagonal': [16, 16, 16, 16, 16], 'random_dense': [16, 16, 16, 16, 16], 'selected_diagonal': [16, 16, 16, 16, 16], 'selected_dense': [16, 16, 16, 16, 16]}
+kyriienko_nonlinear_encoding_circuit_n2_l1_local_xyz {'identity': [4, 4, 4, 4, 4], 'fixed_diagonal': [6, 6, 6, 6, 6], 'random_diagonal': [6, 6, 6, 6, 6], 'random_dense': [6, 6, 6, 6, 6], 'selected_diagonal': [6, 6, 6, 6, 6], 'selected_dense': [6, 6, 6, 6, 6]}
+kyriienko_nonlinear_encoding_circuit_n2_l1_local_z {'identity': [4, 4, 4, 4, 4], 'fixed_diagonal': [4, 4, 4, 4, 4], 'random_diagonal': [4, 4, 4, 4, 4], 'random_dense': [4, 4, 4, 4, 4], 'selected_diagonal': [4, 4, 4, 4, 4], 'selected_dense': [4, 4, 4, 4, 4]}
+kyriienko_nonlinear_encoding_circuit_n2_l1_pauli_weight_le_2 {'identity': [0, 0, 0, 0, 0], 'fixed_diagonal': [6, 6, 6, 6, 6], 'random_diagonal': [6, 6, 6, 6, 6], 'random_dense': [6, 6, 6, 6, 6], 'selected_diagonal': [6, 6, 6, 6, 6], 'selected_dense': [6, 6, 6, 6, 6]}
+kyriienko_nonlinear_encoding_circuit_n4_l1_local_xyz {'identity': [10, 10, 10, 10, 10], 'fixed_diagonal': [12, 12, 12, 12, 12], 'random_diagonal': [12, 12, 12, 12, 12], 'random_dense': [12, 12, 12, 12, 12], 'selected_diagonal': [12, 12, 12, 12, 12], 'selected_dense': [12, 12, 12, 12, 12]}
+kyriienko_nonlinear_encoding_circuit_n4_l1_local_z {'identity': [8, 8, 8, 8, 8], 'fixed_diagonal': [8, 8, 8, 8, 8], 'random_diagonal': [8, 8, 8, 8, 8], 'random_dense': [8, 8, 8, 8, 8], 'selected_diagonal': [8, 8, 8, 8, 8], 'selected_dense': [8, 8, 8, 8, 8]}
+kyriienko_nonlinear_encoding_circuit_n4_l1_pauli_weight_le_2 {'identity': [10, 10, 10, 10, 10], 'fixed_diagonal': [12, 12, 12, 12, 12], 'random_diagonal': [12, 12, 12, 12, 12], 'random_dense': [12, 12, 12, 12, 12], 'selected_diagonal': [12, 12, 12, 12, 12], 'selected_dense': [12, 12, 12, 12, 12]}
+yz_cx_encoding_circuit_n2_l1_local_xyz {'identity': [3, 3, 3, 3, 3], 'fixed_diagonal': [4, 4, 4, 4, 4], 'random_diagonal': [4, 4, 4, 4, 4], 'random_dense': [4, 4, 4, 4, 4], 'selected_diagonal': [4, 4, 4, 4, 4], 'selected_dense': [4, 4, 4, 4, 4]}
+yz_cx_encoding_circuit_n2_l1_local_z {'identity': [2, 2, 2, 2, 2], 'fixed_diagonal': [2, 2, 2, 2, 2], 'random_diagonal': [2, 2, 2, 2, 2], 'random_dense': [2, 2, 2, 2, 2], 'selected_diagonal': [2, 2, 2, 2, 2], 'selected_dense': [2, 2, 2, 2, 2]}
+yz_cx_encoding_circuit_n2_l1_pauli_weight_le_2 {'identity': [2, 2, 2, 2, 2], 'fixed_diagonal': [4, 4, 4, 4, 4], 'random_diagonal': [4, 4, 4, 4, 4], 'random_dense': [4, 4, 4, 4, 4], 'selected_diagonal': [4, 4, 4, 4, 4], 'selected_dense': [4, 4, 4, 4, 4]}
+yz_cx_encoding_circuit_n2_l2_local_xyz {'identity': [7, 7, 7, 7, 7], 'fixed_diagonal': [8, 8, 8, 8, 8], 'random_diagonal': [8, 8, 8, 8, 8], 'random_dense': [8, 8, 8, 8, 8], 'selected_diagonal': [8, 8, 8, 8, 8], 'selected_dense': [8, 8, 8, 8, 8]}
+yz_cx_encoding_circuit_n2_l2_local_z {'identity': [6, 6, 6, 6, 6], 'fixed_diagonal': [6, 6, 6, 6, 6], 'random_diagonal': [6, 6, 6, 6, 6], 'random_dense': [6, 6, 6, 6, 6], 'selected_diagonal': [6, 6, 6, 6, 6], 'selected_dense': [6, 6, 6, 6, 6]}
+yz_cx_encoding_circuit_n2_l2_pauli_weight_le_2 {'identity': [6, 6, 6, 6, 6], 'fixed_diagonal': [8, 8, 8, 8, 8], 'random_diagonal': [8, 8, 8, 8, 8], 'random_dense': [8, 8, 8, 8, 8], 'selected_diagonal': [8, 8, 8, 8, 8], 'selected_dense': [8, 8, 8, 8, 8]}
+yz_cx_encoding_circuit_n4_l1_local_xyz {'identity': [6, 6, 6, 6, 6], 'fixed_diagonal': [8, 8, 8, 8, 8], 'random_diagonal': [8, 8, 8, 8, 8], 'random_dense': [8, 8, 8, 8, 8], 'selected_diagonal': [8, 8, 8, 8, 8], 'selected_dense': [8, 8, 8, 8, 8]}
+yz_cx_encoding_circuit_n4_l1_local_z {'identity': [4, 4, 4, 4, 4], 'fixed_diagonal': [4, 4, 4, 4, 4], 'random_diagonal': [4, 4, 4, 4, 4], 'random_dense': [4, 4, 4, 4, 4], 'selected_diagonal': [4, 4, 4, 4, 4], 'selected_dense': [4, 4, 4, 4, 4]}
+yz_cx_encoding_circuit_n4_l1_pauli_weight_le_2 {'identity': [6, 6, 6, 6, 6], 'fixed_diagonal': [8, 8, 8, 8, 8], 'random_diagonal': [8, 8, 8, 8, 8], 'random_dense': [8, 8, 8, 8, 8], 'selected_diagonal': [8, 8, 8, 8, 8], 'selected_dense': [8, 8, 8, 8, 8]}
+yz_cx_encoding_circuit_n4_l2_local_xyz {'identity': [14, 14, 14, 14, 14], 'fixed_diagonal': [16, 16, 16, 16, 16], 'random_diagonal': [16, 16, 16, 16, 16], 'random_dense': [16, 16, 16, 16, 16], 'selected_diagonal': [16, 16, 16, 16, 16], 'selected_dense': [16, 16, 16, 16, 16]}
+yz_cx_encoding_circuit_n4_l2_local_z {'identity': [12, 12, 12, 12, 12], 'fixed_diagonal': [12, 12, 12, 12, 12], 'random_diagonal': [12, 12, 12, 12, 12], 'random_dense': [12, 12, 12, 12, 12], 'selected_diagonal': [12, 12, 12, 12, 12], 'selected_dense': [12, 12, 12, 12, 12]}
+yz_cx_encoding_circuit_n4_l2_pauli_weight_le_2 {'identity': [14, 14, 14, 14, 14], 'fixed_diagonal': [16, 16, 16, 16, 16], 'random_diagonal': [16, 16, 16, 16, 16], 'random_dense': [16, 16, 16, 16, 16], 'selected_diagonal': [16, 16, 16, 16, 16], 'selected_dense': [16, 16, 16, 16, 16]}
+READOUT hubregtsen_encoding_circuit_n2_l1 greedy ['XX', 'YX', 'XY']
+READOUT hubregtsen_encoding_circuit_n2_l2 greedy ['XX', 'YZ', 'XY']
+READOUT hubregtsen_encoding_circuit_n4_l1 greedy ['YYYX', 'YYYZ', 'XYZZ']
+READOUT hubregtsen_encoding_circuit_n4_l2 greedy ['YYXX', 'ZXYX', 'YZYX']
+READOUT kyriienko_nonlinear_encoding_circuit_n2_l1 greedy ['XZ', 'ZY', 'XY']
+READOUT kyriienko_nonlinear_encoding_circuit_n4_l1 greedy ['XZXZ', 'ZZXZ', 'XZZZ']
+READOUT yz_cx_encoding_circuit_n2_l1 greedy ['YY', 'YZ', 'ZZ']
+READOUT yz_cx_encoding_circuit_n2_l2 greedy ['YX', 'XZ', 'XX']
+READOUT yz_cx_encoding_circuit_n4_l1 greedy ['XZYZ', 'XZYX', 'XZZX']
+READOUT yz_cx_encoding_circuit_n4_l2 greedy ['YXXY', 'XZZY', 'YZZY']
+SHOTS yz_cx_encoding_circuit_n2_l1_local_xyz
+SHOTS kyriienko_nonlinear_encoding_circuit_n2_l1_local_xyz
+SHOTS hubregtsen_encoding_circuit_n4_l1_local_z
+{
+  "output": "/workspace/journal_extension/quantum_submission_update_20261007/github/readout-kernel-identifiability/runs/recovery_20261007T113734_490999Z/work/readout_metric_design_v1/results/20261007T113734Z",
+  "settings": 30,
+  "circuits": 10,
+  "design_points": 3,
+  "validation_points": 5,
+  "metric_candidates": 34,
+  "elapsed_seconds": 3.46803825,
+  "max_feature_error": 2.220446049250313e-16,
+  "max_gradient_error": 5.694128502042872e-11,
+  "rank_scope": "numerical local rank diagnostics; exact controls are separate",
+  "classification_accuracy_evaluated": false,
+  "hardware_executed": false
+}

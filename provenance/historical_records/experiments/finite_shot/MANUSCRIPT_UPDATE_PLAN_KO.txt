@@ -1,0 +1,46 @@
+v2 결과 수령 후 원고 업데이트 계획
+
+지금 할 일과 하지 않는 일
+실험 계획, 코드, 고정 설계와 재현성 검사를 준비한다.
+기존 실험 수치와 추가 실험의 해석 범위를 구분한다.
+서버 full 결과를 받아 검증한 뒤 새 원고 버전을 만든다.
+현재 v2의 개선 효과/실패를 미리 확정해 초록에 넣지 않는다.
+
+이미 서버 재현된 v1에서 본문에 넣을 근거
+1. local XYZ의 고정 비등방 metric으로 10개 회로 generic rank=K 인증.
+2. Kyriienko 2q 4->6, 4q 10->12.
+3. Hubregtsen 4q1L local Z에서 대각 metric rank 2,
+   어떤 한 고정 dense metric의 최대 rank 3, Z+ZZ에서 rank 4.
+4. 같은 ZZZZ bit string의 상관 feature를 사용한다는 측정 조건.
+5. 무작위/simple baseline도 성공함. 복잡한 선택법 신규성으로 포장하지 않음.
+6. metric 변경은 커널 변경이며 동치 보존 최적화가 아님.
+
+v2를 받은 뒤 먼저 확인할 것
+plan/source SHA256, 결과 60개 완결성, 실제 shot 분배, covariance 단위 테스트,
+saved samples와 통계의 일치, design/test 분리, 판정 threshold,
+모든 3 seed-panel의 paired 결과(성공뿐 아니라 손실/동점 포함).
+특정 방법이 고른 방향만 평가하지 않고 공통 frozen basis 전체를 측정했는지.
+retained sensitivity가 좋아져도 full target rank가 모자라면 별도 표기.
+예측 variance와 Monte Carlo variance의 일치 정도와 bias/SE를 점검한다.
+
+반영 형태
+본문: 기존 진단 정리 다음에 'Recoverability by metric and readout design'
+소절을 넣어 필요성/가능성/한계(2->3->4)를 중심으로 연결한다.
+v2가 강한 기준선 대비 반복 가능한 장점을 보이면 고정 shot 예산의 paired
+감도 결과를 추가한다. 세 panel의 결과와 worst-direction/rank를 함께 낸다.
+효과가 일관되지 않으면 'rank restoration does not ensure statistical
+resolvability'를 검증하는 한계 결과로 간결하게 반영한다.
+선택 알고리즘이 동점이면 '새 알고리즘이 우월하다'는 문장을 쓰지 않는다.
+
+보충 자료: 전체 metric bank, theta/input seeds, shot 회계, covariance 식,
+모든 paired 결과, 분산 검증, frozen direction 재현성 및 v1 서버 감사.
+본문의 timing/compiler audit 비중은 늘리지 않는다.
+서론/초록은 확인된 설계 함의를 중심으로 소폭 업데이트하고, 예측 정확도,
+실제 QPU 절감, 일반적인 학습 가능성 또는 채택 가능성을 보장하지 않는다.
+
+필수 이론 검토
+THEORY_SCOPE의 비상수 feature 조건과 translation 불가복원 예외,
+모든 metric의 공통 nullspace와 한 고정 metric의 nullspace의 차이,
+generic rank와 특정 theta에서의 finite-shot 감도의 차이를 확인한다.
+새로운 관측량/metric 학습 자체의 선행연구와 구분하여 참고문헌 재점검.
+연구비/이해상충/자료 접근 정책의 사용자 미확정 항목은 임의로 채우지 않는다.

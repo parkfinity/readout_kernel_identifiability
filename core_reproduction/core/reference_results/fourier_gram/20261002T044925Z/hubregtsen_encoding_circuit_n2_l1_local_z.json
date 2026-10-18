@@ -1,0 +1,317 @@
+{
+ "id": "hubregtsen_encoding_circuit_n2_l1_local_z",
+ "parameter_count": 2,
+ "n": 2,
+ "observables": 2,
+ "fixed_frequency": true,
+ "product_terms": [],
+ "constant_angle_terms": [],
+ "exact_supported": true,
+ "data_bases": [
+  "a0",
+  "a1"
+ ],
+ "base_units_M": [
+  2,
+  2
+ ],
+ "half_angle_step": [
+  1,
+  1
+ ],
+ "max_half_angle_exponent": [
+  1,
+  1
+ ],
+ "dft_grid_points_per_base": [
+  5,
+  5
+ ],
+ "max_feature_frequency_in_psi_units": [
+  2,
+  2
+ ],
+ "basis_full_size": 24,
+ "basis_description": "h_a(x) in {cos(w.psi), sin(w.psi)}, psi_b = phi_b(x)/M_b, w in Omega_+ (first nonzero component > 0), constant mode removed",
+ "independence": {
+  "bases_on_distinct_coordinates": true,
+  "images": [
+   "(-1, 1)",
+   "(-1, 1)"
+  ],
+  "argument": "phi maps the open domain (-1,1)^2 onto an open box; 1 and the distinct characters exp(i w.psi) are linearly independent on any open set (real-analytic trigonometric polynomial vanishing on an open set vanishes identically), hence so are 1, cos(w.psi), sin(w.psi), w in Omega_+."
+ },
+ "grid_sufficiency": "each rotation exp(-i alpha P/2) multiplies amplitudes by u^{-s} or u^{+s} (data part of alpha/2), so amplitudes have exponents in [-S_b, S_b] (step g_b) and features have frequencies |w_b| <= 2 S_b; an equispaced grid of 2(2S_b/g_b)+1 points in chi_b = g_b psi_b is aliasing free.",
+ "H_gates": 2,
+ "theta_star": {
+  "specification": [
+   "theta_0 = 2*atan2(-299, 180)  [exp(i theta/2) = (180 + -299 i)/349]",
+   "theta_1 = 2*atan2(308, 75)  [exp(i theta/2) = (75 + 308 i)/317]"
+  ],
+  "float": [
+   -2.057805252236111,
+   2.6638769495164394
+  ],
+  "seed": 20261018,
+  "zeta": [
+   [
+    180,
+    -299,
+    349
+   ],
+   [
+    75,
+    308,
+    317
+   ]
+  ]
+ },
+ "A": 2,
+ "lower_bound": {
+  "r_lower": 2,
+  "certificate": "nonzero r x r minor of the exact rational Jacobian d upper(G)/d theta at theta*, certified by a nonzero determinant modulo a prime (all entries p-integral)",
+  "per_prime": [
+   {
+    "prime": 134217689,
+    "feature_coefficients_conjugate_symmetric": true,
+    "A_support": 2,
+    "A_full": 24,
+    "jacobian_rows": 3,
+    "rank": 2,
+    "minor_rows_G_entries": [
+     [
+      "cos((2, 0))",
+      "cos((2, 0))"
+     ],
+     [
+      "cos((0, 2))",
+      "cos((0, 2))"
+     ]
+    ],
+    "minor_columns": [
+     0,
+     1
+    ],
+    "minor_det_mod_p": 11220521,
+    "active_witnesses": {
+     "0": {
+      "row": [
+       "cos((2, 0))",
+       "cos((2, 0))"
+      ],
+      "value_mod_p": 89574179
+     },
+     "1": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 84065946
+     }
+    },
+    "seconds": 0.0006042079999999395
+   },
+   {
+    "prime": 134217649,
+    "feature_coefficients_conjugate_symmetric": true,
+    "A_support": 2,
+    "A_full": 24,
+    "jacobian_rows": 3,
+    "rank": 2,
+    "minor_rows_G_entries": [
+     [
+      "cos((2, 0))",
+      "cos((2, 0))"
+     ],
+     [
+      "cos((0, 2))",
+      "cos((0, 2))"
+     ]
+    ],
+    "minor_columns": [
+     0,
+     1
+    ],
+    "minor_det_mod_p": 74662185,
+    "active_witnesses": {
+     "0": {
+      "row": [
+       "cos((2, 0))",
+       "cos((2, 0))"
+      ],
+      "value_mod_p": 100856903
+     },
+     "1": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 1862053
+     }
+    },
+    "seconds": 0.000509624999999847
+   }
+  ]
+ },
+ "upper_bound": {
+  "U1": {
+   "bound": 2,
+   "inactive_symbols": [],
+   "deletion_log": [],
+   "virtual_fields": [],
+   "family_labels": [],
+   "family_rank_at_theta_star": 0,
+   "consistency_J_v_at_theta_star": [],
+   "argument": "Each field v(theta) satisfies J(theta) v(theta) = 0 for all theta: deletions keep K(x,x';theta) = Tr[(rho(x)(x)rho(x'))Omega] unchanged because the transported generator P commutes with Omega jointly (P(x)I + I(x)P) or separately (data angles); a virtual field is the Euler-block chart image of inserting exp(-i eps Q/2) whose transported generator is a joint symmetry. Exact rank of the family at theta* bounds the generic family rank from below, so r <= K - rank."
+  },
+  "U2_symbolic_gram": {
+   "original_circuit": {
+    "completed": true,
+    "seconds": 0.004549334000000016,
+    "peak_terms": 134,
+    "kernel_terms": 24,
+    "gram_block_entries": 8,
+    "inactive": [],
+    "span_bound": 2,
+    "gram_entries": 8,
+    "theta_frequencies": 4
+   },
+   "certified_reduced_circuit": {
+    "completed": true,
+    "seconds": 0.004613832999999623,
+    "peak_terms": 134,
+    "kernel_terms": 24,
+    "gram_block_entries": 8,
+    "inactive": [],
+    "span_bound": 2,
+    "gram_entries": 8,
+    "theta_frequencies": 4
+   }
+  },
+  "r_upper": 2,
+  "attained_by": [
+   "trivial K",
+   "U1 two-copy invariance fields",
+   "U2 symbolic Gram span (original_circuit)",
+   "U2 symbolic Gram span (certified_reduced_circuit)"
+  ]
+ },
+ "r_lower": 2,
+ "r_upper": 2,
+ "status": "CLOSED",
+ "per_symbol": [
+  {
+   "symbol": 0,
+   "verdict": "ACTIVE",
+   "certificates": [
+    "ACTIVE: exact nonzero d_k G(theta*) (mod-p witness)"
+   ]
+  },
+  {
+   "symbol": 1,
+   "verdict": "ACTIVE",
+   "certificates": [
+    "ACTIVE: exact nonzero d_k G(theta*) (mod-p witness)"
+   ]
+  }
+ ],
+ "numerical_rank": {
+  "certified": false,
+  "tolerance_relative": 1e-09,
+  "trials": [
+   {
+    "seed": 11,
+    "rank": 2,
+    "sigma_max": 0.998993757515486,
+    "sigma_r_rel": 0.009083664032844732,
+    "sigma_r1_rel": null,
+    "support_columns": 2
+   },
+   {
+    "seed": 12,
+    "rank": 2,
+    "sigma_max": 0.6202977516969256,
+    "sigma_r_rel": 0.01670207698321331,
+    "sigma_r1_rel": null,
+    "support_columns": 2
+   },
+   {
+    "seed": 13,
+    "rank": 2,
+    "sigma_max": 0.9917926950441137,
+    "sigma_r_rel": 0.9775445647388987,
+    "sigma_r1_rel": null,
+    "support_columns": 2
+   },
+   {
+    "seed": 14,
+    "rank": 2,
+    "sigma_max": 0.9844468122063142,
+    "sigma_r_rel": 0.8643274221684583,
+    "sigma_r1_rel": null,
+    "support_columns": 2
+   }
+  ],
+  "rank": 2,
+  "min_rank": 2
+ },
+ "numeric_crosscheck": {
+  "trials": 32,
+  "max_abs_distance_error": 2.0816681711721685e-16,
+  "max_abs_gradient_error": 4.163336342344337e-16,
+  "passed": true,
+  "tolerance": 1e-10
+ },
+ "interval_engine_crosscheck": {
+  "theta": [
+   "2/17",
+   "21/17"
+  ],
+  "x": [
+   "14/19",
+   "-15/19"
+  ],
+  "xprime": [
+   "-5/19",
+   "14/19"
+  ],
+  "interval_dps": 30,
+  "distance_abs_error": 2.970713952610282e-17,
+  "gradient_max_abs_error": 9.020562075079397e-17,
+  "agrees_within_1e_10": true
+ },
+ "original_bounded_pass": {
+  "status_counts": {
+   "ACTIVE_CERTIFIED": 2
+  },
+  "undecided": [],
+  "symbolic_failure": null,
+  "symbolic_seconds": 0.004241541999988385,
+  "elapsed_seconds": 0.02953054199998917,
+  "minor_lower": 2,
+  "r_upper": 2
+ },
+ "timing": {
+  "modular_rank_seconds": 0.0011138329999997865,
+  "invariance_seconds": 0.00011004199999975484,
+  "deletion_checks_seconds": 1.2500000012849455e-07,
+  "symbolic_original_circuit_seconds": 0.004549334000000016,
+  "symbolic_certified_reduced_circuit_seconds": 0.004613832999999623,
+  "virtual_field_checks_seconds": 1.2499999968440534e-07,
+  "numeric_seconds": 0.019344707999999766,
+  "interval_crosscheck_seconds": 0.009004541000000366,
+  "total_seconds": 0.04059974999999971
+ },
+ "manuscript": {
+  "K": 2,
+  "kind": "value",
+  "value": 2,
+  "dagger": false
+ },
+ "structural_closure_bounds": [
+  2,
+  2
+ ],
+ "consistency": "AGREES",
+ "numerical_rank_matches_certified": true
+}

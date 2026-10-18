@@ -1,0 +1,13 @@
+test_basis_marginals (test_design.Tests) ... ok
+test_cover (test_design.Tests) ... ok
+test_dense_and_tangents (test_design.Tests) ... ok
+test_joint_covariance (test_design.Tests) ... ok
+test_metrics_spd_trace (test_design.Tests) ... ok
+test_no_spurious_rank (test_design.Tests) ... ok
+test_pair_difference_translation (test_design.Tests) ... ok
+test_unbiased_distance (test_design.Tests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.026s
+
+OK

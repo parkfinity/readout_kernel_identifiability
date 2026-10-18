@@ -1,0 +1,7 @@
+{
+  "plan.json": "87cc8f6fd5447b2bc46995ebf7170d83d1fcc0e12c0b863a9aad8c26724831b7",
+  "PROTOCOL.txt": "98b0d2395270a429f4a78f33c85c8ae79cbbc569ba37ffe5d1c1410dfbc8dc52",
+  "frozen_inputs/hubregtsen_encoding_circuit_n4_l1_local_z.json": "4bf5c7cb70a970332c1824bcb5444656e7b219dbb757833f588e6d6409f9c735",
+  "frozen_inputs/kyriienko_nonlinear_encoding_circuit_n2_l1_local_xyz.json": "bb94df413d984e45c826763dcf08f7933920923c2f57780706a8cc7e597477d1",
+  "frozen_inputs/yz_cx_encoding_circuit_n2_l1_local_xyz.json": "3eff723027d1e17f5631a4dc1597fde21886e77d0226dbba199718a2a2b926a8"
+}

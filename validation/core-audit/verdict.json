@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "mode": "core-audit",
+  "exit_code": 0,
+  "source_layout_reconstruction": true,
+  "source_files_byte_identical": true,
+  "result_directory": "runtime/runs/core-audit_20261008T054659_666580Z",
+  "scope": "Only the selected workflow was run; no new science or altered reference evidence."
+}

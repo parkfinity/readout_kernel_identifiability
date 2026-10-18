@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "manifest_files": 308,
+  "arrays_checked": 3252,
+  "slots_checked": 102,
+  "max_recorded_errors": {
+    "source_feature": 3.885780586188048e-15,
+    "feature_jacobian": 1.7763568394002505e-15,
+    "kernel_vs_fd": 7.004065660787262e-10,
+    "kernel": 3.552713678800501e-15,
+    "angle_vs_analytic": 1.872200311447969e-15,
+    "angle_vs_fd": 9.376106828440367e-09,
+    "gradient_preservation": 4.440892098500626e-15,
+    "trajectory": 4.440892098500626e-16,
+    "prediction": 1.6653345369377348e-15
+  }
+}

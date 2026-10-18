@@ -1,0 +1,29 @@
+Post-pilot checks, fixed after results/20261004T142130Z and before this run.
+These are explicit follow-ups, not retroactively preregistered pilot endpoints.
+
+1. Stronger one-setting baselines, every one of the ten circuits:
+all-X and all-Y as well as all-Z, the product basis maximizing the mean
+feature variance on the same three design points, and the selected basis
+with identity weights. Same weight<=2 bank; validate on the same held-out
+points for paired comparison. Variance selection and rank selection each
+inspect the same full basis bank. This exposes whether merely changing the
+default Z basis already gives full rank.
+
+2. Finite-shot comparison adds fixed anisotropic diagonal, first random
+diagonal/dense candidates, and selected diagonal, to the initial identity
+and selected-dense comparison. The source circuit, perturbation direction,
+input pairs, and fixed contrast remain exactly those of the pilot. All
+methods reuse identical joint outcome samples. This is a local, matched
+contrast diagnostic chosen from the selected metric, not a task-level
+performance comparison, test power or neutral optimal contrast for each arm.
+
+3. Exact certificates verify all ten one-basis designs and all ten fixed
+diagonal local-XYZ designs after discovery. Two modular nonzero minors plus
+the source K upper bound give generic rank K. No successful subset is chosen.
+
+4. After the stronger baselines were inspected, test a mechanistic control:
+Hubregtsen 4q1L, add six Z_q Z_r correlations to four local Z features.
+They are available from the same ZZZZ setting if joint bit strings are kept.
+Prove rank <=4 from absence of the last four symbols in exact feature
+expansions, and seek a matching modular minor. This is a post-hoc explanatory
+example, not an additional independently chosen benchmark family.

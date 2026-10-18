@@ -1,0 +1,34 @@
+[RUN] pilot_tests
+[PASS] pilot_tests 0.2s
+[RUN] extension_tests
+[PASS] extension_tests 0.4s
+[RUN] gram_tests
+[PASS] gram_tests 1.1s
+[RUN] scaling_tests
+[PASS] scaling_tests 1.9s
+[RUN] normalizer_tests
+[PASS] normalizer_tests 0.8s
+[RUN] survey_tests
+[PASS] survey_tests 0.3s
+[RUN] endpoint_exact_minor
+[PASS] endpoint_exact_minor 0.0s
+[RUN] representative_exact_r4
+[PASS] representative_exact_r4 0.3s
+[RUN] pilot_certificate_replay
+[WORKING] pilot_certificate_replay 15s; log: /workspace/journal_extension/quantum_submission_update_20261007/github/readout-kernel-identifiability/runs/core-audit_20261007T113905_370680Z/core_output/audit_20261007T113905_444179Z/logs/pilot_certificate_replay.log
+[WORKING] pilot_certificate_replay 30s; log: /workspace/journal_extension/quantum_submission_update_20261007/github/readout-kernel-identifiability/runs/core-audit_20261007T113905_370680Z/core_output/audit_20261007T113905_444179Z/logs/pilot_certificate_replay.log
+[PASS] pilot_certificate_replay 34.8s
+[RUN] pilot_source_crosscheck
+[WORKING] pilot_source_crosscheck 15s; log: /workspace/journal_extension/quantum_submission_update_20261007/github/readout-kernel-identifiability/runs/core-audit_20261007T113905_370680Z/core_output/audit_20261007T113905_444179Z/logs/pilot_source_crosscheck.log
+[PASS] pilot_source_crosscheck 18.5s
+[RUN] nonlinear_exact
+[PASS] nonlinear_exact 0.4s
+[RUN] nonlinear_source_check
+[PASS] nonlinear_source_check 1.4s
+[RUN] legacy_csv_and_qfi_check
+[PASS] legacy_csv_and_qfi_check 0.3s
+[RUN] bounded_analytic_checks
+[PASS] bounded_analytic_checks 0.7s
+[RUN] extension_resource_accounting_30
+[PASS] extension_resource_accounting_30 1.1s
+PASS — results: /workspace/journal_extension/quantum_submission_update_20261007/github/readout-kernel-identifiability/runs/core-audit_20261007T113905_370680Z/core_output/audit_20261007T113905_444179Z

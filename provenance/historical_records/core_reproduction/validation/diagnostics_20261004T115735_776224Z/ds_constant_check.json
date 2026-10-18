@@ -1,0 +1,272 @@
+{
+  "definition": "rank_D[1,H_cov,H_oth] == N_cov + rank_D[1,H_oth]",
+  "tolerance_abs": 1e-09,
+  "sampling": "x uniform in (-0.95,0.95)^2, 3*#modes+30 points",
+  "seeds": [
+    1,
+    7
+  ],
+  "status": "NUMERICAL (floating sampled rank), not a certificate",
+  "results": {
+    "1": {
+      "2": {
+        "n_modes": 8,
+        "N_cov": 4,
+        "rank_cov": 4,
+        "rank_1_oth": 5,
+        "rank_1_cov_oth": 9,
+        "DS": true,
+        "cover_deficit": 0,
+        "intersection_dim": 0,
+        "no_constant": {
+          "rank_all": 8,
+          "rank_cov_plus_rank_oth": 8
+        },
+        "min_kept_sv": 2.5318567367823817,
+        "max_dropped_sv": 0.0
+      },
+      "4": {
+        "n_modes": 44,
+        "N_cov": 8,
+        "rank_cov": 8,
+        "rank_1_oth": 37,
+        "rank_1_cov_oth": 45,
+        "DS": true,
+        "cover_deficit": 0,
+        "intersection_dim": 0,
+        "no_constant": {
+          "rank_all": 44,
+          "rank_cov_plus_rank_oth": 44
+        },
+        "min_kept_sv": 1.8983801736416173,
+        "max_dropped_sv": 0.0
+      },
+      "5": {
+        "n_modes": 56,
+        "N_cov": 10,
+        "rank_cov": 8,
+        "rank_1_oth": 43,
+        "rank_1_cov_oth": 49,
+        "DS": false,
+        "cover_deficit": 2,
+        "intersection_dim": 2,
+        "no_constant": {
+          "rank_all": 49,
+          "rank_cov_plus_rank_oth": 51
+        },
+        "min_kept_sv": 2.0100107259070548,
+        "max_dropped_sv": 1.173734135758626e-14
+      },
+      "6": {
+        "n_modes": 80,
+        "N_cov": 12,
+        "rank_cov": 12,
+        "rank_1_oth": 65,
+        "rank_1_cov_oth": 77,
+        "DS": true,
+        "cover_deficit": 0,
+        "intersection_dim": 0,
+        "no_constant": {
+          "rank_all": 76,
+          "rank_cov_plus_rank_oth": 76
+        },
+        "min_kept_sv": 2.307563408195675,
+        "max_dropped_sv": 1.5361890966229156e-14
+      },
+      "7": {
+        "n_modes": 92,
+        "N_cov": 14,
+        "rank_cov": 10,
+        "rank_1_oth": 63,
+        "rank_1_cov_oth": 71,
+        "DS": false,
+        "cover_deficit": 4,
+        "intersection_dim": 2,
+        "no_constant": {
+          "rank_all": 71,
+          "rank_cov_plus_rank_oth": 73
+        },
+        "min_kept_sv": 2.68076060078496,
+        "max_dropped_sv": 2.974292824552538e-14
+      },
+      "8": {
+        "n_modes": 116,
+        "N_cov": 16,
+        "rank_cov": 16,
+        "rank_1_oth": 93,
+        "rank_1_cov_oth": 109,
+        "DS": true,
+        "cover_deficit": 0,
+        "intersection_dim": 0,
+        "no_constant": {
+          "rank_all": 108,
+          "rank_cov_plus_rank_oth": 108
+        },
+        "min_kept_sv": 2.691079965665088,
+        "max_dropped_sv": 2.4611048069349443e-14
+      },
+      "10": {
+        "n_modes": 152,
+        "N_cov": 20,
+        "rank_cov": 20,
+        "rank_1_oth": 121,
+        "rank_1_cov_oth": 141,
+        "DS": true,
+        "cover_deficit": 0,
+        "intersection_dim": 0,
+        "no_constant": {
+          "rank_all": 140,
+          "rank_cov_plus_rank_oth": 140
+        },
+        "min_kept_sv": 2.7980295095448304,
+        "max_dropped_sv": 3.1176243882735884e-14
+      },
+      "12": {
+        "n_modes": 188,
+        "N_cov": 24,
+        "rank_cov": 24,
+        "rank_1_oth": 145,
+        "rank_1_cov_oth": 165,
+        "DS": false,
+        "cover_deficit": 0,
+        "intersection_dim": 4,
+        "no_constant": {
+          "rank_all": 164,
+          "rank_cov_plus_rank_oth": 168
+        },
+        "min_kept_sv": 3.4971087434846857,
+        "max_dropped_sv": 5.243554085656726e-14
+      }
+    },
+    "7": {
+      "2": {
+        "n_modes": 8,
+        "N_cov": 4,
+        "rank_cov": 4,
+        "rank_1_oth": 5,
+        "rank_1_cov_oth": 9,
+        "DS": true,
+        "cover_deficit": 0,
+        "intersection_dim": 0,
+        "no_constant": {
+          "rank_all": 8,
+          "rank_cov_plus_rank_oth": 8
+        },
+        "min_kept_sv": 2.477984955523702,
+        "max_dropped_sv": 0.0
+      },
+      "4": {
+        "n_modes": 44,
+        "N_cov": 8,
+        "rank_cov": 8,
+        "rank_1_oth": 37,
+        "rank_1_cov_oth": 45,
+        "DS": true,
+        "cover_deficit": 0,
+        "intersection_dim": 0,
+        "no_constant": {
+          "rank_all": 44,
+          "rank_cov_plus_rank_oth": 44
+        },
+        "min_kept_sv": 1.6725199280029652,
+        "max_dropped_sv": 0.0
+      },
+      "5": {
+        "n_modes": 56,
+        "N_cov": 10,
+        "rank_cov": 8,
+        "rank_1_oth": 43,
+        "rank_1_cov_oth": 49,
+        "DS": false,
+        "cover_deficit": 2,
+        "intersection_dim": 2,
+        "no_constant": {
+          "rank_all": 49,
+          "rank_cov_plus_rank_oth": 51
+        },
+        "min_kept_sv": 2.134910673117102,
+        "max_dropped_sv": 1.3126827166852563e-14
+      },
+      "6": {
+        "n_modes": 80,
+        "N_cov": 12,
+        "rank_cov": 12,
+        "rank_1_oth": 65,
+        "rank_1_cov_oth": 77,
+        "DS": true,
+        "cover_deficit": 0,
+        "intersection_dim": 0,
+        "no_constant": {
+          "rank_all": 76,
+          "rank_cov_plus_rank_oth": 76
+        },
+        "min_kept_sv": 2.200507697833311,
+        "max_dropped_sv": 1.667979763335105e-14
+      },
+      "7": {
+        "n_modes": 92,
+        "N_cov": 14,
+        "rank_cov": 10,
+        "rank_1_oth": 63,
+        "rank_1_cov_oth": 71,
+        "DS": false,
+        "cover_deficit": 4,
+        "intersection_dim": 2,
+        "no_constant": {
+          "rank_all": 71,
+          "rank_cov_plus_rank_oth": 73
+        },
+        "min_kept_sv": 2.8419049892685617,
+        "max_dropped_sv": 2.4784264572924898e-14
+      },
+      "8": {
+        "n_modes": 116,
+        "N_cov": 16,
+        "rank_cov": 16,
+        "rank_1_oth": 93,
+        "rank_1_cov_oth": 109,
+        "DS": true,
+        "cover_deficit": 0,
+        "intersection_dim": 0,
+        "no_constant": {
+          "rank_all": 108,
+          "rank_cov_plus_rank_oth": 108
+        },
+        "min_kept_sv": 2.3541020890334385,
+        "max_dropped_sv": 2.254532106546875e-14
+      },
+      "10": {
+        "n_modes": 152,
+        "N_cov": 20,
+        "rank_cov": 20,
+        "rank_1_oth": 121,
+        "rank_1_cov_oth": 141,
+        "DS": true,
+        "cover_deficit": 0,
+        "intersection_dim": 0,
+        "no_constant": {
+          "rank_all": 140,
+          "rank_cov_plus_rank_oth": 140
+        },
+        "min_kept_sv": 3.007522952135441,
+        "max_dropped_sv": 3.200722568914103e-14
+      },
+      "12": {
+        "n_modes": 188,
+        "N_cov": 24,
+        "rank_cov": 24,
+        "rank_1_oth": 145,
+        "rank_1_cov_oth": 165,
+        "DS": false,
+        "cover_deficit": 0,
+        "intersection_dim": 4,
+        "no_constant": {
+          "rank_all": 164,
+          "rank_cov_plus_rank_oth": 168
+        },
+        "min_kept_sv": 3.461617179189556,
+        "max_dropped_sv": 5.5177271269217165e-14
+      }
+    }
+  }
+}

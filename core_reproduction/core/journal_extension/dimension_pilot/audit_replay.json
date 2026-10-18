@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "slots": 24,
+  "active_witnesses": 132,
+  "nonzero_minors": 22,
+  "replay_precision_dps": 65,
+  "manifest_files": 55,
+  "audit_script_sha256": "4ebab1ac7927446a8af17968d0980805214ced9bd25b58403856a649cb3e18dc",
+  "run_manifest_sha256": "022456a4c99ec5de2a7114a12cb09158c1f7053a3c387546610fa8bec687cb1d"
+}

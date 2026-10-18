@@ -1,0 +1,114 @@
+{
+  "python": "3.9.6",
+  "sympy": "1.13.3",
+  "script_sha256": "825537350d3d9fb58168bde6dd85396fe89133c4cf4dfcc246b2c27ba5677f81",
+  "representative": {
+    "normal_form": "RX0(a) RX1(b) RX0X1(c), initial |00>, local XYZ, unit weights",
+    "beta_order": [
+      "theta0",
+      "theta1+theta5",
+      "theta4",
+      "theta6"
+    ],
+    "beta_star": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "theta_star": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "point_order": [
+      "phi0(x)",
+      "phi0(xprime)",
+      "phi1(x)",
+      "phi1(xprime)"
+    ],
+    "points": [
+      [
+        "pi/6",
+        "pi/2",
+        "pi/6",
+        "2*pi/3"
+      ],
+      [
+        "pi/6",
+        "pi/3",
+        "pi/3",
+        "pi/2"
+      ],
+      [
+        "pi/6",
+        "2*pi/3",
+        "pi/6",
+        "5*pi/6"
+      ],
+      [
+        "2*pi/3",
+        "pi/6",
+        "pi/6",
+        "pi/2"
+      ]
+    ],
+    "scaled_jacobian": [
+      [
+        "0",
+        "0",
+        "sqrt(3)/12",
+        "-sqrt(3)/2"
+      ],
+      [
+        "sqrt(3)/24",
+        "sqrt(3)/24",
+        "sqrt(3)/12",
+        "0"
+      ],
+      [
+        "-sqrt(3)/4",
+        "-1/2",
+        "-11/24 + sqrt(3)/2",
+        "-1/2"
+      ],
+      [
+        "-sqrt(3)/4",
+        "-1/4",
+        "11/24 + sqrt(3)/2",
+        "1/2"
+      ]
+    ],
+    "det_scaled": "-13/512 + sqrt(3)/768",
+    "det_jacobian": "pi**3*(-13/512 + sqrt(3)/768)",
+    "nonzero_proof": "sqrt(3)<2, hence 2*sqrt(3)-39<0; pi>0",
+    "null_basis": [
+      "e2",
+      "e3",
+      "e7",
+      "e1-e5"
+    ],
+    "generic_rank_lower": 4,
+    "generic_rank_upper": 4,
+    "scope": "smooth factorization dimension; not every-point rank, gate count, or shot cost"
+  },
+  "counterexamples": {
+    "overlift": {
+      "actual_d2": "0",
+      "lifted_derivative": "-2*(cos(a) - cos(ap))*sin(a) + 2*(cos(a) - cos(ap))*sin(ap)",
+      "infeasible_nonzero_witness": "2",
+      "conclusion": "constant coefficients alone do not license lifted ACTIVE"
+    },
+    "common_angle_bias": {
+      "nonzero_derivative": "1 - sqrt(3)/2"
+    },
+    "inverse_pair": "exact identity, but also detected by adjacent same-axis fusion"
+  },
+  "passed": true,
+  "survey_run": false
+}

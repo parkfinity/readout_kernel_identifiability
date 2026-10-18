@@ -1,0 +1,23 @@
+\begin{corollary}[Instantaneous kernel-loss gradient space]
+\label{cor:gradientspace}
+Under Theorem~\ref{thm:gram}, set $g(\theta)=\operatorname{vech}G(\theta)$
+and $J_g=D_\theta g$. For a differentiable loss depending on $\theta$
+only through finitely many fixed-input kernel evaluations,
+\begin{equation}
+ \nabla_\theta L\in\operatorname{im}J_g(\theta)^T
+       =(\ker J_g(\theta))^\perp.
+\end{equation}
+This space has dimension $\operatorname{rank}J_g(\theta)\le r$,
+with equality on the regular parameter set.
+\end{corollary}
+\begin{proof}
+Each evaluated kernel is a smooth function of $g$, so the loss factors
+as $L=\ell\circ g$. The chain rule gives
+$\nabla_\theta L=J_g^T\nabla_g\ell$; the orthogonal-complement
+identity follows from finite-dimensional linear algebra.
+\end{proof}
+This is an instantaneous constraint, not confinement to one fixed
+$r$-dimensional linear subspace along training. The subspace can rotate
+with $\theta$; finite steps, momentum and preconditioning need not stay
+in it. Direct parameter regularization can add components outside it.
+Nor does this imply $r$ circuit evaluations suffice for a gradient.

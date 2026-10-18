@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "checks": {
+    "two_local_environments_metric_summary.json": true,
+    "two_local_environments_readout_summary.json": true,
+    "two_local_environments_finite_shots.json": true,
+    "two_local_environments_exact_controls/summary.json": true,
+    "two_local_environments_certificate_recheck.json": true,
+    "two_local_environments_strong_baseline_followup/one_basis_baselines.json": true,
+    "two_local_environments_strong_baseline_followup/finite_shot_baselines.json": true,
+    "two_local_environments_correlation_control.json": true,
+    "correlation_minor_134217689": true,
+    "correlation_minor_134217649": true,
+    "all_metric_rank_tolerances_stable": true,
+    "all_metric_heldout_ranks_stable": true,
+    "20_full_rank_certificates": true,
+    "engine_copy_unmodified": true,
+    "exact_engine_copy_unmodified": true
+  },
+  "local_runs": [
+    "20261004T142130Z",
+    "20261004T142623Z"
+  ],
+  "environments": [
+    {
+      "python": "3.9.6",
+      "numpy": "1.24.4",
+      "sympy": "1.14.0",
+      "platform": "macOS-26.7-arm64-arm-64bit"
+    },
+    {
+      "python": "3.9.6",
+      "numpy": "1.24.4",
+      "sympy": "1.13.3",
+      "platform": "macOS-26.7-arm64-arm-64bit"
+    }
+  ],
+  "scope": "Two local Python environments, not a Linux server or hardware replay"
+}

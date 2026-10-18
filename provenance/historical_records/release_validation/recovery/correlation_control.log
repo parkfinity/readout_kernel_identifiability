@@ -1,0 +1,47 @@
+{
+  "setting": "hubregtsen_n4_l1_Z_and_ZZ_correlations",
+  "K": 8,
+  "measurement_bases": [
+    "ZZZZ"
+  ],
+  "observables": [
+    "IIIZ",
+    "IIZI",
+    "IIZZ",
+    "IZII",
+    "IZIZ",
+    "IZZI",
+    "ZIII",
+    "ZIIZ",
+    "ZIZI",
+    "ZZII"
+  ],
+  "metric_weights": [
+    "71/1745",
+    "98/1745",
+    "107/1745",
+    "152/1745",
+    "161/1745",
+    "34/349",
+    "233/1745",
+    "242/1745",
+    "251/1745",
+    "52/349"
+  ],
+  "lower_bound": 4,
+  "upper_bound": 4,
+  "certified_generic_rank": 4,
+  "arithmetic": "Exact nonzero finite-field minors of rational Fourier coefficients. Finite-field zero is not an upper bound.",
+  "elapsed_seconds": 0.010580541999999998,
+  "upper_proof": "Exact feature expansions contain no theta_4,...,theta_7; also all final CRZ gates commute with Z strings.",
+  "comparison": {
+    "local_Z_single_features": 4,
+    "augmented_Z_features": 10,
+    "initial_basis_settings": 1,
+    "augmented_basis_settings": 1,
+    "local_Z_diagonal_metric_rank": 2,
+    "local_Z_best_dense_metric_rank": 3,
+    "augmented_readout_generic_rank": 4
+  },
+  "scope": "Additional correlations require joint bit strings or joint estimates; not reconstructible from saved marginal means alone. Rank recovery, not equal-precision shot reduction."
+}

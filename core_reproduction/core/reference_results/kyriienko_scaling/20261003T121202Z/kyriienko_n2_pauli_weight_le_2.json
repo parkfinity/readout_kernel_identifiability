@@ -1,0 +1,1124 @@
+{
+  "setting": "kyriienko_n2_pauli_weight_le_2",
+  "family": "kyriienko_nonlinear_encoding_circuit",
+  "n": 2,
+  "readout": "pauli_weight_le_2",
+  "K": 6,
+  "conjecture_3n_minus_2": 4,
+  "observables": 15,
+  "ir_sha256": "0dd2293e29e836cf0b306427d6c45c776445fb6f714a7b0a7dff91212e4d27ad",
+  "structure": {
+    "formula_equivalent": true,
+    "kappa": [
+      {
+        "qubit": 0,
+        "feature": [
+          0
+        ],
+        "kappa": 6
+      },
+      {
+        "qubit": 1,
+        "feature": [
+          1
+        ],
+        "kappa": 6
+      }
+    ],
+    "fixed_frequency": true,
+    "kyriform_euler_blocks": true,
+    "each_parameter_once": true,
+    "entangler": [
+      [
+        0,
+        1
+      ]
+    ],
+    "entangler_commutes_Z0": true,
+    "entangler_commutes_X_last": true,
+    "unit_weights": true,
+    "readout_words": 15
+  },
+  "certified_lower_bound": {
+    "value": 0,
+    "method": "nonzero exact minor of the d^2 Jacobian at an exact feasible point",
+    "theta_point": {
+      "u": [
+        "2/5",
+        "1/2",
+        "4/7",
+        "5/8",
+        "2/3",
+        "7/10"
+      ],
+      "attempt": 0,
+      "formula": "theta_k = 4*arctan(u_k) = 2*arctan(t_k), t_k = 2u_k/(1-u_k^2); exp(i theta_k/2) = (1+i u_k)^2/(1+u_k^2) is a Gaussian rational"
+    },
+    "input_points": [
+      {
+        "s": [
+          "1/2",
+          "5/3"
+        ],
+        "x": [
+          "3/5",
+          "-8/17"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "4/5",
+          "3/4"
+        ],
+        "x": [
+          "9/41",
+          "7/25"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "1/2",
+          "3"
+        ],
+        "x": [
+          "3/5",
+          "-4/5"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "4/3",
+          "1/3"
+        ],
+        "x": [
+          "-7/25",
+          "4/5"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "3",
+          "5/4"
+        ],
+        "x": [
+          "-4/5",
+          "-9/41"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "5/2",
+          "4"
+        ],
+        "x": [
+          "-21/29",
+          "-15/17"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "4",
+          "5/3"
+        ],
+        "x": [
+          "-15/17",
+          "-8/17"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "3/5",
+          "1/3"
+        ],
+        "x": [
+          "8/17",
+          "4/5"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "1/3",
+          "5/4"
+        ],
+        "x": [
+          "4/5",
+          "-9/41"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "4/5",
+          "5/2"
+        ],
+        "x": [
+          "9/41",
+          "-21/29"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      }
+    ],
+    "pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        8,
+        9
+      ]
+    ],
+    "minor_rows_pair_indices": [],
+    "minor_rows_pairs": [],
+    "minor_columns_theta": [],
+    "excluded_columns_theta": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "integer_minor_determinant": "1",
+    "integer_minor_digits": 1,
+    "row_scale_product": "1",
+    "rational_minor_determinant": "1",
+    "rational_minor_log10_abs": 0.0,
+    "sympy_domainmatrix_det_equal": true,
+    "residues": {
+      "2305843009213693951": {
+        "det_mod_p": 1,
+        "bareiss_mod_p": 1
+      },
+      "4611686018427387847": {
+        "det_mod_p": 1,
+        "bareiss_mod_p": 1
+      },
+      "9223372036854775783": {
+        "det_mod_p": 1,
+        "bareiss_mod_p": 1
+      }
+    },
+    "selection": "row echelon modulo p=2^61-1 (exact integer arithmetic); determinant exact (Bareiss) and re-checked",
+    "jacobian_file": "kyriienko_n2_pauli_weight_le_2_jacobian.json.gz",
+    "jacobian_payload_sha256": "97379f50ff1cc65a0f2fea4d47fb3407d805f227886319fa937b6bbd840a1b12",
+    "attempts": [
+      {
+        "theta_attempt": 0,
+        "points": 10,
+        "pairs": 45,
+        "rank_mod_p": 0,
+        "field_upper": 0,
+        "exact_state_seconds": 0.0,
+        "rows_seconds": 0.0019442080000000583,
+        "selection_seconds": 2.8249999999951925e-05
+      }
+    ]
+  },
+  "upper_bound": {
+    "value": 0,
+    "machine_certificate": {
+      "deleted_coordinates": [
+        {
+          "parameter": 5,
+          "gate_index": 7,
+          "generator": "IZ",
+          "output_generator": "ZZ"
+        },
+        {
+          "parameter": 4,
+          "gate_index": 6,
+          "generator": "IX",
+          "output_generator": "IX"
+        },
+        {
+          "parameter": 3,
+          "gate_index": 5,
+          "generator": "IZ",
+          "output_generator": "ZZ"
+        },
+        {
+          "parameter": 2,
+          "gate_index": 3,
+          "generator": "ZI",
+          "output_generator": "ZI"
+        },
+        {
+          "parameter": 1,
+          "gate_index": 2,
+          "generator": "XI",
+          "output_generator": "XX"
+        },
+        {
+          "parameter": 0,
+          "gate_index": 1,
+          "generator": "ZI",
+          "output_generator": "ZI"
+        }
+      ],
+      "virtual_fields": [
+        {
+          "qubit": 0,
+          "axis": "X",
+          "params": [
+            0,
+            1,
+            2
+          ],
+          "output_generator": "XX"
+        },
+        {
+          "qubit": 0,
+          "axis": "Y",
+          "params": [
+            0,
+            1,
+            2
+          ],
+          "output_generator": "YX"
+        },
+        {
+          "qubit": 1,
+          "axis": "X",
+          "params": [
+            3,
+            4,
+            5
+          ],
+          "output_generator": "IX"
+        },
+        {
+          "qubit": 1,
+          "axis": "Y",
+          "params": [
+            3,
+            4,
+            5
+          ],
+          "output_generator": "ZY"
+        }
+      ],
+      "family_rank_at_theta_star": 6,
+      "upper": 0,
+      "exact_null_vectors_at_theta_star": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "3696/4225",
+          "-49128/105625",
+          "25872/105625",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "2047/4225",
+          "88704/105625",
+          "14329/105625",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "14280/22201",
+          "-2039880/3751969",
+          "1699320/3751969"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "16999/22201",
+          "1713600/3751969",
+          "2022881/3751969"
+        ]
+      ],
+      "seconds": 0.004080458000000009,
+      "logic": "Each deleted angle is globally inactive (transported generator P with [Omega,P(x)I+I(x)P]=0, exact Pauli algebra). Each virtual field v(theta) obeys J(theta)v(theta)=0 for all theta (SymPy Euler identity + exact two-copy invariance of the transported inserted generator). Family rank m at theta* is <= its generic rank, so generic r <= K-m (analyticity)."
+    },
+    "manuscript_value": 0,
+    "manuscript_reference": "family_extension.tex (k = n: all final variational parameters invisible to full Pauli distance, r = 0) and fourier_gram.tex Prop. IC"
+  },
+  "certified_r": 0,
+  "status": "CERTIFIED_EQUAL",
+  "interval": [
+    0,
+    0
+  ],
+  "exact_consistency_at_theta_star": {
+    "null_vectors_annihilate_all_rows": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "exact_rank_at_theta_star": 0,
+    "note": "one-point consistency (rank at theta* equals the certified generic value), not an extra proof"
+  },
+  "cross_checks": {
+    "features_exact_vs_float_ir_engine_max_abs": 2.3314683517128287e-15,
+    "features_exact_vs_dense_source_statevector_max_abs": 6.661338147750939e-16,
+    "features_exact_vs_qiskit_source_statevector_max_abs": 7.771561172376096e-16,
+    "gradient_exact_vs_float_tangent_max_abs": 6.106226635438361e-16,
+    "exact_d2_first_pairs": [
+      "11602025497405054895102599752/1513418030977481842041015625",
+      "2819609543808/377149515625"
+    ]
+  },
+  "numerical_not_certified": {
+    "certified": false,
+    "label": "NOT a certificate (floating SVD / random-point residuals)",
+    "tolerance_relative": 1e-09,
+    "trials": [
+      {
+        "seed": 11,
+        "pairs": 60,
+        "rank": 0,
+        "sigma_max": 7.69813631099219e-15,
+        "reference_scale": 7.999993064796541,
+        "sigma_r_rel": null,
+        "sigma_r1_rel": 9.62267873064459e-16,
+        "singular_values_rel": [
+          9.62267873064459e-16,
+          6.90693991872148e-16,
+          5.971537258948116e-16,
+          4.585616780267696e-16,
+          8.51627438385117e-17,
+          4.520899605305968e-17
+        ],
+        "gauge_fields": [
+          {
+            "field": [
+              "deleted",
+              "5"
+            ],
+            "relative_residual": 8.495714561423094e-17,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 3.4685543994698767e-16
+          },
+          {
+            "field": [
+              "deleted",
+              "4"
+            ],
+            "relative_residual": 4.877232534249668e-16,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 5.480841571135996e-16
+          },
+          {
+            "field": [
+              "deleted",
+              "3"
+            ],
+            "relative_residual": 6.876282855424443e-16,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 4.805443657946366e-16
+          },
+          {
+            "field": [
+              "deleted",
+              "2"
+            ],
+            "relative_residual": 5.0000498385660525e-17,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 4.443585352757111e-16
+          },
+          {
+            "field": [
+              "deleted",
+              "1"
+            ],
+            "relative_residual": 6.103383314609801e-16,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 8.588122218101665e-16
+          },
+          {
+            "field": [
+              "deleted",
+              "0"
+            ],
+            "relative_residual": 9.414076188439903e-16,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 6.639846801074224e-16
+          },
+          {
+            "field": [
+              "virtual",
+              "0",
+              "X"
+            ],
+            "relative_residual": 6.664764813257374e-16,
+            "control": "first component doubled",
+            "control_relative_residual": 8.422146341720695e-16
+          },
+          {
+            "field": [
+              "virtual",
+              "0",
+              "Y"
+            ],
+            "relative_residual": 6.671758241273039e-16,
+            "control": "first component doubled",
+            "control_relative_residual": 8.42680478519099e-16
+          },
+          {
+            "field": [
+              "virtual",
+              "1",
+              "X"
+            ],
+            "relative_residual": 4.794129940050642e-16,
+            "control": "first component doubled",
+            "control_relative_residual": 5.541600646373184e-16
+          },
+          {
+            "field": [
+              "virtual",
+              "1",
+              "Y"
+            ],
+            "relative_residual": 6.070365675640535e-16,
+            "control": "first component doubled",
+            "control_relative_residual": 6.690243724479822e-16
+          }
+        ]
+      },
+      {
+        "seed": 12,
+        "pairs": 60,
+        "rank": 0,
+        "sigma_max": 1.0354925749220652e-14,
+        "reference_scale": 7.999970145792067,
+        "sigma_r_rel": null,
+        "sigma_r1_rel": 1.2943705489535205e-15,
+        "singular_values_rel": [
+          1.2943705489535205e-15,
+          9.428731383489428e-16,
+          6.804564869980059e-16,
+          4.338022311212399e-16,
+          1.0260779989314862e-16,
+          3.2724965092572024e-17
+        ],
+        "gauge_fields": [
+          {
+            "field": [
+              "deleted",
+              "5"
+            ],
+            "relative_residual": 3.329554754622844e-17,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 5.103259753267906e-16
+          },
+          {
+            "field": [
+              "deleted",
+              "4"
+            ],
+            "relative_residual": 7.230130702451276e-16,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 5.737480862166404e-16
+          },
+          {
+            "field": [
+              "deleted",
+              "3"
+            ],
+            "relative_residual": 4.401924799795047e-16,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 3.0930755940937924e-16
+          },
+          {
+            "field": [
+              "deleted",
+              "2"
+            ],
+            "relative_residual": 1.0413932572420065e-16,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 6.615427346981044e-16
+          },
+          {
+            "field": [
+              "deleted",
+              "1"
+            ],
+            "relative_residual": 9.19836151355744e-16,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 1.0745451349734085e-15
+          },
+          {
+            "field": [
+              "deleted",
+              "0"
+            ],
+            "relative_residual": 1.2855505070651415e-15,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 9.066468015121365e-16
+          },
+          {
+            "field": [
+              "virtual",
+              "0",
+              "X"
+            ],
+            "relative_residual": 9.317733100586309e-16,
+            "control": "first component doubled",
+            "control_relative_residual": 1.1589553982962824e-15
+          },
+          {
+            "field": [
+              "virtual",
+              "0",
+              "Y"
+            ],
+            "relative_residual": 9.625028556942955e-16,
+            "control": "first component doubled",
+            "control_relative_residual": 1.1604177902714396e-15
+          },
+          {
+            "field": [
+              "virtual",
+              "1",
+              "X"
+            ],
+            "relative_residual": 3.88042986189012e-16,
+            "control": "first component doubled",
+            "control_relative_residual": 4.259632313888841e-16
+          },
+          {
+            "field": [
+              "virtual",
+              "1",
+              "Y"
+            ],
+            "relative_residual": 7.092602978551749e-16,
+            "control": "first component doubled",
+            "control_relative_residual": 6.896166433848629e-16
+          }
+        ]
+      },
+      {
+        "seed": 13,
+        "pairs": 60,
+        "rank": 0,
+        "sigma_max": 7.847481225724177e-15,
+        "reference_scale": 7.998692045113663,
+        "sigma_r_rel": null,
+        "sigma_r1_rel": 9.81095556806458e-16,
+        "singular_values_rel": [
+          9.81095556806458e-16,
+          9.017897117713279e-16,
+          6.523515675956997e-16,
+          5.018828986560545e-16,
+          7.233314178210448e-17,
+          5.796158039892532e-17
+        ],
+        "gauge_fields": [
+          {
+            "field": [
+              "deleted",
+              "5"
+            ],
+            "relative_residual": 7.116106198739436e-17,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 3.6409736651090255e-16
+          },
+          {
+            "field": [
+              "deleted",
+              "4"
+            ],
+            "relative_residual": 5.251042986360346e-16,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 6.054567725550775e-16
+          },
+          {
+            "field": [
+              "deleted",
+              "3"
+            ],
+            "relative_residual": 6.876021890315972e-16,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 4.873821948739675e-16
+          },
+          {
+            "field": [
+              "deleted",
+              "2"
+            ],
+            "relative_residual": 6.563159150675456e-17,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 6.127254680503137e-16
+          },
+          {
+            "field": [
+              "deleted",
+              "1"
+            ],
+            "relative_residual": 8.695227911953691e-16,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 9.22581174333609e-16
+          },
+          {
+            "field": [
+              "deleted",
+              "0"
+            ],
+            "relative_residual": 9.735713810451775e-16,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 6.906280416642353e-16
+          },
+          {
+            "field": [
+              "virtual",
+              "0",
+              "X"
+            ],
+            "relative_residual": 8.301789592286803e-16,
+            "control": "first component doubled",
+            "control_relative_residual": 9.27627584570301e-16
+          },
+          {
+            "field": [
+              "virtual",
+              "0",
+              "Y"
+            ],
+            "relative_residual": 8.566273114979867e-16,
+            "control": "first component doubled",
+            "control_relative_residual": 9.003202512449305e-16
+          },
+          {
+            "field": [
+              "virtual",
+              "1",
+              "X"
+            ],
+            "relative_residual": 5.121193756597656e-16,
+            "control": "first component doubled",
+            "control_relative_residual": 5.969010706175093e-16
+          },
+          {
+            "field": [
+              "virtual",
+              "1",
+              "Y"
+            ],
+            "relative_residual": 5.228839362619246e-16,
+            "control": "first component doubled",
+            "control_relative_residual": 6.320703986670121e-16
+          }
+        ]
+      },
+      {
+        "seed": 14,
+        "pairs": 60,
+        "rank": 0,
+        "sigma_max": 7.852485988572895e-15,
+        "reference_scale": 7.99672044383216,
+        "sigma_r_rel": null,
+        "sigma_r1_rel": 9.819632990458592e-16,
+        "singular_values_rel": [
+          9.819632990458592e-16,
+          9.044911245136196e-16,
+          5.502137853676552e-16,
+          4.3855340179775353e-16,
+          8.238856705604409e-17,
+          6.85639848385782e-17
+        ],
+        "gauge_fields": [
+          {
+            "field": [
+              "deleted",
+              "5"
+            ],
+            "relative_residual": 8.187183324013548e-17,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 3.9017561196237237e-16
+          },
+          {
+            "field": [
+              "deleted",
+              "4"
+            ],
+            "relative_residual": 5.534035370663495e-16,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 5.067921537588951e-16
+          },
+          {
+            "field": [
+              "deleted",
+              "3"
+            ],
+            "relative_residual": 4.980273276380942e-16,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 3.625880695531428e-16
+          },
+          {
+            "field": [
+              "deleted",
+              "2"
+            ],
+            "relative_residual": 7.29606301720934e-17,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 6.764071766441151e-16
+          },
+          {
+            "field": [
+              "deleted",
+              "1"
+            ],
+            "relative_residual": 9.56649518690643e-16,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 9.573881378501384e-16
+          },
+          {
+            "field": [
+              "deleted",
+              "0"
+            ],
+            "relative_residual": 8.985644443646115e-16,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 6.291720504106322e-16
+          },
+          {
+            "field": [
+              "virtual",
+              "0",
+              "X"
+            ],
+            "relative_residual": 7.504153018092583e-16,
+            "control": "first component doubled",
+            "control_relative_residual": 8.484139665843377e-16
+          },
+          {
+            "field": [
+              "virtual",
+              "0",
+              "Y"
+            ],
+            "relative_residual": 9.426889680862457e-16,
+            "control": "first component doubled",
+            "control_relative_residual": 9.439955528000957e-16
+          },
+          {
+            "field": [
+              "virtual",
+              "1",
+              "X"
+            ],
+            "relative_residual": 5.200348576702129e-16,
+            "control": "first component doubled",
+            "control_relative_residual": 5.040435592162087e-16
+          },
+          {
+            "field": [
+              "virtual",
+              "1",
+              "Y"
+            ],
+            "relative_residual": 4.326756139576214e-16,
+            "control": "first component doubled",
+            "control_relative_residual": 4.788902810216586e-16
+          }
+        ]
+      }
+    ],
+    "rank": 0,
+    "min_rank": 0,
+    "max_gauge_relative_residual": 1.2855505070651415e-15,
+    "min_control_relative_residual": 3.0930755940937924e-16,
+    "note": "relative residual ||J v|| / (max(||J||_F, max d^2) ||v||); controls are perturbed fields that should NOT be null (they are null only when J itself vanishes)"
+  },
+  "timings_seconds": {
+    "structure_checks": 0.003907082999999867,
+    "upper_bound_certificate": 0.004082584000000056,
+    "exact_states_total_cache": 0.004607666000000288,
+    "bareiss_det": 1.6700000005087645e-07,
+    "sympy_det": 8.299999998406804e-08,
+    "exact_null_vector_check": 0.0021283340000000095,
+    "cross_checks": 0.005684958000000018,
+    "numerical_checks": 0.004181666000000028,
+    "total": 0.022730249999999952
+  },
+  "peak_rss_mb_process": 121.21875,
+  "timing_note": "exact states/features are computed once per n for the union (weight<=2) readout and cached; exact_states_total_cache is cumulative and is charged to the first readout processed at that n",
+  "source_route": {
+    "module": "kyriienko_nonlinear_encoding_circuit",
+    "entry": {
+      "module": "kyriienko_nonlinear_encoding_circuit",
+      "class": "KyriienkoEncodingCircuit",
+      "path": "vendor/src/squlearn/encoding_circuit/circuit_library/kyriienko_nonlinear_encoding_circuit.py",
+      "class_line": 13,
+      "constructor_line": 68,
+      "has_layers": false,
+      "configuration_required": null
+    },
+    "constructor_kwargs": {
+      "num_qubits": 2
+    },
+    "signature": "(self, num_qubits: int, num_features: int = None, encoding_style: str = 'chebyshev_tower', variational_arrangement: str = 'HEA', num_encoding_layers: int = 1, num_variational_layers: int = 1, rotation_gate: str = 'ry', block_width: int = 2, block_depth: int = 1) -> None",
+    "get_params": "{'num_qubits': 2, 'num_features': None, 'num_encoding_layers': 1, 'num_variational_layers': 1, 'variational_arrangement': 'HEA', 'encoding_style': 'chebyshev_tower', 'block_width': 2, 'block_depth': 1, 'rotation_gate': 'ry'}",
+    "initial_parameters": "generate_initial_parameters(num_features=2, seed=0)",
+    "vendored_commit": "0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4",
+    "qiskit": "1.2.4",
+    "compile": {
+      "optimization_level": 3,
+      "seed_transpiler": 71,
+      "approximation_degree": 1.0,
+      "num_processes": 1,
+      "basis_gates": [
+        "h",
+        "cx",
+        "rx",
+        "ry",
+        "rz",
+        "rxx",
+        "ryy",
+        "rzz",
+        "rzx"
+      ]
+    },
+    "native_operations": 11,
+    "global_phase_ignored": "0.0",
+    "seconds": {
+      "construct": 0.014682000000000084,
+      "transpile": 0.007413874999999903,
+      "adapt": 0.0038013750000001068
+    }
+  }
+}

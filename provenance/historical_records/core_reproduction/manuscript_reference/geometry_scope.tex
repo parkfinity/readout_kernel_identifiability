@@ -1,0 +1,51 @@
+\subsection{State geometry is not kernel sensitivity}
+\label{sec:qfi_scope}
+The relation to state geometry can be stated without identifying two
+different notions of inactivity. For a differentiable normalized pure
+state $|\psi_\theta(x)\rangle$, use the SLD-normalized QFI
+\begin{equation}
+ F_{ij}(x)=4\operatorname{Re}\langle\partial_i\psi_x|
+ (I-|\psi_x\rangle\langle\psi_x|)|\partial_j\psi_x\rangle.
+\end{equation}
+The real quantum geometric tensor convention in Ref.~\cite{haug}
+differs by the factor four, which does not affect rank. At a fixed
+parameter assignment, let $F_{\mathcal X}=\sum_{x\in\mathcal X}F(x)$
+for a finite input set, and let $J_{\mathcal X}$ contain the gradients
+of all pairwise kernel entries on that set. If the differentiable
+kernel depends on $\theta$ only through these states and uses a fixed
+readout and metric, then
+\begin{equation}
+ \ker F_{\mathcal X}\subseteq\ker J_{\mathcal X},\qquad
+ \operatorname{rank}J_{\mathcal X}\leq\operatorname{rank}F_{\mathcal X}.
+ \label{eq:qfi_inclusion}
+\end{equation}
+Indeed, a real direction $v$ in the left null space has zero horizontal
+state tangent at every input, since $v^TF_{\mathcal X}v$ is a sum of
+nonnegative squared norms. Each density operator therefore has zero
+directional derivative, and the chain rule gives the inclusion.
+This is a local, sample-specific implication, not a new general
+completeness result or a global inactivity certificate.
+
+The inclusion can be strict even for one qubit. Consider
+\begin{align}
+ |\psi_\theta(x)\rangle&=R_y(\theta)R_y(x)|0\rangle,\\
+ F_{\theta\theta}(x)&=1,\qquad
+ k^{\rm fid}_\theta(x,x')=\cos^2[(x-x')/2].
+\end{align}
+The state QFI has rank one, although the fidelity kernel is globally
+independent of $\theta$. The full XYZ feature vector is
+$(\sin(\theta+x),0,\cos(\theta+x))$, whose squared Euclidean
+distance is $2-2\cos(x-x')$, also independent of $\theta$.
+With only Z readout, the squared distance instead is
+\begin{equation}
+ d_Z^2=[\cos(\theta+x)-\cos(\theta+x')]^2.
+\end{equation}
+Its $\theta$ derivative equals 2 at $(\theta,x,x')=(0,0,\pi/2)$.
+Thus changing the readout can restore kernel sensitivity without
+changing the prepared-state QFI at all. An input-independent output
+unitary cancels in the fidelity overlap, not necessarily in the state
+geometry. The compute--uncompute \emph{output state} can itself be
+parameter independent, but it is a different state family from
+$|\psi_\theta(x)\rangle$. The exact identities above are checked in the
+reproduction script; they clarify the preservation contract, rather
+than constituting a matched implementation of state-based pruning.

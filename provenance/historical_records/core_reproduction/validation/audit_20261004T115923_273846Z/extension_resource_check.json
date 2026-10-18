@@ -1,0 +1,1229 @@
+{
+  "passed": true,
+  "settings": 30,
+  "resource_positive_settings": 0,
+  "scope": "Recomputed original strong optimizer; certificate validity checked separately.",
+  "rows": [
+    {
+      "id": "yz_cx_encoding_circuit_n2_l1_local_xyz",
+      "inactive": [
+        1
+      ],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 3,
+          "pauli_rotation_tasks": 4,
+          "trainable_angle_tasks": 3,
+          "trailing_clifford_gates": 1,
+          "angle_coefficient_rank": 3,
+          "two_shift_feature_evaluations_per_input": 6
+        },
+        "global_plus_commutant": {
+          "symbols": 3,
+          "pauli_rotation_tasks": 4,
+          "trainable_angle_tasks": 3,
+          "trailing_clifford_gates": 1,
+          "angle_coefficient_rank": 3,
+          "two_shift_feature_evaluations_per_input": 6
+        },
+        "certified_zero": {
+          "symbols": 3,
+          "pauli_rotation_tasks": 4,
+          "trainable_angle_tasks": 3,
+          "trailing_clifford_gates": 1,
+          "angle_coefficient_rank": 3,
+          "two_shift_feature_evaluations_per_input": 6
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n2_l1_local_z",
+      "inactive": [
+        1,
+        3
+      ],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 2,
+          "pauli_rotation_tasks": 4,
+          "trainable_angle_tasks": 2,
+          "trailing_clifford_gates": 1,
+          "angle_coefficient_rank": 2,
+          "two_shift_feature_evaluations_per_input": 4
+        },
+        "global_plus_commutant": {
+          "symbols": 2,
+          "pauli_rotation_tasks": 2,
+          "trainable_angle_tasks": 2,
+          "trailing_clifford_gates": 1,
+          "angle_coefficient_rank": 2,
+          "two_shift_feature_evaluations_per_input": 4
+        },
+        "certified_zero": {
+          "symbols": 2,
+          "pauli_rotation_tasks": 2,
+          "trainable_angle_tasks": 2,
+          "trailing_clifford_gates": 1,
+          "angle_coefficient_rank": 2,
+          "two_shift_feature_evaluations_per_input": 4
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n2_l1_pauli_weight_le_2",
+      "inactive": [
+        1,
+        3
+      ],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 2,
+          "pauli_rotation_tasks": 4,
+          "trainable_angle_tasks": 2,
+          "trailing_clifford_gates": 1,
+          "angle_coefficient_rank": 2,
+          "two_shift_feature_evaluations_per_input": 4
+        },
+        "global_plus_commutant": {
+          "symbols": 2,
+          "pauli_rotation_tasks": 4,
+          "trainable_angle_tasks": 2,
+          "trailing_clifford_gates": 1,
+          "angle_coefficient_rank": 2,
+          "two_shift_feature_evaluations_per_input": 4
+        },
+        "certified_zero": {
+          "symbols": 2,
+          "pauli_rotation_tasks": 4,
+          "trainable_angle_tasks": 2,
+          "trailing_clifford_gates": 1,
+          "angle_coefficient_rank": 2,
+          "two_shift_feature_evaluations_per_input": 4
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n2_l2_local_xyz",
+      "inactive": [
+        7
+      ],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 7,
+          "pauli_rotation_tasks": 8,
+          "trainable_angle_tasks": 7,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 7,
+          "two_shift_feature_evaluations_per_input": 14
+        },
+        "global_plus_commutant": {
+          "symbols": 7,
+          "pauli_rotation_tasks": 8,
+          "trainable_angle_tasks": 7,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 7,
+          "two_shift_feature_evaluations_per_input": 14
+        },
+        "certified_zero": {
+          "symbols": 7,
+          "pauli_rotation_tasks": 8,
+          "trainable_angle_tasks": 7,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 7,
+          "two_shift_feature_evaluations_per_input": 14
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n2_l2_local_z",
+      "inactive": [
+        5,
+        7
+      ],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 6,
+          "pauli_rotation_tasks": 8,
+          "trainable_angle_tasks": 6,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 6,
+          "two_shift_feature_evaluations_per_input": 12
+        },
+        "global_plus_commutant": {
+          "symbols": 6,
+          "pauli_rotation_tasks": 6,
+          "trainable_angle_tasks": 6,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 6,
+          "two_shift_feature_evaluations_per_input": 12
+        },
+        "certified_zero": {
+          "symbols": 6,
+          "pauli_rotation_tasks": 6,
+          "trainable_angle_tasks": 6,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 6,
+          "two_shift_feature_evaluations_per_input": 12
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n2_l2_pauli_weight_le_2",
+      "inactive": [
+        5,
+        7
+      ],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 6,
+          "pauli_rotation_tasks": 8,
+          "trainable_angle_tasks": 6,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 6,
+          "two_shift_feature_evaluations_per_input": 12
+        },
+        "global_plus_commutant": {
+          "symbols": 6,
+          "pauli_rotation_tasks": 8,
+          "trainable_angle_tasks": 6,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 6,
+          "two_shift_feature_evaluations_per_input": 12
+        },
+        "certified_zero": {
+          "symbols": 6,
+          "pauli_rotation_tasks": 8,
+          "trainable_angle_tasks": 6,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 6,
+          "two_shift_feature_evaluations_per_input": 12
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n4_l1_local_xyz",
+      "inactive": [
+        1,
+        5
+      ],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 6,
+          "pauli_rotation_tasks": 8,
+          "trainable_angle_tasks": 6,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 6,
+          "two_shift_feature_evaluations_per_input": 12
+        },
+        "global_plus_commutant": {
+          "symbols": 6,
+          "pauli_rotation_tasks": 8,
+          "trainable_angle_tasks": 6,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 6,
+          "two_shift_feature_evaluations_per_input": 12
+        },
+        "certified_zero": {
+          "symbols": 6,
+          "pauli_rotation_tasks": 8,
+          "trainable_angle_tasks": 6,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 6,
+          "two_shift_feature_evaluations_per_input": 12
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n4_l1_local_z",
+      "inactive": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 4,
+          "pauli_rotation_tasks": 8,
+          "trainable_angle_tasks": 4,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 4,
+          "two_shift_feature_evaluations_per_input": 8
+        },
+        "global_plus_commutant": {
+          "symbols": 4,
+          "pauli_rotation_tasks": 4,
+          "trainable_angle_tasks": 4,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 4,
+          "two_shift_feature_evaluations_per_input": 8
+        },
+        "certified_zero": {
+          "symbols": 4,
+          "pauli_rotation_tasks": 4,
+          "trainable_angle_tasks": 4,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 4,
+          "two_shift_feature_evaluations_per_input": 8
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n4_l1_pauli_weight_le_2",
+      "inactive": [
+        1,
+        5
+      ],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 6,
+          "pauli_rotation_tasks": 8,
+          "trainable_angle_tasks": 6,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 6,
+          "two_shift_feature_evaluations_per_input": 12
+        },
+        "global_plus_commutant": {
+          "symbols": 6,
+          "pauli_rotation_tasks": 8,
+          "trainable_angle_tasks": 6,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 6,
+          "two_shift_feature_evaluations_per_input": 12
+        },
+        "certified_zero": {
+          "symbols": 6,
+          "pauli_rotation_tasks": 8,
+          "trainable_angle_tasks": 6,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 6,
+          "two_shift_feature_evaluations_per_input": 12
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n4_l2_local_xyz",
+      "inactive": [
+        11,
+        15
+      ],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 14,
+          "pauli_rotation_tasks": 16,
+          "trainable_angle_tasks": 14,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 14,
+          "two_shift_feature_evaluations_per_input": 28
+        },
+        "global_plus_commutant": {
+          "symbols": 14,
+          "pauli_rotation_tasks": 16,
+          "trainable_angle_tasks": 14,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 14,
+          "two_shift_feature_evaluations_per_input": 28
+        },
+        "certified_zero": {
+          "symbols": 14,
+          "pauli_rotation_tasks": 16,
+          "trainable_angle_tasks": 14,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 14,
+          "two_shift_feature_evaluations_per_input": 28
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n4_l2_local_z",
+      "inactive": [
+        9,
+        11,
+        13,
+        15
+      ],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 12,
+          "pauli_rotation_tasks": 16,
+          "trainable_angle_tasks": 12,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 12,
+          "two_shift_feature_evaluations_per_input": 24
+        },
+        "global_plus_commutant": {
+          "symbols": 12,
+          "pauli_rotation_tasks": 12,
+          "trainable_angle_tasks": 12,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 12,
+          "two_shift_feature_evaluations_per_input": 24
+        },
+        "certified_zero": {
+          "symbols": 12,
+          "pauli_rotation_tasks": 12,
+          "trainable_angle_tasks": 12,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 12,
+          "two_shift_feature_evaluations_per_input": 24
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n4_l2_pauli_weight_le_2",
+      "inactive": [
+        11,
+        15
+      ],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 14,
+          "pauli_rotation_tasks": 16,
+          "trainable_angle_tasks": 14,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 14,
+          "two_shift_feature_evaluations_per_input": 28
+        },
+        "global_plus_commutant": {
+          "symbols": 14,
+          "pauli_rotation_tasks": 16,
+          "trainable_angle_tasks": 14,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 14,
+          "two_shift_feature_evaluations_per_input": 28
+        },
+        "certified_zero": {
+          "symbols": 14,
+          "pauli_rotation_tasks": 16,
+          "trainable_angle_tasks": 14,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 14,
+          "two_shift_feature_evaluations_per_input": 28
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n2_l1_local_xyz",
+      "inactive": [
+        0,
+        1
+      ],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 0,
+          "pauli_rotation_tasks": 2,
+          "trainable_angle_tasks": 0,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 0,
+          "two_shift_feature_evaluations_per_input": 0
+        },
+        "global_plus_commutant": {
+          "symbols": 0,
+          "pauli_rotation_tasks": 2,
+          "trainable_angle_tasks": 0,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 0,
+          "two_shift_feature_evaluations_per_input": 0
+        },
+        "certified_zero": {
+          "symbols": 0,
+          "pauli_rotation_tasks": 2,
+          "trainable_angle_tasks": 0,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 0,
+          "two_shift_feature_evaluations_per_input": 0
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n2_l1_local_z",
+      "inactive": [],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 2,
+          "pauli_rotation_tasks": 4,
+          "trainable_angle_tasks": 2,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 2,
+          "two_shift_feature_evaluations_per_input": 4
+        },
+        "global_plus_commutant": {
+          "symbols": 2,
+          "pauli_rotation_tasks": 4,
+          "trainable_angle_tasks": 2,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 2,
+          "two_shift_feature_evaluations_per_input": 4
+        },
+        "certified_zero": {
+          "symbols": 2,
+          "pauli_rotation_tasks": 4,
+          "trainable_angle_tasks": 2,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 2,
+          "two_shift_feature_evaluations_per_input": 4
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n2_l1_pauli_weight_le_2",
+      "inactive": [
+        0,
+        1
+      ],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 0,
+          "pauli_rotation_tasks": 2,
+          "trainable_angle_tasks": 0,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 0,
+          "two_shift_feature_evaluations_per_input": 0
+        },
+        "global_plus_commutant": {
+          "symbols": 0,
+          "pauli_rotation_tasks": 2,
+          "trainable_angle_tasks": 0,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 0,
+          "two_shift_feature_evaluations_per_input": 0
+        },
+        "certified_zero": {
+          "symbols": 0,
+          "pauli_rotation_tasks": 2,
+          "trainable_angle_tasks": 0,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 0,
+          "two_shift_feature_evaluations_per_input": 0
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n2_l2_local_xyz",
+      "inactive": [
+        2,
+        3
+      ],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 2,
+          "pauli_rotation_tasks": 6,
+          "trainable_angle_tasks": 2,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 2,
+          "two_shift_feature_evaluations_per_input": 4
+        },
+        "global_plus_commutant": {
+          "symbols": 2,
+          "pauli_rotation_tasks": 6,
+          "trainable_angle_tasks": 2,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 2,
+          "two_shift_feature_evaluations_per_input": 4
+        },
+        "certified_zero": {
+          "symbols": 2,
+          "pauli_rotation_tasks": 6,
+          "trainable_angle_tasks": 2,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 2,
+          "two_shift_feature_evaluations_per_input": 4
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n2_l2_local_z",
+      "inactive": [],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 4,
+          "pauli_rotation_tasks": 8,
+          "trainable_angle_tasks": 4,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 4,
+          "two_shift_feature_evaluations_per_input": 8
+        },
+        "global_plus_commutant": {
+          "symbols": 4,
+          "pauli_rotation_tasks": 8,
+          "trainable_angle_tasks": 4,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 4,
+          "two_shift_feature_evaluations_per_input": 8
+        },
+        "certified_zero": {
+          "symbols": 4,
+          "pauli_rotation_tasks": 8,
+          "trainable_angle_tasks": 4,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 4,
+          "two_shift_feature_evaluations_per_input": 8
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n2_l2_pauli_weight_le_2",
+      "inactive": [
+        2,
+        3
+      ],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 2,
+          "pauli_rotation_tasks": 6,
+          "trainable_angle_tasks": 2,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 2,
+          "two_shift_feature_evaluations_per_input": 4
+        },
+        "global_plus_commutant": {
+          "symbols": 2,
+          "pauli_rotation_tasks": 6,
+          "trainable_angle_tasks": 2,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 2,
+          "two_shift_feature_evaluations_per_input": 4
+        },
+        "certified_zero": {
+          "symbols": 2,
+          "pauli_rotation_tasks": 6,
+          "trainable_angle_tasks": 2,
+          "trailing_clifford_gates": 2,
+          "angle_coefficient_rank": 2,
+          "two_shift_feature_evaluations_per_input": 4
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n4_l1_local_xyz",
+      "inactive": [],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 8,
+          "pauli_rotation_tasks": 12,
+          "trainable_angle_tasks": 8,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 8,
+          "two_shift_feature_evaluations_per_input": 16
+        },
+        "global_plus_commutant": {
+          "symbols": 8,
+          "pauli_rotation_tasks": 12,
+          "trainable_angle_tasks": 8,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 8,
+          "two_shift_feature_evaluations_per_input": 16
+        },
+        "certified_zero": {
+          "symbols": 8,
+          "pauli_rotation_tasks": 12,
+          "trainable_angle_tasks": 8,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 8,
+          "two_shift_feature_evaluations_per_input": 16
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n4_l1_local_z",
+      "inactive": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 4,
+          "pauli_rotation_tasks": 8,
+          "trainable_angle_tasks": 4,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 4,
+          "two_shift_feature_evaluations_per_input": 8
+        },
+        "global_plus_commutant": {
+          "symbols": 4,
+          "pauli_rotation_tasks": 8,
+          "trainable_angle_tasks": 4,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 4,
+          "two_shift_feature_evaluations_per_input": 8
+        },
+        "certified_zero": {
+          "symbols": 4,
+          "pauli_rotation_tasks": 8,
+          "trainable_angle_tasks": 4,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 4,
+          "two_shift_feature_evaluations_per_input": 8
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n4_l1_pauli_weight_le_2",
+      "inactive": [],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 8,
+          "pauli_rotation_tasks": 12,
+          "trainable_angle_tasks": 8,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 8,
+          "two_shift_feature_evaluations_per_input": 16
+        },
+        "global_plus_commutant": {
+          "symbols": 8,
+          "pauli_rotation_tasks": 12,
+          "trainable_angle_tasks": 8,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 8,
+          "two_shift_feature_evaluations_per_input": 16
+        },
+        "certified_zero": {
+          "symbols": 8,
+          "pauli_rotation_tasks": 12,
+          "trainable_angle_tasks": 8,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 8,
+          "two_shift_feature_evaluations_per_input": 16
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n4_l2_local_xyz",
+      "inactive": [],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 16,
+          "pauli_rotation_tasks": 24,
+          "trainable_angle_tasks": 20,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 16,
+          "two_shift_feature_evaluations_per_input": 40
+        },
+        "global_plus_commutant": {
+          "symbols": 16,
+          "pauli_rotation_tasks": 24,
+          "trainable_angle_tasks": 20,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 16,
+          "two_shift_feature_evaluations_per_input": 40
+        },
+        "certified_zero": {
+          "symbols": 16,
+          "pauli_rotation_tasks": 24,
+          "trainable_angle_tasks": 20,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 16,
+          "two_shift_feature_evaluations_per_input": 40
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n4_l2_local_z",
+      "inactive": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 12,
+          "pauli_rotation_tasks": 20,
+          "trainable_angle_tasks": 16,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 12,
+          "two_shift_feature_evaluations_per_input": 32
+        },
+        "global_plus_commutant": {
+          "symbols": 12,
+          "pauli_rotation_tasks": 20,
+          "trainable_angle_tasks": 16,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 12,
+          "two_shift_feature_evaluations_per_input": 32
+        },
+        "certified_zero": {
+          "symbols": 12,
+          "pauli_rotation_tasks": 20,
+          "trainable_angle_tasks": 16,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 12,
+          "two_shift_feature_evaluations_per_input": 32
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n4_l2_pauli_weight_le_2",
+      "inactive": [],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 16,
+          "pauli_rotation_tasks": 24,
+          "trainable_angle_tasks": 20,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 16,
+          "two_shift_feature_evaluations_per_input": 40
+        },
+        "global_plus_commutant": {
+          "symbols": 16,
+          "pauli_rotation_tasks": 24,
+          "trainable_angle_tasks": 20,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 16,
+          "two_shift_feature_evaluations_per_input": 40
+        },
+        "certified_zero": {
+          "symbols": 16,
+          "pauli_rotation_tasks": 24,
+          "trainable_angle_tasks": 20,
+          "trailing_clifford_gates": 4,
+          "angle_coefficient_rank": 16,
+          "two_shift_feature_evaluations_per_input": 40
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n2_l1_local_xyz",
+      "inactive": [
+        2
+      ],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 5,
+          "pauli_rotation_tasks": 7,
+          "trainable_angle_tasks": 5,
+          "trailing_clifford_gates": 1,
+          "angle_coefficient_rank": 5,
+          "two_shift_feature_evaluations_per_input": 10
+        },
+        "global_plus_commutant": {
+          "symbols": 5,
+          "pauli_rotation_tasks": 7,
+          "trainable_angle_tasks": 5,
+          "trailing_clifford_gates": 1,
+          "angle_coefficient_rank": 5,
+          "two_shift_feature_evaluations_per_input": 10
+        },
+        "certified_zero": {
+          "symbols": 5,
+          "pauli_rotation_tasks": 7,
+          "trainable_angle_tasks": 5,
+          "trailing_clifford_gates": 1,
+          "angle_coefficient_rank": 5,
+          "two_shift_feature_evaluations_per_input": 10
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n2_l1_local_z",
+      "inactive": [
+        2,
+        5
+      ],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 4,
+          "pauli_rotation_tasks": 6,
+          "trainable_angle_tasks": 4,
+          "trailing_clifford_gates": 1,
+          "angle_coefficient_rank": 4,
+          "two_shift_feature_evaluations_per_input": 8
+        },
+        "global_plus_commutant": {
+          "symbols": 4,
+          "pauli_rotation_tasks": 6,
+          "trainable_angle_tasks": 4,
+          "trailing_clifford_gates": 1,
+          "angle_coefficient_rank": 4,
+          "two_shift_feature_evaluations_per_input": 8
+        },
+        "certified_zero": {
+          "symbols": 4,
+          "pauli_rotation_tasks": 6,
+          "trainable_angle_tasks": 4,
+          "trailing_clifford_gates": 1,
+          "angle_coefficient_rank": 4,
+          "two_shift_feature_evaluations_per_input": 8
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n2_l1_pauli_weight_le_2",
+      "inactive": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 0,
+          "pauli_rotation_tasks": 2,
+          "trainable_angle_tasks": 0,
+          "trailing_clifford_gates": 1,
+          "angle_coefficient_rank": 0,
+          "two_shift_feature_evaluations_per_input": 0
+        },
+        "global_plus_commutant": {
+          "symbols": 0,
+          "pauli_rotation_tasks": 2,
+          "trainable_angle_tasks": 0,
+          "trailing_clifford_gates": 1,
+          "angle_coefficient_rank": 0,
+          "two_shift_feature_evaluations_per_input": 0
+        },
+        "certified_zero": {
+          "symbols": 0,
+          "pauli_rotation_tasks": 2,
+          "trainable_angle_tasks": 0,
+          "trailing_clifford_gates": 1,
+          "angle_coefficient_rank": 0,
+          "two_shift_feature_evaluations_per_input": 0
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n4_l1_local_xyz",
+      "inactive": [
+        2
+      ],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 11,
+          "pauli_rotation_tasks": 15,
+          "trainable_angle_tasks": 11,
+          "trailing_clifford_gates": 3,
+          "angle_coefficient_rank": 11,
+          "two_shift_feature_evaluations_per_input": 22
+        },
+        "global_plus_commutant": {
+          "symbols": 11,
+          "pauli_rotation_tasks": 15,
+          "trainable_angle_tasks": 11,
+          "trailing_clifford_gates": 3,
+          "angle_coefficient_rank": 11,
+          "two_shift_feature_evaluations_per_input": 22
+        },
+        "certified_zero": {
+          "symbols": 11,
+          "pauli_rotation_tasks": 15,
+          "trainable_angle_tasks": 11,
+          "trailing_clifford_gates": 3,
+          "angle_coefficient_rank": 11,
+          "two_shift_feature_evaluations_per_input": 22
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n4_l1_local_z",
+      "inactive": [
+        2,
+        5,
+        8,
+        11
+      ],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 8,
+          "pauli_rotation_tasks": 12,
+          "trainable_angle_tasks": 8,
+          "trailing_clifford_gates": 3,
+          "angle_coefficient_rank": 8,
+          "two_shift_feature_evaluations_per_input": 16
+        },
+        "global_plus_commutant": {
+          "symbols": 8,
+          "pauli_rotation_tasks": 12,
+          "trainable_angle_tasks": 8,
+          "trailing_clifford_gates": 3,
+          "angle_coefficient_rank": 8,
+          "two_shift_feature_evaluations_per_input": 16
+        },
+        "certified_zero": {
+          "symbols": 8,
+          "pauli_rotation_tasks": 12,
+          "trainable_angle_tasks": 8,
+          "trailing_clifford_gates": 3,
+          "angle_coefficient_rank": 8,
+          "two_shift_feature_evaluations_per_input": 16
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n4_l1_pauli_weight_le_2",
+      "inactive": [
+        2
+      ],
+      "metrics": {
+        "global_isometry": {
+          "symbols": 11,
+          "pauli_rotation_tasks": 15,
+          "trainable_angle_tasks": 11,
+          "trailing_clifford_gates": 3,
+          "angle_coefficient_rank": 11,
+          "two_shift_feature_evaluations_per_input": 22
+        },
+        "global_plus_commutant": {
+          "symbols": 11,
+          "pauli_rotation_tasks": 15,
+          "trainable_angle_tasks": 11,
+          "trailing_clifford_gates": 3,
+          "angle_coefficient_rank": 11,
+          "two_shift_feature_evaluations_per_input": 22
+        },
+        "certified_zero": {
+          "symbols": 11,
+          "pauli_rotation_tasks": 15,
+          "trainable_angle_tasks": 11,
+          "trailing_clifford_gates": 3,
+          "angle_coefficient_rank": 11,
+          "two_shift_feature_evaluations_per_input": 22
+        }
+      },
+      "incremental": {
+        "symbols": 0,
+        "pauli_rotation_tasks": 0,
+        "trainable_angle_tasks": 0,
+        "trailing_clifford_gates": 0,
+        "angle_coefficient_rank": 0,
+        "two_shift_feature_evaluations_per_input": 0
+      }
+    }
+  ]
+}

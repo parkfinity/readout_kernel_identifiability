@@ -1,0 +1,409 @@
+{
+  "n": 6,
+  "count": 18,
+  "program": [
+    {
+      "op": "R",
+      "pauli": "YIIIII",
+      "terms": [
+        [
+          1.0,
+          -1,
+          0
+        ],
+        [
+          1.0,
+          -1,
+          1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "ZIIIII",
+      "terms": [
+        [
+          1.0,
+          0,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "XIIIII",
+      "terms": [
+        [
+          1.0,
+          1,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "ZIIIII",
+      "terms": [
+        [
+          1.0,
+          2,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IYIIII",
+      "terms": [
+        [
+          1.0,
+          -1,
+          2
+        ],
+        [
+          1.0,
+          -1,
+          3
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IZIIII",
+      "terms": [
+        [
+          1.0,
+          3,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IXIIII",
+      "terms": [
+        [
+          1.0,
+          4,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IZIIII",
+      "terms": [
+        [
+          1.0,
+          5,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        1
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIYIII",
+      "terms": [
+        [
+          1.0,
+          -1,
+          4
+        ],
+        [
+          1.0,
+          -1,
+          5
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIZIII",
+      "terms": [
+        [
+          1.0,
+          6,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIXIII",
+      "terms": [
+        [
+          1.0,
+          7,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIZIII",
+      "terms": [
+        [
+          1.0,
+          8,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIYII",
+      "terms": [
+        [
+          1.0,
+          -1,
+          6
+        ],
+        [
+          1.0,
+          -1,
+          7
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIZII",
+      "terms": [
+        [
+          1.0,
+          9,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIXII",
+      "terms": [
+        [
+          1.0,
+          10,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIZII",
+      "terms": [
+        [
+          1.0,
+          11,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        2,
+        3
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        1,
+        2
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIIYI",
+      "terms": [
+        [
+          1.0,
+          -1,
+          8
+        ],
+        [
+          1.0,
+          -1,
+          9
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIIZI",
+      "terms": [
+        [
+          1.0,
+          12,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIIXI",
+      "terms": [
+        [
+          1.0,
+          13,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIIZI",
+      "terms": [
+        [
+          1.0,
+          14,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIIIY",
+      "terms": [
+        [
+          1.0,
+          -1,
+          10
+        ],
+        [
+          1.0,
+          -1,
+          11
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIIIZ",
+      "terms": [
+        [
+          1.0,
+          15,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIIIX",
+      "terms": [
+        [
+          1.0,
+          16,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIIIZ",
+      "terms": [
+        [
+          1.0,
+          17,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        4,
+        5
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        3,
+        4
+      ]
+    }
+  ],
+  "ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "data_expressions": [
+    "2.0*acos(a0)",
+    "8.0*acos(a0)",
+    "2.0*acos(a1)",
+    "8.0*acos(a1)",
+    "4.0*acos(a0)",
+    "10.0*acos(a0)",
+    "4.0*acos(a1)",
+    "10.0*acos(a1)",
+    "6.0*acos(a0)",
+    "12.0*acos(a0)",
+    "6.0*acos(a1)",
+    "12.0*acos(a1)"
+  ],
+  "observables": [
+    "XIIIII",
+    "IXIIII",
+    "IIXIII",
+    "IIIXII",
+    "IIIIXI",
+    "IIIIIX",
+    "YIIIII",
+    "IYIIII",
+    "IIYIII",
+    "IIIYII",
+    "IIIIYI",
+    "IIIIIY",
+    "ZIIIII",
+    "IZIIII",
+    "IIZIII",
+    "IIIZII",
+    "IIIIZI",
+    "IIIIIZ"
+  ],
+  "weights": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ]
+}

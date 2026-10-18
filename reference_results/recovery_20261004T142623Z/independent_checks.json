@@ -1,0 +1,152 @@
+[
+  {
+    "setting": "hubregtsen_encoding_circuit_n2_l1_local_xyz",
+    "feature_error": 0.0,
+    "gradient_error": 1.6653345369377348e-11
+  },
+  {
+    "setting": "hubregtsen_encoding_circuit_n2_l1_local_z",
+    "feature_error": 0.0,
+    "gradient_error": 1.6653345369377348e-11
+  },
+  {
+    "setting": "hubregtsen_encoding_circuit_n2_l1_pauli_weight_le_2",
+    "feature_error": 0.0,
+    "gradient_error": 1.7179483530194162e-11
+  },
+  {
+    "setting": "hubregtsen_encoding_circuit_n2_l2_local_xyz",
+    "feature_error": 0.0,
+    "gradient_error": 3.885783014800914e-11
+  },
+  {
+    "setting": "hubregtsen_encoding_circuit_n2_l2_local_z",
+    "feature_error": 0.0,
+    "gradient_error": 3.885783014800914e-11
+  },
+  {
+    "setting": "hubregtsen_encoding_circuit_n2_l2_pauli_weight_le_2",
+    "feature_error": 0.0,
+    "gradient_error": 3.885783014800914e-11
+  },
+  {
+    "setting": "hubregtsen_encoding_circuit_n4_l1_local_xyz",
+    "feature_error": 0.0,
+    "gradient_error": 4.1479153445322936e-11
+  },
+  {
+    "setting": "hubregtsen_encoding_circuit_n4_l1_local_z",
+    "feature_error": 0.0,
+    "gradient_error": 4.1479153445322936e-11
+  },
+  {
+    "setting": "hubregtsen_encoding_circuit_n4_l1_pauli_weight_le_2",
+    "feature_error": 0.0,
+    "gradient_error": 4.1479153445322936e-11
+  },
+  {
+    "setting": "hubregtsen_encoding_circuit_n4_l2_local_xyz",
+    "feature_error": 0.0,
+    "gradient_error": 5.4552693959375453e-11
+  },
+  {
+    "setting": "hubregtsen_encoding_circuit_n4_l2_local_z",
+    "feature_error": 0.0,
+    "gradient_error": 5.4552693959375453e-11
+  },
+  {
+    "setting": "hubregtsen_encoding_circuit_n4_l2_pauli_weight_le_2",
+    "feature_error": 0.0,
+    "gradient_error": 5.694128502042872e-11
+  },
+  {
+    "setting": "kyriienko_nonlinear_encoding_circuit_n2_l1_local_xyz",
+    "feature_error": 1.1102230246251565e-16,
+    "gradient_error": 2.956523914576792e-11
+  },
+  {
+    "setting": "kyriienko_nonlinear_encoding_circuit_n2_l1_local_z",
+    "feature_error": 2.7755575615628914e-17,
+    "gradient_error": 2.956523914576792e-11
+  },
+  {
+    "setting": "kyriienko_nonlinear_encoding_circuit_n2_l1_pauli_weight_le_2",
+    "feature_error": 1.1102230246251565e-16,
+    "gradient_error": 3.3306635227603465e-11
+  },
+  {
+    "setting": "kyriienko_nonlinear_encoding_circuit_n4_l1_local_xyz",
+    "feature_error": 2.220446049250313e-16,
+    "gradient_error": 3.3306739311012024e-11
+  },
+  {
+    "setting": "kyriienko_nonlinear_encoding_circuit_n4_l1_local_z",
+    "feature_error": 1.1102230246251565e-16,
+    "gradient_error": 3.003406204293846e-11
+  },
+  {
+    "setting": "kyriienko_nonlinear_encoding_circuit_n4_l1_pauli_weight_le_2",
+    "feature_error": 2.220446049250313e-16,
+    "gradient_error": 3.648803481581808e-11
+  },
+  {
+    "setting": "yz_cx_encoding_circuit_n2_l1_local_xyz",
+    "feature_error": 1.1102230246251565e-16,
+    "gradient_error": 1.6653345369377348e-11
+  },
+  {
+    "setting": "yz_cx_encoding_circuit_n2_l1_local_z",
+    "feature_error": 1.1102230246251565e-16,
+    "gradient_error": 1.6653345369377348e-11
+  },
+  {
+    "setting": "yz_cx_encoding_circuit_n2_l1_pauli_weight_le_2",
+    "feature_error": 1.1102230246251565e-16,
+    "gradient_error": 2.0810575485086247e-11
+  },
+  {
+    "setting": "yz_cx_encoding_circuit_n2_l2_local_xyz",
+    "feature_error": 1.1102230246251565e-16,
+    "gradient_error": 3.7591131596403926e-11
+  },
+  {
+    "setting": "yz_cx_encoding_circuit_n2_l2_local_z",
+    "feature_error": 1.1102230246251565e-16,
+    "gradient_error": 3.7591131596403926e-11
+  },
+  {
+    "setting": "yz_cx_encoding_circuit_n2_l2_pauli_weight_le_2",
+    "feature_error": 1.1102230246251565e-16,
+    "gradient_error": 3.7591131596403926e-11
+  },
+  {
+    "setting": "yz_cx_encoding_circuit_n4_l1_local_xyz",
+    "feature_error": 2.220446049250313e-16,
+    "gradient_error": 4.3606229738202273e-11
+  },
+  {
+    "setting": "yz_cx_encoding_circuit_n4_l1_local_z",
+    "feature_error": 1.942890293094024e-16,
+    "gradient_error": 4.3606229738202273e-11
+  },
+  {
+    "setting": "yz_cx_encoding_circuit_n4_l1_pauli_weight_le_2",
+    "feature_error": 2.220446049250313e-16,
+    "gradient_error": 4.3606229738202273e-11
+  },
+  {
+    "setting": "yz_cx_encoding_circuit_n4_l2_local_xyz",
+    "feature_error": 2.220446049250313e-16,
+    "gradient_error": 5.314234122200112e-11
+  },
+  {
+    "setting": "yz_cx_encoding_circuit_n4_l2_local_z",
+    "feature_error": 2.220446049250313e-16,
+    "gradient_error": 5.314234122200112e-11
+  },
+  {
+    "setting": "yz_cx_encoding_circuit_n4_l2_pauli_weight_le_2",
+    "feature_error": 2.220446049250313e-16,
+    "gradient_error": 5.314234122200112e-11
+  }
+]

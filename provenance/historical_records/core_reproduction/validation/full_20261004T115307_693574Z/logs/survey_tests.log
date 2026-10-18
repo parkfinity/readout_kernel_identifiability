@@ -1,0 +1,11 @@
+test_data_not_a_common_suffix (test_survey.SurveyTests) ... ok
+test_entangler_cannot_hide_initially_disjoint_data (test_survey.SurveyTests) ... ok
+test_full_pauli_entangling_tail_is_baseline (test_survey.SurveyTests) ... ok
+test_readout_changes_tail (test_survey.SurveyTests) ... ok
+test_readouts (test_survey.SurveyTests) ... ok
+test_shared_angle_chain_and_tied_occurrences (test_survey.SurveyTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK

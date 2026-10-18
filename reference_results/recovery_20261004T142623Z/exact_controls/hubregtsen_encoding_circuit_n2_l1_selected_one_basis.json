@@ -1,0 +1,117 @@
+{
+  "setting": "hubregtsen_encoding_circuit_n2_l1_selected_one_basis",
+  "K": 2,
+  "measurement_bases": [
+    "XX"
+  ],
+  "observables": [
+    "IX",
+    "XI",
+    "XX"
+  ],
+  "metric_weights": [
+    "2/9",
+    "23/63",
+    "26/63"
+  ],
+  "parameter_point": {
+    "seed": 2026100441,
+    "zeta": [
+      [
+        135,
+        352,
+        377
+      ],
+      [
+        247,
+        96,
+        265
+      ]
+    ],
+    "L": [
+      2,
+      2
+    ],
+    "theta_float": [
+      2.4091493845398566,
+      0.741391799982779
+    ],
+    "specification": [
+      "theta_0 = 2*atan2(352, 135)  [exp(i theta/2) = (135 + 352 i)/377]",
+      "theta_1 = 2*atan2(96, 247)  [exp(i theta/2) = (247 + 96 i)/265]"
+    ]
+  },
+  "lower_bound": 2,
+  "upper_bound": 2,
+  "certified_generic_rank": 2,
+  "arithmetic": "Exact nonzero finite-field minors of rational Fourier coefficients. Finite-field zero is not an upper bound.",
+  "witnesses": [
+    {
+      "prime": 134217689,
+      "rank_lower_bound": 2,
+      "minor_rows": [
+        4,
+        0
+      ],
+      "minor_columns": [
+        0,
+        1
+      ],
+      "determinant_mod_prime": 15850402,
+      "minor_matrix": [
+        [
+          110459088,
+          103859879
+        ],
+        [
+          0,
+          81962671
+        ]
+      ],
+      "gram_coordinates": [
+        [
+          14,
+          14
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "prime": 134217649,
+      "rank_lower_bound": 2,
+      "minor_rows": [
+        4,
+        0
+      ],
+      "minor_columns": [
+        0,
+        1
+      ],
+      "determinant_mod_prime": 4597490,
+      "minor_matrix": [
+        [
+          75461298,
+          109831017
+        ],
+        [
+          0,
+          23962824
+        ]
+      ],
+      "gram_coordinates": [
+        [
+          14,
+          14
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    }
+  ],
+  "elapsed_seconds": 0.0013821669999998232
+}

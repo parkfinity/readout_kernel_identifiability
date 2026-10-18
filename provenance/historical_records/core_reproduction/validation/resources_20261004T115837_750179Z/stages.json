@@ -1,0 +1,20 @@
+[
+  {
+    "stage": "survey_fresh_102",
+    "exit_code": 0,
+    "elapsed_seconds": 31.921860375,
+    "log": "logs/survey_fresh_102.log"
+  },
+  {
+    "stage": "survey_array_audit",
+    "exit_code": 0,
+    "elapsed_seconds": 0.7290214159999948,
+    "log": "logs/survey_array_audit.log"
+  },
+  {
+    "stage": "global_normalization_fresh_12",
+    "exit_code": 0,
+    "elapsed_seconds": 6.423700709000002,
+    "log": "logs/global_normalization_fresh_12.log"
+  }
+]

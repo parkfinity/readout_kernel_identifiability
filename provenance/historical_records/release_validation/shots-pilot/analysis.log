@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "mode": "pilot",
+  "verified_records": 4,
+  "median_empirical_to_predicted_variance": 1.0293407183658154,
+  "max_abs_bias_mc_se": 3.168758419951084
+}

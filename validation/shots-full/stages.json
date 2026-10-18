@@ -1,0 +1,14 @@
+[
+  {
+    "stage": "shots",
+    "exit_code": 0,
+    "seconds": 45.633533917,
+    "log": "shots.log"
+  },
+  {
+    "stage": "analysis",
+    "exit_code": 0,
+    "seconds": 1.5866840830000015,
+    "log": "analysis.log"
+  }
+]

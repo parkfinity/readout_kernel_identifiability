@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "checks": {
+    "full_image": {
+      "categories": 46,
+      "means": {
+        "before": 0.5121533212857349,
+        "after": 0.46316060346627963,
+        "delta": -0.04899271781945525
+      },
+      "ci95": [
+        -0.07624924938894753,
+        -0.02509688174365401
+      ]
+    },
+    "ad2_image": {
+      "categories": 8,
+      "means": {
+        "before": 0.4900827178142866,
+        "after": 0.49372227862353635,
+        "delta": 0.0036395608092497506
+      },
+      "ci95": [
+        -0.052884951378747984,
+        0.05521301896620281
+      ]
+    },
+    "ad2_grouped": {
+      "categories": 8,
+      "means": {
+        "before": 0.4809635516560474,
+        "after": 0.4937670321399594,
+        "delta": 0.01280348048391203
+      },
+      "ci95": [
+        -0.05565997783631711,
+        0.0788379381310929
+      ]
+    }
+  },
+  "scope": "Reaggregate archived category means; no image inference, training or raw-score replay."
+}

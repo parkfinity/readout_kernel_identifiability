@@ -1,0 +1,27 @@
+test_clifford_conjugation_dense (test_engine.Tests) ... ok
+test_data_only_bias_active (test_engine.Tests) ... ok
+test_dependent_data_not_freed (test_engine.Tests) ... ok
+test_domain_rejected (test_engine.Tests) ... ok
+test_duplicate_observable_rejected (test_engine.Tests) ... ok
+test_exact_input_independent_rx (test_engine.Tests) ... ok
+test_h_gate_exact_expectation (test_engine.Tests) ... ok
+test_interval_minor (test_engine.Tests) ... ok
+test_inverse_pair (test_engine.Tests) ... ok
+test_noninteger_not_snapped (test_engine.Tests) ... ok
+test_overlift_rejected (test_engine.Tests) ... ok
+test_param_z_layers_distinguished (test_engine.Tests) ... ok
+test_product_gradient_vs_closed_form (test_engine.Tests) ... ok
+test_shared_inverse_data (test_engine.Tests) ... ok
+test_shared_live_occurrence (test_engine.Tests) ... ok
+test_source_hash_rejected (test_engine.Tests) ... ok
+test_active_product_not_removed (test_extension.ExtensionTests) ... ok
+test_budget_handler_disarms_alarm (test_extension.ExtensionTests) ... ok
+test_commutant_product_is_baseline (test_extension.ExtensionTests) ... ok
+test_half_coefficient_preserved (test_extension.ExtensionTests) ... ok
+test_half_inverse_cancels (test_extension.ExtensionTests) ... ok
+test_near_half_not_rounded (test_extension.ExtensionTests) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.045s
+
+OK

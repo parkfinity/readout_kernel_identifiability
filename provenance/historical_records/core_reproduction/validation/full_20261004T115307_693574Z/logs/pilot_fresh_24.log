@@ -1,0 +1,46 @@
+chebyshev_rx_n2_l1_local_xyz {'ACTIVE_CERTIFIED': 3, 'EXACT_INACTIVE': 1} rank 3 3
+chebyshev_rx_n2_l1_local_z {'ACTIVE_CERTIFIED': 4} rank 4 4
+chebyshev_rx_n2_l1_pauli_weight_le_2 {'ACTIVE_CERTIFIED': 2, 'EXACT_INACTIVE': 2} rank 2 2
+chebyshev_rx_n2_l2_local_xyz {'ACTIVE_CERTIFIED': 5, 'EXACT_INACTIVE': 3} rank 4 4
+chebyshev_rx_n2_l2_local_z {'ACTIVE_CERTIFIED': 8} rank 6 6
+chebyshev_rx_n2_l2_pauli_weight_le_2 {'ACTIVE_CERTIFIED': 4, 'EXACT_INACTIVE': 4} rank 3 3
+chebyshev_rx_n4_l1_local_xyz {'ACTIVE_CERTIFIED': 7, 'EXACT_INACTIVE': 1} rank 7 7
+chebyshev_rx_n4_l1_local_z {'ACTIVE_CERTIFIED': 8} rank 8 8
+chebyshev_rx_n4_l1_pauli_weight_le_2 {'ACTIVE_CERTIFIED': 7, 'EXACT_INACTIVE': 1} rank 7 7
+chebyshev_rx_n4_l2_local_xyz {'ACTIVE_CERTIFIED': 13, 'EXACT_INACTIVE': 3} rank 12 12
+chebyshev_rx_n4_l2_local_z {'ACTIVE_CERTIFIED': 16} rank 14 14
+chebyshev_rx_n4_l2_pauli_weight_le_2 {'ACTIVE_CERTIFIED': 13, 'EXACT_INACTIVE': 3} rank 12 12
+param_z_feature_map_n2_l1_local_xyz {'ACTIVE_CERTIFIED': 2} rank 2 2
+param_z_feature_map_n2_l1_local_z {'EXACT_INACTIVE': 2} rank 0 0
+param_z_feature_map_n2_l1_pauli_weight_le_2 {'ACTIVE_CERTIFIED': 2} rank 2 2
+param_z_feature_map_n2_l2_local_xyz {'ACTIVE_CERTIFIED': 4} rank 4 4
+param_z_feature_map_n2_l2_local_z {'ACTIVE_CERTIFIED': 2, 'EXACT_INACTIVE': 2} rank 2 2
+param_z_feature_map_n2_l2_pauli_weight_le_2 {'ACTIVE_CERTIFIED': 4} rank 4 4
+param_z_feature_map_n4_l1_local_xyz {'ACTIVE_CERTIFIED': 4} rank 4 4
+param_z_feature_map_n4_l1_local_z {'EXACT_INACTIVE': 4} rank 0 0
+param_z_feature_map_n4_l1_pauli_weight_le_2 {'ACTIVE_CERTIFIED': 4} rank 4 4
+param_z_feature_map_n4_l2_local_xyz {'ACTIVE_CERTIFIED': 8} rank 8 8
+param_z_feature_map_n4_l2_local_z {'ACTIVE_CERTIFIED': 4, 'EXACT_INACTIVE': 4} rank 4 4
+param_z_feature_map_n4_l2_pauli_weight_le_2 {'ACTIVE_CERTIFIED': 8} rank 8 8
+{
+  "output": "/private/tmp/quantum-reviewer-qa/full_20261004T115307_693574Z/work/journal_extension/certified_dimension_pilot_v1/results/pilot_20261004T115313_140688Z",
+  "summary": {
+    "slots": 24,
+    "source_circuit_configurations": 8,
+    "symbols": 162,
+    "counts": {
+      "ACTIVE_CERTIFIED": 132,
+      "EXACT_INACTIVE": 30
+    },
+    "rank_closed_slots": 24,
+    "new_inactive": 12,
+    "old_not_recovered": 0,
+    "constant_kernel_slots": [
+      "param_z_feature_map_n2_l1_local_z",
+      "param_z_feature_map_n4_l1_local_z"
+    ],
+    "elapsed_seconds": 86.819307083,
+    "full_102_run": false,
+    "new_gate_shot_savings_measured": false
+  }
+}

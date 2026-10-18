@@ -1,0 +1,318 @@
+{
+  "passed": true,
+  "slots": 30,
+  "source_pair_probes": 60,
+  "source_fd_coordinates": 504,
+  "random_resource_probes": 600,
+  "max_errors": {
+    "source_features": 2.6645352591003757e-15,
+    "interval_gradient_fd": 5.311893591652961e-09,
+    "arm_kernel": 1.2212453270876722e-15,
+    "arm_gradient": 1.2878587085651816e-14
+  },
+  "rows": [
+    {
+      "id": "yz_cx_encoding_circuit_n2_l1_local_xyz",
+      "max_errors": {
+        "source_features": 2.220446049250313e-16,
+        "interval_gradient_fd": 7.592328848948782e-11,
+        "arm_kernel": 5.551115123125783e-16,
+        "arm_gradient": 2.220446049250313e-15
+      },
+      "passed": true
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n2_l1_local_z",
+      "max_errors": {
+        "source_features": 2.220446049250313e-16,
+        "interval_gradient_fd": 6.938893903907228e-11,
+        "arm_kernel": 6.661338147750939e-16,
+        "arm_gradient": 2.220446049250313e-15
+      },
+      "passed": true
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n2_l1_pauli_weight_le_2",
+      "max_errors": {
+        "source_features": 2.220446049250313e-16,
+        "interval_gradient_fd": 2.220446049250313e-10,
+        "arm_kernel": 3.885780586188048e-16,
+        "arm_gradient": 2.220446049250313e-15
+      },
+      "passed": true
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n2_l2_local_xyz",
+      "max_errors": {
+        "source_features": 2.220446049250313e-16,
+        "interval_gradient_fd": 2.2288998424713213e-10,
+        "arm_kernel": 5.551115123125783e-16,
+        "arm_gradient": 2.3314683517128287e-15
+      },
+      "passed": true
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n2_l2_local_z",
+      "max_errors": {
+        "source_features": 2.220446049250313e-16,
+        "interval_gradient_fd": 3.3306690738754696e-10,
+        "arm_kernel": 6.661338147750939e-16,
+        "arm_gradient": 3.6637359812630166e-15
+      },
+      "passed": true
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n2_l2_pauli_weight_le_2",
+      "max_errors": {
+        "source_features": 2.220446049250313e-16,
+        "interval_gradient_fd": 1.6029229055192218e-09,
+        "arm_kernel": 3.3306690738754696e-16,
+        "arm_gradient": 3.552713678800501e-15
+      },
+      "passed": true
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n4_l1_local_xyz",
+      "max_errors": {
+        "source_features": 4.440892098500626e-16,
+        "interval_gradient_fd": 4.440892098500626e-10,
+        "arm_kernel": 7.771561172376096e-16,
+        "arm_gradient": 6.38378239159465e-15
+      },
+      "passed": true
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n4_l1_local_z",
+      "max_errors": {
+        "source_features": 4.440892098500626e-16,
+        "interval_gradient_fd": 5.273559366969494e-10,
+        "arm_kernel": 1.1102230246251565e-15,
+        "arm_gradient": 5.995204332975845e-15
+      },
+      "passed": true
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n4_l1_pauli_weight_le_2",
+      "max_errors": {
+        "source_features": 4.440892098500626e-16,
+        "interval_gradient_fd": 1.7763568394002505e-09,
+        "arm_kernel": 6.661338147750939e-16,
+        "arm_gradient": 1.1102230246251565e-14
+      },
+      "passed": true
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n4_l2_local_xyz",
+      "max_errors": {
+        "source_features": 7.771561172376096e-16,
+        "interval_gradient_fd": 1.3484930949658747e-09,
+        "arm_kernel": 8.881784197001252e-16,
+        "arm_gradient": 5.773159728050814e-15
+      },
+      "passed": true
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n4_l2_local_z",
+      "max_errors": {
+        "source_features": 7.771561172376096e-16,
+        "interval_gradient_fd": 1.008207795027971e-09,
+        "arm_kernel": 1.1102230246251565e-15,
+        "arm_gradient": 6.217248937900877e-15
+      },
+      "passed": true
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n4_l2_pauli_weight_le_2",
+      "max_errors": {
+        "source_features": 8.881784197001252e-16,
+        "interval_gradient_fd": 3.589677222137766e-09,
+        "arm_kernel": 7.771561172376096e-16,
+        "arm_gradient": 7.993605777301127e-15
+      },
+      "passed": true
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n2_l1_local_xyz",
+      "max_errors": {
+        "source_features": 5.551115123125783e-16,
+        "interval_gradient_fd": 6.661338147750939e-10,
+        "arm_kernel": 3.3306690738754696e-16,
+        "arm_gradient": 0.0
+      },
+      "passed": true
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n2_l1_local_z",
+      "max_errors": {
+        "source_features": 3.3306690738754696e-16,
+        "interval_gradient_fd": 3.9320831313194304e-11,
+        "arm_kernel": 1.1102230246251565e-16,
+        "arm_gradient": 2.7755575615628914e-16
+      },
+      "passed": true
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n2_l1_pauli_weight_le_2",
+      "max_errors": {
+        "source_features": 5.551115123125783e-16,
+        "interval_gradient_fd": 1.3322676295501878e-09,
+        "arm_kernel": 3.3306690738754696e-16,
+        "arm_gradient": 1.0755285551056204e-16
+      },
+      "passed": true
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n2_l2_local_xyz",
+      "max_errors": {
+        "source_features": 6.661338147750939e-16,
+        "interval_gradient_fd": 3.210301070116772e-10,
+        "arm_kernel": 4.440892098500626e-16,
+        "arm_gradient": 1.7763568394002505e-15
+      },
+      "passed": true
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n2_l2_local_z",
+      "max_errors": {
+        "source_features": 5.551115123125783e-16,
+        "interval_gradient_fd": 5.979025087532452e-11,
+        "arm_kernel": 3.3306690738754696e-16,
+        "arm_gradient": 1.4432899320127035e-15
+      },
+      "passed": true
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n2_l2_pauli_weight_le_2",
+      "max_errors": {
+        "source_features": 6.661338147750939e-16,
+        "interval_gradient_fd": 5.592816001986911e-10,
+        "arm_kernel": 5.551115123125783e-16,
+        "arm_gradient": 3.1086244689504383e-15
+      },
+      "passed": true
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n4_l1_local_xyz",
+      "max_errors": {
+        "source_features": 5.551115123125783e-16,
+        "interval_gradient_fd": 1.9458672173566782e-10,
+        "arm_kernel": 4.440892098500626e-16,
+        "arm_gradient": 1.5265566588595902e-15
+      },
+      "passed": true
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n4_l1_local_z",
+      "max_errors": {
+        "source_features": 5.551115123125783e-16,
+        "interval_gradient_fd": 1.2350223795032367e-10,
+        "arm_kernel": 2.220446049250313e-16,
+        "arm_gradient": 6.245004513516506e-16
+      },
+      "passed": true
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n4_l1_pauli_weight_le_2",
+      "max_errors": {
+        "source_features": 5.551115123125783e-16,
+        "interval_gradient_fd": 1.9871033013485473e-09,
+        "arm_kernel": 6.661338147750939e-16,
+        "arm_gradient": 4.718447854656915e-15
+      },
+      "passed": true
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n4_l2_local_xyz",
+      "max_errors": {
+        "source_features": 9.992007221626409e-16,
+        "interval_gradient_fd": 8.954713637265854e-10,
+        "arm_kernel": 7.771561172376096e-16,
+        "arm_gradient": 4.218847493575595e-15
+      },
+      "passed": true
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n4_l2_local_z",
+      "max_errors": {
+        "source_features": 3.400058012914542e-16,
+        "interval_gradient_fd": 5.428395406792408e-10,
+        "arm_kernel": 9.992007221626409e-16,
+        "arm_gradient": 5.329070518200751e-15
+      },
+      "passed": true
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n4_l2_pauli_weight_le_2",
+      "max_errors": {
+        "source_features": 9.992007221626409e-16,
+        "interval_gradient_fd": 5.311893591652961e-09,
+        "arm_kernel": 8.881784197001252e-16,
+        "arm_gradient": 1.1546319456101628e-14
+      },
+      "passed": true
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n2_l1_local_xyz",
+      "max_errors": {
+        "source_features": 5.551115123125783e-16,
+        "interval_gradient_fd": 2.60671900731424e-10,
+        "arm_kernel": 7.771561172376096e-16,
+        "arm_gradient": 4.440892098500626e-15
+      },
+      "passed": true
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n2_l1_local_z",
+      "max_errors": {
+        "source_features": 2.220446049250313e-16,
+        "interval_gradient_fd": 1.5099288312725445e-10,
+        "arm_kernel": 1.1102230246251565e-15,
+        "arm_gradient": 3.9968028886505635e-15
+      },
+      "passed": true
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n2_l1_pauli_weight_le_2",
+      "max_errors": {
+        "source_features": 1.8908485888147197e-15,
+        "interval_gradient_fd": 2.6645352591003757e-09,
+        "arm_kernel": 9.992007221626409e-16,
+        "arm_gradient": 3.0841359150348767e-15
+      },
+      "passed": true
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n4_l1_local_xyz",
+      "max_errors": {
+        "source_features": 2.6645352591003757e-15,
+        "interval_gradient_fd": 4.440892098500626e-10,
+        "arm_kernel": 1.2212453270876722e-15,
+        "arm_gradient": 4.440892098500626e-15
+      },
+      "passed": true
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n4_l1_local_z",
+      "max_errors": {
+        "source_features": 6.661338147750939e-16,
+        "interval_gradient_fd": 3.885780586188048e-10,
+        "arm_kernel": 1.1102230246251565e-15,
+        "arm_gradient": 4.440892098500626e-15
+      },
+      "passed": true
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n4_l1_pauli_weight_le_2",
+      "max_errors": {
+        "source_features": 2.6645352591003757e-15,
+        "interval_gradient_fd": 2.7941180480439698e-09,
+        "arm_kernel": 9.992007221626409e-16,
+        "arm_gradient": 1.2878587085651816e-14
+      },
+      "passed": true
+    }
+  ],
+  "source_commit": "0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4",
+  "script_sha256": "b8e0c671701ee0e538260b3666326bd4f543da1bb8d95266216f0bd61f521951",
+  "run_manifest_sha256": "3b7b237921a186959334fa15d5b7c38a270f217fb86490a20e792d8efb5f2c07"
+}

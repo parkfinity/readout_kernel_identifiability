@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "settings": 54,
+  "open_rank_intervals": 0,
+  "generated_from": [
+    "/private/tmp/quantum-reviewer-qa/full_20261004T115307_693574Z/work/journal_extension/certified_dimension_pilot_v1/results/pilot_20261004T115313_140688Z",
+    "/private/tmp/quantum-reviewer-qa/full_20261004T115307_693574Z/work/runs/20261004T115536Z/fourier_gram"
+  ],
+  "note": "A table extraction alone is not a certificate replay; see stage log."
+}

@@ -1,0 +1,186 @@
+\section{Detailed correctness and resource audits}
+\label{app:resource_details}
+\subsection{Correctness and external-source coverage}
+Designed validation covers 360 combinations of case, size, and seed with four
+certificate variants, giving 1,440 rows. Maximum kernel and derivative
+discrepancies after deletion are $1.33\times10^{-14}$ and
+$3.28\times10^{-15}$. Twenty paired synthetic learning runs preserve
+objectives and predictions to numerical precision. At eight qubits
+and two layers, all 48 parameters of a local full-Pauli-readout control
+are certified inactive; its entangling counterpart has 48 \unknown{}
+symbols, not 48 proven active ones.
+
+The frozen sQUlearn source-library study \cite{squlearn} executes 34 configurations from ten modules
+of a 13-module inventory. Three modules needing additional
+configuration remain explicitly excluded. There are 28 trainable and
+six parameter-free settings. All 4,590 saved arrays in 102 probes,
+including 813 parameter finite-difference probes, were recomputed.
+Under the specified isotropic local readout, 16 trainable settings
+contain 32 certified inactive symbols. This is conditional coverage
+of a selected library and readout, not literature prevalence.
+
+\begin{table}[t]
+\caption{Post-hoc classification of 32 inactive symbols, summed across
+settings. Settings and symbols are not independent discoveries.}
+\label{tab:mechanisms}
+\begin{tabular}{lr}
+\toprule
+Mechanism & Symbols\\
+Elementary local output tails & 16\\
+Transport without overlapping data crossing & 6\\
+Affine bias within the same native gate & 6\\
+Crosses genuinely later overlapping data gates & 4\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+An elementary wire-local tail baseline already identifies 16 symbols
+in six settings. The remaining 16 do not all represent internal data
+crossings (Table~\ref{tab:mechanisms}). A local Qiskit~1.2.4 level-three
+symbolic-compilation diagnostic preserves the aggregate counts, but
+it is not a comparison with all compiler or equivalence techniques.
+The inventory and mechanism classification are post hoc.
+
+\subsection{Separating genuine internal work from baseline work}
+The follow-up pipeline first compiles, then normalizes the IR, removes
+local tails, performs restricted boundary transport, and re-fuses
+adjacent same-axis rotations. The boundary rule may pass disjoint data
+and same-native affine terms, but not a distinct overlapping data gate.
+The proposed extra stage applies full supported transport before the
+same re-fusion. This baseline is deliberately stronger than a
+commutant test or a strict last-gate scan.
+
+\begin{table}[t]
+\caption{Full-study structure after common re-fusion. The exact
+symbol reduction does not imply a lower interpreter gate count.}
+\label{tab:strong}
+\begin{tabular}{lrr}
+\toprule
+ChebyshevRx, two layers & Boundary & Full\\
+2-qubit retained symbols & 7 & 5\\
+2-qubit executed operations & 6 & 6\\
+4-qubit retained symbols & 15 & 13\\
+4-qubit executed operations & 14 & 14\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The full study covers 12 configurations, seven arms and three custom
+NumPy differentiation backends on WDBC, Ionosphere and Auto MPG.
+Five split seeds and five timing repetitions yield 2,700 seven-arm
+cold blocks, or 18,900 fits. A two-arm reuse study adds 3,600 fits.
+Stored kernel, gradient, parameter-trajectory, objective and prediction
+comparisons satisfy the predefined tolerances. Across all stored
+comparisons, maximum kernel and gradient discrepancies are
+$4.65\times10^{-11}$ and $2.75\times10^{-10}$, respectively.
+Selected scalar source-path replay is a separate check, not independent
+human review or a second timing replication. The local pilot remains
+a design check, not an additional independent sample.
+Table~\ref{tab:strong} shows why backend-specific derivative accounting
+is indispensable: fusion removes an apparent gate-count saving.
+
+
+
+\subsection{From extra symbols to executed work}
+Figure~\ref{fig:pilot} links the additional certification to backend
+work and the repeated full-study timings under the earlier,
+adjacent-fusion baseline, together with absolute backend costs.
+Serial and batched tangent work decrease in two settings, but
+adjoint reverse work does not. Certification-inclusive serial
+cold-fit median reductions are 22.20\% and 12.38\%; the fastest
+tested backend remains boundary-adjoint rather than transport-serial.
+The repetitions concern three problems, not independent new circuit
+families. Detailed counters, paired timing distributions and reuse
+measurements are retained in Appendix~\ref{app:full_time}; none compares
+against the later global-normalization baseline.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=\textwidth]{figures/fig3_full_increment.pdf}
+\caption{Increment over fused boundary simplification for two-layer
+ChebyshevRx. Left: actual serial evaluator and batched tangent-work
+reductions, with unchanged adjoint reverse work and analytically
+counted shared-angle tasks. Upper right: paired cold-fit time-reduction
+medians and 25th--75th percentiles, from 75 pairs per size and backend
+(three datasets, five split seeds, five timing repetitions). Intervals
+are IQRs, not confidence intervals. The plot summarizes the distribution;
+extreme individual pairs are not shown, but remain in the saved data
+and Appendix~\ref{app:full_time}. All times include certification.
+The other ten circuit settings have no additional inactive symbol.
+Bottom: median absolute cold-fit times for each backend and arm; the
+adjoint implementation is substantially faster than transport-serial.
+These CPU simulator results are not QPU or fixed-accuracy shot data,
+and do not compare against global normalization.}
+\label{fig:pilot}
+\end{figure}
+
+\subsection{Gate-angle sharing changes the shift accounting}
+Generalized parameter-shift rules exploit Fourier structure and can
+reduce derivative-evaluation costs for parameters shared across
+multiple gates \cite{wierichs2022general}. Our accounting below is
+for a specified gate-angle-sharing schedule, not an optimality claim
+over all differentiation rules.
+For each fused Pauli rotation, two shifted feature evaluations can
+supply its angle derivative. All symbols in that angle reuse the same
+derivative through classical chain factors, including input-dependent
+coefficients and shared symbols summed over occurrences. One must not
+apply a two-shift rule directly to the nonlinear RBF kernel
+\cite{schuldgradients}. If $A$ trainable fused angles, $N$ inputs,
+$T$ updates and $B$ measurement bases are used, a transparent
+non-cross-gate-cached schedule has
+\begin{equation}
+ C_{\rm train}=TNB(1+2A),\qquad
+ S_{\rm train}=s C_{\rm train},
+\end{equation}
+where $s$ is a fixed shot count per setting. The unshifted features are
+reused across all pairwise kernels. Final prediction, mitigation and
+precision-driven shot allocation are separate costs. Here $A$ counts
+trainable fused-angle tasks in this schedule, not a proven rank of
+functionally independent directions. Equal shot counts per setting do
+not imply equal estimator accuracy. Fixed-accuracy comparisons require
+a specified error target and confidence level, including bias and
+variance of the nonlinear kernel estimator; they have not been measured.
+
+For local XYZ readout, $B=3$. In the present two-qubit witness,
+$A=4$ for both arms; in the four-qubit witness $A=8$ for both arms.
+With $N=64,T=10$, this gives 17,280 and 32,640 circuit settings,
+respectively, with zero incremental setting or fixed-shot reduction.
+Remaining product terms keep those fused angles trainable.
+This is analytic scheduling, not a finite-shot or hardware experiment;
+additional cross-gate symmetry optimizations might reduce both arms.
+It invalidates inferring QPU savings from the inactive-symbol count
+alone. We implement this shared-angle derivative schedule for the
+structural survey below and verify its feature Jacobians and objective
+gradients against analytic propagation and finite differences. This
+implementation validates ideal derivatives, not physical shot costs.
+
+\subsection{A fixed-scope circuit and readout survey}
+The follow-up survey retains the previously listed 120 nominal slots:
+ten default-constructed source modules, two qubit counts, two layer
+counts and three readouts. Eighteen slots duplicate constructors
+without a layer argument, leaving 102 distinct slots. The three
+readouts are isotropic local XYZ, local Z, and all nonidentity Pauli
+words of weight at most two. Modules and readout variants are not
+counted as independent circuit families.
+
+To avoid crediting elementary output symmetry as an interior gain,
+the baseline additionally handles readout-preserving common-isometry
+suffixes. This includes the full two-qubit Pauli readout's invariance
+under common output rotations. Both arms use the same compiled circuit,
+readout-aware baseline and adjacent fusion; only the extra transport
+stage differs. This is a distinct survey baseline, not a retrofit to
+the full-study timing data.
+
+The survey finds extra inactive symbols in four slots: the two known
+two-layer ChebyshevRx sizes under local XYZ and weight-at-most-two
+Pauli readout. Each removes two symbols, but no slot reduces final
+fused operations or trainable fused-angle tasks. There are 82 trainable
+slots with defined alignment probes, 18 parameter-free slots, and two
+trainable local-Z slots whose constant centered kernels make alignment
+undefined. The latter retain kernel and kernel-derivative checks but
+are not counted as successful training runs. All numerical checks
+applicable to each slot pass. These negative resource results apply to
+the fixed source, constructor and supported-rule scope, not to arbitrary
+circuits. They do not prove that a stronger method cannot find savings.
+Details and the disclosed alignment-handling amendment appear in
+Appendix~\ref{app:survey}.

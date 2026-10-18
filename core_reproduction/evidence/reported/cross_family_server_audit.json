@@ -1,0 +1,1786 @@
+{
+  "passed": true,
+  "archive": "/workspace/Downloads/cross_family_server_results.zip",
+  "archive_sha256": "00fc80fbb1eea804bbc687c6cb596aadcce11dafef7b96f04f509471c18d83f8",
+  "run_root": "results/survey_20261001T093704_381267Z/",
+  "counts": {
+    "manifest_files": 308,
+    "PASS_TRAINABLE": 82,
+    "exact_equal_program_sets": 96,
+    "arrays": 3252,
+    "source_probe_batches": 204,
+    "arm_probe_replays": 612,
+    "finite_difference_coordinates": 1626,
+    "slot_seed_replays": 204,
+    "slots": 102,
+    "PASS_PARAMETER_FREE": 18,
+    "DUPLICATE": 18,
+    "PASS_KERNEL_ONLY_ALIGNMENT_UNDEFINED": 2
+  },
+  "max_replay_or_pair_error": {
+    "source_kernel": 3.6637359812630166e-15,
+    "source_features": 3.885780586188048e-15,
+    "K": 1.4432899320127035e-15,
+    "kernel_jacobian": 1.6653345369377348e-15,
+    "gradient": 1.6181500583911657e-14,
+    "kernel_fd": 7.004065660787262e-10,
+    "objective_fd": 9.376106835379261e-09,
+    "theta_final": 1.4432899320127035e-15,
+    "prediction": 3.774758283725532e-15
+  },
+  "limits": {
+    "K": 1e-10,
+    "kernel_jacobian": 1e-09,
+    "gradient": 1e-09,
+    "theta_final": 1e-09,
+    "prediction": 1e-09,
+    "source_kernel": 1e-10,
+    "source_features": 1e-10,
+    "kernel_fd": 2e-07,
+    "objective_fd": 2e-07
+  },
+  "max_local_server_array_differences": {
+    "K": 1.609823385706477e-15,
+    "jacobian": 1.6653345369377348e-15,
+    "gradient": 1.6181500583911657e-14,
+    "final": 1.4432899320127035e-15,
+    "prediction": 3.774758283725532e-15,
+    "X": 0.0,
+    "theta": 0.0,
+    "y": 0.0
+  },
+  "server_environment": {
+    "scope_sha256": "7556960670d625b1ee3527bef9b21bb3ec26affe325095e90e75d1e051706b21",
+    "code_sha256": "01f0cd4c9839424d0d1ae2e85322f577b99dd7b8cdcd084493906d01a4cde729",
+    "seed_policy": "constructor defaults (random circuit seed 0); probes 812,1907",
+    "revision": "r2_explicit_undefined_alignment_handling",
+    "compiler": {
+      "optimization_level": 3,
+      "seed_transpiler": 71,
+      "basis": [
+        "h",
+        "cx",
+        "rx",
+        "ry",
+        "rz",
+        "rxx",
+        "ryy",
+        "rzz",
+        "rzx"
+      ]
+    },
+    "numpy": "1.24.4",
+    "qiskit": "1.2.4",
+    "python": "3.8.10 (default, Mar 18 2025, 20:04:55) \n[GCC 9.4.0]",
+    "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.29",
+    "excluded_modules": [
+      {
+        "module": "chebyshev_tower",
+        "class": "ChebyshevTower",
+        "sha256": "5a0b60dba764cfa32ce25e612bbaf7a1d3994a1a983b9c7bda5bd93326b69ae4",
+        "has_layers": true,
+        "excluded_reason": "Mandatory num_chebyshev is unspecified by the fixed default-construction protocol."
+      },
+      {
+        "module": "qcnn_encoding_circuit",
+        "class": "QCNNEncodingCircuit",
+        "sha256": "6515a22ed4c8f43b076869237a1a8d8abb75d63a5cbdb0dca9b880780528f4c4",
+        "has_layers": false,
+        "excluded_reason": "Default constructor is an empty operation builder; no custom/default=True architecture is selected."
+      },
+      {
+        "module": "qiskit_encoding_circuit",
+        "class": "QiskitEncodingCircuit",
+        "sha256": "4afab71c728e854f82cb4d1379b40481c403431557174cb416eaf67970030228",
+        "has_layers": false,
+        "excluded_reason": "Wrapper requires a supplied qiskit_circuit; none is selected by this protocol."
+      }
+    ],
+    "baseline": "compile, readout-aware common-isometry tail, restricted boundary, adjacent fusion",
+    "no_performance_timing": true
+  },
+  "program_fixed_coefficient_differences": [
+    {
+      "slot": "highdim_encoding_circuit_n2_l2_local_xyz",
+      "fixed_term_differences": [
+        {
+          "arm": "compiler",
+          "gate": 3,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "compiler",
+          "gate": 4,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "compiler",
+          "gate": 8,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "compiler",
+          "gate": 12,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 15,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 16,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "compiler",
+          "gate": 19,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 20,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        },
+        {
+          "arm": "boundary",
+          "gate": 3,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "boundary",
+          "gate": 4,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "boundary",
+          "gate": 8,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "boundary",
+          "gate": 12,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 15,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 16,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "boundary",
+          "gate": 19,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 20,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        },
+        {
+          "arm": "transport",
+          "gate": 3,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "transport",
+          "gate": 4,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "transport",
+          "gate": 8,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "transport",
+          "gate": 12,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 15,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 16,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "transport",
+          "gate": 19,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 20,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        }
+      ]
+    },
+    {
+      "slot": "highdim_encoding_circuit_n2_l2_local_z",
+      "fixed_term_differences": [
+        {
+          "arm": "compiler",
+          "gate": 3,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "compiler",
+          "gate": 4,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "compiler",
+          "gate": 8,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "compiler",
+          "gate": 12,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 15,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 16,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "compiler",
+          "gate": 19,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 20,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        },
+        {
+          "arm": "boundary",
+          "gate": 3,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "boundary",
+          "gate": 4,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "boundary",
+          "gate": 8,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "boundary",
+          "gate": 12,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 15,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 16,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "boundary",
+          "gate": 19,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 20,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        },
+        {
+          "arm": "transport",
+          "gate": 3,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "transport",
+          "gate": 4,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "transport",
+          "gate": 8,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "transport",
+          "gate": 12,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 15,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 16,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "transport",
+          "gate": 19,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 20,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        }
+      ]
+    },
+    {
+      "slot": "highdim_encoding_circuit_n2_l2_pauli_weight_le_2",
+      "fixed_term_differences": [
+        {
+          "arm": "compiler",
+          "gate": 3,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "compiler",
+          "gate": 4,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "compiler",
+          "gate": 8,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "compiler",
+          "gate": 12,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 15,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 16,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "compiler",
+          "gate": 19,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 20,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        },
+        {
+          "arm": "boundary",
+          "gate": 3,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "boundary",
+          "gate": 4,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "boundary",
+          "gate": 8,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "boundary",
+          "gate": 12,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 15,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 16,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "boundary",
+          "gate": 19,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 20,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        },
+        {
+          "arm": "transport",
+          "gate": 3,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "transport",
+          "gate": 4,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "transport",
+          "gate": 8,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "transport",
+          "gate": 12,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 15,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 16,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "transport",
+          "gate": 19,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 20,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        }
+      ]
+    },
+    {
+      "slot": "highdim_encoding_circuit_n4_l2_local_xyz",
+      "fixed_term_differences": [
+        {
+          "arm": "compiler",
+          "gate": 3,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "compiler",
+          "gate": 4,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "compiler",
+          "gate": 8,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "compiler",
+          "gate": 12,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 15,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 16,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "compiler",
+          "gate": 24,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "compiler",
+          "gate": 25,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "compiler",
+          "gate": 29,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "compiler",
+          "gate": 33,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 36,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 40,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 43,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 44,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "compiler",
+          "gate": 47,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 48,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        },
+        {
+          "arm": "compiler",
+          "gate": 51,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 52,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        },
+        {
+          "arm": "boundary",
+          "gate": 3,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "boundary",
+          "gate": 4,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "boundary",
+          "gate": 8,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "boundary",
+          "gate": 12,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 15,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 16,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "boundary",
+          "gate": 24,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "boundary",
+          "gate": 25,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "boundary",
+          "gate": 29,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "boundary",
+          "gate": 33,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 36,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 40,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 43,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 44,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "boundary",
+          "gate": 47,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 48,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        },
+        {
+          "arm": "boundary",
+          "gate": 51,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 52,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        },
+        {
+          "arm": "transport",
+          "gate": 3,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "transport",
+          "gate": 4,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "transport",
+          "gate": 8,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "transport",
+          "gate": 12,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 15,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 16,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "transport",
+          "gate": 24,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "transport",
+          "gate": 25,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "transport",
+          "gate": 29,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "transport",
+          "gate": 33,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 36,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 40,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 43,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 44,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "transport",
+          "gate": 47,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 48,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        },
+        {
+          "arm": "transport",
+          "gate": 51,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 52,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        }
+      ]
+    },
+    {
+      "slot": "highdim_encoding_circuit_n4_l2_local_z",
+      "fixed_term_differences": [
+        {
+          "arm": "compiler",
+          "gate": 3,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "compiler",
+          "gate": 4,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "compiler",
+          "gate": 8,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "compiler",
+          "gate": 12,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 15,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 16,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "compiler",
+          "gate": 24,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "compiler",
+          "gate": 25,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "compiler",
+          "gate": 29,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "compiler",
+          "gate": 33,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 36,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 40,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 43,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 44,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "compiler",
+          "gate": 47,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 48,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        },
+        {
+          "arm": "compiler",
+          "gate": 51,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 52,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        },
+        {
+          "arm": "boundary",
+          "gate": 3,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "boundary",
+          "gate": 4,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "boundary",
+          "gate": 8,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "boundary",
+          "gate": 12,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 15,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 16,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "boundary",
+          "gate": 24,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "boundary",
+          "gate": 25,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "boundary",
+          "gate": 29,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "boundary",
+          "gate": 33,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 36,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 40,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 43,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 44,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "boundary",
+          "gate": 47,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 48,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        },
+        {
+          "arm": "boundary",
+          "gate": 51,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 52,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        },
+        {
+          "arm": "transport",
+          "gate": 3,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "transport",
+          "gate": 4,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "transport",
+          "gate": 8,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "transport",
+          "gate": 12,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 15,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 16,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "transport",
+          "gate": 24,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "transport",
+          "gate": 25,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "transport",
+          "gate": 29,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "transport",
+          "gate": 33,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 36,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 40,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 43,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 44,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "transport",
+          "gate": 47,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 48,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        },
+        {
+          "arm": "transport",
+          "gate": 51,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 52,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        }
+      ]
+    },
+    {
+      "slot": "highdim_encoding_circuit_n4_l2_pauli_weight_le_2",
+      "fixed_term_differences": [
+        {
+          "arm": "compiler",
+          "gate": 3,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "compiler",
+          "gate": 4,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "compiler",
+          "gate": 8,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "compiler",
+          "gate": 12,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 15,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 16,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "compiler",
+          "gate": 24,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "compiler",
+          "gate": 25,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "compiler",
+          "gate": 29,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "compiler",
+          "gate": 33,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 36,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 40,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 43,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 44,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "compiler",
+          "gate": 47,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 48,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        },
+        {
+          "arm": "compiler",
+          "gate": 51,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "compiler",
+          "gate": 52,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        },
+        {
+          "arm": "boundary",
+          "gate": 3,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "boundary",
+          "gate": 4,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "boundary",
+          "gate": 8,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "boundary",
+          "gate": 12,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 15,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 16,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "boundary",
+          "gate": 24,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "boundary",
+          "gate": 25,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "boundary",
+          "gate": 29,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "boundary",
+          "gate": 33,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 36,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 40,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 43,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 44,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "boundary",
+          "gate": 47,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 48,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        },
+        {
+          "arm": "boundary",
+          "gate": 51,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "boundary",
+          "gate": 52,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        },
+        {
+          "arm": "transport",
+          "gate": 3,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "transport",
+          "gate": 4,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "transport",
+          "gate": 8,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "transport",
+          "gate": 12,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 15,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 16,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "transport",
+          "gate": 24,
+          "term": 1,
+          "server": -2.0537066510075754,
+          "local": -1.564259481571047
+        },
+        {
+          "arm": "transport",
+          "gate": 25,
+          "term": 0,
+          "server": 1.5707963267948961,
+          "local": 1.5707963267948968
+        },
+        {
+          "arm": "transport",
+          "gate": 29,
+          "term": 1,
+          "server": -2.053706651007575,
+          "local": -1.5642594815710467
+        },
+        {
+          "arm": "transport",
+          "gate": 33,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 36,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 40,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 43,
+          "term": 0,
+          "server": -1.5707963267948966,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 44,
+          "term": 0,
+          "server": 2.053706651007575,
+          "local": 1.564259481571046
+        },
+        {
+          "arm": "transport",
+          "gate": 47,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 48,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        },
+        {
+          "arm": "transport",
+          "gate": 51,
+          "term": 0,
+          "server": -1.5707963267948972,
+          "local": -1.5707963267948963
+        },
+        {
+          "arm": "transport",
+          "gate": 52,
+          "term": 0,
+          "server": 0.48291032421267843,
+          "local": -0.006536845223848786
+        }
+      ]
+    }
+  ],
+  "statuses": {
+    "PASS_TRAINABLE": 82,
+    "PASS_PARAMETER_FREE": 18,
+    "DUPLICATE": 18,
+    "PASS_KERNEL_ONLY_ALIGNMENT_UNDEFINED": 2
+  },
+  "resource_positive_slots": [],
+  "additional_symbol_slots": [
+    "chebyshev_rx_n2_l2_local_xyz",
+    "chebyshev_rx_n2_l2_pauli_weight_le_2",
+    "chebyshev_rx_n4_l2_local_xyz",
+    "chebyshev_rx_n4_l2_pauli_weight_le_2"
+  ],
+  "scope": "Server data integrity, frozen-scope and local-program comparison; local Qiskit base-point kernel and shared-angle/finite-difference replay. No wall-time replay, no independent human proof review; server dependency source snapshot not included."
+}

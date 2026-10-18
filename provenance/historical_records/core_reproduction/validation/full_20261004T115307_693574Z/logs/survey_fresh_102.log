@@ -1,0 +1,120 @@
+chebyshev_pqc_n2_l1_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+chebyshev_pqc_n2_l1_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+chebyshev_pqc_n2_l1_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+chebyshev_pqc_n2_l2_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+chebyshev_pqc_n2_l2_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+chebyshev_pqc_n2_l2_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+chebyshev_pqc_n4_l1_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+chebyshev_pqc_n4_l1_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+chebyshev_pqc_n4_l1_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+chebyshev_pqc_n4_l2_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+chebyshev_pqc_n4_l2_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+chebyshev_pqc_n4_l2_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+chebyshev_rx_n2_l1_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+chebyshev_rx_n2_l1_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+chebyshev_rx_n2_l1_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+chebyshev_rx_n2_l2_local_xyz PASS_TRAINABLE {'active_symbols': 2, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+chebyshev_rx_n2_l2_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+chebyshev_rx_n2_l2_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 2, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+chebyshev_rx_n4_l1_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+chebyshev_rx_n4_l1_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+chebyshev_rx_n4_l1_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+chebyshev_rx_n4_l2_local_xyz PASS_TRAINABLE {'active_symbols': 2, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+chebyshev_rx_n4_l2_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+chebyshev_rx_n4_l2_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 2, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+highdim_encoding_circuit_n2_l1_local_xyz PASS_PARAMETER_FREE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+highdim_encoding_circuit_n2_l1_local_z PASS_PARAMETER_FREE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+highdim_encoding_circuit_n2_l1_pauli_weight_le_2 PASS_PARAMETER_FREE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+highdim_encoding_circuit_n2_l2_local_xyz PASS_PARAMETER_FREE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+highdim_encoding_circuit_n2_l2_local_z PASS_PARAMETER_FREE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+highdim_encoding_circuit_n2_l2_pauli_weight_le_2 PASS_PARAMETER_FREE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+highdim_encoding_circuit_n4_l1_local_xyz PASS_PARAMETER_FREE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+highdim_encoding_circuit_n4_l1_local_z PASS_PARAMETER_FREE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+highdim_encoding_circuit_n4_l1_pauli_weight_le_2 PASS_PARAMETER_FREE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+highdim_encoding_circuit_n4_l2_local_xyz PASS_PARAMETER_FREE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+highdim_encoding_circuit_n4_l2_local_z PASS_PARAMETER_FREE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+highdim_encoding_circuit_n4_l2_pauli_weight_le_2 PASS_PARAMETER_FREE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+hubregtsen_encoding_circuit_n2_l1_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+hubregtsen_encoding_circuit_n2_l1_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+hubregtsen_encoding_circuit_n2_l1_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+hubregtsen_encoding_circuit_n2_l2_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+hubregtsen_encoding_circuit_n2_l2_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+hubregtsen_encoding_circuit_n2_l2_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+hubregtsen_encoding_circuit_n4_l1_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+hubregtsen_encoding_circuit_n4_l1_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+hubregtsen_encoding_circuit_n4_l1_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+hubregtsen_encoding_circuit_n4_l2_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+hubregtsen_encoding_circuit_n4_l2_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+hubregtsen_encoding_circuit_n4_l2_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+kyriienko_nonlinear_encoding_circuit_n2_l1_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+kyriienko_nonlinear_encoding_circuit_n2_l1_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+kyriienko_nonlinear_encoding_circuit_n2_l1_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+kyriienko_nonlinear_encoding_circuit_n4_l1_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+kyriienko_nonlinear_encoding_circuit_n4_l1_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+kyriienko_nonlinear_encoding_circuit_n4_l1_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+multi_control_encoding_circuit_n2_l1_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+multi_control_encoding_circuit_n2_l1_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+multi_control_encoding_circuit_n2_l1_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+multi_control_encoding_circuit_n2_l2_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+multi_control_encoding_circuit_n2_l2_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+multi_control_encoding_circuit_n2_l2_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+multi_control_encoding_circuit_n4_l1_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+multi_control_encoding_circuit_n4_l1_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+multi_control_encoding_circuit_n4_l1_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+multi_control_encoding_circuit_n4_l2_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+multi_control_encoding_circuit_n4_l2_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+multi_control_encoding_circuit_n4_l2_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+param_z_feature_map_n2_l1_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+param_z_feature_map_n2_l1_local_z PASS_KERNEL_ONLY_ALIGNMENT_UNDEFINED {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+param_z_feature_map_n2_l1_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+param_z_feature_map_n2_l2_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+param_z_feature_map_n2_l2_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+param_z_feature_map_n2_l2_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+param_z_feature_map_n4_l1_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+param_z_feature_map_n4_l1_local_z PASS_KERNEL_ONLY_ALIGNMENT_UNDEFINED {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+param_z_feature_map_n4_l1_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+param_z_feature_map_n4_l2_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+param_z_feature_map_n4_l2_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+param_z_feature_map_n4_l2_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+random_encoding_circuit_n2_l1_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+random_encoding_circuit_n2_l1_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+random_encoding_circuit_n2_l1_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+random_encoding_circuit_n4_l1_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+random_encoding_circuit_n4_l1_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+random_encoding_circuit_n4_l1_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+random_layered_encoding_circuit_n2_l1_local_xyz PASS_PARAMETER_FREE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+random_layered_encoding_circuit_n2_l1_local_z PASS_PARAMETER_FREE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+random_layered_encoding_circuit_n2_l1_pauli_weight_le_2 PASS_PARAMETER_FREE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+random_layered_encoding_circuit_n4_l1_local_xyz PASS_PARAMETER_FREE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+random_layered_encoding_circuit_n4_l1_local_z PASS_PARAMETER_FREE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+random_layered_encoding_circuit_n4_l1_pauli_weight_le_2 PASS_PARAMETER_FREE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+yz_cx_encoding_circuit_n2_l1_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+yz_cx_encoding_circuit_n2_l1_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+yz_cx_encoding_circuit_n2_l1_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+yz_cx_encoding_circuit_n2_l2_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+yz_cx_encoding_circuit_n2_l2_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+yz_cx_encoding_circuit_n2_l2_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+yz_cx_encoding_circuit_n4_l1_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+yz_cx_encoding_circuit_n4_l1_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+yz_cx_encoding_circuit_n4_l1_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+yz_cx_encoding_circuit_n4_l2_local_xyz PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+yz_cx_encoding_circuit_n4_l2_local_z PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+yz_cx_encoding_circuit_n4_l2_pauli_weight_le_2 PASS_TRAINABLE {'active_symbols': 0, 'fused_operations': 0, 'trainable_angle_tasks': 0, 'feature_sweeps_per_gradient': 0}
+{
+  "passed": true,
+  "nominal_slots": 120,
+  "statuses": {
+    "PASS_TRAINABLE": 82,
+    "PASS_PARAMETER_FREE": 18,
+    "DUPLICATE": 18,
+    "PASS_KERNEL_ONLY_ALIGNMENT_UNDEFINED": 2
+  },
+  "execution_resource_positive_slots": [],
+  "additional_symbol_slots": [
+    "chebyshev_rx_n2_l2_local_xyz",
+    "chebyshev_rx_n2_l2_pauli_weight_le_2",
+    "chebyshev_rx_n4_l2_local_xyz",
+    "chebyshev_rx_n4_l2_pauli_weight_le_2"
+  ],
+  "interpretation": "Fixed source/default-constructor census, not prevalence or independent family count. No wall-time or QPU measurements."
+}

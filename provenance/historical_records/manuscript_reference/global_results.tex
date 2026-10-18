@@ -1,0 +1,54 @@
+\subsection{Stronger global normalization changes the interpretation}
+\label{sec:globalresults}
+A bounded follow-up applies signed Clifford extraction and fusion across
+commuting intervening rotations to all 12 existing settings, without
+changing constructors or readouts. Its input is the compiled IR; its
+remaining Clifford frame is retained unless exactly identity up to
+phase. In the two-layer ChebyshevRx examples, unitary-preserving
+normalization alone reduces trainable Pauli-angle tasks from 4 to 3
+and from 8 to 7. These reductions occur in \emph{both} the boundary and
+transport arms (Table~\ref{tab:global}). They must not be credited to
+the kernel certificate. A multi-qubit Pauli rotation is one angle task,
+not necessarily one native physical gate.
+
+\begin{table}[htbp]
+\caption{Two-layer ChebyshevRx after global normalization.
+Coefficient rank is the exact linear rank of the retained angle
+coefficients in the displayed source-feature basis, not a proof of
+minimal kernel dimension. B and T denote the earlier boundary and
+transport arms.}
+\label{tab:global}
+\begin{tabular}{lrrrr}
+& \multicolumn{2}{c}{2 qubits} & \multicolumn{2}{c}{4 qubits}\\
+& B & T & B & T\\
+\toprule
+Symbols & 7 & 5 & 15 & 13\\
+Angle tasks (old) & 4 & 4 & 8 & 8\\
+Angle tasks (global) & 3 & 3 & 7 & 7\\
+Coefficient rank & 6 & 4 & 14 & 12\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Across these 12 settings, no additional angle-task reduction appears
+when comparing the globally normalized boundary and transport arms.
+All source-to-normal-form feature, unitary, kernel and derivative
+probes pass; Appendix~\ref{app:global} specifies the independent
+rewrite checker and numerical scope. This is a new local structural
+experiment, not a rerun of the Linux timing study. In particular,
+the historical timing percentages below are \emph{not} speedups over
+this stronger global-normalization baseline. The new representation
+can absorb the representative internal explanation into standard
+normalization followed by the readout-isometry test; exclusivity over
+such a composition is not established.
+
+The zero angle-task increment has a simple sufficient explanation.
+For a fixed fused representation with angles
+$\alpha_r(x,\theta)=u_r(x,\theta)+b_r(\theta)$, deleting certified
+input-independent terms $b_r$ cannot remove a trainable-angle task
+if $u_r$ still has a nonzero retained-parameter dependence. If this
+holds for every trainable rotation, and gate grouping and measurement
+bases are unchanged, the per-angle two-shift schedule keeps exactly
+the same task count. This is an accounting statement for that schedule,
+not a lower bound on all possible kernel evaluators. It applies to the
+surviving product-angle terms in the two representative circuits.

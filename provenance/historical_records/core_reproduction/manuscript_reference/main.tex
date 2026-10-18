@@ -1,0 +1,443 @@
+\documentclass[a4paper,twocolumn,11pt,unpublished]{quantumarticle}
+\ifdefined\pdfoutput\pdfoutput=1\fi
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx,booktabs,array,amsmath,amssymb,amsthm,mathtools}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\setlength{\emergencystretch}{1.5em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\norm}[1]{\lVert#1\rVert}
+\newcommand{\unknown}{\textnormal{UNKNOWN}}
+\newcommand{\inactive}{\textnormal{INACTIVE}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\authorinput}[1]{\textcolor{red}{\textbf{[\mbox{AUTHOR INPUT}: #1]}}}
+\begin{document}
+\title{Readout-Dependent Parameter Identifiability of Quantum Kernels}
+\input{submission_metadata}
+\begin{abstract}
+A circuit parameter may change a quantum state and every measured
+feature while remaining invisible to its projected kernel. For a fixed,
+affinely independent finite data feature basis, a coefficient Gram
+matrix characterizes all-input kernel equivalence, global coordinate
+inactivity, and the identifiable dimension (generic differential
+rank); an exact rational-frequency subclass admits a finite decision
+procedure. Universal gauges of isotropic Pauli readouts are the
+unitaries preserving the measured span. With a known classification of
+locality-preserving unitaries, their identity components are products
+of single-qubit unitaries for all weights $1,\ldots,k<n$, including
+local XYZ; complete Pauli and local Z readouts give all and diagonal
+unitaries, respectively. Together with exact certificates, these
+gauges show that identifiable dimension depends on readout, is not
+monotone in it, and can be reduced nonlinearly even when every
+coordinate is active. A grouped single-layer Z-readout family has
+exactly as many kernel degrees of freedom as independent input groups.
+A Kyriienko-type family has rank at most $3n-2$ under local XYZ
+readout for every $n$, with equality certified for even $n\le8$. Exact
+certificates determine the rank in all 54 settings of a
+circuit--readout census. Readout-specific transport and
+strong-baseline audits separate identifiable dimension from executable
+cost: the tested additional certificates do not reduce fused-angle
+shift tasks after the strengthened baselines. We do not identify lower
+dimension with quantum resource advantage.
+\end{abstract}
+\maketitle
+
+\section{Introduction}
+Quantum learning models pass through several descriptions: a circuit,
+the state it prepares, measured features, and the similarity function
+used by a classical learner. Equality at one level need not be necessary
+for equality at the next. Quantum kernels make this distinction
+operational because the learner may access only pairwise similarities
+rather than the underlying quantum states or feature coordinates
+\cite{schuld,huang}. A parameter count at the circuit level can therefore
+overstate the number of directions that change the learning model.
+Figure~\ref{fig:overview} summarizes the distinction between kernel
+equivalence, identifiable dimension, and executable work.
+These distinctions need not coincide: a parameter can change the state
+or individual features while leaving every pairwise kernel value
+unchanged. We seek certificates of which directions the specified
+kernel can identify, then audit what an implementation can eliminate.
+
+\input{overview_figure}
+
+\paragraph{Main results and assumptions.}
+For ideal expectation-value Gaussian kernels with fixed metric
+$M\succ0$ and fixed bandwidth $\gamma>0$, our results are:
+(i) with analytic coefficients on an open connected parameter box
+and a fixed finite data basis satisfying linear independence of
+$\{1,h_1,\ldots,h_A\}$ on the actual input domain, the coefficient
+Gram matrix characterizes all-input kernel equivalence, global
+coordinate inactivity, and generic differential rank;
+(ii) exact minors and symmetry upper bounds certify that rank in
+all 54 census settings, including circuits outside the fixed-basis
+subclass, and yield family-level dimension statements with explicitly
+delimited lower-bound certificates; and
+(iii) strong-baseline audits separate identifiable dimension from
+executable cost, finding no incremental fused-angle shift-task
+reduction in the tested comparisons. A finite decision procedure is
+established only for the exact rational-frequency subclass of
+Sec.~\ref{sec:gram}, not for arbitrary analytic coefficient functions.
+
+\input{contracts_table}
+
+Our guiding question is one of identifiability: which parameter
+directions can a specified kernel identify? Deleting an
+input-independent parameter occurrence that changes the state and
+individual measured features, but not the kernel, is one special
+mechanism exhibiting a direction the kernel cannot identify.
+For fidelity kernels, cancellation of a common output unitary is
+already familiar, and embedding-placement studies explicitly discuss
+gate erasure \cite{salmenpera}. For projected kernels, the relevant
+specification includes both the observables and the metric on their
+expectation values. Measuring all local Pauli components with isotropic
+weights discards common local coordinate rotations; by a classification
+of locality-preserving unitaries \cite{cpr2019locality}, these are the
+only connected universal gauges of that readout
+(Sec.~\ref{sec:gaugeclass}). Measuring only
+one component, or choosing an anisotropic metric, can restore a
+parameter dependence. Neither circuit syntax nor an observable-commutant
+test alone specifies this distinction.
+
+The object studied here is \emph{kernel equivalence relative to a fixed
+measurement geometry}, rather than invariance under symmetries of
+the input data \cite{larocca,meyer}. Prior methods address several
+distinct preservation targets. Parametric equivalence checking
+verifies circuit transformations \cite{peham}, with cutoff theorems
+reducing supported all-parameter identities to finitely many checks
+\cite{rosswesley}. Dead-gate elimination preserves contributory
+measurement-outcome distributions \cite{deadgate}; its hybrid-program
+extension also analyzes which outcomes are consumed by the classical
+host \cite{deadgatejournal}. These preservation targets differ from
+equality of pairwise kernel values when the individual measured
+features change. QuCLEAR extracts
+Clifford subcircuits and absorbs them into observables or classical
+postprocessing \cite{quclear}; Paulihedral exploits Pauli structure
+for scheduling and synthesis \cite{paulihedral}. Kernel-specific
+deletion may preserve pairwise distances while changing both the
+unitary and the individual measured features.
+
+State-geometry methods already identify redundant circuit parameters
+and characterize dimensional expressivity \cite{funcke,haug}.
+Haug, Bharti, and Kim's pruning preserves effective quantum dimension
+\cite{haug}; the target here is instead equality of a fixed
+readout-defined kernel at corresponding parameter assignments.
+A kernel-inactive direction can change the quantum state, while
+nonzero sensitivity to every coordinate does not exclude redundant
+combinations. Fourier analysis provides a complementary finite
+description of quantum features \cite{schuldFourier}. Circuit harmonic
+matrices further describe coefficient correlations and parameter
+Jacobians, including pointwise training kernels \cite{CHM}.
+We use the Gram matrix of feature coefficients to characterize
+\emph{distance-equivalence fibers}, separating this target from both
+state dimension and coefficient-derivative Gram matrices.
+
+Table~\ref{tab:contracts} locates these results
+by the mathematical object preserved or characterized, rather than
+ranking methods with different objectives.
+
+\paragraph{Scope.}
+The table compares targets, not measured performance of the named
+systems: our global-rewrite diagnostic is not a full Paulihedral or
+QuCLEAR implementation, and no matched QFI-pruning benchmark is reported.
+Finite decision guarantees apply only to the exact subclass specified
+below; generic differential rank gives local minimal smooth dimension
+at regular points, not an unconditional global coordinate system.
+Internal transport is sound but incomplete, and executable savings
+are evaluated separately from identifiability. The approximate
+output-symmetry bound remains in Appendix~\ref{app:bound}.
+
+\section{Kernel specification and equivalence}
+Let $\rho_\theta(x)$ be an $n$-qubit density operator, and let
+$O_1,\ldots,O_m$ be distinct nonidentity Pauli observables. Define
+\begin{align}
+ f_\theta(x)_j&=\Tr[\rho_\theta(x)O_j],\\
+ M&=\diag(w_1,\ldots,w_m),\qquad w_j>0,\\
+ \delta_\theta&=f_\theta(x)-f_\theta(x'),\nonumber\\
+ k_\theta(x,x')&=\exp[-\gamma\delta_\theta^T M\delta_\theta].\label{eq:kernel}
+\end{align}
+with fixed $\gamma>0$. These are positive-semidefinite kernels obtained
+by applying an ordinary Gaussian kernel to $M^{1/2}f_\theta(x)$.
+Input-dependent feature normalization, adaptive metrics, shot estimators,
+and physical noise are not implicit in Eq.~\eqref{eq:kernel}.
+
+Two circuit representations are equivalent under this specification
+if their kernels agree for all permitted inputs and all assignments
+of the retained and shared parameters. A symbol is globally
+kernel-inactive when the kernel is independent of it throughout that
+domain. A numerical zero derivative on a finite sample is not a
+certificate of this property. An uncertified symbol is \unknown,
+not necessarily active.
+
+If a common feature transformation satisfies
+$f_t(x)=A_t f_0(x)+\tau_t$ and $A_t^T M A_t=M$, then it preserves
+Eq.~\eqref{eq:kernel}. The common translation cancels in feature
+differences. We use the linear Pauli-adjoint case below. The isometry
+identity itself is elementary; the certification problem is to establish
+that a particular circuit occurrence realizes such an action uniformly
+in the other inputs and symbols.
+
+\input{geometry_scope}
+
+\section{Exact output and interior certificates}
+\begin{theorem}[Universal output Pauli criterion]
+\label{thm:output}
+For a common output rotation $V(t)=\exp(-itP/2)$, where $P$ is a
+Hermitian Pauli word, the weighted feature distance in
+Eq.~\eqref{eq:kernel} is invariant for all pairs of density operators
+and all $t$ if and only if every measured $O_j$ anticommuting with $P$
+has its Pauli partner $iPO_j$, up to sign, in the readout with the
+same weight.
+\end{theorem}
+\begin{proof}
+Conjugation fixes commuting observables and rotates each anticommuting
+pair in a real two-dimensional plane. Closure and equal paired weights
+therefore preserve the weighted distance. Conversely, extend the
+diagonal metric to all nonidentity Pauli coordinates with zero weights
+on unmeasured coordinates. An open neighborhood of the maximally mixed
+state permits arbitrary sufficiently small traceless Hermitian
+perturbations. Universal distance invariance implies $T(t)^TWT(t)=W$
+on the full coordinate space. Differentiating gives $J^TW+WJ=0$;
+each rotating two-coordinate block requires equal weights. Positive
+measured weights force inclusion of the partner.
+\end{proof}
+Necessity uses \emph{all} density operators. It need not hold on a
+restricted reachable-state family, and it is not a completeness theorem
+for arbitrary internal circuit parameters.
+
+\input{gauge_classification}
+
+\begin{theorem}[Sound restricted transport and deletion]
+\label{thm:transport}
+An input-independent Pauli-rotation occurrence may be transported to
+the output through commuting Pauli rotations and supported fixed
+Clifford gates. If its transported generator satisfies
+Theorem~\ref{thm:output}, deleting the occurrence preserves the kernel
+pointwise in all inputs and parameter assignments. Any finite sequence
+of such certified deletions is sound. A shared symbol is certified
+inactive only when no occurrence of that symbol remains.
+\end{theorem}
+\begin{proof}
+Commuting rotations can be exchanged regardless of the later angle's
+data or parameter dependence. A Clifford $C$ obeys
+$C e^{-itP/2}=e^{-itCPC^\dagger/2}C$. These identities move the
+occurrence to the output without changing the unitary. Theorem
+\ref{thm:output} then justifies its kernel-specific deletion.
+Induction establishes the sequence claim, including tied assignments
+of shared symbols. Absence of every occurrence removes the symbol's
+dependency.
+\end{proof}
+
+The implemented rule supports fixed Hadamard and CNOT transport,
+blocks unsupported noncommuting rotations, and checks equal metric
+weights exactly rather than with a numerical tolerance. Its
+operational steps and complexity, the source-to-IR precondition, and
+the conditions under which deletion preserves optimizer trajectories
+are given in Appendix~\ref{app:transport_impl}.
+
+\subsection{A source-derived internal separation}
+\label{sec:witness}
+Figure~\ref{fig:witness} shows the two-qubit, two-layer ChebyshevRx
+circuit in the frozen external-source inventory. Transporting the early
+$R_{x,0}(\theta_2)$ produces
+\begin{equation}
+ \begin{aligned}
+ X_0&\ \xrightarrow{\mathrm{CX}_{0,1}}\ X_0X_1\\
+ &\ \xrightarrow{\text{later }X\text{ rotations}}\ X_0X_1
+ \ \xrightarrow{\mathrm{CX}_{0,1}}\ X_0.
+ \end{aligned}\label{eq:path}
+\end{equation}
+The intermediate generator commutes with the later data-dependent
+$X$ rotations. Hence $U_\theta(x)=R_{x,0}(\theta_2)U_{\rm del}(x)$.
+For generic $\theta_2$, this deletion is not unitary equivalence up
+to phase and does not preserve individual $Y_0,Z_0$ expectations.
+It nevertheless preserves full local $XYZ$ distances with equal
+weights. It precedes a genuinely later overlapping data gate and so
+lies outside a syntactic input-independent suffix.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=.96\textwidth]{figures/interior_witness.pdf}
+\caption{An existing source circuit, not a newly selected favorable
+grammar. Gates are chronological from left to right;
+$\phi_q=\arccos(x_q)$. The marked early rotation is transported through
+two CNOTs and later overlapping data rotations, then discarded only
+under the specified readout and metric. The resulting common output
+rotation changes states and features, not the ideal kernel. The
+transport uses standard circuit identities; it does not establish that
+all more powerful symbolic optimizers would miss this factorization.}
+\label{fig:witness}
+\end{figure*}
+
+In a seven-input witness at $\theta_2=0.73$, the maximum feature
+change is $0.36885$ and the maximum state infidelity is $0.12741$,
+whereas the maximum kernel discrepancy is $3.33\times10^{-16}$.
+Equation~\eqref{eq:path}, not those finite samples, supplies the
+certificate. The two- and four-qubit two-layer settings contain two
+such globally inactive symbols each. Boundary effects and same-native
+gate affine biases are counted separately below.
+
+
+\input{fourier_gram}
+\input{global_normal_form}
+\input{dimension_theory}
+\input{extension_theory}
+\input{family_extension}
+
+\section{Exact dimension census}
+\input{dimension_results}
+\input{extension_results}
+
+The 30-setting Fourier audit and twelve Kyriienko scaling
+certificates were reproduced in a pinned Linux environment, with all
+certificate comparisons agreeing. This is cross-environment
+reproduction of the same implementations, not independent
+implementation or formal verification. Table~\ref{tab:reproscope}
+separates these full reruns from the dedicated local Gram calculation
+and the earlier saved-evidence replay.
+
+\section{Execution cost audit}
+\label{sec:cost}
+A certificate concerns a kernel function; executable work also depends
+on compilation, gate fusion, differentiation and measurement schedules.
+In the two-layer ChebyshevRx example, the boundary and transport arms
+retain $7$ and $5$ source symbols, yet both require three trainable
+Pauli-angle tasks after global normalization. The exact kernel
+dimension $r=4$ counts parameter dependence across all inputs, not the
+number of rotation tasks at one input.
+
+\input{global_results}
+
+\subsection{Timing, survey, and learning controls}
+The earlier adjacent-fusion study used 12 configurations, seven arms,
+three NumPy derivative backends and three data problems, with five split
+seeds and five repetitions: 18,900 cold fits and a separate 3,600-fit
+reuse study. Serial cold-fit median reductions of 22.20\% and 12.38\%
+are specific to that earlier baseline; they are not gains over global
+normalization. Adjoint reverse work is unchanged, and the fastest
+tested backend remains boundary-adjoint. The 102-slot circuit/readout
+survey finds four extra-symbol slots but no additional final fused
+operation or angle-task reduction. Full protocols, preserved timings,
+the backend figure, and the 32-symbol mechanism breakdown are in
+Appendix~\ref{app:resource_details}. Ideal derivative checks and analytic
+fixed-shot counts are not hardware or fixed-accuracy shot experiments.
+Appendix~\ref{app:legacy_controls} retains the moons/Wine, placement,
+fidelity-candidate and hardware controls; the image negative result
+remains in Appendix~\ref{app:evidence}. They are not evidence of a
+general predictive or adaptive-search advantage.
+
+\section{Limits and implications}
+The coefficient-Gram representation requires a fixed finite data basis
+independent of trainable parameters. General products $\theta\phi(x)$
+fall outside that construction; the successful ChebyshevRx and ParamZ
+certificates do not prove a decision procedure for this larger class.
+Even within the exact fixed-frequency subclass, finite decidability
+does not imply a practical expansion or minor budget.
+
+Generic differential rank is a local regular-point statement. A
+nonlinear factorization may require several charts, and a rank deficit
+need not identify an individually deletable coordinate. The loss-gradient
+space changes with the parameter point; optimizer state, regularizers
+and finite-step reparameterizations need their own treatment.
+
+Proposition~\ref{prop:gauge} describes only connected, universal-state
+gauges for complete isotropic weight sectors, where it uses the
+classification of Ref.~\cite{cpr2019locality}, and for local Z.
+Disconnected symmetries beyond qubit permutations, anisotropic or
+partial readouts, and reachable-state-specific gauge groups remain
+outside that description. The grouped
+single-layer result does not extend to arbitrary Hubregtsen depths.
+For the Kyriienko-type family, the gauge upper bounds ($r\le3n-2$, and
+$r\le2n$ for local Z) are proved for every $n$, but exact matching
+minors exist only for even $n\le8$ and rely on computer arithmetic
+that is not formally verified. Floating-point ranks agree for local
+XYZ through $n=12$; no odd size is exactly certified, and an all-size
+lower bound remains open.
+
+The 54-setting census is selected source evidence, not a population
+prevalence estimate. The strongest implemented resource baselines leave
+zero additional angle-task savings in these tests. This neither proves
+optimal execution cost nor establishes generic speedup, lower hardware
+shot counts, quantum advantage, or better predictive performance.
+Finite-shot estimators and noise need separate analysis. Conventional
+compilation, measurement optimization and kernel-alignment subsampling
+\cite{sahin2024subsampling} address different resource questions.
+Appendix~\ref{app:additional_scope} retains the explicit transport,
+search-descendant and predictor-storage limitations.
+
+\section{Conclusion}
+Parameters that a circuit, its state, or its measured features
+distinguish may be indistinguishable to the specified kernel. For
+fixed finite data bases, the coefficient Gram matrix makes this
+precise: it characterizes all-input kernel equivalence, global
+inactivity, and the identifiable dimension. This dimension can be
+certified exactly, as in all 54 census settings, the grouped Z-readout
+family, and the Kyriienko-type family at even $n\le8$. It depends on
+the readout, is not monotone in it, and can fall below the number of
+individually active coordinates. It is also not execution cost: in the
+tested scope, the strengthened baselines leave no additional
+angle-task savings. Three problems remain open. Circuits with
+parameter--data products $\theta\phi(x)$ lie outside the fixed-basis
+construction. For the Kyriienko-type family, no odd size is exactly
+certified, and equality $r=3n-2$ for all $n$ still lacks a matching
+lower bound. Finally, identifiability under finite-shot estimators and
+physical noise requires separate analysis.
+
+\section*{Data availability}
+The code, source snapshots, frozen inputs, manifests, certificates,
+training traces, audits, and the reproduction bundle with its
+pinned-environment replay record (Table~\ref{tab:reproscope}) are
+retained in the research workspace and have not yet been deposited
+in a public archive. Public benchmark data originate from the sources
+identified in Appendix~\ref{app:evidence}.
+\authorinput{Confirm the public repository or the access arrangement
+for editors and referees before submission.}
+
+\section*{Author contributions and AI disclosure}
+Hyong Keun Park designed the research, developed the proofs, and
+performed the experiments. Jahoon Jeong and Joonkyo Shim reviewed
+the work. Hyunsoo Yoon supervised the research.
+
+We acknowledge the use of large language models (LLMs) to assist in
+the preparation of this manuscript. Specifically, LLMs assisted with
+research planning, drafting and revising text, literature discovery,
+experimental code development and debugging, and organizing and
+analyzing results, including calculation checks. The authors carefully
+reviewed and edited all AI-assisted outputs and take full
+responsibility for the final content and scientific integrity of
+this work.
+\authorinput{All authors must confirm completion of the review
+described in this disclosure before submission.}
+
+\section*{Acknowledgments}
+\authorinput{funding sources and grant numbers, or ``no specific
+funding''; any further acknowledgments}
+
+\section*{Competing interests}
+\authorinput{competing-interest statement; consider the POSCO
+affiliation of H.K.P.}
+
+\onecolumn
+\appendix
+\input{appendices}
+\input{dimension_appendix}
+\input{extension_appendix}
+\input{legacy_controls}
+\input{gram_appendix}
+\input{followup_appendix}
+\input{resource_details}
+\input{additional_scope}
+\input{spectral_context}
+\input{transport_implementation}
+\input{kyriienko_scaling_appendix}
+\clearpage
+\twocolumn
+\bibliographystyle{quantum}
+\bibliography{references}
+\end{document}

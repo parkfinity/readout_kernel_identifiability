@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "files_listed": 227,
+  "missing": [],
+  "changed": [],
+  "extra_unlisted": [
+    "README_KO.md"
+  ],
+  "manifest_sha256": "69fe53ae29ba3d54e5ac430366ccf722fa9e329a4457b14350fba4d0bd598783",
+  "checked_utc": "2026-10-03T21:53:36Z"
+}

@@ -1,0 +1,64 @@
+\subsection{Nonlinear redundancy with no inactive retained coordinate}
+\label{sec:nonlinearhub}
+The distinction is not limited to redundant linear combinations.
+Consider the frozen four-qubit, one-layer Hubregtsen source circuit
+\cite{hubregtsen2022,squlearn}
+with two input features and local Z readout. It prepares $|+\rangle$
+on each qubit, applies $R_z(x_{q\bmod2})$ and $R_y(\theta_q)$,
+and ends with controlled-Z rotations carrying four further symbols.
+Those controlled rotations commute with every measured Z and are
+already removed by the strengthened observable-commutant baseline.
+The four retained features are exactly
+\begin{equation}
+ f_q(x)=-\sin\theta_q\cos x_{q\bmod2},\qquad q=0,\ldots,3.
+ \label{eq:hubfeatures}
+\end{equation}
+Exact Heisenberg expansions of the frozen compiled IR reproduce
+each identity, including its sign and source-parameter index.
+
+\begin{proposition}[A nonlinear two-coordinate factorization]
+For this source configuration and unit-weight local Z readout,
+all four retained source coordinates are individually kernel-active.
+The minimum dimension of a smooth kernel factorization and the
+generic differential rank are both two, whereas any factorization
+through a constant linear map of the retained coordinates requires
+rank four.
+\end{proposition}
+\begin{proof}
+Let $c_j=\cos x_j-\cos x'_j$. Equation~\eqref{eq:hubfeatures} gives
+\begin{align}
+ d^2_\theta(x,x')&=\beta_0 c_0^2+\beta_1 c_1^2,\label{eq:hubdistance}\\
+ \beta_0&=\sin^2\theta_0+\sin^2\theta_2,\nonumber\\
+ \beta_1&=\sin^2\theta_1+\sin^2\theta_3.\label{eq:hubbeta}
+\end{align}
+This is a global smooth factorization through two real variables.
+Set the four retained angles to $\pi/4$ and choose input pairs
+$((0,0),(\pi/4,0))$ and $((0,0),(0,\pi/4))$ in $(-1,1)^2$.
+The distance Jacobian minor in source columns $\theta_0,\theta_1$
+is diagonal with entries $(1-1/\sqrt2)^2$, hence
+\begin{equation}
+ \det J=(1-1/\sqrt2)^4=\frac{17}{4}-3\sqrt2>0.
+ \label{eq:hubminor}
+\end{equation}
+Analyticity and the chain rule therefore give generic rank and
+minimum smooth factor dimension two. Each source derivative
+$\sin(2\theta_q)c_{q\bmod2}^2$ is not identically zero, so every
+retained coordinate is active. A constant null vector $v$ would
+require $v_0\sin2\theta_0+v_2\sin2\theta_2=0$ and
+$v_1\sin2\theta_1+v_3\sin2\theta_3=0$ for all independently
+variable angles. Each coefficient must vanish. A rank-deficient
+constant linear factor would supply a nonzero such vector and is
+therefore impossible.
+\end{proof}
+
+Here an exact constant-null-space calculation returns the valid
+upper bound four, not the minimal nonlinear dimension two. This
+source-derived example delimits the completeness of that upper-bound
+method; it does not establish a general nonlinear reduction algorithm.
+The two input features are reused across four qubits, and the final
+controlled rotations are invisible to the selected readout. The
+factorization is thus a readout-specific reduction to a weighted
+classical cosine-feature kernel, not evidence of quantum advantage
+or a newly efficient hardware compiler. Nor does ordinary gradient
+descent in $\beta$ reproduce the original finite-step optimizer in
+$\theta$ without a separately specified update map.

@@ -1,0 +1,6 @@
+Author-code license has not yet been selected for this prepared release.
+No MIT, Apache, or other open-source grant is assigned to the authors' own
+material by this packaging operation. Public visibility alone is not a general
+reuse license. Authors should select an appropriate license before publishing
+if they intend unrestricted open-source reuse.
+Existing third-party licenses remain in force; see THIRD_PARTY_NOTICES.txt.

@@ -1,0 +1,110 @@
+[
+  {
+    "stage": "pilot_tests",
+    "exit_code": 0,
+    "elapsed_seconds": 0.327983916,
+    "log": "logs/pilot_tests.log"
+  },
+  {
+    "stage": "extension_tests",
+    "exit_code": 0,
+    "elapsed_seconds": 0.5492275420000001,
+    "log": "logs/extension_tests.log"
+  },
+  {
+    "stage": "gram_tests",
+    "exit_code": 0,
+    "elapsed_seconds": 1.164494,
+    "log": "logs/gram_tests.log"
+  },
+  {
+    "stage": "scaling_tests",
+    "exit_code": 0,
+    "elapsed_seconds": 1.9635168749999994,
+    "log": "logs/scaling_tests.log"
+  },
+  {
+    "stage": "normalizer_tests",
+    "exit_code": 0,
+    "elapsed_seconds": 0.7836446669999999,
+    "log": "logs/normalizer_tests.log"
+  },
+  {
+    "stage": "survey_tests",
+    "exit_code": 0,
+    "elapsed_seconds": 0.3377321670000004,
+    "log": "logs/survey_tests.log"
+  },
+  {
+    "stage": "endpoint_exact_minor",
+    "exit_code": 0,
+    "elapsed_seconds": 0.025651290999999965,
+    "log": "logs/endpoint_exact_minor.log"
+  },
+  {
+    "stage": "pilot_fresh_24",
+    "exit_code": 0,
+    "elapsed_seconds": 87.049029584,
+    "log": "logs/pilot_fresh_24.log"
+  },
+  {
+    "stage": "pilot_certificate_replay",
+    "exit_code": 0,
+    "elapsed_seconds": 35.828307083,
+    "log": "logs/pilot_certificate_replay.log"
+  },
+  {
+    "stage": "pilot_source_crosscheck",
+    "exit_code": 0,
+    "elapsed_seconds": 18.50248079100001,
+    "log": "logs/pilot_source_crosscheck.log"
+  },
+  {
+    "stage": "nonlinear_exact",
+    "exit_code": 0,
+    "elapsed_seconds": 0.34041874999999777,
+    "log": "logs/nonlinear_exact.log"
+  },
+  {
+    "stage": "nonlinear_source_check",
+    "exit_code": 0,
+    "elapsed_seconds": 1.309745625000005,
+    "log": "logs/nonlinear_source_check.log"
+  },
+  {
+    "stage": "legacy_csv_and_qfi_check",
+    "exit_code": 0,
+    "elapsed_seconds": 0.30599300000000085,
+    "log": "logs/legacy_csv_and_qfi_check.log"
+  },
+  {
+    "stage": "bounded_analytic_checks",
+    "exit_code": 0,
+    "elapsed_seconds": 0.6402583750000019,
+    "log": "logs/bounded_analytic_checks.log"
+  },
+  {
+    "stage": "gram_30_and_scaling_12_fresh",
+    "exit_code": 0,
+    "elapsed_seconds": 409.904018208,
+    "log": "logs/gram_30_and_scaling_12_fresh.log"
+  },
+  {
+    "stage": "survey_fresh_102",
+    "exit_code": 0,
+    "elapsed_seconds": 27.50666279199993,
+    "log": "logs/survey_fresh_102.log"
+  },
+  {
+    "stage": "survey_array_audit",
+    "exit_code": 0,
+    "elapsed_seconds": 0.6495580839999775,
+    "log": "logs/survey_array_audit.log"
+  },
+  {
+    "stage": "global_normalization_fresh_12",
+    "exit_code": 0,
+    "elapsed_seconds": 5.859887791999995,
+    "log": "logs/global_normalization_fresh_12.log"
+  }
+]

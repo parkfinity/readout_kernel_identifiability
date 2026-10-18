@@ -1,0 +1,322 @@
+{
+ "id": "hubregtsen_encoding_circuit_n2_l1_pauli_weight_le_2",
+ "parameter_count": 2,
+ "n": 2,
+ "observables": 15,
+ "fixed_frequency": true,
+ "product_terms": [],
+ "constant_angle_terms": [],
+ "exact_supported": true,
+ "data_bases": [
+  "a0",
+  "a1"
+ ],
+ "base_units_M": [
+  2,
+  2
+ ],
+ "half_angle_step": [
+  1,
+  1
+ ],
+ "max_half_angle_exponent": [
+  1,
+  1
+ ],
+ "dft_grid_points_per_base": [
+  5,
+  5
+ ],
+ "max_feature_frequency_in_psi_units": [
+  2,
+  2
+ ],
+ "basis_full_size": 24,
+ "basis_description": "h_a(x) in {cos(w.psi), sin(w.psi)}, psi_b = phi_b(x)/M_b, w in Omega_+ (first nonzero component > 0), constant mode removed",
+ "independence": {
+  "bases_on_distinct_coordinates": true,
+  "images": [
+   "(-1, 1)",
+   "(-1, 1)"
+  ],
+  "argument": "phi maps the open domain (-1,1)^2 onto an open box; 1 and the distinct characters exp(i w.psi) are linearly independent on any open set (real-analytic trigonometric polynomial vanishing on an open set vanishes identically), hence so are 1, cos(w.psi), sin(w.psi), w in Omega_+."
+ },
+ "grid_sufficiency": "each rotation exp(-i alpha P/2) multiplies amplitudes by u^{-s} or u^{+s} (data part of alpha/2), so amplitudes have exponents in [-S_b, S_b] (step g_b) and features have frequencies |w_b| <= 2 S_b; an equispaced grid of 2(2S_b/g_b)+1 points in chi_b = g_b psi_b is aliasing free.",
+ "H_gates": 2,
+ "theta_star": {
+  "specification": [
+   "theta_0 = 2*atan2(208, 105)  [exp(i theta/2) = (105 + 208 i)/233]",
+   "theta_1 = 2*atan2(-105, -88)  [exp(i theta/2) = (-88 + -105 i)/137]"
+  ],
+  "float": [
+   2.2066199301141873,
+   -4.536676667925422
+  ],
+  "seed": 20261019,
+  "zeta": [
+   [
+    105,
+    208,
+    233
+   ],
+   [
+    -88,
+    -105,
+    137
+   ]
+  ]
+ },
+ "A": 8,
+ "lower_bound": {
+  "r_lower": 0,
+  "certificate": "nonzero r x r minor of the exact rational Jacobian d upper(G)/d theta at theta*, certified by a nonzero determinant modulo a prime (all entries p-integral)",
+  "per_prime": [
+   {
+    "prime": 134217689,
+    "feature_coefficients_conjugate_symmetric": true,
+    "A_support": 8,
+    "A_full": 24,
+    "jacobian_rows": 36,
+    "rank": 0,
+    "minor_rows_G_entries": [],
+    "minor_columns": [],
+    "minor_det_mod_p": 1,
+    "active_witnesses": {},
+    "seconds": 0.0013583750000001338
+   },
+   {
+    "prime": 134217649,
+    "feature_coefficients_conjugate_symmetric": true,
+    "A_support": 8,
+    "A_full": 24,
+    "jacobian_rows": 36,
+    "rank": 0,
+    "minor_rows_G_entries": [],
+    "minor_columns": [],
+    "minor_det_mod_p": 1,
+    "active_witnesses": {},
+    "seconds": 0.0011497500000001715
+   }
+  ]
+ },
+ "upper_bound": {
+  "U1": {
+   "bound": 0,
+   "inactive_symbols": [
+    0,
+    1
+   ],
+   "deletion_log": [
+    {
+     "source_gate": 5,
+     "rule": "two-copy joint: [Omega, P(x)I + I(x)P] = 0",
+     "removed_symbols": {
+      "1": "1"
+     },
+     "removed_data": {},
+     "output_generator": "IY",
+     "sign": 1,
+     "fresh_angle_symbolic_check": {
+      "completed": true,
+      "fresh_angle_independent": true,
+      "suffix_gates": 1,
+      "light_cone_gates": 1,
+      "operator_words": 15,
+      "seconds": 0.0012797079999997685
+     }
+    },
+    {
+     "source_gate": 2,
+     "rule": "two-copy joint: [Omega, P(x)I + I(x)P] = 0",
+     "removed_symbols": {
+      "0": "1"
+     },
+     "removed_data": {},
+     "output_generator": "YI",
+     "sign": 1,
+     "fresh_angle_symbolic_check": {
+      "completed": true,
+      "fresh_angle_independent": true,
+      "suffix_gates": 3,
+      "light_cone_gates": 1,
+      "operator_words": 15,
+      "seconds": 0.0012541669999999172
+     }
+    }
+   ],
+   "virtual_fields": [],
+   "family_labels": [
+    "e_0 (inactive symbol)",
+    "e_1 (inactive symbol)"
+   ],
+   "family_rank_at_theta_star": 2,
+   "consistency_J_v_at_theta_star": [
+    {
+     "field": "e_0 (inactive symbol)",
+     "J_theta_star_times_v_is_zero_mod_p": true
+    },
+    {
+     "field": "e_1 (inactive symbol)",
+     "J_theta_star_times_v_is_zero_mod_p": true
+    }
+   ],
+   "argument": "Each field v(theta) satisfies J(theta) v(theta) = 0 for all theta: deletions keep K(x,x';theta) = Tr[(rho(x)(x)rho(x'))Omega] unchanged because the transported generator P commutes with Omega jointly (P(x)I + I(x)P) or separately (data angles); a virtual field is the Euler-block chart image of inserting exp(-i eps Q/2) whose transported generator is a joint symmetry. Exact rank of the family at theta* bounds the generic family rank from below, so r <= K - rank."
+  },
+  "U2_symbolic_gram": {
+   "original_circuit": {
+    "completed": true,
+    "seconds": 0.012253792000000097,
+    "peak_terms": 99,
+    "kernel_terms": 8,
+    "gram_block_entries": 8,
+    "inactive": [
+     0,
+     1
+    ],
+    "span_bound": 0,
+    "gram_entries": 8,
+    "theta_frequencies": 0
+   },
+   "certified_reduced_circuit": {
+    "completed": true,
+    "seconds": 0.006885416999999894,
+    "peak_terms": 99,
+    "kernel_terms": 8,
+    "gram_block_entries": 8,
+    "inactive": [
+     0,
+     1
+    ],
+    "span_bound": 0,
+    "gram_entries": 8,
+    "theta_frequencies": 0
+   }
+  },
+  "r_upper": 0,
+  "attained_by": [
+   "U1 two-copy invariance fields",
+   "U2 symbolic Gram span (original_circuit)",
+   "U2 symbolic Gram span (certified_reduced_circuit)"
+  ]
+ },
+ "r_lower": 0,
+ "r_upper": 0,
+ "status": "CLOSED",
+ "per_symbol": [
+  {
+   "symbol": 0,
+   "verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: symbolic two-copy Gram expansion, d_k G == 0",
+    "INACTIVE: two-copy invariance deletion certificate"
+   ]
+  },
+  {
+   "symbol": 1,
+   "verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: symbolic two-copy Gram expansion, d_k G == 0",
+    "INACTIVE: two-copy invariance deletion certificate"
+   ]
+  }
+ ],
+ "numerical_rank": {
+  "certified": false,
+  "tolerance_relative": 1e-09,
+  "trials": [
+   {
+    "seed": 11,
+    "rank": 0,
+    "sigma_max": 5.914183155163948e-17,
+    "sigma_r_rel": null,
+    "sigma_r1_rel": 1.0,
+    "support_columns": 8
+   },
+   {
+    "seed": 12,
+    "rank": 0,
+    "sigma_max": 3.912827817777827e-17,
+    "sigma_r_rel": null,
+    "sigma_r1_rel": 1.0,
+    "support_columns": 8
+   },
+   {
+    "seed": 13,
+    "rank": 0,
+    "sigma_max": 5.676460658789032e-17,
+    "sigma_r_rel": null,
+    "sigma_r1_rel": 1.0,
+    "support_columns": 8
+   },
+   {
+    "seed": 14,
+    "rank": 0,
+    "sigma_max": 3.286509986613576e-17,
+    "sigma_r_rel": null,
+    "sigma_r1_rel": 1.0,
+    "support_columns": 8
+   }
+  ],
+  "rank": 0,
+  "min_rank": 0
+ },
+ "numeric_crosscheck": {
+  "trials": 32,
+  "max_abs_distance_error": 5.329070518200751e-15,
+  "max_abs_gradient_error": 4.96647921034352e-16,
+  "passed": true,
+  "tolerance": 1e-10
+ },
+ "interval_engine_crosscheck": {
+  "theta": [
+   "2/17",
+   "21/17"
+  ],
+  "x": [
+   "14/19",
+   "-15/19"
+  ],
+  "xprime": [
+   "-5/19",
+   "14/19"
+  ],
+  "interval_dps": 30,
+  "distance_abs_error": 6.217248937900877e-15,
+  "gradient_max_abs_error": 4.6991199292122754e-17,
+  "agrees_within_1e_10": true
+ },
+ "original_bounded_pass": {
+  "status_counts": {
+   "EXACT_INACTIVE": 2
+  },
+  "undecided": [],
+  "symbolic_failure": null,
+  "symbolic_seconds": 0.1258164999999991,
+  "elapsed_seconds": 0.15825304199999835,
+  "minor_lower": 0,
+  "r_upper": 0
+ },
+ "timing": {
+  "modular_rank_seconds": 0.0025081250000003052,
+  "invariance_seconds": 0.0009028330000000473,
+  "deletion_checks_seconds": 0.0025479999999999947,
+  "symbolic_original_circuit_seconds": 0.012253792000000097,
+  "symbolic_certified_reduced_circuit_seconds": 0.006885416999999894,
+  "virtual_field_checks_seconds": 2.919999997352818e-07,
+  "numeric_seconds": 0.02899308300000003,
+  "interval_crosscheck_seconds": 0.017013459000000175,
+  "total_seconds": 0.07517825
+ },
+ "manuscript": {
+  "K": 2,
+  "kind": "value",
+  "value": 0,
+  "dagger": false
+ },
+ "structural_closure_bounds": [
+  0,
+  0
+ ],
+ "consistency": "AGREES",
+ "numerical_rank_matches_certified": true
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "mode": "shots-full",
+  "exit_code": 0,
+  "source_layout_reconstruction": true,
+  "source_files_byte_identical": true,
+  "result_directory": "runtime/runs/shots-full_20261008T054713_848847Z",
+  "scope": "Only the selected workflow was run; no new science or altered reference evidence."
+}

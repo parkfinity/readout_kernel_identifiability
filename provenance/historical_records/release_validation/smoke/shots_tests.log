@@ -1,0 +1,15 @@
+test_bell_joint_covariance (test_shots.Tests) ... ok
+test_canonical_sign (test_shots.Tests) ... ok
+test_covariance_psd (test_shots.Tests) ... ok
+test_dense_engine (test_shots.Tests) ... ok
+test_frozen_split_and_design (test_shots.Tests) ... ok
+test_full_target_not_just_old_null (test_shots.Tests) ... ok
+test_metrics (test_shots.Tests) ... ok
+test_same_joint_bits_z_zz (test_shots.Tests) ... ok
+test_shot_accounting (test_shots.Tests) ... ok
+test_variance_monte_carlo (test_shots.Tests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.054s
+
+OK

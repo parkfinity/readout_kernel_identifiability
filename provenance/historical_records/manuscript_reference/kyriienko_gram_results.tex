@@ -1,0 +1,41 @@
+\subsection{Exact ranks for the Kyriienko settings}
+\label{sec:gramkyri}
+The frozen one-layer Kyriienko constructors have
+\begin{equation}
+ U_\theta(x)=E\Bigl(\bigotimes_{q=0}^{n-1}
+ R_z(c_q)R_x(b_q)R_z(a_q)\Bigr)D(x),\label{eq:kyriform}
+\end{equation}
+with $K=3n$. Here $D$ is the fixed-frequency encoding,
+$E=\mathrm{CX}_{0,1}$ for $n=2$, and $E$ is the chronological
+chain $(\mathrm{CX}_{0,1},\mathrm{CX}_{2,3},\mathrm{CX}_{1,2})$
+for $n=4$. Disjoint gates commute to give this form exactly.
+Both $Z_0$ and $X_{n-1}$ remain unchanged under conjugation by $E$.
+Local XYZ and complete weight-at-most-two readouts with unit weights
+are invariant under arbitrary local output rotations. Thus left
+rotations about these two axes give independent one-dimensional
+kernel gauge orbits. On a regular Euler chart ($\sin b_q\ne0$),
+the Euler map is locally invertible, so the two source-parameter
+tangent directions are independent and $r\le3n-2$.
+Analyticity extends the vanishing higher minors from this open set.
+
+For a matching lower bound we compute real data-Fourier coefficients
+and their parameter derivatives using exact Gaussian rational
+arithmetic at
+\begin{equation}
+ \theta_j=2\arctan t_j,\qquad t_j=(j+2)/(j+5).
+\end{equation}
+All sines and cosines are rational. Nonzero exact Gram-Jacobian minors
+of orders $4,10,10$ prove $r\ge4,10,10$ for the two-qubit XYZ,
+four-qubit XYZ, and four-qubit weight-at-most-two settings. Together
+with the gauge upper bounds, these minors fix all three ranks exactly.
+These are three settings of the existing census, not three new
+independent families. Full rational matrices and determinants are
+retained in the accompanying audit; no floating rank threshold is used.
+
+The resulting ranks are exactly $4,10,10$, closing all 54 settings
+across the two dimension studies. The second gauge is a
+parameter-dependent Euler direction, not another globally dead
+source coordinate. These closures consequently do not change the
+reported inactive-coordinate counts or establish gate or shot savings.
+Implementation and independent source checks are given in
+Appendix~\ref{app:gram}.

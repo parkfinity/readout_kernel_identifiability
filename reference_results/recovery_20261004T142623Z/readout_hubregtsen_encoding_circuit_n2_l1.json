@@ -1,0 +1,4727 @@
+{
+  "circuit": "hubregtsen_encoding_circuit_n2_l1",
+  "n": 2,
+  "K": 2,
+  "greedy_candidate_evaluations": 24,
+  "records": [
+    {
+      "method": "standard",
+      "budget": 1,
+      "bases": [
+        "ZZ"
+      ],
+      "observables": [
+        "IZ",
+        "ZI",
+        "ZZ"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.02896136986000364,
+            0.0006242637574561129
+          ],
+          "smallest": 0.0006242637574561129,
+          "threshold": 2.896136986000364e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.018019522439544917,
+            0.004997689179543231
+          ],
+          "smallest": 0.004997689179543231,
+          "threshold": 1.801952243954492e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.028099481249315907,
+            0.009376195904650168
+          ],
+          "smallest": 0.009376195904650168,
+          "threshold": 2.809948124931591e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.045027822219641786,
+            0.010890353891486359
+          ],
+          "smallest": 0.010890353891486359,
+          "threshold": 4.5027822219641786e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.03554491698163806,
+            0.005289772084322707
+          ],
+          "smallest": 0.005289772084322707,
+          "threshold": 3.554491698163806e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "standard",
+      "budget": 2,
+      "bases": [
+        "ZZ",
+        "XX"
+      ],
+      "observables": [
+        "IX",
+        "IZ",
+        "XI",
+        "XX",
+        "ZI",
+        "ZZ"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.01753499006839712,
+            0.0001846816496934602
+          ],
+          "smallest": 0.0001846816496934602,
+          "threshold": 1.7534990068397123e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.007560415964860809,
+            0.0006671866975152062
+          ],
+          "smallest": 0.0006671866975152062,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.014198614066552229,
+            0.0034641432623237745
+          ],
+          "smallest": 0.0034641432623237745,
+          "threshold": 1.419861406655223e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.019258466500492396,
+            0.003603643349361252
+          ],
+          "smallest": 0.003603643349361252,
+          "threshold": 1.92584665004924e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.017629666018431585,
+            0.0009307954664909655
+          ],
+          "smallest": 0.0009307954664909655,
+          "threshold": 1.7629666018431587e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "standard",
+      "budget": 3,
+      "bases": [
+        "ZZ",
+        "XX",
+        "YY"
+      ],
+      "observables": [
+        "IX",
+        "IY",
+        "IZ",
+        "XI",
+        "XX",
+        "YI",
+        "YY",
+        "ZI",
+        "ZZ"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.011689993378931408,
+            0.00012312109979564016
+          ],
+          "smallest": 0.00012312109979564016,
+          "threshold": 1.168999337893141e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.005040277309907207,
+            0.00044479113167680416
+          ],
+          "smallest": 0.00044479113167680416,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.009465742711034819,
+            0.002309428841549183
+          ],
+          "smallest": 0.002309428841549183,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.012838977666994933,
+            0.002402428899574167
+          ],
+          "smallest": 0.002402428899574167,
+          "threshold": 1.2838977666994934e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.011753110678954392,
+            0.0006205303109939773
+          ],
+          "smallest": 0.0006205303109939773,
+          "threshold": 1.1753110678954392e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "rank_greedy",
+      "budget": 1,
+      "bases": [
+        "XX"
+      ],
+      "observables": [
+        "IX",
+        "XI",
+        "XX"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.00649278980550949,
+            0.0008149621867096563
+          ],
+          "smallest": 0.0008149621867096563,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.0435641493591087,
+            0.003892179684109198
+          ],
+          "smallest": 0.003892179684109198,
+          "threshold": 4.35641493591087e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.025406856474387247,
+            0.005818636290226742
+          ],
+          "smallest": 0.005818636290226742,
+          "threshold": 2.5406856474387248e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.0318979757200502,
+            0.010948923633671193
+          ],
+          "smallest": 0.010948923633671193,
+          "threshold": 3.1897975720050204e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.026768097374902367,
+            0.009299633406696806
+          ],
+          "smallest": 0.009299633406696806,
+          "threshold": 2.676809737490237e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "rank_greedy",
+      "budget": 2,
+      "bases": [
+        "XX",
+        "YX"
+      ],
+      "observables": [
+        "IX",
+        "XI",
+        "XX",
+        "YI",
+        "YX"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.09952375638240316,
+            0.00035379063693765956
+          ],
+          "smallest": 0.00035379063693765956,
+          "threshold": 9.952375638240316e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.045960740776126274,
+            0.015166132346820549
+          ],
+          "smallest": 0.015166132346820549,
+          "threshold": 4.596074077612628e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.13030412754289233,
+            0.00948184863644605
+          ],
+          "smallest": 0.00948184863644605,
+          "threshold": 1.3030412754289235e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.15354914965737182,
+            0.010032678171199783
+          ],
+          "smallest": 0.010032678171199783,
+          "threshold": 1.5354914965737183e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.12652662751015617,
+            0.006726961576573732
+          ],
+          "smallest": 0.006726961576573732,
+          "threshold": 1.2652662751015617e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "rank_greedy",
+      "budget": 3,
+      "bases": [
+        "XX",
+        "YX",
+        "XY"
+      ],
+      "observables": [
+        "IX",
+        "IY",
+        "XI",
+        "XX",
+        "XY",
+        "YI",
+        "YX"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.07438310386925062,
+            0.003059011953407094
+          ],
+          "smallest": 0.003059011953407094,
+          "threshold": 7.438310386925062e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.07722643413741595,
+            0.02721260841845058
+          ],
+          "smallest": 0.02721260841845058,
+          "threshold": 7.722643413741596e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.10055455971043159,
+            0.04020834594746167
+          ],
+          "smallest": 0.04020834594746167,
+          "threshold": 1.005545597104316e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.12605593840197607,
+            0.08577782887909345
+          ],
+          "smallest": 0.08577782887909345,
+          "threshold": 1.2605593840197607e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.10258286458836675,
+            0.0694586807217537
+          ],
+          "smallest": 0.0694586807217537,
+          "threshold": 1.0258286458836677e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_00",
+      "budget": 1,
+      "bases": [
+        "YX"
+      ],
+      "observables": [
+        "IX",
+        "YI",
+        "YX"
+      ],
+      "validation": [
+        {
+          "rank": 1,
+          "singular_values": [
+            0.15557455408633009,
+            0.0
+          ],
+          "smallest": 0.15557455408633009,
+          "threshold": 1.555745540863301e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.06674463757998204,
+            0.0
+          ],
+          "smallest": 0.06674463757998204,
+          "threshold": 6.674463757998204e-11,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.20277760901130687,
+            0.0
+          ],
+          "smallest": 0.20277760901130687,
+          "threshold": 2.027776090113069e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.2364886529286025,
+            0.0
+          ],
+          "smallest": 0.2364886529286025,
+          "threshold": 2.364886529286025e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.19271986018917514,
+            0.0
+          ],
+          "smallest": 0.19271986018917514,
+          "threshold": 1.9271986018917515e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_00",
+      "budget": 2,
+      "bases": [
+        "YX",
+        "YY"
+      ],
+      "observables": [
+        "IX",
+        "IY",
+        "YI",
+        "YX",
+        "YY"
+      ],
+      "validation": [
+        {
+          "rank": 1,
+          "singular_values": [
+            0.09334473245179804,
+            0.0
+          ],
+          "smallest": 0.09334473245179804,
+          "threshold": 9.334473245179805e-11,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.040046782547989226,
+            0.0
+          ],
+          "smallest": 0.040046782547989226,
+          "threshold": 4.0046782547989226e-11,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.12166656540678411,
+            0.0
+          ],
+          "smallest": 0.12166656540678411,
+          "threshold": 1.2166656540678411e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.14189319175716147,
+            0.0
+          ],
+          "smallest": 0.14189319175716147,
+          "threshold": 1.4189319175716148e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.1156319161135051,
+            0.0
+          ],
+          "smallest": 0.1156319161135051,
+          "threshold": 1.156319161135051e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_00",
+      "budget": 3,
+      "bases": [
+        "YX",
+        "YY",
+        "ZZ"
+      ],
+      "observables": [
+        "IX",
+        "IY",
+        "IZ",
+        "YI",
+        "YX",
+        "YY",
+        "ZI",
+        "ZZ"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.0461589488509959,
+            0.0009210731052022064
+          ],
+          "smallest": 0.0009210731052022064,
+          "threshold": 4.61589488509959e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.02091587649414476,
+            0.006547567796719613
+          ],
+          "smallest": 0.006547567796719613,
+          "threshold": 2.091587649414476e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.06178958696121662,
+            0.006140860915099338
+          ],
+          "smallest": 0.006140860915099338,
+          "threshold": 6.178958696121663e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.07125874878712939,
+            0.013868863062474037
+          ],
+          "smallest": 0.013868863062474037,
+          "threshold": 7.125874878712939e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.061177114589144786,
+            0.014453990409013575
+          ],
+          "smallest": 0.014453990409013575,
+          "threshold": 6.117711458914479e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_01",
+      "budget": 1,
+      "bases": [
+        "XY"
+      ],
+      "observables": [
+        "IY",
+        "XI",
+        "XY"
+      ],
+      "validation": [
+        {
+          "rank": 1,
+          "singular_values": [
+            0.008851938192469775,
+            0.0
+          ],
+          "smallest": 0.008851938192469775,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.1802914526206081,
+            0.0
+          ],
+          "smallest": 0.1802914526206081,
+          "threshold": 1.8029145262060812e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.11889723337008602,
+            0.0
+          ],
+          "smallest": 0.11889723337008602,
+          "threshold": 1.1889723337008603e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.26116596333927555,
+            0.0
+          ],
+          "smallest": 0.26116596333927555,
+          "threshold": 2.611659633392756e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.20983747861654165,
+            0.0
+          ],
+          "smallest": 0.20983747861654165,
+          "threshold": 2.0983747861654166e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_01",
+      "budget": 2,
+      "bases": [
+        "XY",
+        "ZY"
+      ],
+      "observables": [
+        "IY",
+        "XI",
+        "XY",
+        "ZI",
+        "ZY"
+      ],
+      "validation": [
+        {
+          "rank": 1,
+          "singular_values": [
+            0.0030155872735677944,
+            0.0
+          ],
+          "smallest": 0.0030155872735677944,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.06166339625012875,
+            0.0
+          ],
+          "smallest": 0.06166339625012875,
+          "threshold": 6.166339625012876e-11,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.04067859297747231,
+            0.0
+          ],
+          "smallest": 0.04067859297747231,
+          "threshold": 4.0678592977472315e-11,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.08866776804518843,
+            0.0
+          ],
+          "smallest": 0.08866776804518843,
+          "threshold": 8.866776804518843e-11,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.07135569995749588,
+            0.0
+          ],
+          "smallest": 0.07135569995749588,
+          "threshold": 7.135569995749589e-11,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_01",
+      "budget": 3,
+      "bases": [
+        "XY",
+        "ZY",
+        "YX"
+      ],
+      "observables": [
+        "IX",
+        "IY",
+        "XI",
+        "XY",
+        "YI",
+        "YX",
+        "ZI",
+        "ZY"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.05287794312482934,
+            0.0017980844994725845
+          ],
+          "smallest": 0.0017980844994725845,
+          "threshold": 5.287794312482934e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.04254662846699672,
+            0.019010262938663095
+          ],
+          "smallest": 0.019010262938663095,
+          "threshold": 4.254662846699673e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.07023326047848262,
+            0.023181874275622766
+          ],
+          "smallest": 0.023181874275622766,
+          "threshold": 7.023326047848262e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.08438311526462147,
+            0.05258320896358977
+          ],
+          "smallest": 0.05258320896358977,
+          "threshold": 8.438311526462148e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.06843982819897396,
+            0.04271422084531032
+          ],
+          "smallest": 0.04271422084531032,
+          "threshold": 6.843982819897396e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_02",
+      "budget": 1,
+      "bases": [
+        "ZX"
+      ],
+      "observables": [
+        "IX",
+        "ZI",
+        "ZX"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.027840718528473734,
+            0.0005755228673112373
+          ],
+          "smallest": 0.0005755228673112373,
+          "threshold": 2.7840718528473737e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.047773957794172026,
+            0.0023907431666881952
+          ],
+          "smallest": 0.0023907431666881952,
+          "threshold": 4.777395779417203e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.03578465332948191,
+            0.007970524622277476
+          ],
+          "smallest": 0.007970524622277476,
+          "threshold": 3.578465332948191e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.041094600053243925,
+            0.011656206800970265
+          ],
+          "smallest": 0.011656206800970265,
+          "threshold": 4.1094600053243926e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.020350112036130588,
+            0.005733267459616485
+          ],
+          "smallest": 0.005733267459616485,
+          "threshold": 2.035011203613059e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_02",
+      "budget": 2,
+      "bases": [
+        "ZX",
+        "YX"
+      ],
+      "observables": [
+        "IX",
+        "YI",
+        "YX",
+        "ZI",
+        "ZX"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.08137960696884744,
+            0.00048100586004441373
+          ],
+          "smallest": 0.00048100586004441373,
+          "threshold": 8.137960696884744e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.03916902903969065,
+            0.019001608676160065
+          ],
+          "smallest": 0.019001608676160065,
+          "threshold": 3.916902903969065e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.10236029356842494,
+            0.012821203931044384
+          ],
+          "smallest": 0.012821203931044384,
+          "threshold": 1.0236029356842495e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.11994736449189146,
+            0.013938182751926324
+          ],
+          "smallest": 0.013938182751926324,
+          "threshold": 1.1994736449189147e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.09245216680647059,
+            0.010166064050544838
+          ],
+          "smallest": 0.010166064050544838,
+          "threshold": 9.245216680647059e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_02",
+      "budget": 3,
+      "bases": [
+        "ZX",
+        "YX",
+        "XX"
+      ],
+      "observables": [
+        "IX",
+        "XI",
+        "XX",
+        "YI",
+        "YX",
+        "ZI",
+        "ZX"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.06426608084102121,
+            0.0001925344717135913
+          ],
+          "smallest": 0.0001925344717135913,
+          "threshold": 6.426608084102122e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.02792217191236709,
+            0.008072229429888535
+          ],
+          "smallest": 0.008072229429888535,
+          "threshold": 2.7922171912367092e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.08082644401064278,
+            0.00499026562256361
+          ],
+          "smallest": 0.00499026562256361,
+          "threshold": 8.082644401064279e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.09584057923383184,
+            0.0054242193667713
+          ],
+          "smallest": 0.0054242193667713,
+          "threshold": 9.584057923383184e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.07487928128155381,
+            0.003971277610643801
+          ],
+          "smallest": 0.003971277610643801,
+          "threshold": 7.487928128155382e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_03",
+      "budget": 1,
+      "bases": [
+        "YX"
+      ],
+      "observables": [
+        "IX",
+        "YI",
+        "YX"
+      ],
+      "validation": [
+        {
+          "rank": 1,
+          "singular_values": [
+            0.15557455408633009,
+            0.0
+          ],
+          "smallest": 0.15557455408633009,
+          "threshold": 1.555745540863301e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.06674463757998204,
+            0.0
+          ],
+          "smallest": 0.06674463757998204,
+          "threshold": 6.674463757998204e-11,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.20277760901130687,
+            0.0
+          ],
+          "smallest": 0.20277760901130687,
+          "threshold": 2.027776090113069e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.2364886529286025,
+            0.0
+          ],
+          "smallest": 0.2364886529286025,
+          "threshold": 2.364886529286025e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.19271986018917514,
+            0.0
+          ],
+          "smallest": 0.19271986018917514,
+          "threshold": 1.9271986018917515e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_03",
+      "budget": 2,
+      "bases": [
+        "YX",
+        "XY"
+      ],
+      "observables": [
+        "IX",
+        "IY",
+        "XI",
+        "XY",
+        "YI",
+        "YX"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.0867784443655288,
+            0.0035500271667189966
+          ],
+          "smallest": 0.0035500271667189966,
+          "threshold": 8.67784443655288e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.08204730579684821,
+            0.0318267494257129
+          ],
+          "smallest": 0.0318267494257129,
+          "threshold": 8.204730579684821e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.11621512475413819,
+            0.04525980729847247
+          ],
+          "smallest": 0.04525980729847247,
+          "threshold": 1.1621512475413819e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.1439464195539782,
+            0.1000885980386647
+          ],
+          "smallest": 0.1000885980386647,
+          "threshold": 1.439464195539782e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.11638245974066087,
+            0.08136909131200173
+          ],
+          "smallest": 0.08136909131200173,
+          "threshold": 1.1638245974066088e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_03",
+      "budget": 3,
+      "bases": [
+        "YX",
+        "XY",
+        "ZZ"
+      ],
+      "observables": [
+        "IX",
+        "IY",
+        "IZ",
+        "XI",
+        "XY",
+        "YI",
+        "YX",
+        "ZI",
+        "ZZ"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.04434055741794137,
+            0.0018931603953040853
+          ],
+          "smallest": 0.0018931603953040853,
+          "threshold": 4.434055741794138e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.041339320529763614,
+            0.018040928043668844
+          ],
+          "smallest": 0.018040928043668844,
+          "threshold": 4.1339320529763614e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.059996071707356685,
+            0.024823059860374298
+          ],
+          "smallest": 0.024823059860374298,
+          "threshold": 5.999607170735669e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.07128390142097348,
+            0.05726226972020632
+          ],
+          "smallest": 0.05726226972020632,
+          "threshold": 7.128390142097348e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.059956413040524646,
+            0.04497037378616278
+          ],
+          "smallest": 0.04497037378616278,
+          "threshold": 5.995641304052465e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_04",
+      "budget": 1,
+      "bases": [
+        "ZX"
+      ],
+      "observables": [
+        "IX",
+        "ZI",
+        "ZX"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.027840718528473734,
+            0.0005755228673112373
+          ],
+          "smallest": 0.0005755228673112373,
+          "threshold": 2.7840718528473737e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.047773957794172026,
+            0.0023907431666881952
+          ],
+          "smallest": 0.0023907431666881952,
+          "threshold": 4.777395779417203e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.03578465332948191,
+            0.007970524622277476
+          ],
+          "smallest": 0.007970524622277476,
+          "threshold": 3.578465332948191e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.041094600053243925,
+            0.011656206800970265
+          ],
+          "smallest": 0.011656206800970265,
+          "threshold": 4.1094600053243926e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.020350112036130588,
+            0.005733267459616485
+          ],
+          "smallest": 0.005733267459616485,
+          "threshold": 2.035011203613059e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_04",
+      "budget": 2,
+      "bases": [
+        "ZX",
+        "YZ"
+      ],
+      "observables": [
+        "IX",
+        "IZ",
+        "YI",
+        "YZ",
+        "ZI",
+        "ZX"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.06948374413566044,
+            0.0005024448060513835
+          ],
+          "smallest": 0.0005024448060513835,
+          "threshold": 6.948374413566044e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.03462618355114588,
+            0.019378053620532472
+          ],
+          "smallest": 0.019378053620532472,
+          "threshold": 3.462618355114588e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.09294049807448505,
+            0.012936985392626886
+          ],
+          "smallest": 0.012936985392626886,
+          "threshold": 9.294049807448506e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.10743925866165964,
+            0.013994273294717724
+          ],
+          "smallest": 0.013994273294717724,
+          "threshold": 1.0743925866165964e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.09099348611946374,
+            0.00914297538378052
+          ],
+          "smallest": 0.00914297538378052,
+          "threshold": 9.099348611946375e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_04",
+      "budget": 3,
+      "bases": [
+        "ZX",
+        "YZ",
+        "ZZ"
+      ],
+      "observables": [
+        "IX",
+        "IZ",
+        "YI",
+        "YZ",
+        "ZI",
+        "ZX",
+        "ZZ"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.059080592147942486,
+            0.0008889528117805332
+          ],
+          "smallest": 0.0008889528117805332,
+          "threshold": 5.908059214794249e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.02861938893887452,
+            0.014800796053968994
+          ],
+          "smallest": 0.014800796053968994,
+          "threshold": 2.861938893887452e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.0770484208762637,
+            0.01082594092314105
+          ],
+          "smallest": 0.01082594092314105,
+          "threshold": 7.704842087626371e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.08996450596324992,
+            0.01737287178216493
+          ],
+          "smallest": 0.01737287178216493,
+          "threshold": 8.996450596324992e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.07299155064689519,
+            0.015658605151689386
+          ],
+          "smallest": 0.015658605151689386,
+          "threshold": 7.29915506468952e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_05",
+      "budget": 1,
+      "bases": [
+        "YY"
+      ],
+      "observables": [
+        "IY",
+        "YI",
+        "YY"
+      ],
+      "validation": [
+        {
+          "rank": 0,
+          "singular_values": [
+            0.0,
+            0.0
+          ],
+          "smallest": 0,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "rank": 0,
+          "singular_values": [
+            0.0,
+            0.0
+          ],
+          "smallest": 0,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "rank": 0,
+          "singular_values": [
+            0.0,
+            0.0
+          ],
+          "smallest": 0,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "rank": 0,
+          "singular_values": [
+            0.0,
+            0.0
+          ],
+          "smallest": 0,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "rank": 0,
+          "singular_values": [
+            0.0,
+            0.0
+          ],
+          "smallest": 0,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_05",
+      "budget": 2,
+      "bases": [
+        "YY",
+        "ZX"
+      ],
+      "observables": [
+        "IX",
+        "IY",
+        "YI",
+        "YY",
+        "ZI",
+        "ZX"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.015148626258140117,
+            0.000313152148389938
+          ],
+          "smallest": 0.000313152148389938,
+          "threshold": 1.5148626258140117e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.02599465350565242,
+            0.0013008455465803414
+          ],
+          "smallest": 0.0013008455465803414,
+          "threshold": 2.599465350565242e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.019471061370453388,
+            0.00433690310329804
+          ],
+          "smallest": 0.00433690310329804,
+          "threshold": 1.947106137045339e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.02236029708779449,
+            0.006342347818174999
+          ],
+          "smallest": 0.006342347818174999,
+          "threshold": 2.2360297087794492e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.011072855078482819,
+            0.0031195720000854418
+          ],
+          "smallest": 0.0031195720000854418,
+          "threshold": 1.107285507848282e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_05",
+      "budget": 3,
+      "bases": [
+        "YY",
+        "ZX",
+        "XY"
+      ],
+      "observables": [
+        "IX",
+        "IY",
+        "XI",
+        "XY",
+        "YI",
+        "YY",
+        "ZI",
+        "ZX"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.012096291174315349,
+            0.0020703647000605255
+          ],
+          "smallest": 0.0020703647000605255,
+          "threshold": 1.2096291174315349e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.03913264650898607,
+            0.002472050346911328
+          ],
+          "smallest": 0.002472050346911328,
+          "threshold": 3.9132646508986074e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.027764752511147305,
+            0.010274300759077691
+          ],
+          "smallest": 0.010274300759077691,
+          "threshold": 2.7764752511147305e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.0670254175486983,
+            0.012673414628643518
+          ],
+          "smallest": 0.012673414628643518,
+          "threshold": 6.70254175486983e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.053592951400238294,
+            0.003296851638946431
+          ],
+          "smallest": 0.003296851638946431,
+          "threshold": 5.3592951400238296e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_06",
+      "budget": 1,
+      "bases": [
+        "YX"
+      ],
+      "observables": [
+        "IX",
+        "YI",
+        "YX"
+      ],
+      "validation": [
+        {
+          "rank": 1,
+          "singular_values": [
+            0.15557455408633009,
+            0.0
+          ],
+          "smallest": 0.15557455408633009,
+          "threshold": 1.555745540863301e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.06674463757998204,
+            0.0
+          ],
+          "smallest": 0.06674463757998204,
+          "threshold": 6.674463757998204e-11,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.20277760901130687,
+            0.0
+          ],
+          "smallest": 0.20277760901130687,
+          "threshold": 2.027776090113069e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.2364886529286025,
+            0.0
+          ],
+          "smallest": 0.2364886529286025,
+          "threshold": 2.364886529286025e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.19271986018917514,
+            0.0
+          ],
+          "smallest": 0.19271986018917514,
+          "threshold": 1.9271986018917515e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_06",
+      "budget": 2,
+      "bases": [
+        "YX",
+        "YY"
+      ],
+      "observables": [
+        "IX",
+        "IY",
+        "YI",
+        "YX",
+        "YY"
+      ],
+      "validation": [
+        {
+          "rank": 1,
+          "singular_values": [
+            0.09334473245179804,
+            0.0
+          ],
+          "smallest": 0.09334473245179804,
+          "threshold": 9.334473245179805e-11,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.040046782547989226,
+            0.0
+          ],
+          "smallest": 0.040046782547989226,
+          "threshold": 4.0046782547989226e-11,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.12166656540678411,
+            0.0
+          ],
+          "smallest": 0.12166656540678411,
+          "threshold": 1.2166656540678411e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.14189319175716147,
+            0.0
+          ],
+          "smallest": 0.14189319175716147,
+          "threshold": 1.4189319175716148e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.1156319161135051,
+            0.0
+          ],
+          "smallest": 0.1156319161135051,
+          "threshold": 1.156319161135051e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_06",
+      "budget": 3,
+      "bases": [
+        "YX",
+        "YY",
+        "ZY"
+      ],
+      "observables": [
+        "IX",
+        "IY",
+        "YI",
+        "YX",
+        "YY",
+        "ZI",
+        "ZY"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.05527918493311617,
+            0.004137135279030014
+          ],
+          "smallest": 0.004137135279030014,
+          "threshold": 5.5279184933116176e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.09402998927316686,
+            0.020649886488368463
+          ],
+          "smallest": 0.020649886488368463,
+          "threshold": 9.402998927316687e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.08176683762188483,
+            0.04781779798601328
+          ],
+          "smallest": 0.04781779798601328,
+          "threshold": 8.176683762188484e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.13883874814791644,
+            0.07696329828486652
+          ],
+          "smallest": 0.07696329828486652,
+          "threshold": 1.3883874814791645e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.11154583485654261,
+            0.06303220952487358
+          ],
+          "smallest": 0.06303220952487358,
+          "threshold": 1.1154583485654262e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_07",
+      "budget": 1,
+      "bases": [
+        "YX"
+      ],
+      "observables": [
+        "IX",
+        "YI",
+        "YX"
+      ],
+      "validation": [
+        {
+          "rank": 1,
+          "singular_values": [
+            0.15557455408633009,
+            0.0
+          ],
+          "smallest": 0.15557455408633009,
+          "threshold": 1.555745540863301e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.06674463757998204,
+            0.0
+          ],
+          "smallest": 0.06674463757998204,
+          "threshold": 6.674463757998204e-11,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.20277760901130687,
+            0.0
+          ],
+          "smallest": 0.20277760901130687,
+          "threshold": 2.027776090113069e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.2364886529286025,
+            0.0
+          ],
+          "smallest": 0.2364886529286025,
+          "threshold": 2.364886529286025e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.19271986018917514,
+            0.0
+          ],
+          "smallest": 0.19271986018917514,
+          "threshold": 1.9271986018917515e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_07",
+      "budget": 2,
+      "bases": [
+        "YX",
+        "YY"
+      ],
+      "observables": [
+        "IX",
+        "IY",
+        "YI",
+        "YX",
+        "YY"
+      ],
+      "validation": [
+        {
+          "rank": 1,
+          "singular_values": [
+            0.09334473245179804,
+            0.0
+          ],
+          "smallest": 0.09334473245179804,
+          "threshold": 9.334473245179805e-11,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.040046782547989226,
+            0.0
+          ],
+          "smallest": 0.040046782547989226,
+          "threshold": 4.0046782547989226e-11,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.12166656540678411,
+            0.0
+          ],
+          "smallest": 0.12166656540678411,
+          "threshold": 1.2166656540678411e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.14189319175716147,
+            0.0
+          ],
+          "smallest": 0.14189319175716147,
+          "threshold": 1.4189319175716148e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.1156319161135051,
+            0.0
+          ],
+          "smallest": 0.1156319161135051,
+          "threshold": 1.156319161135051e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_07",
+      "budget": 3,
+      "bases": [
+        "YX",
+        "YY",
+        "ZY"
+      ],
+      "observables": [
+        "IX",
+        "IY",
+        "YI",
+        "YX",
+        "YY",
+        "ZI",
+        "ZY"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.05527918493311617,
+            0.004137135279030014
+          ],
+          "smallest": 0.004137135279030014,
+          "threshold": 5.5279184933116176e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.09402998927316686,
+            0.020649886488368463
+          ],
+          "smallest": 0.020649886488368463,
+          "threshold": 9.402998927316687e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.08176683762188483,
+            0.04781779798601328
+          ],
+          "smallest": 0.04781779798601328,
+          "threshold": 8.176683762188484e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.13883874814791644,
+            0.07696329828486652
+          ],
+          "smallest": 0.07696329828486652,
+          "threshold": 1.3883874814791645e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.11154583485654261,
+            0.06303220952487358
+          ],
+          "smallest": 0.06303220952487358,
+          "threshold": 1.1154583485654262e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_08",
+      "budget": 1,
+      "bases": [
+        "ZZ"
+      ],
+      "observables": [
+        "IZ",
+        "ZI",
+        "ZZ"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.02896136986000364,
+            0.0006242637574561129
+          ],
+          "smallest": 0.0006242637574561129,
+          "threshold": 2.896136986000364e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.018019522439544917,
+            0.004997689179543231
+          ],
+          "smallest": 0.004997689179543231,
+          "threshold": 1.801952243954492e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.028099481249315907,
+            0.009376195904650168
+          ],
+          "smallest": 0.009376195904650168,
+          "threshold": 2.809948124931591e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.045027822219641786,
+            0.010890353891486359
+          ],
+          "smallest": 0.010890353891486359,
+          "threshold": 4.5027822219641786e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.03554491698163806,
+            0.005289772084322707
+          ],
+          "smallest": 0.005289772084322707,
+          "threshold": 3.554491698163806e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_08",
+      "budget": 2,
+      "bases": [
+        "ZZ",
+        "YX"
+      ],
+      "observables": [
+        "IX",
+        "IZ",
+        "YI",
+        "YX",
+        "ZI",
+        "ZZ"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.05890761091460427,
+            0.0011754647247342442
+          ],
+          "smallest": 0.0011754647247342442,
+          "threshold": 5.890761091460428e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.026692642383003777,
+            0.008355943664385032
+          ],
+          "smallest": 0.008355943664385032,
+          "threshold": 2.669264238300378e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.07885528240764786,
+            0.007836908215460108
+          ],
+          "smallest": 0.007836908215460108,
+          "threshold": 7.885528240764787e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.09093973654738412,
+            0.017699310955919253
+          ],
+          "smallest": 0.017699310955919253,
+          "threshold": 9.093973654738412e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.07807365099948,
+            0.01844604490293161
+          ],
+          "smallest": 0.01844604490293161,
+          "threshold": 7.807365099948e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_08",
+      "budget": 3,
+      "bases": [
+        "ZZ",
+        "YX",
+        "YY"
+      ],
+      "observables": [
+        "IX",
+        "IY",
+        "IZ",
+        "YI",
+        "YX",
+        "YY",
+        "ZI",
+        "ZZ"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.0461589488509959,
+            0.0009210731052022064
+          ],
+          "smallest": 0.0009210731052022064,
+          "threshold": 4.61589488509959e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.02091587649414476,
+            0.006547567796719613
+          ],
+          "smallest": 0.006547567796719613,
+          "threshold": 2.091587649414476e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.06178958696121662,
+            0.006140860915099338
+          ],
+          "smallest": 0.006140860915099338,
+          "threshold": 6.178958696121663e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.07125874878712939,
+            0.013868863062474037
+          ],
+          "smallest": 0.013868863062474037,
+          "threshold": 7.125874878712939e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.061177114589144786,
+            0.014453990409013575
+          ],
+          "smallest": 0.014453990409013575,
+          "threshold": 6.117711458914479e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_09",
+      "budget": 1,
+      "bases": [
+        "YY"
+      ],
+      "observables": [
+        "IY",
+        "YI",
+        "YY"
+      ],
+      "validation": [
+        {
+          "rank": 0,
+          "singular_values": [
+            0.0,
+            0.0
+          ],
+          "smallest": 0,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "rank": 0,
+          "singular_values": [
+            0.0,
+            0.0
+          ],
+          "smallest": 0,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "rank": 0,
+          "singular_values": [
+            0.0,
+            0.0
+          ],
+          "smallest": 0,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "rank": 0,
+          "singular_values": [
+            0.0,
+            0.0
+          ],
+          "smallest": 0,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "rank": 0,
+          "singular_values": [
+            0.0,
+            0.0
+          ],
+          "smallest": 0,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_09",
+      "budget": 2,
+      "bases": [
+        "YY",
+        "YX"
+      ],
+      "observables": [
+        "IX",
+        "IY",
+        "YI",
+        "YX",
+        "YY"
+      ],
+      "validation": [
+        {
+          "rank": 1,
+          "singular_values": [
+            0.09334473245179804,
+            0.0
+          ],
+          "smallest": 0.09334473245179804,
+          "threshold": 9.334473245179805e-11,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.040046782547989226,
+            0.0
+          ],
+          "smallest": 0.040046782547989226,
+          "threshold": 4.0046782547989226e-11,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.12166656540678411,
+            0.0
+          ],
+          "smallest": 0.12166656540678411,
+          "threshold": 1.2166656540678411e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.14189319175716147,
+            0.0
+          ],
+          "smallest": 0.14189319175716147,
+          "threshold": 1.4189319175716148e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.1156319161135051,
+            0.0
+          ],
+          "smallest": 0.1156319161135051,
+          "threshold": 1.156319161135051e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_09",
+      "budget": 3,
+      "bases": [
+        "YY",
+        "YX",
+        "XX"
+      ],
+      "observables": [
+        "IX",
+        "IY",
+        "XI",
+        "XX",
+        "YI",
+        "YX",
+        "YY"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.06976923127838569,
+            0.0002480181784717613
+          ],
+          "smallest": 0.0002480181784717613,
+          "threshold": 6.97692312783857e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.03221990075027409,
+            0.010631927830760798
+          ],
+          "smallest": 0.010631927830760798,
+          "threshold": 3.221990075027409e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.0913472234321307,
+            0.006647069147199294
+          ],
+          "smallest": 0.006647069147199294,
+          "threshold": 9.13472234321307e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.10764270285259055,
+            0.007033217687026653
+          ],
+          "smallest": 0.007033217687026653,
+          "threshold": 1.0764270285259055e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.08869907907928472,
+            0.004715808115536225
+          ],
+          "smallest": 0.004715808115536225,
+          "threshold": 8.869907907928472e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_10",
+      "budget": 1,
+      "bases": [
+        "XY"
+      ],
+      "observables": [
+        "IY",
+        "XI",
+        "XY"
+      ],
+      "validation": [
+        {
+          "rank": 1,
+          "singular_values": [
+            0.008851938192469775,
+            0.0
+          ],
+          "smallest": 0.008851938192469775,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.1802914526206081,
+            0.0
+          ],
+          "smallest": 0.1802914526206081,
+          "threshold": 1.8029145262060812e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.11889723337008602,
+            0.0
+          ],
+          "smallest": 0.11889723337008602,
+          "threshold": 1.1889723337008603e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.26116596333927555,
+            0.0
+          ],
+          "smallest": 0.26116596333927555,
+          "threshold": 2.611659633392756e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.20983747861654165,
+            0.0
+          ],
+          "smallest": 0.20983747861654165,
+          "threshold": 2.0983747861654166e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_10",
+      "budget": 2,
+      "bases": [
+        "XY",
+        "YX"
+      ],
+      "observables": [
+        "IX",
+        "IY",
+        "XI",
+        "XY",
+        "YI",
+        "YX"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.0867784443655288,
+            0.0035500271667189966
+          ],
+          "smallest": 0.0035500271667189966,
+          "threshold": 8.67784443655288e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.08204730579684821,
+            0.0318267494257129
+          ],
+          "smallest": 0.0318267494257129,
+          "threshold": 8.204730579684821e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.11621512475413819,
+            0.04525980729847247
+          ],
+          "smallest": 0.04525980729847247,
+          "threshold": 1.1621512475413819e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.1439464195539782,
+            0.1000885980386647
+          ],
+          "smallest": 0.1000885980386647,
+          "threshold": 1.439464195539782e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.11638245974066087,
+            0.08136909131200173
+          ],
+          "smallest": 0.08136909131200173,
+          "threshold": 1.1638245974066088e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_10",
+      "budget": 3,
+      "bases": [
+        "XY",
+        "YX",
+        "YZ"
+      ],
+      "observables": [
+        "IX",
+        "IY",
+        "IZ",
+        "XI",
+        "XY",
+        "YI",
+        "YX",
+        "YZ"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.009986076556185493,
+            0.002467575425607064
+          ],
+          "smallest": 0.002467575425607064,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.056587254418033126,
+            0.0037226745756118416
+          ],
+          "smallest": 0.0037226745756118416,
+          "threshold": 5.658725441803313e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.03785801006294788,
+            0.011124615655641677
+          ],
+          "smallest": 0.011124615655641677,
+          "threshold": 3.785801006294788e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.08208240036254796,
+            0.014247276921406813
+          ],
+          "smallest": 0.014247276921406813,
+          "threshold": 8.208240036254797e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.06594557276468026,
+            0.011547575859390133
+          ],
+          "smallest": 0.011547575859390133,
+          "threshold": 6.594557276468026e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_11",
+      "budget": 1,
+      "bases": [
+        "YY"
+      ],
+      "observables": [
+        "IY",
+        "YI",
+        "YY"
+      ],
+      "validation": [
+        {
+          "rank": 0,
+          "singular_values": [
+            0.0,
+            0.0
+          ],
+          "smallest": 0,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "rank": 0,
+          "singular_values": [
+            0.0,
+            0.0
+          ],
+          "smallest": 0,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "rank": 0,
+          "singular_values": [
+            0.0,
+            0.0
+          ],
+          "smallest": 0,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "rank": 0,
+          "singular_values": [
+            0.0,
+            0.0
+          ],
+          "smallest": 0,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "rank": 0,
+          "singular_values": [
+            0.0,
+            0.0
+          ],
+          "smallest": 0,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_11",
+      "budget": 2,
+      "bases": [
+        "YY",
+        "XZ"
+      ],
+      "observables": [
+        "IY",
+        "IZ",
+        "XI",
+        "XZ",
+        "YI",
+        "YY"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.0035076350246911314,
+            0.0006585645468625814
+          ],
+          "smallest": 0.0006585645468625814,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.0072002122445439425,
+            0.0032541060412376796
+          ],
+          "smallest": 0.0032541060412376796,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.0065485319528625855,
+            0.0031825907499707165
+          ],
+          "smallest": 0.0031825907499707165,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.01587945190169659,
+            0.004999575127680687
+          ],
+          "smallest": 0.004999575127680687,
+          "threshold": 1.5879451901696594e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.01718906847110953,
+            0.0036428810625360407
+          ],
+          "smallest": 0.0036428810625360407,
+          "threshold": 1.7189068471109534e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_11",
+      "budget": 3,
+      "bases": [
+        "YY",
+        "XZ",
+        "XX"
+      ],
+      "observables": [
+        "IX",
+        "IY",
+        "IZ",
+        "XI",
+        "XX",
+        "XZ",
+        "YI",
+        "YY"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.000988451986988404,
+            0.0004839108941309863
+          ],
+          "smallest": 0.0004839108941309863,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.013236041408610634,
+            0.0004345984573931661
+          ],
+          "smallest": 0.0004345984573931661,
+          "threshold": 1.3236041408610634e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.008507029701532042,
+            0.0007414466173468149
+          ],
+          "smallest": 0.0007414466173468149,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.014244624101761671,
+            0.0012934257354923345
+          ],
+          "smallest": 0.0012934257354923345,
+          "threshold": 1.4244624101761671e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.012216728763398894,
+            0.0009531408710787755
+          ],
+          "smallest": 0.0009531408710787755,
+          "threshold": 1.2216728763398896e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_12",
+      "budget": 1,
+      "bases": [
+        "XZ"
+      ],
+      "observables": [
+        "IZ",
+        "XI",
+        "XZ"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.007857102455308134,
+            0.0014751845849721825
+          ],
+          "smallest": 0.0014751845849721825,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.016128475427778434,
+            0.007289197532372405
+          ],
+          "smallest": 0.007289197532372405,
+          "threshold": 1.6128475427778436e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.014668711574412196,
+            0.007129003279934406
+          ],
+          "smallest": 0.007129003279934406,
+          "threshold": 1.4668711574412197e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.03556997225980037,
+            0.011199048286004744
+          ],
+          "smallest": 0.011199048286004744,
+          "threshold": 3.5569972259800366e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.03850351337528536,
+            0.008160053580080732
+          ],
+          "smallest": 0.008160053580080732,
+          "threshold": 3.8503513375285364e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_12",
+      "budget": 2,
+      "bases": [
+        "XZ",
+        "YZ"
+      ],
+      "observables": [
+        "IZ",
+        "XI",
+        "XZ",
+        "YI",
+        "YZ"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.10202808838803484,
+            0.0007843114498564596
+          ],
+          "smallest": 0.0007843114498564596,
+          "threshold": 1.0202808838803485e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.045695171064481184,
+            0.005306538714735965
+          ],
+          "smallest": 0.005306538714735965,
+          "threshold": 4.569517106448119e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.13349944967462898,
+            0.00496644289835831
+          ],
+          "smallest": 0.00496644289835831,
+          "threshold": 1.3349944967462898e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.15779999367661499,
+            0.011596579711394056
+          ],
+          "smallest": 0.011596579711394056,
+          "threshold": 1.57799993676615e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.13011720914954691,
+            0.012916902477575938
+          ],
+          "smallest": 0.012916902477575938,
+          "threshold": 1.301172091495469e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_12",
+      "budget": 3,
+      "bases": [
+        "XZ",
+        "YZ",
+        "XX"
+      ],
+      "observables": [
+        "IX",
+        "IZ",
+        "XI",
+        "XX",
+        "XZ",
+        "YI",
+        "YZ"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.08024940893104889,
+            0.000667977966319987
+          ],
+          "smallest": 0.000667977966319987,
+          "threshold": 8.02494089310489e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.03547658132326845,
+            0.011497531927784884
+          ],
+          "smallest": 0.011497531927784884,
+          "threshold": 3.5476581323268446e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.10478608594578971,
+            0.0077220358728559285
+          ],
+          "smallest": 0.0077220358728559285,
+          "threshold": 1.0478608594578972e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.12217062595599319,
+            0.012824718145327173
+          ],
+          "smallest": 0.012824718145327173,
+          "threshold": 1.221706259559932e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.10001447957744647,
+            0.011600930705538366
+          ],
+          "smallest": 0.011600930705538366,
+          "threshold": 1.0001447957744648e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_13",
+      "budget": 1,
+      "bases": [
+        "XX"
+      ],
+      "observables": [
+        "IX",
+        "XI",
+        "XX"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.00649278980550949,
+            0.0008149621867096563
+          ],
+          "smallest": 0.0008149621867096563,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.0435641493591087,
+            0.003892179684109198
+          ],
+          "smallest": 0.003892179684109198,
+          "threshold": 4.35641493591087e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.025406856474387247,
+            0.005818636290226742
+          ],
+          "smallest": 0.005818636290226742,
+          "threshold": 2.5406856474387248e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.0318979757200502,
+            0.010948923633671193
+          ],
+          "smallest": 0.010948923633671193,
+          "threshold": 3.1897975720050204e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.026768097374902367,
+            0.009299633406696806
+          ],
+          "smallest": 0.009299633406696806,
+          "threshold": 2.676809737490237e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_13",
+      "budget": 2,
+      "bases": [
+        "XX",
+        "ZX"
+      ],
+      "observables": [
+        "IX",
+        "XI",
+        "XX",
+        "ZI",
+        "ZX"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.01931065369297976,
+            0.00020377752031745425
+          ],
+          "smallest": 0.00020377752031745425,
+          "threshold": 1.9310653692979762e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.01732818770572667,
+            0.0022467279461527447
+          ],
+          "smallest": 0.0022467279461527447,
+          "threshold": 1.7328187705726672e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.01970396935041448,
+            0.003724755831353338
+          ],
+          "smallest": 0.003724755831353338,
+          "threshold": 1.970396935041448e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.02624070166638007,
+            0.005203872835066171
+          ],
+          "smallest": 0.005203872835066171,
+          "threshold": 2.6240701666380074e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.013377125288272014,
+            0.003941472279519831
+          ],
+          "smallest": 0.003941472279519831,
+          "threshold": 1.3377125288272015e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_13",
+      "budget": 3,
+      "bases": [
+        "XX",
+        "ZX",
+        "XZ"
+      ],
+      "observables": [
+        "IX",
+        "IZ",
+        "XI",
+        "XX",
+        "XZ",
+        "ZI",
+        "ZX"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.012668034931604556,
+            0.00014764865772358892
+          ],
+          "smallest": 0.00014764865772358892,
+          "threshold": 1.2668034931604556e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.0119657284868663,
+            0.0005518712157964287
+          ],
+          "smallest": 0.0005518712157964287,
+          "threshold": 1.19657284868663e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.011805940009804236,
+            0.0027067002429243692
+          ],
+          "smallest": 0.0027067002429243692,
+          "threshold": 1.1805940009804237e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.011207924840155427,
+            0.003986451666490515
+          ],
+          "smallest": 0.003986451666490515,
+          "threshold": 1.1207924840155428e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.004595427260104481,
+            0.0009332303430129828
+          ],
+          "smallest": 0.0009332303430129828,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_14",
+      "budget": 1,
+      "bases": [
+        "YZ"
+      ],
+      "observables": [
+        "IZ",
+        "YI",
+        "YZ"
+      ],
+      "validation": [
+        {
+          "rank": 1,
+          "singular_values": [
+            0.1587062015350295,
+            0.0
+          ],
+          "smallest": 0.1587062015350295,
+          "threshold": 1.5870620153502953e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.06820426274732341,
+            0.0
+          ],
+          "smallest": 0.06820426274732341,
+          "threshold": 6.820426274732342e-11,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.20684590119745003,
+            0.0
+          ],
+          "smallest": 0.20684590119745003,
+          "threshold": 2.0684590119745005e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.24155427949621816,
+            0.0
+          ],
+          "smallest": 0.24155427949621816,
+          "threshold": 2.4155427949621816e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "rank": 1,
+          "singular_values": [
+            0.19662708100887566,
+            0.0
+          ],
+          "smallest": 0.19662708100887566,
+          "threshold": 1.9662708100887566e-10,
+          "sensitivity_ranks": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_14",
+      "budget": 2,
+      "bases": [
+        "YZ",
+        "ZX"
+      ],
+      "observables": [
+        "IX",
+        "IZ",
+        "YI",
+        "YZ",
+        "ZI",
+        "ZX"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.06948374413566044,
+            0.0005024448060513835
+          ],
+          "smallest": 0.0005024448060513835,
+          "threshold": 6.948374413566044e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.03462618355114588,
+            0.019378053620532472
+          ],
+          "smallest": 0.019378053620532472,
+          "threshold": 3.462618355114588e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.09294049807448505,
+            0.012936985392626886
+          ],
+          "smallest": 0.012936985392626886,
+          "threshold": 9.294049807448506e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.10743925866165964,
+            0.013994273294717724
+          ],
+          "smallest": 0.013994273294717724,
+          "threshold": 1.0743925866165964e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.09099348611946374,
+            0.00914297538378052
+          ],
+          "smallest": 0.00914297538378052,
+          "threshold": 9.099348611946375e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_14",
+      "budget": 3,
+      "bases": [
+        "YZ",
+        "ZX",
+        "XY"
+      ],
+      "observables": [
+        "IX",
+        "IY",
+        "IZ",
+        "XI",
+        "XY",
+        "YI",
+        "YZ",
+        "ZI",
+        "ZX"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.05230281390728669,
+            0.0019661175612296702
+          ],
+          "smallest": 0.0019661175612296702,
+          "threshold": 5.230281390728669e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.03683213927481346,
+            0.02162562751587873
+          ],
+          "smallest": 0.02162562751587873,
+          "threshold": 3.6832139274813456e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.070232500625313,
+            0.024105967990740877
+          ],
+          "smallest": 0.024105967990740877,
+          "threshold": 7.023250062531301e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.08283961851317376,
+            0.05845418597132121
+          ],
+          "smallest": 0.05845418597132121,
+          "threshold": 8.283961851317376e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.07031934125242338,
+            0.046367661697320386
+          ],
+          "smallest": 0.046367661697320386,
+          "threshold": 7.031934125242339e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_15",
+      "budget": 1,
+      "bases": [
+        "XZ"
+      ],
+      "observables": [
+        "IZ",
+        "XI",
+        "XZ"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.007857102455308134,
+            0.0014751845849721825
+          ],
+          "smallest": 0.0014751845849721825,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.016128475427778434,
+            0.007289197532372405
+          ],
+          "smallest": 0.007289197532372405,
+          "threshold": 1.6128475427778436e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.014668711574412196,
+            0.007129003279934406
+          ],
+          "smallest": 0.007129003279934406,
+          "threshold": 1.4668711574412197e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.03556997225980037,
+            0.011199048286004744
+          ],
+          "smallest": 0.011199048286004744,
+          "threshold": 3.5569972259800366e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.03850351337528536,
+            0.008160053580080732
+          ],
+          "smallest": 0.008160053580080732,
+          "threshold": 3.8503513375285364e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_15",
+      "budget": 2,
+      "bases": [
+        "XZ",
+        "XY"
+      ],
+      "observables": [
+        "IY",
+        "IZ",
+        "XI",
+        "XY",
+        "XZ"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.006644297484924245,
+            0.0030026089029832007
+          ],
+          "smallest": 0.0030026089029832007,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.1032046726613289,
+            0.005129038658079859
+          ],
+          "smallest": 0.005129038658079859,
+          "threshold": 1.0320467266132891e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.06882056766717877,
+            0.005050199505148308
+          ],
+          "smallest": 0.005050199505148308,
+          "threshold": 6.882056766717877e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.15320047339972334,
+            0.012586993657900378
+          ],
+          "smallest": 0.012586993657900378,
+          "threshold": 1.5320047339972335e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.12633084540437728,
+            0.0123006241949232
+          ],
+          "smallest": 0.0123006241949232,
+          "threshold": 1.2633084540437728e-10,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "method": "random_15",
+      "budget": 3,
+      "bases": [
+        "XZ",
+        "XY",
+        "ZY"
+      ],
+      "observables": [
+        "IY",
+        "IZ",
+        "XI",
+        "XY",
+        "XZ",
+        "ZI",
+        "ZY"
+      ],
+      "validation": [
+        {
+          "rank": 2,
+          "singular_values": [
+            0.0029838776062089825,
+            0.0016093381507311765
+          ],
+          "smallest": 0.0016093381507311765,
+          "threshold": 1e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.04703851287027717,
+            0.0028126380019834404
+          ],
+          "smallest": 0.0028126380019834404,
+          "threshold": 4.703851287027717e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.030692532824087317,
+            0.0028333868168097767
+          ],
+          "smallest": 0.0028333868168097767,
+          "threshold": 3.069253282408732e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.06600634049676939,
+            0.007314241227319342
+          ],
+          "smallest": 0.007314241227319342,
+          "threshold": 6.600634049676939e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "rank": 2,
+          "singular_values": [
+            0.051850158530668065,
+            0.007572571302559783
+          ],
+          "smallest": 0.007572571302559783,
+          "threshold": 5.185015853066807e-11,
+          "sensitivity_ranks": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 0.024672250000000062
+}

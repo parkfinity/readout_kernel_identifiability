@@ -1,0 +1,65 @@
+{
+  "archive_sha256": "27751ea6abf0a0ab055b9b964e23eb14fc7cf4a84c56d91e68ce6d6cdd2682f1",
+  "files": [
+    {
+      "path": "frozen_inputs/auto_mpg_123.json",
+      "sha256": "9b8d0f9b7d9ec269d3ce9d78c39f80aceda33a5c013d4ce4e1d4eb16ecaa1ce9"
+    },
+    {
+      "path": "frozen_inputs/auto_mpg_2024.json",
+      "sha256": "11316b7d1543332fb9d1a6c3053cf2b2fa8119298121e8169543f8052722d4a2"
+    },
+    {
+      "path": "frozen_inputs/auto_mpg_42.json",
+      "sha256": "ff4137871bc076e48fe73125bc40b5300de51b330144fcd1a66d685e895d01e3"
+    },
+    {
+      "path": "frozen_inputs/auto_mpg_777.json",
+      "sha256": "208b393941325b0c61beaf0333340761a892b5318d8630a7c276d9e5e9b72fbc"
+    },
+    {
+      "path": "frozen_inputs/auto_mpg_999.json",
+      "sha256": "2672c50e8dfc8ea0f2b63ce032af64680ab0c4024029487245f2de220898c853"
+    },
+    {
+      "path": "frozen_inputs/ionosphere_123.json",
+      "sha256": "bef0301a41aa27c484262698f10d61a432e89f80b2fa364cf37d15655635c913"
+    },
+    {
+      "path": "frozen_inputs/ionosphere_2024.json",
+      "sha256": "fee242cddc20fcf4f772eeef49efcb3256a91e1d4baa5ee9b327c9386cf11eae"
+    },
+    {
+      "path": "frozen_inputs/ionosphere_42.json",
+      "sha256": "97337ba506e947f80dd946b67f5d71cf27dd6bc9ffefd8689633bc30c5d49bf6"
+    },
+    {
+      "path": "frozen_inputs/ionosphere_777.json",
+      "sha256": "e81163254b297358fff700f62313fcd55937c837a4b5a64b74ba8f6baa4af01a"
+    },
+    {
+      "path": "frozen_inputs/ionosphere_999.json",
+      "sha256": "f1a32a19129c51dd57ad3739c14920afdaafa1cbafc06d3e1627d0fe47b138df"
+    },
+    {
+      "path": "frozen_inputs/wdbc_123.json",
+      "sha256": "55cbbc4e5597837fdbb07d5a9242449778f784c24ab91c92493c7e1481957ef1"
+    },
+    {
+      "path": "frozen_inputs/wdbc_2024.json",
+      "sha256": "50313aac903a0e010d54479a073c7912e8bb06eaca5b8023511dca1aa3b1cb1c"
+    },
+    {
+      "path": "frozen_inputs/wdbc_42.json",
+      "sha256": "ae6adb1a0f8bb46c43b6d2651772346475ce120e49dfa2aa02175a0538907946"
+    },
+    {
+      "path": "frozen_inputs/wdbc_777.json",
+      "sha256": "c836209c934102387421cfbfb2da8d001edeaeaa71f4f3b13e4f634d3095dfd5"
+    },
+    {
+      "path": "frozen_inputs/wdbc_999.json",
+      "sha256": "7efc90de14c5115fdda303a2b495ac5ce9d16a7656bacf3c02df26df078c94ea"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/fig1_overview.png}
+\caption{Readout-dependent kernel equivalence, identifiable
+dimension, and recovery limits.
+(a) Different quantum states and measured features can define
+the same Gaussian kernel. A common input-independent transformation
+preserves all pairwise kernel values when it induces
+$f_\eta(x)=Qf_\theta(x)+\tau$ with $Q^\top M Q=M$.
+The congruent triangles illustrate the isotropic case;
+arbitrary unitaries need not preserve the specified kernel.
+(b) Schematic kernel-equivalence classes in parameter space:
+points on each colored curve share the same all-input kernel
+and coefficient Gram matrix $G$, whereas different curves
+represent different kernels. The curves illustrate the equivalence
+relation, not the dimension or global topology of a particular
+circuit's equivalence classes.
+For a fixed data basis with $\{1,h_1,\ldots,h_A\}$ linearly
+independent on the actual input domain, fixed $M\succ0$ and
+$\gamma>0$, and analytic coefficients on an open connected
+parameter box, Theorem~\ref{thm:gram} characterizes all-input
+kernel equivalence, global coordinate inactivity, and generic
+differential rank through $G$.
+(c) In the four-qubit, one-layer Hubregtsen/local-Z example,
+fixed positive diagonal metrics give rank two, and fixed dense
+positive-definite metrics reach but cannot exceed rank three.
+Any fixed affine feature lift with a fixed positive-definite
+quadratic metric also has rank at most three.
+Adding the two same-input-group products $f_0f_2$ and $f_1f_3$
+gives rank four under a positive diagonal metric.
+Solid and dashed arrows encode the numbers of identifiable
+and locally null directions in a stage-adapted basis; they are
+not spatial coordinate axes or matched directions across stages.
+The products are computable from existing exact local means
+in this example, without new ideal measurement information.
+All ranks are generic; two products suffice without a minimality
+claim. Finite-shot resolution, predictive improvement, and
+execution savings do not follow from rank alone.}
+\label{fig:overview}
+\end{figure*}

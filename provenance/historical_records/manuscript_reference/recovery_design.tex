@@ -1,0 +1,189 @@
+\section{Recovering identifiability by readout and metric design}
+\label{sec:recovery}
+Changing the metric or the readout changes the kernel, unlike the
+equivalence-preserving transformations above. The design objective is
+not to make every source symbol active, but to recover dependence
+already visible in the centered features and to identify its limits.
+
+\subsection{What can a metric change recover?}
+At a fixed parameter point, write $H_v=D C(\theta)[v]$. By
+Theorem~\ref{thm:gram}, the all-input kernel derivative vanishes exactly
+when
+\begin{equation}
+ C^T M H_v+H_v^T M C=0.\label{eq:recoverability}
+\end{equation}
+This test separates a symmetry of a particular metric from a loss of
+dependence in the features themselves.
+
+\begin{proposition}[Irrecoverability over fixed metrics]
+\label{prop:metricrecover}
+Assume the finite-basis hypotheses of Theorem~\ref{thm:gram}. At a
+point where $f_\theta$ is nonconstant, a direction $v$ is invisible to
+every fixed positive-definite metric if and only if $H_v=0$,
+equivalently $D_v f_\theta(x)$ is input-independent.
+\end{proposition}
+\begin{proof}
+For an input pair set $a=f_\theta(x)-f_\theta(x')$ and
+$b=D_v f_\theta(x)-D_v f_\theta(x')$. If $a^TMb=0$ on the open
+positive-definite cone, linearity in $M$ implies
+$ab^T+ba^T=0$. For $a\ne0$ this gives $b=0$. When $a=0$, compare
+both inputs to a third input with a different feature value, which
+exists by nonconstancy. Thus $b=0$ for every pair. Affine independence
+of the data basis implies $H_v=0$. The converse is immediate.
+\end{proof}
+The nonconstant assumption is essential: at $C=0$, every
+squared-distance first derivative vanishes regardless of $H_v$.
+Also, the intersection of nullspaces over all metrics need not equal
+the nullspace of any \emph{single} metric. The bound
+$r\le A(A+1)/2$ continues to constrain each fixed metric.
+
+At a fixed parameter point, the minors of Eq.~\eqref{eq:recoverability},
+viewed as a map of $v$, are polynomials in the metric entries.
+Consequently, if a rank is attainable in an open positive-definite
+metric family, almost every metric in that family attains its maximum
+rank. This applies separately within the diagonal family and to
+finitely many parameter points simultaneously
+(Appendix~\ref{app:recovery}). Random anisotropy is therefore a
+necessary baseline; generic rank alone does not imply conditioning
+or good finite-shot sensitivity.
+
+\subsection{An exact boundary between metric and feature recovery}
+The question here is whether a fixed metric on the existing features
+can recover all four feature-visible directions, or whether the
+representation itself must change.
+For the four-qubit, one-layer Hubregtsen source circuit, the local-Z
+features are $f_q(x)=-\sin\theta_q\cos x_{q\bmod2}$ for $q=0,\ldots,3$.
+Its diagonal controlled-rotation tail changes none of these features
+(the circuit derivation is given at Eq.~\eqref{eq:hubfeatures}).
+The four retained angles vary independently; the remaining tail
+angles do not enter these features. Assume that
+$(\cos x_0,\cos x_1)$ ranges over a set with nonempty interior.
+The following statement concerns generic differential rank, not
+rank at every parameter point or globally unique parameter recovery.
+
+\begin{proposition}[Fixed-quadratic ceiling and product recovery]
+\label{prop:recoveryboundary}
+For this four-qubit Hubregtsen/local-Z family with fixed
+$\gamma>0$: (i) every fixed positive diagonal metric on the four
+local means has generic kernel rank two; (ii) the maximum generic
+rank over fixed dense positive-definite metrics on these means is
+three, attained by Eq.~\eqref{eq:recoverymetric}; (iii) appending
+$f_0f_2$ and $f_1f_3$ gives generic rank four for every fixed positive
+diagonal metric on the resulting six features. These products equal
+the corresponding ZZ means in this family and need no additional
+ideal measurement information.
+\end{proposition}
+\begin{proof}
+Write $a=\sin\theta_0$, $b=\sin\theta_1$,
+$c=\sin\theta_2$, and $d=\sin\theta_3$. For diagonal weights, the coefficient
+Gram on $h=(\cos x_0,\cos x_1)^T$ is
+\[
+ G=\diag(w_a a^2+w_c c^2,\ w_b b^2+w_d d^2).
+\]
+Its two entries have generically independent derivatives, proving (i).
+For every dense metric the same Gram is symmetric $2\times2$, giving
+rank at most three. With $u=(1,2,3,4)^T$,
+\begin{equation}
+ M=(32I+uu^T)/158\label{eq:recoverymetric}
+\end{equation}
+is positive definite with unit trace, and an exact nonzero rational
+minor certifies rank three. Its value is
+$-\frac{835727837184}{978271035584375}$ at the rational-phase point in
+Appendix~\ref{app:recovery}, proving (ii).
+
+The state before the diagonal tail is a product and the tail commutes
+with every Z string. Consequently $f_{qr}(x)=f_q(x)f_r(x)$ exactly.
+These ZZ features are a nonlinear lift of the original four means,
+not new ideal information that was absent from those means.
+For (iii), put $(u,v)=(\cos x_0,\cos x_1)$.
+The data functions $1,u,v,u^2,v^2$ are independent. Four entries of
+their coefficient Gram are
+\begin{equation}
+ \begin{aligned}
+ \beta_u&=w_a a^2+w_c c^2,&\beta_{u^2}&=w_{ac}a^2c^2,\\
+ \beta_v&=w_b b^2+w_d d^2,&\beta_{v^2}&=w_{bd}b^2d^2.
+ \end{aligned}\label{eq:twoproductrecovery}
+\end{equation}
+The $(a,c)$ Jacobian block has determinant
+$4acw_{ac}(w_a a^2-w_c c^2)$, and the $(b,d)$ block has the
+analogous generically nonzero determinant. Multiplying by the four
+cosine derivatives preserves generic nonvanishing, proving rank at
+least four. Only the four pre-tail angles occur, giving the matching
+upper bound.
+\end{proof}
+The experiment retained all six ZZ products and also
+has exact minor certificates. Two products are sufficient; we do not
+claim their minimality over all allowed feature/metric designs.
+
+\begin{table}[t]
+\caption{Exact recovery limits for the same four-qubit, one-layer
+Hubregtsen source circuit. Ranks are generic, not statements at every
+parameter point. The third row is the two-product analytic construction
+of Proposition~\ref{prop:recoveryboundary}; the fourth is the
+configuration used in the finite-shot experiment. All rows can use
+one ZZZZ product basis. Both product lifts are also available from
+exact local means by nonlinear classical processing.}
+\label{tab:recoverymechanism}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.74\columnwidth}r@{}}
+\toprule
+Features and fixed metric & Rank\\
+\midrule
+Four local Z, any positive diagonal metric & 2\\
+Same four features, best dense metric & 3\\
+Local Z plus two products, positive diagonal metric (analytic proof) & 4\\
+Local Z plus six ZZ products, diagonal metric (experimental configuration) & 4\\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{corollary}[Fixed affine expansion cannot cross the ceiling]
+\label{cor:affineceiling}
+For the four local features of Proposition~\ref{prop:recoveryboundary},
+let $\widetilde f=Lf+b$ have any finite output dimension, with $L,b$
+fixed independently of inputs and trainable parameters. With any
+fixed $\widetilde M\succ0$ and fixed bandwidth, its kernel has
+generic differential rank at most three. Thus no such affine
+expansion achieves rank four, whereas the two quadratic product
+features in the proposition suffice.
+\end{corollary}
+\begin{proof}
+The offset cancels and
+\begin{equation}
+ \Delta\widetilde f^T\widetilde M\Delta\widetilde f
+ =\Delta f^T L^T\widetilde M L\Delta f.
+\end{equation}
+The effective metric may be singular, but the data basis is still
+$(\cos x_0,\cos x_1)$. Its symmetric $2\times2$ coefficient Gram
+has only three entries, bounding the differential rank by three.
+\end{proof}
+This is a restriction on fixed affine lifts, not on arbitrary
+input-dependent processing or jointly trainable postprocessing.
+
+At finite shots, direct ZZ parity averages and products of local-Z
+sample means are different estimators of the same ideal features in
+this family. We compare them on identical outcomes in
+Sec.~\ref{sec:productcontrol}. General correlated states do not obey
+this product identity. The result establishes a limit of fixed
+quadratic metrics on the original features, not a necessity for
+additional quantum measurement information. Equal basis count alone
+does not imply equal estimation precision.
+
+On ten previously studied source circuits from the YZ-CX,
+Hubregtsen, and Kyriienko constructors, fixed diagonal local-XYZ
+weights proportional to $1,\ldots,4$ on an evenly spaced grid attain
+generic rank $K$, certified by exact Fourier-Gram minors. In
+particular, the two- and four-qubit Kyriienko ranks change from
+$4$ to $6$ and from $10$ to $12$. These are redesigned kernels on
+existing circuits, not additional entries in the original 54-setting
+census. The broader 30-setting metric survey is numerical; ten
+single-basis designs also have exact full-rank certificates. Simple
+random metrics and uniform-basis controls already attain many of the
+same ranks, so these results do not establish a sophisticated selector's
+superiority.
+
+The next two sections give the circuit-specific certificates and
+dimension census supporting this identifiability picture
+(Secs.~\ref{sec:structure} and \ref{sec:census}). We then return to
+our third question in Sec.~\ref{sec:shotdesign}: how well can the
+retained or restored directions be resolved with finite shots?
+Exact rank is an algebraic prerequisite, not a guarantee of statistical
+resolution or predictive improvement.

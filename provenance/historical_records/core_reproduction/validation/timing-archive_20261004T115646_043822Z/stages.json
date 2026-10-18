@@ -1,0 +1,8 @@
+[
+  {
+    "stage": "timing_saved_pair_reaggregation",
+    "exit_code": 0,
+    "elapsed_seconds": 10.174221000000001,
+    "log": "logs/timing_saved_pair_reaggregation.log"
+  }
+]

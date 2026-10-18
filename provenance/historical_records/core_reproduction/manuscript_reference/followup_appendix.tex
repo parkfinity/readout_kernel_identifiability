@@ -1,0 +1,100 @@
+\section{Extended Fourier audit and scope corrections}
+\label{app:followup}
+A separate Laurent-state implementation covers all 30 settings in
+Table~\ref{tab:extension}. All frozen angles are fixed-frequency:
+YZ-CX uses additive parameter--data angles, not products; Hubregtsen
+and Kyriienko likewise have no trainable data multiplier. The two
+underlying data phases depend on distinct input coordinates and
+range over an open rectangle. This verifies the finite independent
+basis assumptions for the whole extension, not for the separate
+24-setting product-angle study.
+
+At exactly specified rational-circle parameter points, nonzero
+Gram-Jacobian minors modulo two primes give rigorous rational lower
+bounds; seven settings also retain rational determinants. The upper
+bounds combine exact two-copy invariance fields with completed
+symbolic Gram expansions. The 27 previously closed ranks agree,
+and the three Kyriienko closures independently agree with the
+dedicated computation in Appendix~\ref{app:gram}. The count remains
+54 settings, not 84. All 195 active and 57 inactive source-symbol
+verdicts agree with the previous structural closure.
+
+Write $\Omega=\sum_j w_j O_j\otimes O_j$. The condition
+$[\Omega,P\otimes I+I\otimes P]=0$ preserves the feature inner
+product under a common rotation and hence preserves feature
+distances. Separate-copy commutation is used for data-dependent
+angles. These are sufficient operator certificates, not a complete
+test for all distance-preserving transformations. The saved audit
+contains 81 fresh-angle symbolic deletion checks and three
+symbolic Euler-field checks with perturbed-field negative controls.
+This reimplements known structural mechanisms; shared Pauli-arithmetic
+helpers and frozen IR mean it is not a fully independent proof system.
+
+Original-circuit symbolic Gram expansion finishes in 16 of 30
+settings. Of the earlier budget-limited 32 source entries, all 32
+are again certified inactive by two-copy invariance, and nine also
+receive a completed symbolic Gram identity. The remaining 23 lack
+that second certificate because the 600,000-term budget was exceeded.
+All 14 unfinished original-circuit expansions record this reason,
+not a 60-second timeout. They are
+not undecided overall. In particular, a 0.025-second symbolic pass
+for the two-qubit full-Pauli Kyriienko case versus the earlier
+20-second cutoff is an unmatched diagnostic observation, not a
+controlled speedup measurement.
+
+The numerical audit uses 32 random parameter/input-pair probes
+per setting. Maximum distance and gradient differences are
+$2.85\times10^{-14}$ and $2.58\times10^{-14}$. A further interval-engine
+comparison reuses the earlier feasible witnesses. Validation includes
+11 unit tests, hashes of 33 manifested artifacts and 30 frozen inputs,
+and recomputation of all 60 modular lower certificates. Three theory
+diagnostics provide floating-rank and random injectivity consistency
+checks, not proofs. The complete computation, including budgeted
+symbolic expansions, was rerun on Linux; its certified outputs match
+the reference (Table~\ref{tab:reproscope}). No hardware execution is
+included.
+
+\input{reproduction_scope}
+
+\subsection{Pointwise metric preservation versus a union of spans}
+Let $M=\diag(1,2,3)$ and let $Q$ be the cyclic permutation
+$(u_1,u_2,u_3)\mapsto(u_3,u_1,u_2)$. Then
+\begin{equation}
+ N=Q^TMQ-M=\diag(1,1,-2).
+\end{equation}
+For the one-column matrix
+\begin{equation}
+ C(t)=(\sqrt2\cos t,\sqrt2\sin t,1)^T,
+\end{equation}
+$C(t)^TNC(t)=0$ for all $t$, although the columns as $t$ varies
+span $\mathbb R^3$ and $N\ne0$. Thus pointwise preservation does
+not imply preservation of the quadratic form on the union's linear
+span. Isometry on that span remains sufficient; it is necessary
+under stronger conditions, for example when a single column space
+already equals it. A small common rescaling of $C$ makes $f_t(x)=xC(t)$,
+$|x|<1$, physical mixed-state Bloch features, so this is not merely
+a formal large-amplitude counterexample.
+
+\subsection{Classical relaxation without an efficiency claim}
+Under Theorem~\ref{thm:gram}, the attainable kernel family lies in
+\begin{equation}
+ \left\{e^{-\gamma\Delta h^T H\Delta h}:
+ H\succeq0,\ \operatorname{rank}H\le\min(m,A)\right\}.
+\end{equation}
+This follows by setting $H=C(\theta)^TMC(\theta)$. For any common
+objective defined on these kernels, its supremum over the circuit
+family cannot exceed the supremum over this classical relaxation;
+no maximum-attainment assumption is needed. This is representational
+containment, not an efficient classical training or simulation result.
+The number of Fourier modes and the cost of constructing the metric
+may be exponential. Individual explicit sine/cosine modes are not
+intrinsically hard to evaluate; polynomial mode count alone would
+still not prove efficient extraction or optimization of $H$.
+
+For weight-at-most-$k$ readouts, the original audit used local-rotation
+invariance only. Proposition~\ref{prop:gauge}, using the classification
+of locality-preserving unitaries in Ref.~\cite{cpr2019locality},
+characterizes the connected universal gauge for complete isotropic
+weight sectors; it does not classify disconnected or
+reachable-family-specific symmetries. The all-state and fixed-family
+quantifiers remain distinct.

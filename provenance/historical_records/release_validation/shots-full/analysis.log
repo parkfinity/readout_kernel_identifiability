@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "mode": "full",
+  "verified_records": 60,
+  "median_empirical_to_predicted_variance": 0.9969501062308461,
+  "max_abs_bias_mc_se": 4.065684218013889
+}

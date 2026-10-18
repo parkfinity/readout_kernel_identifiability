@@ -1,0 +1,78 @@
+\subsection{A restricted certificate and dimension pilot}
+\label{sec:dimensionpilot}
+A separate follow-up fixes two source modules, ChebyshevRx and
+ParamZFeatureMap, at two and four qubits, one and two layers, and the
+same three readouts: eight circuit configurations and 24 circuit/readout
+settings. These settings use integer angle coefficients without
+ambiguous fixed-angle restoration. They form a selected subset of the
+102-setting inventory, not a new population sample or a full rerun.
+The selection criterion, pair budget and precision were fixed before
+calculating this pilot's results.
+
+We expand the fixed-readout squared distance by Pauli Heisenberg
+propagation, retaining exact Gaussian-rational coefficients and shared
+data expressions. Exact cancellation of all coefficients of a parameter
+direction certifies inactivity; a nonzero formal expression is not used
+to infer activity. A separate interval statevector and tangent engine
+evaluates derivatives at actual input pairs. It certifies activity only
+when the resulting interval excludes zero. The same calculation provides
+nonzero Jacobian minors at a single shared parameter assignment. We do
+not use random all-zero tests to accept identities.
+
+Of 162 source-symbol entries, 30 have exact inactivity identities and
+132 have feasible nonzero derivative witnesses; none remains undecided
+in this restricted pilot. All 18 previously certified entries in this
+subset are recovered. Exact constant-null-space upper bounds match
+the feasible-minor lower bounds in every setting
+(Table~\ref{tab:dimension}). Each entry uses at most 24 input pairs.
+The activity witnesses and the 22 nontrivial minors replay successfully
+at increased interval precision; the other two kernels are exactly
+constant and have rank zero. Appendix~\ref{app:dimension} gives the
+arithmetic and source-check scope.
+
+\begin{table}[htbp]
+\caption{Matching lower and upper bounds on generic kernel differential
+rank in the restricted pilot. $K$ counts source parameters; $r_{XYZ}$,
+$r_Z$ and $r_{\le2}$ refer to isotropic local XYZ, local Z, and all Pauli
+words of weight at most two. These are kernel ranks, not executable
+angle-task counts or independent population observations.}
+\label{tab:dimension}
+\begin{tabular}{lrrrrrr}
+\toprule
+Family & $n$ & $L$ & $K$ & $r_{XYZ}$ & $r_Z$ & $r_{\le2}$\\
+ChebyshevRx &2&1&4&3&4&2\\
+ &2&2&8&4&6&3\\
+ &4&1&8&7&8&7\\
+ &4&2&16&12&14&12\\
+ParamZ &2&1&2&2&0&2\\
+ &2&2&4&4&2&4\\
+ &4&1&4&4&0&4\\
+ &4&2&8&8&4&8\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two distinctions are operationally important. First, for two-qubit,
+two-layer ChebyshevRx with local Z readout, all eight individual source
+symbols are active, but $r=6$ because two shared combinations remain
+redundant. Local XYZ and full two-qubit Pauli readout instead give
+$r=4$ and $r=3$. Thus coordinate activity, parameter-combination rank,
+and the measurement geometry cannot be substituted for one another.
+
+Second, all 12 newly identified inactive entries occur in ParamZ/local Z.
+For one layer the local Z features vanish, giving six inactive entries
+across the two sizes and constant kernels. For two layers the first
+encoded rotations affect Z expectations but the last six data-dependent
+Z rotations commute with the readout. These are elementary
+state/readout-specific identities outside the earlier rule's
+input-independent-parameter candidate list, not evidence of a novel
+advantage over an appropriately extended commutant baseline.
+No new training-time or gate/shot reduction is measured in this pilot.
+
+The method is sufficient, not a general complete decision procedure.
+Exact coefficient cancellation can prove an identity without assuming
+independence of every lifted angle. Conversely, activity is checked only
+on the actual input manifold. This distinction prevents a nonzero value
+in an unrealizable independent-angle extension from becoming a false
+activity verdict. The larger survey's unresolved constant provenance
+and full-scope implementation are not silently resolved by this pilot.

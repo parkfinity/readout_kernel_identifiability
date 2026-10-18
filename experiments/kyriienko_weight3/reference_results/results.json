@@ -1,0 +1,291 @@
+{
+  "passed": true,
+  "scope": "Floating-point sampled Jacobian rank. Not an exact generic-rank certificate or a hardware experiment.",
+  "protocol": {
+    "n": 5,
+    "k": 3,
+    "input_features": 2,
+    "parameter_count": 15,
+    "readout_count": 375,
+    "input_pairs_per_seed": 120,
+    "seeds": [
+      3,
+      42,
+      123,
+      777,
+      2024
+    ],
+    "theta_range_in_pi": [
+      -2,
+      2
+    ],
+    "input_range": [
+      -0.95,
+      0.95
+    ],
+    "metric": "identity",
+    "primary_relative_tolerance": 1e-07,
+    "relative_tolerances": [
+      1e-06,
+      1e-07,
+      1e-08,
+      1e-09,
+      1e-10
+    ],
+    "absolute_tolerance": 1e-09,
+    "crosscheck_tolerance": 1e-09,
+    "finite_difference_step": 1e-05,
+    "finite_difference_tolerance": 2e-07,
+    "source_crosscheck_pairs_per_seed": 3,
+    "scope": "Floating-point sampled Jacobian rank. Not an exact generic-rank certificate or a hardware experiment."
+  },
+  "settings": [
+    {
+      "seed": 3,
+      "rank": 13,
+      "ranks_by_relative_tolerance": {
+        "1e-06": 13,
+        "1e-07": 13,
+        "1e-08": 13,
+        "1e-09": 13,
+        "1e-10": 13
+      },
+      "dense_ranks_by_relative_tolerance": {
+        "1e-06": 13,
+        "1e-07": 13,
+        "1e-08": 13,
+        "1e-09": 13,
+        "1e-10": 13
+      },
+      "singular_values": [
+        53.150240917472175,
+        35.82717650154897,
+        27.72342197793858,
+        26.736136281556035,
+        24.937899899871727,
+        21.751005568702627,
+        19.72950762556118,
+        17.13442347909163,
+        15.652055723968111,
+        12.828981366816816,
+        9.335037406520314,
+        7.919537498070156,
+        0.49841705533703445,
+        4.13087036543779e-14,
+        1.6623988235656558e-14
+      ],
+      "crosscheck_errors": {
+        "dense_features": 6.661338147750939e-16,
+        "dense_jacobian": 1.4210854715202004e-14,
+        "source_features": 5.551115123125783e-16,
+        "source_distance": 1.0658141036401503e-14,
+        "source_jacobian": 6.217248937900877e-15,
+        "finite_difference": 2.0897346630910363e-09
+      },
+      "elapsed_seconds": 4.145810667
+    },
+    {
+      "seed": 42,
+      "rank": 13,
+      "ranks_by_relative_tolerance": {
+        "1e-06": 13,
+        "1e-07": 13,
+        "1e-08": 13,
+        "1e-09": 13,
+        "1e-10": 13
+      },
+      "dense_ranks_by_relative_tolerance": {
+        "1e-06": 13,
+        "1e-07": 13,
+        "1e-08": 13,
+        "1e-09": 13,
+        "1e-10": 13
+      },
+      "singular_values": [
+        87.34443408977751,
+        33.674533996957464,
+        28.76419067252725,
+        25.255499489454213,
+        21.582091823359388,
+        19.02563973582388,
+        18.217483016069924,
+        16.610946032186174,
+        15.34117161533225,
+        12.88748148295431,
+        9.78204057541385,
+        9.103834733999957,
+        7.273568404158884,
+        3.844544012685202e-14,
+        2.506601052916917e-14
+      ],
+      "crosscheck_errors": {
+        "dense_features": 7.771561172376096e-16,
+        "dense_jacobian": 1.2434497875801753e-14,
+        "source_features": 5.551115123125783e-16,
+        "source_distance": 3.552713678800501e-14,
+        "source_jacobian": 7.105427357601002e-15,
+        "finite_difference": 2.335297066835551e-09
+      },
+      "elapsed_seconds": 4.119279499999999
+    },
+    {
+      "seed": 123,
+      "rank": 13,
+      "ranks_by_relative_tolerance": {
+        "1e-06": 13,
+        "1e-07": 13,
+        "1e-08": 13,
+        "1e-09": 13,
+        "1e-10": 13
+      },
+      "dense_ranks_by_relative_tolerance": {
+        "1e-06": 13,
+        "1e-07": 13,
+        "1e-08": 13,
+        "1e-09": 13,
+        "1e-10": 13
+      },
+      "singular_values": [
+        59.94333180935578,
+        45.82764657065588,
+        39.214595122667745,
+        34.41743536809644,
+        22.856629896417594,
+        20.4809014981153,
+        13.088783444278036,
+        12.6694063713209,
+        7.805516765406872,
+        7.030510378450515,
+        5.381396092584197,
+        3.1720068515831366,
+        0.23883293190826105,
+        4.5800945618444917e-14,
+        2.3293921658483372e-14
+      ],
+      "crosscheck_errors": {
+        "dense_features": 7.771561172376096e-16,
+        "dense_jacobian": 2.1316282072803006e-14,
+        "source_features": 4.440892098500626e-16,
+        "source_distance": 1.4210854715202004e-14,
+        "source_jacobian": 2.6645352591003757e-15,
+        "finite_difference": 2.4993436764653154e-09
+      },
+      "elapsed_seconds": 4.131110166999999
+    },
+    {
+      "seed": 777,
+      "rank": 13,
+      "ranks_by_relative_tolerance": {
+        "1e-06": 13,
+        "1e-07": 13,
+        "1e-08": 13,
+        "1e-09": 13,
+        "1e-10": 13
+      },
+      "dense_ranks_by_relative_tolerance": {
+        "1e-06": 13,
+        "1e-07": 13,
+        "1e-08": 13,
+        "1e-09": 13,
+        "1e-10": 13
+      },
+      "singular_values": [
+        55.50366877710081,
+        47.650028384102626,
+        37.27666131733473,
+        33.23435054533448,
+        29.770207746058635,
+        25.503707207711063,
+        22.023988109016805,
+        21.166509933534115,
+        15.38414681306397,
+        14.135768908492361,
+        10.774222670051282,
+        7.8706951075998655,
+        5.145920302363286,
+        5.572672721008358e-14,
+        2.8866291526978484e-14
+      ],
+      "crosscheck_errors": {
+        "dense_features": 7.771561172376096e-16,
+        "dense_jacobian": 1.4210854715202004e-14,
+        "source_features": 4.440892098500626e-16,
+        "source_distance": 1.4210854715202004e-14,
+        "source_jacobian": 1.0658141036401503e-14,
+        "finite_difference": 2.1124142435269277e-09
+      },
+      "elapsed_seconds": 4.151070917
+    },
+    {
+      "seed": 2024,
+      "rank": 13,
+      "ranks_by_relative_tolerance": {
+        "1e-06": 13,
+        "1e-07": 13,
+        "1e-08": 13,
+        "1e-09": 13,
+        "1e-10": 13
+      },
+      "dense_ranks_by_relative_tolerance": {
+        "1e-06": 13,
+        "1e-07": 13,
+        "1e-08": 13,
+        "1e-09": 13,
+        "1e-10": 13
+      },
+      "singular_values": [
+        56.053130997036554,
+        44.924211307229626,
+        39.81270025407559,
+        33.84687834796705,
+        26.239634403311168,
+        18.627376851625954,
+        17.026604744678117,
+        15.59927562952227,
+        14.003376081856686,
+        8.883051917337157,
+        8.441246883283148,
+        5.106515125983903,
+        0.5326210133420494,
+        5.0288303486075695e-14,
+        1.8671902623820755e-14
+      ],
+      "crosscheck_errors": {
+        "dense_features": 9.992007221626409e-16,
+        "dense_jacobian": 1.5987211554602254e-14,
+        "source_features": 3.885780586188048e-16,
+        "source_distance": 7.105427357601002e-15,
+        "source_jacobian": 5.329070518200751e-15,
+        "finite_difference": 4.964403998997113e-09
+      },
+      "elapsed_seconds": 4.1226935000000005
+    }
+  ],
+  "max_errors": {
+    "dense_features": 9.992007221626409e-16,
+    "dense_jacobian": 2.1316282072803006e-14,
+    "source_features": 5.551115123125783e-16,
+    "source_distance": 3.552713678800501e-14,
+    "source_jacobian": 1.0658141036401503e-14,
+    "finite_difference": 4.964403998997113e-09
+  },
+  "legacy_seed3_rank": 13,
+  "legacy_singular_values_max_error": 1.4210854715202004e-14,
+  "sources": {
+    "experiments/kyriienko_weight3/run.py": "64548a9609c202ca30d7529da57a6c9553e5658e47a0ae093d9449c265d3a847",
+    "experiments/kyriienko_weight3/protocol.json": "c5eb564b687fff570cad9ac26481039588e50d1f8d1982b89f40d8faa84df5f2",
+    "experiments/kyriienko_weight3/test_weight3.py": "5dafa0c458314c13aaf9c556a673098ff62a08186c31026d39016115fcaf333c",
+    "experiments/kyriienko_weight3/archived_code/fast_sim.py": "b8ad3476ed05844a0a17d50894047eda07901cb1781373f4241a1942b2762ff2",
+    "experiments/kyriienko_weight3/archived_code/kernel_rank_numerics.py": "6f2793096af86e20f1c5325adb070a000e7db0f4ffb4e3745973d94804705315",
+    "core_reproduction/core/journal_extension/kyriienko_scaling/core_copy/vendor/src/squlearn/encoding_circuit/circuit_library/kyriienko_nonlinear_encoding_circuit.py": "7933f1e2ca3f39079c1a496b7c858568b695d3b87c76bd1c56f666239ee3b39c",
+    "core_reproduction/core/journal_extension/kyriienko_scaling/core_copy/source_host.py": "4d210a2870e2cff6114d7b42ea638cdea7902105026e15a0f75e0cb946940693"
+  },
+  "arrays_sha256": "43edb181e5fd82acea93c2a65b2ed820bcde30090236173d0fa8c67221dc784d",
+  "environment": {
+    "python": "3.9.6",
+    "numpy": "1.24.4",
+    "qiskit": "1.2.4",
+    "platform": "macOS-26.7-arm64-arm-64bit"
+  },
+  "elapsed_seconds": 28.754852
+}

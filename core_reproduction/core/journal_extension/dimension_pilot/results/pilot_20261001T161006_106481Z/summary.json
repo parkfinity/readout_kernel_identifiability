@@ -1,0 +1,19 @@
+{
+  "slots": 24,
+  "source_circuit_configurations": 8,
+  "symbols": 162,
+  "counts": {
+    "ACTIVE_CERTIFIED": 132,
+    "EXACT_INACTIVE": 30
+  },
+  "rank_closed_slots": 24,
+  "new_inactive": 12,
+  "old_not_recovered": 0,
+  "constant_kernel_slots": [
+    "param_z_feature_map_n2_l1_local_z",
+    "param_z_feature_map_n4_l1_local_z"
+  ],
+  "elapsed_seconds": 82.65067179200001,
+  "full_102_run": false,
+  "new_gate_shot_savings_measured": false
+}

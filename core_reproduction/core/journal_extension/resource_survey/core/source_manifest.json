@@ -1,0 +1,171 @@
+{
+  "commit": "0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4",
+  "files": [
+    {
+      "path": "vendor/CITATION.cff",
+      "url": "https://raw.githubusercontent.com/sQUlearn/squlearn/0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4/CITATION.cff",
+      "git_blob_sha1": "dc7496db9f8a2745e2ead4f8e5af4194dcbc9b6f",
+      "sha256": "fcfe3451dc981f71e6f56dd919ab07283e7aa696602710c14d7b25d8cff86f02",
+      "bytes": 1713
+    },
+    {
+      "path": "vendor/LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/sQUlearn/squlearn/0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4/LICENSE.txt",
+      "git_blob_sha1": "f5adf9234b79458f9bcf4557c98090eb0f36bab6",
+      "sha256": "59f38080e334d23ccd622d9248153e6e1a9fcd6c38f1ddcea7b7b82437f17555",
+      "bytes": 11421
+    },
+    {
+      "path": "vendor/src/squlearn/encoding_circuit/__init__.py",
+      "url": "https://raw.githubusercontent.com/sQUlearn/squlearn/0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4/src/squlearn/encoding_circuit/__init__.py",
+      "git_blob_sha1": "9ab6b9d640922c39c9c10a32718acc64dfb20b39",
+      "sha256": "7ac09acee347941b15c817d191ae31874388fd2ef482c30bc5dc5c3293a3be67",
+      "bytes": 1808
+    },
+    {
+      "path": "vendor/src/squlearn/encoding_circuit/circuit_library/__init__.py",
+      "url": "https://raw.githubusercontent.com/sQUlearn/squlearn/0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4/src/squlearn/encoding_circuit/circuit_library/__init__.py",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "vendor/src/squlearn/encoding_circuit/circuit_library/chebyshev_pqc.py",
+      "url": "https://raw.githubusercontent.com/sQUlearn/squlearn/0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4/src/squlearn/encoding_circuit/circuit_library/chebyshev_pqc.py",
+      "git_blob_sha1": "0c8ef68fd09615408315b4e0c530803f9493cfbb",
+      "sha256": "918fa868a768a07d2ba2e2aef98b9869916e4a704e63ee59576d9c24750be9fb",
+      "bytes": 12548
+    },
+    {
+      "path": "vendor/src/squlearn/encoding_circuit/circuit_library/chebyshev_rx.py",
+      "url": "https://raw.githubusercontent.com/sQUlearn/squlearn/0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4/src/squlearn/encoding_circuit/circuit_library/chebyshev_rx.py",
+      "git_blob_sha1": "150bc19723638565fa2fba62efc9c9915920fe35",
+      "sha256": "151ec29cd2ce7d18b4ca83237f58b54579f21d2d09083e7aa0c50ab6945f45c3",
+      "bytes": 9483
+    },
+    {
+      "path": "vendor/src/squlearn/encoding_circuit/circuit_library/chebyshev_tower.py",
+      "url": "https://raw.githubusercontent.com/sQUlearn/squlearn/0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4/src/squlearn/encoding_circuit/circuit_library/chebyshev_tower.py",
+      "git_blob_sha1": "690c3587f5ab086d9859c1816166a4b6682501cc",
+      "sha256": "5a0b60dba764cfa32ce25e612bbaf7a1d3994a1a983b9c7bda5bd93326b69ae4",
+      "bytes": 10440
+    },
+    {
+      "path": "vendor/src/squlearn/encoding_circuit/circuit_library/highdim_encoding_circuit.py",
+      "url": "https://raw.githubusercontent.com/sQUlearn/squlearn/0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4/src/squlearn/encoding_circuit/circuit_library/highdim_encoding_circuit.py",
+      "git_blob_sha1": "66ebeb5df89243bb488b2c38a73e93456b40c4f5",
+      "sha256": "fd0d04b6c5235cbf0f59a14c2beaa12fc4c62dbc3d5024d3151b3fe18b2eceae",
+      "bytes": 11825
+    },
+    {
+      "path": "vendor/src/squlearn/encoding_circuit/circuit_library/hubregtsen_encoding_circuit.py",
+      "url": "https://raw.githubusercontent.com/sQUlearn/squlearn/0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4/src/squlearn/encoding_circuit/circuit_library/hubregtsen_encoding_circuit.py",
+      "git_blob_sha1": "2be0444579e8997fc9497d4685b7074a7a12b024",
+      "sha256": "ce7b90ef623c54773805943af976aa5bec2ab38076314bb3573fe7138d89c4c7",
+      "bytes": 7120
+    },
+    {
+      "path": "vendor/src/squlearn/encoding_circuit/circuit_library/kyriienko_nonlinear_encoding_circuit.py",
+      "url": "https://raw.githubusercontent.com/sQUlearn/squlearn/0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4/src/squlearn/encoding_circuit/circuit_library/kyriienko_nonlinear_encoding_circuit.py",
+      "git_blob_sha1": "131c7c47e73c52b07662a51e451dd04003ada570",
+      "sha256": "7933f1e2ca3f39079c1a496b7c858568b695d3b87c76bd1c56f666239ee3b39c",
+      "bytes": 13475
+    },
+    {
+      "path": "vendor/src/squlearn/encoding_circuit/circuit_library/multi_control_encoding_circuit.py",
+      "url": "https://raw.githubusercontent.com/sQUlearn/squlearn/0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4/src/squlearn/encoding_circuit/circuit_library/multi_control_encoding_circuit.py",
+      "git_blob_sha1": "7e61ad8e0a480b102170d14e2698326b90be4796",
+      "sha256": "456066b3f1b5cabbec2c90b286646809667f23dda98b693d1d0bec637f7fbbfe",
+      "bytes": 6611
+    },
+    {
+      "path": "vendor/src/squlearn/encoding_circuit/circuit_library/param_z_feature_map.py",
+      "url": "https://raw.githubusercontent.com/sQUlearn/squlearn/0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4/src/squlearn/encoding_circuit/circuit_library/param_z_feature_map.py",
+      "git_blob_sha1": "32d096e68da027e0203a4f4387af84d03f351ee5",
+      "sha256": "106d95bcceb84763c49bfd3594a035d643bffa070db206692809d437b742c552",
+      "bytes": 4393
+    },
+    {
+      "path": "vendor/src/squlearn/encoding_circuit/circuit_library/qcnn_encoding_circuit.py",
+      "url": "https://raw.githubusercontent.com/sQUlearn/squlearn/0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4/src/squlearn/encoding_circuit/circuit_library/qcnn_encoding_circuit.py",
+      "git_blob_sha1": "6efb0262cda6ac8ff2096fb61d01f2ee6b21a385",
+      "sha256": "6515a22ed4c8f43b076869237a1a8d8abb75d63a5cbdb0dca9b880780528f4c4",
+      "bytes": 32255
+    },
+    {
+      "path": "vendor/src/squlearn/encoding_circuit/circuit_library/qiskit_encoding_circuit.py",
+      "url": "https://raw.githubusercontent.com/sQUlearn/squlearn/0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4/src/squlearn/encoding_circuit/circuit_library/qiskit_encoding_circuit.py",
+      "git_blob_sha1": "eb02d0f17655a65f0e6239531b65cb7f880666e7",
+      "sha256": "4afab71c728e854f82cb4d1379b40481c403431557174cb416eaf67970030228",
+      "bytes": 8912
+    },
+    {
+      "path": "vendor/src/squlearn/encoding_circuit/circuit_library/random_encoding_circuit.py",
+      "url": "https://raw.githubusercontent.com/sQUlearn/squlearn/0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4/src/squlearn/encoding_circuit/circuit_library/random_encoding_circuit.py",
+      "git_blob_sha1": "ab5d853614fb54dff190641468dddcf86094019f",
+      "sha256": "70a81bde3c99be1213d263c68fd3241efb72ec573bf0f03871efc3bf1729b176",
+      "bytes": 15303
+    },
+    {
+      "path": "vendor/src/squlearn/encoding_circuit/circuit_library/random_layered_encoding_circuit.py",
+      "url": "https://raw.githubusercontent.com/sQUlearn/squlearn/0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4/src/squlearn/encoding_circuit/circuit_library/random_layered_encoding_circuit.py",
+      "git_blob_sha1": "1327df34612de57dd6e4230027d5bf5c41a8a50f",
+      "sha256": "cd7409179778b9f9fc32ef04b12a49dcd8692a954016a3fd773cb8edc5a50093",
+      "bytes": 9096
+    },
+    {
+      "path": "vendor/src/squlearn/encoding_circuit/circuit_library/yz_cx_encoding_circuit.py",
+      "url": "https://raw.githubusercontent.com/sQUlearn/squlearn/0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4/src/squlearn/encoding_circuit/circuit_library/yz_cx_encoding_circuit.py",
+      "git_blob_sha1": "67f526d4e4bdc8f65945f3f6824a07e4ad3aef5f",
+      "sha256": "4f2e9c2aee1a7161c070ed53955c8e0183bf921033b0cba910066c750bfd6474",
+      "bytes": 4983
+    },
+    {
+      "path": "vendor/src/squlearn/encoding_circuit/encoding_circuit_base.py",
+      "url": "https://raw.githubusercontent.com/sQUlearn/squlearn/0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4/src/squlearn/encoding_circuit/encoding_circuit_base.py",
+      "git_blob_sha1": "4b8e60f14644fc8859fd3816ca00b400e5284c60",
+      "sha256": "2fde81f78452f50bfbf91c23f2e554e0b63ba1a7685e8abe8c44f6680b28d1af",
+      "bytes": 27831
+    },
+    {
+      "path": "vendor/src/squlearn/encoding_circuit/encoding_circuit_derivatives.py",
+      "url": "https://raw.githubusercontent.com/sQUlearn/squlearn/0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4/src/squlearn/encoding_circuit/encoding_circuit_derivatives.py",
+      "git_blob_sha1": "f012e0e3955c67f1155ede311a88323de677f1b5",
+      "sha256": "3d10f9abb29002b39ee15f0dd25c4deb568365edda86ced590ef80dc9c1c4933",
+      "bytes": 13255
+    },
+    {
+      "path": "vendor/src/squlearn/encoding_circuit/layered_encoding_circuit.py",
+      "url": "https://raw.githubusercontent.com/sQUlearn/squlearn/0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4/src/squlearn/encoding_circuit/layered_encoding_circuit.py",
+      "git_blob_sha1": "b10728f19e471df8b105522c5340f8d5bbfb2525",
+      "sha256": "3f9bafdfadf7fc8fa50a084b55a3c77cd48c09eb1e4285b2c2158cae1d51dafb",
+      "bytes": 132078
+    },
+    {
+      "path": "vendor/src/squlearn/encoding_circuit/pruned_encoding_circuit.py",
+      "url": "https://raw.githubusercontent.com/sQUlearn/squlearn/0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4/src/squlearn/encoding_circuit/pruned_encoding_circuit.py",
+      "git_blob_sha1": "a211cbc553487fa8f451cad9db037beecf4d0c7c",
+      "sha256": "4b25d26e8600aaefe867fa922b6deb6256f2d72f8d531c2485dcd12d36973d6d",
+      "bytes": 14721
+    },
+    {
+      "path": "vendor/src/squlearn/encoding_circuit/transpiled_encoding_circuit.py",
+      "url": "https://raw.githubusercontent.com/sQUlearn/squlearn/0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4/src/squlearn/encoding_circuit/transpiled_encoding_circuit.py",
+      "git_blob_sha1": "ca3b50a631d9e8c169b28fc5fdbfb07f0e7ac6f7",
+      "sha256": "c5690c0eeb6425f2761c658737db9eac2f377e7044be2fea50699a544ec31ba9",
+      "bytes": 7959
+    },
+    {
+      "path": "vendor/src/squlearn/util/data_preprocessing.py",
+      "url": "https://raw.githubusercontent.com/sQUlearn/squlearn/0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4/src/squlearn/util/data_preprocessing.py",
+      "git_blob_sha1": "f67b704faf8d9802a01ef14fe0e9ae91724d128f",
+      "sha256": "acc011380e947ec06cd984df920b0e5ced4a5c1f9efac67fe23fb7f88ac98c02",
+      "bytes": 5361
+    },
+    {
+      "path": "vendor/tree.json",
+      "sha256": "16618ae4f39c129adb09166dbe744cf0e8b93662caee51d1945b73e3278572da",
+      "bytes": 99467
+    }
+  ]
+}

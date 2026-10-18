@@ -1,0 +1,201 @@
+\section{Finite-feature Gram identifiability}
+\label{sec:gram}
+The relevant finite representation is a Gram matrix of \emph{feature
+coefficients}, not a sampled data Gram matrix. Let $\Theta\subset\mathbb R^K$
+be an open connected parameter box and suppose
+\begin{equation}
+ f_\theta(x)=C(\theta)h(x)+u(\theta),\quad
+ G(\theta)=C(\theta)^T M C(\theta),\label{eq:coefficientgram}
+\end{equation}
+where $h:D\to\mathbb R^A$ is fixed, $C,u$ are real analytic, and
+$M\succ0$ and $\gamma>0$ are fixed. Define $d_\theta^2$ as the
+squared $M$-distance of features and $k_\theta=\exp(-\gamma d_\theta^2)$.
+We require $\{1,h_1,\ldots,h_A\}$ to be linearly independent as
+functions on the \emph{actual} input domain $D$. Equivalently, the
+affine hull of $h(D)$ is $\mathbb R^A$.
+
+\begin{theorem}[Coefficient-Gram identifiability]\label{thm:gram}
+Under these assumptions, for any $\theta,\eta\in\Theta$,
+\begin{equation}
+ \begin{gathered}
+ k_\theta(x,x')=k_\eta(x,x')\quad\forall x,x'\in D\\
+ \Longleftrightarrow\quad G(\theta)=G(\eta).
+ \end{gathered}
+\end{equation}
+For every parameter direction $v$, the kernel directional derivative
+vanishes for all input pairs if and only if $D G(\theta)[v]=0$.
+Consequently, coordinate $\theta_j$ is globally kernel-inactive if
+and only if $\partial_jG\equiv0$, and the generic kernel differential
+rank is
+\begin{equation}
+ r=\operatorname{grank}D_\theta\operatorname{vech}G(\theta)
+ \le \min\{K,A(A+1)/2\}.\label{eq:gramrank}
+\end{equation}
+Here $\operatorname{vech}$ lists the upper-triangular entries once.
+\end{theorem}
+\begin{proof}
+The offset $u$ cancels, so $d_\theta^2=\Delta h^T G(\theta)\Delta h$.
+Fix $x_0$ and put $y(x)=h(x)-h(x_0)$. These vectors span $\mathbb R^A$.
+If a symmetric $H$ obeys $\Delta h^TH\Delta h=0$ for all pairs, then
+$y(x)^THy(x)=0$ and polarization gives $y(x)^THy(x')=0$ for all
+$x,x'$. Spanning implies $H=0$. This proves injectivity of the linear
+map from $G$ to squared distances. The exponential is injective and
+has nonzero derivative, establishing both equivalence and the
+directional statement. Integration along coordinate intervals proves
+the global inactivity assertion. The finite-dimensional injective
+distance map preserves differential rank, giving Eq.~\eqref{eq:gramrank}.
+Analyticity makes the maximum rank generic on the connected box.
+\end{proof}
+
+Linear independence of $h$ alone is insufficient: $h(x)=(1,x)^T$
+has independent components, but $G=\diag(1,1)$ and $G'=\diag(2,1)$
+give the same distances. Constant modes must therefore be separated
+into $u$. Likewise, formal independent variables cannot replace
+dependent coordinates of a restricted data manifold.
+
+For fixed-frequency Pauli circuits, $h$ consists of real sine and
+cosine modes with distinct nonzero frequency vectors (one representative
+per sign pair). These functions and $1$ are independent if the
+transformed data domain contains an open set. The finite-basis representation links all-input identifiability to
+coefficient algebra. Its relation to existing spectral methods is
+discussed in Appendix~\ref{app:spectral_context}.
+
+\input{gradient_corollary}
+
+\begin{corollary}[Finite decision procedure on an exact subclass]
+\label{cor:gramdecision}
+Suppose, in addition, the non-data gate angles are rational-affine
+functions of $\theta$, all fixed trigonometric constants and metric
+entries are in an effective algebraic number field, and an independent
+finite data basis has been constructed exactly. Global coordinate
+inactivity and the generic differential rank are decidable by finitely
+many exact coefficient tests.
+\end{corollary}
+\begin{proof}
+After clearing angle denominators, entries of $G$, their derivatives,
+and all Jacobian minors are finite Laurent polynomials in
+$e^{i\theta_j/q}$ over an effective algebraic field (adjoining $i$).
+Distinct parameter frequencies are independent on an open box.
+Thus a derivative or minor vanishes identically exactly when every
+coefficient vanishes. Test derivatives for inactivity and minors in
+decreasing order for rank. There are finitely many of each.
+\end{proof}
+This is a termination result, not a polynomial-time guarantee or a
+claim that the present pilot implements exhaustive minor enumeration.
+Its expansion and minor counts can be prohibitive. Arbitrary analytic
+angles, unspecified real constants, and products $\theta_j\phi(x)$
+are outside this decision claim. In particular, the ChebyshevRx and
+ParamZ examples still require the separate methods below.
+
+\begin{corollary}[Readout-limited dimension bound]\label{cor:readoutbound}
+Let $\rho=\min(m,A)$, where $m$ is the number of measured features.
+Under Theorem~\ref{thm:gram},
+\begin{equation}
+ r\le\min\{K,A\rho-\rho(\rho-1)/2\}.
+\end{equation}
+\end{corollary}
+\begin{proof}
+The Gram matrix is positive semidefinite of rank at most $\rho$.
+The rank-$q$ positive-semidefinite stratum has dimension
+$Aq-q(q-1)/2$: factor it by a full-column-rank $A\times q$ matrix,
+then quotient by $O(q)$. On the generic constant-rank stratum of
+$C(\theta)$, the differential image lies in this stratum's tangent
+space. Maximizing over $q\le\rho$ gives the bound.
+\end{proof}
+This standard rank-stratum bound sharpens Eq.~\eqref{eq:gramrank}
+when $m<A$. Its null directions may depend on $\theta$; they need
+not be deletable coordinates or executable savings.
+
+\subsection{Isometries and readout dependence}
+If $C(\eta)=Q C(\theta)$ with $Q^TMQ=M$, then the kernels agree.
+Conversely, equality of their coefficient Grams admits such a $Q$:
+whiten by $M^{1/2}$, map corresponding column spans isometrically,
+and extend orthogonally to the ambient feature space. Arbitrary
+data-independent offsets remain unidentifiable. This describes
+reachable-feature equivalence; the all-state Pauli-output
+criterion has a stronger universal quantifier.
+For a fixed proposed feature transformation $Q$, the exact
+reachable-family condition is
+$C(\theta)^T(Q^TMQ-M)C(\theta)=0$ for every $\theta$.
+It does not generally imply isometry on the linear span of all
+these column spaces: cross-parameter bilinear terms are untested.
+Appendix~\ref{app:followup} supplies a counterexample.
+The Hubregtsen example below is directly represented by a diagonal
+$G$ with entries $\sin^2\theta_0+\sin^2\theta_2$ and
+$\sin^2\theta_1+\sin^2\theta_3$. A rank deficit need not make any
+individual coordinate inactive, nor produce a global minimal chart.
+The same example separates $D_\theta\operatorname{vech}G$ from the
+coefficient Jacobian $D_\theta\operatorname{vec}C$, whose Gram matrix
+of coefficient derivatives is the QNTK-type object built from circuit
+harmonic matrices \cite{CHM}. With $h=(\cos x_0,\cos x_1)$, the four
+nonzero entries $C_{q,q\bmod2}=-\sin\theta_q$ give
+$\operatorname{rank}D_\theta\operatorname{vec}C=4$, one per retained
+angle, whereas $\operatorname{rank}D_\theta\operatorname{vech}G=2$,
+the number of input groups, at generic $\theta$.
+
+\begin{proposition}[Full Pauli readout and nonmonotonicity]
+\label{prop:IC}
+For all nonidentity $n$-qubit Pauli words, with their usual
+unnormalized convention and unit weights,
+\begin{equation}
+ d^2=2^n\Tr[(\rho-\rho')^2].
+\end{equation}
+For pure states this is $2^{n+1}(1-F)$, where $F=\Tr(\rho\rho')$.
+For general subsets of Pauli readouts, kernel differential rank is
+not monotone under adding measured observables.
+\end{proposition}
+\begin{proof}
+Pauli orthogonality gives the first identity; the trace-zero identity
+component contributes nothing. Purity gives the second. For
+nonmonotonicity, the certified two-qubit examples in
+Table~\ref{tab:dimension} give both directions: at two layers,
+ChebyshevRx has $r_Z=6>r_{XYZ}=4$, whereas one-layer ParamZ has
+$r_Z=0<r_{XYZ}=2$.
+\end{proof}
+Adding rows to $C$ adds positive-semidefinite terms to $G$, but this
+ordering does not order Jacobian ranks. Full readout is therefore not
+generally rank-minimizing. The two-qubit weight-at-most-two readout
+is information complete; for mixed states its distance also depends
+on the two purities and is not just a function of an overlap.
+
+\subsection{Exact ranks for the Kyriienko settings}
+\label{sec:gramkyri}
+The frozen one-layer Kyriienko constructors have
+\begin{equation}
+ U_\theta(x)=E\Bigl(\bigotimes_{q=0}^{n-1}
+ R_z(c_q)R_x(b_q)R_z(a_q)\Bigr)D(x),\label{eq:kyriform}
+\end{equation}
+with $K=3n$. Here $D$ is the fixed-frequency encoding,
+$E=\mathrm{CX}_{0,1}$ for $n=2$, and $E$ is the chronological
+chain $(\mathrm{CX}_{0,1},\mathrm{CX}_{2,3},\mathrm{CX}_{1,2})$
+for $n=4$. Disjoint gates commute to give this form exactly.
+Both $Z_0$ and $X_{n-1}$ remain unchanged under conjugation by $E$.
+Local XYZ and complete weight-at-most-two readouts with unit weights
+are invariant under arbitrary local output rotations. Thus left
+rotations about these two axes give independent one-dimensional
+kernel gauge orbits. On a regular Euler chart ($\sin b_q\ne0$),
+the Euler map is locally invertible, so the two source-parameter
+tangent directions are independent and $r\le3n-2$.
+Analyticity extends the vanishing higher minors from this open set.
+
+For a matching lower bound we compute real data-Fourier coefficients
+and their parameter derivatives using exact Gaussian rational
+arithmetic at
+\begin{equation}
+ \theta_j=2\arctan t_j,\qquad t_j=(j+2)/(j+5).
+\end{equation}
+All sines and cosines are rational. Nonzero exact Gram-Jacobian minors
+of orders $4,10,10$ prove $r\ge4,10,10$ for the two-qubit XYZ,
+four-qubit XYZ, and four-qubit weight-at-most-two settings. Together
+with the gauge upper bounds, these minors fix all three ranks exactly.
+These are three settings of the existing census, not three new
+independent families. Full rational matrices and determinants are
+retained in the accompanying audit; no floating rank threshold is used.
+
+The resulting ranks are exactly $4,10,10$, closing all 54 settings
+across the two dimension studies. The second gauge is a
+parameter-dependent Euler direction, not another globally dead
+source coordinate. These closures consequently do not change the
+reported inactive-coordinate counts or establish gate or shot savings.
+Implementation and independent source checks are given in
+Appendix~\ref{app:gram}.

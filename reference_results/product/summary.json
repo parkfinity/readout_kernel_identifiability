@@ -1,0 +1,159 @@
+{
+  "passed": true,
+  "records": 1440,
+  "replicates": 256,
+  "errors": {
+    "factorized_probability": 1.6653345369377348e-15,
+    "ideal_features": 1.7763568394002505e-15,
+    "direct_replay": 5.561176519286448e-14
+  },
+  "panels": [
+    {
+      "panel": 0,
+      "shots": 256,
+      "cells": 20,
+      "variance_ratio_median": 0.8638199808687294,
+      "variance_ratio_range": [
+        0.748291152704017,
+        0.9059984499852765
+      ],
+      "empirical_mse_ratio_median": 0.8590069877654611
+    },
+    {
+      "panel": 1,
+      "shots": 256,
+      "cells": 20,
+      "variance_ratio_median": 0.7891726088737276,
+      "variance_ratio_range": [
+        0.589052497189969,
+        0.914207411959289
+      ],
+      "empirical_mse_ratio_median": 0.7690979064909498
+    },
+    {
+      "panel": 2,
+      "shots": 256,
+      "cells": 20,
+      "variance_ratio_median": 0.8380258917150591,
+      "variance_ratio_range": [
+        0.7437451873043829,
+        0.8928851695183537
+      ],
+      "empirical_mse_ratio_median": 0.7881582752544605
+    },
+    {
+      "panel": 0,
+      "shots": 1024,
+      "cells": 20,
+      "variance_ratio_median": 0.8843961435765223,
+      "variance_ratio_range": [
+        0.818899092118652,
+        0.9131532198861892
+      ],
+      "empirical_mse_ratio_median": 0.8626152871160881
+    },
+    {
+      "panel": 1,
+      "shots": 1024,
+      "cells": 20,
+      "variance_ratio_median": 0.8185952621409576,
+      "variance_ratio_range": [
+        0.7107217524908164,
+        0.9328063589315595
+      ],
+      "empirical_mse_ratio_median": 0.8207991884317702
+    },
+    {
+      "panel": 2,
+      "shots": 1024,
+      "cells": 20,
+      "variance_ratio_median": 0.8580528615230605,
+      "variance_ratio_range": [
+        0.8047411706354768,
+        0.9029627424124258
+      ],
+      "empirical_mse_ratio_median": 0.8735952649816978
+    },
+    {
+      "panel": 0,
+      "shots": 4096,
+      "cells": 20,
+      "variance_ratio_median": 0.8947601296640613,
+      "variance_ratio_range": [
+        0.8319934345737593,
+        0.9161037295593657
+      ],
+      "empirical_mse_ratio_median": 0.8896112119366064
+    },
+    {
+      "panel": 1,
+      "shots": 4096,
+      "cells": 20,
+      "variance_ratio_median": 0.8294298430174405,
+      "variance_ratio_range": [
+        0.7999602035766777,
+        0.9394637117649358
+      ],
+      "empirical_mse_ratio_median": 0.8267725372266462
+    },
+    {
+      "panel": 2,
+      "shots": 4096,
+      "cells": 20,
+      "variance_ratio_median": 0.8694548221266114,
+      "variance_ratio_range": [
+        0.8385420808716547,
+        0.9067186249743052
+      ],
+      "empirical_mse_ratio_median": 0.9069828220700609
+    },
+    {
+      "panel": 0,
+      "shots": 16384,
+      "cells": 20,
+      "variance_ratio_median": 0.8990914782695555,
+      "variance_ratio_range": [
+        0.8361508492300993,
+        0.924150961314454
+      ],
+      "empirical_mse_ratio_median": 0.884610427072831
+    },
+    {
+      "panel": 1,
+      "shots": 16384,
+      "cells": 20,
+      "variance_ratio_median": 0.8384822881879952,
+      "variance_ratio_range": [
+        0.8254234491179266,
+        0.9414388923038296
+      ],
+      "empirical_mse_ratio_median": 0.8362373650088359
+    },
+    {
+      "panel": 2,
+      "shots": 16384,
+      "cells": 20,
+      "variance_ratio_median": 0.8719261124267024,
+      "variance_ratio_range": [
+        0.8510649114100113,
+        0.9078367161709341
+      ],
+      "empirical_mse_ratio_median": 0.8845011326582901
+    }
+  ],
+  "product_variance_calibration_quantiles": [
+    0.8687730893616359,
+    0.9902275398510019,
+    1.1197485824901932
+  ],
+  "source_plan_sha256": "87cc8f6fd5447b2bc46995ebf7170d83d1fcc0e12c0b863a9aad8c26724831b7",
+  "script_sha256": "2bd10aa4371a9bdd1554d38cfd613ec1b5b4dae6143018afe16c03802e768cb4",
+  "protocol_sha256": "add36d6689eeb5cf9342daf7db7fb6c90ce98f48a90b8c753615b3257ffa9a79",
+  "environment": {
+    "python": "3.9.6",
+    "numpy": "1.24.4",
+    "platform": "macOS-26.7-arm64-arm-64bit"
+  },
+  "elapsed_seconds": 14.807286583,
+  "scope": "Additional local control; direct samples replay existing Linux v2; product arm not yet server-reproduced."
+}

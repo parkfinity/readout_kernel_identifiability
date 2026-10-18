@@ -1,0 +1,232 @@
+{
+  "copied_core": [
+    {
+      "path": "core_copy/adapter.py",
+      "sha256": "de718591155fc9b9532fc40659974c9480c697f1fb9e061fceb2531ce8eeded6",
+      "original": "cross_family_resource_v1/core/adapter.py",
+      "original_sha256": "de718591155fc9b9532fc40659974c9480c697f1fb9e061fceb2531ce8eeded6"
+    },
+    {
+      "path": "core_copy/certificates.py",
+      "sha256": "81a8a43885314cafcb4f94a7ecae95496926d0a11114515cb069c1d2068836b0",
+      "original": "cross_family_resource_v1/core/certificates.py",
+      "original_sha256": "81a8a43885314cafcb4f94a7ecae95496926d0a11114515cb069c1d2068836b0"
+    },
+    {
+      "path": "core_copy/engines.py",
+      "sha256": "71dc85656247209ab339069c1a7a7d88d7d5cb179256847175fc98be70f3e926",
+      "original": "cross_family_resource_v1/core/engines.py",
+      "original_sha256": "71dc85656247209ab339069c1a7a7d88d7d5cb179256847175fc98be70f3e926"
+    },
+    {
+      "path": "core_copy/pipeline.py",
+      "sha256": "29b0120b9b2aedf4a6cac8d3b9281747b1c82486fa689e01f05150b7d17f9248",
+      "original": "cross_family_resource_v1/core/pipeline.py",
+      "original_sha256": "29b0120b9b2aedf4a6cac8d3b9281747b1c82486fa689e01f05150b7d17f9248"
+    },
+    {
+      "path": "core_copy/requirements_py38.txt",
+      "sha256": "0ee055388110382485b96f83944167312008980b047d674bfe488c24118d2b1c",
+      "original": "cross_family_resource_v1/core/requirements_py38.txt",
+      "original_sha256": "0ee055388110382485b96f83944167312008980b047d674bfe488c24118d2b1c"
+    },
+    {
+      "path": "core_copy/source_host.py",
+      "sha256": "4d210a2870e2cff6114d7b42ea638cdea7902105026e15a0f75e0cb946940693",
+      "original": "cross_family_resource_v1/core/source_host.py",
+      "original_sha256": "4d210a2870e2cff6114d7b42ea638cdea7902105026e15a0f75e0cb946940693"
+    },
+    {
+      "path": "core_copy/source_manifest.json",
+      "sha256": "7a1f4babb454c410a4bf5c141a6ee9593c2272e6494ad71a5806e79f5230af79",
+      "original": "cross_family_resource_v1/core/source_manifest.json",
+      "original_sha256": "7a1f4babb454c410a4bf5c141a6ee9593c2272e6494ad71a5806e79f5230af79"
+    },
+    {
+      "path": "core_copy/structural_core.py",
+      "sha256": "175315f6fadf802b0d60e1c3e9baa7457308e75a2e80b978174e5c0ce9c1cbc4",
+      "original": "cross_family_resource_v1/core/structural_core.py",
+      "original_sha256": "175315f6fadf802b0d60e1c3e9baa7457308e75a2e80b978174e5c0ce9c1cbc4"
+    },
+    {
+      "path": "core_copy/vendor/CITATION.cff",
+      "sha256": "fcfe3451dc981f71e6f56dd919ab07283e7aa696602710c14d7b25d8cff86f02",
+      "original": "cross_family_resource_v1/core/vendor/CITATION.cff",
+      "original_sha256": "fcfe3451dc981f71e6f56dd919ab07283e7aa696602710c14d7b25d8cff86f02"
+    },
+    {
+      "path": "core_copy/vendor/LICENSE.txt",
+      "sha256": "59f38080e334d23ccd622d9248153e6e1a9fcd6c38f1ddcea7b7b82437f17555",
+      "original": "cross_family_resource_v1/core/vendor/LICENSE.txt",
+      "original_sha256": "59f38080e334d23ccd622d9248153e6e1a9fcd6c38f1ddcea7b7b82437f17555"
+    },
+    {
+      "path": "core_copy/vendor/src/squlearn/encoding_circuit/__init__.py",
+      "sha256": "7ac09acee347941b15c817d191ae31874388fd2ef482c30bc5dc5c3293a3be67",
+      "original": "cross_family_resource_v1/core/vendor/src/squlearn/encoding_circuit/__init__.py",
+      "original_sha256": "7ac09acee347941b15c817d191ae31874388fd2ef482c30bc5dc5c3293a3be67"
+    },
+    {
+      "path": "core_copy/vendor/src/squlearn/encoding_circuit/circuit_library/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original": "cross_family_resource_v1/core/vendor/src/squlearn/encoding_circuit/circuit_library/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "core_copy/vendor/src/squlearn/encoding_circuit/circuit_library/chebyshev_pqc.py",
+      "sha256": "918fa868a768a07d2ba2e2aef98b9869916e4a704e63ee59576d9c24750be9fb",
+      "original": "cross_family_resource_v1/core/vendor/src/squlearn/encoding_circuit/circuit_library/chebyshev_pqc.py",
+      "original_sha256": "918fa868a768a07d2ba2e2aef98b9869916e4a704e63ee59576d9c24750be9fb"
+    },
+    {
+      "path": "core_copy/vendor/src/squlearn/encoding_circuit/circuit_library/chebyshev_rx.py",
+      "sha256": "151ec29cd2ce7d18b4ca83237f58b54579f21d2d09083e7aa0c50ab6945f45c3",
+      "original": "cross_family_resource_v1/core/vendor/src/squlearn/encoding_circuit/circuit_library/chebyshev_rx.py",
+      "original_sha256": "151ec29cd2ce7d18b4ca83237f58b54579f21d2d09083e7aa0c50ab6945f45c3"
+    },
+    {
+      "path": "core_copy/vendor/src/squlearn/encoding_circuit/circuit_library/chebyshev_tower.py",
+      "sha256": "5a0b60dba764cfa32ce25e612bbaf7a1d3994a1a983b9c7bda5bd93326b69ae4",
+      "original": "cross_family_resource_v1/core/vendor/src/squlearn/encoding_circuit/circuit_library/chebyshev_tower.py",
+      "original_sha256": "5a0b60dba764cfa32ce25e612bbaf7a1d3994a1a983b9c7bda5bd93326b69ae4"
+    },
+    {
+      "path": "core_copy/vendor/src/squlearn/encoding_circuit/circuit_library/highdim_encoding_circuit.py",
+      "sha256": "fd0d04b6c5235cbf0f59a14c2beaa12fc4c62dbc3d5024d3151b3fe18b2eceae",
+      "original": "cross_family_resource_v1/core/vendor/src/squlearn/encoding_circuit/circuit_library/highdim_encoding_circuit.py",
+      "original_sha256": "fd0d04b6c5235cbf0f59a14c2beaa12fc4c62dbc3d5024d3151b3fe18b2eceae"
+    },
+    {
+      "path": "core_copy/vendor/src/squlearn/encoding_circuit/circuit_library/hubregtsen_encoding_circuit.py",
+      "sha256": "ce7b90ef623c54773805943af976aa5bec2ab38076314bb3573fe7138d89c4c7",
+      "original": "cross_family_resource_v1/core/vendor/src/squlearn/encoding_circuit/circuit_library/hubregtsen_encoding_circuit.py",
+      "original_sha256": "ce7b90ef623c54773805943af976aa5bec2ab38076314bb3573fe7138d89c4c7"
+    },
+    {
+      "path": "core_copy/vendor/src/squlearn/encoding_circuit/circuit_library/kyriienko_nonlinear_encoding_circuit.py",
+      "sha256": "7933f1e2ca3f39079c1a496b7c858568b695d3b87c76bd1c56f666239ee3b39c",
+      "original": "cross_family_resource_v1/core/vendor/src/squlearn/encoding_circuit/circuit_library/kyriienko_nonlinear_encoding_circuit.py",
+      "original_sha256": "7933f1e2ca3f39079c1a496b7c858568b695d3b87c76bd1c56f666239ee3b39c"
+    },
+    {
+      "path": "core_copy/vendor/src/squlearn/encoding_circuit/circuit_library/multi_control_encoding_circuit.py",
+      "sha256": "456066b3f1b5cabbec2c90b286646809667f23dda98b693d1d0bec637f7fbbfe",
+      "original": "cross_family_resource_v1/core/vendor/src/squlearn/encoding_circuit/circuit_library/multi_control_encoding_circuit.py",
+      "original_sha256": "456066b3f1b5cabbec2c90b286646809667f23dda98b693d1d0bec637f7fbbfe"
+    },
+    {
+      "path": "core_copy/vendor/src/squlearn/encoding_circuit/circuit_library/param_z_feature_map.py",
+      "sha256": "106d95bcceb84763c49bfd3594a035d643bffa070db206692809d437b742c552",
+      "original": "cross_family_resource_v1/core/vendor/src/squlearn/encoding_circuit/circuit_library/param_z_feature_map.py",
+      "original_sha256": "106d95bcceb84763c49bfd3594a035d643bffa070db206692809d437b742c552"
+    },
+    {
+      "path": "core_copy/vendor/src/squlearn/encoding_circuit/circuit_library/qcnn_encoding_circuit.py",
+      "sha256": "6515a22ed4c8f43b076869237a1a8d8abb75d63a5cbdb0dca9b880780528f4c4",
+      "original": "cross_family_resource_v1/core/vendor/src/squlearn/encoding_circuit/circuit_library/qcnn_encoding_circuit.py",
+      "original_sha256": "6515a22ed4c8f43b076869237a1a8d8abb75d63a5cbdb0dca9b880780528f4c4"
+    },
+    {
+      "path": "core_copy/vendor/src/squlearn/encoding_circuit/circuit_library/qiskit_encoding_circuit.py",
+      "sha256": "4afab71c728e854f82cb4d1379b40481c403431557174cb416eaf67970030228",
+      "original": "cross_family_resource_v1/core/vendor/src/squlearn/encoding_circuit/circuit_library/qiskit_encoding_circuit.py",
+      "original_sha256": "4afab71c728e854f82cb4d1379b40481c403431557174cb416eaf67970030228"
+    },
+    {
+      "path": "core_copy/vendor/src/squlearn/encoding_circuit/circuit_library/random_encoding_circuit.py",
+      "sha256": "70a81bde3c99be1213d263c68fd3241efb72ec573bf0f03871efc3bf1729b176",
+      "original": "cross_family_resource_v1/core/vendor/src/squlearn/encoding_circuit/circuit_library/random_encoding_circuit.py",
+      "original_sha256": "70a81bde3c99be1213d263c68fd3241efb72ec573bf0f03871efc3bf1729b176"
+    },
+    {
+      "path": "core_copy/vendor/src/squlearn/encoding_circuit/circuit_library/random_layered_encoding_circuit.py",
+      "sha256": "cd7409179778b9f9fc32ef04b12a49dcd8692a954016a3fd773cb8edc5a50093",
+      "original": "cross_family_resource_v1/core/vendor/src/squlearn/encoding_circuit/circuit_library/random_layered_encoding_circuit.py",
+      "original_sha256": "cd7409179778b9f9fc32ef04b12a49dcd8692a954016a3fd773cb8edc5a50093"
+    },
+    {
+      "path": "core_copy/vendor/src/squlearn/encoding_circuit/circuit_library/yz_cx_encoding_circuit.py",
+      "sha256": "4f2e9c2aee1a7161c070ed53955c8e0183bf921033b0cba910066c750bfd6474",
+      "original": "cross_family_resource_v1/core/vendor/src/squlearn/encoding_circuit/circuit_library/yz_cx_encoding_circuit.py",
+      "original_sha256": "4f2e9c2aee1a7161c070ed53955c8e0183bf921033b0cba910066c750bfd6474"
+    },
+    {
+      "path": "core_copy/vendor/src/squlearn/encoding_circuit/encoding_circuit_base.py",
+      "sha256": "2fde81f78452f50bfbf91c23f2e554e0b63ba1a7685e8abe8c44f6680b28d1af",
+      "original": "cross_family_resource_v1/core/vendor/src/squlearn/encoding_circuit/encoding_circuit_base.py",
+      "original_sha256": "2fde81f78452f50bfbf91c23f2e554e0b63ba1a7685e8abe8c44f6680b28d1af"
+    },
+    {
+      "path": "core_copy/vendor/src/squlearn/encoding_circuit/encoding_circuit_derivatives.py",
+      "sha256": "3d10f9abb29002b39ee15f0dd25c4deb568365edda86ced590ef80dc9c1c4933",
+      "original": "cross_family_resource_v1/core/vendor/src/squlearn/encoding_circuit/encoding_circuit_derivatives.py",
+      "original_sha256": "3d10f9abb29002b39ee15f0dd25c4deb568365edda86ced590ef80dc9c1c4933"
+    },
+    {
+      "path": "core_copy/vendor/src/squlearn/encoding_circuit/layered_encoding_circuit.py",
+      "sha256": "3f9bafdfadf7fc8fa50a084b55a3c77cd48c09eb1e4285b2c2158cae1d51dafb",
+      "original": "cross_family_resource_v1/core/vendor/src/squlearn/encoding_circuit/layered_encoding_circuit.py",
+      "original_sha256": "3f9bafdfadf7fc8fa50a084b55a3c77cd48c09eb1e4285b2c2158cae1d51dafb"
+    },
+    {
+      "path": "core_copy/vendor/src/squlearn/encoding_circuit/pruned_encoding_circuit.py",
+      "sha256": "4b25d26e8600aaefe867fa922b6deb6256f2d72f8d531c2485dcd12d36973d6d",
+      "original": "cross_family_resource_v1/core/vendor/src/squlearn/encoding_circuit/pruned_encoding_circuit.py",
+      "original_sha256": "4b25d26e8600aaefe867fa922b6deb6256f2d72f8d531c2485dcd12d36973d6d"
+    },
+    {
+      "path": "core_copy/vendor/src/squlearn/encoding_circuit/transpiled_encoding_circuit.py",
+      "sha256": "c5690c0eeb6425f2761c658737db9eac2f377e7044be2fea50699a544ec31ba9",
+      "original": "cross_family_resource_v1/core/vendor/src/squlearn/encoding_circuit/transpiled_encoding_circuit.py",
+      "original_sha256": "c5690c0eeb6425f2761c658737db9eac2f377e7044be2fea50699a544ec31ba9"
+    },
+    {
+      "path": "core_copy/vendor/src/squlearn/util/data_preprocessing.py",
+      "sha256": "acc011380e947ec06cd984df920b0e5ced4a5c1f9efac67fe23fb7f88ac98c02",
+      "original": "cross_family_resource_v1/core/vendor/src/squlearn/util/data_preprocessing.py",
+      "original_sha256": "acc011380e947ec06cd984df920b0e5ced4a5c1f9efac67fe23fb7f88ac98c02"
+    },
+    {
+      "path": "core_copy/vendor/tree.json",
+      "sha256": "16618ae4f39c129adb09166dbe744cf0e8b93662caee51d1945b73e3278572da",
+      "original": "cross_family_resource_v1/core/vendor/tree.json",
+      "original_sha256": "16618ae4f39c129adb09166dbe744cf0e8b93662caee51d1945b73e3278572da"
+    }
+  ],
+  "copied_core_identical": true,
+  "code": {
+    "kyriienko_scaling.py": "ff1ad1189a3f7db63530c90361ebf6e6c66dd828cc69fc9d85c03cc827039d56",
+    "test_kyriienko_scaling.py": "70682d35264efa40c5aeee58f70d6084cbae551d69cfae0d1f11f683925e89fc"
+  },
+  "frozen_kyriienko_inputs": [
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n2_l1_local_xyz",
+      "file_sha256": "bb94df413d984e45c826763dcf08f7933920923c2f57780706a8cc7e597477d1"
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n2_l1_local_z",
+      "file_sha256": "fd9a42d130df940eebfe05b24840c3db29eaf59402542a2848e08c2af3e12ed0"
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n2_l1_pauli_weight_le_2",
+      "file_sha256": "0dd2293e29e836cf0b306427d6c45c776445fb6f714a7b0a7dff91212e4d27ad"
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n4_l1_local_xyz",
+      "file_sha256": "68b4bbf36d59eb39739644c7fce8e503be4f4d17759c7f910eb1b0b0f57318b3"
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n4_l1_local_z",
+      "file_sha256": "baaa43d41a3129703efa4f50af02e22d6f33871a2c1d75a6c21a4a012848ac5b"
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n4_l1_pauli_weight_le_2",
+      "file_sha256": "4d9eea8b4a6daf29a144877e20abe97ce496003fb6ff1ca844a930da77c1678c"
+    }
+  ],
+  "manuscript_files": {
+    "family_extension.tex": "4eec27b333510f718c876374cf70cd81c1a8738b336971d795e1f94542e5e1f7",
+    "fourier_gram.tex": "6ddd4fec57cd1587ce6aa6f2e972312edd02d8571400cae3198ad0f91d3ff96e",
+    "dimension_theory.tex": "969983ea1091040d7b1e2511dea3c6953eea195339dd18e8003f73080d52443a"
+  }
+}

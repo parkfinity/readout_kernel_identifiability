@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "input_pairs": 1000,
+  "gradient_points": 100,
+  "max_errors": {
+    "features": 1.5543122344752192e-15,
+    "distance": 1.609823385706477e-15,
+    "kernel": 6.661338147750939e-16,
+    "source_gradient": 7.494005416219807e-16
+  },
+  "seed": 20261004,
+  "script_sha256": "636dc0245487a92f16b415429117c1cbe279d959a36578938131a2ec0775228a",
+  "exact_proof_sha256": "3feea9da5554edaa1effd7da5f321c2f41a273feeff9688f3ec9ac4e8c983fc1",
+  "scope": "Numerical consistency check; exact feature coefficients and analytic minor supply the proof"
+}

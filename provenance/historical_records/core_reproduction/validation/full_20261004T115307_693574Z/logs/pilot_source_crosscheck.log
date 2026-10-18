@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "max_errors": {
+    "features": 1.5543122344752192e-15,
+    "distance": 3.1974550352122955e-14,
+    "gradient_fd": 2.3738416093932457e-09
+  },
+  "limits": {
+    "features": 1e-10,
+    "distance": 1e-10,
+    "gradient_fd": 1e-06
+  },
+  "source_pair_probes": 48,
+  "source_fd_coordinates": 324,
+  "scope": "Pinned sQUlearn source host; numerical diagnostic, not complete source-compiler formal proof",
+  "script_sha256": "43e378ceee8319c05be63ccfe2ec37940a24129071b336039780d49173bc45ca",
+  "run_manifest_sha256": "87fdd098b371029d6fb91439ca007c031bd3233d55afdf9c411850cb19395d16"
+}

@@ -1,0 +1,22 @@
+{
+  "FROZEN_MANIFEST.json": "916a3d18657675d8f506740165c1a106030d8de8335f14ad2648c71a23d0601f",
+  "LOCAL_QA.json": "4631a4dc413b12a6e31b0ff8f00455bee4a562d13ffa57c601482052c98fbc92",
+  "MANUSCRIPT_UPDATE_PLAN_KO.txt": "b1d1d75d37d100fd43430655d34e71a3b8172ac06dd4a3e4ddbfde4e94a645b5",
+  "PROTOCOL.txt": "98b0d2395270a429f4a78f33c85c8ae79cbbc569ba37ffe5d1c1410dfbc8dc52",
+  "README_KO.txt": "6387c9749671b370be2f9ebc14b790ba046d39ad527bbae9fbe6890fc1eefa4a",
+  "analyze.py": "6e6438148c32e1632f69085d0ba057a7c0fe128c7e0f3576debad1e1cb5cb78d",
+  "core.py": "7ea8bc92cb7abd759cee856cf91f283eb4fb037e6da248b08794ffb770ca9d1d",
+  "experiment.py": "28bcd91e5de5674a424756040c395efb0ffa9566c547b3d50439d6af524fd25b",
+  "frozen_inputs/hubregtsen_encoding_circuit_n4_l1_local_z.json": "4bf5c7cb70a970332c1824bcb5444656e7b219dbb757833f588e6d6409f9c735",
+  "frozen_inputs/kyriienko_nonlinear_encoding_circuit_n2_l1_local_xyz.json": "bb94df413d984e45c826763dcf08f7933920923c2f57780706a8cc7e597477d1",
+  "frozen_inputs/yz_cx_encoding_circuit_n2_l1_local_xyz.json": "3eff723027d1e17f5631a4dc1597fde21886e77d0226dbba199718a2a2b926a8",
+  "legacy_design.py": "1ba3817a36470d7b1b4a9d2ab2d0e5a5b4531fac93cfa4c92e5d64f0ef1acd42",
+  "package.py": "fa4148ba6f74e9442629567986c7695861e821837cf7a7ba0368d3e586580c94",
+  "plan.json": "87cc8f6fd5447b2bc46995ebf7170d83d1fcc0e12c0b863a9aad8c26724831b7",
+  "prepare.py": "ee7271e08d6dc9644fb0cb13ac5e830debd2ee56c639549d6ba80a8b5aec7eda",
+  "requirements_py38.txt": "b3eeb84b1770b5a7eea38facc60a2ccb5e7bfa948938919b1baec8b545cf645f",
+  "run.sh": "dd8548fdefea34d8f865b24ccac27696edd1e83345c8c9dbdb23eb98f16e2bda",
+  "test_shots.py": "923010d77cb556e1ac8f247b3d1e73146c12082ad03a938b675253a21a9c3001",
+  "vendor/copied_from_extension_v1/exact_engine.py": "01d52e292e472b98d9e3616a95168d6f40125603de6312a272e9e1bf2cee85bf",
+  "vendor/fourier_gram.py": "d457d17fa016c497ff161673cb9baf68b5c114ab243491b4dd7e40497a50e9fc"
+}

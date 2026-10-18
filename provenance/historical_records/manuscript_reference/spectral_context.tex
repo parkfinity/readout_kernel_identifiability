@@ -1,0 +1,32 @@
+\section{Relation to spectral and coefficient methods}
+\label{app:spectral_context}
+Finite Fourier
+representations of quantum features are established tools
+\cite{schuldFourier}; the factorization $C^TMC$ is also the familiar
+pullback of a Mahalanobis metric \cite{weinberger}.
+Our use is an exact, readout-specific parameter-identifiability
+contract and its application to the rank gaps below, not a claim
+that either algebraic construction is new.
+
+Fourier coefficient correlations already characterize ansatz-dependent
+constraints \cite{fingerprints}. Spectral tensor-network work represents
+quantum kernels by Fourier coefficient tensors and uses an empirical
+Fourier Gram matrix for data-dependent alignment \cite{spectralTN}.
+That data matrix is not the parameter-dependent $C(\theta)^TMC(\theta)$
+here, and tensor bond rank is not the differential rank in
+Eq.~\eqref{eq:gramrank}. Fourier-geometric gate-placement criteria
+also exploit adjoint frequency planes \cite{fourierDesign}.
+These overlaps motivate careful separation of representation,
+coefficient reachability, and exact parameter identifiability.
+Campbell, Del Debbio, and Wallden's circuit harmonic matrix also
+eliminates data dependence from coefficient-space analysis
+\cite{CHM}. It represents joint harmonics of inputs and parameters and
+constructs pointwise coefficient Jacobians and QNTKs, as well as
+parameter-averaged statistics. Our distinction is therefore not
+``pointwise versus averaged'': $G=C(\theta)^TMC(\theta)$ describes
+fixed-metric feature distances, whereas their harmonic QNTK is a
+Gram matrix of coefficient derivatives. We use this distinction to
+certify distance-equivalence fibers and their differential dimension.
+In the four-qubit Hubregtsen example of Sec.~\ref{sec:gram}, the
+coefficient Jacobian has rank four, whereas $D_\theta\operatorname{vech}G$
+has rank two.

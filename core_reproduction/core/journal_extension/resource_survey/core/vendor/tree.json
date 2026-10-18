@@ -1,0 +1,2574 @@
+{
+  "sha": "0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4",
+  "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4",
+  "tree": [
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c0b0d69d6597c6d23a5e87838fc3071d1dec2b46",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/c0b0d69d6597c6d23a5e87838fc3071d1dec2b46"
+    },
+    {
+      "path": ".github/CODE_OF_CONDUCT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a223aa8f38e9d814585cb87ab7cd38034b592b7",
+      "size": 5514,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/3a223aa8f38e9d814585cb87ab7cd38034b592b7"
+    },
+    {
+      "path": ".github/CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67eff2e3e8d11a4a7f1e16609a2d703b95e8722f",
+      "size": 2187,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/67eff2e3e8d11a4a7f1e16609a2d703b95e8722f"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "820966a79a7a6f50d950df4ee2e0ed7170072b91",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/820966a79a7a6f50d950df4ee2e0ed7170072b91"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b152a5e87feab6b38cf0735da73f1c8769c6599b",
+      "size": 487,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/b152a5e87feab6b38cf0735da73f1c8769c6599b"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbcbbe7d61558adde3cbfd0c7a63a67c27ed6d30",
+      "size": 595,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/bbcbbe7d61558adde3cbfd0c7a63a67c27ed6d30"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dead3d1a7742220a10b24904f9d622572849675a",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/dead3d1a7742220a10b24904f9d622572849675a"
+    },
+    {
+      "path": ".github/workflows/doc_checks.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29209fb848c687f6ece3b78666477a66b1deb0be",
+      "size": 605,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/29209fb848c687f6ece3b78666477a66b1deb0be"
+    },
+    {
+      "path": ".github/workflows/elaborate_tests.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e8a5baa9470d2930500591f3f8e8c8b7d4a6b39",
+      "size": 4408,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/7e8a5baa9470d2930500591f3f8e8c8b7d4a6b39"
+    },
+    {
+      "path": ".github/workflows/format.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2059899498f54c1c2698a768776b41ff8e39016f",
+      "size": 634,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/2059899498f54c1c2698a768776b41ff8e39016f"
+    },
+    {
+      "path": ".github/workflows/publish.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "105a81bb04c17b20e61c74d64d9172c62caf5785",
+      "size": 679,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/105a81bb04c17b20e61c74d64d9172c62caf5785"
+    },
+    {
+      "path": ".github/workflows/publish_docs.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1239f70bd460a9edaeec8fd364254324012b8e2e",
+      "size": 1726,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/1239f70bd460a9edaeec8fd364254324012b8e2e"
+    },
+    {
+      "path": ".github/workflows/quick_tests.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88a271937e7d8c799e3aaa10a59183564e7bef50",
+      "size": 1079,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/88a271937e7d8c799e3aaa10a59183564e7bef50"
+    },
+    {
+      "path": ".github/workflows/stale.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9972ef3f9b9b519a87f9f9f1e424d9ba8a646dd",
+      "size": 925,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/b9972ef3f9b9b519a87f9f9f1e424d9ba8a646dd"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63ac789ecec479599f59d28019c89dc888e9688a",
+      "size": 3305,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/63ac789ecec479599f59d28019c89dc888e9688a"
+    },
+    {
+      "path": "CITATION.cff",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc7496db9f8a2745e2ead4f8e5af4194dcbc9b6f",
+      "size": 1713,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/dc7496db9f8a2745e2ead4f8e5af4194dcbc9b6f"
+    },
+    {
+      "path": "LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5adf9234b79458f9bcf4557c98090eb0f36bab6",
+      "size": 11421,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/f5adf9234b79458f9bcf4557c98090eb0f36bab6"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2faf548782c9b5c16153a00c5fbc7ea2a27f96ef",
+      "size": 4415,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/2faf548782c9b5c16153a00c5fbc7ea2a27f96ef"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f8600aeb4dfde734b610a5199591ec9994b718c7",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/f8600aeb4dfde734b610a5199591ec9994b718c7"
+    },
+    {
+      "path": "docs/Makefile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6db2f2aab548352a77665a760b3f06f8a549b9f0",
+      "size": 632,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/6db2f2aab548352a77665a760b3f06f8a549b9f0"
+    },
+    {
+      "path": "docs/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcd048199b459b7ace25fec64c75ce9e8dd6e1a7",
+      "size": 278,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/dcd048199b459b7ace25fec64c75ce9e8dd6e1a7"
+    },
+    {
+      "path": "docs/_static",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "848cfded3dff1643c2080bc551723fddbe51fa28",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/848cfded3dff1643c2080bc551723fddbe51fa28"
+    },
+    {
+      "path": "docs/_static/css",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "93d984e24bf537f4d04fb82bc2b0c6689523900e",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/93d984e24bf537f4d04fb82bc2b0c6689523900e"
+    },
+    {
+      "path": "docs/_static/css/custom.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0524724c1e7b32e1ab0a10dfac3b9d6306c529f",
+      "size": 4126,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/c0524724c1e7b32e1ab0a10dfac3b9d6306c529f"
+    },
+    {
+      "path": "docs/_static/favicon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90af1428b47b41bda7fb36a94c66af3d6bf64483",
+      "size": 2249,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/90af1428b47b41bda7fb36a94c66af3d6bf64483"
+    },
+    {
+      "path": "docs/_static/logo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cae1b8d3a2e90d6d4556a46b4e3aaa672b9c71aa",
+      "size": 12664,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/cae1b8d3a2e90d6d4556a46b4e3aaa672b9c71aa"
+    },
+    {
+      "path": "docs/_static/qkm",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a762f881b44444711df8e02c56690ff8613d8017",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/a762f881b44444711df8e02c56690ff8613d8017"
+    },
+    {
+      "path": "docs/_static/qkm/QKM_scheme_pic.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1281f69086a5acb3b1e66d7157960065fec8d91e",
+      "size": 50157,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/1281f69086a5acb3b1e66d7157960065fec8d91e"
+    },
+    {
+      "path": "docs/_static/qnn",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e6f06286f04c6e01645ac119a1f008260a6677e1",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/e6f06286f04c6e01645ac119a1f008260a6677e1"
+    },
+    {
+      "path": "docs/_static/qnn/qnn.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e188d739b7484e69914a2acba45634f467a392ed",
+      "size": 44296,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/e188d739b7484e69914a2acba45634f467a392ed"
+    },
+    {
+      "path": "docs/_static/qrc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "734337d726808a01a68c5ce59de482361ecc76a0",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/734337d726808a01a68c5ce59de482361ecc76a0"
+    },
+    {
+      "path": "docs/_static/qrc/QRC_user_guide.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "026d645111245f3bac0d90bd2dd88fd2a920449c",
+      "size": 15700,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/026d645111245f3bac0d90bd2dd88fd2a920449c"
+    },
+    {
+      "path": "docs/_static/qrc/qrc_classification_transparent.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "379cce3f9e80b15a8ac7682409563ebe7eb58e7d",
+      "size": 213014,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/379cce3f9e80b15a8ac7682409563ebe7eb58e7d"
+    },
+    {
+      "path": "docs/_static/qrc/qrc_regression_transparent.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2df1d211a90c362338cdbb4f8467acae7a20070",
+      "size": 34148,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/c2df1d211a90c362338cdbb4f8467acae7a20070"
+    },
+    {
+      "path": "docs/_static/schematic.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95401efe5f6c5a0512352f36cd7d40ec1cb08f46",
+      "size": 37597,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/95401efe5f6c5a0512352f36cd7d40ec1cb08f46"
+    },
+    {
+      "path": "docs/_static/util",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "39a242879ec2600d0f504f371056fa76f98436f0",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/39a242879ec2600d0f504f371056fa76f98436f0"
+    },
+    {
+      "path": "docs/_static/util/executor.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b8ced769c52e6526cec1ccd86eec0ce4cf5cfab",
+      "size": 121098,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/1b8ced769c52e6526cec1ccd86eec0ce4cf5cfab"
+    },
+    {
+      "path": "docs/_templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ebe72ea029dbcb4a0fe48e97d0b0a2a9793b923e",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/ebe72ea029dbcb4a0fe48e97d0b0a2a9793b923e"
+    },
+    {
+      "path": "docs/_templates/class.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5453f1d546b9381df82f20061bf7bd4bbc4fbe3b",
+      "size": 161,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/5453f1d546b9381df82f20061bf7bd4bbc4fbe3b"
+    },
+    {
+      "path": "docs/_templates/class_with_call.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e0d5dba52ba60d5ef2773bafb0e465d0bc3c154",
+      "size": 486,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/0e0d5dba52ba60d5ef2773bafb0e465d0bc3c154"
+    },
+    {
+      "path": "docs/_templates/function.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cdc08fd8b34fb0da45069d3adeddde33cd5d9e74",
+      "size": 165,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/cdc08fd8b34fb0da45069d3adeddde33cd5d9e74"
+    },
+    {
+      "path": "docs/conf.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c2c6295e22930ecd1cb43e168d51610eef04dc3",
+      "size": 3819,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/6c2c6295e22930ecd1cb43e168d51610eef04dc3"
+    },
+    {
+      "path": "docs/examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d899903999d3ffe1f2e2e3203081d901f052def3",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/d899903999d3ffe1f2e2e3203081d901f052def3"
+    },
+    {
+      "path": "docs/examples/example_kernel_digit_classification.nblink",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc311ddd69e1cc08a667c7e22a27199a17fbe44b",
+      "size": 146,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/dc311ddd69e1cc08a667c7e22a27199a17fbe44b"
+    },
+    {
+      "path": "docs/examples/example_kernel_grid_search.nblink",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ba3cd75f6710f3da64c3d015d6c3eb25fab07b2",
+      "size": 67,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/5ba3cd75f6710f3da64c3d015d6c3eb25fab07b2"
+    },
+    {
+      "path": "docs/examples/example_ode_solver.nblink",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6db78e947b677a3cd74cbd05b8a3535ea611d6a4",
+      "size": 129,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/6db78e947b677a3cd74cbd05b8a3535ea611d6a4"
+    },
+    {
+      "path": "docs/examples/example_qnn_backend_mitigation.nblink",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "356677d95efbecb8a7cf61c7479ca7639fe09611",
+      "size": 142,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/356677d95efbecb8a7cf61c7479ca7639fe09611"
+    },
+    {
+      "path": "docs/examples/example_quantum_bayesian_optimization.nblink",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d343a691785cd90b0d26c7b7b75e1240b3eb4c7",
+      "size": 148,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/9d343a691785cd90b0d26c7b7b75e1240b3eb4c7"
+    },
+    {
+      "path": "docs/examples/examples_index.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00fd502e248fa85b2deda28226c16feae5d08938",
+      "size": 246,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/00fd502e248fa85b2deda28226c16feae5d08938"
+    },
+    {
+      "path": "docs/index.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "730f46eb780550eca24ff9005504a448b8cc6361",
+      "size": 524,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/730f46eb780550eca24ff9005504a448b8cc6361"
+    },
+    {
+      "path": "docs/install",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8b26e0057dcc619e422ba5e095d9dcc6bded093e",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/8b26e0057dcc619e422ba5e095d9dcc6bded093e"
+    },
+    {
+      "path": "docs/install/install.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "198817095815d079c57386b432a2ed72c8c2b2a2",
+      "size": 1784,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/198817095815d079c57386b432a2ed72c8c2b2a2"
+    },
+    {
+      "path": "docs/make.bat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e47bdd1d9dd2552feb23b977be08e35721fcea3e",
+      "size": 1018,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/e47bdd1d9dd2552feb23b977be08e35721fcea3e"
+    },
+    {
+      "path": "docs/modules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "deec82c59fdedd78dcf5d00d8be4c058f814b87d",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/deec82c59fdedd78dcf5d00d8be4c058f814b87d"
+    },
+    {
+      "path": "docs/modules/classes.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92bf60624d0a3417ed8ab729862f1f394e04602a",
+      "size": 6496,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/92bf60624d0a3417ed8ab729862f1f394e04602a"
+    },
+    {
+      "path": "docs/qiskit_settings.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "122f4e0b0112c55c54b17e026e86ad88fd664821",
+      "size": 60,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/122f4e0b0112c55c54b17e026e86ad88fd664821"
+    },
+    {
+      "path": "docs/spelling_wordlist.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "969e6d13ab905bdda3667b24518afc11b6569de1",
+      "size": 461,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/969e6d13ab905bdda3667b24518afc11b6569de1"
+    },
+    {
+      "path": "docs/user_guide",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8cf13544786e0e93fcfd2c405fc20d5750fed2c8",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/8cf13544786e0e93fcfd2c405fc20d5750fed2c8"
+    },
+    {
+      "path": "docs/user_guide/encoding_circuits.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "620e9a900bf57142f73db2255b1c1771651187f0",
+      "size": 10245,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/620e9a900bf57142f73db2255b1c1771651187f0"
+    },
+    {
+      "path": "docs/user_guide/executor.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "826d4158aafdd46ed2628392a005b1654bcd5987",
+      "size": 29219,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/826d4158aafdd46ed2628392a005b1654bcd5987"
+    },
+    {
+      "path": "docs/user_guide/kernel_methods.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eec98b5fdc96a90322dcb3ea54286e3173b66b1b",
+      "size": 15128,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/eec98b5fdc96a90322dcb3ea54286e3173b66b1b"
+    },
+    {
+      "path": "docs/user_guide/observables.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24f057785ef792b3fd7f77ba15db553ee3cbd377",
+      "size": 6137,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/24f057785ef792b3fd7f77ba15db553ee3cbd377"
+    },
+    {
+      "path": "docs/user_guide/quantum_neural_networks.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76a906952f123f89f394acf8f9f2a28c31c68ab7",
+      "size": 20107,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/76a906952f123f89f394acf8f9f2a28c31c68ab7"
+    },
+    {
+      "path": "docs/user_guide/quantum_reservoir_computing.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a02b221ea1e1186cb784e60d1dca3673cf622187",
+      "size": 10653,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/a02b221ea1e1186cb784e60d1dca3673cf622187"
+    },
+    {
+      "path": "docs/user_guide/user_guide_index.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fb06265470d649a5e2072fd179001b719bc5310",
+      "size": 196,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/0fb06265470d649a5e2072fd179001b719bc5310"
+    },
+    {
+      "path": "examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "119e89a484f0bff4ed8868395831f8f010b87390",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/119e89a484f0bff4ed8868395831f8f010b87390"
+    },
+    {
+      "path": "examples/encoding_circuits",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "153ac3e62d588aa7e24c88f87b242a60a9a86217",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/153ac3e62d588aa7e24c88f87b242a60a9a86217"
+    },
+    {
+      "path": "examples/encoding_circuits/layered_encoding_circuit.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfee7f96fa9ce01e6601d0c3c17a19688931e64e",
+      "size": 127099,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/dfee7f96fa9ce01e6601d0c3c17a19688931e64e"
+    },
+    {
+      "path": "examples/encoding_circuits/pruning_example.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69ed49dfd5e240972b56ed786a79af5f1032e564",
+      "size": 32765,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/69ed49dfd5e240972b56ed786a79af5f1032e564"
+    },
+    {
+      "path": "examples/encoding_circuits/various_encoding_circuit.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9944ebad5db8b423cc0f72845d6543d0a60ac950",
+      "size": 614452,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/9944ebad5db8b423cc0f72845d6543d0a60ac950"
+    },
+    {
+      "path": "examples/executor",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "26de1c85dd80f7d1148e73d154d6871ebca86c47",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/26de1c85dd80f7d1148e73d154d6871ebca86c47"
+    },
+    {
+      "path": "examples/executor/example_executor_qiskit.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c821d73ecaa48502da04e40040a0a8e79fe7b8f",
+      "size": 15975,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/9c821d73ecaa48502da04e40040a0a8e79fe7b8f"
+    },
+    {
+      "path": "examples/integration",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c2455c92a4a6f647e76a2747c8be83b2f8f29b90",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/c2455c92a4a6f647e76a2747c8be83b2f8f29b90"
+    },
+    {
+      "path": "examples/integration/mlflow.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e3e906f71f9df039d4d37df5553d06cf8638c19",
+      "size": 7636,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/8e3e906f71f9df039d4d37df5553d06cf8638c19"
+    },
+    {
+      "path": "examples/kernel",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "749a1c7777d6132180f905359527f9991ff4a1ff",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/749a1c7777d6132180f905359527f9991ff4a1ff"
+    },
+    {
+      "path": "examples/kernel/example_fidelity_kernel.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6c0bce14dcbfed1eb13a6f373c4d3e3e1fb8b06",
+      "size": 38468,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/a6c0bce14dcbfed1eb13a6f373c4d3e3e1fb8b06"
+    },
+    {
+      "path": "examples/kernel/example_projected_kernel.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54e81b7d61c6347e9dd3a07c46641627249632eb",
+      "size": 413637,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/54e81b7d61c6347e9dd3a07c46641627249632eb"
+    },
+    {
+      "path": "examples/kernel/example_qkode.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "776bb8533c53c8c0d44da8b5082a67ae38bb862a",
+      "size": 152221,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/776bb8533c53c8c0d44da8b5082a67ae38bb862a"
+    },
+    {
+      "path": "examples/kernel/example_regularization_mitigation.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33c7545fc290323a0bca37058404721700524927",
+      "size": 55598,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/33c7545fc290323a0bca37058404721700524927"
+    },
+    {
+      "path": "examples/kernel/qgpc_workflow.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7eafe0df64ce0cef18e7bee8f470d9dc1f465fb0",
+      "size": 132493,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/7eafe0df64ce0cef18e7bee8f470d9dc1f465fb0"
+    },
+    {
+      "path": "examples/kernel/qgpr_optimization_workflow.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1185bd897bd0a2f549bf8d45bff420fd845512c9",
+      "size": 62114,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/1185bd897bd0a2f549bf8d45bff420fd845512c9"
+    },
+    {
+      "path": "examples/kernel/qgpr_workflow.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a20ef2b6c758f7aa7bac461525035503434489b",
+      "size": 64600,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/8a20ef2b6c758f7aa7bac461525035503434489b"
+    },
+    {
+      "path": "examples/qnn",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e8e8edaab17c2a0d8862fb74b9891429aa910514",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/e8e8edaab17c2a0d8862fb74b9891429aa910514"
+    },
+    {
+      "path": "examples/qnn/classification_example.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03d89e723990d65b9cf1ec231924c9162af3b227",
+      "size": 79793,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/03d89e723990d65b9cf1ec231924c9162af3b227"
+    },
+    {
+      "path": "examples/qnn/example_adam.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae859a0e63a7e00543c10dcff471291932f85122",
+      "size": 73420,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/ae859a0e63a7e00543c10dcff471291932f85122"
+    },
+    {
+      "path": "examples/qnn/example_minibatch.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8bea39045fe8dde87f69db0369b5e8a01dc467d4",
+      "size": 74901,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/8bea39045fe8dde87f69db0369b5e8a01dc467d4"
+    },
+    {
+      "path": "examples/qnn/example_qcnn_encoding_circuit.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4fc2f0cb3dde6bde6df63a92ae97a9745ccdfab",
+      "size": 598236,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/f4fc2f0cb3dde6bde6df63a92ae97a9745ccdfab"
+    },
+    {
+      "path": "examples/qnn/multiclass_classification.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1302f88e10efa962f62a3c07528c5e21233fa119",
+      "size": 93911,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/1302f88e10efa962f62a3c07528c5e21233fa119"
+    },
+    {
+      "path": "examples/qnn/ode_example.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92ee412c88ce3a4c2145cde3c7fb59839d55a999",
+      "size": 68185,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/92ee412c88ce3a4c2145cde3c7fb59839d55a999"
+    },
+    {
+      "path": "examples/qnn/regression_example.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc8b81d5bd01c6cb0841a7981f53c86677c0d15d",
+      "size": 195820,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/fc8b81d5bd01c6cb0841a7981f53c86677c0d15d"
+    },
+    {
+      "path": "examples/qnn/regression_with_variance.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd7302bc26ab1b86bafa5a4e35610a7d5987650e",
+      "size": 183286,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/bd7302bc26ab1b86bafa5a4e35610a7d5987650e"
+    },
+    {
+      "path": "examples/qrc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ac9042950da76eb7724ca742300439df14fd8552",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/ac9042950da76eb7724ca742300439df14fd8552"
+    },
+    {
+      "path": "examples/qrc/qrc_classification.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a88e8249d94062b0a44efc554c0981a8790b308",
+      "size": 354436,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/6a88e8249d94062b0a44efc554c0981a8790b308"
+    },
+    {
+      "path": "examples/qrc/qrc_regression.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "371014dfd2f42aef63c8d70b8871078c03d50817",
+      "size": 137882,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/371014dfd2f42aef63c8d70b8871078c03d50817"
+    },
+    {
+      "path": "examples/tutorials",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "67bbd5c8116b0111a276a34a4727b3de3e9b0c57",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/67bbd5c8116b0111a276a34a4727b3de3e9b0c57"
+    },
+    {
+      "path": "examples/tutorials/images",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8f8fc26a7ab524c12498a6370872c4710e800dc1",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/8f8fc26a7ab524c12498a6370872c4710e800dc1"
+    },
+    {
+      "path": "examples/tutorials/images/QK_ode_circ_workflow.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82e0cccd1f44f0e41651c26352d418ba57670a32",
+      "size": 406737,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/82e0cccd1f44f0e41651c26352d418ba57670a32"
+    },
+    {
+      "path": "examples/tutorials/images/QNN_ode_workflow.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71c685708625b29c96af947a3ee1cd8aa5717341",
+      "size": 360735,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/71c685708625b29c96af947a3ee1cd8aa5717341"
+    },
+    {
+      "path": "examples/tutorials/images/encoding_circuit.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29c29ec97feb49009f8228a1b6286fbb2299c2dc",
+      "size": 147762,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/29c29ec97feb49009f8228a1b6286fbb2299c2dc"
+    },
+    {
+      "path": "examples/tutorials/images/pipeline.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc0dd6c139c76568475fd4399158ddb4f3375878",
+      "size": 30308,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/fc0dd6c139c76568475fd4399158ddb4f3375878"
+    },
+    {
+      "path": "examples/tutorials/images/projected_quantum_kernel.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6629b950707225ef02d937c0daa3fb3a692f6276",
+      "size": 97978,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/6629b950707225ef02d937c0daa3fb3a692f6276"
+    },
+    {
+      "path": "examples/tutorials/images/quantum_bo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2253b7cbe2fda5b2df5c03435ee490210edd624c",
+      "size": 157564,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/2253b7cbe2fda5b2df5c03435ee490210edd624c"
+    },
+    {
+      "path": "examples/tutorials/kernel_digit_classification.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfc815e7cddbd7f07e20440a057aff3da369dcc8",
+      "size": 533263,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/dfc815e7cddbd7f07e20440a057aff3da369dcc8"
+    },
+    {
+      "path": "examples/tutorials/kernel_grid_search.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4158e72e5e8a1abd97a5863e463aa142650102f1",
+      "size": 249836,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/4158e72e5e8a1abd97a5863e463aa142650102f1"
+    },
+    {
+      "path": "examples/tutorials/kernel_regression.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da82f2fff8bebf6328ee449ba730c465581ad143",
+      "size": 91113,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/da82f2fff8bebf6328ee449ba730c465581ad143"
+    },
+    {
+      "path": "examples/tutorials/ode_solver.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d11c8d40b2eedcb9e0d09fe2a8eb1d6d1d4f2d1b",
+      "size": 352682,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/d11c8d40b2eedcb9e0d09fe2a8eb1d6d1d4f2d1b"
+    },
+    {
+      "path": "examples/tutorials/qnn_backend_mitigation.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5447f1a5ea9cb4e2e5e2328d58737ee3af32c66",
+      "size": 267569,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/e5447f1a5ea9cb4e2e5e2328d58737ee3af32c66"
+    },
+    {
+      "path": "examples/tutorials/quantum_bayesian_optimization.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aea0d1e9385e93ecaa30e2e7aa17b5064e347f2e",
+      "size": 734054,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/aea0d1e9385e93ecaa30e2e7aa17b5064e347f2e"
+    },
+    {
+      "path": "install_lowest_dependencies.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf894ed4102034a0399e2f81e2a71e0d589f150f",
+      "size": 2138,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/bf894ed4102034a0399e2f81e2a71e0d589f150f"
+    },
+    {
+      "path": "output.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f286a1f1348ff44f6fe794607bacceeb06fb9281",
+      "size": 36789,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/f286a1f1348ff44f6fe794607bacceeb06fb9281"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e473d12bc748c339730d56ae2b18a4fb9b65c5f",
+      "size": 2860,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/7e473d12bc748c339730d56ae2b18a4fb9b65c5f"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b1a90e3ca38677d2248add3b61b85dfab5adea2b",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/b1a90e3ca38677d2248add3b61b85dfab5adea2b"
+    },
+    {
+      "path": "src/squlearn",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "56aa6c0f6c21306e7d3d5fe8216657cfc5e756ee",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/56aa6c0f6c21306e7d3d5fe8216657cfc5e756ee"
+    },
+    {
+      "path": "src/squlearn/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b34770f8ade6c2f90ada4dea55dce5bbe650b995",
+      "size": 338,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/b34770f8ade6c2f90ada4dea55dce5bbe650b995"
+    },
+    {
+      "path": "src/squlearn/encoding_circuit",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "30b90c5683f43faa738813968a6aeab95c6ca7f6",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/30b90c5683f43faa738813968a6aeab95c6ca7f6"
+    },
+    {
+      "path": "src/squlearn/encoding_circuit/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ab6b9d640922c39c9c10a32718acc64dfb20b39",
+      "size": 1808,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/9ab6b9d640922c39c9c10a32718acc64dfb20b39"
+    },
+    {
+      "path": "src/squlearn/encoding_circuit/circuit_library",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "72a093733f4fc818aa15e660750cfb5060e0ded3",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/72a093733f4fc818aa15e660750cfb5060e0ded3"
+    },
+    {
+      "path": "src/squlearn/encoding_circuit/circuit_library/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/squlearn/encoding_circuit/circuit_library/chebyshev_pqc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c8ef68fd09615408315b4e0c530803f9493cfbb",
+      "size": 12548,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/0c8ef68fd09615408315b4e0c530803f9493cfbb"
+    },
+    {
+      "path": "src/squlearn/encoding_circuit/circuit_library/chebyshev_rx.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "150bc19723638565fa2fba62efc9c9915920fe35",
+      "size": 9483,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/150bc19723638565fa2fba62efc9c9915920fe35"
+    },
+    {
+      "path": "src/squlearn/encoding_circuit/circuit_library/chebyshev_tower.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "690c3587f5ab086d9859c1816166a4b6682501cc",
+      "size": 10440,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/690c3587f5ab086d9859c1816166a4b6682501cc"
+    },
+    {
+      "path": "src/squlearn/encoding_circuit/circuit_library/highdim_encoding_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66ebeb5df89243bb488b2c38a73e93456b40c4f5",
+      "size": 11825,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/66ebeb5df89243bb488b2c38a73e93456b40c4f5"
+    },
+    {
+      "path": "src/squlearn/encoding_circuit/circuit_library/hubregtsen_encoding_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2be0444579e8997fc9497d4685b7074a7a12b024",
+      "size": 7120,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/2be0444579e8997fc9497d4685b7074a7a12b024"
+    },
+    {
+      "path": "src/squlearn/encoding_circuit/circuit_library/kyriienko_nonlinear_encoding_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "131c7c47e73c52b07662a51e451dd04003ada570",
+      "size": 13475,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/131c7c47e73c52b07662a51e451dd04003ada570"
+    },
+    {
+      "path": "src/squlearn/encoding_circuit/circuit_library/multi_control_encoding_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e61ad8e0a480b102170d14e2698326b90be4796",
+      "size": 6611,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/7e61ad8e0a480b102170d14e2698326b90be4796"
+    },
+    {
+      "path": "src/squlearn/encoding_circuit/circuit_library/param_z_feature_map.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32d096e68da027e0203a4f4387af84d03f351ee5",
+      "size": 4393,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/32d096e68da027e0203a4f4387af84d03f351ee5"
+    },
+    {
+      "path": "src/squlearn/encoding_circuit/circuit_library/qcnn_encoding_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6efb0262cda6ac8ff2096fb61d01f2ee6b21a385",
+      "size": 32255,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/6efb0262cda6ac8ff2096fb61d01f2ee6b21a385"
+    },
+    {
+      "path": "src/squlearn/encoding_circuit/circuit_library/qiskit_encoding_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb02d0f17655a65f0e6239531b65cb7f880666e7",
+      "size": 8912,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/eb02d0f17655a65f0e6239531b65cb7f880666e7"
+    },
+    {
+      "path": "src/squlearn/encoding_circuit/circuit_library/random_encoding_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab5d853614fb54dff190641468dddcf86094019f",
+      "size": 15303,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/ab5d853614fb54dff190641468dddcf86094019f"
+    },
+    {
+      "path": "src/squlearn/encoding_circuit/circuit_library/random_layered_encoding_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1327df34612de57dd6e4230027d5bf5c41a8a50f",
+      "size": 9096,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/1327df34612de57dd6e4230027d5bf5c41a8a50f"
+    },
+    {
+      "path": "src/squlearn/encoding_circuit/circuit_library/yz_cx_encoding_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67f526d4e4bdc8f65945f3f6824a07e4ad3aef5f",
+      "size": 4983,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/67f526d4e4bdc8f65945f3f6824a07e4ad3aef5f"
+    },
+    {
+      "path": "src/squlearn/encoding_circuit/encoding_circuit_base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b8e60f14644fc8859fd3816ca00b400e5284c60",
+      "size": 27831,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/4b8e60f14644fc8859fd3816ca00b400e5284c60"
+    },
+    {
+      "path": "src/squlearn/encoding_circuit/encoding_circuit_derivatives.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f012e0e3955c67f1155ede311a88323de677f1b5",
+      "size": 13255,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/f012e0e3955c67f1155ede311a88323de677f1b5"
+    },
+    {
+      "path": "src/squlearn/encoding_circuit/layered_encoding_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b10728f19e471df8b105522c5340f8d5bbfb2525",
+      "size": 132078,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/b10728f19e471df8b105522c5340f8d5bbfb2525"
+    },
+    {
+      "path": "src/squlearn/encoding_circuit/pruned_encoding_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a211cbc553487fa8f451cad9db037beecf4d0c7c",
+      "size": 14721,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/a211cbc553487fa8f451cad9db037beecf4d0c7c"
+    },
+    {
+      "path": "src/squlearn/encoding_circuit/transpiled_encoding_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca3b50a631d9e8c169b28fc5fdbfb07f0e7ac6f7",
+      "size": 7959,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/ca3b50a631d9e8c169b28fc5fdbfb07f0e7ac6f7"
+    },
+    {
+      "path": "src/squlearn/kernel",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6f20366f94934fa1defb89f8855c3d7f766678ec",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/6f20366f94934fa1defb89f8855c3d7f766678ec"
+    },
+    {
+      "path": "src/squlearn/kernel/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e26944e9401e2aaab9e9d2522861ae108cc171f3",
+      "size": 389,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/e26944e9401e2aaab9e9d2522861ae108cc171f3"
+    },
+    {
+      "path": "src/squlearn/kernel/loss",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "581f6ae4058a9729d08169e038c550756876ad1a",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/581f6ae4058a9729d08169e038c550756876ad1a"
+    },
+    {
+      "path": "src/squlearn/kernel/loss/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00359d4048b8307366fa97f8de0947f8d29e96b2",
+      "size": 166,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/00359d4048b8307366fa97f8de0947f8d29e96b2"
+    },
+    {
+      "path": "src/squlearn/kernel/loss/kernel_loss_base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f25f73d54edac4210a4f06f4a8ab93399ebcbcb",
+      "size": 1204,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/3f25f73d54edac4210a4f06f4a8ab93399ebcbcb"
+    },
+    {
+      "path": "src/squlearn/kernel/loss/negative_log_likelihood.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ee9c01d59e02d77d2c9a695fa61112ed867cfe3",
+      "size": 2969,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/9ee9c01d59e02d77d2c9a695fa61112ed867cfe3"
+    },
+    {
+      "path": "src/squlearn/kernel/loss/ode_loss.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33f34d30256b475efa5f7e5a750bbdfff1c45fb5",
+      "size": 10804,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/33f34d30256b475efa5f7e5a750bbdfff1c45fb5"
+    },
+    {
+      "path": "src/squlearn/kernel/loss/target_alignment.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1e986fe039c48c0097f7b8d2f7b147bb4c23b48",
+      "size": 3026,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/e1e986fe039c48c0097f7b8d2f7b147bb4c23b48"
+    },
+    {
+      "path": "src/squlearn/kernel/lowlevel_kernel",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "59ff6a98da900cfcda1ac9918486e223eee6f9cf",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/59ff6a98da900cfcda1ac9918486e223eee6f9cf"
+    },
+    {
+      "path": "src/squlearn/kernel/lowlevel_kernel/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f72a09ee23a0cbf9ffd122645293985fe58896ae",
+      "size": 226,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/f72a09ee23a0cbf9ffd122645293985fe58896ae"
+    },
+    {
+      "path": "src/squlearn/kernel/lowlevel_kernel/fidelity_kernel.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14320ebc3abd304e64910a094d2121faa42d1b1f",
+      "size": 17765,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/14320ebc3abd304e64910a094d2121faa42d1b1f"
+    },
+    {
+      "path": "src/squlearn/kernel/lowlevel_kernel/fidelity_kernel_expectation_value.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be377d72b801c8ad1f341bd21f3b923672553a83",
+      "size": 23109,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/be377d72b801c8ad1f341bd21f3b923672553a83"
+    },
+    {
+      "path": "src/squlearn/kernel/lowlevel_kernel/fidelity_kernel_statevector.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8432173cac24cd24464918623c7fd4db99fa4e8c",
+      "size": 17771,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/8432173cac24cd24464918623c7fd4db99fa4e8c"
+    },
+    {
+      "path": "src/squlearn/kernel/lowlevel_kernel/kernel_matrix_base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cabfb9073aa771c762db44ddf13e3a63c3c790b1",
+      "size": 16519,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/cabfb9073aa771c762db44ddf13e3a63c3c790b1"
+    },
+    {
+      "path": "src/squlearn/kernel/lowlevel_kernel/kernel_optimizer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb6c383a4c4fd492177853c0e598890a0c684861",
+      "size": 6688,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/fb6c383a4c4fd492177853c0e598890a0c684861"
+    },
+    {
+      "path": "src/squlearn/kernel/lowlevel_kernel/kernel_util.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a3d67067ada9f67c86526a0fb4f4324862f784d",
+      "size": 1162,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/0a3d67067ada9f67c86526a0fb4f4324862f784d"
+    },
+    {
+      "path": "src/squlearn/kernel/lowlevel_kernel/projected_quantum_kernel.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b93afe1a346d7623306101c6a08f1f566b4e81d",
+      "size": 42168,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/9b93afe1a346d7623306101c6a08f1f566b4e81d"
+    },
+    {
+      "path": "src/squlearn/kernel/lowlevel_kernel/regularization.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85d32a7d40a2271f0775569d789edd77275a63ec",
+      "size": 2626,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/85d32a7d40a2271f0775569d789edd77275a63ec"
+    },
+    {
+      "path": "src/squlearn/kernel/qgpc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b32ef7489576a3bae2aa6cf386a7dd31c3a527ca",
+      "size": 6521,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/b32ef7489576a3bae2aa6cf386a7dd31c3a527ca"
+    },
+    {
+      "path": "src/squlearn/kernel/qgpr.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54ecc78791e615aafd18568abf401c13c1d6eb3e",
+      "size": 14506,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/54ecc78791e615aafd18568abf401c13c1d6eb3e"
+    },
+    {
+      "path": "src/squlearn/kernel/qkode.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a61777d37c0553e314c5d7cc3c953a17c005e61e",
+      "size": 8299,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/a61777d37c0553e314c5d7cc3c953a17c005e61e"
+    },
+    {
+      "path": "src/squlearn/kernel/qkrr.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f343038e448b9ac060485994a8d57cd3cd1c323",
+      "size": 10192,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/1f343038e448b9ac060485994a8d57cd3cd1c323"
+    },
+    {
+      "path": "src/squlearn/kernel/qsvc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d64f3433213f365718fedd4f8ba07febaf50ac59",
+      "size": 8093,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/d64f3433213f365718fedd4f8ba07febaf50ac59"
+    },
+    {
+      "path": "src/squlearn/kernel/qsvr.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a223630c0e8adf3fd68cb897360ed7a7ba3961b0",
+      "size": 8113,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/a223630c0e8adf3fd68cb897360ed7a7ba3961b0"
+    },
+    {
+      "path": "src/squlearn/observables",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a31a8cec3f8a204951711120fbe3b8938cadcae8",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/a31a8cec3f8a204951711120fbe3b8938cadcae8"
+    },
+    {
+      "path": "src/squlearn/observables/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53dc055deebb41ca75d8fe23c87cd0d2e1baa282",
+      "size": 579,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/53dc055deebb41ca75d8fe23c87cd0d2e1baa282"
+    },
+    {
+      "path": "src/squlearn/observables/observable_base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "400ad125fc31c611fac7e37887d76a8b12eeafa0",
+      "size": 18928,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/400ad125fc31c611fac7e37887d76a8b12eeafa0"
+    },
+    {
+      "path": "src/squlearn/observables/observable_derivatives.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee30a42416c765b10b3c7d9f139d2e9f559bcf09",
+      "size": 13837,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/ee30a42416c765b10b3c7d9f139d2e9f559bcf09"
+    },
+    {
+      "path": "src/squlearn/observables/observable_implemented",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "db0abb9f8d2bf30bec62b7c686cde451d4f2b9bf",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/db0abb9f8d2bf30bec62b7c686cde451d4f2b9bf"
+    },
+    {
+      "path": "src/squlearn/observables/observable_implemented/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/squlearn/observables/observable_implemented/custom_observable.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38fd136c2448a26cf6df87adc94ef7579512d6d7",
+      "size": 4477,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/38fd136c2448a26cf6df87adc94ef7579512d6d7"
+    },
+    {
+      "path": "src/squlearn/observables/observable_implemented/ising_hamiltonian.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea2bb6bcf817962f7abdd18b072a73b53c8220a3",
+      "size": 7133,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/ea2bb6bcf817962f7abdd18b072a73b53c8220a3"
+    },
+    {
+      "path": "src/squlearn/observables/observable_implemented/single_pauli.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7a44aae1ce3e0e1c23ea6c3e53afe257270ab90",
+      "size": 3721,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/c7a44aae1ce3e0e1c23ea6c3e53afe257270ab90"
+    },
+    {
+      "path": "src/squlearn/observables/observable_implemented/single_probability.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd2e72222da97f482a0b44b3eceeed3010b2a4c1",
+      "size": 3891,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/cd2e72222da97f482a0b44b3eceeed3010b2a4c1"
+    },
+    {
+      "path": "src/squlearn/observables/observable_implemented/summed_paulis.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1b5c9a2b625ad1946ee4dd9c317803ce37b3254",
+      "size": 5084,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/d1b5c9a2b625ad1946ee4dd9c317803ce37b3254"
+    },
+    {
+      "path": "src/squlearn/observables/observable_implemented/summed_probabilities.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a785244f466c5d0ace630f1867b423809496c5d8",
+      "size": 4931,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/a785244f466c5d0ace630f1867b423809496c5d8"
+    },
+    {
+      "path": "src/squlearn/optimizers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2e1af693ef8fbb19e615335c1f12080d2db8e8eb",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/2e1af693ef8fbb19e615335c1f12080d2db8e8eb"
+    },
+    {
+      "path": "src/squlearn/optimizers/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "183d07f7b2d8a01ccc29503c90c04bb185b9c691",
+      "size": 388,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/183d07f7b2d8a01ccc29503c90c04bb185b9c691"
+    },
+    {
+      "path": "src/squlearn/optimizers/adam.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3ad339d4ebfaf808e7ab5c79c62f4265dd22de0",
+      "size": 9115,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/f3ad339d4ebfaf808e7ab5c79c62f4265dd22de0"
+    },
+    {
+      "path": "src/squlearn/optimizers/approximated_gradients.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91d08a3b3a38a836ec7ead9b368e3f65856e31c7",
+      "size": 4720,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/91d08a3b3a38a836ec7ead9b368e3f65856e31c7"
+    },
+    {
+      "path": "src/squlearn/optimizers/optimizer_base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e677eccf18e5afc0bf87d4d03b96140b46c07e62",
+      "size": 2822,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/e677eccf18e5afc0bf87d4d03b96140b46c07e62"
+    },
+    {
+      "path": "src/squlearn/optimizers/optimizers_wrapper.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "388091e393ba6f1fb8528fb867a0c7905d94bca5",
+      "size": 6820,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/388091e393ba6f1fb8528fb867a0c7905d94bca5"
+    },
+    {
+      "path": "src/squlearn/optimizers/sglbo.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b1db6778cf5fcedc1d05b55f72bd4dd28ebe294",
+      "size": 7787,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/3b1db6778cf5fcedc1d05b55f72bd4dd28ebe294"
+    },
+    {
+      "path": "src/squlearn/qnn",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "239c14b83138f08befdb10ca3bf8cf03145bfa2c",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/239c14b83138f08befdb10ca3bf8cf03145bfa2c"
+    },
+    {
+      "path": "src/squlearn/qnn/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94e1d3523b74c23aeb085a749ad82a6ade5317ac",
+      "size": 494,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/94e1d3523b74c23aeb085a749ad82a6ade5317ac"
+    },
+    {
+      "path": "src/squlearn/qnn/base_qnn.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d36992279a2de751f6fb09681d83c64e7cd337a",
+      "size": 16132,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/6d36992279a2de751f6fb09681d83c64e7cd337a"
+    },
+    {
+      "path": "src/squlearn/qnn/loss",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee4e887bee8b551de078b59a2cffe7cf598ceba1",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/ee4e887bee8b551de078b59a2cffe7cf598ceba1"
+    },
+    {
+      "path": "src/squlearn/qnn/loss/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92a6bd87cac6742ee20e14daa202b2ebaed26902",
+      "size": 521,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/92a6bd87cac6742ee20e14daa202b2ebaed26902"
+    },
+    {
+      "path": "src/squlearn/qnn/loss/cross_entropy_loss.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1103f9caddc9f093664a28ce966e4f43c43a1572",
+      "size": 5367,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/1103f9caddc9f093664a28ce966e4f43c43a1572"
+    },
+    {
+      "path": "src/squlearn/qnn/loss/mean_squared_error.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1147032eb1a31136e89bb83f3312ff8bec04f962",
+      "size": 5326,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/1147032eb1a31136e89bb83f3312ff8bec04f962"
+    },
+    {
+      "path": "src/squlearn/qnn/loss/ode_loss.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53118cbdfd4fbd9c129d85187a6d9052ef318375",
+      "size": 22980,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/53118cbdfd4fbd9c129d85187a6d9052ef318375"
+    },
+    {
+      "path": "src/squlearn/qnn/loss/parameter_regularization_loss.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b3e991672a8c53ea6a43f849b5964883e21f423",
+      "size": 6733,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/5b3e991672a8c53ea6a43f849b5964883e21f423"
+    },
+    {
+      "path": "src/squlearn/qnn/loss/qnn_loss_base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bba372eb7cb0d6b9eaec536a5eaab0b79fb6b04c",
+      "size": 13466,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/bba372eb7cb0d6b9eaec536a5eaab0b79fb6b04c"
+    },
+    {
+      "path": "src/squlearn/qnn/loss/squared_loss.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48cdcda70538f143e3bb6a92ddfd0c024b53604a",
+      "size": 5201,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/48cdcda70538f143e3bb6a92ddfd0c024b53604a"
+    },
+    {
+      "path": "src/squlearn/qnn/loss/variance_loss.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fdc3c46c93edc7dce6df4f89d5077e0523a801ae",
+      "size": 3656,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/fdc3c46c93edc7dce6df4f89d5077e0523a801ae"
+    },
+    {
+      "path": "src/squlearn/qnn/lowlevel_qnn",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0a3f5536f8daf7222501f90ad6aa83e7b067a041",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/0a3f5536f8daf7222501f90ad6aa83e7b067a041"
+    },
+    {
+      "path": "src/squlearn/qnn/lowlevel_qnn/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5438792681805f8f38d1631a14f766c1e413a8a",
+      "size": 65,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/e5438792681805f8f38d1631a14f766c1e413a8a"
+    },
+    {
+      "path": "src/squlearn/qnn/lowlevel_qnn/evaluation_classes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5de3c6fe6fc13b5549d4a6508d1f3a06d605ab9",
+      "size": 16272,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/c5de3c6fe6fc13b5549d4a6508d1f3a06d605ab9"
+    },
+    {
+      "path": "src/squlearn/qnn/lowlevel_qnn/lowlevel_qnn.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cc5ab7f028920aa3e7c413334b7b7e524a530c3",
+      "size": 2923,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/4cc5ab7f028920aa3e7c413334b7b7e524a530c3"
+    },
+    {
+      "path": "src/squlearn/qnn/lowlevel_qnn/lowlevel_qnn_base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "576fd83480ec771bfc2443c602dce6fdde4eb7e4",
+      "size": 6483,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/576fd83480ec771bfc2443c602dce6fdde4eb7e4"
+    },
+    {
+      "path": "src/squlearn/qnn/lowlevel_qnn/lowlevel_qnn_pennylane.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4197e245ab80e0749ed6fbb0dcf2bccd902fabf",
+      "size": 24756,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/c4197e245ab80e0749ed6fbb0dcf2bccd902fabf"
+    },
+    {
+      "path": "src/squlearn/qnn/lowlevel_qnn/lowlevel_qnn_qiskit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e148dc37c70662ef7e471a5ecfe7ea382ecbb8",
+      "size": 47191,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/10e148dc37c70662ef7e471a5ecfe7ea382ecbb8"
+    },
+    {
+      "path": "src/squlearn/qnn/lowlevel_qnn/lowlevel_qnn_qulacs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14b695d661918ae6f026063b43f212a6eea37310",
+      "size": 19482,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/14b695d661918ae6f026063b43f212a6eea37310"
+    },
+    {
+      "path": "src/squlearn/qnn/qnnc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1aba1af74219f0aaaf3d9ba3f72c54d15c2341a6",
+      "size": 13785,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/1aba1af74219f0aaaf3d9ba3f72c54d15c2341a6"
+    },
+    {
+      "path": "src/squlearn/qnn/qnnr.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9a4bdf67ca5bbfbba0b90841293a0839adca25a",
+      "size": 11801,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/c9a4bdf67ca5bbfbba0b90841293a0839adca25a"
+    },
+    {
+      "path": "src/squlearn/qnn/util",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "39447fa5fa42069294c29cc2cb2257039f332975",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/39447fa5fa42069294c29cc2cb2257039f332975"
+    },
+    {
+      "path": "src/squlearn/qnn/util/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee3b456fb87c4342f6a40d6475579f05e439b7ba",
+      "size": 155,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/ee3b456fb87c4342f6a40d6475579f05e439b7ba"
+    },
+    {
+      "path": "src/squlearn/qnn/util/barren_plateau_analysis.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b30e255332867f9b5e6ebd4b205a965fe40ef54a",
+      "size": 8602,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/b30e255332867f9b5e6ebd4b205a965fe40ef54a"
+    },
+    {
+      "path": "src/squlearn/qnn/util/training.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2236622e01292447e6d2858ac2ad3f1eecd9755",
+      "size": 19692,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/f2236622e01292447e6d2858ac2ad3f1eecd9755"
+    },
+    {
+      "path": "src/squlearn/qrc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a5329652146d437eabd6f211f744b290f3f28f67",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/a5329652146d437eabd6f211f744b290f3f28f67"
+    },
+    {
+      "path": "src/squlearn/qrc/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b71f39a96ec8b326f219316688847ded2496c28",
+      "size": 204,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/0b71f39a96ec8b326f219316688847ded2496c28"
+    },
+    {
+      "path": "src/squlearn/qrc/base_qrc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d52829273d1c12df1780e8b3e45e0cbc572bc030",
+      "size": 12242,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/d52829273d1c12df1780e8b3e45e0cbc572bc030"
+    },
+    {
+      "path": "src/squlearn/qrc/qrc_classifier.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d438a812a806a2e86df7639cbf033e0d793e1939",
+      "size": 5504,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/d438a812a806a2e86df7639cbf033e0d793e1939"
+    },
+    {
+      "path": "src/squlearn/qrc/qrc_regressor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c024d3db5501cfec1a1f09c7068a4364fa8432d",
+      "size": 5471,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/8c024d3db5501cfec1a1f09c7068a4364fa8432d"
+    },
+    {
+      "path": "src/squlearn/qrc/util",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c2f30ac098387c058ed9f89c0f3247848420dd50",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/c2f30ac098387c058ed9f89c0f3247848420dd50"
+    },
+    {
+      "path": "src/squlearn/qrc/util/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5806d3fc857bc945dc08b48cbab6c1df01ef4b8d",
+      "size": 104,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/5806d3fc857bc945dc08b48cbab6c1df01ef4b8d"
+    },
+    {
+      "path": "src/squlearn/qrc/util/random_pauli_list.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7925ff3b2ff6c7587e947d905406195a9b88faf",
+      "size": 1368,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/a7925ff3b2ff6c7587e947d905406195a9b88faf"
+    },
+    {
+      "path": "src/squlearn/util",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c288b8d6c112396e8c22f7c59df3d787ccf57fde",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/c288b8d6c112396e8c22f7c59df3d787ccf57fde"
+    },
+    {
+      "path": "src/squlearn/util/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21e7a8f31db17af6198d392105f23a13e365aa77",
+      "size": 92,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/21e7a8f31db17af6198d392105f23a13e365aa77"
+    },
+    {
+      "path": "src/squlearn/util/data_preprocessing.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f67b704faf8d9802a01ef14fe0e9ae91724d128f",
+      "size": 5361,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/f67b704faf8d9802a01ef14fe0e9ae91724d128f"
+    },
+    {
+      "path": "src/squlearn/util/decompose_to_std.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7093f4169338f8d9fc076b36a4514793a747a43d",
+      "size": 1437,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/7093f4169338f8d9fc076b36a4514793a747a43d"
+    },
+    {
+      "path": "src/squlearn/util/execution",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f91271104f25c747650b43c320568826b3aaa4fe",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/f91271104f25c747650b43c320568826b3aaa4fe"
+    },
+    {
+      "path": "src/squlearn/util/execution/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a157b96d48768ad500037d5b220a6b3707f4c51",
+      "size": 259,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/0a157b96d48768ad500037d5b220a6b3707f4c51"
+    },
+    {
+      "path": "src/squlearn/util/execution/automatic_backend_selection.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5cfcfe3b296a9eb0ab85403a6f275a3928680c6",
+      "size": 23936,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/a5cfcfe3b296a9eb0ab85403a6f275a3928680c6"
+    },
+    {
+      "path": "src/squlearn/util/execution/hqaa",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c0a5db5f0cbc1508ad334de6c4b8cff683dbd0fc",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/c0a5db5f0cbc1508ad334de6c4b8cff683dbd0fc"
+    },
+    {
+      "path": "src/squlearn/util/execution/hqaa/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6293ca9f1324897c2ade66d99748ebdc7b09f2ab",
+      "size": 68,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/6293ca9f1324897c2ade66d99748ebdc7b09f2ab"
+    },
+    {
+      "path": "src/squlearn/util/execution/hqaa/heuristic.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2f9e02960d60fcc08f6a51f40a70adfc45dcc22",
+      "size": 9194,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/f2f9e02960d60fcc08f6a51f40a70adfc45dcc22"
+    },
+    {
+      "path": "src/squlearn/util/execution/hqaa/parser.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbc7ca0c40aed7d2ef2f7b02b7b33f12cb05c765",
+      "size": 1874,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/cbc7ca0c40aed7d2ef2f7b02b7b33f12cb05c765"
+    },
+    {
+      "path": "src/squlearn/util/execution/parallel_estimator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ef61aa7938a45fd69a11a3e151f3c3d8cc1b559",
+      "size": 38029,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/6ef61aa7938a45fd69a11a3e151f3c3d8cc1b559"
+    },
+    {
+      "path": "src/squlearn/util/execution/parallel_sampler.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc38ec837c65e3c8039aa9fefe65dfe2ae4abe0d",
+      "size": 42747,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/dc38ec837c65e3c8039aa9fefe65dfe2ae4abe0d"
+    },
+    {
+      "path": "src/squlearn/util/executor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6331ba66a0f13f9e489b7abd59f09cd17143a944",
+      "size": 132127,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/6331ba66a0f13f9e489b7abd59f09cd17143a944"
+    },
+    {
+      "path": "src/squlearn/util/optree",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f3d32ace6349f49152c4b87675dd827d4715ba72",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/f3d32ace6349f49152c4b87675dd827d4715ba72"
+    },
+    {
+      "path": "src/squlearn/util/optree/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "688f24fdd21f15da83412bfdb7284a657fe50de7",
+      "size": 548,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/688f24fdd21f15da83412bfdb7284a657fe50de7"
+    },
+    {
+      "path": "src/squlearn/util/optree/optree.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3be5d4e941c3f1c651d0ee244839e9be8c3987be",
+      "size": 34522,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/3be5d4e941c3f1c651d0ee244839e9be8c3987be"
+    },
+    {
+      "path": "src/squlearn/util/optree/optree_derivative.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed933a41b855bf4f849f31c740157a33dd440245",
+      "size": 20478,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/ed933a41b855bf4f849f31c740157a33dd440245"
+    },
+    {
+      "path": "src/squlearn/util/optree/optree_evaluate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fc24a14e9403be2e33bff040d1c084df73da29c",
+      "size": 77235,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/0fc24a14e9403be2e33bff040d1c084df73da29c"
+    },
+    {
+      "path": "src/squlearn/util/pennylane",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6de5ef6d86e2d0561e7ed223278fed9f679b220c",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/6de5ef6d86e2d0561e7ed223278fed9f679b220c"
+    },
+    {
+      "path": "src/squlearn/util/pennylane/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a17a71fb2d93a32c4cc320dd81a1bc61f4a047f9",
+      "size": 218,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/a17a71fb2d93a32c4cc320dd81a1bc61f4a047f9"
+    },
+    {
+      "path": "src/squlearn/util/pennylane/pennylane_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a8079cad1f646710289bcc6190f853436f52b04",
+      "size": 29590,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/5a8079cad1f646710289bcc6190f853436f52b04"
+    },
+    {
+      "path": "src/squlearn/util/pennylane/pennylane_gates.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5dba03e1c319196fc3c4948f04e2f70440090f10",
+      "size": 2221,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/5dba03e1c319196fc3c4948f04e2f70440090f10"
+    },
+    {
+      "path": "src/squlearn/util/qfi.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "945959d6ab71467ff6eaabc2a225eb002133a290",
+      "size": 9731,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/945959d6ab71467ff6eaabc2a225eb002133a290"
+    },
+    {
+      "path": "src/squlearn/util/qulacs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "aa325b4e93d20de6257575edb478ade27485711f",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/aa325b4e93d20de6257575edb478ade27485711f"
+    },
+    {
+      "path": "src/squlearn/util/qulacs/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77939dc9f65389fa3793d05fc96002da877b6a62",
+      "size": 402,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/77939dc9f65389fa3793d05fc96002da877b6a62"
+    },
+    {
+      "path": "src/squlearn/util/qulacs/qulacs_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a402d07737fa1cafe93dd7ea29e6215a74c87f77",
+      "size": 35269,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/a402d07737fa1cafe93dd7ea29e6215a74c87f77"
+    },
+    {
+      "path": "src/squlearn/util/qulacs/qulacs_execution.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84aee7718ce4eb586abe04a22d351629f1053c53",
+      "size": 7010,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/84aee7718ce4eb586abe04a22d351629f1053c53"
+    },
+    {
+      "path": "src/squlearn/util/qulacs/qulacs_gates.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9cf2d5de37aae233c4ad9e6b2f0c81cdeedaca3",
+      "size": 3898,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/d9cf2d5de37aae233c4ad9e6b2f0c81cdeedaca3"
+    },
+    {
+      "path": "src/squlearn/util/serialization",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2807667049a0cd0b91eb2046dec80336e7e05d03",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/2807667049a0cd0b91eb2046dec80336e7e05d03"
+    },
+    {
+      "path": "src/squlearn/util/serialization/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abbcb33f365dece593e3cf296f3a7124549436ad",
+      "size": 126,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/abbcb33f365dece593e3cf296f3a7124549436ad"
+    },
+    {
+      "path": "src/squlearn/util/serialization/model_pickler.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b9d7a593bfd4e1f59d8b81d21885f255522a746",
+      "size": 2601,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/8b9d7a593bfd4e1f59d8b81d21885f255522a746"
+    },
+    {
+      "path": "src/squlearn/util/serialization/serializable_model_mixin.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7db47918c18e2f67c1528e102cfe97deb67b11be",
+      "size": 2482,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/7db47918c18e2f67c1528e102cfe97deb67b11be"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "23004fae6990c8ad6910146fdf1e05c79650cc42",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/23004fae6990c8ad6910146fdf1e05c79650cc42"
+    },
+    {
+      "path": "tests/encoding_circuit",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6bbebe59c15c512dfdfc2587fd8664c66508758d",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/6bbebe59c15c512dfdfc2587fd8664c66508758d"
+    },
+    {
+      "path": "tests/encoding_circuit/circuit_library",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b3d189bc6c8514d29764281832bf1b8f5f41cd92",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/b3d189bc6c8514d29764281832bf1b8f5f41cd92"
+    },
+    {
+      "path": "tests/encoding_circuit/circuit_library/test_chebyshev_pqc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2e9d1cb33e89059d9a17002c051326ad19648af",
+      "size": 8498,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/a2e9d1cb33e89059d9a17002c051326ad19648af"
+    },
+    {
+      "path": "tests/encoding_circuit/circuit_library/test_chebyshev_rx.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "303df6ddac50b6b879ce153d4c0076a046943f0e",
+      "size": 7392,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/303df6ddac50b6b879ce153d4c0076a046943f0e"
+    },
+    {
+      "path": "tests/encoding_circuit/circuit_library/test_chebyshev_tower.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "059f81574c48284dc3d241c50b6055e19125b89d",
+      "size": 8568,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/059f81574c48284dc3d241c50b6055e19125b89d"
+    },
+    {
+      "path": "tests/encoding_circuit/circuit_library/test_high_dim_encoding_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9bb729353a8e585196ebc168e312e4ce2c16ed7",
+      "size": 6678,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/f9bb729353a8e585196ebc168e312e4ce2c16ed7"
+    },
+    {
+      "path": "tests/encoding_circuit/circuit_library/test_hubregtsen_encoding_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6dc51924d199001f05540253fbd36cba834ab488",
+      "size": 6123,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/6dc51924d199001f05540253fbd36cba834ab488"
+    },
+    {
+      "path": "tests/encoding_circuit/circuit_library/test_kyriienko_encoding_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d12c9fc0dbfad4436c30830739d7a14d9b998f4",
+      "size": 12111,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/4d12c9fc0dbfad4436c30830739d7a14d9b998f4"
+    },
+    {
+      "path": "tests/encoding_circuit/circuit_library/test_multi_control_encoding_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95681fb77fd313d2c2d4f591dda9e93aabdf38d3",
+      "size": 6236,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/95681fb77fd313d2c2d4f591dda9e93aabdf38d3"
+    },
+    {
+      "path": "tests/encoding_circuit/circuit_library/test_param_z_feature_map.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9548ffc94538632e2772a4e1c7ce6709ed02c778",
+      "size": 4038,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/9548ffc94538632e2772a4e1c7ce6709ed02c778"
+    },
+    {
+      "path": "tests/encoding_circuit/circuit_library/test_qcnn_encoding_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10ed330726d9453beb39e5bf646d1134b7f549c0",
+      "size": 6687,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/10ed330726d9453beb39e5bf646d1134b7f549c0"
+    },
+    {
+      "path": "tests/encoding_circuit/circuit_library/test_qiskit_encoding_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d6c396d1e683a9592e2f237955eeaf50f953c42",
+      "size": 5263,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/5d6c396d1e683a9592e2f237955eeaf50f953c42"
+    },
+    {
+      "path": "tests/encoding_circuit/circuit_library/test_random_encoding_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9507316a3aeb94dd5d9be4a647e8a1e64ce30686",
+      "size": 8125,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/9507316a3aeb94dd5d9be4a647e8a1e64ce30686"
+    },
+    {
+      "path": "tests/encoding_circuit/circuit_library/test_random_layered_encoding_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ea45f0ffd22122e3364ca65230905f0b9d93041",
+      "size": 6137,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/6ea45f0ffd22122e3364ca65230905f0b9d93041"
+    },
+    {
+      "path": "tests/encoding_circuit/circuit_library/test_yz_cx_encoding_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3de51d6ccbe3078d89164d6862b8ce40b877dcf",
+      "size": 4980,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/b3de51d6ccbe3078d89164d6862b8ce40b877dcf"
+    },
+    {
+      "path": "tests/encoding_circuit/test_encoding_circuit_base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2012f94e8bd89e3263c86b82f75c7505afa7bdd",
+      "size": 3819,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/a2012f94e8bd89e3263c86b82f75c7505afa7bdd"
+    },
+    {
+      "path": "tests/encoding_circuit/test_encoding_circuit_derivatives.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc1cc284bffe3e35fb52e4fd9aa12897d5f511eb",
+      "size": 5443,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/bc1cc284bffe3e35fb52e4fd9aa12897d5f511eb"
+    },
+    {
+      "path": "tests/encoding_circuit/test_layered_encoding_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc463dac51a4f154e9f5ef802a0079b0011975f9",
+      "size": 11652,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/fc463dac51a4f154e9f5ef802a0079b0011975f9"
+    },
+    {
+      "path": "tests/encoding_circuit/test_pruned_encoding_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1a4997bb11a78ea4848019c6a3493c823d70f1f",
+      "size": 4639,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/d1a4997bb11a78ea4848019c6a3493c823d70f1f"
+    },
+    {
+      "path": "tests/kernel",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "67b2db9128dd1e2c9651a6cb287d195afe9edfba",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/67b2db9128dd1e2c9651a6cb287d195afe9edfba"
+    },
+    {
+      "path": "tests/kernel/loss",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "57b548686f43c84af0ac5d1c27e14ffb88937882",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/57b548686f43c84af0ac5d1c27e14ffb88937882"
+    },
+    {
+      "path": "tests/kernel/loss/test_ode_loss.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6938a2bcce753095004e17c4a69409db80f13e09",
+      "size": 4105,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/6938a2bcce753095004e17c4a69409db80f13e09"
+    },
+    {
+      "path": "tests/kernel/lowlevel_kernel",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8465a0d51adcd04799f45bb8703c1781b7b286f4",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/8465a0d51adcd04799f45bb8703c1781b7b286f4"
+    },
+    {
+      "path": "tests/kernel/lowlevel_kernel/test_fidelity_kernel.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de4970094d81ad01adbb027641ca9e573c3dbb4d",
+      "size": 11446,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/de4970094d81ad01adbb027641ca9e573c3dbb4d"
+    },
+    {
+      "path": "tests/kernel/lowlevel_kernel/test_fidelity_kernel_expectation_value.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cca6225625a2fcfec62ac6ae5313ceab97870a43",
+      "size": 6676,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/cca6225625a2fcfec62ac6ae5313ceab97870a43"
+    },
+    {
+      "path": "tests/kernel/lowlevel_kernel/test_fidelity_kernel_statevector.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d86227011a863ce0633c7397b2d94dd35b5e9f62",
+      "size": 15325,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/d86227011a863ce0633c7397b2d94dd35b5e9f62"
+    },
+    {
+      "path": "tests/kernel/lowlevel_kernel/test_fidelity_quantum_kernel.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60328d22b4b34d4e250cd48704df976ff71f5fde",
+      "size": 6347,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/60328d22b4b34d4e250cd48704df976ff71f5fde"
+    },
+    {
+      "path": "tests/kernel/lowlevel_kernel/test_kernel_optimizer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a26110b70cd848a5d1ab139898640e9f4692a64",
+      "size": 3441,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/5a26110b70cd848a5d1ab139898640e9f4692a64"
+    },
+    {
+      "path": "tests/kernel/lowlevel_kernel/test_projected_quantum_kernel.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "795a760f62a77c55aaabf4670ef1ceda2a08b400",
+      "size": 4505,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/795a760f62a77c55aaabf4670ef1ceda2a08b400"
+    },
+    {
+      "path": "tests/kernel/ml",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ec4be904114fcbbc8fbf55a910206a3993e53601",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/ec4be904114fcbbc8fbf55a910206a3993e53601"
+    },
+    {
+      "path": "tests/kernel/ml/test_qkode.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51781cc413645b84a448e7d7d174e03dd5ead182",
+      "size": 2979,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/51781cc413645b84a448e7d7d174e03dd5ead182"
+    },
+    {
+      "path": "tests/kernel/test_qgpc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bddb5beb3e42925f36ae4f9a869b6f6f3de660cf",
+      "size": 10029,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/bddb5beb3e42925f36ae4f9a869b6f6f3de660cf"
+    },
+    {
+      "path": "tests/kernel/test_qgpr.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5870fe260c370b62a5471be8d65e13af6978142",
+      "size": 10587,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/b5870fe260c370b62a5471be8d65e13af6978142"
+    },
+    {
+      "path": "tests/kernel/test_qkrr.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68de3eb3a38e74ff7f4d25337ae2511a8c9bbe6c",
+      "size": 9209,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/68de3eb3a38e74ff7f4d25337ae2511a8c9bbe6c"
+    },
+    {
+      "path": "tests/kernel/test_qsvc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48128f1bd8c17829a56ba6a5829bb8bd379fcd27",
+      "size": 9918,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/48128f1bd8c17829a56ba6a5829bb8bd379fcd27"
+    },
+    {
+      "path": "tests/kernel/test_qsvr.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df0ca34875ba540d05004fdcba496e8d458656bf",
+      "size": 9834,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/df0ca34875ba540d05004fdcba496e8d458656bf"
+    },
+    {
+      "path": "tests/observables",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1dc1f24ea2e3d13fcb2d11b5d89863999512c26b",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/1dc1f24ea2e3d13fcb2d11b5d89863999512c26b"
+    },
+    {
+      "path": "tests/observables/observable_implemented",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6f4c1740461f183f816153479507032b131f720f",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/6f4c1740461f183f816153479507032b131f720f"
+    },
+    {
+      "path": "tests/observables/observable_implemented/test_custom_observable.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8983393744d78f9cad7e84bd88af3a3715062e00",
+      "size": 6628,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/8983393744d78f9cad7e84bd88af3a3715062e00"
+    },
+    {
+      "path": "tests/observables/observable_implemented/test_ising_hamiltonian.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8592fbdd85ed63344b6b80ab1a616f14be372c24",
+      "size": 6438,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/8592fbdd85ed63344b6b80ab1a616f14be372c24"
+    },
+    {
+      "path": "tests/observables/observable_implemented/test_single_pauli.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8fe51de3d48048a59141561557b954cf7115a48",
+      "size": 5310,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/e8fe51de3d48048a59141561557b954cf7115a48"
+    },
+    {
+      "path": "tests/observables/observable_implemented/test_single_probability.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da032ec66d9f463bd36f27cd3026b431bc0cdba2",
+      "size": 2780,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/da032ec66d9f463bd36f27cd3026b431bc0cdba2"
+    },
+    {
+      "path": "tests/observables/observable_implemented/test_summed_paulis.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae0bceafcf48cb0164c9db9d9820a63b1169ac40",
+      "size": 6147,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/ae0bceafcf48cb0164c9db9d9820a63b1169ac40"
+    },
+    {
+      "path": "tests/observables/observable_implemented/test_summed_probability.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4df0cdf68d2b6ea57f4481ff862fb84957f13131",
+      "size": 3994,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/4df0cdf68d2b6ea57f4481ff862fb84957f13131"
+    },
+    {
+      "path": "tests/observables/test_observable_base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba062ae38dcb496d63a387906c7e1c51271f4d1e",
+      "size": 7122,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/ba062ae38dcb496d63a387906c7e1c51271f4d1e"
+    },
+    {
+      "path": "tests/optimizers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e6e20fb48084315c102e399655a5be0484fe292b",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/e6e20fb48084315c102e399655a5be0484fe292b"
+    },
+    {
+      "path": "tests/optimizers/test_adam.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd4ba7da0135be4a50a69b34c0a3f5a5352b64d1",
+      "size": 2431,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/bd4ba7da0135be4a50a69b34c0a3f5a5352b64d1"
+    },
+    {
+      "path": "tests/optimizers/test_approximated_gradients.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b21c8b8e4d4489790574cf591c60cda7b0c1634",
+      "size": 3063,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/6b21c8b8e4d4489790574cf591c60cda7b0c1634"
+    },
+    {
+      "path": "tests/optimizers/test_optimizers_wrapper.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07f5d000be33ba308cee8fcca85084b36c0083c5",
+      "size": 2069,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/07f5d000be33ba308cee8fcca85084b36c0083c5"
+    },
+    {
+      "path": "tests/optimizers/test_sglbo.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cb1cbca1360f864bef4a36286e0f4f34f83dff8",
+      "size": 857,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/5cb1cbca1360f864bef4a36286e0f4f34f83dff8"
+    },
+    {
+      "path": "tests/qiskit_circuit_equivalence.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d835f6f2eceea2fd5b07d5bb542aaab8560a305d",
+      "size": 1493,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/d835f6f2eceea2fd5b07d5bb542aaab8560a305d"
+    },
+    {
+      "path": "tests/qnn",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "77fdfcb5aa0a9507fc05eedca6acdb663c555853",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/77fdfcb5aa0a9507fc05eedca6acdb663c555853"
+    },
+    {
+      "path": "tests/qnn/loss",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d718a1e555a627962d8bf04c925efaef9b5dc60e",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/d718a1e555a627962d8bf04c925efaef9b5dc60e"
+    },
+    {
+      "path": "tests/qnn/loss/test_cross_entropy_loss.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d91b59175b15e33a651911ee70f59eccada2e0bd",
+      "size": 2068,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/d91b59175b15e33a651911ee70f59eccada2e0bd"
+    },
+    {
+      "path": "tests/qnn/loss/test_mean_squared_error.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a19f891fe2af8c242a3f1a42dab2dcfddcae41cc",
+      "size": 5561,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/a19f891fe2af8c242a3f1a42dab2dcfddcae41cc"
+    },
+    {
+      "path": "tests/qnn/loss/test_ode_loss.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "264f9aebcc038798a2e7664e3f5aa61c72d82ac5",
+      "size": 9310,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/264f9aebcc038798a2e7664e3f5aa61c72d82ac5"
+    },
+    {
+      "path": "tests/qnn/loss/test_parameter_regularization_loss.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aaa5fb53f8d7a9ceb2c035406a49f5bb86472218",
+      "size": 5707,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/aaa5fb53f8d7a9ceb2c035406a49f5bb86472218"
+    },
+    {
+      "path": "tests/qnn/loss/test_squared_loss.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "856087a7f8d10b76da0fd9c1e5e6dcfc18595308",
+      "size": 5268,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/856087a7f8d10b76da0fd9c1e5e6dcfc18595308"
+    },
+    {
+      "path": "tests/qnn/loss/test_variance_loss.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6588f463396faefe71eac82b2b86843b1d01e517",
+      "size": 4229,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/6588f463396faefe71eac82b2b86843b1d01e517"
+    },
+    {
+      "path": "tests/qnn/lowlevel_qnn",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "681d7c9bf5c87b95d4e9e38f4b6ce569999650a3",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/681d7c9bf5c87b95d4e9e38f4b6ce569999650a3"
+    },
+    {
+      "path": "tests/qnn/lowlevel_qnn/test_lowlevel_qnn.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc4218ef5eddf92b7f4492f7a96a678ab9507c10",
+      "size": 3186,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/bc4218ef5eddf92b7f4492f7a96a678ab9507c10"
+    },
+    {
+      "path": "tests/qnn/test_base_qnn.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "109188e98752680279d61c03306d767bca320090",
+      "size": 6187,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/109188e98752680279d61c03306d767bca320090"
+    },
+    {
+      "path": "tests/qnn/test_loss.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f26bc389f8efb592c3136bff7ed639e575bf68ed",
+      "size": 3649,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/f26bc389f8efb592c3136bff7ed639e575bf68ed"
+    },
+    {
+      "path": "tests/qnn/test_qnnc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9429ceea33cdbfc37ee2b22d49fff25bf5796c6d",
+      "size": 12338,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/9429ceea33cdbfc37ee2b22d49fff25bf5796c6d"
+    },
+    {
+      "path": "tests/qnn/test_qnnr.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0d9e05b30416c880aad7d0e4dccb9a20f03a668",
+      "size": 12432,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/a0d9e05b30416c880aad7d0e4dccb9a20f03a668"
+    },
+    {
+      "path": "tests/qnn/test_training.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfd282b2f8d097ab46393b40ec65c176befdeb3d",
+      "size": 7591,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/dfd282b2f8d097ab46393b40ec65c176befdeb3d"
+    },
+    {
+      "path": "tests/qrc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b2f079faa3d9102669784f6ae4204bf8cfe677df",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/b2f079faa3d9102669784f6ae4204bf8cfe677df"
+    },
+    {
+      "path": "tests/qrc/test_base_qrc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d407075dd22763a8ddc536579780cae46d5c8fa0",
+      "size": 2531,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/d407075dd22763a8ddc536579780cae46d5c8fa0"
+    },
+    {
+      "path": "tests/qrc/test_qrc_classifier.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c91d17d95f15a7a2c2fbdca9de215edd2918ed6",
+      "size": 2539,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/0c91d17d95f15a7a2c2fbdca9de215edd2918ed6"
+    },
+    {
+      "path": "tests/qrc/test_qrc_regressor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ee0b1f0ad9ddc0f4d76854c9ef04a5471cae28b",
+      "size": 2764,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/0ee0b1f0ad9ddc0f4d76854c9ef04a5471cae28b"
+    },
+    {
+      "path": "tests/util",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cbedbad93099f93326d360876487caf9c12d46f2",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/cbedbad93099f93326d360876487caf9c12d46f2"
+    },
+    {
+      "path": "tests/util/execution",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3cdf8ef3b4e4f7d041ce59b412edc0b204dfc9e4",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/3cdf8ef3b4e4f7d041ce59b412edc0b204dfc9e4"
+    },
+    {
+      "path": "tests/util/execution/test_automatic_backend_selection.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41db7a0aea0c8f2a99c78181e580b5912f4264be",
+      "size": 6630,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/41db7a0aea0c8f2a99c78181e580b5912f4264be"
+    },
+    {
+      "path": "tests/util/execution/test_parallel_primitives.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3de2e30b1841510066fe843f41e2fe4b5eb6e58",
+      "size": 1769,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/f3de2e30b1841510066fe843f41e2fe4b5eb6e58"
+    },
+    {
+      "path": "tests/util/optree",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9b2485a288d50d32deae1f0d9e76cca6cbd7a3db",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/9b2485a288d50d32deae1f0d9e76cca6cbd7a3db"
+    },
+    {
+      "path": "tests/util/optree/test_optree_derivative.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1df98aa29d0c7cc29bcc21b2249d8566f916f5e2",
+      "size": 7493,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/1df98aa29d0c7cc29bcc21b2249d8566f916f5e2"
+    },
+    {
+      "path": "tests/util/optree/test_optree_evaluate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9719b3e21aca60fc8b90f118be61f92ea616e6b2",
+      "size": 13737,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/9719b3e21aca60fc8b90f118be61f92ea616e6b2"
+    },
+    {
+      "path": "tests/util/serialization",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "36d71a76e3d85b6364e07ef341841f19a6e67132",
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/trees/36d71a76e3d85b6364e07ef341841f19a6e67132"
+    },
+    {
+      "path": "tests/util/serialization/test_model_pickler.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8aec2bcee69f91a68c4f888f08761f03c7046f91",
+      "size": 2415,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/8aec2bcee69f91a68c4f888f08761f03c7046f91"
+    },
+    {
+      "path": "tests/util/test_executor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eba117a1e3c5c66853e55dfbde713f8b72399e8d",
+      "size": 22097,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/eba117a1e3c5c66853e55dfbde713f8b72399e8d"
+    },
+    {
+      "path": "tests/util/test_pennylane_circuit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afa632efe511cc82beb812095205485f8333cc9a",
+      "size": 6123,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/afa632efe511cc82beb812095205485f8333cc9a"
+    },
+    {
+      "path": "tests/util/test_transpiler_target_aliases.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38a00cb6276f10df352e75094aa7a771040ff1d2",
+      "size": 1194,
+      "url": "https://api.github.com/repos/sQUlearn/squlearn/git/blobs/38a00cb6276f10df352e75094aa7a771040ff1d2"
+    }
+  ],
+  "truncated": false
+}

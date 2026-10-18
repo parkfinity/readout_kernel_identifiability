@@ -1,0 +1,10 @@
+hubregtsen_encoding_circuit_n2_l1 {'all_X': 2, 'all_Y': 0, 'all_Z': 2, 'variance_selected': 0, 'rank_selected': 2, 'rank_selected_identity': 2}
+hubregtsen_encoding_circuit_n2_l2 {'all_X': 4, 'all_Y': 2, 'all_Z': 4, 'variance_selected': 2, 'rank_selected': 4, 'rank_selected_identity': 4}
+hubregtsen_encoding_circuit_n4_l1 {'all_X': 8, 'all_Y': 8, 'all_Z': 4, 'variance_selected': 8, 'rank_selected': 8, 'rank_selected_identity': 8}
+hubregtsen_encoding_circuit_n4_l2 {'all_X': 16, 'all_Y': 16, 'all_Z': 12, 'variance_selected': 16, 'rank_selected': 16, 'rank_selected_identity': 16}
+kyriienko_nonlinear_encoding_circuit_n2_l1 {'all_X': 4, 'all_Y': 6, 'all_Z': 4, 'variance_selected': 4, 'rank_selected': 6, 'rank_selected_identity': 6}
+kyriienko_nonlinear_encoding_circuit_n4_l1 {'all_X': 8, 'all_Y': 12, 'all_Z': 8, 'variance_selected': 8, 'rank_selected': 12, 'rank_selected_identity': 12}
+yz_cx_encoding_circuit_n2_l1 {'all_X': 4, 'all_Y': 4, 'all_Z': 2, 'variance_selected': 2, 'rank_selected': 4, 'rank_selected_identity': 4}
+yz_cx_encoding_circuit_n2_l2 {'all_X': 8, 'all_Y': 8, 'all_Z': 6, 'variance_selected': 8, 'rank_selected': 8, 'rank_selected_identity': 8}
+yz_cx_encoding_circuit_n4_l1 {'all_X': 8, 'all_Y': 8, 'all_Z': 4, 'variance_selected': 4, 'rank_selected': 8, 'rank_selected_identity': 8}
+yz_cx_encoding_circuit_n4_l2 {'all_X': 16, 'all_Y': 16, 'all_Z': 12, 'variance_selected': 15, 'rank_selected': 16, 'rank_selected_identity': 16}

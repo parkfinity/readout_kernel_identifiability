@@ -1,0 +1,161 @@
+\section{Finite-shot sensitivity and estimator controls}
+\label{sec:shotdesign}
+The question here is whether restored ideal dependence is well
+resolved at a fixed shot budget, not whether rank alone improves
+prediction. Grouped Pauli measurement and shot allocation affect
+finite-sampling error, so the number of observables alone is not a
+measurement-cost metric \cite{crawford2021efficient}. We fix the
+measurement schedules below rather than optimize over all grouping
+or shot-allocation strategies.
+The follow-up fixes three seed panels, each with three design points
+and five held-out parameter/input probes, for YZ-CX and Kyriienko
+two-qubit local XYZ and four-qubit Hubregtsen local Z and Z+ZZ.
+Inputs are synthetic continuous values; no labels or predictive
+accuracy are used. Each design selects one metric from the same
+34-candidate bank at 1,024 shots and keeps it fixed at all evaluation
+points and budgets. We compare isotropy, fixed diagonal anisotropy,
+untuned random diagonal/dense metrics, rank-based selection and a
+noise-aware variant. Both selectors prioritize rank; their tie-breakers
+use, respectively, unweighted and noise-whitened retained singular
+values of the distance Jacobian. All use ideal model information.
+
+For 16 disjoint input pairs, let $J$ be the distance Jacobian and
+$Q$ an orthonormal basis of parameter directions visible in the
+centered reference features. Let $\nu_p$ be the exact variance of an
+unbiased split-shot distance estimate at the unperturbed point.
+The local diagnostic for a total displacement of $\epsilon=0.1$ is
+\begin{equation}
+ W=\epsilon\,\diag\bigl((2\nu_p)^{-1/2}\bigr)JQ.
+ \label{eq:shotwhiten}
+\end{equation}
+The factor two accounts for independent estimates at the two
+parameter states in the local limit. The smallest retained singular
+value is reported alongside rank; the weakest sensitivity over the
+\emph{whole} target space is zero if rank is deficient. Reference
+spaces, directions, inputs and selected metrics are frozen before
+server evaluation. This prevents a method-specific choice of favorable
+test directions and does not mistake rotation of a nullspace for
+an increase in total rank.
+
+\begin{table*}[tp]
+\caption{Held-out noise-normalized sensitivity at 4,096 requested
+shots per input and parameter state. Each triple gives seed-panel
+medians of five paired ratios, not a ratio of medians.
+The statistic is the smallest retained singular value of
+Eq.~\eqref{eq:shotwhiten}; ratios above one favor noise-aware selection.
+The final column instead gives the median weakest sensitivity over
+the whole reference space. Hubregtsen local Z remains rank deficient;
+its retained-sensitivity ratio to a rank-two diagonal metric would
+compare different ranks and is omitted. These are ideal-model
+diagnostics, not measured classification or hardware gains.}
+\label{tab:shotdesign}
+\small
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Circuit/readout & Target rank & Versus fixed diagonal & Versus rank-based & Whole-space weakest\\
+\midrule
+YZ-CX 2q/local XYZ & $4/4$ & $1.77,1.65,2.33$ & $1.00,1.30,1.61$ & $0.331,0.425,0.415$\\
+Kyriienko 2q/local XYZ & $6/6$ & $1.75,2.03,3.22$ & $1.00,1.24,1.10$ & $0.135,0.254,0.275$\\
+Hubregtsen 4q/local Z & $3/4$ & not comparable & $1.00,1.00,1.00$ & $0,0,0$\\
+Hubregtsen 4q/Z+ZZ & $4/4$ & $1.22,1.32,0.91$ & $1.00,1.00,1.00$ & $0.0082,0.0188,0.0052$\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+Table~\ref{tab:shotdesign} shows improvements over fixed anisotropy
+for YZ-CX and Kyriienko at the level of panel medians, but not uniform
+improvement at every point. The noise-aware and rank-based selectors
+choose the same metric in eight of twelve panel/readout designs.
+Even in the four differing designs, some held-out points deteriorate.
+For Hubregtsen Z+ZZ the fourth direction becomes identifiable but
+the whole-space weakest sensitivity is only $0.0052$--$0.0188$ at
+4,096 requested shots: a fourth direction exists mathematically but
+is weakly resolved by this local, noise-normalized diagnostic.
+This statistic is neither a detection probability nor classification
+accuracy. One panel's
+median ratio to fixed anisotropy is below one. The result therefore
+supports recovery-aware diagnosis, not generic superiority of a new
+metric-learning algorithm.
+
+All four budgets, $256$, $1{,}024$, $4{,}096$ and $16{,}384$, are
+retained. Joint multinomial sampling uses 256 replicates and preserves
+within-basis correlations; local XYZ splits the total across three
+bases, while Z and Z+ZZ share ZZZZ outcomes. Empirical/predicted
+variance ratios have pooled median $0.997$ and 5th--95th percentiles
+$[0.864,1.143]$. These are descriptive calibration statistics, not
+independent hypothesis tests. Method-specific ideal matched contrasts
+are permitted symmetrically in the finite-displacement check, so it
+remains an oracle diagnostic rather than practical detection power.
+Appendix~\ref{app:shotprotocol} gives the estimator, full budget table,
+measurement accounting, and cross-platform replay.
+
+\subsection{A classical product-feature control on the same outcomes}
+\label{sec:productcontrol}
+This control asks a separate question: can the same ideal lifted
+representation be estimated more precisely from the same outcomes?
+For the Hubregtsen family in Sec.~\ref{sec:recovery}, we additionally
+form every ZZ feature by multiplying the two local-Z sample means
+\emph{within each independent shot half}. This changes only the
+estimator, not the ideal lifted representation or its rank. Joint
+Z-outcome probabilities factorize, so these products are unbiased;
+the independent-half distance estimator is then unbiased as well.
+Under this factorization, the product estimator is the conditional
+expectation of the direct-parity estimator given the per-qubit
+counts. Conditional variance therefore cannot increase for a fixed
+metric and a fixed linear distance contrast. The proof and exact
+covariances appear in Appendix~\ref{app:productcontrol}. This is a
+classical estimation control exploiting a known model restriction,
+not a new quantum measurement advantage.
+
+\begin{corollary}[Local sensitivity under product estimation]
+\label{cor:productsensitivity}
+Under the product Z-distribution assumptions of
+Appendix~\ref{app:productcontrol}, fix the metric, shot allocation,
+parameter point, disjoint input pairs, target basis $Q$, and
+displacement $\epsilon$. Use independent shot halves and independent
+estimates across pairs. Suppose both estimators have strictly positive
+distance variance for each pair. For $W$ in Eq.~\eqref{eq:shotwhiten},
+\begin{equation}
+ W_{\rm product}^T W_{\rm product}
+ \succeq W_{\rm direct}^T W_{\rm direct}.
+ \label{eq:productinformation}
+\end{equation}
+Every ordered singular value is therefore nondecreasing, while the
+rank and nullspace are unchanged. In particular, the smallest retained
+sensitivity cannot decrease; a missing target direction remains missing.
+\end{corollary}
+\begin{proof}
+Conditional variance gives
+$0<\nu_{{\rm product},p}\le\nu_{{\rm direct},p}$ for every pair.
+The ideal representation, and hence $JQ$, is identical. Writing its
+$p$th row as $a_p^T$, the difference in Eq.~\eqref{eq:productinformation}
+is
+\begin{equation}
+ \frac{\epsilon^2}{2}\sum_p
+ \left(\frac{1}{\nu_{{\rm product},p}}-
+       \frac{1}{\nu_{{\rm direct},p}}\right)a_pa_p^T\succeq0.
+\end{equation}
+The eigenvalue min--max principle gives the singular-value ordering.
+Positive row weights preserve the rank and nullspace of $JQ$.
+\end{proof}
+This is a weak, local-limit comparison at the same fixed design.
+It neither guarantees strict improvement nor compares selectors that
+choose different metrics. Table~\ref{tab:shotdesign} retains the
+original direct-parity sensitivity results; the paired variances below
+concern finite displacements and fixed contrasts, a distinct statistic.
+
+A supplementary local check reuses all three frozen panels, five
+held-out points, four target directions, six metric arms and four
+shot budgets. Both estimators use identical outcomes and the
+\emph{original direct-parity contrast}; no metrics or contrasts are
+retuned. At 4,096 shots, the three panel medians of the exact
+product/direct contrast-variance ratio are $0.895,0.829,0.869$ for
+the frozen noise-aware arm. Lower is better; these correspond to
+about $10.5\%,17.1\%,13.1\%$ variance reductions for that comparison,
+not hardware-shot reductions. The rank-three original-local-Z
+dense-metric control remains distinct from both rank-four lifted
+representations. The direct-parity draws reproduce the saved server
+samples within $5.6\times10^{-14}$; the new product arm has so far
+been evaluated locally, not replayed on the server. These results
+reinforce the distinction between nonlinear representation and its
+estimation, rather than the superiority of direct ZZ measurement.

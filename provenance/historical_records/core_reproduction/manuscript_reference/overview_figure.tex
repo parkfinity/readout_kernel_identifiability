@@ -1,0 +1,25 @@
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/overview_vector.pdf}
+\caption{Overview: kernel equivalence, dimension, and execution cost.
+(a) Schematic ideal-expectation geometry. A common input-independent
+state transformation preserves the specified kernel when it induces
+the displayed $M$-isometry of features; arbitrary unitaries need not
+do so. $K_\theta$ denotes the sampled kernel matrix, distinct from
+the coefficient Gram matrix $G$ in (b).
+(b) For a fixed data basis with $\{1,h_1,\ldots,h_A\}$ linearly
+independent on the actual input domain, fixed $M\succ0$, fixed
+$\gamma>0$, and analytic coefficients on an open connected parameter
+box, Theorem~\ref{thm:gram} characterizes all-input equivalence,
+global coordinate inactivity, and generic differential rank through $G$.
+The two-qubit local-XYZ Kyriienko example has six source parameters
+and rank four, certified by a Gram minor and an output gauge.
+(c) The ChebyshevRx example separates retained symbols ($7\to5$),
+exact smooth kernel dimension ($r=4$), and globally normalized
+angle tasks ($3\to3$ in the boundary and transport arms;
+Table~\ref{tab:global}). Its parameter--data products lie outside
+(b)'s fixed-basis construction: the separate closed-form factorization
+and exact minor establish its dimension. Task counts are
+schedule-specific, not native-gate or hardware-shot measurements.}
+\label{fig:overview}
+\end{figure*}

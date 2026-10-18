@@ -1,0 +1,437 @@
+\section{Metric defect and finite perturbations}
+\label{app:bound}
+\begin{proposition}[Finite-angle Gram and ridge stability]
+\label{prop:stability}
+For a single common output Pauli rotation with closed readout, fix the
+prefix, positive metric and RBF bandwidth. If $\partial_t f=Gf$, set
+\begin{align}
+ B&=G^TM+MG,\qquad
+ b=e^{-1}\norm{M^{-1/2}BM^{-1/2}}_2,\\
+ \eta&=\min\{1,b|t-s|\}.
+\end{align}
+Then each kernel entry changes by at most $\eta$, and on $N$ fixed
+training inputs $\norm{K_t-K_s}_2\leq(N-1)\eta$.
+For normalized ridge regression $\alpha_u=(K_u+N\lambda I)^{-1}y$,
+$h_u(x)=k_u(x)^T\alpha_u$, and fixed $\lambda>0$,
+\begin{equation}
+ |h_t(x)-h_s(x)|\leq\frac{\norm{y}_2}{\sqrt N}\eta
+ \left[\frac1\lambda+\frac{N-1}{N\lambda^2}\right].\label{eq:krr}
+\end{equation}
+\end{proposition}
+The proof below integrates a uniform derivative
+bound and applies the resolvent identity. It uses standard estimates.
+The result compares fixed kernel fits, not independently evolving
+optimization paths, and does not apply when the same symbol also
+changes the prefix. Small regularization can make the bound loose.
+The earlier 756 derivative-bound conditions and 48 finite-angle/Gram/KRR
+checks exhibit no violations beyond their numerical tolerances; they
+do not prove tightness or independent mathematical correctness.
+
+
+The proposition concerns exact output transport only. It neither bounds
+an approximate internal transport residual nor selects a pruning
+threshold for the exact algorithm. Tightness at the runner's actual
+regularization has not been established; no tolerance-based deletion
+is authorized by this ancillary bound.
+
+For a closed readout under one common output rotation,
+$\partial_t f=Gf$. Set $d^2=\delta^TM\delta$ and
+$B=G^TM+MG$. Then
+\begin{align}
+ \partial_t d^2&=\delta^TB\delta,\\
+ |\partial_t d^2|&\leq\norm{M^{-1/2}BM^{-1/2}}_2d^2.
+\end{align}
+Differentiating $k=e^{-\gamma d^2}$ and using $ze^{-z}\leq1/e$
+gives $|\partial_t k|\leq b$. For diagonal paired weights, the
+whitened symmetric block has off-diagonal magnitude
+$|w_i-w_j|/\sqrt{w_iw_j}$, so its operator norm is the largest
+such quantity over rotating pairs. Integration on $[s,t]$ and
+$0\leq k\leq1$ give the entry bound $\eta$ in
+Proposition~\ref{prop:stability}.
+
+The Gram difference is symmetric with zero diagonal and row sums in
+absolute value at most $(N-1)\eta$. Its spectral norm obeys the
+same bound. Positive semidefiniteness gives
+\begin{equation}
+ \norm{(K_u+N\lambda I)^{-1}}_2\leq(N\lambda)^{-1}.
+\end{equation}
+The resolvent identity bounds the inverse difference by
+$(N-1)\eta/(N\lambda)^2$. Splitting the prediction difference
+between the changed test vector and the changed inverse, and using
+$\norm{k_t(x)-k_s(x)}_2\leq\sqrt N\eta$ and
+$\norm{k_s(x)}_2\leq\sqrt N$, proves Eq.~\eqref{eq:krr}.
+
+For several coordinates, one may add segment bounds along a specified
+coordinate path only if the required uniform output-family assumptions
+hold on each segment. This does not bound the divergence of two
+independently trained parameter paths. The normalized ridge in
+Proposition~\ref{prop:stability} corresponds to empirical squared loss
+divided by $N$ plus $\lambda$ times squared RKHS norm. The numerical
+training runner's $K+0.1I$ uses the unnormalized convention, equivalent
+to $\lambda=0.1/N$; those conventions must not be interchanged.
+
+\section{Evidence provenance and negative results}
+\label{app:evidence}
+The certificate validation and source-library audit are distinct from
+the later cost studies. The certificate archive reports 360 designed
+instances, 756 metric-defect conditions, and 20 paired synthetic
+training runs. The library-coverage v1.2 archive contains the 34
+executable settings and their 4,590 stored arrays. Reproduction checks
+used original-source features, independent dense simulator tests and
+finite differences where specified; they do not constitute a machine
+checked proof or independent investigator replication.
+
+The additional structural analysis adds the elementary local-tail
+baseline and tracks gate provenance to distinguish same-native affine
+terms from genuinely later data gates. The four crossing symbols are
+$\theta_2,\theta_3$ in the two-qubit, two-layer ChebyshevRx case and
+$\theta_6,\theta_7$ in its four-qubit counterpart. The remaining
+certified boundary symbol in each case is not counted as a genuinely
+internal data crossing. The representative numerical witness uses
+seven inputs and deletes only the selected early occurrence.
+
+\subsection{Earlier runtime evidence is not the new endpoint}
+An earlier purpose-selected ChebyshevPQC transfer study used WDBC,
+Ionosphere and Auto MPG with five seeds and three timing repetitions.
+It observed a median paired time reduction of 23.00\% in its serial
+per-parameter implementation, with gradient calls decreasing from
+640 to 560. Later two-dataset, three-seed, three-repetition workloads
+observed 26.90\% and 15.49\% reductions for raw-plus-metric versus
+raw-plus-commutant batched and adjoint implementations, respectively.
+Batched calls remained 60 while derivative entries decreased from
+1,020 to 840; adjoint reverse passes remained 60 while reverse gate
+updates decreased from 84,480 to 63,360.
+
+These studies already included preparation and certification inside
+the total timer, but their compiled-metric route certified \emph{before}
+compilation. Their globally inactive ChebyshevPQC symbols are found
+by elementary local tails as well. Thus none of these percentages is
+the incremental benefit of the internal rule over the new fused
+boundary baseline. Deleted shared occurrences can still differ, but
+their incremental effect requires a separate measurement. The earlier
+source-derived YZ-CX structure grid, with 72 runs, 6,624 kernel requests
+and 3,240 cross-validation fits, showed zero additional execution
+saving. It is retained rather than reinterpreted as a speedup.
+
+\subsection{Negative image results}
+The audited clean vision study contains 46 categories, five seeds,
+230 episodes and 18 arms. Its primary PQK/RBF mean AUROC decreases
+from 51.22\% to 46.32\% (change $-4.90$ percentage points;
+exploratory category-bootstrap interval $[-7.62,-2.51]$). Query
+labels are normal $0$, anomaly $1$, and the anomaly score is one
+minus mean similarity to normal support features. The direction is
+consistent with the rank-based AUROC calculation. A separate
+eight-category filename-group sensitivity analysis gives a change of
+$+1.28$ points with interval $[-5.57,7.88]$. Filename groups are
+not verified physical-object identities and these different category
+sets do not give a paired causal correction.
+
+These image studies concern parameter optimization and performance,
+not the exact-reduction comparison. In particular, the main entangling
+architecture has no newly certified global inactivity in the audited
+setting. The negative result therefore neither falsifies exact kernel
+preservation nor demonstrates that inactive parameters caused the
+optimization failure. It prevents an unsupported accuracy-improvement
+claim. The existing image audit does not mean original-image inference
+was rerun for this reproducibility release.
+
+\subsection{Frozen incremental experiment}
+The final local pilot uses the design named
+\texttt{20261001\_boundary\_fused\_v3}. The seven arms are original
+split IR, compiled split IR, compiled fused execution, local-tail
+reduction, boundary reduction, boundary plus extra transport, and
+observable-commutant reduction. Adjacent same-axis fusion is common
+to all strong arms. Initial parameters and train/test data match
+within every comparison. The fixed kernel bandwidth and optimization
+schedule are not selected with test labels.
+
+The completed full protocol has 2,700 cold paired blocks across seven
+arms, or 18,900 fits. Here a cold block fixes circuit setting, dataset,
+split seed, timing repetition and backend and executes all seven arms.
+Reuse instead has \emph{only two arms}, boundary and transport.
+Its 90 blocks are two ChebyshevRx settings times three datasets times
+one seed (42) times five repetitions times three backends. Each block
+executes 20 actual fits in each of its two arms, so
+$90\times2\times20=3{,}600$. The horizons 1, 2, 5, 10 and 20 are
+cumulative checkpoints within those 20 fits, not separate restarts. Cold timing
+includes compilation, representation conversion, simplification,
+certification, input encoding, initialization, learning and prediction.
+Frozen-input loading, untimed numerical validation, warmup, disk I/O
+and audits are excluded. No numerical kernel/gradient cache is used.
+
+Every completed block checks stored kernels, derivatives, objectives,
+parameters and predictions against its full reference. The additional
+scalar-source replay covers repetition-zero serial cold references
+for every task and setting, and repetition-zero serial reuse fits.
+It checks saved update increments; it is not an autonomous retraining
+experiment. Timing arithmetic is audited, not independently repeated.
+The reproducibility README identifies the full archive and its hash.
+Its 5,306 manifest-listed files and 22,500 array references were checked;
+lossless identical matrices can share a stored file. Sixty-one compared
+source and frozen-input files match the preserved release byte for byte.
+The archive's selective replay covers 180 cold references and 120 reuse
+fits. Its maximum replay kernel and gradient errors are
+$2.44\times10^{-15}$ and $6.96\times10^{-13}$; these are not the
+maximum differences between separately evolved stored training paths.
+The latter maxima are $4.65\times10^{-11}$ for kernels,
+$2.75\times10^{-10}$ for gradients, $2.69\times10^{-11}$ for
+parameters, $8.31\times10^{-12}$ for objectives and
+$2.22\times10^{-11}$ for predictions. The respective frozen limits
+are $10^{-10},10^{-9},10^{-9},10^{-10},10^{-7}$.
+
+The server uses Python 3.8.10, NumPy 1.24.4, Qiskit 1.2.4 and Linux
+x86\_64, with BLAS/OMP thread counts set to one. The archive does not
+identify the exact CPU model. Each fit uses 64 training and 64 test
+inputs, ten alignment-ascent steps of size 0.1, RBF bandwidth 0.5,
+and ridge $K+0.1I$. This is a fixed workload, not time to convergence.
+The separate earlier pilot used four updates; its single split and
+repetition do not support an independent runtime estimate.
+
+\subsection{Repeated full timing and reuse}
+\label{app:full_time}
+For each matched pair the reduction is $100(1-T_{\rm full}/T_{\rm boundary})$.
+Over ten updates, serial evaluator calls fall from 70 to 50 at two
+qubits and 150 to 130 at four. Batched calls remain ten, while tangent
+gate updates fall from 26,880 to 19,200 and from 134,400 to 116,480.
+Adjoint reverse passes remain ten and reverse gate updates remain
+3,840 and 8,960. Derivative-entry counts are not reverse-work counts.
+Median boundary-adjoint times are 19.54 and 32.50 ms, compared with
+50.80 and 187.11 ms for transport-serial. Backend selection therefore
+matters more than the serial savings in these examples. The cold-fit
+repetitions concern three datasets; reuse below uses only split seed 42.
+
+Table~\ref{tab:full_time} gives both paired medians and reductions in
+the sum of elapsed times. No observations are removed. The two summaries
+need not agree: two-qubit batched Auto MPG has a positive median but
+a $-3.33\%$ summed-time reduction. Its most negative pair is
+$-146.71\%$. Adjoint extrema range from $-4.97\%$ to $64.04\%$
+at two qubits, and from $-135.05\%$ to $8.23\%$ at four qubits.
+The logs do not establish the cause of these timing excursions.
+
+\begin{table}[t]
+\caption{Full cold-fit time reductions in percent. IQR is the
+25th--75th percentile range, not a confidence interval. Each row
+contains 75 matched pairs. Positive counts retain all observations.}
+\label{tab:full_time}
+\begin{tabular}{llrrrr}
+\toprule
+$n$ & Backend & Median & IQR & Positive & Sum\\
+2 & Serial & 22.20 & [20.93,23.12] & 75 & 22.11\\
+2 & Batched & 2.70 & [1.73,4.82] & 65 & 1.15\\
+2 & Adjoint & 0.61 & [$-0.36$,2.81] & 50 & 3.87\\
+4 & Serial & 12.38 & [11.44,13.30] & 75 & 13.16\\
+4 & Batched & 4.40 & [1.71,7.01] & 66 & 4.53\\
+4 & Adjoint & $-0.18$ & [$-2.18$,1.26] & 34 & $-1.90$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The serial dataset-specific medians (WDBC, Ionosphere, Auto MPG) are
+22.34\%, 21.85\%, 22.20\% at two qubits and 12.36\%, 12.38\%,
+12.46\% at four qubits. Both relative execution-order strata have
+positive serial medians. Batched medians differ by order, from
+2.42\% to 3.65\% at two qubits and from 2.88\% to 5.22\% at four
+qubits. Future estimates of small effects should use explicitly
+balanced pair ordering and monitor time-dependent load.
+
+An exploratory bootstrap resamples five seed blocks within each of
+the three fixed datasets, retaining all five timing repetitions in a
+selected block. Across 4,000 resamples, the 2.5th--97.5th percentile
+ranges of the pooled serial median are [21.65,22.34]\% and
+[12.09,12.57]\%. Repeated splits overlap. These conditional sensitivity
+ranges are not confidence intervals for new datasets or circuit families.
+
+Median extra transport-certificate times are approximately 0.15 and
+0.40 ms and are already inside the total timers. At reuse horizon 20,
+the serial median reductions are 26.25\% and 13.32\% (15/15 positive
+blocks at both sizes), and batched gives 5.70\% and 6.90\% (14/15
+and 15/15). Both serial sizes already have 15/15 positive blocks at
+horizon 1. Two-qubit batched retains a negative block even at horizon
+20. Adjoint reuse medians are 2.57\% and 1.24\%, without reduced
+reverse-gate work. These seed-42 reuse checkpoints share their fits
+and are not independent observations or guaranteed break-even bounds.
+
+\subsection{Single-pair pilot timing observations}
+\label{app:pilot_time}
+The corresponding single-pair cold times are 15.25/12.78 ms and
+44.81/39.55 ms for serial boundary/transport, 7.28/7.02 ms and
+14.04/13.65 ms for batched, and 7.23/7.21 ms and 11.34/11.28 ms for
+adjoint. The extra certificate stage takes approximately 0.073--0.075 ms
+and 0.214--0.218 ms, respectively; it is already included in the totals.
+One pair cannot distinguish stable runtime benefit from timing noise.
+No confidence interval is constructed by treating the three backends
+or the two circuit sizes as independent repeated measurements.
+
+These pilot observations are descriptive and are superseded for runtime
+estimation by the separate full study above. The adjoint differences are not evidence of
+reduced reverse propagation. Repetitions on the same family would not
+by themselves establish cross-family scope or quantum execution savings.
+
+\section{Fixed-scope resource survey}
+\label{app:survey}
+The source inventory was fixed before this follow-up execution, after
+inspection of the earlier pilot. It is exploratory, not preregistered.
+The ten modules use their default constructors, including seed zero
+for random circuits, with two input features and explicit qubit/layer
+arguments where supported. Constructor signatures, supplied arguments
+and resulting parameters are recorded. ChebyshevTower, Qiskit circuit
+wrapper and QCNN builder remain excluded for the original unselected
+mandatory-configuration reasons. No favorable replacement circuit is
+constructed for them. Eighteen layer-argument duplicates remain in
+the 120-slot record but are not rerun.
+
+The baseline suffix rule deletes a parameter-only readout isometry if
+the whole remaining suffix consists of input-independent readout
+isometries. A second sufficient case allows disjoint suffix gates when
+every overlapping suffix gate is an input-independent isometry confined
+to the candidate support. The confinement condition is essential:
+an entangler could otherwise spread a generator into a subsequent,
+initially disjoint data gate. Rotations use the exact Pauli criterion;
+fixed Hadamard/CNOT actions use exact signed-permutation closure and
+weight matching. Ordinary restricted boundary transport and fusion
+follow this elementary rule. No completeness claim is made for it.
+
+The shared-angle simulator evaluates shifted expectation features,
+forms their angle derivatives, and accumulates all classical chain
+factors for every shared symbol occurrence. Validation uses two fixed
+probe seeds, five inputs per seed and nonzero parameter assignments.
+Qiskit source features are checked at these base points; central finite
+differences are computed from the compiled interpreter, not by rerunning
+every perturbed source circuit. There are 1,626 parameter-coordinate
+finite-difference probes across the circuit--readout--seed combinations.
+Maximum feature-adapter and feature-Jacobian differences are
+$3.89\times10^{-15}$ and $1.78\times10^{-15}$.
+Kernel-Jacobian and objective-gradient finite-difference differences
+are at most $7.01\times10^{-10}$ and $9.38\times10^{-9}$,
+below the fixed $2\times10^{-7}$ finite-difference tolerance.
+The two-update trajectory and ridge-prediction comparisons give maxima
+$4.45\times10^{-16}$ and $1.67\times10^{-15}$ where applicable.
+These are finite numerical checks, not a new theorem or hardware test.
+
+An initial run raised degenerate-centered-alignment exceptions for
+ParamZFeatureMap with local Z readout at both qubit sizes. The failed
+run is retained. A disclosed handling amendment adds feature and kernel
+Jacobian checks and classifies those two slots separately, without
+running undefined objective-gradient training. No circuit, readout,
+seed, baseline or favorable-outcome threshold was changed in response.
+The revised run completes 82 trainable alignment-probe slots, 18
+parameter-free slots and two kernel-only slots, with no failure of
+an applicable numerical check. Neither repeated probes nor additional
+readouts are treated as independent positive circuit families.
+
+Four slots remove two extra symbols each: two- and four-qubit,
+two-layer ChebyshevRx with local XYZ or weight-at-most-two Pauli
+readout. The same source symbols appear under the two readouts, so
+eight slot-counted symbols are not eight distinct source discoveries.
+All 102 distinct slots have zero incremental fused-operation and
+trainable-angle reduction. Consequently this survey does not trigger
+a new large timing campaign. Its local macOS run is separate from the
+Linux full-study timings; server replay is provided as executable code,
+and a subsequently returned Linux survey has also been audited.
+The server archive contains 308 manifest-listed files and 3,252 array
+references. Replays cover 204 source-feature probe batches, 612 arm
+evaluations and 1,626 finite-difference coordinates. All applicable
+checks pass. Six HighDim two-layer slots have different fixed-angle
+coefficients in their saved compiled IR from the local survey, although
+their operation structure matches and numerical replays pass. They
+must not be described as byte-identical compiled circuits.
+
+For the two primary local-XYZ ChebyshevRx settings, direct comparison
+of the saved full-timing and survey archives finds identical final
+programs, retained symbol lists, input-expression lists, observables
+and weights for both boundary and transport. The definitions of the
+baseline procedures remain different; their final executable objects
+coincide in these particular cases. This check resolves the structural
+consistency question without repeating the 18,900 fits. It does not
+resolve timing variability or validate any timing claim for the new
+global-normalization arm.
+
+\section{Source identity and preprocessing}
+\label{app:source}
+{\raggedright
+The external circuit definitions are frozen sQUlearn source bytes
+\cite{squlearn}, pinned at commit
+\texttt{0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4}.
+The manifest includes per-file hashes and source URLs. The lightweight
+host does not install or exercise the complete sQUlearn runtime;
+it uses explicit dependency stubs and deferred annotations for two
+pinned modules while retaining their original bytes. Execution and
+symbolic compilation use Qiskit 1.2.4. The ten executable definitions are
+ChebyshevPQC, ChebyshevRx, HighDimEncodingCircuit, HubregtsenEncodingCircuit,
+KyriienkoEncodingCircuit, MultiControlEncodingCircuit, ParamZFeatureMap,
+RandomEncodingCircuit, RandomLayeredEncodingCircuit, and YZ\_CX\_EncodingCircuit.
+Exact module paths and constructor arguments are in the packaged inventory.
+These are ten modules, not ten empirically independent positive families.\par}
+
+The timing study reuses frozen inputs from the earlier audited transfer
+run. Each split uses 64 training and 64 test rows; classification splits
+are stratified. Median imputation, standardization, and two-component
+full-SVD PCA are fitted on the training rows only. PCA scores $z$ are
+mapped to $x=\tanh(z/2)$ before any $\arccos(x)$ encoding. Test rows
+use the saved training transforms. Regression targets are standardized
+using the training mean and population standard deviation; classification
+targets use their signed labels. Alignment uses centered $K$ and
+$(y-\bar y\mathbf1)(y-\bar y\mathbf1)^T$, normalized by their Frobenius
+norms. The label mean in training objectives uses training rows only.
+The simulated arithmetic is float64/complex128. Frozen-input metadata
+stores split indices, transform parameters and source hashes. Missing
+entity-group identifiers are not silently replaced by row independence.
+
+\section{Global normalization audit and checker}
+\label{app:global}
+The follow-up fixes the earlier 12 source configurations and local XYZ
+readout. It is a additional diagnostic, not a new population survey.
+For each configuration, 20 random five-input probes compare source
+features, unitary matrices up to global phase, kernels and gradients.
+One probe per configuration additionally checks every source-coordinate
+kernel derivative by central finite differences with step $10^{-6}$.
+Across the configurations, maximum unitary, feature, kernel and
+objective-gradient errors are $6.48\times10^{-16}$,
+$1.67\times10^{-15}$, $1.23\times10^{-15}$ and
+$2.96\times10^{-14}$, respectively. The finite-difference error is
+at most $3.84\times10^{-10}$, below the $10^{-6}$ audit limit;
+all other errors are required to be below $10^{-9}$.
+The separate 1,000-condition closed-form check and 20-step optimizer
+diagnostic are reported in Sec.~\ref{sec:normalform}.
+
+The normalizer records each signed Clifford conjugation, its current
+frame, and any commuting-fusion target. A separate standard-library-only
+checker uses explicit Pauli multiplication and H/CNOT rules rather than
+the normalizer's Qiskit tableau operations. It validates each recorded
+merge, the identity status of the final frame, the readout partner/weight
+conditions for recorded common-term deletions, and the retained-symbol
+dependencies. It checks all 12 configurations; unit tests reject a
+corrupted sign and altered output program. Ninety random mixed Pauli/H/CNOT
+circuits additionally test signed normalization against dense matrices.
+This is a checker of the supplied IR rewrites, not a formal verification
+of the source adapter, the mathematical theorem, or optimizer software.
+No tolerance is used to accept a symbolic rewrite or metric equality.
+
+The global scan permits fusion only across commuting rotations, does
+not absorb nonidentity Clifford frames into the readout, and does not
+resynthesize Pauli rotations to a hardware basis. Hence its task counts
+are not native-gate counts. The coefficient-rank diagnostic combines
+identical source feature expressions exactly; it is not a complete
+test of general functional independence or reachable-state kernel rank.
+This normalization alone establishes neither completeness beyond its
+rules nor global minimality. The separate representative rank theorem
+in Sec.~\ref{sec:dimensiontheory} supplies a matching minimal smooth
+dimension for that specific kernel. Large-qubit certificate time/memory scaling and
+a controlled multi-session timing comparison of these new arms remain
+separate experiments, not consequences of the small diagnostic.
+
+\section{Completeness and scope checklist}
+The universal output criterion quantifies over all density operators;
+the internal algorithm checks only its supported gate grammar and
+transport rules. It is neither necessary for inactivity on a particular
+input manifold nor complete for circuits with cancellations outside
+that grammar. A successful certificate is sufficient; a failure to
+certify conveys no activity conclusion.
+
+Independent review must examine exact metric equalities, signed
+Clifford conjugation conventions, shared symbols, source-to-IR
+semantics, and the deterministic optimizer contract. Sign-free
+transport is used only to decide deletion and never to evaluate a
+retained transformed rotation. Physical noise, finite-shot bias and
+variance, data-dependent metrics and continuation-safe search remain
+outside the present theorem and implementation.

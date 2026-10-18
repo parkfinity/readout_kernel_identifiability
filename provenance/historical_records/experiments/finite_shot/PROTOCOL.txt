@@ -1,0 +1,87 @@
+Readout-metric finite-shot design v2. Protocol dated 2026-10-05.
+Written before the v2 pilot/full outcomes. Informed follow-up to v1, NOT a
+prospective registration independent of v1. Existing manuscript stays unchanged.
+
+Question: with the SAME total shot budget and fixed measurement schedule, does
+shot-noise-aware selection of ONE fixed metric improve held-out sensitivity
+over simple anisotropy, random metrics and rank-only selection? Separately, does
+adding ZZ correlations from existing joint Z outcomes improve the tradeoff?
+
+Inventory: YZ-CX 2q1L local XYZ, Kyriienko 2q1L local XYZ, Hubregtsen 4q1L local Z,
+and the SAME Hubregtsen circuit with local Z plus all six ZZ observables.
+Not a population prevalence study and not four independent circuit families.
+Data: uniform x in (-.95,.95)^2, existing raw/arccos encodings; no class labels.
+Three fixed seed panels; three design theta and five held-out theta per panel.
+Each point has 16 distinct input pairs. Seeds, theta, x, metric candidates,
+canonical tangent bases and selected metric indices are frozen in plan.json.
+
+Targets: the parameter tangent space visible to CENTERED reference features,
+computed numerically at each theta/input panel. For Hubregtsen both Z and Z+ZZ
+use the local-Z reference space. Also diagnose the part invisible to the initial
+isotropic reference kernel. The entire visible space is the primary target:
+rotation of a nullspace must not be mislabeled as an increase in total rank.
+All spaces/ranks here are sampled numeric diagnostics, not new exact certificates.
+
+Candidate metrics: identity, fixed diagonal weights 1..4, 16 seeded random
+diagonals and 16 seeded random dense SPD matrices. trace=1, condition<=4.
+Arms: identity, fixed diagonal, first random diagonal, first random dense,
+rank-only selected and shot-aware selected. Both selectors get the SAME 34
+candidates, design points and no held-out data. Select once per panel/readout
+at 1024 shots; keep M fixed over held-out theta and all budgets.
+Rank-only: maximize worst design-point rank, then mean log smallest retained
+singular value of the target-space distance Jacobian.
+Shot-aware: same rank priority, then mean log smallest RETAINED singular value
+of the Jacobian whitened by exact joint-shot distance variance. This is a
+finite-bank, ideal-model design heuristic, not an optimal experimental design
+theorem, not a deployed shot-only learner, and not supervised metric learning.
+Retained sensitivity is not full identifiability: also report zero weakest
+sensitivity whenever rank is smaller than target dimension.
+
+Noise model: ideal multinomial Pauli product-basis samples. Each observable is
+assigned to the first compatible basis; outcomes within a basis retain all
+correlations. Split shot budget into two independent halves. The unbiased
+distance estimator is delta_f_half1^T M delta_f_half2. If each half has
+covariance S and mean a, Var=2 a^T M S M a + tr(M S M S).
+Use exact probabilities ONLY for design/noise prediction and clearly label this
+oracle access. Full run budgets/input/state: 256,1024,4096,16384 (actual integer
+allocation reported). Local XYZ uses 3 bases, Z or Z+ZZ uses one ZZZZ basis.
+Different bases count against the SAME total shot budget, not one budget each.
+
+Evaluation A: on all held-out points, save every candidate's numerical target
+rank, full source-kernel rank, restored-subspace rank, and whitened singular
+values. Primary paired comparison shot-aware versus rank-only and fixed-diagonal.
+Use frozen selected candidate only; never select the winner on held-out results.
+Report three seed-panel summaries separately. Theta/seeds are repeated probes,
+not independent scientific discoveries. Do not condition reports on improvements.
+
+Evaluation B: perturb by +/-0.05 radians along EACH frozen canonical reference
+feature-visible direction, not a direction optimized for the proposed metric.
+For each method use the same independent +/- state draws and joint outcomes.
+Z/ZZ cases with the same panel/probe/direction/budget share identical ZZZZ counts.
+Use 256 replicates in full and 64 in pilot. Form an ideal-model matched linear
+contrast signal/variance, normalized and frozen before those shot draws, for
+EACH arm symmetrically. This is a best-linear local oracle diagnostic, not a
+test with estimated direction or a claim of practical detection power.
+Save ideal signal, predicted variance/SNR, empirical mean/SD/SNR, bias/MC-SE,
+and paired empirical SD ratios versus simple/rank-only baselines where defined.
+No Gaussian power, exact rank from noisy data or classification accuracy claims.
+Sampling RNG is independent of design seeds. Signal and contrast are not fitted
+to Monte Carlo outputs. Degenerate zero signal receives a fixed unit contrast.
+
+Reproducibility: canonicalize tangent basis by projected-coordinate Gram-Schmidt
+with positive largest component; freeze the full basis, not just the SVD sign.
+Server never recomputes design SVD or chooses candidates. Verify plan/source
+hashes before execution. Log arrays, code hash, environment, actual shot counts,
+selection CPU time and evaluation CPU time. No paid QPU, hardware noise or images.
+
+Stop/interpretation rules: failures of hash/unit tests stop runs. Numerical
+nonfinite probabilities/covariances/metrics fail loudly. Keep all null and
+negative cases. If shot-aware selection fails to beat simple baselines across
+panels, report it as a limit and do not promote it to a main new algorithm.
+Do not infer equal-precision shot savings from basis counts, rank or noiseless
+sensitivity. V1 exact 2->3->4 mechanism remains separate from v2 empirical use.
+
+Manuscript action AFTER server results: audit hashes, exact-vs-numeric scope,
+paired outcomes and finite-shot bias/variance checks first; then make a new
+research report. Add the validated recovery result and its
+limits, and add v2 design efficacy only if supported. No acceptance guarantee.

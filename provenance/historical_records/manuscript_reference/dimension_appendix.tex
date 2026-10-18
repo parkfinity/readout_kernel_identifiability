@@ -1,0 +1,87 @@
+\section{Dimension certificates and feasible witness checks}
+\label{app:dimension}
+For the representative minor in Eq.~\eqref{eq:rankminor}, define
+$B=J\diag(\pi^{-1},\pi^{-1},\pi^{-1},1)$. Its entries lie in
+$\mathbb Q(\sqrt3)$:
+\begin{equation}
+ B=\begin{pmatrix}
+ 0&0&\sqrt3/12&-\sqrt3/2\\
+ \sqrt3/24&\sqrt3/24&\sqrt3/12&0\\
+ -\sqrt3/4&-1/2&-11/24+\sqrt3/2&-1/2\\
+ -\sqrt3/4&-1/4&11/24+\sqrt3/2&1/2
+ \end{pmatrix}.
+\end{equation}
+Exact expansion gives $\det B=(2\sqrt3-39)/1536$. Since $\sqrt3<2$,
+the determinant is strictly negative without a numerical rank threshold.
+This explicit certificate supplements rather than relies on a
+finite-difference SVD or symbolic zero heuristics for transcendental
+expressions.
+
+The 24-setting pilot consumes frozen compiler IRs from the earlier
+survey, validates integer coefficients and supported data expressions,
+and does not snap approximate constants to multiples of $\pi$.
+It supports repeated rational multiples of $x_j$ or $\arccos x_j$,
+with the same source variable used at every occurrence. Fixed
+initialization and metric are part of each input hash.
+Heisenberg propagation produces finite sums of
+Gaussian-rational coefficients times exponentials of polynomial phases.
+The distance includes both self-square terms and the cross-input term.
+Grouping identical phases and differentiating with all shared
+occurrences preserves the source semantics. Exactly vanishing formal
+coefficients suffice for an identity; no converse or general
+polynomial-phase independence theorem is used.
+
+Real and imaginary rational coefficient rows form a matrix whose exact
+null space supplies constant invariant directions. Independent rows
+give a certified upper bound $K-\dim\mathcal N$ on differential rank.
+For the lower bound, one parameter vector with rational entries of
+denominator 17 and 24 pairs of input vectors with denominator 19 are
+fixed per setting using seed 20261002. All input coordinates are in
+$(-1,1)$. A separate statevector engine propagates source-parameter
+tangents, including every shared occurrence. It evaluates sine,
+cosine, square roots and arccos via interval operations; arccos is
+implemented as $\operatorname{atan2}(\sqrt{1-x^2},x)$ on this interior.
+The implementation uses mpmath interval arithmetic at 50 decimal
+digits. A replay at 65 digits confirms all 132 activity witnesses and
+22 nonzero minors. Interval Gaussian elimination divides only by
+pivots whose intervals exclude zero. Floating-point elimination is
+used solely to choose candidate rows and columns.
+
+Each certificate stores the source hash, the common parameter point,
+actual input pairs, derivative endpoint rationals, selected minor, and
+exact null vectors. The symbolic and interval engines use separate
+propagation implementations. Sixteen unit tests include invalid
+source hashes, infeasible independent-angle witnesses, unsupported
+near-Clifford constants, data sharing and domain violations.
+The implementation handles an mpmath 1.3.0 interval-complex conjugation
+issue by explicitly constructing conjugates from real and imaginary
+intervals. The arithmetic library and these implementations are not
+proof-assistant verified; higher precision replay does not replace
+independent software or mathematical review.
+
+A further numerical diagnostic reconstructs the pinned external
+source circuits rather than just the IR. Across 48 input-pair probes,
+maximum feature and distance discrepancies are
+$1.56\times10^{-15}$ and $3.20\times10^{-14}$; 324 source-coordinate
+finite differences agree to $2.38\times10^{-9}$, within the declared
+$10^{-6}$ diagnostic limit. These are consistency checks, not the
+acceptance rule for an exact identity or a nonzero interval witness.
+The local run took 82.65 seconds in its recorded environment; this is
+certificate-generation cost, not a training-speedup benchmark.
+
+The pilot's 12 new inactive entries have elementary explanations.
+Write $z_q=x_{q\bmod2}$ for the source's cyclic assignment of two input
+features. For one-layer ParamZ, each qubit has $R_z(\theta_qz_q)H|0\rangle$,
+so its Z expectation is zero. For two layers it has
+$R_z(\theta_{q+n}z_q)H R_z(\theta_qz_q)H|0\rangle$,
+whose Z expectation is $\cos(\theta_qz_q)$; only the final rotation is
+irrelevant to Z readout. Thus the two-layer kernel is not generally
+constant. These facts also show why the new entries should not be
+credited as advantages over a baseline that already propagates
+readout commutants through data-dependent rotations.
+
+No randomized polynomial-identity tests, unrestricted finite-grid
+fallback or 102-setting completeness claim is used here. More
+general source constants, dependent data expressions outside the
+implemented grammar, and HighDim's differing fixed-angle compiler
+representations remain outside this pilot's exact semantic contract.

@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "modes": [
+    "smoke",
+    "core-audit",
+    "recovery",
+    "shots-full",
+    "product",
+    "ad-summary"
+  ],
+  "original_files_byte_preserved": 1009,
+  "shot_records": 60,
+  "paired_analytic_rows": 144,
+  "max_shot_summary_difference": 4.740652315149418e-13,
+  "product_records": 1440,
+  "product_panel_summaries_exactly_match": true,
+  "scope": "Packaging compatibility replay; no new full-census discovery or hardware experiment."
+}

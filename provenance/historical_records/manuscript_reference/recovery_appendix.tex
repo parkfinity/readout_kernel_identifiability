@@ -1,0 +1,285 @@
+\section{Metric recovery: proofs, exact evidence, and scope}
+\label{app:recovery}
+\subsection{Quantifiers in the metric-recovery statement}
+Proposition~\ref{prop:metricrecover} concerns a fixed parameter point
+with a nonconstant feature map, and quantifies over \emph{all} fixed
+positive-definite metrics. To justify its linear-algebra step, from
+$ab^T+ba^T=0$ and $a\ne0$, multiply by $a$ to obtain
+$a(a^Tb)+b\norm{a}^2=0$. Inner product with $a$ gives $a^Tb=0$,
+and hence $b=0$. A direction that changes features only by a common
+translation is invisible to every metric. At a constant feature map,
+however, every squared-distance first derivative vanishes even if
+the directional feature derivative is nonconstant.
+
+For the generic-metric observation in Sec.~\ref{sec:recovery}, fix
+$\theta$ and consider the linear map
+$v\mapsto C^TMH_v+H_v^TMC$ in finite coordinates. Each matrix entry
+is linear in the independent entries of $M$. A nonzero maximal-rank
+minor is thus a nonzero polynomial, whose zero set has measure zero
+in the chosen open metric family. Apply this argument in full
+symmetric coordinates for dense metrics or in diagonal coordinates
+for diagonal metrics. A finite union of exceptional sets still has
+measure zero. Positive rescaling of $M$ does not change rank, so
+trace normalization is harmless. This is not a uniform guarantee at
+every parameter point, a conditioning bound, or an efficient
+maximum-rank algorithm. In particular, exchanging the quantifiers
+``for every direction there exists a metric'' and ``there exists one
+metric for every direction'' is invalid.
+
+\subsection{Exact fixed-readout ceiling and correlation recovery}
+Writing $(a,b,c,d)=(\sin\theta_0,\sin\theta_1,
+\sin\theta_2,\sin\theta_3)$, the local-Z coefficient matrix, up to
+an overall sign, is
+\begin{equation}
+ C=\begin{pmatrix}a&0\\0&b\\c&0\\0&d\end{pmatrix}.
+\end{equation}
+For diagonal $M$, $G=C^TMC$ has two diagonal entries and its
+Jacobian in $(a,b)$ has minor $4ab w_0w_1\ne0$ generically.
+For the dense metric in Eq.~\eqref{eq:recoverymetric}, evaluate at
+\begin{align}
+ (\sin\theta_0,\ldots,\sin\theta_3)&=(3/5,5/13,8/17,7/25),\\
+ (\cos\theta_0,\ldots,\cos\theta_3)&=(4/5,12/13,15/17,24/25).
+\end{align}
+The Jacobian of $(G_{00},G_{01},G_{11})$ in
+$(\theta_0,\theta_1,\theta_2)$ has exact determinant
+\begin{equation}
+ -\frac{835727837184}{978271035584375}\ne0.
+\end{equation}
+Together with $A(A+1)/2=3$, this proves maximal fixed-dense-metric
+rank three. The centered features themselves have generic rank four.
+
+Before the diagonal controlled-rotation tail, the state is a product,
+and that tail commutes with all Z strings. Thus $f_{qr}(x)=f_q(x)f_r(x)$
+for the added ZZ features. All these features remain independent of
+the four tail symbols, giving rank at most four. A saved diagonal
+metric and nonzero $4\times4$ Fourier-Gram minors certify the matching
+lower bound. There is also a direct analytic lower bound for any fixed
+positive diagonal metric on these ten features. Put
+$u=\cos x_0$ and $v=\cos x_1$. The five nonconstant data functions
+$u,v,u^2,v^2,uv$, together with 1, are independent on the input
+domain. Four diagonal entries of their coefficient Gram matrix are
+\begin{equation}
+ \begin{aligned}
+ \beta_u&=w_a a^2+w_c c^2,&\beta_{u^2}&=w_{ac}a^2c^2,\\
+ \beta_v&=w_b b^2+w_d d^2,&\beta_{v^2}&=w_{bd}b^2d^2.
+ \end{aligned}
+\end{equation}
+Here $w_{ac}$ and $w_{bd}$ are the positive weights of $Z_0Z_2$
+and $Z_1Z_3$. The $(a,c)$ Jacobian block for the first pair has
+determinant $4acw_{ac}(w_a a^2-w_c c^2)$, and the $(b,d)$ block
+has the analogous generically nonzero determinant. Multiplying
+by the four cosine derivatives converts to the angle Jacobian and
+remains generically nonzero. Thus the rank is four. This argument
+also shows that these two same-input-group correlations suffice
+under diagonal weighting; the experiment retained all six ZZ
+correlations and does not test minimal feature selection.
+The two stored modular certificates independently reduce rational coefficients
+at a valid rational-phase parameter point; nonzero modular minors
+provide lower bounds, not upper bounds from modular zeros. Their
+saved integer matrices were checked again together with the other
+40 minor certificates. The upper bound follows from the exact absence
+of the tail symbols, not from sampling.
+
+\begin{table}[h]
+\centering
+\caption{Exact metric-redesign certificates on ten reused source
+circuits. The original isotropic ranks come from the earlier
+certificates; each redesigned local-XYZ metric uses evenly spaced
+weights from 1 to 4, normalized to unit trace. The new rank equals
+the source count $K$, with a nonzero exact minor and universal upper
+bound $K$. This is not an expanded prevalence census.}
+\label{tab:metricexactall}
+\begin{tabular}{lrrrr}
+\toprule
+Source family & Qubits & Layers & Isotropic rank & Redesigned rank $=K$\\
+\midrule
+Hubregtsen & 2 & 1 & 0 & 2\\
+Hubregtsen & 2 & 2 & 2 & 4\\
+Hubregtsen & 4 & 1 & 8 & 8\\
+Hubregtsen & 4 & 2 & 16 & 16\\
+Kyriienko & 2 & 1 & 4 & 6\\
+Kyriienko & 4 & 1 & 10 & 12\\
+YZ-CX & 2 & 1 & 3 & 4\\
+YZ-CX & 2 & 2 & 7 & 8\\
+YZ-CX & 4 & 1 & 6 & 8\\
+YZ-CX & 4 & 2 & 14 & 16\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The initial metric survey used 30 readout settings on these ten
+circuits, with three design and five held-out parameter points and
+96 input pairs per point. A fixed diagonal metric increased sampled
+rank in 16 settings; the sampled dense-metric arms increased it in
+17. Five validation points and three relative rank tolerances
+($10^{-8},10^{-9},10^{-10}$, with absolute floor $10^{-11}$)
+agreed. These counts remain numerical diagnostics. Exact certificates
+were added for all ten local-XYZ designs in
+Table~\ref{tab:metricexactall} and ten selected one-basis designs.
+The source and design files record which verification was added after
+the numerical pilot; we do not present it as independent preregistration.
+
+The one-basis search used Pauli words of weight at most two and
+joint compatible parities, not one new circuit per observable.
+Its selected designs reached full source rank in all ten cases,
+but the best of the three uniform X, Y, or Z bases also reached
+full sampled rank in all ten. Uniform X and uniform Y each did so
+in eight cases. This strong control prevents attributing the result
+to a generally superior combinatorial readout-search algorithm.
+
+\section{Finite-shot design protocol and complete budget comparison}
+\label{app:shotprotocol}
+\subsection{Fixed design, common targets, and estimators}
+The follow-up inventory contains three source circuits and four
+readout cases, not four independent families: two-qubit, one-layer
+YZ-CX/local XYZ and Kyriienko/local XYZ, and four-qubit, one-layer
+Hubregtsen/local Z and Z+ZZ. Three fixed seed panels each use three
+design points and five held-out points, with 16 disjoint input pairs
+at each point, drawn uniformly from $(-0.95,0.95)^2$. The original
+raw or arccos encoding is preserved. No labels, classification
+datasets, or predictive metrics enter this experiment.
+
+For each point, center the parameter derivatives of the reference
+features by subtracting one input's derivatives. Their sampled row
+space defines the target parameter subspace. Both Hubregtsen cases
+use the \emph{local-Z reference space}, of dimension four, to avoid
+changing the target when adding ZZ features. The component invisible
+to the initial isotropic kernel is recorded separately. A canonical
+orthonormal basis is obtained from the subspace projector by
+projected-coordinate Gram--Schmidt, with a positive largest component.
+The basis, inputs, parameters, metrics and selection indices are
+stored before the server run. No test-time SVD sign or favorable
+direction selection is required.
+
+The candidate bank has the identity, evenly spaced diagonal weights
+from 1 to 4, sixteen random diagonals, and sixteen random dense
+positive-definite matrices. All have unit trace and condition number
+at most four. Both selectors maximize the worst design-point target
+rank, then the mean logarithm of the smallest retained singular value
+of either $JQ$ or $W$ at 1,024 shots. The first random draw is an
+untuned baseline, and every candidate's held-out diagnostics are
+retained. The metric is fixed thereafter across points and budgets.
+Thus noise-aware selection is an ideal-model finite-bank heuristic;
+it is not trained on shot outcomes or task labels.
+
+Let $\widehat a$ and $\widehat b$ be independent half-shot estimates
+of the same feature difference $\delta$, each with covariance $S$.
+The estimator $\widehat d^2=\widehat a^T M\widehat b$ obeys
+\begin{align}
+ \mathbb E\widehat d^2&=\delta^TM\delta,\label{eq:splitmean}\\
+ \operatorname{Var}(\widehat d^2)
+ &=2\delta^TMSM\delta+\Tr(MSMS).\label{eq:splitvariance}
+\end{align}
+To see this, write $\widehat a=\delta+e$ and
+$\widehat b=\delta+e'$, with independent zero-mean errors. The two
+linear terms have total variance $2\delta^TMSM\delta$; the bilinear
+term has variance $\Tr(MSMS)$ and zero covariance with the linear
+terms. Joint outcome covariances, including ZZ correlations, enter
+$S$. Input pairs are disjoint so their estimates are independent.
+Neither clipping negative distance estimates nor exponentiating
+them is part of this unbiased-distance analysis.
+
+For finite displacements $\theta\pm0.05v$ along \emph{each} frozen
+target basis direction, the two state estimates use independent
+draws. Their exact distance variances add. Every method receives
+its own ideal matched linear contrast, proportional to the exact
+pairwise signal divided by its variance and normalized to unit
+Euclidean norm. This contrast is fixed before Monte Carlo sampling.
+It treats methods symmetrically but uses oracle model information:
+the resulting SNR is not calibrated detection power or a practical
+shot-only identification algorithm. It is also distinct from the
+local-limit singular-value statistic in Table~\ref{tab:shotdesign}.
+
+\subsection{Measurement accounting and uncertainty}
+Each observable is assigned to its first compatible product basis.
+Within-basis covariances are preserved by joint multinomial sampling.
+For requested budget $B$ and $L$ bases, each half/basis gets
+$\lfloor B/(2L)\rfloor$ shots, so the actual budget is
+$2L\lfloor B/(2L)\rfloor$ per input and parameter state. Local XYZ
+uses three bases and hence actual budgets $252,1020,4092,16380$;
+local Z and Z+ZZ use one basis and the requested budgets exactly.
+For one direction and one replicate, the 16 pairs and two parameter
+states require 64 times that per-input budget. Multiplication by
+256 replicates and by the number of target directions gives the
+simulation workload. Metrics reuse the same outcomes, and matched
+Hubregtsen Z/Z+ZZ cases reuse the same ZZZZ draws. Observable count
+is not substituted for basis count or total shots.
+
+There are 60 panel/readout/probe records, not 60 independent
+scientific problems. We report each panel separately and do not
+interpret repeated probes, different budgets, or shared metric arms
+as independent discoveries. The pooled variance-ratio percentiles
+summarize calibration across correlated checks, not confidence
+intervals. The largest absolute mean-bias/Monte-Carlo-SE diagnostic
+is 4.07 among the many checked cells; it is not a single preselected
+hypothesis test. Analytic unbiasedness is given by
+Eq.~\eqref{eq:splitmean}, while empirical means, standard deviations,
+and all samples are saved for inspection.
+
+\begin{table}[htbp]
+\centering
+\caption{Complete requested-budget comparison. Triples are the
+three seed-panel medians of five paired retained-sensitivity ratios
+(noise-aware/baseline). D: fixed diagonal; R: rank-based selector;
+U: first untuned random dense metric. Ratios are not pooled across
+panels. A dash for local Z versus D avoids comparing different
+ranks (three versus two); both remain below the four-dimensional
+reference space. This table reports the local ideal-model diagnostic,
+not the empirical matched-contrast SNR.}
+\label{tab:allshotbudgets}
+\small
+\begin{tabular}{llccc}
+\toprule
+Case & Budget & Versus D & Versus R & Versus U\\
+\midrule
+YZ-CX & 256 & 2.037,1.689,2.346 & 1.000,1.328,1.612 & 1.000,1.312,2.054\\
+ & 1024 & 1.837,1.665,2.336 & 1.000,1.304,1.608 & 1.000,1.279,2.110\\
+ & 4096 & 1.767,1.653,2.329 & 1.000,1.303,1.608 & 1.000,1.274,2.135\\
+ & 16384 & 1.748,1.651,2.327 & 1.000,1.304,1.608 & 1.000,1.273,2.142\\[3pt]
+Kyriienko & 256 & 1.729,2.028,3.289 & 1.000,1.224,1.104 & 1.014,1.592,2.008\\
+ & 1024 & 1.746,2.026,3.231 & 1.000,1.233,1.102 & 1.014,1.605,2.007\\
+ & 4096 & 1.750,2.025,3.216 & 1.000,1.235,1.101 & 1.014,1.608,2.007\\
+ & 16384 & 1.752,2.025,3.213 & 1.000,1.236,1.101 & 1.014,1.609,2.008\\[3pt]
+Hubregtsen Z & 256 & -- & 1.000,1.000,1.000 & 0.800,0.818,1.009\\
+ & 1024 & -- & 1.000,1.000,1.000 & 0.848,0.820,1.073\\
+ & 4096 & -- & 1.000,1.000,1.000 & 0.869,0.822,1.119\\
+ & 16384 & -- & 1.000,1.000,1.000 & 0.876,0.825,1.139\\[3pt]
+Hubregtsen Z+ZZ & 256 & 1.320,1.669,1.069 & 1.000,1.000,1.000 & 0.775,1.000,0.698\\
+ & 1024 & 1.264,1.485,0.970 & 1.000,1.000,1.000 & 0.774,1.000,0.671\\
+ & 4096 & 1.219,1.316,0.913 & 1.000,1.000,1.000 & 0.770,1.000,0.658\\
+ & 16384 & 1.216,1.221,0.891 & 1.000,1.000,1.000 & 0.765,1.000,0.654\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Reproduction and what remains unproved}
+The Linux full run used Python~3.8.10, NumPy~1.24.4 and
+SymPy~1.13.3. A full macOS replay reproduced all 60 records and
+1,658,880 saved Monte Carlo contrast values within relative tolerance
+$10^{-9}$ and absolute tolerance $10^{-11}$; the maximum absolute
+sample discrepancy was $1.04\times10^{-13}$. All 21 recorded package
+file hashes matched, and sampled ranks were stable at the three
+specified tolerances. Ten unit tests cover covariance, unbiased
+variance, frozen splits, the common target, and shared Z/ZZ counts.
+This is same-code cross-platform reproducibility, not independent
+theoretical verification or device validation.
+
+The preceding recovery survey also had a full Linux rerun. Its
+exact certificates and rank diagnostics agreed. In its initial
+finite-shot pilot, an unfrozen SVD direction reversed sign for one
+YZ-CX case across platforms; this changed the allocation of random
+draws to the two states, not the direction axis. Replaying the saved
+server direction reproduced the statistics. The present follow-up
+freezes the full direction basis and metric choices. Its symmetric
+oracle contrasts are computed from exact model probabilities before
+drawing shot samples, rather than fitted to the sampled outcomes.
+An RNG seed alone was not treated as sufficient for reproducibility.
+
+These ideal-model experiments neither compare supervised metric
+learning nor establish predictive generalization, optimal measurement
+selection, calibrated identification at fixed error, or QPU shot
+savings. In particular, better retained sensitivity can coexist with
+an unidentified direction, and full rank can coexist with a small
+weakest sensitivity. Those distinctions, rather than a general
+acceleration claim, connect the design study to the exact
+identifiability analysis.

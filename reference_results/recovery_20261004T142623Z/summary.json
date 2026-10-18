@@ -1,0 +1,13 @@
+{
+  "settings": 30,
+  "circuits": 10,
+  "design_points": 3,
+  "validation_points": 5,
+  "metric_candidates": 34,
+  "elapsed_seconds": 3.699048667,
+  "max_feature_error": 2.220446049250313e-16,
+  "max_gradient_error": 5.694128502042872e-11,
+  "rank_scope": "numerical local rank diagnostics; exact controls are separate",
+  "classification_accuracy_evaluated": false,
+  "hardware_executed": false
+}

@@ -1,0 +1,57 @@
+\subsection{A matching lower bound on kernel dimension}
+\label{sec:dimensiontheory}
+At a fixed parameter assignment, let the kernel-relevant differential
+rank be the dimension of the span of the functions
+$\partial_{\theta_j}d^2(\cdot,\cdot;\theta)$ over input pairs.
+Multiplication by the common nonvanishing function
+$-\gamma e^{-\gamma d^2}$ gives the same rank for the Gaussian kernel.
+We use its generic value $r$ on the connected analytic parameter domain;
+special parameter assignments may have smaller rank.
+
+\begin{proposition}[Exact representative dimension]
+For Eq.~\eqref{eq:normal}, initialization $|00\rangle$, and unit-weight
+local XYZ readout on $x\in(-1,1)^2$, the generic kernel-relevant rank is
+exactly $r=4$. Four is also the minimum dimension of a global smooth
+factorization of this kernel family through its source parameters.
+\end{proposition}
+\begin{proof}
+Equation~\eqref{eq:beta} gives a four-dimensional factorization. Its
+four constant null directions in source coordinates are
+$e_2,e_3,e_7,e_1-e_5$. For a matching lower bound set
+$\beta^*=(1,1,1,0)$ and use four input pairs with
+$(p,p',q,q')=(\phi_0(x),\phi_0(x'),\phi_1(x),\phi_1(x'))$ given by
+\begin{align}
+ (p,p',q,q')/\pi\in\{& (1/6,1/2,1/6,2/3),\nonumber\\
+ &(1/6,1/3,1/3,1/2),\nonumber\\
+ &(1/6,2/3,1/6,5/6),\nonumber\\
+ &(2/3,1/6,1/6,1/2)\}.
+ \label{eq:rankpoints}
+\end{align}
+All are feasible because $0<\phi_j<\pi$ and $x_j=\cos\phi_j$.
+Let $J$ have rows $\nabla_\beta d^2$ at these pairs. Differentiating
+Eq.~\eqref{eq:closed} exactly yields
+\begin{equation}
+ \det J=\frac{\pi^3(2\sqrt3-39)}{1536}\ne0.
+ \label{eq:rankminor}
+\end{equation}
+The explicit matrix is given in Appendix~\ref{app:dimension}.
+This analytic minor is nonzero at one point, hence gives generic rank
+at least four. Any smooth factorization through $m$ real variables
+would, by the chain rule, bound the rank of these four kernel evaluations
+by $m$, requiring $m\ge4$. The global linear map in
+Eq.~\eqref{eq:beta} attains the bound.
+\end{proof}
+
+This is not a unique global chart: discrete symmetries and singular
+points can remain. It is also not a lower bound on quantum gates,
+measurement settings, or shots. The theorem concerns the fixed
+initialization and readout, not the universal-state quantifier of the
+common-output theorem.
+
+For other circuits we use two separate certificate types. Exact
+identities for independent constant null directions give an upper bound;
+a nonzero minor of the source-coordinate derivative matrix at feasible
+inputs and one shared parameter assignment gives a lower bound.
+Numerical singular values may select a minor but do not certify its
+nonzero value. Equally, activity of each individual coordinate does not
+exclude a null combination of coordinates.

@@ -1,0 +1,96 @@
+# Python 3.8.20 + SymPy 1.13.3, original kyriienko_scaling.py WITHOUT the gcd shim:
+# $PY -m unittest test_kyriienko_scaling
+EEE.E.E......E
+======================================================================
+ERROR: test_exact_d2_vs_dense_n6 (test_kyriienko_scaling.TestEngines)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/test_kyriienko_scaling.py", line 126, in test_exact_d2_vs_dense_n6
+    d2, _ = exact_d2(info, u, [F(2, 7), F(5, 3)], [F(9, 4), F(1, 8)])
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/test_kyriienko_scaling.py", line 35, in exact_d2
+    a = eng.point(theta_u, s, info['observables'])
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/kyriienko_scaling.py", line 355, in point
+    wtheta = [gunit(u) for u in theta_u]
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/kyriienko_scaling.py", line 355, in <listcomp>
+    wtheta = [gunit(u) for u in theta_u]
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/kyriienko_scaling.py", line 224, in gunit
+    g = math.gcd(A, B, C)
+TypeError: gcd expected 2 arguments, got 3
+
+======================================================================
+ERROR: test_exact_d2_vs_independent_dense_random (test_kyriienko_scaling.TestEngines)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/test_kyriienko_scaling.py", line 115, in test_exact_d2_vs_independent_dense_random
+    d2, _ = exact_d2(info, u, s, sp)
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/test_kyriienko_scaling.py", line 35, in exact_d2
+    a = eng.point(theta_u, s, info['observables'])
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/kyriienko_scaling.py", line 355, in point
+    wtheta = [gunit(u) for u in theta_u]
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/kyriienko_scaling.py", line 355, in <listcomp>
+    wtheta = [gunit(u) for u in theta_u]
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/kyriienko_scaling.py", line 224, in gunit
+    g = math.gcd(A, B, C)
+TypeError: gcd expected 2 arguments, got 3
+
+======================================================================
+ERROR: test_exact_gradient_vs_finite_difference (test_kyriienko_scaling.TestEngines)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/test_kyriienko_scaling.py", line 153, in test_exact_gradient_vs_finite_difference
+    d2, grad = exact_d2(info, u, s, sp)
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/test_kyriienko_scaling.py", line 35, in exact_d2
+    a = eng.point(theta_u, s, info['observables'])
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/kyriienko_scaling.py", line 355, in point
+    wtheta = [gunit(u) for u in theta_u]
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/kyriienko_scaling.py", line 355, in <listcomp>
+    wtheta = [gunit(u) for u in theta_u]
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/kyriienko_scaling.py", line 224, in gunit
+    g = math.gcd(A, B, C)
+TypeError: gcd expected 2 arguments, got 3
+
+======================================================================
+ERROR: test_anisotropic_readout_loses_gauges (test_kyriienko_scaling.TestExactAlgebra)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/test_kyriienko_scaling.py", line 188, in test_anisotropic_readout_loses_gauges
+    ub = ks.upper_bound_certificate(info, ks.theta_star(12))
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/kyriienko_scaling.py", line 697, in upper_bound_certificate
+    units = [gunit(u) for u in theta_u]
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/kyriienko_scaling.py", line 697, in <listcomp>
+    units = [gunit(u) for u in theta_u]
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/kyriienko_scaling.py", line 224, in gunit
+    g = math.gcd(A, B, C)
+TypeError: gcd expected 2 arguments, got 3
+
+======================================================================
+ERROR: test_gunit (test_kyriienko_scaling.TestExactAlgebra)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/test_kyriienko_scaling.py", line 209, in test_gunit
+    A, B, C = ks.gunit(r)
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/kyriienko_scaling.py", line 224, in gunit
+    g = math.gcd(A, B, C)
+TypeError: gcd expected 2 arguments, got 3
+
+======================================================================
+ERROR: test_ranks (test_kyriienko_scaling.TestReproduceKnownRanks)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/test_kyriienko_scaling.py", line 91, in test_ranks
+    r = ks.certify_setting(info, cache, numeric=True, name='test', log=lambda *a: None)
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/kyriienko_scaling.py", line 1103, in certify_setting
+    ub = upper_bound_certificate(info, theta_u)
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/kyriienko_scaling.py", line 697, in upper_bound_certificate
+    units = [gunit(u) for u in theta_u]
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/kyriienko_scaling.py", line 697, in <listcomp>
+    units = [gunit(u) for u in theta_u]
+  File "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1/kyriienko_scaling.py", line 224, in gunit
+    g = math.gcd(A, B, C)
+TypeError: gcd expected 2 arguments, got 3
+
+----------------------------------------------------------------------
+Ran 14 tests in 1.678s
+
+FAILED (errors=6)
+exit=1

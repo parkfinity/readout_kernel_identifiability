@@ -1,0 +1,13 @@
+{
+ "python": "3.9.6",
+ "numpy": "1.26.4",
+ "sympy": "1.14.0",
+ "mpmath": "1.3.0",
+ "platform": "macOS-26.7-arm64-arm-64bit",
+ "primes": [
+  134217689,
+  134217649
+ ],
+ "seed_base": 20261005,
+ "workers": 8
+}

@@ -1,0 +1,38 @@
+{
+  "n": 5,
+  "k": 3,
+  "input_features": 2,
+  "parameter_count": 15,
+  "readout_count": 375,
+  "input_pairs_per_seed": 120,
+  "seeds": [
+    3,
+    42,
+    123,
+    777,
+    2024
+  ],
+  "theta_range_in_pi": [
+    -2,
+    2
+  ],
+  "input_range": [
+    -0.95,
+    0.95
+  ],
+  "metric": "identity",
+  "primary_relative_tolerance": 1e-07,
+  "relative_tolerances": [
+    1e-06,
+    1e-07,
+    1e-08,
+    1e-09,
+    1e-10
+  ],
+  "absolute_tolerance": 1e-09,
+  "crosscheck_tolerance": 1e-09,
+  "finite_difference_step": 1e-05,
+  "finite_difference_tolerance": 2e-07,
+  "source_crosscheck_pairs_per_seed": 3,
+  "scope": "Floating-point sampled Jacobian rank. Not an exact generic-rank certificate or a hardware experiment."
+}

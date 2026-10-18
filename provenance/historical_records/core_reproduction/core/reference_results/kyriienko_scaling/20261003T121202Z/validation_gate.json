@@ -1,0 +1,98 @@
+{
+  "ir": [
+    {
+      "setting": "kyriienko_nonlinear_encoding_circuit_n2_l1_local_xyz",
+      "generated_sha256": "bb94df413d984e45c826763dcf08f7933920923c2f57780706a8cc7e597477d1",
+      "frozen_file_sha256": "bb94df413d984e45c826763dcf08f7933920923c2f57780706a8cc7e597477d1",
+      "frozen_file_actual_sha256": "bb94df413d984e45c826763dcf08f7933920923c2f57780706a8cc7e597477d1",
+      "dict_equal": true,
+      "sha_equal": true
+    },
+    {
+      "setting": "kyriienko_nonlinear_encoding_circuit_n2_l1_pauli_weight_le_2",
+      "generated_sha256": "0dd2293e29e836cf0b306427d6c45c776445fb6f714a7b0a7dff91212e4d27ad",
+      "frozen_file_sha256": "0dd2293e29e836cf0b306427d6c45c776445fb6f714a7b0a7dff91212e4d27ad",
+      "frozen_file_actual_sha256": "0dd2293e29e836cf0b306427d6c45c776445fb6f714a7b0a7dff91212e4d27ad",
+      "dict_equal": true,
+      "sha_equal": true
+    },
+    {
+      "setting": "kyriienko_nonlinear_encoding_circuit_n2_l1_local_z",
+      "generated_sha256": "fd9a42d130df940eebfe05b24840c3db29eaf59402542a2848e08c2af3e12ed0",
+      "frozen_file_sha256": "fd9a42d130df940eebfe05b24840c3db29eaf59402542a2848e08c2af3e12ed0",
+      "frozen_file_actual_sha256": "fd9a42d130df940eebfe05b24840c3db29eaf59402542a2848e08c2af3e12ed0",
+      "dict_equal": true,
+      "sha_equal": true
+    },
+    {
+      "setting": "kyriienko_nonlinear_encoding_circuit_n4_l1_local_xyz",
+      "generated_sha256": "68b4bbf36d59eb39739644c7fce8e503be4f4d17759c7f910eb1b0b0f57318b3",
+      "frozen_file_sha256": "68b4bbf36d59eb39739644c7fce8e503be4f4d17759c7f910eb1b0b0f57318b3",
+      "frozen_file_actual_sha256": "68b4bbf36d59eb39739644c7fce8e503be4f4d17759c7f910eb1b0b0f57318b3",
+      "dict_equal": true,
+      "sha_equal": true
+    },
+    {
+      "setting": "kyriienko_nonlinear_encoding_circuit_n4_l1_pauli_weight_le_2",
+      "generated_sha256": "4d9eea8b4a6daf29a144877e20abe97ce496003fb6ff1ca844a930da77c1678c",
+      "frozen_file_sha256": "4d9eea8b4a6daf29a144877e20abe97ce496003fb6ff1ca844a930da77c1678c",
+      "frozen_file_actual_sha256": "4d9eea8b4a6daf29a144877e20abe97ce496003fb6ff1ca844a930da77c1678c",
+      "dict_equal": true,
+      "sha_equal": true
+    },
+    {
+      "setting": "kyriienko_nonlinear_encoding_circuit_n4_l1_local_z",
+      "generated_sha256": "baaa43d41a3129703efa4f50af02e22d6f33871a2c1d75a6c21a4a012848ac5b",
+      "frozen_file_sha256": "baaa43d41a3129703efa4f50af02e22d6f33871a2c1d75a6c21a4a012848ac5b",
+      "frozen_file_actual_sha256": "baaa43d41a3129703efa4f50af02e22d6f33871a2c1d75a6c21a4a012848ac5b",
+      "dict_equal": true,
+      "sha_equal": true
+    }
+  ],
+  "ranks": [
+    {
+      "setting": "kyriienko_n2_local_xyz",
+      "expected": 4,
+      "certified": 4,
+      "primary": true,
+      "match": true
+    },
+    {
+      "setting": "kyriienko_n2_pauli_weight_le_2",
+      "expected": 0,
+      "certified": 0,
+      "primary": false,
+      "match": true
+    },
+    {
+      "setting": "kyriienko_n2_local_z",
+      "expected": 4,
+      "certified": 4,
+      "primary": false,
+      "match": true
+    },
+    {
+      "setting": "kyriienko_n4_local_xyz",
+      "expected": 10,
+      "certified": 10,
+      "primary": true,
+      "match": true
+    },
+    {
+      "setting": "kyriienko_n4_pauli_weight_le_2",
+      "expected": 10,
+      "certified": 10,
+      "primary": true,
+      "match": true
+    },
+    {
+      "setting": "kyriienko_n4_local_z",
+      "expected": 8,
+      "certified": 8,
+      "primary": false,
+      "match": true
+    }
+  ],
+  "passed": true,
+  "secondary_all_match": true
+}

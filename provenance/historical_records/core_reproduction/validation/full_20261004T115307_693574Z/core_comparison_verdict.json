@@ -1,0 +1,986 @@
+{
+ "verdict": "PASS_WITH_WARNINGS",
+ "meaning": "Every certificate quantity equals the reference exactly; only non-certificate diagnostics or environment versions differ (see warnings).",
+ "generated_utc": "2026-10-04T12:02:25Z",
+ "inputs": {
+  "reference_fourier": "/private/tmp/quantum-reviewer-qa/full_20261004T115307_693574Z/work/reference_results/fourier_gram/20261002T044925Z",
+  "reference_kyriienko": "/private/tmp/quantum-reviewer-qa/full_20261004T115307_693574Z/work/reference_results/kyriienko_scaling/20261003T121202Z",
+  "fresh_fourier": "/private/tmp/quantum-reviewer-qa/full_20261004T115307_693574Z/work/runs/20261004T115536Z/fourier_gram",
+  "fresh_kyriienko": "/private/tmp/quantum-reviewer-qa/full_20261004T115307_693574Z/work/runs/20261004T115536Z/kyriienko_scaling"
+ },
+ "counts": {
+  "checks": 3705,
+  "strict_checks": 3376,
+  "strict_failures": 0,
+  "warnings": 2,
+  "info_differences": 0
+ },
+ "sections": {
+  "run": {
+   "checks": 7,
+   "strict_failures": 0,
+   "warnings": 0,
+   "info_differences": 0
+  },
+  "environment": {
+   "checks": 2,
+   "strict_failures": 0,
+   "warnings": 2,
+   "info_differences": 0
+  },
+  "fourier_gram": {
+   "checks": 2848,
+   "strict_failures": 0,
+   "warnings": 0,
+   "info_differences": 0
+  },
+  "kyriienko_scaling": {
+   "checks": 848,
+   "strict_failures": 0,
+   "warnings": 0,
+   "info_differences": 0
+  }
+ },
+ "headline": {
+  "fourier_gram": {
+   "settings": 30,
+   "certified_ranks_equal": 30,
+   "exact_minor_determinants_compared": 7,
+   "exact_minor_determinants_equal": 7,
+   "modular_minor_determinants_compared": 60,
+   "modular_minor_determinants_equal": 60,
+   "per_symbol_counts": {
+    "reference": {
+     "ACTIVE": 195,
+     "INACTIVE": 57,
+     "UNDECIDED": 0
+    },
+    "fresh": {
+     "ACTIVE": 195,
+     "INACTIVE": 57,
+     "UNDECIDED": 0
+    }
+   },
+   "closed": 30,
+   "budget_limited_inactive_by_invariance": 32,
+   "symbolic_gram_completed_settings": {
+    "reference": 16,
+    "fresh": 16
+   },
+   "wall_seconds_fresh": 376.2,
+   "fresh_environment": {
+    "python": "3.9.6",
+    "numpy": "1.24.4",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "platform": "macOS-26.7-arm64-arm-64bit",
+    "primes": [
+     134217689,
+     134217649
+    ],
+    "seed_base": 20261005,
+    "workers": 4
+   }
+  },
+  "kyriienko_scaling": {
+   "settings": 12,
+   "certified_ranks_equal": 12,
+   "exact_minor_determinants_equal": 12,
+   "jacobian_payload_hashes_equal": 12,
+   "ir_hashes": {
+    "compared": 12,
+    "equal": 12,
+    "files": {
+     "kyriienko_n2_local_xyz.json": {
+      "reference": "bb94df413d984e45c826763dcf08f7933920923c2f57780706a8cc7e597477d1",
+      "fresh": "bb94df413d984e45c826763dcf08f7933920923c2f57780706a8cc7e597477d1"
+     },
+     "kyriienko_n2_local_z.json": {
+      "reference": "fd9a42d130df940eebfe05b24840c3db29eaf59402542a2848e08c2af3e12ed0",
+      "fresh": "fd9a42d130df940eebfe05b24840c3db29eaf59402542a2848e08c2af3e12ed0"
+     },
+     "kyriienko_n2_pauli_weight_le_2.json": {
+      "reference": "0dd2293e29e836cf0b306427d6c45c776445fb6f714a7b0a7dff91212e4d27ad",
+      "fresh": "0dd2293e29e836cf0b306427d6c45c776445fb6f714a7b0a7dff91212e4d27ad"
+     },
+     "kyriienko_n4_local_xyz.json": {
+      "reference": "68b4bbf36d59eb39739644c7fce8e503be4f4d17759c7f910eb1b0b0f57318b3",
+      "fresh": "68b4bbf36d59eb39739644c7fce8e503be4f4d17759c7f910eb1b0b0f57318b3"
+     },
+     "kyriienko_n4_local_z.json": {
+      "reference": "baaa43d41a3129703efa4f50af02e22d6f33871a2c1d75a6c21a4a012848ac5b",
+      "fresh": "baaa43d41a3129703efa4f50af02e22d6f33871a2c1d75a6c21a4a012848ac5b"
+     },
+     "kyriienko_n4_pauli_weight_le_2.json": {
+      "reference": "4d9eea8b4a6daf29a144877e20abe97ce496003fb6ff1ca844a930da77c1678c",
+      "fresh": "4d9eea8b4a6daf29a144877e20abe97ce496003fb6ff1ca844a930da77c1678c"
+     },
+     "kyriienko_n6_local_xyz.json": {
+      "reference": "55d5785f35dae3e3289409b4a49f1e77ad7957719d831f8d2d7cc3c512d27dd7",
+      "fresh": "55d5785f35dae3e3289409b4a49f1e77ad7957719d831f8d2d7cc3c512d27dd7"
+     },
+     "kyriienko_n6_local_z.json": {
+      "reference": "eca566dc386e752bfee4ffbbcbfe6ff65bf8e35ae1f08a400f50b98de5532e88",
+      "fresh": "eca566dc386e752bfee4ffbbcbfe6ff65bf8e35ae1f08a400f50b98de5532e88"
+     },
+     "kyriienko_n6_pauli_weight_le_2.json": {
+      "reference": "fa24bdf85fb5e12d209eac11be175a740e862a18b0a4ef214985459f5a577d52",
+      "fresh": "fa24bdf85fb5e12d209eac11be175a740e862a18b0a4ef214985459f5a577d52"
+     },
+     "kyriienko_n8_local_xyz.json": {
+      "reference": "1316bbb6097b26d23aa8d91be377e1d5279edfa3284c01c508e6bbbd353708f5",
+      "fresh": "1316bbb6097b26d23aa8d91be377e1d5279edfa3284c01c508e6bbbd353708f5"
+     },
+     "kyriienko_n8_local_z.json": {
+      "reference": "8cbc6aa047e143abbbff7fd95912e338f6df083506a503c488e1862184d63fcc",
+      "fresh": "8cbc6aa047e143abbbff7fd95912e338f6df083506a503c488e1862184d63fcc"
+     },
+     "kyriienko_n8_pauli_weight_le_2.json": {
+      "reference": "a7d02bac9591b981adabc5015aeb0f4199b1a261652b0b9097112c9b3e363d9a",
+      "fresh": "a7d02bac9591b981adabc5015aeb0f4199b1a261652b0b9097112c9b3e363d9a"
+     }
+    }
+   },
+   "fresh_environment": {
+    "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+    "platform": "macOS-26.7-arm64-arm-64bit",
+    "numpy": "1.24.4",
+    "sympy": "1.14.0",
+    "qiskit": "1.2.4",
+    "scipy": "1.10.1"
+   },
+   "validation_gate_passed": true,
+   "audit_replay_passed": true,
+   "wall_seconds_fresh": 23.7,
+   "peak_rss_mb_fresh": 204.5
+  }
+ },
+ "run": {
+  "stages": [
+   {
+    "name": "fourier_unit_tests",
+    "command": [
+     "/workspace/journal_extension/.venv_compiler_v2/bin/python",
+     "-m",
+     "unittest",
+     "-v",
+     "test_fourier_gram"
+    ],
+    "cwd": "/private/tmp/quantum-reviewer-qa/full_20261004T115307_693574Z/work/journal_extension/fourier_gram_identifiability_v1/experiment",
+    "exit_code": 0,
+    "started_utc": "2026-10-04T11:55:37Z",
+    "finished_utc": "2026-10-04T11:55:38Z",
+    "wall_seconds": 1.166,
+    "peak_rss_mb_largest_process": 76.4
+   },
+   {
+    "name": "kyriienko_unit_tests",
+    "command": [
+     "/workspace/journal_extension/.venv_compiler_v2/bin/python",
+     "/private/tmp/quantum-reviewer-qa/full_20261004T115307_693574Z/work/tools/repro_helper.py",
+     "pyexec",
+     "--",
+     "-m",
+     "unittest",
+     "-v",
+     "test_kyriienko_scaling"
+    ],
+    "cwd": "/private/tmp/quantum-reviewer-qa/full_20261004T115307_693574Z/work/journal_extension/kyriienko_scaling_v1",
+    "exit_code": 0,
+    "started_utc": "2026-10-04T11:55:38Z",
+    "finished_utc": "2026-10-04T11:55:40Z",
+    "wall_seconds": 2.008,
+    "peak_rss_mb_largest_process": 120.6
+   },
+   {
+    "name": "fourier_gram_run",
+    "command": [
+     "/workspace/journal_extension/.venv_compiler_v2/bin/python",
+     "run_experiment.py",
+     "--workers",
+     "4"
+    ],
+    "cwd": "/private/tmp/quantum-reviewer-qa/full_20261004T115307_693574Z/work/journal_extension/fourier_gram_identifiability_v1/experiment",
+    "exit_code": 0,
+    "started_utc": "2026-10-04T11:55:40Z",
+    "finished_utc": "2026-10-04T12:01:57Z",
+    "wall_seconds": 376.489,
+    "peak_rss_mb_largest_process": 1333.9
+   },
+   {
+    "name": "kyriienko_scaling_run",
+    "command": [
+     "/workspace/journal_extension/.venv_compiler_v2/bin/python",
+     "/private/tmp/quantum-reviewer-qa/full_20261004T115307_693574Z/work/tools/repro_helper.py",
+     "pyexec",
+     "--",
+     "kyriienko_scaling.py",
+     "--sizes",
+     "2",
+     "4",
+     "6",
+     "8",
+     "--output",
+     "/private/tmp/quantum-reviewer-qa/full_20261004T115307_693574Z/work/runs/20261004T115536Z/kyriienko_scaling"
+    ],
+    "cwd": "/private/tmp/quantum-reviewer-qa/full_20261004T115307_693574Z/work/journal_extension/kyriienko_scaling_v1",
+    "exit_code": 0,
+    "started_utc": "2026-10-04T12:01:57Z",
+    "finished_utc": "2026-10-04T12:02:25Z",
+    "wall_seconds": 28.297,
+    "peak_rss_mb_largest_process": 204.5
+   }
+  ],
+  "environment": {
+   "versions": {
+    "python": "3.9.6",
+    "numpy": "1.24.4",
+    "sympy": "1.14.0",
+    "qiskit": "1.2.4",
+    "mpmath": "1.3.0",
+    "scipy": "1.10.1",
+    "rustworkx": "0.17.1",
+    "symengine": "0.13.0"
+   },
+   "platform": "macOS-26.7-arm64-arm-64bit",
+   "cpu_count": 18,
+   "warnings": [
+    "python 3.9.6 != expected 3.8.10",
+    "sympy 1.14.0 != expected 1.13.3"
+   ],
+   "gcd_shim_used": false
+  }
+ },
+ "per_setting": {
+  "fourier_gram": {
+   "yz_cx_encoding_circuit_n2_l1_local_xyz": {
+    "reference": [
+     3,
+     3
+    ],
+    "fresh": [
+     3,
+     3
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": null,
+    "verdict_counts": {
+     "ACTIVE": 3,
+     "INACTIVE": 1
+    }
+   },
+   "yz_cx_encoding_circuit_n2_l1_local_z": {
+    "reference": [
+     2,
+     2
+    ],
+    "fresh": [
+     2,
+     2
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": null,
+    "verdict_counts": {
+     "ACTIVE": 2,
+     "INACTIVE": 2
+    }
+   },
+   "yz_cx_encoding_circuit_n2_l1_pauli_weight_le_2": {
+    "reference": [
+     2,
+     2
+    ],
+    "fresh": [
+     2,
+     2
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": null,
+    "verdict_counts": {
+     "ACTIVE": 2,
+     "INACTIVE": 2
+    }
+   },
+   "yz_cx_encoding_circuit_n2_l2_local_xyz": {
+    "reference": [
+     7,
+     7
+    ],
+    "fresh": [
+     7,
+     7
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": null,
+    "verdict_counts": {
+     "ACTIVE": 7,
+     "INACTIVE": 1
+    }
+   },
+   "yz_cx_encoding_circuit_n2_l2_local_z": {
+    "reference": [
+     6,
+     6
+    ],
+    "fresh": [
+     6,
+     6
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": null,
+    "verdict_counts": {
+     "ACTIVE": 6,
+     "INACTIVE": 2
+    }
+   },
+   "yz_cx_encoding_circuit_n2_l2_pauli_weight_le_2": {
+    "reference": [
+     6,
+     6
+    ],
+    "fresh": [
+     6,
+     6
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": null,
+    "verdict_counts": {
+     "ACTIVE": 6,
+     "INACTIVE": 2
+    }
+   },
+   "yz_cx_encoding_circuit_n4_l1_local_xyz": {
+    "reference": [
+     6,
+     6
+    ],
+    "fresh": [
+     6,
+     6
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": null,
+    "verdict_counts": {
+     "ACTIVE": 6,
+     "INACTIVE": 2
+    }
+   },
+   "yz_cx_encoding_circuit_n4_l1_local_z": {
+    "reference": [
+     4,
+     4
+    ],
+    "fresh": [
+     4,
+     4
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": null,
+    "verdict_counts": {
+     "ACTIVE": 4,
+     "INACTIVE": 4
+    }
+   },
+   "yz_cx_encoding_circuit_n4_l1_pauli_weight_le_2": {
+    "reference": [
+     6,
+     6
+    ],
+    "fresh": [
+     6,
+     6
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": null,
+    "verdict_counts": {
+     "ACTIVE": 6,
+     "INACTIVE": 2
+    }
+   },
+   "yz_cx_encoding_circuit_n4_l2_local_xyz": {
+    "reference": [
+     14,
+     14
+    ],
+    "fresh": [
+     14,
+     14
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": null,
+    "verdict_counts": {
+     "ACTIVE": 14,
+     "INACTIVE": 2
+    }
+   },
+   "yz_cx_encoding_circuit_n4_l2_local_z": {
+    "reference": [
+     12,
+     12
+    ],
+    "fresh": [
+     12,
+     12
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": null,
+    "verdict_counts": {
+     "ACTIVE": 12,
+     "INACTIVE": 4
+    }
+   },
+   "yz_cx_encoding_circuit_n4_l2_pauli_weight_le_2": {
+    "reference": [
+     14,
+     14
+    ],
+    "fresh": [
+     14,
+     14
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": null,
+    "verdict_counts": {
+     "ACTIVE": 14,
+     "INACTIVE": 2
+    }
+   },
+   "hubregtsen_encoding_circuit_n2_l1_local_xyz": {
+    "reference": [
+     0,
+     0
+    ],
+    "fresh": [
+     0,
+     0
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": null,
+    "verdict_counts": {
+     "INACTIVE": 2
+    }
+   },
+   "hubregtsen_encoding_circuit_n2_l1_local_z": {
+    "reference": [
+     2,
+     2
+    ],
+    "fresh": [
+     2,
+     2
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": null,
+    "verdict_counts": {
+     "ACTIVE": 2
+    }
+   },
+   "hubregtsen_encoding_circuit_n2_l1_pauli_weight_le_2": {
+    "reference": [
+     0,
+     0
+    ],
+    "fresh": [
+     0,
+     0
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": null,
+    "verdict_counts": {
+     "INACTIVE": 2
+    }
+   },
+   "hubregtsen_encoding_circuit_n2_l2_local_xyz": {
+    "reference": [
+     2,
+     2
+    ],
+    "fresh": [
+     2,
+     2
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": null,
+    "verdict_counts": {
+     "ACTIVE": 2,
+     "INACTIVE": 2
+    }
+   },
+   "hubregtsen_encoding_circuit_n2_l2_local_z": {
+    "reference": [
+     4,
+     4
+    ],
+    "fresh": [
+     4,
+     4
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": null,
+    "verdict_counts": {
+     "ACTIVE": 4
+    }
+   },
+   "hubregtsen_encoding_circuit_n2_l2_pauli_weight_le_2": {
+    "reference": [
+     2,
+     2
+    ],
+    "fresh": [
+     2,
+     2
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": null,
+    "verdict_counts": {
+     "ACTIVE": 2,
+     "INACTIVE": 2
+    }
+   },
+   "hubregtsen_encoding_circuit_n4_l1_local_xyz": {
+    "reference": [
+     8,
+     8
+    ],
+    "fresh": [
+     8,
+     8
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": null,
+    "verdict_counts": {
+     "ACTIVE": 8
+    }
+   },
+   "hubregtsen_encoding_circuit_n4_l1_local_z": {
+    "reference": [
+     2,
+     2
+    ],
+    "fresh": [
+     2,
+     2
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": true,
+    "verdict_counts": {
+     "ACTIVE": 4,
+     "INACTIVE": 4
+    }
+   },
+   "hubregtsen_encoding_circuit_n4_l1_pauli_weight_le_2": {
+    "reference": [
+     8,
+     8
+    ],
+    "fresh": [
+     8,
+     8
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": null,
+    "verdict_counts": {
+     "ACTIVE": 8
+    }
+   },
+   "hubregtsen_encoding_circuit_n4_l2_local_xyz": {
+    "reference": [
+     16,
+     16
+    ],
+    "fresh": [
+     16,
+     16
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": null,
+    "verdict_counts": {
+     "ACTIVE": 16
+    }
+   },
+   "hubregtsen_encoding_circuit_n4_l2_local_z": {
+    "reference": [
+     12,
+     12
+    ],
+    "fresh": [
+     12,
+     12
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": null,
+    "verdict_counts": {
+     "ACTIVE": 12,
+     "INACTIVE": 4
+    }
+   },
+   "hubregtsen_encoding_circuit_n4_l2_pauli_weight_le_2": {
+    "reference": [
+     16,
+     16
+    ],
+    "fresh": [
+     16,
+     16
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": null,
+    "verdict_counts": {
+     "ACTIVE": 16
+    }
+   },
+   "kyriienko_nonlinear_encoding_circuit_n2_l1_local_xyz": {
+    "reference": [
+     4,
+     4
+    ],
+    "fresh": [
+     4,
+     4
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": true,
+    "verdict_counts": {
+     "ACTIVE": 5,
+     "INACTIVE": 1
+    }
+   },
+   "kyriienko_nonlinear_encoding_circuit_n2_l1_local_z": {
+    "reference": [
+     4,
+     4
+    ],
+    "fresh": [
+     4,
+     4
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": true,
+    "verdict_counts": {
+     "ACTIVE": 4,
+     "INACTIVE": 2
+    }
+   },
+   "kyriienko_nonlinear_encoding_circuit_n2_l1_pauli_weight_le_2": {
+    "reference": [
+     0,
+     0
+    ],
+    "fresh": [
+     0,
+     0
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": true,
+    "verdict_counts": {
+     "INACTIVE": 6
+    }
+   },
+   "kyriienko_nonlinear_encoding_circuit_n4_l1_local_xyz": {
+    "reference": [
+     10,
+     10
+    ],
+    "fresh": [
+     10,
+     10
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": true,
+    "verdict_counts": {
+     "ACTIVE": 11,
+     "INACTIVE": 1
+    }
+   },
+   "kyriienko_nonlinear_encoding_circuit_n4_l1_local_z": {
+    "reference": [
+     8,
+     8
+    ],
+    "fresh": [
+     8,
+     8
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": true,
+    "verdict_counts": {
+     "ACTIVE": 8,
+     "INACTIVE": 4
+    }
+   },
+   "kyriienko_nonlinear_encoding_circuit_n4_l1_pauli_weight_le_2": {
+    "reference": [
+     10,
+     10
+    ],
+    "fresh": [
+     10,
+     10
+    ],
+    "equal": true,
+    "status": "CLOSED",
+    "exact_minor_det_equal": true,
+    "verdict_counts": {
+     "ACTIVE": 11,
+     "INACTIVE": 1
+    }
+   }
+  },
+  "kyriienko_scaling": {
+   "kyriienko_n2_local_xyz": {
+    "reference": 4,
+    "fresh": 4,
+    "equal": true,
+    "status": "CERTIFIED_EQUAL",
+    "interval": [
+     4,
+     4
+    ],
+    "exact_minor_det_equal": true,
+    "ir_sha256_equal": true,
+    "per_symbol_counts": {
+     "deleted_inactive": 1,
+     "virtual_fields": 1,
+     "minor_columns": 4
+    }
+   },
+   "kyriienko_n2_local_z": {
+    "reference": 4,
+    "fresh": 4,
+    "equal": true,
+    "status": "CERTIFIED_EQUAL",
+    "interval": [
+     4,
+     4
+    ],
+    "exact_minor_det_equal": true,
+    "ir_sha256_equal": true,
+    "per_symbol_counts": {
+     "deleted_inactive": 2,
+     "virtual_fields": 0,
+     "minor_columns": 4
+    }
+   },
+   "kyriienko_n2_pauli_weight_le_2": {
+    "reference": 0,
+    "fresh": 0,
+    "equal": true,
+    "status": "CERTIFIED_EQUAL",
+    "interval": [
+     0,
+     0
+    ],
+    "exact_minor_det_equal": true,
+    "ir_sha256_equal": true,
+    "per_symbol_counts": {
+     "deleted_inactive": 6,
+     "virtual_fields": 4,
+     "minor_columns": 0
+    }
+   },
+   "kyriienko_n4_local_xyz": {
+    "reference": 10,
+    "fresh": 10,
+    "equal": true,
+    "status": "CERTIFIED_EQUAL",
+    "interval": [
+     10,
+     10
+    ],
+    "exact_minor_det_equal": true,
+    "ir_sha256_equal": true,
+    "per_symbol_counts": {
+     "deleted_inactive": 1,
+     "virtual_fields": 1,
+     "minor_columns": 10
+    }
+   },
+   "kyriienko_n4_local_z": {
+    "reference": 8,
+    "fresh": 8,
+    "equal": true,
+    "status": "CERTIFIED_EQUAL",
+    "interval": [
+     8,
+     8
+    ],
+    "exact_minor_det_equal": true,
+    "ir_sha256_equal": true,
+    "per_symbol_counts": {
+     "deleted_inactive": 4,
+     "virtual_fields": 0,
+     "minor_columns": 8
+    }
+   },
+   "kyriienko_n4_pauli_weight_le_2": {
+    "reference": 10,
+    "fresh": 10,
+    "equal": true,
+    "status": "CERTIFIED_EQUAL",
+    "interval": [
+     10,
+     10
+    ],
+    "exact_minor_det_equal": true,
+    "ir_sha256_equal": true,
+    "per_symbol_counts": {
+     "deleted_inactive": 1,
+     "virtual_fields": 1,
+     "minor_columns": 10
+    }
+   },
+   "kyriienko_n6_local_xyz": {
+    "reference": 16,
+    "fresh": 16,
+    "equal": true,
+    "status": "CERTIFIED_EQUAL",
+    "interval": [
+     16,
+     16
+    ],
+    "exact_minor_det_equal": true,
+    "ir_sha256_equal": true,
+    "per_symbol_counts": {
+     "deleted_inactive": 1,
+     "virtual_fields": 1,
+     "minor_columns": 16
+    }
+   },
+   "kyriienko_n6_local_z": {
+    "reference": 12,
+    "fresh": 12,
+    "equal": true,
+    "status": "CERTIFIED_EQUAL",
+    "interval": [
+     12,
+     12
+    ],
+    "exact_minor_det_equal": true,
+    "ir_sha256_equal": true,
+    "per_symbol_counts": {
+     "deleted_inactive": 6,
+     "virtual_fields": 0,
+     "minor_columns": 12
+    }
+   },
+   "kyriienko_n6_pauli_weight_le_2": {
+    "reference": 16,
+    "fresh": 16,
+    "equal": true,
+    "status": "CERTIFIED_EQUAL",
+    "interval": [
+     16,
+     16
+    ],
+    "exact_minor_det_equal": true,
+    "ir_sha256_equal": true,
+    "per_symbol_counts": {
+     "deleted_inactive": 1,
+     "virtual_fields": 1,
+     "minor_columns": 16
+    }
+   },
+   "kyriienko_n8_local_xyz": {
+    "reference": 22,
+    "fresh": 22,
+    "equal": true,
+    "status": "CERTIFIED_EQUAL",
+    "interval": [
+     22,
+     22
+    ],
+    "exact_minor_det_equal": true,
+    "ir_sha256_equal": true,
+    "per_symbol_counts": {
+     "deleted_inactive": 1,
+     "virtual_fields": 1,
+     "minor_columns": 22
+    }
+   },
+   "kyriienko_n8_local_z": {
+    "reference": 16,
+    "fresh": 16,
+    "equal": true,
+    "status": "CERTIFIED_EQUAL",
+    "interval": [
+     16,
+     16
+    ],
+    "exact_minor_det_equal": true,
+    "ir_sha256_equal": true,
+    "per_symbol_counts": {
+     "deleted_inactive": 8,
+     "virtual_fields": 0,
+     "minor_columns": 16
+    }
+   },
+   "kyriienko_n8_pauli_weight_le_2": {
+    "reference": 22,
+    "fresh": 22,
+    "equal": true,
+    "status": "CERTIFIED_EQUAL",
+    "interval": [
+     22,
+     22
+    ],
+    "exact_minor_det_equal": true,
+    "ir_sha256_equal": true,
+    "per_symbol_counts": {
+     "deleted_inactive": 1,
+     "virtual_fields": 1,
+     "minor_columns": 22
+    }
+   }
+  }
+ },
+ "strict_failures": [],
+ "warnings": [
+  {
+   "section": "environment",
+   "check": "version: python 3.9.6 != expected 3.8.10",
+   "ok": false,
+   "severity": "warn",
+   "reference": null,
+   "fresh": null
+  },
+  {
+   "section": "environment",
+   "check": "version: sympy 1.14.0 != expected 1.13.3",
+   "ok": false,
+   "severity": "warn",
+   "reference": null,
+   "fresh": null
+  }
+ ],
+ "info_differences": [],
+ "severity_policy": "strict  certificate content that must be bit-for-bit (or exactly, as rationals) identical:\n          certified ranks and brackets, exact minor determinants (string AND Fraction equality),\n          modular minors, minor rows/columns, per-symbol verdicts and their counts, deletion and\n          virtual-field certificates, generated IR SHA256, Jacobian payload SHA256, code and\n          frozen-input hashes, stage exit codes, bundle integrity.\n  warn    numerical diagnostics that are NOT certificates (float SVD rank, float cross-checks)\n          and environment/version mismatches.\n  info    quantities that legitimately depend on wall-clock budgets or printing (whether the\n          60 s / 600k-term symbolic two-copy expansion finished, certificate lists that\n          include it, which bound attained r_upper, SymPy string forms of equal expressions).\nVerdict: FAIL if any strict check fails, PASS_WITH_WARNINGS if only warnings, else PASS."
+}

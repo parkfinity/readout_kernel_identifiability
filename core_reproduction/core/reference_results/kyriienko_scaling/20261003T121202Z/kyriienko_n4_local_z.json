@@ -1,0 +1,910 @@
+{
+  "setting": "kyriienko_n4_local_z",
+  "family": "kyriienko_nonlinear_encoding_circuit",
+  "n": 4,
+  "readout": "local_z",
+  "K": 12,
+  "conjecture_3n_minus_2": 10,
+  "observables": 4,
+  "ir_sha256": "baaa43d41a3129703efa4f50af02e22d6f33871a2c1d75a6c21a4a012848ac5b",
+  "structure": {
+    "formula_equivalent": true,
+    "kappa": [
+      {
+        "qubit": 0,
+        "feature": [
+          0
+        ],
+        "kappa": 8
+      },
+      {
+        "qubit": 1,
+        "feature": [
+          1
+        ],
+        "kappa": 8
+      },
+      {
+        "qubit": 2,
+        "feature": [
+          0
+        ],
+        "kappa": 12
+      },
+      {
+        "qubit": 3,
+        "feature": [
+          1
+        ],
+        "kappa": 12
+      }
+    ],
+    "fixed_frequency": true,
+    "kyriform_euler_blocks": true,
+    "each_parameter_once": true,
+    "entangler": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "entangler_commutes_Z0": true,
+    "entangler_commutes_X_last": true,
+    "unit_weights": true,
+    "readout_words": 4
+  },
+  "certified_lower_bound": {
+    "value": 8,
+    "method": "nonzero exact minor of the d^2 Jacobian at an exact feasible point",
+    "theta_point": {
+      "u": [
+        "2/5",
+        "1/2",
+        "4/7",
+        "5/8",
+        "2/3",
+        "7/10",
+        "8/11",
+        "3/4",
+        "10/13",
+        "11/14",
+        "4/5",
+        "13/16"
+      ],
+      "attempt": 0,
+      "formula": "theta_k = 4*arctan(u_k) = 2*arctan(t_k), t_k = 2u_k/(1-u_k^2); exp(i theta_k/2) = (1+i u_k)^2/(1+u_k^2) is a Gaussian rational"
+    },
+    "input_points": [
+      {
+        "s": [
+          "1/2",
+          "5/3"
+        ],
+        "x": [
+          "3/5",
+          "-8/17"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "4/5",
+          "3/4"
+        ],
+        "x": [
+          "9/41",
+          "7/25"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "1/2",
+          "3"
+        ],
+        "x": [
+          "3/5",
+          "-4/5"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "4/3",
+          "1/3"
+        ],
+        "x": [
+          "-7/25",
+          "4/5"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "3",
+          "5/4"
+        ],
+        "x": [
+          "-4/5",
+          "-9/41"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "5/2",
+          "4"
+        ],
+        "x": [
+          "-21/29",
+          "-15/17"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "4",
+          "5/3"
+        ],
+        "x": [
+          "-15/17",
+          "-8/17"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "3/5",
+          "1/3"
+        ],
+        "x": [
+          "8/17",
+          "4/5"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "1/3",
+          "5/4"
+        ],
+        "x": [
+          "4/5",
+          "-9/41"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "4/5",
+          "5/2"
+        ],
+        "x": [
+          "9/41",
+          "-21/29"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      }
+    ],
+    "pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        8,
+        9
+      ]
+    ],
+    "minor_rows_pair_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "minor_rows_pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        8
+      ]
+    ],
+    "minor_columns_theta": [
+      0,
+      1,
+      3,
+      4,
+      6,
+      7,
+      9,
+      10
+    ],
+    "excluded_columns_theta": [
+      2,
+      5,
+      8,
+      11
+    ],
+    "integer_minor_determinant": "1764647553869338564164165429604908044802853040509454806175960828992389173646713809247179961453875306976400855950249423911246262902408495631948838582419824177983112843757170481504838061640054202108432852016025500267730264926145573242129494122173546697316644585935795367063754853927203604598898939384770600606937641367134698316859987835195482885874761175456118384635630333675876666991191981054257657039439770779091686220046995039382504877247626310571053359588347251385249789070286657167433492327979128789598111674711409080128006057637123963708296101911928775915905806340448679783025997433600839037538580305784419404998815318630394721689403845146117502240575020875572357430549023516850116314132240797641033304459887697041851253015785702649369241814879699460996863793298378499274714708252217157765530606243680088837799884236491918246801686339589312161178964326143447015921977368018058494995607097679831975543842173940133050575454998732912834655229601844833575050881779158456683067464334385387279300385200106774871708914531609480036422610282897949218750000000000000000000000000000",
+    "integer_minor_digits": 1075,
+    "row_scale_product": "6651512323498373895269643415156168892728614158168833628535809589537315774220600344576/30639137417377422472415808804720490563978987509870739698832649751267127997686393144558714797957830664545947376709399855624126263324160656994537385603601779621414554550863787960451862689145794303439330170128839664839590203012058937315784763049358366976801924372992239184412706218391721086921523759300282427217052987508795077021319290987657970030892011930772973000742881834916418149809961170892522307230256703080845692157993303514522698768283257011750304394934048832460592302828588596122781084366035084641233589337797033949786248902631988334602689155826281296393382315804911047953403737124909757587681692255399847060633265384991846914386483720455706077907519722088594291000047076320651616234329165615754889225484053489014412907925734392368781702253026890975420045805822579237870587591634168892066533580769219835587944500844854153476438529085506191411567675449945730856169171532477434632529046090305759306168966767158136449424207613809874076197556017574365793326771869740464570488619588903145491766711999210885383479759792135248895580935483586991313579478916173532222046899920015359184415409382297863193104853762498214456871416244698735908968956209719181060791015625",
+    "rational_minor_determinant": "9706060573418851839588187352856760268558050629813699573298566240681522144919327341932511105839907193075535572261205043556136244377583267241473073877626344720769102762839367077118933271084467482599024374798430837074531512921218924362647987795396002585923820523115740713544007645563947911744578294875732985625185356942954873665007476683625894233819604864287547028124507530651955927559016376011371240735771820220140797785714014752140045635552385350751301138228331883502992182309360861653697030793274276452552595928942415020972847707258792900156566739624030749016638940012248139578114513863823672700918534681702577376988286675527217062660122790294955518329082496966678593968597302262565564979984223466805379473980307991396134846921629812806825054472904716315558687650708535493774416364751874867266021833168947341395607586764610439479296/25336181019243590256369187379916202839018356711950698519167427017263877115729296550194123708473453781779153265646838436816009581564429475043294900904145676708813441753801574006576468863356902269692914945887690235240114050192889236758989394365150008363723810681840686724847008461973737993330857812042743622446022450253802661689668395491558677265558288596558024426896972119486300632331120814322636825434542068348140403750405181568754826290792904703436581506811538887269022773677009070743596504759970101962930369165478062507644346878154811513845720099712101268106224695765288728697625207108890130984803555242004148410829652841884311376156111754922335560966814775330897052497502662129049948844200255673626870429534756770965763834560314717054039923451102530796663929397822270227537464930929162639752956487360080473081325180828571319580078125",
+    "rational_minor_log10_abs": -3.4166981559504848,
+    "sympy_domainmatrix_det_equal": true,
+    "residues": {
+      "2305843009213693951": {
+        "det_mod_p": 57777863235529941,
+        "bareiss_mod_p": 57777863235529941
+      },
+      "4611686018427387847": {
+        "det_mod_p": 4223473951481134862,
+        "bareiss_mod_p": 4223473951481134862
+      },
+      "9223372036854775783": {
+        "det_mod_p": 8947165804594480978,
+        "bareiss_mod_p": 8947165804594480978
+      }
+    },
+    "selection": "row echelon modulo p=2^61-1 (exact integer arithmetic); determinant exact (Bareiss) and re-checked",
+    "jacobian_file": "kyriienko_n4_local_z_jacobian.json.gz",
+    "jacobian_payload_sha256": "f7315b101e901b3aedf05908e842c5084020e6f401c567cb47e8e27d7d1b01f5",
+    "attempts": [
+      {
+        "theta_attempt": 0,
+        "points": 10,
+        "pairs": 45,
+        "rank_mod_p": 8,
+        "field_upper": 8,
+        "exact_state_seconds": 0.0,
+        "rows_seconds": 0.002759791999999983,
+        "selection_seconds": 0.0005246670000000897
+      }
+    ]
+  },
+  "upper_bound": {
+    "value": 8,
+    "machine_certificate": {
+      "deleted_coordinates": [
+        {
+          "parameter": 11,
+          "gate_index": 16,
+          "generator": "IIIZ",
+          "output_generator": "IZZZ"
+        },
+        {
+          "parameter": 8,
+          "gate_index": 12,
+          "generator": "IIZI",
+          "output_generator": "IZZI"
+        },
+        {
+          "parameter": 5,
+          "gate_index": 7,
+          "generator": "IZII",
+          "output_generator": "ZZII"
+        },
+        {
+          "parameter": 2,
+          "gate_index": 3,
+          "generator": "ZIII",
+          "output_generator": "ZIII"
+        }
+      ],
+      "virtual_fields": [],
+      "family_rank_at_theta_star": 4,
+      "upper": 8,
+      "exact_null_vectors_at_theta_star": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "seconds": 0.005742165999999882,
+      "logic": "Each deleted angle is globally inactive (transported generator P with [Omega,P(x)I+I(x)P]=0, exact Pauli algebra). Each virtual field v(theta) obeys J(theta)v(theta)=0 for all theta (SymPy Euler identity + exact two-copy invariance of the transported inserted generator). Family rank m at theta* is <= its generic rank, so generic r <= K-m (analyticity)."
+    },
+    "manuscript_value": null,
+    "manuscript_reference": "none in the manuscript for local Z at this size; upper bound is the machine certificate (exact deletion of the n trailing Rz angles, whose output generators are Z strings commuting with every Z readout)"
+  },
+  "certified_r": 8,
+  "status": "CERTIFIED_EQUAL",
+  "interval": [
+    8,
+    8
+  ],
+  "exact_consistency_at_theta_star": {
+    "null_vectors_annihilate_all_rows": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "exact_rank_at_theta_star": 8,
+    "note": "one-point consistency (rank at theta* equals the certified generic value), not an extra proof"
+  },
+  "cross_checks": {
+    "features_exact_vs_float_ir_engine_max_abs": 3.6637359812630166e-15,
+    "features_exact_vs_dense_source_statevector_max_abs": 7.632783294297951e-16,
+    "features_exact_vs_qiskit_source_statevector_max_abs": 8.187894806610529e-16,
+    "gradient_exact_vs_float_tangent_max_abs": 6.661338147750939e-16,
+    "exact_d2_first_pairs": [
+      "24888375633035150044124141849136275876306694238111908674863586594104213037441566381975823602949414041565536005871177839326977490369532939773576031353866648781197363544064/9169760778341880875648460948464392708025648747280623462206678387470920210589092655992866897546304613705973599305985078215297845484477168298553806380368769168853759765625",
+      "2020716033841283711244264424076151835115513497786403022832909854579457532927050740831298179669310191708869064140537856/28829195289575676114320167516885234570577656431218865389700048158887606491681578069208313763738260604441165924072265625"
+    ]
+  },
+  "numerical_not_certified": {
+    "certified": false,
+    "label": "NOT a certificate (floating SVD / random-point residuals)",
+    "tolerance_relative": 1e-09,
+    "trials": [
+      {
+        "seed": 11,
+        "pairs": 60,
+        "rank": 8,
+        "sigma_max": 12.286876742446523,
+        "reference_scale": 12.286876742446523,
+        "sigma_r_rel": 2.3285997378954987e-05,
+        "sigma_r1_rel": 4.341561240790716e-17,
+        "singular_values_rel": [
+          1.0,
+          0.6629435719686294,
+          0.34988909849676353,
+          0.28980364827067046,
+          0.2541578461833001,
+          0.17644730525918256,
+          0.025311703109462378,
+          2.3285997378954987e-05,
+          4.341561240790716e-17,
+          8.920145072121393e-18,
+          5.758224017235284e-34,
+          0.0
+        ],
+        "gauge_fields": [
+          {
+            "field": [
+              "deleted",
+              "11"
+            ],
+            "relative_residual": 0.0,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 0.12212965664055866
+          },
+          {
+            "field": [
+              "deleted",
+              "8"
+            ],
+            "relative_residual": 0.0,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 0.22629982521046402
+          },
+          {
+            "field": [
+              "deleted",
+              "5"
+            ],
+            "relative_residual": 0.0,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 0.3243810994219845
+          },
+          {
+            "field": [
+              "deleted",
+              "2"
+            ],
+            "relative_residual": 0.0,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 0.5217837831652057
+          }
+        ]
+      },
+      {
+        "seed": 12,
+        "pairs": 60,
+        "rank": 8,
+        "sigma_max": 15.908867931406567,
+        "reference_scale": 15.908867931406567,
+        "sigma_r_rel": 3.758425814084173e-05,
+        "sigma_r1_rel": 1.4889046381273933e-17,
+        "singular_values_rel": [
+          1.0,
+          0.42927711707597993,
+          0.3876031208586658,
+          0.3033228358544477,
+          0.2539071574894337,
+          0.11508713342460912,
+          0.0005536289482494409,
+          3.758425814084173e-05,
+          1.4889046381273933e-17,
+          2.954324348070755e-18,
+          4.143700570699972e-34,
+          0.0
+        ],
+        "gauge_fields": [
+          {
+            "field": [
+              "deleted",
+              "11"
+            ],
+            "relative_residual": 0.0,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 0.16615069920899836
+          },
+          {
+            "field": [
+              "deleted",
+              "8"
+            ],
+            "relative_residual": 0.0,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 0.24061340148345992
+          },
+          {
+            "field": [
+              "deleted",
+              "5"
+            ],
+            "relative_residual": 0.0,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 0.19208672411990557
+          },
+          {
+            "field": [
+              "deleted",
+              "2"
+            ],
+            "relative_residual": 0.0,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 0.5715622466655221
+          }
+        ]
+      },
+      {
+        "seed": 13,
+        "pairs": 60,
+        "rank": 8,
+        "sigma_max": 16.22921971970226,
+        "reference_scale": 16.22921971970226,
+        "sigma_r_rel": 4.7232174742327824e-05,
+        "sigma_r1_rel": 3.137506454031183e-18,
+        "singular_values_rel": [
+          1.0,
+          0.6514970337873914,
+          0.40262723915961085,
+          0.16079021280147412,
+          0.09387966655885112,
+          0.08249578189203942,
+          0.006366775344540862,
+          4.7232174742327824e-05,
+          3.137506454031183e-18,
+          3.697952350743445e-19,
+          1.4094576072951792e-34,
+          0.0
+        ],
+        "gauge_fields": [
+          {
+            "field": [
+              "deleted",
+              "11"
+            ],
+            "relative_residual": 0.0,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 0.10528828440885216
+          },
+          {
+            "field": [
+              "deleted",
+              "8"
+            ],
+            "relative_residual": 0.0,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 0.04870896439633679
+          },
+          {
+            "field": [
+              "deleted",
+              "5"
+            ],
+            "relative_residual": 0.0,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 0.22256137728901904
+          },
+          {
+            "field": [
+              "deleted",
+              "2"
+            ],
+            "relative_residual": 0.0,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 0.5519924873202253
+          }
+        ]
+      },
+      {
+        "seed": 14,
+        "pairs": 60,
+        "rank": 8,
+        "sigma_max": 15.440353629365443,
+        "reference_scale": 15.440353629365443,
+        "sigma_r_rel": 0.016740127208368753,
+        "sigma_r1_rel": 2.473922111091938e-17,
+        "singular_values_rel": [
+          1.0,
+          0.729785527351023,
+          0.3916534474546642,
+          0.2475145258552806,
+          0.20750461699331882,
+          0.18792879806093316,
+          0.11429706942758894,
+          0.016740127208368753,
+          2.473922111091938e-17,
+          8.932075307868821e-18,
+          2.5419504758298604e-34,
+          0.0
+        ],
+        "gauge_fields": [
+          {
+            "field": [
+              "deleted",
+              "11"
+            ],
+            "relative_residual": 0.0,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 0.11729353725249693
+          },
+          {
+            "field": [
+              "deleted",
+              "8"
+            ],
+            "relative_residual": 0.0,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 0.09749598959983474
+          },
+          {
+            "field": [
+              "deleted",
+              "5"
+            ],
+            "relative_residual": 0.0,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 0.20241325575601257
+          },
+          {
+            "field": [
+              "deleted",
+              "2"
+            ],
+            "relative_residual": 0.0,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 0.5121027712577451
+          }
+        ]
+      }
+    ],
+    "rank": 8,
+    "min_rank": 8,
+    "max_gauge_relative_residual": 0.0,
+    "min_control_relative_residual": 0.04870896439633679,
+    "note": "relative residual ||J v|| / (max(||J||_F, max d^2) ||v||); controls are perturbed fields that should NOT be null (they are null only when J itself vanishes)"
+  },
+  "timings_seconds": {
+    "structure_checks": 0.008255000000000123,
+    "upper_bound_certificate": 0.005743958000000049,
+    "exact_states_total_cache": 0.038184043000000445,
+    "bareiss_det": 0.0007030409999999598,
+    "sympy_det": 0.0010467079999998408,
+    "exact_null_vector_check": 0.0006372500000000336,
+    "cross_checks": 0.006271417000000001,
+    "numerical_checks": 0.012365917000000115,
+    "total": 0.043290457999999976
+  },
+  "peak_rss_mb_process": 126.5,
+  "timing_note": "exact states/features are computed once per n for the union (weight<=2) readout and cached; exact_states_total_cache is cumulative and is charged to the first readout processed at that n",
+  "source_route": {
+    "module": "kyriienko_nonlinear_encoding_circuit",
+    "entry": {
+      "module": "kyriienko_nonlinear_encoding_circuit",
+      "class": "KyriienkoEncodingCircuit",
+      "path": "vendor/src/squlearn/encoding_circuit/circuit_library/kyriienko_nonlinear_encoding_circuit.py",
+      "class_line": 13,
+      "constructor_line": 68,
+      "has_layers": false,
+      "configuration_required": null
+    },
+    "constructor_kwargs": {
+      "num_qubits": 4
+    },
+    "signature": "(self, num_qubits: int, num_features: int = None, encoding_style: str = 'chebyshev_tower', variational_arrangement: str = 'HEA', num_encoding_layers: int = 1, num_variational_layers: int = 1, rotation_gate: str = 'ry', block_width: int = 2, block_depth: int = 1) -> None",
+    "get_params": "{'num_qubits': 4, 'num_features': None, 'num_encoding_layers': 1, 'num_variational_layers': 1, 'variational_arrangement': 'HEA', 'encoding_style': 'chebyshev_tower', 'block_width': 2, 'block_depth': 1, 'rotation_gate': 'ry'}",
+    "initial_parameters": "generate_initial_parameters(num_features=2, seed=0)",
+    "vendored_commit": "0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4",
+    "qiskit": "1.2.4",
+    "compile": {
+      "optimization_level": 3,
+      "seed_transpiler": 71,
+      "approximation_degree": 1.0,
+      "num_processes": 1,
+      "basis_gates": [
+        "h",
+        "cx",
+        "rx",
+        "ry",
+        "rz",
+        "rxx",
+        "ryy",
+        "rzz",
+        "rzx"
+      ]
+    },
+    "native_operations": 23,
+    "global_phase_ignored": "0.0",
+    "seconds": {
+      "construct": 0.002840458999999962,
+      "transpile": 0.008193958000000112,
+      "adapt": 0.004866832999999904
+    }
+  }
+}

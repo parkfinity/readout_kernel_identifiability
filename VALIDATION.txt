@@ -1,0 +1,30 @@
+PUBLIC RELEASE VALIDATION — 2026-10-18
+
+Validation environment: Python 3.9.6 with the pinned dependencies.
+The reference server runs used Python 3.8.10.
+
+Fresh-extraction checks completed successfully:
+  integrity: complete file/hash and runtime-map checks
+  smoke: 97 unit tests plus endpoint/frozen-plan checks
+  core-audit: certificate replay, source checks and census aggregation
+  kyriienko-weight3: seven tests and the five-seed (5,3) numerical replay
+  scaling-verify: replay of 12 exact determinant certificates
+  product: product-feature control replay
+  compatibility: eight acceptance/rejection regression tests
+
+The same scientific algorithms and inputs also completed core-full:
+24 fresh pilot settings, 30 fresh Fourier-Gram settings, 12 scaling cases,
+the 102-setting resource survey and 12 global-normalization settings.
+The core reference comparison had zero strict failures. Its Python-version
+warning records the difference between 3.9.6 and the reference 3.8.10.
+Two source annotations were subsequently cleaned; scientific execution is
+unchanged. The pinned comparator hash and dependent manifests were updated.
+The final package was re-extracted for the six workflows listed above.
+
+Scientific arrays and compressed exact Jacobians are unchanged from the input
+package. Sanitized metadata has explicit before/after records in
+provenance/PUBLIC_METADATA_CHANGES.json. Historical generator hashes remain
+historical records, not claims of regeneration with the cleaned source.
+
+This is not a rerun of all historical learning/finite-shot studies, QPU jobs,
+or image inference. No remote GitHub history is included in this validation.

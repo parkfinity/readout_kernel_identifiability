@@ -1,0 +1,210 @@
+\section{Kyriienko-type scaling certificates}
+\label{app:kyriscaling}
+This appendix records the computation behind
+Table~\ref{tab:kyriscaling} and the status of the all-size question.
+The $n=6,8$ settings extend the default constructor of the census
+(two inputs, one encoding and one variational layer) to larger sizes;
+they are not part of the 54 settings. Only even $n$ were computed.
+The reference calculation and its pinned-environment Linux rerun
+produce identical certificates (Table~\ref{tab:reproscope}).
+
+\paragraph{Source route and validation.}
+Circuits come from the census's vendored sQUlearn commit
+(Appendix~\ref{app:gram}),
+\texttt{KyriienkoEncodingCircuit(num\_qubits=$n$)} with default
+options, Qiskit~1.2.4 transpilation (optimization level 3, seed 71,
+approximation degree 1, one process), and the census IR adapter.
+As a validation gate, the same route regenerates the six frozen
+$n=2,4$ IR files byte for byte (equal SHA-256 hashes) and reproduces
+their census ranks: $4,0,4$ at $n=2$ and $10,10,8$ at $n=4$ for local
+XYZ, weight $\le2$, and local Z. For $n=6,8$ the IR agrees gate by
+gate with a circuit written directly from the source formula: encoding
+gate $m$ is $R_y[2(\lfloor m/2\rfloor+1)\arccos x_{m\bmod2}]$ on qubit
+$m\bmod n$. For even $n$, qubit $q$ therefore encodes $x_{q\bmod2}$
+with total frequency $\kappa_q=4\lfloor q/2\rfloor+n+4$, namely
+$\kappa=(10,10,14,14,18,18)$ for $n=6$ and
+$(12,12,16,16,20,20,24,24)$ for $n=8$. Exact checks confirm
+Eq.~\eqref{eq:kyriform}, fixed frequencies, unit readout weights, one
+unit-coefficient occurrence per parameter, and commutation of $E$ with
+$Z_0$ and $X_{n-1}$.
+
+\paragraph{Exact lower bounds.}
+Parameters are $\theta_k=4\arctan u_k$ with $u_k=(k+2)/(k+5)$, so
+$e^{i\theta_k/2}=(1+iu_k)^2/(1+u_k^2)$ is Gaussian rational. Inputs
+are $x_b=\cos(2\arctan s_b)$ for ten pairs $(s_0,s_1)$:
+$(\frac12,\frac53)$, $(\frac45,\frac34)$, $(\frac12,3)$,
+$(\frac43,\frac13)$, $(3,\frac54)$, $(\frac52,4)$, $(4,\frac53)$,
+$(\frac35,\frac13)$, $(\frac13,\frac54)$, $(\frac45,\frac52)$.
+Since $s_b>0$, $\arccos x_b=2\arctan s_b$ exactly, and even
+$\kappa_q$ make every data half-angle an integer multiple. The 45
+unordered pairs of these inputs give rows
+$\partial_{\theta_k}d^2(x_i,x_j)$, computed exactly from
+Gaussian-integer statevectors and tangents. Scaling each row by a
+positive rational to integers preserves nonvanishing of minors.
+A minor is selected by elimination modulo $2^{61}-1$. Its determinant
+is computed exactly by fraction-free Bareiss elimination, agrees with
+an independent SymPy \texttt{DomainMatrix} determinant, and is nonzero
+modulo $2^{61}-1$, $2^{62}-57$, and $2^{63}-25$
+(Table~\ref{tab:kyriminors}). A replay from the stored integer
+Jacobians reproduces all twelve determinants, including $n=2,4$.
+Each minor, with the 45 input pairs fixed, is a real-analytic
+function of $\theta$ on the connected parameter domain. Being nonzero
+at one point, it vanishes only on a proper analytic subset, so it is
+nonzero on an open dense set of full measure; this gives the generic
+lower bound.
+
+\begin{table}[b]
+\caption{New exact minors ($n=6,8$). $m$ counts measured Pauli words.
+Omitted columns are angles $c_q$ of Eq.~\eqref{eq:kyriform}.
+``Digits'' refers to the row-scaled integer determinant. The last
+column gives rounded decimal approximations of the exact, unscaled
+rational minors.}
+\label{tab:kyriminors}
+\begin{tabular}{rlrrlrr}
+\toprule
+$n$ & Readout & $m$ & Order & Omitted & Digits & Minor (approx.)\\
+6 & XYZ & 18 & 16 & $c_0,c_5$ & 5773 & $-0.99$\\
+6 & $\le2$ & 153 & 16 & $c_0,c_5$ & 7093 & $1.6\times10^{4}$\\
+6 & Z & 6 & 12 & all $c_q$ & 2823 & $1.7\times10^{-6}$\\
+8 & XYZ & 24 & 22 & $c_0,c_7$ & 10464 & $-0.094$\\
+8 & $\le2$ & 276 & 22 & $c_0,c_7$ & 15632 & $-1.5\times10^{7}$\\
+8 & Z & 8 & 16 & all $c_q$ & 5346 & $-7.4\times10^{-3}$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Upper-bound and consistency checks.}
+On the generated IR, $c_0$ is deleted exactly: its transported
+generator $P=Z_0$ satisfies $[\Omega,P\otimes I+I\otimes P]=0$ in exact
+Pauli arithmetic (Appendix~\ref{app:followup}). The analytic Euler
+field $w$ of Appendix~\ref{app:gram} satisfies
+$\sum_kw_k\partial_kU=-\frac i2\sin b\,XU$ symbolically for the last
+block, and a field with one doubled component is rejected. For local
+Z, the $n$ angles $c_q$ are deleted with Z-string output generators,
+as in Proposition~\ref{prop:kyribounds}(ii). At the certificate point
+these upper-bound directions have exact rank $2$ (XYZ, and weight
+$\le2$ with $k<n$) or $n$ (Z), and every exact null vector annihilates
+all 45 rows. This
+one-point consistency check is not an additional proof.
+
+\paragraph{Floating cross-checks.}
+At the certificate point, exact features agree with a floating IR
+engine within $9.3\times10^{-15}$, with an IR-free dense statevector
+within $2.2\times10^{-15}$, and with Qiskit's source statevector
+within $1.9\times10^{-15}$; exact and floating gradients agree within
+$2.2\times10^{-15}$. At four random parameter points with
+$\max(3K,60)$ random pairs, SVD ranks at relative tolerance $10^{-9}$
+equal the certified values in all twelve settings. For $r>0$,
+$\sigma_{r+1}/\sigma_1\le4.4\times10^{-16}$ and
+$\sigma_r/\sigma_1\ge7.1\times10^{-6}$; in the rank-zero setting,
+$\sigma_1$ is below $1.3\times10^{-15}$ times the largest sampled
+$d^2$. These are implementation checks, not certificates.
+
+\paragraph{Cost and environment.}
+The run used one process and one thread on macOS arm64 with
+Python~3.9.6, Qiskit~1.2.4, NumPy~1.24.4, SymPy~1.14.0, and
+SciPy~1.10.1. The frozen census requirements pin SymPy~1.13.3; this
+reference run used SymPy~1.14.0, and the replay below used the pinned
+version.
+The twelve settings took $32.4$~s of wall time
+with $225$~MB peak resident memory. Each $n=6$ setting took at most
+$1.2$~s. The $n=8$ settings took $16.5$~s (local XYZ, including
+$12.5$~s of exact states shared with the other readouts), $10.3$~s
+(weight $\le2$), and $1.2$~s (local Z). Bareiss and SymPy determinants
+took at most $2.2$ and $3.6$~s. The arithmetic stack (Python integers,
+NumPy object arrays, SymPy) is not formally verified; agreement of two
+determinant implementations, three residues, and the floating engines
+is an implementation check. The $n=6,8$ IR also depends on Qiskit
+transpilation; the source-formula comparison and the Qiskit-free
+statevector check it independently.
+The Linux reproduction is summarized in Table~\ref{tab:reproscope}.
+A Python~3.8 compatibility shim handled multi-argument
+\texttt{math.gcd} calls without modifying the calculation source;
+IR agreement is for the same Qiskit~1.2.4 transpiler.
+
+\paragraph{Numerical scan.}
+The proof notes compute $r$ for unit-weight local XYZ by statevector
+simulation, with exact parameter-shift derivatives of $d^2$ over
+random input pairs at random parameter points. Every size
+$n=2,\ldots,12$ gives $r=3n-2$ (Table~\ref{tab:kyriscan}). For
+$n=9$--$12$, the smallest retained singular value lies between $0.268$
+and $0.343$, and the next one is below $7\times10^{-15}$. Complete
+weight-at-most-$k$ readout gives $r=3n-2$ at
+$(n,k)=(3,2),(4,2),(5,2),(4,3),(5,4)$. These ranks are numerical,
+not certified.
+
+\begin{table}[b]
+\caption{Local-XYZ ranks for the Kyriienko-type family. ``Num.'' is a
+floating-point rank and ``Exact'' a certified value. (DS) is the rank
+condition of Eq.~\eqref{eq:kyrids}, including the constant mode,
+tested by floating-point sampled rank (not a certificate): Y holds;
+N fails, through dependent cover modes at $n=5,7$ and a
+four-dimensional intersection at $n=12$; NT denotes not tested.}
+\label{tab:kyriscan}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrrrrrrrrr}
+\toprule
+$n$ & 2&3&4&5&6&7&8&9&10&11&12\\
+$3n-2$ & 4&7&10&13&16&19&22&25&28&31&34\\
+Num. & 4&7&10&13&16&19&22&25&28&31&34\\
+Exact & 4&NT&10&NT&16&NT&22&NT&NT&NT&NT\\
+(DS) & Y&NT&Y&N&Y&N&Y&NT&Y&NT&N\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Block-cover route and its obstruction.}
+The proof notes reduce a lower bound to local blocks through
+Theorem~\ref{thm:gram}. Write $P_i=E^\dagger O_iE$. The encoded
+product state expands in data modes $\Sigma_a\in\{I,X,Z\}^{\otimes n}$;
+the mode function of $\Sigma_a$ is a product of sines and cosines of
+the total encoding angles on $\mathrm{supp}\,\Sigma_a$.
+Because the Euler layer is local, feature $i$ couples only to modes
+with $\mathrm{supp}\,\Sigma_a=\mathrm{supp}\,P_i$. Hence the mode Gram
+matrix is block diagonal by support, and each block depends only on
+the Euler angles on that support; this step is proved. For $n\ge3$, exact
+rational-point minors give generic block ranks 6 for an interior
+even-layer pair, 5 for each endpoint pair (null axis $Z_0$ or
+$X_{n-1}$), and 2 for the endpoint singleton of odd $n$.
+At $n=2$, both endpoints occupy the same pair. Its pullback types
+are $\{XX,YX,ZY,ZZ\}$ and its Gram block has rank four: a
+rational-point Jacobian has rank four, while the two endpoint
+gauge directions bound it above by four. Thus this pair is counted
+once, not as two rank-five endpoint blocks.
+The even-layer pairs, plus the odd-$n$ singleton, cover the chain,
+and their ranks sum to $3n-2$ (checked for $2\le n\le12$).
+Let $H_{\rm cov}$ list
+the $N_{\rm cov}=2n$ mode functions on these cover supports and
+$H_{\rm oth}$ all other mode functions that enter the features. Writing
+$\operatorname{rank}_D$ for the linear rank of functions on the actual
+input domain $D$, the route requires
+\begin{equation}
+ \operatorname{rank}_D[1,H_{\rm cov},H_{\rm oth}]
+ =N_{\rm cov}+\operatorname{rank}_D[1,H_{\rm oth}].
+ \tag{DS}\label{eq:kyrids}
+\end{equation}
+Equivalently, the cover-mode functions are linearly independent and
+their span meets $\mathrm{span}\{1,H_{\rm oth}\}$ only at zero. This
+suffices. Choose $B\subseteq H_{\rm oth}$ such that $\{1\}\cup B$ is a
+basis of $\mathrm{span}\{1,H_{\rm oth}\}$. Then $h=(H_{\rm cov},B)$
+satisfies the independence hypothesis of Theorem~\ref{thm:gram}, and
+rewriting the remaining functions of $H_{\rm oth}$ changes only the
+coefficients of $B$ and the offset. The cover-mode coefficients, and
+hence the cover blocks, therefore remain coordinates of $G$ in an
+independent basis. The cover blocks depend on disjoint Euler-angle
+sets, so their generic ranks add, giving $r\ge3n-2$. Sampled
+floating-point rank tests (tolerance $10^{-9}$, constant column
+included) indicate (DS) for even $n=2,\ldots,10$. They are not exact
+certificates, so this route adds no certified size beyond
+Table~\ref{tab:kyriscaling}. (DS) fails in two ways. At $n=5,7$, both
+inputs enter every qubit and the cover modes are already dependent
+(sampled ranks 8 of 10 and 10 of 14). At $n=12$, the cover modes are
+independent, but a higher-order Chebyshev resonance makes their span
+meet $\mathrm{span}\{1,H_{\rm oth}\}$ in four dimensions. Both
+failures violate Eq.~\eqref{eq:kyrids}, and these tests are again
+sampled floating-point ranks, not certificates. The direct numerical
+rank remains $3n-2$ at these sizes,
+so the obstruction concerns this proof route rather than the
+conjectured value. An all-size argument would need uniform control of
+these resonances or a mode-free proof that no reachable-state isometry
+exists beyond the two gauge axes.

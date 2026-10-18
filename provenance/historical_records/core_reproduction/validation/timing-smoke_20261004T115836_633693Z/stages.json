@@ -1,0 +1,8 @@
+[
+  {
+    "stage": "timing-smoke",
+    "exit_code": 0,
+    "elapsed_seconds": 3.103706583,
+    "log": "logs/timing-smoke.log"
+  }
+]

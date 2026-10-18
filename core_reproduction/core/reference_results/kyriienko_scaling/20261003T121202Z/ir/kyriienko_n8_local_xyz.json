@@ -1,0 +1,543 @@
+{
+  "n": 8,
+  "count": 24,
+  "program": [
+    {
+      "op": "R",
+      "pauli": "YIIIIIII",
+      "terms": [
+        [
+          1.0,
+          -1,
+          0
+        ],
+        [
+          1.0,
+          -1,
+          1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "ZIIIIIII",
+      "terms": [
+        [
+          1.0,
+          0,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "XIIIIIII",
+      "terms": [
+        [
+          1.0,
+          1,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "ZIIIIIII",
+      "terms": [
+        [
+          1.0,
+          2,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IYIIIIII",
+      "terms": [
+        [
+          1.0,
+          -1,
+          2
+        ],
+        [
+          1.0,
+          -1,
+          3
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IZIIIIII",
+      "terms": [
+        [
+          1.0,
+          3,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IXIIIIII",
+      "terms": [
+        [
+          1.0,
+          4,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IZIIIIII",
+      "terms": [
+        [
+          1.0,
+          5,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        1
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIYIIIII",
+      "terms": [
+        [
+          1.0,
+          -1,
+          4
+        ],
+        [
+          1.0,
+          -1,
+          5
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIZIIIII",
+      "terms": [
+        [
+          1.0,
+          6,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIXIIIII",
+      "terms": [
+        [
+          1.0,
+          7,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIZIIIII",
+      "terms": [
+        [
+          1.0,
+          8,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIYIIII",
+      "terms": [
+        [
+          1.0,
+          -1,
+          6
+        ],
+        [
+          1.0,
+          -1,
+          7
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIZIIII",
+      "terms": [
+        [
+          1.0,
+          9,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIXIIII",
+      "terms": [
+        [
+          1.0,
+          10,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIZIIII",
+      "terms": [
+        [
+          1.0,
+          11,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        2,
+        3
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        1,
+        2
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIIYIII",
+      "terms": [
+        [
+          1.0,
+          -1,
+          8
+        ],
+        [
+          1.0,
+          -1,
+          9
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIIZIII",
+      "terms": [
+        [
+          1.0,
+          12,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIIXIII",
+      "terms": [
+        [
+          1.0,
+          13,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIIZIII",
+      "terms": [
+        [
+          1.0,
+          14,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIIIYII",
+      "terms": [
+        [
+          1.0,
+          -1,
+          10
+        ],
+        [
+          1.0,
+          -1,
+          11
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIIIZII",
+      "terms": [
+        [
+          1.0,
+          15,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIIIXII",
+      "terms": [
+        [
+          1.0,
+          16,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIIIZII",
+      "terms": [
+        [
+          1.0,
+          17,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        4,
+        5
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        3,
+        4
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIIIIYI",
+      "terms": [
+        [
+          1.0,
+          -1,
+          12
+        ],
+        [
+          1.0,
+          -1,
+          13
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIIIIZI",
+      "terms": [
+        [
+          1.0,
+          18,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIIIIXI",
+      "terms": [
+        [
+          1.0,
+          19,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIIIIZI",
+      "terms": [
+        [
+          1.0,
+          20,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIIIIIY",
+      "terms": [
+        [
+          1.0,
+          -1,
+          14
+        ],
+        [
+          1.0,
+          -1,
+          15
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIIIIIZ",
+      "terms": [
+        [
+          1.0,
+          21,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIIIIIX",
+      "terms": [
+        [
+          1.0,
+          22,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIIIIIZ",
+      "terms": [
+        [
+          1.0,
+          23,
+          -1
+        ]
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        6,
+        7
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        5,
+        6
+      ]
+    }
+  ],
+  "ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "data_expressions": [
+    "2.0*acos(a0)",
+    "10.0*acos(a0)",
+    "2.0*acos(a1)",
+    "10.0*acos(a1)",
+    "4.0*acos(a0)",
+    "12.0*acos(a0)",
+    "4.0*acos(a1)",
+    "12.0*acos(a1)",
+    "6.0*acos(a0)",
+    "14.0*acos(a0)",
+    "6.0*acos(a1)",
+    "14.0*acos(a1)",
+    "8.0*acos(a0)",
+    "16.0*acos(a0)",
+    "8.0*acos(a1)",
+    "16.0*acos(a1)"
+  ],
+  "observables": [
+    "XIIIIIII",
+    "IXIIIIII",
+    "IIXIIIII",
+    "IIIXIIII",
+    "IIIIXIII",
+    "IIIIIXII",
+    "IIIIIIXI",
+    "IIIIIIIX",
+    "YIIIIIII",
+    "IYIIIIII",
+    "IIYIIIII",
+    "IIIYIIII",
+    "IIIIYIII",
+    "IIIIIYII",
+    "IIIIIIYI",
+    "IIIIIIIY",
+    "ZIIIIIII",
+    "IZIIIIII",
+    "IIZIIIII",
+    "IIIZIIII",
+    "IIIIZIII",
+    "IIIIIZII",
+    "IIIIIIZI",
+    "IIIIIIIZ"
+  ],
+  "weights": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ]
+}

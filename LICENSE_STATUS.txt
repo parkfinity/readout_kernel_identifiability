@@ -1,0 +1,10 @@
+The authors' original software in this release is licensed under the MIT
+License in the root LICENSE file. This applies to the authors' original
+software, not to third-party software, datasets, or the manuscript text.
+
+Vendored sQUlearn files retain Apache License 2.0 and their original notices.
+Third-party data retain their respective terms; see THIRD_PARTY_NOTICES.txt.
+Nothing in the root MIT license overrides these third-party licenses.
+
+Old license-status documents under provenance are historical snapshots of
+earlier packaging, not the license status of this release.

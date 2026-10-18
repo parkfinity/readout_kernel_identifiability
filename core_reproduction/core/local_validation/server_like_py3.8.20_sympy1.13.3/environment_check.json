@@ -1,0 +1,46 @@
+{
+  "checked_utc": "2026-10-03T21:53:36Z",
+  "executable": "/temporary-workspace/scratchpad/repro_v1/venv_py38_server_like/bin/python",
+  "python_full": "3.8.20 (default, Oct  2 2024, 16:12:59) \n[Clang 18.1.8 ]",
+  "platform": "macOS-26.7-arm64-arm-64bit",
+  "machine": "arm64",
+  "cpu_count": 18,
+  "versions": {
+    "python": "3.8.20",
+    "numpy": "1.24.4",
+    "sympy": "1.13.3",
+    "qiskit": "1.2.4",
+    "mpmath": "1.3.0",
+    "scipy": "1.10.1",
+    "rustworkx": "0.15.1",
+    "symengine": "0.13.0"
+  },
+  "expected_server": {
+    "python": "3.8.10",
+    "numpy": "1.24.4",
+    "sympy": "1.13.3",
+    "qiskit": "1.2.4"
+  },
+  "informational_pins": {
+    "mpmath": "1.3.0",
+    "scipy": "1.10.1"
+  },
+  "warnings": [
+    "python 3.8.20 != expected 3.8.10"
+  ],
+  "missing_required": [],
+  "gcd_shim_will_be_used_for_kyriienko": true,
+  "reference_run_environments": {
+    "fourier_gram 20261002T044925Z": "Python 3.9.6, NumPy 1.26.4, SymPy 1.14.0, mpmath 1.3.0 (no Qiskit used), macOS arm64",
+    "kyriienko_scaling 20261003T121202Z": "Python 3.9.6, NumPy 1.24.4, SymPy 1.14.0, Qiskit 1.2.4, SciPy 1.10.1, macOS arm64"
+  },
+  "thread_env": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "RAYON_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  }
+}

@@ -1,0 +1,413 @@
+[
+  {
+    "id": "yz_cx_encoding_circuit_n2_l1_local_xyz",
+    "module": "yz_cx_encoding_circuit",
+    "n": 2,
+    "layers": 1,
+    "readout": "local_xyz",
+    "file_sha256": "3eff723027d1e17f5631a4dc1597fde21886e77d0226dbba199718a2a2b926a8",
+    "source_sha256": "9db45a2f5a5aa9e30d796b9f4bb831fcafaf9731731a4bff7a34945d6a4234f6",
+    "archive_sha256": "a36774353062277a363b62076330202b684c04e17d8d13aec7c1dad16e350afa",
+    "old_inactive": [
+      1
+    ]
+  },
+  {
+    "id": "yz_cx_encoding_circuit_n2_l1_local_z",
+    "module": "yz_cx_encoding_circuit",
+    "n": 2,
+    "layers": 1,
+    "readout": "local_z",
+    "file_sha256": "76280af2c3f760b4dfe97f1bbfef76b7efe3db7bbfa744f910612d1baeb02ffe",
+    "source_sha256": "edd93c6bddd5bac4ddffd0863ea6ad16e3b663b59252db0488d21a6afdcdca90",
+    "archive_sha256": "8f7b5e16c08e6df6abedb54dfef2e3b3f931ccf706eae68f38aabfcf81e383c9",
+    "old_inactive": [
+      1,
+      3
+    ]
+  },
+  {
+    "id": "yz_cx_encoding_circuit_n2_l1_pauli_weight_le_2",
+    "module": "yz_cx_encoding_circuit",
+    "n": 2,
+    "layers": 1,
+    "readout": "pauli_weight_le_2",
+    "file_sha256": "cf895492690b7963228d60c67f2c1ad5ca38d521c7d6163d0153e163c7aec3bb",
+    "source_sha256": "4c3709331198d9b5aa1466c5af79c31c9826d23611d750c0d5ba8d48b5a54418",
+    "archive_sha256": "98b2d9aad44c377376b04b87f548c2c57bb852117463a0b1c40d60284f219b23",
+    "old_inactive": [
+      1,
+      3
+    ]
+  },
+  {
+    "id": "yz_cx_encoding_circuit_n2_l2_local_xyz",
+    "module": "yz_cx_encoding_circuit",
+    "n": 2,
+    "layers": 2,
+    "readout": "local_xyz",
+    "file_sha256": "d1f6029d1c6f72748f5409453af341219566daa437553f765b4016b316755859",
+    "source_sha256": "f1b39fd1ada899f526d08444baaeeb0623202cfbfcc24fe381f8a1563ae23a27",
+    "archive_sha256": "04057a48a5104f28bf4a5b14d36ad4a194b920382bf0afdcdce3a6121cc4a923",
+    "old_inactive": [
+      7
+    ]
+  },
+  {
+    "id": "yz_cx_encoding_circuit_n2_l2_local_z",
+    "module": "yz_cx_encoding_circuit",
+    "n": 2,
+    "layers": 2,
+    "readout": "local_z",
+    "file_sha256": "d06d19bc385a4178b2d267235069893182c02605329c109c0dc2d093b2ce74e2",
+    "source_sha256": "5956aa5991d8c1224bf15605e6f93e3a222624117edf20fc854aeb16bbf9575c",
+    "archive_sha256": "a571b05e2d180e8858db7850fd6b2714f735978172ed07d76324681f832cf8c3",
+    "old_inactive": [
+      5,
+      7
+    ]
+  },
+  {
+    "id": "yz_cx_encoding_circuit_n2_l2_pauli_weight_le_2",
+    "module": "yz_cx_encoding_circuit",
+    "n": 2,
+    "layers": 2,
+    "readout": "pauli_weight_le_2",
+    "file_sha256": "543d6a7296c86808f926bf9337a31eabbf884f78dd73cfdf7e6ec144599cc614",
+    "source_sha256": "1d9f46457a32bda04405d7dde818f0c06ca95b23ca6eda17099733c566b5dd0d",
+    "archive_sha256": "3500cc80ae33a98d20cd2a545cdc4e33a57e07fe38e12024fd8200f67c0c7e0e",
+    "old_inactive": [
+      5,
+      7
+    ]
+  },
+  {
+    "id": "yz_cx_encoding_circuit_n4_l1_local_xyz",
+    "module": "yz_cx_encoding_circuit",
+    "n": 4,
+    "layers": 1,
+    "readout": "local_xyz",
+    "file_sha256": "c5f95cca1270254a94ae627d1f26df3146c8ac6f2d1808b2761ca457e07aeacc",
+    "source_sha256": "7056756382892c97c63c615356f932d35910339feaa577188207c7a3c360cf01",
+    "archive_sha256": "3d996b906cec3c839281797cb52b92a3715d3811c4f8897598f985fb6f6c7d20",
+    "old_inactive": [
+      1,
+      5
+    ]
+  },
+  {
+    "id": "yz_cx_encoding_circuit_n4_l1_local_z",
+    "module": "yz_cx_encoding_circuit",
+    "n": 4,
+    "layers": 1,
+    "readout": "local_z",
+    "file_sha256": "24e02526cdab790076093d0ef5ea75a98e626efd06e6518e09b79ed210000468",
+    "source_sha256": "c039d1de9d5b4ac71080906fff95830deb210347b0369dbbe5e8f99f8aac4b51",
+    "archive_sha256": "e670db95889ed8da0fffc6914c8daaf78c746f0f4834d28ccfab6a7e1bba9589",
+    "old_inactive": [
+      1,
+      3,
+      5,
+      7
+    ]
+  },
+  {
+    "id": "yz_cx_encoding_circuit_n4_l1_pauli_weight_le_2",
+    "module": "yz_cx_encoding_circuit",
+    "n": 4,
+    "layers": 1,
+    "readout": "pauli_weight_le_2",
+    "file_sha256": "08ac5ecf0d2ea20a72c7f6c3249cb97a6d3a94503feff612bb0864d2d963be87",
+    "source_sha256": "523149d0a49bcc985221d4fbae377075cbd0a1d8f918fb7362faf6d013d9018c",
+    "archive_sha256": "0eff305c1b30825c10984ea20c7cbd2e4394ace8a2816c2bf89c68cd075f143f",
+    "old_inactive": [
+      1,
+      5
+    ]
+  },
+  {
+    "id": "yz_cx_encoding_circuit_n4_l2_local_xyz",
+    "module": "yz_cx_encoding_circuit",
+    "n": 4,
+    "layers": 2,
+    "readout": "local_xyz",
+    "file_sha256": "3441f3bf44b1260d23561bd94c084a1d6e01704d1097c70ce921812082013fd5",
+    "source_sha256": "0232f61be909ca5b93ad0f1215eb707b973305e0dcf9d0b06bf5ae4bc21bcfdf",
+    "archive_sha256": "c9546a21091a9717ae93270458e5d376fef40a2ef738dab96ba0c0b2d72d5a8a",
+    "old_inactive": [
+      11,
+      15
+    ]
+  },
+  {
+    "id": "yz_cx_encoding_circuit_n4_l2_local_z",
+    "module": "yz_cx_encoding_circuit",
+    "n": 4,
+    "layers": 2,
+    "readout": "local_z",
+    "file_sha256": "7b5989895a1399d04554d1626dcc6860577eb35170ea19971692ada7ee98f863",
+    "source_sha256": "9207931947cf2a734d29e4b052d007236129703989ab413c82a4098e5ead5145",
+    "archive_sha256": "0d6562f6c99e7d2e41650368ffc65659e086d81bd8be1ec50fd955839c3d7fb2",
+    "old_inactive": [
+      9,
+      11,
+      13,
+      15
+    ]
+  },
+  {
+    "id": "yz_cx_encoding_circuit_n4_l2_pauli_weight_le_2",
+    "module": "yz_cx_encoding_circuit",
+    "n": 4,
+    "layers": 2,
+    "readout": "pauli_weight_le_2",
+    "file_sha256": "5d50f645494d7dd489e20c9cf2c3a29be73be75e02a5c795f2b2b00a1cf7bf1e",
+    "source_sha256": "7d3fb6b64153cfff487c84b5569673e71ee7aac5d788ba5df62643eeb64a3af4",
+    "archive_sha256": "e67b98b622e9c23ac243400816c0c7dadc1e21907e94117101a2db6b187c09b1",
+    "old_inactive": [
+      11,
+      15
+    ]
+  },
+  {
+    "id": "hubregtsen_encoding_circuit_n2_l1_local_xyz",
+    "module": "hubregtsen_encoding_circuit",
+    "n": 2,
+    "layers": 1,
+    "readout": "local_xyz",
+    "file_sha256": "fa1a10bdebbb9eec3e6faa8507c5ae6c2d66c794562c9e0c47279fd830711cc3",
+    "source_sha256": "694a3ca19334c61a149c414c6e161be18425418af8197155aa864ab5033fd4dc",
+    "archive_sha256": "9b56ab311340f134b1847e5a76336b7fa53f3a81525ff3804168dea4d74d40f3",
+    "old_inactive": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "hubregtsen_encoding_circuit_n2_l1_local_z",
+    "module": "hubregtsen_encoding_circuit",
+    "n": 2,
+    "layers": 1,
+    "readout": "local_z",
+    "file_sha256": "1835ebd343e9efd6b326c7a06a1bbca8de00307c763793b01f25ede86fde9476",
+    "source_sha256": "36f3851d8626d1330fbcb8216a119612ce62939c1981c0dbfc312bc9867f0d39",
+    "archive_sha256": "78c412ca478489932b5c8cb0fca801240d6ca02f2db3dfc6f8c633aaa3279c17",
+    "old_inactive": []
+  },
+  {
+    "id": "hubregtsen_encoding_circuit_n2_l1_pauli_weight_le_2",
+    "module": "hubregtsen_encoding_circuit",
+    "n": 2,
+    "layers": 1,
+    "readout": "pauli_weight_le_2",
+    "file_sha256": "d3e6a24beb7a0bd3b304f8a03294535fdba6c8f5208d630e36d20485459baadd",
+    "source_sha256": "dda93beb6b18ca2ef517f67a52986190e4d601e052ca66ec9042c45e8804c77c",
+    "archive_sha256": "cc2de86388f4dc2bb212b932b15d7d607ad2dc9318e94cce7b5eab93ebada104",
+    "old_inactive": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "hubregtsen_encoding_circuit_n2_l2_local_xyz",
+    "module": "hubregtsen_encoding_circuit",
+    "n": 2,
+    "layers": 2,
+    "readout": "local_xyz",
+    "file_sha256": "b3ad5dd00a6d9c283c2d8d6d13bbbb93313faa2d17686a4851dfc0923e59c4aa",
+    "source_sha256": "4fe20d553910d7a11104e847b21ddf6211b5295d2f481731331e0b07317c1544",
+    "archive_sha256": "07dd93d4ef188491676437684572496de511006dadb8cb131bf5de68edb5631f",
+    "old_inactive": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": "hubregtsen_encoding_circuit_n2_l2_local_z",
+    "module": "hubregtsen_encoding_circuit",
+    "n": 2,
+    "layers": 2,
+    "readout": "local_z",
+    "file_sha256": "f789dcaa2ff67a5fdeaf1e2db5d42e145d1e2e0848db24948d06b56b55577b12",
+    "source_sha256": "37ec196573aa98108ab5c7def702108ee6566d0c66feed39dc3c4d03a2a12d89",
+    "archive_sha256": "7eb93adc5c62c041bbec79af7d3e378e99593bbef871e1e3957e6da48a3e235e",
+    "old_inactive": []
+  },
+  {
+    "id": "hubregtsen_encoding_circuit_n2_l2_pauli_weight_le_2",
+    "module": "hubregtsen_encoding_circuit",
+    "n": 2,
+    "layers": 2,
+    "readout": "pauli_weight_le_2",
+    "file_sha256": "9788ebadb16e1474b3172213ddbde91cdf758c88f02d1dc57662eabf0932f4e6",
+    "source_sha256": "e845ed3b8551e0055829f1c6dd3131bdeb5fb4c0db9bd5268a856e0ed10b52ae",
+    "archive_sha256": "f994a68778d9e364c15a5ffaab2ebaae3f89c0b6b969fc6b2c564382a4c9ec53",
+    "old_inactive": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": "hubregtsen_encoding_circuit_n4_l1_local_xyz",
+    "module": "hubregtsen_encoding_circuit",
+    "n": 4,
+    "layers": 1,
+    "readout": "local_xyz",
+    "file_sha256": "188acf5da80de8510581cfb0ce29616267f4aff1a9d8f1142b11c588eec66100",
+    "source_sha256": "2d952039a2ba7c6ef8a812e31fc7d14320386cbcb13fcb76a8914838be80a52d",
+    "archive_sha256": "b101181a5d228b04574edcd9bbdd9a6e26ac2f19304d4c9c891a407e3bb3aff0",
+    "old_inactive": []
+  },
+  {
+    "id": "hubregtsen_encoding_circuit_n4_l1_local_z",
+    "module": "hubregtsen_encoding_circuit",
+    "n": 4,
+    "layers": 1,
+    "readout": "local_z",
+    "file_sha256": "4bf5c7cb70a970332c1824bcb5444656e7b219dbb757833f588e6d6409f9c735",
+    "source_sha256": "3c1b123094a8be55cf848126e773764986318d04b06133b84678a30fdea0f9de",
+    "archive_sha256": "3833974c302dbb294a5d0238dc9472c00a3d3e3bfbbe164e32d0714989910501",
+    "old_inactive": [
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "id": "hubregtsen_encoding_circuit_n4_l1_pauli_weight_le_2",
+    "module": "hubregtsen_encoding_circuit",
+    "n": 4,
+    "layers": 1,
+    "readout": "pauli_weight_le_2",
+    "file_sha256": "713b5f171bf24805261a1d5e03d69d09fb3304b290e1c373f8bbebfe61cf619d",
+    "source_sha256": "f48ca514990ed47724b2302085065c2a8d2f81e7a2c39407c151e9f155bd802a",
+    "archive_sha256": "29a2c10ffb03966f6eee4b46ec803b78be1ff342bae21d0764c98fa29e926817",
+    "old_inactive": []
+  },
+  {
+    "id": "hubregtsen_encoding_circuit_n4_l2_local_xyz",
+    "module": "hubregtsen_encoding_circuit",
+    "n": 4,
+    "layers": 2,
+    "readout": "local_xyz",
+    "file_sha256": "eb959d72efc5ee362c305fc171f51bc9f22e9b7798463dc81642c92d59bbad51",
+    "source_sha256": "623a47f0042be66b1a2684285a1fc36ae428f5ce9cdc0f4f6fc68736af04b2a0",
+    "archive_sha256": "b06777fa98b5b5981da76f21926fcd05a5a60e65ac0d4ac5b3d792babe1d2df4",
+    "old_inactive": []
+  },
+  {
+    "id": "hubregtsen_encoding_circuit_n4_l2_local_z",
+    "module": "hubregtsen_encoding_circuit",
+    "n": 4,
+    "layers": 2,
+    "readout": "local_z",
+    "file_sha256": "e131e487fe4c65d8a19848fbb784823e65d2e20e049b4470dab892eb01b42fa1",
+    "source_sha256": "194730de62ec52dae14d97e5f9296d7b145c4fc1dcb057e0684ae8f44e0fdf0b",
+    "archive_sha256": "c7a02a8fa289a3cb6c42a6e79fc905b81ececef256f25372e4eca1f96ec38655",
+    "old_inactive": [
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  {
+    "id": "hubregtsen_encoding_circuit_n4_l2_pauli_weight_le_2",
+    "module": "hubregtsen_encoding_circuit",
+    "n": 4,
+    "layers": 2,
+    "readout": "pauli_weight_le_2",
+    "file_sha256": "b00c895dffb30c15313ae440b3fa270bfbb2ed9a1e22a2bff33194a6bd2ae93b",
+    "source_sha256": "e4122ada65d6c6f639542cc1b2208f366cee7fd254e411b41899d1e8e18de716",
+    "archive_sha256": "2d51d1ed6eaf1ba36c86aaab35f183668107aafb4ae22bdcc4e2dd3ae5741671",
+    "old_inactive": []
+  },
+  {
+    "id": "kyriienko_nonlinear_encoding_circuit_n2_l1_local_xyz",
+    "module": "kyriienko_nonlinear_encoding_circuit",
+    "n": 2,
+    "layers": 1,
+    "readout": "local_xyz",
+    "file_sha256": "bb94df413d984e45c826763dcf08f7933920923c2f57780706a8cc7e597477d1",
+    "source_sha256": "4c406fea7b29a1539b0372ac095ce5185ab2e97358f630da34c929d8630b0226",
+    "archive_sha256": "993b6c20a159a875d8eec6369fb57e0863aa01c4803ba44cde2ce89e03051e5f",
+    "old_inactive": [
+      2
+    ]
+  },
+  {
+    "id": "kyriienko_nonlinear_encoding_circuit_n2_l1_local_z",
+    "module": "kyriienko_nonlinear_encoding_circuit",
+    "n": 2,
+    "layers": 1,
+    "readout": "local_z",
+    "file_sha256": "fd9a42d130df940eebfe05b24840c3db29eaf59402542a2848e08c2af3e12ed0",
+    "source_sha256": "fce546647d6b39bac5e4557bd31d35cd4318a02074b4a0b06aaa25948fd58968",
+    "archive_sha256": "702eebe86374d03da077daf6f7c204e8a73232d90f493c753ab3f5117dd0c26f",
+    "old_inactive": [
+      2,
+      5
+    ]
+  },
+  {
+    "id": "kyriienko_nonlinear_encoding_circuit_n2_l1_pauli_weight_le_2",
+    "module": "kyriienko_nonlinear_encoding_circuit",
+    "n": 2,
+    "layers": 1,
+    "readout": "pauli_weight_le_2",
+    "file_sha256": "0dd2293e29e836cf0b306427d6c45c776445fb6f714a7b0a7dff91212e4d27ad",
+    "source_sha256": "cba05483aba06a2b3f44d18ade303d2979bc69a92afa81ffa8d27126c87f1621",
+    "archive_sha256": "392ad98d10ff0620116906b30aa64b99d4dbc7c8e57324a6a11ecfc5b15c7dba",
+    "old_inactive": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "kyriienko_nonlinear_encoding_circuit_n4_l1_local_xyz",
+    "module": "kyriienko_nonlinear_encoding_circuit",
+    "n": 4,
+    "layers": 1,
+    "readout": "local_xyz",
+    "file_sha256": "68b4bbf36d59eb39739644c7fce8e503be4f4d17759c7f910eb1b0b0f57318b3",
+    "source_sha256": "8f8ff89e474cfe6a33c1fac33535eaa1f24e2e654faf00af474e841010bee35c",
+    "archive_sha256": "eff800ce24cd09dac667261056b06ead00a0ae7ef4da067e45daaefa0b9cc78e",
+    "old_inactive": [
+      2
+    ]
+  },
+  {
+    "id": "kyriienko_nonlinear_encoding_circuit_n4_l1_local_z",
+    "module": "kyriienko_nonlinear_encoding_circuit",
+    "n": 4,
+    "layers": 1,
+    "readout": "local_z",
+    "file_sha256": "baaa43d41a3129703efa4f50af02e22d6f33871a2c1d75a6c21a4a012848ac5b",
+    "source_sha256": "d45843ab4966bf5ce97763ee4d953ab442a778bd68f590043c10e768ac2ca4a2",
+    "archive_sha256": "8b62d7d07a471e706af560a40695b4a156a09455dbeddac21d9284fea4b32345",
+    "old_inactive": [
+      2,
+      5,
+      8,
+      11
+    ]
+  },
+  {
+    "id": "kyriienko_nonlinear_encoding_circuit_n4_l1_pauli_weight_le_2",
+    "module": "kyriienko_nonlinear_encoding_circuit",
+    "n": 4,
+    "layers": 1,
+    "readout": "pauli_weight_le_2",
+    "file_sha256": "4d9eea8b4a6daf29a144877e20abe97ce496003fb6ff1ca844a930da77c1678c",
+    "source_sha256": "52c334181ea5bfb639f507fbe0cbdc57c8ad4119e11154a7efd9e67e1bb36c9a",
+    "archive_sha256": "fa67c8eb9e9745fca93afdc514bb2e790576feb34c01766d8ecc46ba58980f5c",
+    "old_inactive": [
+      2
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "uncorrupted_integrity_exit": 0,
+  "deliberate_readme_corruption_rejected": true,
+  "optimized_python_rejected": true,
+  "scope": "Runner safety checks, not scientific independence."
+}

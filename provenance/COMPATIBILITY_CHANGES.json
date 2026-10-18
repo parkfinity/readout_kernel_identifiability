@@ -1,0 +1,39 @@
+{
+  "reason": "Allow exact determinant serialization on Python versions with integer-string digit limits.",
+  "computation_changed": false,
+  "frozen_inputs_and_results_changed": false,
+  "change": "Guarded sys.set_int_max_str_digits(0) after import sys in kyriienko_scaling.py. The fresh-run comparator accepts only that pinned before/after hash pair; all other source differences remain strict failures.",
+  "previous_files": "provenance/pre_compatibility_patch/",
+  "files": [
+    {
+      "path": "provenance/original_root/MANIFEST.json",
+      "original_path": "MANIFEST.json",
+      "before_sha256": "2bb99c15f7e92a590a574e92c30147197a29295539e9ca5b4aaff2730c5af935",
+      "after_sha256": "e120dd3cd327c4386472c28d9e8fffc6df8fd33ec97c752e47566dfe22b5fc64"
+    },
+    {
+      "path": "core_reproduction/MANIFEST.json",
+      "original_path": "core_reproduction/MANIFEST.json",
+      "before_sha256": "67e5b0a08130eb8e015ef43b94eb2b79bbc2276839f729f5a6667094d21ccfd8",
+      "after_sha256": "baadb612aa788b4cced48013f0340bce1d6bb62f95e4f36907017ab8a5f745b4"
+    },
+    {
+      "path": "core_reproduction/core/BUNDLE_MANIFEST.json",
+      "original_path": "core_reproduction/core/BUNDLE_MANIFEST.json",
+      "before_sha256": "6d3ed8122d6ffdedd372176405e4f2d4206c8049abac652bcdbd097132ebed2d",
+      "after_sha256": "b6f949486d78a80175fbb8f526418288fb1d8dace0f8fc4e38d8215768af8d26"
+    },
+    {
+      "path": "core_reproduction/core/compare_results.py",
+      "original_path": "core_reproduction/core/compare_results.py",
+      "before_sha256": "7ed88c2067661b5d11a9555be654af5fbf44ad35cd4b7823506b8c7e1504a647",
+      "after_sha256": "5016ce87148420c87af65d3a06fcb4ed734391980e2f33ab7b60d9a6f142e950"
+    },
+    {
+      "path": "core_reproduction/core/journal_extension/kyriienko_scaling/kyriienko_scaling.py",
+      "original_path": "core_reproduction/core/journal_extension/kyriienko_scaling_v1/kyriienko_scaling.py",
+      "before_sha256": "ff1ad1189a3f7db63530c90361ebf6e6c66dd828cc69fc9d85c03cc827039d56",
+      "after_sha256": "2b371df4c55e453290ad8de801db5bef282c880989c05d7f95264809d90cc5a0"
+    }
+  ]
+}

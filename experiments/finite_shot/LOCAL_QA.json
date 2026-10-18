@@ -1,0 +1,16 @@
+{
+  "status": "pilot_checked_full_experiment_pending",
+  "date": "2026-10-05",
+  "unit_tests_passed": 10,
+  "pilot_runs": ["pilot_20261005T041333_118849Z", "pilot_20261005T041350_517389Z"],
+  "environments": [
+    {"python": "3.9.6", "numpy": "1.24.4", "sympy": "1.13.3", "platform": "macOS arm64"},
+    {"python": "3.9.6", "numpy": "1.24.4", "sympy": "1.14.0", "platform": "macOS arm64"}
+  ],
+  "pilot_records_per_run": 4,
+  "pilot_json_equal_excluding_elapsed_seconds": true,
+  "pilot_sample_arrays_exactly_equal": true,
+  "median_empirical_to_predicted_variance": 1.0293407183658154,
+  "plan_sha256": "87cc8f6fd5447b2bc46995ebf7170d83d1fcc0e12c0b863a9aad8c26724831b7",
+  "scope": "Implementation QA only. No full v2 run, Linux replay, hardware result, or design superiority established. Local result folders are deliberately excluded from server bundle."
+}

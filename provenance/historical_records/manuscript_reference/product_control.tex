@@ -1,0 +1,104 @@
+\section{Classical product-feature estimator control}
+\label{app:productcontrol}
+This control was added after the finite-shot study to separate a
+nonlinear representation change from the way that representation
+is estimated. It uses the same frozen Hubregtsen circuit and ideal
+Z-outcome distribution, not a new circuit family or hardware dataset.
+Let $Z_q\in\{-1,1\}$ have mean $\mu_q$ at one input and parameter
+state. The diagonal tail preserves the product-state computational
+basis probabilities, so the four coordinates $Z_q$ are independent.
+
+\subsection{Unbiasedness and conditional variance}
+For $N$ shots in one independent half, define
+$\bar Z_q=N^{-1}\sum_sZ_q^{(s)}$. Direct ZZ estimation uses
+$N^{-1}\sum_sZ_q^{(s)}Z_r^{(s)}$, whereas the classical lift uses
+$\bar Z_q\bar Z_r$. Independence across qubits makes both unbiased
+for $\mu_q\mu_r$. Their variances are respectively
+\begin{align}
+ V_{\rm direct}&=(1-\mu_q^2\mu_r^2)/N,\\
+ V_{\rm product}&=\frac{\mu_q^2(1-\mu_r^2)+\mu_r^2(1-\mu_q^2)}{N}
+ +\frac{(1-\mu_q^2)(1-\mu_r^2)}{N^2}.
+\end{align}
+Their difference is
+$(1-\mu_q^2)(1-\mu_r^2)(1/N-1/N^2)\ge0$.
+This scalar observation alone is not sufficient for a dense metric,
+because covariances between different features also matter.
+
+The full comparison follows by conditioning. Given each qubit's
+sample count in a half, its outcome sequence is uniformly permuted;
+different qubit sequences remain conditionally independent. Therefore
+the conditional expectation of each direct parity average equals the
+product of its marginal means. Condition separately on the counts
+of every input, parameter state, and independent half. The two halves
+remain independent, and bilinearity gives
+\begin{equation}
+ \mathbb E[\widehat d^2_{\rm direct}\mid\text{marginal counts}]
+ =\widehat d^2_{\rm product}.
+\end{equation}
+The same holds for any fixed linear contrast of distance differences.
+The law of total variance proves non-increasing variance, for any
+fixed metric, without changing the target signal. This is the usual
+conditional-expectation variance reduction, not a quantum advantage.
+It assumes factorization of the Z-outcome distribution. For instance,
+a distribution supported equally on $++$ and $--$ has zero local
+means and unit ZZ mean, so a product-of-means substitute is incorrect.
+
+\subsection{Exact covariance and frozen comparison}
+For a feature indexed by a nonempty qubit set $I$, put
+$\widehat f_I=\prod_{q\in I}\bar Z_q$. Independence gives
+\begin{equation}
+ \mathbb E[\widehat f_I\widehat f_J]
+ =\prod_{q\in I\cap J}\left(\mu_q^2+\frac{1-\mu_q^2}{N}\right)
+  \prod_{q\in I\triangle J}\mu_q.
+\end{equation}
+Subtracting $\prod_{q\in I}\mu_q\prod_{q\in J}\mu_q$ gives the
+complete feature covariance. Summing the independent two-input
+covariances gives $S$ in Eq.~\eqref{eq:splitvariance}. That variance
+formula only needs independent, unbiased halves; it does not require
+the feature estimator itself to be linear in outcomes.
+
+We retain all three frozen panels, five held-out points, four target
+directions, six metric arms and four budgets, with 256 replicates.
+The 1,440 comparison records share data and metrics and are not
+independent discoveries. No new metric or favorable contrast is
+selected: the direct-parity oracle contrast is fixed for both arms.
+At each state, both estimates use exactly the same bitstring counts
+and total shot budget. Table~\ref{tab:productcontrol} reports the
+frozen noise-aware arm; the data retain all six arms.
+
+\begin{table}[h]
+\centering
+\caption{Product/direct exact contrast-variance ratios, summarized
+separately by panel. Each cell is the median of 20 ratios (five
+held-out points and four fixed directions); smaller is better.
+The metric, direct-parity contrast and underlying shots are identical
+between estimators. These are model-based variances, not confidence
+intervals, hardware-shot reductions or predictive gains.}
+\label{tab:productcontrol}
+\begin{tabular}{rrrr}
+\toprule
+Shots per input/state & Panel 0 & Panel 1 & Panel 2\\
+\midrule
+256 & 0.864 & 0.789 & 0.838\\
+1,024 & 0.884 & 0.819 & 0.858\\
+4,096 & 0.895 & 0.829 & 0.869\\
+16,384 & 0.899 & 0.838 & 0.872\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The product-estimator empirical/exact variance ratios have pooled
+median $0.990$ and 5th--95th percentiles $[0.869,1.120]$ across
+the correlated comparison records. At 4,096 shots, panel-median
+empirical mean-squared-error ratios are $0.890,0.827,0.907$.
+These are descriptive Monte Carlo checks; unbiasedness follows from
+the factorization argument, not a significance test. Dense-state
+probabilities agree with product probabilities within
+$1.7\times10^{-15}$, and exact-feature products agree within
+$1.8\times10^{-15}$. Direct-parity samples match the saved Linux
+study within $5.6\times10^{-14}$. The new arm was run locally with
+Python 3.9.6 and NumPy 1.24.4; server reproduction remains pending.
+Four unit tests include exact enumeration of all 256 two-shot,
+four-qubit outcome sequences and their conditional expectations.
+The separate control bundle retains its pre-execution scope,
+frozen-plan hash, code, per-record variances and paired samples.

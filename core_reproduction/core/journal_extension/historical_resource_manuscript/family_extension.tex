@@ -1,0 +1,56 @@
+\subsection{A dimension formula for a restricted Z-readout family}
+\label{sec:hubfamily}
+The nonlinear example extends to a structural family, rather than to
+every depth or readout of the named source constructor.
+\begin{proposition}[Grouped single-layer Z features]\label{prop:hubfamily}
+Let $n\ge d\ge1$, and let $\sigma:\{1,\ldots,n\}\to\{1,\ldots,d\}$
+be surjective. Prepare $|+\rangle^{\otimes n}$, apply
+$R_y(\theta_q)R_z(x_{\sigma(q)})$ on each qubit, and then any diagonal
+unitary. Use local Z readout with fixed positive weights $w_q$, fixed
+$\gamma>0$, and $x\in(-1,1)^d$. The generic kernel rank and minimum
+global smooth factor dimension are $d$. Every retained $\theta_q$
+is individually active, and any constant-linear factorization of
+these $n$ coordinates has rank at least $n$.
+\end{proposition}
+\begin{proof}
+The diagonal tail commutes with Z. The measured features are
+$f_q=-\sin\theta_q\cos x_{\sigma(q)}$, whence
+\begin{align}
+ d^2_\theta(x,x')&=\sum_{j=1}^d\beta_j(\theta)
+                    (\cos x_j-\cos x'_j)^2,\\
+ \beta_j(\theta)&=\sum_{q:\sigma(q)=j}w_q\sin^2\theta_q.
+\end{align}
+This is a global smooth $d$-coordinate factorization. Set every
+$\theta_q=\pi/4$, choose one representative $q_j$ per group and input
+pairs $(0,(\pi/4)e_j)$. The distance-Jacobian minor in columns $q_j$
+is diagonal with entries $w_{q_j}(1-1/\sqrt2)^2>0$.
+Thus the generic rank and minimum factor dimension equal $d$.
+Each coordinate derivative is a nonzero function. If a constant
+vector $v$ annihilates every distance derivative, independent variation
+of angles in each group gives $v_qw_q=0$ for every $q$. A
+rank-deficient constant-linear factor would provide such a nonzero
+vector, a contradiction.
+\end{proof}
+The four-qubit, two-input, one-layer Hubregtsen instance is a member
+with $w_q=1$. Data re-uploading, non-diagonal final gates, tied angles,
+and other readouts are outside this formula. It proves a kernel
+dimension law, not deletion of every retained angle or shot savings.
+
+\subsection{An all-size Kyriienko-type upper bound}
+For $n\ge2$, consider Eq.~\eqref{eq:kyriform} with independently
+parameterized local Euler blocks and a fixed entangler $E$ commuting
+with $Z_0$ and $X_{n-1}$. For isotropic local XYZ or complete
+weight-at-most-$k$ readout, local output rotations preserve the
+distance. On a regular Euler chart, rotations about the two endpoint
+axes give independent parameter tangents and therefore
+\begin{equation}
+ r\le3n-2.\label{eq:kyrifamilyupper}
+\end{equation}
+This applies, for example, to products of forward nearest-neighbor
+CNOTs: neither endpoint Pauli changes under any factor. It is an
+upper bound for every such size, not an equality theorem.
+The exact minors already certify equality for the reported local-XYZ
+$n=2,4$ cases and weight-at-most-two $n=4$ case. No all-size matching
+lower bound is supplied. At $k=n$, all parameters in the final
+data-independent variational block are invisible to full Pauli
+distance, so $r=0$; readout assumptions are essential.

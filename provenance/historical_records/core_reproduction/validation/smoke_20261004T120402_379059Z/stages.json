@@ -1,0 +1,50 @@
+[
+  {
+    "stage": "pilot_tests",
+    "exit_code": 0,
+    "elapsed_seconds": 0.396225583,
+    "log": "logs/pilot_tests.log"
+  },
+  {
+    "stage": "extension_tests",
+    "exit_code": 0,
+    "elapsed_seconds": 0.615391167,
+    "log": "logs/extension_tests.log"
+  },
+  {
+    "stage": "gram_tests",
+    "exit_code": 0,
+    "elapsed_seconds": 1.4217540829999997,
+    "log": "logs/gram_tests.log"
+  },
+  {
+    "stage": "scaling_tests",
+    "exit_code": 0,
+    "elapsed_seconds": 2.4063957080000002,
+    "log": "logs/scaling_tests.log"
+  },
+  {
+    "stage": "normalizer_tests",
+    "exit_code": 0,
+    "elapsed_seconds": 1.1509840420000002,
+    "log": "logs/normalizer_tests.log"
+  },
+  {
+    "stage": "survey_tests",
+    "exit_code": 0,
+    "elapsed_seconds": 0.39924925000000044,
+    "log": "logs/survey_tests.log"
+  },
+  {
+    "stage": "endpoint_exact_minor",
+    "exit_code": 0,
+    "elapsed_seconds": 0.040625624999999665,
+    "log": "logs/endpoint_exact_minor.log"
+  },
+  {
+    "stage": "representative_exact_r4",
+    "exit_code": 0,
+    "elapsed_seconds": 0.451551834,
+    "log": "logs/representative_exact_r4.log"
+  }
+]

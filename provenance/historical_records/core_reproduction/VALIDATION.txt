@@ -1,0 +1,54 @@
+DELIVERY VALIDATION — 2026-10-04
+===============================
+Testing was performed locally on macOS/Apple Silicon, not on a newly accessed
+Linux server and not on a QPU. A fresh Python 3.9.6 virtual environment was
+created and requirements.txt installed successfully. pip check reported no
+broken requirements. NumPy 1.24.4, SymPy 1.13.3 and Qiskit 1.2.4 were used.
+The ZIP was also extracted into a separate temporary directory for execution.
+
+PASSED CHECKS
+- 75 unit tests: pilot 16, extension 22, Gram 11, scaling 14,
+  global normalizer 6, resource survey 6. Repeating tests in several modes is
+  not counted as additional independent coverage.
+- Exact representative ChebyshevRx r=4 minor/null directions and the endpoint
+  exception check; bounded analytic/gauge checks; QFI counterexample.
+- Fresh 24-setting pilot, higher-precision certificate replay, and source checks.
+- Fresh 30-setting Fourier–Gram closure and 12 Kyriienko scaling certificates.
+  The core comparison checks 3,376 strict items with zero strict failures and
+  zero informational differences. Its status is PASS_WITH_WARNINGS, because
+  Python 3.9.6 differs from the historical reference Python 3.8.10.
+  This single warning is about environment version, not certificate disagreement.
+- An additional run in the pre-existing SymPy 1.14.0 environment also passed
+  all 3,376 strict items; it has two version warnings (Python and SymPy).
+  These are reruns of the same implementation, not independent implementations.
+- All 54 rank rows agree with both archived manuscript rank tables.
+- Nonlinear example: exact rank 2 / linear-factor rank 4; source feature,
+  distance, kernel and gradient diagnostics pass.
+- Fresh 102-distinct-setting resource census, 12 global-normalization settings,
+  and recomputation of the 30-extension strong-baseline resource accounting.
+- Legacy CSV reaggregation, sampled direct-summand diagnostic, optional
+  historical timing smoke test, and saved timing archive reaggregation.
+- The final entrypoint was tested from an extracted path containing spaces.
+- Deliberate README corruption is rejected by the integrity check; optimized
+  Python (-O), which would disable scientific assertions, is rejected.
+
+EVIDENCE
+validation/run_summary.json lists completed modes and actual elapsed times.
+Each validation/<run>/ folder contains its environment, verdict, stage list,
+logs and key comparison files. The full scientific runs took about ten minutes
+on this machine with four workers; some QA jobs overlapped. These are operational
+test timings, NOT scientific performance benchmarks or speedup measurements.
+The immutable original certificates remain in core/reference_results/.
+
+NOT CLAIMED
+- A new full 18,900+3,600-fit timing measurement: only its smoke test and original
+  archive arithmetic were rerun during packaging. timing-full is available as
+  an explicit, potentially costly option.
+- Fresh raw-data preprocessing, industrial vision training or QPU execution.
+- A formal-proof-assistant verification or independent human proof review.
+- Fresh testing of this integrated wrapper on Python 3.8, Linux, or Windows.
+- A public release, permanent repository DOI, or a newly assigned code license.
+
+Packaging adds an entrypoint, documentation, table/resource presentation checks
+and integrity metadata. It does not change the archived scientific engines,
+source inputs, their original certificates or the manuscript's numerical claims.

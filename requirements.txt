@@ -1,0 +1,19 @@
+# Reference-compatible environment. Use Python 3.9, 3.10 or 3.11 (not 3.12+).
+numpy==1.24.4
+sympy==1.13.3
+mpmath==1.3.0
+qiskit==1.2.4
+scipy==1.10.1
+rustworkx==0.15.1
+symengine==0.13.0
+stevedore==5.3.0
+pbr==7.0.3; python_version >= '3.9'
+pbr==6.1.1; python_version < '3.9'
+dill==0.4.0
+python-dateutil==2.9.0.post0
+six==1.17.0
+typing-extensions==4.13.2
+# Only the optional timing workflow needs these:
+scikit-learn==1.3.2
+joblib==1.4.2
+threadpoolctl==3.5.0

@@ -1,0 +1,40 @@
+심사자용 재현 패키지 사용법
+=========================
+영문 README.txt가 심사자용 기본 설명입니다. CLAIM_MAP.txt에 원고 주장별
+실행 명령과 재현 범위가 정리되어 있습니다.
+
+서버에 ZIP을 올려 압축을 푼 후, run.sh가 보이는 폴더에서 실행하세요.
+Python 3.9~3.11 권장. Python 3.12 이상은 이 의존성 고정본 대상이 아닙니다.
+기존 서버가 Python 3.8이라면 기존 호환 경로와 의존성 선택을 유지했습니다.
+다만 이번 통합본의 새 가상환경 검증은 Python 3.9에서 수행했습니다.
+
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+bash run.sh integrity
+bash run.sh smoke
+bash run.sh full --workers 2
+
+터미널에는 명령만 붙여넣으세요. ```bash, ``` 또는 프롬프트 문자를
+함께 붙여넣으면 실행 대기처럼 보이는 문제가 생길 수 있습니다.
+
+[WORKING]은 해당 단계가 실행 중이라는 의미입니다. 최종 PASS와
+verdict.json을 확인하세요. 기본 결과는 runs/ 아래 새 폴더에 저장됩니다.
+오래 걸리는 단계도 15초마다 진행 중이라는 표시와 로그 경로가 나옵니다.
+
+full은 핵심 54개 차원 인증 + Kyriienko 확장 + 자원 비교의 전체 재실행입니다.
+과거 모든 응용 실험이나 QPU 실행까지 포함한다는 뜻은 아닙니다.
+원시 이미지/임베딩은 들어 있지 않으며 핵심 실험에는 필요하지 않습니다.
+과거 학습 대조군은 CSV 재집계, 시간 측정은 별도 명령으로 분리했습니다.
+
+시간 측정 원본 ZIP은 큰 파일이므로 별도 보관합니다.
+quantum_reviewer_timing_evidence_v1.zip을 상위 폴더에 두고:
+
+bash run.sh timing-archive --archive ../quantum_reviewer_timing_evidence_v1.zip
+
+이 명령은 저장된 시간/쌍별 결과를 재집계합니다. 새 시간 측정은 아닙니다.
+18,900 cold fits + 3,600 reuse fits의 새 실행은 timing-full 명령이며,
+기본 full 실행에는 포함하지 않았습니다.
+
+현재는 전달용 파일을 만든 상태이며 외부에 공개하지 않았습니다.
+공개 전 저자 코드 라이선스와 데이터 재배포 조건을 확정하세요.

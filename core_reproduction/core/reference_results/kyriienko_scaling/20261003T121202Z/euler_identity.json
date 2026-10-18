@@ -1,0 +1,8 @@
+{
+  "X_field_is_identity": true,
+  "X_control_doubled_first_component_is_identity": false,
+  "Y_field_is_identity": true,
+  "Y_control_doubled_first_component_is_identity": false,
+  "passed": true,
+  "statement": "U(a,b,c)=Rz(c)Rx(b)Rz(a); X: v=(sin c, cos c sin b, -sin c cos b); Y: v=(-cos c, sin c sin b, cos c cos b); sum_k v_k dU/dk = -(i/2) sin(b) Q U"
+}

@@ -1,0 +1,858 @@
+{
+ "id": "yz_cx_encoding_circuit_n4_l2_pauli_weight_le_2",
+ "parameter_count": 16,
+ "n": 4,
+ "observables": 66,
+ "fixed_frequency": true,
+ "product_terms": [],
+ "constant_angle_terms": [],
+ "exact_supported": true,
+ "data_bases": [
+  "a0",
+  "a1"
+ ],
+ "base_units_M": [
+  2,
+  2
+ ],
+ "half_angle_step": [
+  1,
+  1
+ ],
+ "max_half_angle_exponent": [
+  8,
+  8
+ ],
+ "dft_grid_points_per_base": [
+  33,
+  33
+ ],
+ "max_feature_frequency_in_psi_units": [
+  16,
+  16
+ ],
+ "basis_full_size": 1088,
+ "basis_description": "h_a(x) in {cos(w.psi), sin(w.psi)}, psi_b = phi_b(x)/M_b, w in Omega_+ (first nonzero component > 0), constant mode removed",
+ "independence": {
+  "bases_on_distinct_coordinates": true,
+  "images": [
+   "(-1, 1)",
+   "(-1, 1)"
+  ],
+  "argument": "phi maps the open domain (-1,1)^2 onto an open box; 1 and the distinct characters exp(i w.psi) are linearly independent on any open set (real-analytic trigonometric polynomial vanishing on an open set vanishes identically), hence so are 1, cos(w.psi), sin(w.psi), w in Omega_+."
+ },
+ "grid_sufficiency": "each rotation exp(-i alpha P/2) multiplies amplitudes by u^{-s} or u^{+s} (data part of alpha/2), so amplitudes have exponents in [-S_b, S_b] (step g_b) and features have frequencies |w_b| <= 2 S_b; an equispaced grid of 2(2S_b/g_b)+1 points in chi_b = g_b psi_b is aliasing free.",
+ "H_gates": 0,
+ "theta_star": {
+  "specification": [
+   "theta_0 = 2*atan2(60, 11)  [exp(i theta/2) = (11 + 60 i)/61]",
+   "theta_1 = 2*atan2(68, 285)  [exp(i theta/2) = (285 + 68 i)/293]",
+   "theta_2 = 2*atan2(-140, -171)  [exp(i theta/2) = (-171 + -140 i)/221]",
+   "theta_3 = 2*atan2(-156, -133)  [exp(i theta/2) = (-133 + -156 i)/205]",
+   "theta_4 = 2*atan2(-69, -260)  [exp(i theta/2) = (-260 + -69 i)/269]",
+   "theta_5 = 2*atan2(115, 252)  [exp(i theta/2) = (252 + 115 i)/277]",
+   "theta_6 = 2*atan2(165, -52)  [exp(i theta/2) = (-52 + 165 i)/173]",
+   "theta_7 = 2*atan2(152, -345)  [exp(i theta/2) = (-345 + 152 i)/377]",
+   "theta_8 = 2*atan2(-112, -15)  [exp(i theta/2) = (-15 + -112 i)/113]",
+   "theta_9 = 2*atan2(57, -176)  [exp(i theta/2) = (-176 + 57 i)/185]",
+   "theta_10 = 2*atan2(-48, 55)  [exp(i theta/2) = (55 + -48 i)/73]",
+   "theta_11 = 2*atan2(-40, 9)  [exp(i theta/2) = (9 + -40 i)/41]",
+   "theta_12 = 2*atan2(161, 240)  [exp(i theta/2) = (240 + 161 i)/289]",
+   "theta_13 = 2*atan2(-105, 208)  [exp(i theta/2) = (208 + -105 i)/233]",
+   "theta_14 = 2*atan2(-187, 84)  [exp(i theta/2) = (84 + -187 i)/205]",
+   "theta_15 = 2*atan2(80, 39)  [exp(i theta/2) = (39 + 80 i)/89]"
+  ],
+  "float": [
+   2.7789531047868126,
+   0.4684349782674571,
+   -4.911089545496773,
+   -4.553554204897435,
+   -5.764375158555938,
+   0.8562427342552861,
+   3.752189967170854,
+   5.453200401438775,
+   -3.4078653086930886,
+   5.656777799251525,
+   -1.435082681082289,
+   -2.6989637688942105,
+   1.18176334857488,
+   -0.9349727234756057,
+   -2.297219320698807,
+   2.2343972613742498
+  ],
+  "seed": 20261016,
+  "zeta": [
+   [
+    11,
+    60,
+    61
+   ],
+   [
+    285,
+    68,
+    293
+   ],
+   [
+    -171,
+    -140,
+    221
+   ],
+   [
+    -133,
+    -156,
+    205
+   ],
+   [
+    -260,
+    -69,
+    269
+   ],
+   [
+    252,
+    115,
+    277
+   ],
+   [
+    -52,
+    165,
+    173
+   ],
+   [
+    -345,
+    152,
+    377
+   ],
+   [
+    -15,
+    -112,
+    113
+   ],
+   [
+    -176,
+    57,
+    185
+   ],
+   [
+    55,
+    -48,
+    73
+   ],
+   [
+    9,
+    -40,
+    41
+   ],
+   [
+    240,
+    161,
+    289
+   ],
+   [
+    208,
+    -105,
+    233
+   ],
+   [
+    84,
+    -187,
+    205
+   ],
+   [
+    39,
+    80,
+    89
+   ]
+  ]
+ },
+ "A": 288,
+ "lower_bound": {
+  "r_lower": 14,
+  "certificate": "nonzero r x r minor of the exact rational Jacobian d upper(G)/d theta at theta*, certified by a nonzero determinant modulo a prime (all entries p-integral)",
+  "per_prime": [
+   {
+    "prime": 134217689,
+    "feature_coefficients_conjugate_symmetric": true,
+    "A_support": 288,
+    "A_full": 1088,
+    "jacobian_rows": 41616,
+    "rank": 14,
+    "minor_rows_G_entries": [
+     [
+      "cos((0, 2))",
+      "cos((0, 2))"
+     ],
+     [
+      "cos((0, 2))",
+      "sin((0, 2))"
+     ],
+     [
+      "cos((0, 2))",
+      "cos((0, 4))"
+     ],
+     [
+      "cos((0, 2))",
+      "sin((0, 4))"
+     ],
+     [
+      "cos((0, 2))",
+      "cos((0, 6))"
+     ],
+     [
+      "cos((0, 2))",
+      "sin((0, 6))"
+     ],
+     [
+      "cos((0, 2))",
+      "cos((0, 8))"
+     ],
+     [
+      "cos((0, 2))",
+      "sin((0, 8))"
+     ],
+     [
+      "cos((0, 2))",
+      "cos((0, 10))"
+     ],
+     [
+      "cos((0, 2))",
+      "sin((0, 10))"
+     ],
+     [
+      "cos((0, 2))",
+      "cos((0, 12))"
+     ],
+     [
+      "cos((0, 2))",
+      "sin((0, 12))"
+     ],
+     [
+      "cos((0, 2))",
+      "cos((2, -16))"
+     ],
+     [
+      "cos((0, 2))",
+      "cos((0, 14))"
+     ]
+    ],
+    "minor_columns": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12,
+     13,
+     14
+    ],
+    "minor_det_mod_p": 113599842,
+    "active_witnesses": {
+     "0": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 111811405
+     },
+     "1": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 47118303
+     },
+     "2": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 69899906
+     },
+     "3": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 60365581
+     },
+     "4": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 113282847
+     },
+     "5": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 28307478
+     },
+     "6": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 128146237
+     },
+     "7": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 35651270
+     },
+     "8": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 63546998
+     },
+     "9": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 52990884
+     },
+     "10": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 70428050
+     },
+     "12": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 22370468
+     },
+     "13": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 97442373
+     },
+     "14": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 14802971
+     }
+    },
+    "seconds": 2.849757458
+   },
+   {
+    "prime": 134217649,
+    "feature_coefficients_conjugate_symmetric": true,
+    "A_support": 288,
+    "A_full": 1088,
+    "jacobian_rows": 41616,
+    "rank": 14,
+    "minor_rows_G_entries": [
+     [
+      "cos((0, 2))",
+      "cos((0, 2))"
+     ],
+     [
+      "cos((0, 2))",
+      "sin((0, 2))"
+     ],
+     [
+      "cos((0, 2))",
+      "cos((0, 4))"
+     ],
+     [
+      "cos((0, 2))",
+      "sin((0, 4))"
+     ],
+     [
+      "cos((0, 2))",
+      "cos((0, 6))"
+     ],
+     [
+      "cos((0, 2))",
+      "sin((0, 6))"
+     ],
+     [
+      "cos((0, 2))",
+      "cos((0, 8))"
+     ],
+     [
+      "cos((0, 2))",
+      "sin((0, 8))"
+     ],
+     [
+      "cos((0, 2))",
+      "cos((0, 10))"
+     ],
+     [
+      "cos((0, 2))",
+      "sin((0, 10))"
+     ],
+     [
+      "cos((0, 2))",
+      "cos((0, 12))"
+     ],
+     [
+      "cos((0, 2))",
+      "sin((0, 12))"
+     ],
+     [
+      "cos((0, 2))",
+      "cos((2, -16))"
+     ],
+     [
+      "cos((0, 2))",
+      "cos((0, 14))"
+     ]
+    ],
+    "minor_columns": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12,
+     13,
+     14
+    ],
+    "minor_det_mod_p": 84499076,
+    "active_witnesses": {
+     "0": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 63753083
+     },
+     "1": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 59167439
+     },
+     "2": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 14305292
+     },
+     "3": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 94981362
+     },
+     "4": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 57185658
+     },
+     "5": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 131767826
+     },
+     "6": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 19612497
+     },
+     "7": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 63911904
+     },
+     "8": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 48889940
+     },
+     "9": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 83099465
+     },
+     "10": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 67362006
+     },
+     "12": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 31191782
+     },
+     "13": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 61815403
+     },
+     "14": {
+      "row": [
+       "cos((0, 2))",
+       "cos((0, 2))"
+      ],
+      "value_mod_p": 120382622
+     }
+    },
+    "seconds": 2.847240834
+   }
+  ]
+ },
+ "upper_bound": {
+  "U1": {
+   "bound": 14,
+   "inactive_symbols": [
+    11,
+    15
+   ],
+   "deletion_log": [
+    {
+     "source_gate": 18,
+     "rule": "two-copy joint: [Omega, P(x)I + I(x)P] = 0",
+     "removed_symbols": {
+      "15": "1"
+     },
+     "removed_data": {},
+     "output_generator": "IIIZ",
+     "sign": "1",
+     "fresh_angle_symbolic_check": {
+      "completed": true,
+      "fresh_angle_independent": true,
+      "suffix_gates": 2,
+      "light_cone_gates": 2,
+      "operator_words": 86,
+      "seconds": 0.0068898339999998726
+     }
+    },
+    {
+     "source_gate": 8,
+     "rule": "two-copy joint: [Omega, P(x)I + I(x)P] = 0",
+     "removed_symbols": {
+      "11": "1"
+     },
+     "removed_data": {},
+     "output_generator": "IZII",
+     "sign": "1",
+     "fresh_angle_symbolic_check": {
+      "completed": true,
+      "fresh_angle_independent": true,
+      "suffix_gates": 12,
+      "light_cone_gates": 2,
+      "operator_words": 86,
+      "seconds": 0.007167499999999549
+     }
+    }
+   ],
+   "virtual_fields": [],
+   "family_labels": [
+    "e_11 (inactive symbol)",
+    "e_15 (inactive symbol)"
+   ],
+   "family_rank_at_theta_star": 2,
+   "consistency_J_v_at_theta_star": [
+    {
+     "field": "e_11 (inactive symbol)",
+     "J_theta_star_times_v_is_zero_mod_p": true
+    },
+    {
+     "field": "e_15 (inactive symbol)",
+     "J_theta_star_times_v_is_zero_mod_p": true
+    }
+   ],
+   "argument": "Each field v(theta) satisfies J(theta) v(theta) = 0 for all theta: deletions keep K(x,x';theta) = Tr[(rho(x)(x)rho(x'))Omega] unchanged because the transported generator P commutes with Omega jointly (P(x)I + I(x)P) or separately (data angles); a virtual field is the Euler-block chart image of inserting exp(-i eps Q/2) whose transported generator is a joint symmetry. Exact rank of the family at theta* bounds the generic family rank from below, so r <= K - rank."
+  },
+  "U2_symbolic_gram": {
+   "original_circuit": {
+    "completed": false,
+    "reason": "term budget 600000 exceeded",
+    "seconds": 35.927978333,
+    "peak_terms": 1128547
+   },
+   "certified_reduced_circuit": {
+    "completed": false,
+    "reason": "term budget 600000 exceeded",
+    "seconds": 36.111587334,
+    "peak_terms": 1128547
+   }
+  },
+  "r_upper": 14,
+  "attained_by": [
+   "U1 two-copy invariance fields"
+  ]
+ },
+ "r_lower": 14,
+ "r_upper": 14,
+ "status": "CLOSED",
+ "per_symbol": [
+  {
+   "symbol": 0,
+   "verdict": "ACTIVE",
+   "certificates": [
+    "ACTIVE: exact nonzero d_k G(theta*) (mod-p witness)"
+   ]
+  },
+  {
+   "symbol": 1,
+   "verdict": "ACTIVE",
+   "certificates": [
+    "ACTIVE: exact nonzero d_k G(theta*) (mod-p witness)"
+   ]
+  },
+  {
+   "symbol": 2,
+   "verdict": "ACTIVE",
+   "certificates": [
+    "ACTIVE: exact nonzero d_k G(theta*) (mod-p witness)"
+   ]
+  },
+  {
+   "symbol": 3,
+   "verdict": "ACTIVE",
+   "certificates": [
+    "ACTIVE: exact nonzero d_k G(theta*) (mod-p witness)"
+   ]
+  },
+  {
+   "symbol": 4,
+   "verdict": "ACTIVE",
+   "certificates": [
+    "ACTIVE: exact nonzero d_k G(theta*) (mod-p witness)"
+   ]
+  },
+  {
+   "symbol": 5,
+   "verdict": "ACTIVE",
+   "certificates": [
+    "ACTIVE: exact nonzero d_k G(theta*) (mod-p witness)"
+   ]
+  },
+  {
+   "symbol": 6,
+   "verdict": "ACTIVE",
+   "certificates": [
+    "ACTIVE: exact nonzero d_k G(theta*) (mod-p witness)"
+   ]
+  },
+  {
+   "symbol": 7,
+   "verdict": "ACTIVE",
+   "certificates": [
+    "ACTIVE: exact nonzero d_k G(theta*) (mod-p witness)"
+   ]
+  },
+  {
+   "symbol": 8,
+   "verdict": "ACTIVE",
+   "certificates": [
+    "ACTIVE: exact nonzero d_k G(theta*) (mod-p witness)"
+   ]
+  },
+  {
+   "symbol": 9,
+   "verdict": "ACTIVE",
+   "certificates": [
+    "ACTIVE: exact nonzero d_k G(theta*) (mod-p witness)"
+   ]
+  },
+  {
+   "symbol": 10,
+   "verdict": "ACTIVE",
+   "certificates": [
+    "ACTIVE: exact nonzero d_k G(theta*) (mod-p witness)"
+   ]
+  },
+  {
+   "symbol": 11,
+   "verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ]
+  },
+  {
+   "symbol": 12,
+   "verdict": "ACTIVE",
+   "certificates": [
+    "ACTIVE: exact nonzero d_k G(theta*) (mod-p witness)"
+   ]
+  },
+  {
+   "symbol": 13,
+   "verdict": "ACTIVE",
+   "certificates": [
+    "ACTIVE: exact nonzero d_k G(theta*) (mod-p witness)"
+   ]
+  },
+  {
+   "symbol": 14,
+   "verdict": "ACTIVE",
+   "certificates": [
+    "ACTIVE: exact nonzero d_k G(theta*) (mod-p witness)"
+   ]
+  },
+  {
+   "symbol": 15,
+   "verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ]
+  }
+ ],
+ "numerical_rank": {
+  "certified": false,
+  "tolerance_relative": 1e-09,
+  "trials": [
+   {
+    "seed": 11,
+    "rank": 14,
+    "sigma_max": 1.3927344252175209,
+    "sigma_r_rel": 0.27853238278692555,
+    "sigma_r1_rel": 8.951916451269583e-17,
+    "support_columns": 288
+   },
+   {
+    "seed": 12,
+    "rank": 14,
+    "sigma_max": 1.3507161551082154,
+    "sigma_r_rel": 0.3563267896143453,
+    "sigma_r1_rel": 9.802662540517495e-17,
+    "support_columns": 288
+   },
+   {
+    "seed": 13,
+    "rank": 14,
+    "sigma_max": 1.4811240111879966,
+    "sigma_r_rel": 0.26688258908222606,
+    "sigma_r1_rel": 7.732297512827324e-17,
+    "support_columns": 288
+   },
+   {
+    "seed": 14,
+    "rank": 14,
+    "sigma_max": 1.507370536627773,
+    "sigma_r_rel": 0.30742854153989724,
+    "sigma_r1_rel": 5.406152184733999e-17,
+    "support_columns": 288
+   }
+  ],
+  "rank": 14,
+  "min_rank": 14
+ },
+ "numeric_crosscheck": {
+  "trials": 32,
+  "max_abs_distance_error": 2.842170943040401e-14,
+  "max_abs_gradient_error": 2.5757174171303632e-14,
+  "passed": true,
+  "tolerance": 1e-10
+ },
+ "interval_engine_crosscheck": {
+  "theta": [
+   "2/17",
+   "21/17",
+   "2/17",
+   "12/17",
+   "6/17",
+   "1",
+   "11/17",
+   "18/17",
+   "5/17",
+   "21/17",
+   "14/17",
+   "18/17",
+   "11/17",
+   "3/17",
+   "2/17",
+   "23/17"
+  ],
+  "x": [
+   "0",
+   "-3/19"
+  ],
+  "xprime": [
+   "10/19",
+   "-12/19"
+  ],
+  "interval_dps": 30,
+  "distance_abs_error": 9.769962616701378e-15,
+  "gradient_max_abs_error": 8.881784197001252e-15,
+  "agrees_within_1e_10": true
+ },
+ "original_bounded_pass": {
+  "status_counts": {
+   "ACTIVE_CERTIFIED": 14,
+   "UNDECIDED": 2
+  },
+  "undecided": [
+   11,
+   15
+  ],
+  "symbolic_failure": "Pre-convolution pair budget exceeded",
+  "symbolic_seconds": 3.960326291000001,
+  "elapsed_seconds": 28.37685679100001,
+  "minor_lower": 14,
+  "r_upper": 16
+ },
+ "timing": {
+  "modular_rank_seconds": 5.696998292,
+  "invariance_seconds": 0.006591209000000653,
+  "deletion_checks_seconds": 0.014123957999999881,
+  "symbolic_original_circuit_seconds": 35.927978333,
+  "symbolic_certified_reduced_circuit_seconds": 36.111587334,
+  "virtual_field_checks_seconds": 8.749999977908374e-07,
+  "numeric_seconds": 6.315813708000007,
+  "interval_crosscheck_seconds": 1.337914957999999,
+  "total_seconds": 85.423656417
+ },
+ "manuscript": {
+  "K": 16,
+  "kind": "value",
+  "value": 14,
+  "dagger": false
+ },
+ "structural_closure_bounds": [
+  14,
+  14
+ ],
+ "consistency": "AGREES",
+ "numerical_rank_matches_certified": true
+}

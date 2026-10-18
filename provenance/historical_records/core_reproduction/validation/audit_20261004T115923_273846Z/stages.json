@@ -1,0 +1,92 @@
+[
+  {
+    "stage": "pilot_tests",
+    "exit_code": 0,
+    "elapsed_seconds": 0.399599417,
+    "log": "logs/pilot_tests.log"
+  },
+  {
+    "stage": "extension_tests",
+    "exit_code": 0,
+    "elapsed_seconds": 0.6058397080000001,
+    "log": "logs/extension_tests.log"
+  },
+  {
+    "stage": "gram_tests",
+    "exit_code": 0,
+    "elapsed_seconds": 1.5804987910000001,
+    "log": "logs/gram_tests.log"
+  },
+  {
+    "stage": "scaling_tests",
+    "exit_code": 0,
+    "elapsed_seconds": 2.7254417089999996,
+    "log": "logs/scaling_tests.log"
+  },
+  {
+    "stage": "normalizer_tests",
+    "exit_code": 0,
+    "elapsed_seconds": 1.155575625,
+    "log": "logs/normalizer_tests.log"
+  },
+  {
+    "stage": "survey_tests",
+    "exit_code": 0,
+    "elapsed_seconds": 0.5006297499999999,
+    "log": "logs/survey_tests.log"
+  },
+  {
+    "stage": "endpoint_exact_minor",
+    "exit_code": 0,
+    "elapsed_seconds": 0.04060949999999952,
+    "log": "logs/endpoint_exact_minor.log"
+  },
+  {
+    "stage": "representative_exact_r4",
+    "exit_code": 0,
+    "elapsed_seconds": 0.4549399999999997,
+    "log": "logs/representative_exact_r4.log"
+  },
+  {
+    "stage": "pilot_certificate_replay",
+    "exit_code": 0,
+    "elapsed_seconds": 52.496321916999996,
+    "log": "logs/pilot_certificate_replay.log"
+  },
+  {
+    "stage": "pilot_source_crosscheck",
+    "exit_code": 0,
+    "elapsed_seconds": 28.144545500000007,
+    "log": "logs/pilot_source_crosscheck.log"
+  },
+  {
+    "stage": "nonlinear_exact",
+    "exit_code": 0,
+    "elapsed_seconds": 0.7779572920000106,
+    "log": "logs/nonlinear_exact.log"
+  },
+  {
+    "stage": "nonlinear_source_check",
+    "exit_code": 0,
+    "elapsed_seconds": 2.3001912089999905,
+    "log": "logs/nonlinear_source_check.log"
+  },
+  {
+    "stage": "legacy_csv_and_qfi_check",
+    "exit_code": 0,
+    "elapsed_seconds": 0.5670025420000115,
+    "log": "logs/legacy_csv_and_qfi_check.log"
+  },
+  {
+    "stage": "bounded_analytic_checks",
+    "exit_code": 0,
+    "elapsed_seconds": 1.0480052500000028,
+    "log": "logs/bounded_analytic_checks.log"
+  },
+  {
+    "stage": "extension_resource_accounting_30",
+    "exit_code": 0,
+    "elapsed_seconds": 1.647374541000005,
+    "log": "logs/extension_resource_accounting_30.log"
+  }
+]

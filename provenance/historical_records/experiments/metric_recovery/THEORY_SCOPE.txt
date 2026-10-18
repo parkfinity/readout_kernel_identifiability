@@ -1,0 +1,56 @@
+Working propositions for the design extension (not independently reviewed)
+
+Let f_theta(x)=C(theta)h(x)+b(theta), with 1,h_1,...,h_A linearly independent,
+M positive definite and fixed independently of theta, and gamma>0 fixed.
+Let H_v=D_v C. The existing distance-identifiability theorem gives
+  D_v kernel = 0 for every input pair iff C^T M H_v+H_v^T M C=0.
+
+1. Fixed-readout irrecoverability across ALL SPD metrics.
+For a nonconstant feature map at the parameter point, a direction v is
+annihilated for every fixed SPD M iff D_v f(x) is input-independent, i.e.
+H_v=0. This is a pointwise statement, not about all theta simultaneously.
+Proof: for each pair let a=f(x)-f(x'), b=D_v f(x)-D_v f(x'). The derivative
+is 2 a^T M b. If it vanishes on the open SPD cone, linearity in M gives
+ab^T+ba^T=0. For a!=0, multiplying by a and then taking its inner product
+with a yields a.b=0 and b=0. If a=0, compare both inputs with any input
+having a different feature value, which exists by nonconstancy. Hence b=0
+for all pairs and H_v=0 by basis independence. Conversely it is immediate.
+Exception: if f_theta is constant at this point (C=0), all squared-distance
+first derivatives vanish for every M even if H_v!=0. Do not omit this case.
+
+2. One fixed metric is different from observing a bank of metrics.
+The intersection of the nullspaces over all M need not be the nullspace
+of ANY SINGLE M. In particular rank D(C^T M C)<=min(K,A(A+1)/2), and if
+C has rank q, the sharper fixed-rank Gram tangent bound is
+q*A-q*(q-1)/2 at regular points. Thus feature rank alone is not a target
+that a single metric can always attain. The Hubregtsen local-Z example
+has feature rank 4, diagonal-metric rank 2, maximal dense-metric rank 3.
+
+3. Generic metric selection at a fixed parameter point.
+Every minor of L_M(v)=C^T M H_v+H_v^T M C is a polynomial in the entries
+of M. If some allowed SPD metric attains rank r_max, almost every metric
+in any open SPD domain attains r_max (nonzero polynomial zero sets have
+measure zero). This applies to diagonal SPD metrics within their own
+parameter space as well. Trace normalization does not affect rank.
+It also holds simultaneously for a FINITE list of parameter points.
+This does not establish good conditioning, global robustness at every theta,
+finite-shot distinguishability, or a maximum-rank polynomial-time algorithm.
+It explains why random anisotropy is a necessary strong baseline.
+
+4. Measurement budget.
+Changing M uses the same measured features but changes classical arithmetic
+and statistical variance. A product Pauli basis supplies all compatible
+parities from the same shot strings; counting observables as independent
+measurement settings overstates cost. Extracting correlations from already
+saved bit strings may add no measurement setting, but raw bit strings or
+joint estimates must actually be available. No statement of QPU shot saving
+at equal target accuracy follows from rank recovery alone.
+
+5. Scientific claim boundary.
+This extension changes the kernel; it is NOT an equivalence-preserving
+compiler transformation. Diagnostic exactness and design utility are distinct.
+Generic full rank is not good predictive performance or generalization.
+Known learned-observable and quantum metric-learning methods must be compared:
+https://arxiv.org/abs/2501.05663
+https://arxiv.org/abs/2211.05225
+No exhaustive novelty search or independent theorem verification has been done.

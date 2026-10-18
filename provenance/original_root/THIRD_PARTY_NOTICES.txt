@@ -1,0 +1,36 @@
+Third-party source and data notices
+==================================
+Vendored sQUlearn circuit sources retain Apache License 2.0. The original
+LICENSE.txt, citation files and provenance manifests are retained in vendor
+directories. Do not replace them with a license for the authors' code.
+Installed Python libraries are not redistributed; their licenses still apply.
+
+Frozen UCI inputs for the optional historical timing workflow:
+These are transformed/subsampled research inputs, not the original downloads.
+The preprocessing and split metadata in each frozen JSON describe alterations.
+The following upstream dataset pages identify CC BY 4.0 as their license:
+
+- Wolberg, W., Mangasarian, O., Street, N., & Street, W. (1993).
+  Breast Cancer Wisconsin (Diagnostic). UCI Machine Learning Repository.
+  https://doi.org/10.24432/C5DW2B
+  https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic
+- Sigillito, V., Wing, S., Hutton, L., & Baker, K. (1989).
+  Ionosphere. UCI Machine Learning Repository.
+  https://doi.org/10.24432/C5W01B
+  https://archive.ics.uci.edu/dataset/52/ionosphere
+- Quinlan, R. (1993). Auto MPG. UCI Machine Learning Repository.
+  https://doi.org/10.24432/C5859H
+  https://archive.ics.uci.edu/dataset/9/auto+mpg
+
+CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+The original data creators do not endorse this manuscript or these alterations.
+
+Industrial benchmark images and embeddings are not redistributed here.
+MVTec AD, MVTec AD 2, MVTec LOCO, MPDD and VisA remain available through their
+respective providers subject to those providers' terms. The manuscript reference
+contains their bibliographic citations; the supplied AD summary is aggregate
+research output, not a substitute for the image datasets or model execution.
+
+Historical NOTICE.txt files are preserved for provenance. This notice clarifies
+the public-package attribution, without changing any upstream license or claiming
+that a public upload has already occurred.

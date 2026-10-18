@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "mode": "product",
+  "exit_code": 0,
+  "source_layout_reconstruction": true,
+  "source_files_byte_identical": true,
+  "result_directory": "runtime/runs/product_20261008T054802_100469Z",
+  "scope": "Only the selected workflow was run; no new science or altered reference evidence."
+}

@@ -1,0 +1,29 @@
+RELEASE_HASHES_OK
+VALIDATED chebyshev_rx_n2_l2
+VALIDATED chebyshev_rx_n4_l2
+COLD_DONE chebyshev_rx_n2_l2 ionosphere 42
+REUSE_DONE chebyshev_rx_n2_l2 ionosphere
+COLD_DONE chebyshev_rx_n4_l2 ionosphere 42
+REUSE_DONE chebyshev_rx_n4_l2 ionosphere
+{
+  "passed": true,
+  "output": "/private/tmp/quantum-reviewer-clean.ukIpfS/results/timing-smoke_20261004T115836_633693Z/work/journal_extension/interior_incremental_v1/results/smoke_20261004T115837_458338Z",
+  "zip": "/private/tmp/quantum-reviewer-clean.ukIpfS/results/timing-smoke_20261004T115836_633693Z/work/journal_extension/interior_incremental_v1/results/smoke_20261004T115837_458338Z.zip"
+}
+{
+  "passed": true,
+  "manifest_files": 113,
+  "cold": 6,
+  "reuse": 6,
+  "arrays_checked": 66,
+  "replayed_cold": 2,
+  "replayed_reuse_fits": 4,
+  "max_replay_errors": {
+    "kernel": 1.1102230246251565e-15,
+    "gradient": 6.439293542825908e-15,
+    "objective": 7.771561172376096e-16,
+    "prediction": 3.774758283725532e-15
+  },
+  "replay_scope": "All saved paired kernels/traces checked; independent scalar-source replay of rep0 serial cold reference for every dataset/seed/config, and rep0 serial reuse fits for both primary configs. Replay checks saved increments, not autonomous retraining. Timings arithmetic only."
+}
+COMPLETE_AND_AUDITED /private/tmp/quantum-reviewer-clean.ukIpfS/results/timing-smoke_20261004T115836_633693Z/work/journal_extension/interior_incremental_v1/results/smoke_20261004T115837_458338Z.zip

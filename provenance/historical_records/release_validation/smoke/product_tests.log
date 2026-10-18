@@ -1,0 +1,9 @@
+test_correlated_counterexample (test_product.ProductControlTests) ... ok
+test_exact_two_shot_enumeration (test_product.ProductControlTests) ... ok
+test_lift_shape_and_values (test_product.ProductControlTests) ... ok
+test_scalar_variance_difference (test_product.ProductControlTests) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.006s
+
+OK

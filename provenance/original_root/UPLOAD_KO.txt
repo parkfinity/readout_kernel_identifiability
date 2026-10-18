@@ -1,0 +1,38 @@
+GitHub 업로드 안내
+==================
+1. ZIP을 풀고 readout-kernel-identifiability 폴더의 내용물을 확인합니다.
+   ZIP 파일 자체만 저장소에 올리지 말고 폴더 안의 파일 구조를 올립니다.
+2. GitHub에서 새 Public repository를 만듭니다. 이름 예:
+   readout-kernel-identifiability
+   기존 로컬 파일과 충돌하지 않도록 GitHub의 README/라이선스 자동생성은
+   선택하지 않습니다. LICENSE_STATUS.txt의 상태를 확인하세요.
+3. GitHub Desktop에서 이 폴더를 로컬 저장소로 추가한 다음 Publish repository를
+   사용하면 됩니다. 또는 아래 Git 명령을 사용할 수 있습니다.
+   저장소 주소는 실제 생성한 주소로 바꾸세요.
+
+   git init
+   git add .
+   git commit -m "Add manuscript reproducibility materials"
+   git branch -M main
+   git remote add origin https://github.com/YOUR-OWNER/YOUR-REPOSITORY.git
+   git push -u origin main
+
+   이미 저장소인 폴더에서는 init/remote add를 중복 실행하지 않습니다.
+   패키지는 파일 수가 많으므로 브라우저에서 한 번에 드래그하는 방식보다
+   GitHub Desktop 또는 Git 사용을 권합니다.
+4. 로그아웃/시크릿 창에서 README와 코드 다운로드가 되는지 확인합니다.
+5. 원고 main.tex에서 아래 문자열을 실제 저장소 주소로 한 번 교체합니다.
+   https://github.com/REPLACE-OWNER/REPLACE-REPOSITORY
+   컴파일 후 PDF의 링크가 열리는지 확인합니다.
+6. 제출 시점 코드를 고정하려면 GitHub release/tag를 만듭니다. 원고용 버전을
+   식별할 수 있도록 commit hash 또는 tag를 기록하는 것을 권합니다.
+
+주의
+----
+- 공개 전 공저자/권리자의 공개 승인을 확인합니다. 회사 고용에 관한 원고 문구와
+  코드 공개 권한 확인은 별개입니다.
+- 데이터 원본, API 키, 개인 .env 파일을 추가하지 않습니다.
+- 현재 과거 QPU 원본 job, 산업영상 원본, 대형 timing archive는 포함하지 않습니다.
+- GitHub에 올리기 전까지 원고의 "is available" 문장은 제출용으로 완성된
+  사실 진술이 아닙니다. 주소를 바꾸고 접근을 확인한 뒤 제출하세요.
+- 이 준비 작업은 원격 저장소 생성/업로드/저널 제출을 수행하지 않았습니다.

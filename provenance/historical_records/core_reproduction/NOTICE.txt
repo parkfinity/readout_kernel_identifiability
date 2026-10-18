@@ -1,0 +1,20 @@
+Review distribution and third-party notices
+==========================================
+This package was assembled at the author's request for scientific review.
+No public repository, DOI, or open-source license for the authors' own code is
+asserted or assigned by this packaging step. The authors should choose and
+approve a suitable public license before a public release.
+
+Vendored sQUlearn source is accompanied by its original Apache License 2.0,
+CITATION.cff, source manifest and pinned commit. Those licenses and notices
+continue to apply to upstream files. Python dependencies have their own
+licenses; this package does not redistribute their installed binaries.
+
+Optional timing inputs are the existing frozen, preprocessed research arrays
+for WDBC, Ionosphere and Auto MPG. They carry source-member/hash and split
+metadata. They are not original industrial images or company measurements.
+This package does not relicense third-party datasets. Dataset citation and
+redistribution terms must be retained/confirmed before public distribution.
+
+Private reviewer sharing is the present preparation target. No upload, public
+link, repository publication or journal submission was performed by assembly.

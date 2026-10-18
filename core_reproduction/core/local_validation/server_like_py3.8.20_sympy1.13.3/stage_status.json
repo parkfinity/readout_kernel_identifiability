@@ -1,0 +1,77 @@
+{
+  "stages": [
+    {
+      "name": "fourier_unit_tests",
+      "command": [
+        "/temporary-workspace/scratchpad/repro_v1/venv_py38_server_like/bin/python",
+        "-m",
+        "unittest",
+        "-v",
+        "test_fourier_gram"
+      ],
+      "cwd": "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/fourier_gram_identifiability_v1/experiment",
+      "exit_code": 0,
+      "started_utc": "2026-10-03T21:53:36Z",
+      "finished_utc": "2026-10-03T21:53:37Z",
+      "wall_seconds": 0.995,
+      "peak_rss_mb_largest_process": 82.3
+    },
+    {
+      "name": "kyriienko_unit_tests",
+      "command": [
+        "/temporary-workspace/scratchpad/repro_v1/venv_py38_server_like/bin/python",
+        "/workspace/journal_extension/reproduction_bundle_v1/tools/repro_helper.py",
+        "pyexec",
+        "--",
+        "-m",
+        "unittest",
+        "-v",
+        "test_kyriienko_scaling"
+      ],
+      "cwd": "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1",
+      "exit_code": 0,
+      "started_utc": "2026-10-03T21:53:37Z",
+      "finished_utc": "2026-10-03T21:53:39Z",
+      "wall_seconds": 1.553,
+      "peak_rss_mb_largest_process": 124.1
+    },
+    {
+      "name": "fourier_gram_run",
+      "command": [
+        "/temporary-workspace/scratchpad/repro_v1/venv_py38_server_like/bin/python",
+        "run_experiment.py",
+        "--workers",
+        "8"
+      ],
+      "cwd": "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/fourier_gram_identifiability_v1/experiment",
+      "exit_code": 0,
+      "started_utc": "2026-10-03T21:53:39Z",
+      "finished_utc": "2026-10-03T21:58:06Z",
+      "wall_seconds": 267.383,
+      "peak_rss_mb_largest_process": 1338.9
+    },
+    {
+      "name": "kyriienko_scaling_run",
+      "command": [
+        "/temporary-workspace/scratchpad/repro_v1/venv_py38_server_like/bin/python",
+        "/workspace/journal_extension/reproduction_bundle_v1/tools/repro_helper.py",
+        "pyexec",
+        "--",
+        "kyriienko_scaling.py",
+        "--sizes",
+        "2",
+        "4",
+        "6",
+        "8",
+        "--output",
+        "/temporary-workspace/scratchpad/repro_v1/runs_py38/20261003T215336Z/kyriienko_scaling"
+      ],
+      "cwd": "/workspace/journal_extension/reproduction_bundle_v1/journal_extension/kyriienko_scaling_v1",
+      "exit_code": 0,
+      "started_utc": "2026-10-03T21:58:06Z",
+      "finished_utc": "2026-10-03T21:58:31Z",
+      "wall_seconds": 24.685,
+      "peak_rss_mb_largest_process": 213.4
+    }
+  ]
+}

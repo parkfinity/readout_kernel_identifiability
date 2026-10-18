@@ -1,0 +1,2383 @@
+{
+  "kind": "post_pilot_proposed_scope_not_preregistration",
+  "source_manifest_sha256": "7a1f4babb454c410a4bf5c141a6ee9593c2272e6494ad71a5806e79f5230af79",
+  "nominal_slots": 120,
+  "nonduplicate_slots": 102,
+  "modules": [
+    {
+      "module": "chebyshev_pqc",
+      "class": "ChebyshevPQC",
+      "sha256": "918fa868a768a07d2ba2e2aef98b9869916e4a704e63ee59576d9c24750be9fb",
+      "has_layers": true,
+      "excluded_reason": null
+    },
+    {
+      "module": "chebyshev_rx",
+      "class": "ChebyshevRx",
+      "sha256": "151ec29cd2ce7d18b4ca83237f58b54579f21d2d09083e7aa0c50ab6945f45c3",
+      "has_layers": true,
+      "excluded_reason": null
+    },
+    {
+      "module": "chebyshev_tower",
+      "class": "ChebyshevTower",
+      "sha256": "5a0b60dba764cfa32ce25e612bbaf7a1d3994a1a983b9c7bda5bd93326b69ae4",
+      "has_layers": true,
+      "excluded_reason": "Mandatory num_chebyshev is unspecified by the fixed default-construction protocol."
+    },
+    {
+      "module": "highdim_encoding_circuit",
+      "class": "HighDimEncodingCircuit",
+      "sha256": "fd0d04b6c5235cbf0f59a14c2beaa12fc4c62dbc3d5024d3151b3fe18b2eceae",
+      "has_layers": true,
+      "excluded_reason": null
+    },
+    {
+      "module": "hubregtsen_encoding_circuit",
+      "class": "HubregtsenEncodingCircuit",
+      "sha256": "ce7b90ef623c54773805943af976aa5bec2ab38076314bb3573fe7138d89c4c7",
+      "has_layers": true,
+      "excluded_reason": null
+    },
+    {
+      "module": "kyriienko_nonlinear_encoding_circuit",
+      "class": "KyriienkoEncodingCircuit",
+      "sha256": "7933f1e2ca3f39079c1a496b7c858568b695d3b87c76bd1c56f666239ee3b39c",
+      "has_layers": false,
+      "excluded_reason": null
+    },
+    {
+      "module": "multi_control_encoding_circuit",
+      "class": "MultiControlEncodingCircuit",
+      "sha256": "456066b3f1b5cabbec2c90b286646809667f23dda98b693d1d0bec637f7fbbfe",
+      "has_layers": true,
+      "excluded_reason": null
+    },
+    {
+      "module": "param_z_feature_map",
+      "class": "ParamZFeatureMap",
+      "sha256": "106d95bcceb84763c49bfd3594a035d643bffa070db206692809d437b742c552",
+      "has_layers": true,
+      "excluded_reason": null
+    },
+    {
+      "module": "qcnn_encoding_circuit",
+      "class": "QCNNEncodingCircuit",
+      "sha256": "6515a22ed4c8f43b076869237a1a8d8abb75d63a5cbdb0dca9b880780528f4c4",
+      "has_layers": false,
+      "excluded_reason": "Default constructor is an empty operation builder; no custom/default=True architecture is selected."
+    },
+    {
+      "module": "qiskit_encoding_circuit",
+      "class": "QiskitEncodingCircuit",
+      "sha256": "4afab71c728e854f82cb4d1379b40481c403431557174cb416eaf67970030228",
+      "has_layers": false,
+      "excluded_reason": "Wrapper requires a supplied qiskit_circuit; none is selected by this protocol."
+    },
+    {
+      "module": "random_encoding_circuit",
+      "class": "RandomEncodingCircuit",
+      "sha256": "70a81bde3c99be1213d263c68fd3241efb72ec573bf0f03871efc3bf1729b176",
+      "has_layers": false,
+      "excluded_reason": null
+    },
+    {
+      "module": "random_layered_encoding_circuit",
+      "class": "RandomLayeredEncodingCircuit",
+      "sha256": "cd7409179778b9f9fc32ef04b12a49dcd8692a954016a3fd773cb8edc5a50093",
+      "has_layers": false,
+      "excluded_reason": null
+    },
+    {
+      "module": "yz_cx_encoding_circuit",
+      "class": "YZ_CX_EncodingCircuit",
+      "sha256": "4f2e9c2aee1a7161c070ed53955c8e0183bf921033b0cba910066c750bfd6474",
+      "has_layers": true,
+      "excluded_reason": null
+    }
+  ],
+  "slots": [
+    {
+      "id": "chebyshev_pqc_n2_l1_local_xyz",
+      "module": "chebyshev_pqc",
+      "n": 2,
+      "layers": 1,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "chebyshev_pqc_n2_l1_local_z",
+      "module": "chebyshev_pqc",
+      "n": 2,
+      "layers": 1,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "chebyshev_pqc_n2_l1_pauli_weight_le_2",
+      "module": "chebyshev_pqc",
+      "n": 2,
+      "layers": 1,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "chebyshev_pqc_n2_l2_local_xyz",
+      "module": "chebyshev_pqc",
+      "n": 2,
+      "layers": 2,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "chebyshev_pqc_n2_l2_local_z",
+      "module": "chebyshev_pqc",
+      "n": 2,
+      "layers": 2,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "chebyshev_pqc_n2_l2_pauli_weight_le_2",
+      "module": "chebyshev_pqc",
+      "n": 2,
+      "layers": 2,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "chebyshev_pqc_n4_l1_local_xyz",
+      "module": "chebyshev_pqc",
+      "n": 4,
+      "layers": 1,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "chebyshev_pqc_n4_l1_local_z",
+      "module": "chebyshev_pqc",
+      "n": 4,
+      "layers": 1,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "chebyshev_pqc_n4_l1_pauli_weight_le_2",
+      "module": "chebyshev_pqc",
+      "n": 4,
+      "layers": 1,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "chebyshev_pqc_n4_l2_local_xyz",
+      "module": "chebyshev_pqc",
+      "n": 4,
+      "layers": 2,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "chebyshev_pqc_n4_l2_local_z",
+      "module": "chebyshev_pqc",
+      "n": 4,
+      "layers": 2,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "chebyshev_pqc_n4_l2_pauli_weight_le_2",
+      "module": "chebyshev_pqc",
+      "n": 4,
+      "layers": 2,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "chebyshev_rx_n2_l1_local_xyz",
+      "module": "chebyshev_rx",
+      "n": 2,
+      "layers": 1,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "chebyshev_rx_n2_l1_local_z",
+      "module": "chebyshev_rx",
+      "n": 2,
+      "layers": 1,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "chebyshev_rx_n2_l1_pauli_weight_le_2",
+      "module": "chebyshev_rx",
+      "n": 2,
+      "layers": 1,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "chebyshev_rx_n2_l2_local_xyz",
+      "module": "chebyshev_rx",
+      "n": 2,
+      "layers": 2,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "chebyshev_rx_n2_l2_local_z",
+      "module": "chebyshev_rx",
+      "n": 2,
+      "layers": 2,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "chebyshev_rx_n2_l2_pauli_weight_le_2",
+      "module": "chebyshev_rx",
+      "n": 2,
+      "layers": 2,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "chebyshev_rx_n4_l1_local_xyz",
+      "module": "chebyshev_rx",
+      "n": 4,
+      "layers": 1,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "chebyshev_rx_n4_l1_local_z",
+      "module": "chebyshev_rx",
+      "n": 4,
+      "layers": 1,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "chebyshev_rx_n4_l1_pauli_weight_le_2",
+      "module": "chebyshev_rx",
+      "n": 4,
+      "layers": 1,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "chebyshev_rx_n4_l2_local_xyz",
+      "module": "chebyshev_rx",
+      "n": 4,
+      "layers": 2,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "chebyshev_rx_n4_l2_local_z",
+      "module": "chebyshev_rx",
+      "n": 4,
+      "layers": 2,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "chebyshev_rx_n4_l2_pauli_weight_le_2",
+      "module": "chebyshev_rx",
+      "n": 4,
+      "layers": 2,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "highdim_encoding_circuit_n2_l1_local_xyz",
+      "module": "highdim_encoding_circuit",
+      "n": 2,
+      "layers": 1,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "highdim_encoding_circuit_n2_l1_local_z",
+      "module": "highdim_encoding_circuit",
+      "n": 2,
+      "layers": 1,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "highdim_encoding_circuit_n2_l1_pauli_weight_le_2",
+      "module": "highdim_encoding_circuit",
+      "n": 2,
+      "layers": 1,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "highdim_encoding_circuit_n2_l2_local_xyz",
+      "module": "highdim_encoding_circuit",
+      "n": 2,
+      "layers": 2,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "highdim_encoding_circuit_n2_l2_local_z",
+      "module": "highdim_encoding_circuit",
+      "n": 2,
+      "layers": 2,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "highdim_encoding_circuit_n2_l2_pauli_weight_le_2",
+      "module": "highdim_encoding_circuit",
+      "n": 2,
+      "layers": 2,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "highdim_encoding_circuit_n4_l1_local_xyz",
+      "module": "highdim_encoding_circuit",
+      "n": 4,
+      "layers": 1,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "highdim_encoding_circuit_n4_l1_local_z",
+      "module": "highdim_encoding_circuit",
+      "n": 4,
+      "layers": 1,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "highdim_encoding_circuit_n4_l1_pauli_weight_le_2",
+      "module": "highdim_encoding_circuit",
+      "n": 4,
+      "layers": 1,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "highdim_encoding_circuit_n4_l2_local_xyz",
+      "module": "highdim_encoding_circuit",
+      "n": 4,
+      "layers": 2,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "highdim_encoding_circuit_n4_l2_local_z",
+      "module": "highdim_encoding_circuit",
+      "n": 4,
+      "layers": 2,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "highdim_encoding_circuit_n4_l2_pauli_weight_le_2",
+      "module": "highdim_encoding_circuit",
+      "n": 4,
+      "layers": 2,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n2_l1_local_xyz",
+      "module": "hubregtsen_encoding_circuit",
+      "n": 2,
+      "layers": 1,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n2_l1_local_z",
+      "module": "hubregtsen_encoding_circuit",
+      "n": 2,
+      "layers": 1,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n2_l1_pauli_weight_le_2",
+      "module": "hubregtsen_encoding_circuit",
+      "n": 2,
+      "layers": 1,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n2_l2_local_xyz",
+      "module": "hubregtsen_encoding_circuit",
+      "n": 2,
+      "layers": 2,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n2_l2_local_z",
+      "module": "hubregtsen_encoding_circuit",
+      "n": 2,
+      "layers": 2,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n2_l2_pauli_weight_le_2",
+      "module": "hubregtsen_encoding_circuit",
+      "n": 2,
+      "layers": 2,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n4_l1_local_xyz",
+      "module": "hubregtsen_encoding_circuit",
+      "n": 4,
+      "layers": 1,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n4_l1_local_z",
+      "module": "hubregtsen_encoding_circuit",
+      "n": 4,
+      "layers": 1,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n4_l1_pauli_weight_le_2",
+      "module": "hubregtsen_encoding_circuit",
+      "n": 4,
+      "layers": 1,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n4_l2_local_xyz",
+      "module": "hubregtsen_encoding_circuit",
+      "n": 4,
+      "layers": 2,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n4_l2_local_z",
+      "module": "hubregtsen_encoding_circuit",
+      "n": 4,
+      "layers": 2,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "hubregtsen_encoding_circuit_n4_l2_pauli_weight_le_2",
+      "module": "hubregtsen_encoding_circuit",
+      "n": 4,
+      "layers": 2,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n2_l1_local_xyz",
+      "module": "kyriienko_nonlinear_encoding_circuit",
+      "n": 2,
+      "layers": 1,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n2_l1_local_z",
+      "module": "kyriienko_nonlinear_encoding_circuit",
+      "n": 2,
+      "layers": 1,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n2_l1_pauli_weight_le_2",
+      "module": "kyriienko_nonlinear_encoding_circuit",
+      "n": 2,
+      "layers": 1,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n2_l2_local_xyz",
+      "module": "kyriienko_nonlinear_encoding_circuit",
+      "n": 2,
+      "layers": 2,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": "kyriienko_nonlinear_encoding_circuit_n2_l1_local_xyz",
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n2_l2_local_z",
+      "module": "kyriienko_nonlinear_encoding_circuit",
+      "n": 2,
+      "layers": 2,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": "kyriienko_nonlinear_encoding_circuit_n2_l1_local_z",
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n2_l2_pauli_weight_le_2",
+      "module": "kyriienko_nonlinear_encoding_circuit",
+      "n": 2,
+      "layers": 2,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": "kyriienko_nonlinear_encoding_circuit_n2_l1_pauli_weight_le_2",
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n4_l1_local_xyz",
+      "module": "kyriienko_nonlinear_encoding_circuit",
+      "n": 4,
+      "layers": 1,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n4_l1_local_z",
+      "module": "kyriienko_nonlinear_encoding_circuit",
+      "n": 4,
+      "layers": 1,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n4_l1_pauli_weight_le_2",
+      "module": "kyriienko_nonlinear_encoding_circuit",
+      "n": 4,
+      "layers": 1,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n4_l2_local_xyz",
+      "module": "kyriienko_nonlinear_encoding_circuit",
+      "n": 4,
+      "layers": 2,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": "kyriienko_nonlinear_encoding_circuit_n4_l1_local_xyz",
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n4_l2_local_z",
+      "module": "kyriienko_nonlinear_encoding_circuit",
+      "n": 4,
+      "layers": 2,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": "kyriienko_nonlinear_encoding_circuit_n4_l1_local_z",
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "kyriienko_nonlinear_encoding_circuit_n4_l2_pauli_weight_le_2",
+      "module": "kyriienko_nonlinear_encoding_circuit",
+      "n": 4,
+      "layers": 2,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": "kyriienko_nonlinear_encoding_circuit_n4_l1_pauli_weight_le_2",
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "multi_control_encoding_circuit_n2_l1_local_xyz",
+      "module": "multi_control_encoding_circuit",
+      "n": 2,
+      "layers": 1,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "multi_control_encoding_circuit_n2_l1_local_z",
+      "module": "multi_control_encoding_circuit",
+      "n": 2,
+      "layers": 1,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "multi_control_encoding_circuit_n2_l1_pauli_weight_le_2",
+      "module": "multi_control_encoding_circuit",
+      "n": 2,
+      "layers": 1,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "multi_control_encoding_circuit_n2_l2_local_xyz",
+      "module": "multi_control_encoding_circuit",
+      "n": 2,
+      "layers": 2,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "multi_control_encoding_circuit_n2_l2_local_z",
+      "module": "multi_control_encoding_circuit",
+      "n": 2,
+      "layers": 2,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "multi_control_encoding_circuit_n2_l2_pauli_weight_le_2",
+      "module": "multi_control_encoding_circuit",
+      "n": 2,
+      "layers": 2,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "multi_control_encoding_circuit_n4_l1_local_xyz",
+      "module": "multi_control_encoding_circuit",
+      "n": 4,
+      "layers": 1,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "multi_control_encoding_circuit_n4_l1_local_z",
+      "module": "multi_control_encoding_circuit",
+      "n": 4,
+      "layers": 1,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "multi_control_encoding_circuit_n4_l1_pauli_weight_le_2",
+      "module": "multi_control_encoding_circuit",
+      "n": 4,
+      "layers": 1,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "multi_control_encoding_circuit_n4_l2_local_xyz",
+      "module": "multi_control_encoding_circuit",
+      "n": 4,
+      "layers": 2,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "multi_control_encoding_circuit_n4_l2_local_z",
+      "module": "multi_control_encoding_circuit",
+      "n": 4,
+      "layers": 2,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "multi_control_encoding_circuit_n4_l2_pauli_weight_le_2",
+      "module": "multi_control_encoding_circuit",
+      "n": 4,
+      "layers": 2,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "param_z_feature_map_n2_l1_local_xyz",
+      "module": "param_z_feature_map",
+      "n": 2,
+      "layers": 1,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "param_z_feature_map_n2_l1_local_z",
+      "module": "param_z_feature_map",
+      "n": 2,
+      "layers": 1,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "param_z_feature_map_n2_l1_pauli_weight_le_2",
+      "module": "param_z_feature_map",
+      "n": 2,
+      "layers": 1,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "param_z_feature_map_n2_l2_local_xyz",
+      "module": "param_z_feature_map",
+      "n": 2,
+      "layers": 2,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "param_z_feature_map_n2_l2_local_z",
+      "module": "param_z_feature_map",
+      "n": 2,
+      "layers": 2,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "param_z_feature_map_n2_l2_pauli_weight_le_2",
+      "module": "param_z_feature_map",
+      "n": 2,
+      "layers": 2,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "param_z_feature_map_n4_l1_local_xyz",
+      "module": "param_z_feature_map",
+      "n": 4,
+      "layers": 1,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "param_z_feature_map_n4_l1_local_z",
+      "module": "param_z_feature_map",
+      "n": 4,
+      "layers": 1,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "param_z_feature_map_n4_l1_pauli_weight_le_2",
+      "module": "param_z_feature_map",
+      "n": 4,
+      "layers": 1,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "param_z_feature_map_n4_l2_local_xyz",
+      "module": "param_z_feature_map",
+      "n": 4,
+      "layers": 2,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "param_z_feature_map_n4_l2_local_z",
+      "module": "param_z_feature_map",
+      "n": 4,
+      "layers": 2,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "param_z_feature_map_n4_l2_pauli_weight_le_2",
+      "module": "param_z_feature_map",
+      "n": 4,
+      "layers": 2,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "random_encoding_circuit_n2_l1_local_xyz",
+      "module": "random_encoding_circuit",
+      "n": 2,
+      "layers": 1,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "random_encoding_circuit_n2_l1_local_z",
+      "module": "random_encoding_circuit",
+      "n": 2,
+      "layers": 1,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "random_encoding_circuit_n2_l1_pauli_weight_le_2",
+      "module": "random_encoding_circuit",
+      "n": 2,
+      "layers": 1,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "random_encoding_circuit_n2_l2_local_xyz",
+      "module": "random_encoding_circuit",
+      "n": 2,
+      "layers": 2,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": "random_encoding_circuit_n2_l1_local_xyz",
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "random_encoding_circuit_n2_l2_local_z",
+      "module": "random_encoding_circuit",
+      "n": 2,
+      "layers": 2,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": "random_encoding_circuit_n2_l1_local_z",
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "random_encoding_circuit_n2_l2_pauli_weight_le_2",
+      "module": "random_encoding_circuit",
+      "n": 2,
+      "layers": 2,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": "random_encoding_circuit_n2_l1_pauli_weight_le_2",
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "random_encoding_circuit_n4_l1_local_xyz",
+      "module": "random_encoding_circuit",
+      "n": 4,
+      "layers": 1,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "random_encoding_circuit_n4_l1_local_z",
+      "module": "random_encoding_circuit",
+      "n": 4,
+      "layers": 1,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "random_encoding_circuit_n4_l1_pauli_weight_le_2",
+      "module": "random_encoding_circuit",
+      "n": 4,
+      "layers": 1,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "random_encoding_circuit_n4_l2_local_xyz",
+      "module": "random_encoding_circuit",
+      "n": 4,
+      "layers": 2,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": "random_encoding_circuit_n4_l1_local_xyz",
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "random_encoding_circuit_n4_l2_local_z",
+      "module": "random_encoding_circuit",
+      "n": 4,
+      "layers": 2,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": "random_encoding_circuit_n4_l1_local_z",
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "random_encoding_circuit_n4_l2_pauli_weight_le_2",
+      "module": "random_encoding_circuit",
+      "n": 4,
+      "layers": 2,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": "random_encoding_circuit_n4_l1_pauli_weight_le_2",
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "random_layered_encoding_circuit_n2_l1_local_xyz",
+      "module": "random_layered_encoding_circuit",
+      "n": 2,
+      "layers": 1,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "random_layered_encoding_circuit_n2_l1_local_z",
+      "module": "random_layered_encoding_circuit",
+      "n": 2,
+      "layers": 1,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "random_layered_encoding_circuit_n2_l1_pauli_weight_le_2",
+      "module": "random_layered_encoding_circuit",
+      "n": 2,
+      "layers": 1,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "random_layered_encoding_circuit_n2_l2_local_xyz",
+      "module": "random_layered_encoding_circuit",
+      "n": 2,
+      "layers": 2,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": "random_layered_encoding_circuit_n2_l1_local_xyz",
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "random_layered_encoding_circuit_n2_l2_local_z",
+      "module": "random_layered_encoding_circuit",
+      "n": 2,
+      "layers": 2,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": "random_layered_encoding_circuit_n2_l1_local_z",
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "random_layered_encoding_circuit_n2_l2_pauli_weight_le_2",
+      "module": "random_layered_encoding_circuit",
+      "n": 2,
+      "layers": 2,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": "random_layered_encoding_circuit_n2_l1_pauli_weight_le_2",
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "random_layered_encoding_circuit_n4_l1_local_xyz",
+      "module": "random_layered_encoding_circuit",
+      "n": 4,
+      "layers": 1,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "random_layered_encoding_circuit_n4_l1_local_z",
+      "module": "random_layered_encoding_circuit",
+      "n": 4,
+      "layers": 1,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "random_layered_encoding_circuit_n4_l1_pauli_weight_le_2",
+      "module": "random_layered_encoding_circuit",
+      "n": 4,
+      "layers": 1,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "random_layered_encoding_circuit_n4_l2_local_xyz",
+      "module": "random_layered_encoding_circuit",
+      "n": 4,
+      "layers": 2,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": "random_layered_encoding_circuit_n4_l1_local_xyz",
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "random_layered_encoding_circuit_n4_l2_local_z",
+      "module": "random_layered_encoding_circuit",
+      "n": 4,
+      "layers": 2,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": "random_layered_encoding_circuit_n4_l1_local_z",
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "random_layered_encoding_circuit_n4_l2_pauli_weight_le_2",
+      "module": "random_layered_encoding_circuit",
+      "n": 4,
+      "layers": 2,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": "random_layered_encoding_circuit_n4_l1_pauli_weight_le_2",
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n2_l1_local_xyz",
+      "module": "yz_cx_encoding_circuit",
+      "n": 2,
+      "layers": 1,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n2_l1_local_z",
+      "module": "yz_cx_encoding_circuit",
+      "n": 2,
+      "layers": 1,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n2_l1_pauli_weight_le_2",
+      "module": "yz_cx_encoding_circuit",
+      "n": 2,
+      "layers": 1,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n2_l2_local_xyz",
+      "module": "yz_cx_encoding_circuit",
+      "n": 2,
+      "layers": 2,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n2_l2_local_z",
+      "module": "yz_cx_encoding_circuit",
+      "n": 2,
+      "layers": 2,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n2_l2_pauli_weight_le_2",
+      "module": "yz_cx_encoding_circuit",
+      "n": 2,
+      "layers": 2,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n4_l1_local_xyz",
+      "module": "yz_cx_encoding_circuit",
+      "n": 4,
+      "layers": 1,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n4_l1_local_z",
+      "module": "yz_cx_encoding_circuit",
+      "n": 4,
+      "layers": 1,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n4_l1_pauli_weight_le_2",
+      "module": "yz_cx_encoding_circuit",
+      "n": 4,
+      "layers": 1,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n4_l2_local_xyz",
+      "module": "yz_cx_encoding_circuit",
+      "n": 4,
+      "layers": 2,
+      "readout": "local_xyz",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n4_l2_local_z",
+      "module": "yz_cx_encoding_circuit",
+      "n": 4,
+      "layers": 2,
+      "readout": "local_z",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    },
+    {
+      "id": "yz_cx_encoding_circuit_n4_l2_pauli_weight_le_2",
+      "module": "yz_cx_encoding_circuit",
+      "n": 4,
+      "layers": 2,
+      "readout": "pauli_weight_le_2",
+      "status": "PLANNED_NOT_RUN",
+      "duplicate_of": null,
+      "family_group": "UNADJUDICATED_DO_NOT_COUNT_MODULES_AS_INDEPENDENT_FAMILIES",
+      "metrics": {
+        "inactive_symbols": null,
+        "fused_gates": null,
+        "trainable_angle_tasks": null,
+        "circuit_settings": null,
+        "fixed_shots": null,
+        "fixed_accuracy_shots": null,
+        "total_time": null
+      }
+    }
+  ],
+  "results_available": false,
+  "rule": "Freeze source, constructors, readout-specific baseline and measurement schedule before evaluation; retain failures and zero effects."
+}

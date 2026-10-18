@@ -1,0 +1,77 @@
+\section{Extension protocol and nonlinear certificate}
+\label{app:extension}
+The 30-setting extension uses exact integer or half-integer IR
+coefficients and the frozen source data expressions. Its Fourier
+calculation is limited to 20 seconds per setting, two million
+pre-convolution term pairs per observable, and 50,000 accumulated
+distance terms. Limits on time are machine-dependent; saved evidence
+replay is not the same test as repeating a budget-limited discovery run.
+The first execution saved 21 settings before a timer/exception-handling
+race stopped it. Disarming the timer before handling the budget
+exception allowed resumption without changing those 21 records, the
+scope, or witness points. Both code snapshots and retained-file hashes
+are archived.
+
+Using seed 20261003, source parameters are integers from 2 through 24
+divided by 17; input coordinates are integers from $-15$ through 15
+divided by 19. Each setting evaluates at most 24 input pairs at one
+shared parameter point with 50-digit interval arithmetic. Evaluation
+can stop after at least two pairs once the original upper/lower bounds
+match and all coordinates have a verdict. Structural closure is a
+separate post-run analysis, not a replacement of timed-out Fourier
+records. The inherited experimental-arithmetic qualifications of
+Appendix~\ref{app:dimension} apply unchanged.
+
+All 195 activity witnesses and 27 nonzero minors replay at 65-digit
+precision; the three zero-rank cases use exact structural identities.
+Numerical source/IR checks cover 60 input pairs and 504 finite-difference
+coordinates. Across 600 random resource-arm probes, maximum kernel
+and squared-distance-gradient discrepancies are respectively
+$1.23\times10^{-15}$ and $1.29\times10^{-14}$. The source finite-
+difference check differs from the interval derivative midpoints by
+at most $5.32\times10^{-9}$. These checks do not constitute a formal
+proof of the entire source compiler or a physical-device experiment.
+
+For the nonlinear Hubregtsen example, exact Fourier coefficients for
+each of the four compiled features match Eq.~\eqref{eq:hubfeatures}.
+The controlled rotations commute with all measured Z operators, so
+the proof is independent of their four shared circuit assignments.
+The factorization follows by grouping the repeated input coordinate
+in the squared distance, not by promoting a numerical rank estimate
+to an identity. In 1,000 separately sampled original-source input
+pairs, the largest kernel discrepancy against the closed form is
+$6.67\times10^{-16}$; at 100 parameter points the largest derivative
+discrepancy is $7.50\times10^{-16}$. These tests check implementation
+consistency, whereas Eqs.~\eqref{eq:hubfeatures}--\eqref{eq:hubminor}
+supply the mathematical upper and lower bounds.
+
+\subsection{Returned server audit}
+The separately returned server archive contains five audit outputs:
+evidence replay, original-source comparison, structural closure,
+the nonlinear certificate, and its source-level numerical check.
+All report success. Parsed replay, closure and exact-certificate
+records agree identically with the local outputs; only numerical
+error diagnostics differ in the two source checks. The run-manifest
+hash matches all 74 retained files, the four reported script hashes
+match the distributed scripts, and the nonlinear source check links
+to the exact returned proof file by hash.
+
+The server replay validates 195 activity witnesses and 27 nonzero
+minors across 30 settings at 65-digit precision. Source comparisons
+again cover 504 finite-difference coordinates and 600 resource-arm
+probes. Maximum kernel and distance-gradient discrepancies are
+$1.34\times10^{-15}$ and $1.26\times10^{-14}$; the finite-difference
+comparison is below $4.13\times10^{-9}$. In the nonlinear check,
+1,000 input pairs and 100 gradient points give maximum kernel and
+gradient discrepancies below $5.56\times10^{-16}$ and
+$7.50\times10^{-16}$. All satisfy the unchanged validation thresholds.
+
+These are re-executions of saved-evidence checks, not independent
+new datasets, a second timed discovery run, or new quantum-device
+measurements. The archive does not record the server's package and
+operating-system versions, so full environment provenance remains
+incomplete. Structural closure still gives 195 active and 57 inactive
+coordinates; adding the nonlinear result closes 27 of 30 rank
+intervals, leaving the same three Kyriienko cases unresolved.
+No incremental angle-task or gate-task saving is introduced by this
+reproduction.

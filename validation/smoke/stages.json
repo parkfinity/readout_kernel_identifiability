@@ -1,0 +1,32 @@
+[
+  {
+    "stage": "core_smoke",
+    "exit_code": 0,
+    "seconds": 8.030729000000001,
+    "log": "core_smoke.log"
+  },
+  {
+    "stage": "recovery_tests",
+    "exit_code": 0,
+    "seconds": 0.2969247079999988,
+    "log": "recovery_tests.log"
+  },
+  {
+    "stage": "shots_tests",
+    "exit_code": 0,
+    "seconds": 0.34413595800000074,
+    "log": "shots_tests.log"
+  },
+  {
+    "stage": "product_tests",
+    "exit_code": 0,
+    "seconds": 0.29270216599999976,
+    "log": "product_tests.log"
+  },
+  {
+    "stage": "frozen_plan",
+    "exit_code": 0,
+    "seconds": 0.28704787500000073,
+    "log": "frozen_plan.log"
+  }
+]

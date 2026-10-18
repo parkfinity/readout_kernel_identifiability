@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "settings": 54,
+  "manuscript_sha256": {
+    "dimension_results.tex": "5a1b296fe31443e17fb1e72481128812bb30498aacefa23c52339862b4327565",
+    "extension_results.tex": "2c5b71d1aae842c58bda9c83393962b2653ee6bf51be6197f57b33a6ffd95548"
+  },
+  "census_sha256": "3a66f88f9b0ae980ac48abd6c4854ca923bfedcfed03f460ffcdf7c9b0249502",
+  "scope": "Table consistency only; certificate calculations are separate."
+}

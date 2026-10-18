@@ -1,0 +1,1086 @@
+{
+ "settings": 30,
+ "errors": [],
+ "fixed_frequency": [
+  "yz_cx_encoding_circuit_n2_l1_local_xyz",
+  "yz_cx_encoding_circuit_n2_l1_local_z",
+  "yz_cx_encoding_circuit_n2_l1_pauli_weight_le_2",
+  "yz_cx_encoding_circuit_n2_l2_local_xyz",
+  "yz_cx_encoding_circuit_n2_l2_local_z",
+  "yz_cx_encoding_circuit_n2_l2_pauli_weight_le_2",
+  "yz_cx_encoding_circuit_n4_l1_local_xyz",
+  "yz_cx_encoding_circuit_n4_l1_local_z",
+  "yz_cx_encoding_circuit_n4_l1_pauli_weight_le_2",
+  "yz_cx_encoding_circuit_n4_l2_local_xyz",
+  "yz_cx_encoding_circuit_n4_l2_local_z",
+  "yz_cx_encoding_circuit_n4_l2_pauli_weight_le_2",
+  "hubregtsen_encoding_circuit_n2_l1_local_xyz",
+  "hubregtsen_encoding_circuit_n2_l1_local_z",
+  "hubregtsen_encoding_circuit_n2_l1_pauli_weight_le_2",
+  "hubregtsen_encoding_circuit_n2_l2_local_xyz",
+  "hubregtsen_encoding_circuit_n2_l2_local_z",
+  "hubregtsen_encoding_circuit_n2_l2_pauli_weight_le_2",
+  "hubregtsen_encoding_circuit_n4_l1_local_xyz",
+  "hubregtsen_encoding_circuit_n4_l1_local_z",
+  "hubregtsen_encoding_circuit_n4_l1_pauli_weight_le_2",
+  "hubregtsen_encoding_circuit_n4_l2_local_xyz",
+  "hubregtsen_encoding_circuit_n4_l2_local_z",
+  "hubregtsen_encoding_circuit_n4_l2_pauli_weight_le_2",
+  "kyriienko_nonlinear_encoding_circuit_n2_l1_local_xyz",
+  "kyriienko_nonlinear_encoding_circuit_n2_l1_local_z",
+  "kyriienko_nonlinear_encoding_circuit_n2_l1_pauli_weight_le_2",
+  "kyriienko_nonlinear_encoding_circuit_n4_l1_local_xyz",
+  "kyriienko_nonlinear_encoding_circuit_n4_l1_local_z",
+  "kyriienko_nonlinear_encoding_circuit_n4_l1_pauli_weight_le_2"
+ ],
+ "not_fixed_frequency": [],
+ "closed": [
+  "yz_cx_encoding_circuit_n2_l1_local_xyz",
+  "yz_cx_encoding_circuit_n2_l1_local_z",
+  "yz_cx_encoding_circuit_n2_l1_pauli_weight_le_2",
+  "yz_cx_encoding_circuit_n2_l2_local_xyz",
+  "yz_cx_encoding_circuit_n2_l2_local_z",
+  "yz_cx_encoding_circuit_n2_l2_pauli_weight_le_2",
+  "yz_cx_encoding_circuit_n4_l1_local_xyz",
+  "yz_cx_encoding_circuit_n4_l1_local_z",
+  "yz_cx_encoding_circuit_n4_l1_pauli_weight_le_2",
+  "yz_cx_encoding_circuit_n4_l2_local_xyz",
+  "yz_cx_encoding_circuit_n4_l2_local_z",
+  "yz_cx_encoding_circuit_n4_l2_pauli_weight_le_2",
+  "hubregtsen_encoding_circuit_n2_l1_local_xyz",
+  "hubregtsen_encoding_circuit_n2_l1_local_z",
+  "hubregtsen_encoding_circuit_n2_l1_pauli_weight_le_2",
+  "hubregtsen_encoding_circuit_n2_l2_local_xyz",
+  "hubregtsen_encoding_circuit_n2_l2_local_z",
+  "hubregtsen_encoding_circuit_n2_l2_pauli_weight_le_2",
+  "hubregtsen_encoding_circuit_n4_l1_local_xyz",
+  "hubregtsen_encoding_circuit_n4_l1_local_z",
+  "hubregtsen_encoding_circuit_n4_l1_pauli_weight_le_2",
+  "hubregtsen_encoding_circuit_n4_l2_local_xyz",
+  "hubregtsen_encoding_circuit_n4_l2_local_z",
+  "hubregtsen_encoding_circuit_n4_l2_pauli_weight_le_2",
+  "kyriienko_nonlinear_encoding_circuit_n2_l1_local_xyz",
+  "kyriienko_nonlinear_encoding_circuit_n2_l1_local_z",
+  "kyriienko_nonlinear_encoding_circuit_n2_l1_pauli_weight_le_2",
+  "kyriienko_nonlinear_encoding_circuit_n4_l1_local_xyz",
+  "kyriienko_nonlinear_encoding_circuit_n4_l1_local_z",
+  "kyriienko_nonlinear_encoding_circuit_n4_l1_pauli_weight_le_2"
+ ],
+ "open": [],
+ "open_brackets_from_manuscript": {
+  "kyriienko_nonlinear_encoding_circuit_n2_l1_local_xyz": {
+   "manuscript": [
+    4,
+    5
+   ],
+   "gram": [
+    4,
+    4
+   ],
+   "upper_attained_by": [
+    "U1 two-copy invariance fields"
+   ],
+   "exact_minor": {
+    "rank": 4,
+    "minor_rows_G_entries": [
+     [
+      "cos((6, -6))",
+      "cos((6, -6))"
+     ],
+     [
+      "cos((6, -6))",
+      "sin((6, -6))"
+     ],
+     [
+      "cos((0, 6))",
+      "sin((0, 6))"
+     ],
+     [
+      "cos((0, 6))",
+      "cos((0, 6))"
+     ]
+    ],
+    "minor_columns": [
+     0,
+     1,
+     3,
+     4
+    ],
+    "minor_determinant": "-106699853043078156361488266628529992751479508023275673642502013084780397313321109153767505416513390173537435648/1489088541695857403088472040239314049795734487653851401064840371396182765967788515837355589610524475574493408203125",
+    "minor_determinant_float": -7.165447188356066e-05,
+    "exact_vs_modular_coefficient_mismatches": 0,
+    "exact_vs_numeric_max_abs_error": 2.220446049250313e-16,
+    "seconds": 0.006412624999995842
+   }
+  },
+  "kyriienko_nonlinear_encoding_circuit_n4_l1_local_xyz": {
+   "manuscript": [
+    10,
+    11
+   ],
+   "gram": [
+    10,
+    10
+   ],
+   "upper_attained_by": [
+    "U1 two-copy invariance fields"
+   ],
+   "exact_minor": {
+    "rank": 10,
+    "minor_rows_G_entries": [
+     [
+      "cos((4, -20))",
+      "cos((4, -20))"
+     ],
+     [
+      "cos((4, -20))",
+      "sin((4, -20))"
+     ],
+     [
+      "cos((4, -20))",
+      "cos((4, -4))"
+     ],
+     [
+      "cos((4, -20))",
+      "sin((4, -4))"
+     ],
+     [
+      "cos((4, -20))",
+      "cos((20, -20))"
+     ],
+     [
+      "sin((4, -20))",
+      "sin((4, -20))"
+     ],
+     [
+      "sin((4, -20))",
+      "cos((4, -4))"
+     ],
+     [
+      "cos((4, -8))",
+      "cos((4, -8))"
+     ],
+     [
+      "cos((0, 12))",
+      "sin((0, 12))"
+     ],
+     [
+      "cos((0, 12))",
+      "cos((0, 12))"
+     ]
+    ],
+    "minor_columns": [
+     0,
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "minor_determinant": "-21976179711354240715067468771789101816940276178779501280193279083992941881768101056202326691563590262493381066055428755054791276152930507976276923439958379702972436436014169379950044876597589400017284895710595894999306633591027876889217380036967031826109013410219731395914092042566185077064082846161544799355191330639387029927925486930110371792582317431374891752068844652726982406787324246085224011024867269357813424130262831511567360640456526476841571767039791676767107487260260501097975636864378059061597660415026988840910848/18515693468827979908934324667924717191329798681006343919642235244680417039778266752695333125881291631603054577726897647786905613765084851615493889648874474989031548017281461939823631913147172796018189333721741665017339558007675702681574837448966339966550872782004640361040361976241351947778801868134280687625189253490823395467480599444809484581939759845866818703823764284287074779529955580301196591670280851530199129477025597475044797076102773728263431608645581829112399591508679474530836373317314985504942006534767617864645217196084558963775634765625",
+    "minor_determinant_float": -1.1868947683948294e-24,
+    "exact_vs_modular_coefficient_mismatches": 0,
+    "exact_vs_numeric_max_abs_error": 7.771561172376096e-16,
+    "seconds": 0.5680031250000042
+   }
+  },
+  "kyriienko_nonlinear_encoding_circuit_n4_l1_pauli_weight_le_2": {
+   "manuscript": [
+    10,
+    11
+   ],
+   "gram": [
+    10,
+    10
+   ],
+   "upper_attained_by": [
+    "U1 two-copy invariance fields"
+   ],
+   "exact_minor": {
+    "rank": 10,
+    "minor_rows_G_entries": [
+     [
+      "cos((4, -20))",
+      "cos((4, -20))"
+     ],
+     [
+      "cos((4, -20))",
+      "sin((4, -20))"
+     ],
+     [
+      "cos((0, 8))",
+      "sin((0, 8))"
+     ],
+     [
+      "cos((0, 8))",
+      "cos((0, 8))"
+     ],
+     [
+      "cos((4, -20))",
+      "cos((4, -4))"
+     ],
+     [
+      "cos((4, -20))",
+      "sin((4, -4))"
+     ],
+     [
+      "cos((4, -20))",
+      "cos((4, 4))"
+     ],
+     [
+      "cos((4, -20))",
+      "cos((20, -20))"
+     ],
+     [
+      "cos((0, 12))",
+      "sin((0, 12))"
+     ],
+     [
+      "cos((0, 12))",
+      "cos((0, 12))"
+     ]
+    ],
+    "minor_columns": [
+     0,
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "minor_determinant": "10919850713719978006218564445770016944259189497688643921745477699525292814168839419912949882266706496163249550081921168594727187726845755580041199908921275088369832632474358977893756337774011881052576367841838021702585830124033844448792073824352839756251680439175729667456903403716274714197669075509991256019978506247845526517443164967098539388469811219334637179659062731759686482269686060239922094108365131504326102493116619685701152439672400862579577401885990215289067529122477152096404436661388153497183257986393440256/1703116389861038037512594376027661113274638417836436402722402729122512524344896273198046469601064380251681944847941038133433262208736438804796116347154524443056648573389981342248488422802820072310431262849675226557345157465937797029371859766244851620772532269770381196710808242167940016931278439536071373437462701982491385548932633532917409066082410066018668306183309319417045271345449927646594850735209785422633809584480091659002627540119353338849189743617807953690082823359124200557871995766559027052355901332703069783747196197509765625",
+    "minor_determinant_float": 6.411687879188902e-18,
+    "exact_vs_modular_coefficient_mismatches": 0,
+    "exact_vs_numeric_max_abs_error": 6.938893903907228e-16,
+    "seconds": 2.263300000000001
+   }
+  }
+ },
+ "consistency": {
+  "yz_cx_encoding_circuit_n2_l1_local_xyz": {
+   "gram": [
+    3,
+    3
+   ],
+   "manuscript": {
+    "K": 4,
+    "kind": "value",
+    "value": 3,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "yz_cx_encoding_circuit_n2_l1_local_z": {
+   "gram": [
+    2,
+    2
+   ],
+   "manuscript": {
+    "K": 4,
+    "kind": "value",
+    "value": 2,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "yz_cx_encoding_circuit_n2_l1_pauli_weight_le_2": {
+   "gram": [
+    2,
+    2
+   ],
+   "manuscript": {
+    "K": 4,
+    "kind": "value",
+    "value": 2,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "yz_cx_encoding_circuit_n2_l2_local_xyz": {
+   "gram": [
+    7,
+    7
+   ],
+   "manuscript": {
+    "K": 8,
+    "kind": "value",
+    "value": 7,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "yz_cx_encoding_circuit_n2_l2_local_z": {
+   "gram": [
+    6,
+    6
+   ],
+   "manuscript": {
+    "K": 8,
+    "kind": "value",
+    "value": 6,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "yz_cx_encoding_circuit_n2_l2_pauli_weight_le_2": {
+   "gram": [
+    6,
+    6
+   ],
+   "manuscript": {
+    "K": 8,
+    "kind": "value",
+    "value": 6,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "yz_cx_encoding_circuit_n4_l1_local_xyz": {
+   "gram": [
+    6,
+    6
+   ],
+   "manuscript": {
+    "K": 8,
+    "kind": "value",
+    "value": 6,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "yz_cx_encoding_circuit_n4_l1_local_z": {
+   "gram": [
+    4,
+    4
+   ],
+   "manuscript": {
+    "K": 8,
+    "kind": "value",
+    "value": 4,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "yz_cx_encoding_circuit_n4_l1_pauli_weight_le_2": {
+   "gram": [
+    6,
+    6
+   ],
+   "manuscript": {
+    "K": 8,
+    "kind": "value",
+    "value": 6,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "yz_cx_encoding_circuit_n4_l2_local_xyz": {
+   "gram": [
+    14,
+    14
+   ],
+   "manuscript": {
+    "K": 16,
+    "kind": "value",
+    "value": 14,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "yz_cx_encoding_circuit_n4_l2_local_z": {
+   "gram": [
+    12,
+    12
+   ],
+   "manuscript": {
+    "K": 16,
+    "kind": "value",
+    "value": 12,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "yz_cx_encoding_circuit_n4_l2_pauli_weight_le_2": {
+   "gram": [
+    14,
+    14
+   ],
+   "manuscript": {
+    "K": 16,
+    "kind": "value",
+    "value": 14,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "hubregtsen_encoding_circuit_n2_l1_local_xyz": {
+   "gram": [
+    0,
+    0
+   ],
+   "manuscript": {
+    "K": 2,
+    "kind": "value",
+    "value": 0,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "hubregtsen_encoding_circuit_n2_l1_local_z": {
+   "gram": [
+    2,
+    2
+   ],
+   "manuscript": {
+    "K": 2,
+    "kind": "value",
+    "value": 2,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "hubregtsen_encoding_circuit_n2_l1_pauli_weight_le_2": {
+   "gram": [
+    0,
+    0
+   ],
+   "manuscript": {
+    "K": 2,
+    "kind": "value",
+    "value": 0,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "hubregtsen_encoding_circuit_n2_l2_local_xyz": {
+   "gram": [
+    2,
+    2
+   ],
+   "manuscript": {
+    "K": 4,
+    "kind": "value",
+    "value": 2,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "hubregtsen_encoding_circuit_n2_l2_local_z": {
+   "gram": [
+    4,
+    4
+   ],
+   "manuscript": {
+    "K": 4,
+    "kind": "value",
+    "value": 4,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "hubregtsen_encoding_circuit_n2_l2_pauli_weight_le_2": {
+   "gram": [
+    2,
+    2
+   ],
+   "manuscript": {
+    "K": 4,
+    "kind": "value",
+    "value": 2,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "hubregtsen_encoding_circuit_n4_l1_local_xyz": {
+   "gram": [
+    8,
+    8
+   ],
+   "manuscript": {
+    "K": 8,
+    "kind": "value",
+    "value": 8,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "hubregtsen_encoding_circuit_n4_l1_local_z": {
+   "gram": [
+    2,
+    2
+   ],
+   "manuscript": {
+    "K": 8,
+    "kind": "value",
+    "value": 2,
+    "dagger": true
+   },
+   "verdict": "AGREES"
+  },
+  "hubregtsen_encoding_circuit_n4_l1_pauli_weight_le_2": {
+   "gram": [
+    8,
+    8
+   ],
+   "manuscript": {
+    "K": 8,
+    "kind": "value",
+    "value": 8,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "hubregtsen_encoding_circuit_n4_l2_local_xyz": {
+   "gram": [
+    16,
+    16
+   ],
+   "manuscript": {
+    "K": 16,
+    "kind": "value",
+    "value": 16,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "hubregtsen_encoding_circuit_n4_l2_local_z": {
+   "gram": [
+    12,
+    12
+   ],
+   "manuscript": {
+    "K": 16,
+    "kind": "value",
+    "value": 12,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "hubregtsen_encoding_circuit_n4_l2_pauli_weight_le_2": {
+   "gram": [
+    16,
+    16
+   ],
+   "manuscript": {
+    "K": 16,
+    "kind": "value",
+    "value": 16,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "kyriienko_nonlinear_encoding_circuit_n2_l1_local_xyz": {
+   "gram": [
+    4,
+    4
+   ],
+   "manuscript": {
+    "K": 6,
+    "kind": "bracket",
+    "lower": 4,
+    "upper": 5
+   },
+   "verdict": "CLOSES_BRACKET"
+  },
+  "kyriienko_nonlinear_encoding_circuit_n2_l1_local_z": {
+   "gram": [
+    4,
+    4
+   ],
+   "manuscript": {
+    "K": 6,
+    "kind": "value",
+    "value": 4,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "kyriienko_nonlinear_encoding_circuit_n2_l1_pauli_weight_le_2": {
+   "gram": [
+    0,
+    0
+   ],
+   "manuscript": {
+    "K": 6,
+    "kind": "value",
+    "value": 0,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "kyriienko_nonlinear_encoding_circuit_n4_l1_local_xyz": {
+   "gram": [
+    10,
+    10
+   ],
+   "manuscript": {
+    "K": 12,
+    "kind": "bracket",
+    "lower": 10,
+    "upper": 11
+   },
+   "verdict": "CLOSES_BRACKET"
+  },
+  "kyriienko_nonlinear_encoding_circuit_n4_l1_local_z": {
+   "gram": [
+    8,
+    8
+   ],
+   "manuscript": {
+    "K": 12,
+    "kind": "value",
+    "value": 8,
+    "dagger": false
+   },
+   "verdict": "AGREES"
+  },
+  "kyriienko_nonlinear_encoding_circuit_n4_l1_pauli_weight_le_2": {
+   "gram": [
+    10,
+    10
+   ],
+   "manuscript": {
+    "K": 12,
+    "kind": "bracket",
+    "lower": 10,
+    "upper": 11
+   },
+   "verdict": "CLOSES_BRACKET"
+  }
+ },
+ "disagreements": [],
+ "numerical_rank_mismatch": [],
+ "numeric_crosscheck_failures": [],
+ "max_distance_error": 2.842170943040401e-14,
+ "max_gradient_error": 2.5757174171303632e-14,
+ "interval_crosscheck_max_gradient_error": 1.199040866595169e-14,
+ "per_symbol_counts": {
+  "ACTIVE": 195,
+  "INACTIVE": 57,
+  "UNDECIDED": 0
+ },
+ "budget_limited_entries": [
+  {
+   "setting": "yz_cx_encoding_circuit_n2_l2_local_xyz",
+   "symbol": 7,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": false,
+   "symbolic_gram_seconds": 31.828336124999996,
+   "bounded_pass_symbolic_seconds": 1.124328167,
+   "bounded_pass_failure": "Pre-convolution pair budget exceeded"
+  },
+  {
+   "setting": "yz_cx_encoding_circuit_n2_l2_pauli_weight_le_2",
+   "symbol": 5,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": false,
+   "symbolic_gram_seconds": 41.865199249999996,
+   "bounded_pass_symbolic_seconds": 0.11635608299999944,
+   "bounded_pass_failure": "Pre-convolution pair budget exceeded"
+  },
+  {
+   "setting": "yz_cx_encoding_circuit_n2_l2_pauli_weight_le_2",
+   "symbol": 7,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": false,
+   "symbolic_gram_seconds": 41.865199249999996,
+   "bounded_pass_symbolic_seconds": 0.11635608299999944,
+   "bounded_pass_failure": "Pre-convolution pair budget exceeded"
+  },
+  {
+   "setting": "yz_cx_encoding_circuit_n4_l1_pauli_weight_le_2",
+   "symbol": 1,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": false,
+   "symbolic_gram_seconds": 24.391151584,
+   "bounded_pass_symbolic_seconds": 18.113142708,
+   "bounded_pass_failure": "Distance term budget exceeded"
+  },
+  {
+   "setting": "yz_cx_encoding_circuit_n4_l1_pauli_weight_le_2",
+   "symbol": 5,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": false,
+   "symbolic_gram_seconds": 24.391151584,
+   "bounded_pass_symbolic_seconds": 18.113142708,
+   "bounded_pass_failure": "Distance term budget exceeded"
+  },
+  {
+   "setting": "yz_cx_encoding_circuit_n4_l2_local_xyz",
+   "symbol": 11,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": false,
+   "symbolic_gram_seconds": 33.431092583,
+   "bounded_pass_symbolic_seconds": 5.956941999999998,
+   "bounded_pass_failure": "Pre-convolution pair budget exceeded"
+  },
+  {
+   "setting": "yz_cx_encoding_circuit_n4_l2_local_xyz",
+   "symbol": 15,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": false,
+   "symbolic_gram_seconds": 33.431092583,
+   "bounded_pass_symbolic_seconds": 5.956941999999998,
+   "bounded_pass_failure": "Pre-convolution pair budget exceeded"
+  },
+  {
+   "setting": "yz_cx_encoding_circuit_n4_l2_local_z",
+   "symbol": 9,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": false,
+   "symbolic_gram_seconds": 83.655716,
+   "bounded_pass_symbolic_seconds": 20.060447458,
+   "bounded_pass_failure": "20 second symbolic budget exceeded"
+  },
+  {
+   "setting": "yz_cx_encoding_circuit_n4_l2_local_z",
+   "symbol": 11,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": false,
+   "symbolic_gram_seconds": 83.655716,
+   "bounded_pass_symbolic_seconds": 20.060447458,
+   "bounded_pass_failure": "20 second symbolic budget exceeded"
+  },
+  {
+   "setting": "yz_cx_encoding_circuit_n4_l2_local_z",
+   "symbol": 13,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": false,
+   "symbolic_gram_seconds": 83.655716,
+   "bounded_pass_symbolic_seconds": 20.060447458,
+   "bounded_pass_failure": "20 second symbolic budget exceeded"
+  },
+  {
+   "setting": "yz_cx_encoding_circuit_n4_l2_local_z",
+   "symbol": 15,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": false,
+   "symbolic_gram_seconds": 83.655716,
+   "bounded_pass_symbolic_seconds": 20.060447458,
+   "bounded_pass_failure": "20 second symbolic budget exceeded"
+  },
+  {
+   "setting": "yz_cx_encoding_circuit_n4_l2_pauli_weight_le_2",
+   "symbol": 11,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": false,
+   "symbolic_gram_seconds": 35.927978333,
+   "bounded_pass_symbolic_seconds": 3.960326291000001,
+   "bounded_pass_failure": "Pre-convolution pair budget exceeded"
+  },
+  {
+   "setting": "yz_cx_encoding_circuit_n4_l2_pauli_weight_le_2",
+   "symbol": 15,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": false,
+   "symbolic_gram_seconds": 35.927978333,
+   "bounded_pass_symbolic_seconds": 3.960326291000001,
+   "bounded_pass_failure": "Pre-convolution pair budget exceeded"
+  },
+  {
+   "setting": "hubregtsen_encoding_circuit_n2_l2_pauli_weight_le_2",
+   "symbol": 2,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: symbolic two-copy Gram expansion, d_k G == 0",
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": true,
+   "symbolic_gram_seconds": 2.70022725,
+   "bounded_pass_symbolic_seconds": 20.02867337500001,
+   "bounded_pass_failure": "20 second symbolic budget exceeded"
+  },
+  {
+   "setting": "hubregtsen_encoding_circuit_n2_l2_pauli_weight_le_2",
+   "symbol": 3,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: symbolic two-copy Gram expansion, d_k G == 0",
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": true,
+   "symbolic_gram_seconds": 2.70022725,
+   "bounded_pass_symbolic_seconds": 20.02867337500001,
+   "bounded_pass_failure": "20 second symbolic budget exceeded"
+  },
+  {
+   "setting": "hubregtsen_encoding_circuit_n4_l2_local_z",
+   "symbol": 12,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": false,
+   "symbolic_gram_seconds": 68.639281125,
+   "bounded_pass_symbolic_seconds": 0.8128738750000011,
+   "bounded_pass_failure": "Pre-convolution pair budget exceeded"
+  },
+  {
+   "setting": "hubregtsen_encoding_circuit_n4_l2_local_z",
+   "symbol": 13,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": false,
+   "symbolic_gram_seconds": 68.639281125,
+   "bounded_pass_symbolic_seconds": 0.8128738750000011,
+   "bounded_pass_failure": "Pre-convolution pair budget exceeded"
+  },
+  {
+   "setting": "hubregtsen_encoding_circuit_n4_l2_local_z",
+   "symbol": 14,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": false,
+   "symbolic_gram_seconds": 68.639281125,
+   "bounded_pass_symbolic_seconds": 0.8128738750000011,
+   "bounded_pass_failure": "Pre-convolution pair budget exceeded"
+  },
+  {
+   "setting": "hubregtsen_encoding_circuit_n4_l2_local_z",
+   "symbol": 15,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": false,
+   "symbolic_gram_seconds": 68.639281125,
+   "bounded_pass_symbolic_seconds": 0.8128738750000011,
+   "bounded_pass_failure": "Pre-convolution pair budget exceeded"
+  },
+  {
+   "setting": "kyriienko_nonlinear_encoding_circuit_n2_l1_local_xyz",
+   "symbol": 2,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: symbolic two-copy Gram expansion, d_k G == 0",
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": true,
+   "symbolic_gram_seconds": 13.569201042000003,
+   "bounded_pass_symbolic_seconds": 0.16754291600000215,
+   "bounded_pass_failure": "Pre-convolution pair budget exceeded"
+  },
+  {
+   "setting": "kyriienko_nonlinear_encoding_circuit_n2_l1_pauli_weight_le_2",
+   "symbol": 0,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: symbolic two-copy Gram expansion, d_k G == 0",
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": true,
+   "symbolic_gram_seconds": 0.024710499999997637,
+   "bounded_pass_symbolic_seconds": 20.014072542000008,
+   "bounded_pass_failure": "20 second symbolic budget exceeded"
+  },
+  {
+   "setting": "kyriienko_nonlinear_encoding_circuit_n2_l1_pauli_weight_le_2",
+   "symbol": 1,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: symbolic two-copy Gram expansion, d_k G == 0",
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": true,
+   "symbolic_gram_seconds": 0.024710499999997637,
+   "bounded_pass_symbolic_seconds": 20.014072542000008,
+   "bounded_pass_failure": "20 second symbolic budget exceeded"
+  },
+  {
+   "setting": "kyriienko_nonlinear_encoding_circuit_n2_l1_pauli_weight_le_2",
+   "symbol": 2,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: symbolic two-copy Gram expansion, d_k G == 0",
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": true,
+   "symbolic_gram_seconds": 0.024710499999997637,
+   "bounded_pass_symbolic_seconds": 20.014072542000008,
+   "bounded_pass_failure": "20 second symbolic budget exceeded"
+  },
+  {
+   "setting": "kyriienko_nonlinear_encoding_circuit_n2_l1_pauli_weight_le_2",
+   "symbol": 3,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: symbolic two-copy Gram expansion, d_k G == 0",
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": true,
+   "symbolic_gram_seconds": 0.024710499999997637,
+   "bounded_pass_symbolic_seconds": 20.014072542000008,
+   "bounded_pass_failure": "20 second symbolic budget exceeded"
+  },
+  {
+   "setting": "kyriienko_nonlinear_encoding_circuit_n2_l1_pauli_weight_le_2",
+   "symbol": 4,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: symbolic two-copy Gram expansion, d_k G == 0",
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": true,
+   "symbolic_gram_seconds": 0.024710499999997637,
+   "bounded_pass_symbolic_seconds": 20.014072542000008,
+   "bounded_pass_failure": "20 second symbolic budget exceeded"
+  },
+  {
+   "setting": "kyriienko_nonlinear_encoding_circuit_n2_l1_pauli_weight_le_2",
+   "symbol": 5,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: symbolic two-copy Gram expansion, d_k G == 0",
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": true,
+   "symbolic_gram_seconds": 0.024710499999997637,
+   "bounded_pass_symbolic_seconds": 20.014072542000008,
+   "bounded_pass_failure": "20 second symbolic budget exceeded"
+  },
+  {
+   "setting": "kyriienko_nonlinear_encoding_circuit_n4_l1_local_xyz",
+   "symbol": 2,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": false,
+   "symbolic_gram_seconds": 18.213944541999993,
+   "bounded_pass_symbolic_seconds": 0.165625958000021,
+   "bounded_pass_failure": "Pre-convolution pair budget exceeded"
+  },
+  {
+   "setting": "kyriienko_nonlinear_encoding_circuit_n4_l1_local_z",
+   "symbol": 2,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": false,
+   "symbolic_gram_seconds": 40.53725625,
+   "bounded_pass_symbolic_seconds": 2.965341207999984,
+   "bounded_pass_failure": "Pre-convolution pair budget exceeded"
+  },
+  {
+   "setting": "kyriienko_nonlinear_encoding_circuit_n4_l1_local_z",
+   "symbol": 5,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": false,
+   "symbolic_gram_seconds": 40.53725625,
+   "bounded_pass_symbolic_seconds": 2.965341207999984,
+   "bounded_pass_failure": "Pre-convolution pair budget exceeded"
+  },
+  {
+   "setting": "kyriienko_nonlinear_encoding_circuit_n4_l1_local_z",
+   "symbol": 8,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": false,
+   "symbolic_gram_seconds": 40.53725625,
+   "bounded_pass_symbolic_seconds": 2.965341207999984,
+   "bounded_pass_failure": "Pre-convolution pair budget exceeded"
+  },
+  {
+   "setting": "kyriienko_nonlinear_encoding_circuit_n4_l1_local_z",
+   "symbol": 11,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": false,
+   "symbolic_gram_seconds": 40.53725625,
+   "bounded_pass_symbolic_seconds": 2.965341207999984,
+   "bounded_pass_failure": "Pre-convolution pair budget exceeded"
+  },
+  {
+   "setting": "kyriienko_nonlinear_encoding_circuit_n4_l1_pauli_weight_le_2",
+   "symbol": 2,
+   "gram_verdict": "INACTIVE",
+   "certificates": [
+    "INACTIVE: two-copy invariance deletion certificate"
+   ],
+   "symbolic_gram_completed": false,
+   "symbolic_gram_seconds": 30.443655584000012,
+   "bounded_pass_symbolic_seconds": 20.014923707999998,
+   "bounded_pass_failure": "20 second symbolic budget exceeded"
+  }
+ ],
+ "budget_limited_decided_by_symbolic_gram": 9,
+ "budget_limited_decided_by_invariance": 32,
+ "symbolic_gram_completed_settings": [
+  "yz_cx_encoding_circuit_n2_l1_local_xyz",
+  "yz_cx_encoding_circuit_n2_l1_local_z",
+  "yz_cx_encoding_circuit_n2_l1_pauli_weight_le_2",
+  "yz_cx_encoding_circuit_n2_l2_local_z",
+  "yz_cx_encoding_circuit_n4_l1_local_xyz",
+  "yz_cx_encoding_circuit_n4_l1_local_z",
+  "hubregtsen_encoding_circuit_n2_l1_local_xyz",
+  "hubregtsen_encoding_circuit_n2_l1_local_z",
+  "hubregtsen_encoding_circuit_n2_l1_pauli_weight_le_2",
+  "hubregtsen_encoding_circuit_n2_l2_local_xyz",
+  "hubregtsen_encoding_circuit_n2_l2_local_z",
+  "hubregtsen_encoding_circuit_n2_l2_pauli_weight_le_2",
+  "hubregtsen_encoding_circuit_n4_l1_local_z",
+  "kyriienko_nonlinear_encoding_circuit_n2_l1_local_xyz",
+  "kyriienko_nonlinear_encoding_circuit_n2_l1_local_z",
+  "kyriienko_nonlinear_encoding_circuit_n2_l1_pauli_weight_le_2"
+ ],
+ "wall_seconds": 195.247253667
+}

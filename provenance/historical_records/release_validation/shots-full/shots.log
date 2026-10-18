@@ -1,0 +1,66 @@
+panel0_yz_point0 seconds 0.33 targets 4
+panel0_yz_point1 seconds 0.31 targets 4
+panel0_yz_point2 seconds 0.31 targets 4
+panel0_yz_point3 seconds 0.31 targets 4
+panel0_yz_point4 seconds 0.3 targets 4
+panel0_kyri_point0 seconds 0.47 targets 6
+panel0_kyri_point1 seconds 0.47 targets 6
+panel0_kyri_point2 seconds 0.47 targets 6
+panel0_kyri_point3 seconds 0.47 targets 6
+panel0_kyri_point4 seconds 0.47 targets 6
+panel0_hub_z_point0 seconds 0.46 targets 4
+panel0_hub_z_point1 seconds 0.46 targets 4
+panel0_hub_z_point2 seconds 0.46 targets 4
+panel0_hub_z_point3 seconds 0.47 targets 4
+panel0_hub_z_point4 seconds 0.46 targets 4
+panel0_hub_zz_point0 seconds 0.64 targets 4
+panel0_hub_zz_point1 seconds 0.65 targets 4
+panel0_hub_zz_point2 seconds 0.66 targets 4
+panel0_hub_zz_point3 seconds 0.65 targets 4
+panel0_hub_zz_point4 seconds 0.65 targets 4
+panel1_yz_point0 seconds 0.3 targets 4
+panel1_yz_point1 seconds 0.31 targets 4
+panel1_yz_point2 seconds 0.32 targets 4
+panel1_yz_point3 seconds 0.31 targets 4
+panel1_yz_point4 seconds 0.33 targets 4
+panel1_kyri_point0 seconds 0.47 targets 6
+panel1_kyri_point1 seconds 0.46 targets 6
+panel1_kyri_point2 seconds 0.46 targets 6
+panel1_kyri_point3 seconds 0.48 targets 6
+panel1_kyri_point4 seconds 0.48 targets 6
+panel1_hub_z_point0 seconds 0.47 targets 4
+panel1_hub_z_point1 seconds 0.47 targets 4
+panel1_hub_z_point2 seconds 0.52 targets 4
+panel1_hub_z_point3 seconds 0.44 targets 4
+panel1_hub_z_point4 seconds 0.5 targets 4
+panel1_hub_zz_point0 seconds 0.67 targets 4
+panel1_hub_zz_point1 seconds 0.66 targets 4
+panel1_hub_zz_point2 seconds 0.69 targets 4
+panel1_hub_zz_point3 seconds 0.61 targets 4
+panel1_hub_zz_point4 seconds 0.69 targets 4
+panel2_yz_point0 seconds 0.31 targets 4
+panel2_yz_point1 seconds 0.29 targets 4
+panel2_yz_point2 seconds 0.3 targets 4
+panel2_yz_point3 seconds 0.3 targets 4
+panel2_yz_point4 seconds 0.3 targets 4
+panel2_kyri_point0 seconds 0.46 targets 6
+panel2_kyri_point1 seconds 0.47 targets 6
+panel2_kyri_point2 seconds 0.47 targets 6
+panel2_kyri_point3 seconds 0.48 targets 6
+panel2_kyri_point4 seconds 0.49 targets 6
+panel2_hub_z_point0 seconds 0.46 targets 4
+panel2_hub_z_point1 seconds 0.46 targets 4
+panel2_hub_z_point2 seconds 0.48 targets 4
+panel2_hub_z_point3 seconds 0.49 targets 4
+panel2_hub_z_point4 seconds 0.48 targets 4
+panel2_hub_zz_point0 seconds 0.63 targets 4
+panel2_hub_zz_point1 seconds 0.64 targets 4
+panel2_hub_zz_point2 seconds 0.67 targets 4
+panel2_hub_zz_point3 seconds 0.68 targets 4
+panel2_hub_zz_point4 seconds 0.68 targets 4
+{
+  "output": "/workspace/journal_extension/quantum_submission_update_20261007/github/readout-kernel-identifiability/runs/shots-full_20261007T113755_774544Z/work/readout_metric_shot_design_v2/results/full_20261007T113756_011522Z",
+  "complete": true,
+  "records": 60,
+  "elapsed_seconds": 29.365515917
+}

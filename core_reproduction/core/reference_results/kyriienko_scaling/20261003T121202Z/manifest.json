@@ -1,0 +1,172 @@
+{
+  "files": [
+    {
+      "path": "environment.json",
+      "sha256": "5eaa9092941c0fcdac4ded95b6cf80a68f95dffdf3fb332aa804683c2916cb03"
+    },
+    {
+      "path": "euler_identity.json",
+      "sha256": "ed921e45ef614361b35b50f939136d7e0373e7cf2d85f0433cd0eaf723fd57e7"
+    },
+    {
+      "path": "ir/kyriienko_n2_local_xyz.json",
+      "sha256": "bb94df413d984e45c826763dcf08f7933920923c2f57780706a8cc7e597477d1"
+    },
+    {
+      "path": "ir/kyriienko_n2_local_z.json",
+      "sha256": "fd9a42d130df940eebfe05b24840c3db29eaf59402542a2848e08c2af3e12ed0"
+    },
+    {
+      "path": "ir/kyriienko_n2_pauli_weight_le_2.json",
+      "sha256": "0dd2293e29e836cf0b306427d6c45c776445fb6f714a7b0a7dff91212e4d27ad"
+    },
+    {
+      "path": "ir/kyriienko_n4_local_xyz.json",
+      "sha256": "68b4bbf36d59eb39739644c7fce8e503be4f4d17759c7f910eb1b0b0f57318b3"
+    },
+    {
+      "path": "ir/kyriienko_n4_local_z.json",
+      "sha256": "baaa43d41a3129703efa4f50af02e22d6f33871a2c1d75a6c21a4a012848ac5b"
+    },
+    {
+      "path": "ir/kyriienko_n4_pauli_weight_le_2.json",
+      "sha256": "4d9eea8b4a6daf29a144877e20abe97ce496003fb6ff1ca844a930da77c1678c"
+    },
+    {
+      "path": "ir/kyriienko_n6_local_xyz.json",
+      "sha256": "55d5785f35dae3e3289409b4a49f1e77ad7957719d831f8d2d7cc3c512d27dd7"
+    },
+    {
+      "path": "ir/kyriienko_n6_local_z.json",
+      "sha256": "eca566dc386e752bfee4ffbbcbfe6ff65bf8e35ae1f08a400f50b98de5532e88"
+    },
+    {
+      "path": "ir/kyriienko_n6_pauli_weight_le_2.json",
+      "sha256": "fa24bdf85fb5e12d209eac11be175a740e862a18b0a4ef214985459f5a577d52"
+    },
+    {
+      "path": "ir/kyriienko_n8_local_xyz.json",
+      "sha256": "1316bbb6097b26d23aa8d91be377e1d5279edfa3284c01c508e6bbbd353708f5"
+    },
+    {
+      "path": "ir/kyriienko_n8_local_z.json",
+      "sha256": "8cbc6aa047e143abbbff7fd95912e338f6df083506a503c488e1862184d63fcc"
+    },
+    {
+      "path": "ir/kyriienko_n8_pauli_weight_le_2.json",
+      "sha256": "a7d02bac9591b981adabc5015aeb0f4199b1a261652b0b9097112c9b3e363d9a"
+    },
+    {
+      "path": "kyriienko_n2_local_xyz.json",
+      "sha256": "e9de0c9f76f92124384f4e76b422f71aa8c74d5bfa82cc63be2f9fa1c5f366f2"
+    },
+    {
+      "path": "kyriienko_n2_local_xyz_jacobian.json.gz",
+      "sha256": "20ce0de9eeeb76a20a7e60063d5d6364ab4a54e07f09465873a24ddc2658ed05"
+    },
+    {
+      "path": "kyriienko_n2_local_z.json",
+      "sha256": "3095b0f60bffd702a51ef134e2ca50eb51ab6ca14cbe27f638c9311edfbf5d54"
+    },
+    {
+      "path": "kyriienko_n2_local_z_jacobian.json.gz",
+      "sha256": "250e7dfda10188018082f1645a9f5c396c427282ca6da1f03f08141a02f07c23"
+    },
+    {
+      "path": "kyriienko_n2_pauli_weight_le_2.json",
+      "sha256": "73fa978063d01b3784e5ef9203e959c00c199148d3b67ddab4ad5de2ef45aa75"
+    },
+    {
+      "path": "kyriienko_n2_pauli_weight_le_2_jacobian.json.gz",
+      "sha256": "39c2f95607c3f0188acc05fd06f702144aa07374e3b9ff2260f48539d3c9d1e8"
+    },
+    {
+      "path": "kyriienko_n4_local_xyz.json",
+      "sha256": "39291fa69dd66b776e02232ae1604671b917cbf01a48f3ba63ee332e10b1a4c3"
+    },
+    {
+      "path": "kyriienko_n4_local_xyz_jacobian.json.gz",
+      "sha256": "05ace46016612f4ad59c1e5344f4cdca42406f62927ce12d02f6826e28253a0e"
+    },
+    {
+      "path": "kyriienko_n4_local_z.json",
+      "sha256": "f1f02304d99b291ceb13a40c68adc2e2d92a44b6984de5da0daa51b3d54f22cb"
+    },
+    {
+      "path": "kyriienko_n4_local_z_jacobian.json.gz",
+      "sha256": "8eea815e8cde0393120522d63b3b906c792543d4983bb3903414013c1f67dbd4"
+    },
+    {
+      "path": "kyriienko_n4_pauli_weight_le_2.json",
+      "sha256": "c34d7a3c553fbacddcc4db0d260c1471c2de261c5f09fa71691291eed7d8cf6c"
+    },
+    {
+      "path": "kyriienko_n4_pauli_weight_le_2_jacobian.json.gz",
+      "sha256": "67934a3f1cfb121cba44e94a52b1ff7b940161e864cbef1bd6fe2e54a5b504cc"
+    },
+    {
+      "path": "kyriienko_n6_local_xyz.json",
+      "sha256": "cf9251c0e362e5965c18cc2ab9427f0415ffeaef293beb1d22459717cb6a998b"
+    },
+    {
+      "path": "kyriienko_n6_local_xyz_jacobian.json.gz",
+      "sha256": "947f036935b7cf79bdc77facd62aa25657db24bb0cce5165a239dc387f558fb0"
+    },
+    {
+      "path": "kyriienko_n6_local_z.json",
+      "sha256": "ea46820d5248cb69fb2619acf152250a418bdd38be59bcde696717aac2314b7a"
+    },
+    {
+      "path": "kyriienko_n6_local_z_jacobian.json.gz",
+      "sha256": "e13c16ab99276daff2782a1b606ab1b92363e1c1eb2a98f315f3f1c37de375c9"
+    },
+    {
+      "path": "kyriienko_n6_pauli_weight_le_2.json",
+      "sha256": "8b8436783dacdc0ff06ad3cfc6b7967102363493b9af2c6f2dfea3a657e4386f"
+    },
+    {
+      "path": "kyriienko_n6_pauli_weight_le_2_jacobian.json.gz",
+      "sha256": "f3d2592073dbf6a3a4ed4f845cfc7b60e50fea04051c2ea341cafaf94881db18"
+    },
+    {
+      "path": "kyriienko_n8_local_xyz.json",
+      "sha256": "f9f77b8c81a1b08504d6da19b015f39a77273c492fdf274cc100835720670949"
+    },
+    {
+      "path": "kyriienko_n8_local_xyz_jacobian.json.gz",
+      "sha256": "f53d6b70fd9469177b246762ff53a9c887879692914baa845a510916aba1e745"
+    },
+    {
+      "path": "kyriienko_n8_local_z.json",
+      "sha256": "363e4ff2c57cd89f5f04c8022648c6d0033690b136559e911550a4641a85041a"
+    },
+    {
+      "path": "kyriienko_n8_local_z_jacobian.json.gz",
+      "sha256": "aac7a2a95cd40dd9b00c52c8a2573341802df979bc67e354230a0a922cf95960"
+    },
+    {
+      "path": "kyriienko_n8_pauli_weight_le_2.json",
+      "sha256": "dda4d01861e080fdd4e1c29dc26cb4c7e381f0dca5509c75448858f39069fe1c"
+    },
+    {
+      "path": "kyriienko_n8_pauli_weight_le_2_jacobian.json.gz",
+      "sha256": "a09bcf58ca3d0b7bc75d8691b41cb9cc261e28d8bc340cc2e93daae732a5cb5b"
+    },
+    {
+      "path": "log.txt",
+      "sha256": "f24079d7bd24d943a3432fb0e8302e3e6aea92ba7ea77260de781def725e1623"
+    },
+    {
+      "path": "provenance.json",
+      "sha256": "98ece29f5555cda901b48dae43a38cd26d291ad5b17f896d91189778af09a30e"
+    },
+    {
+      "path": "summary.json",
+      "sha256": "edb97ae9abc820308727609603dc842f67660313d820c042d429f8e4fa7b6551"
+    },
+    {
+      "path": "validation_gate.json",
+      "sha256": "34c5f9cc516e45542bbe30fd5b4fd75cca1bf43ddf17f38e36c21a7727ed7618"
+    }
+  ]
+}

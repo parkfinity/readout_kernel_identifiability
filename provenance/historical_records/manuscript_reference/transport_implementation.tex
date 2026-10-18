@@ -1,0 +1,41 @@
+\section{Implementation of the restricted transport rule}
+\label{app:transport_impl}
+This appendix records the implementation of
+Theorem~\ref{thm:transport} and the scope of its guarantee.
+
+The implementation supports fixed Hadamards and CNOTs for Clifford
+transport. Unsupported noncommuting rotations block the rule. It scans
+parameter-only occurrences backwards, records each transport and
+readout check, deletes a certified occurrence, and restarts. With $L$
+gates, $m$ observables and length-$n$ Pauli words, a straightforward
+implementation has conservative complexity $O(L^3n+L^2mn)$, without
+statevector evaluation. Equal metric weights are checked exactly,
+not by a numerical symmetry tolerance. The operational steps are:
+\begin{enumerate}
+\item Translate source gates to the supported IR, preserving every
+symbol, coefficient, input expression, and shared occurrence.
+\item Apply the common compiler, boundary rules, and same-axis fusion
+used by the baseline; retain provenance for data-crossing classification.
+\item Transport an eligible parameter-only generator through supported
+gates and test exact closure and metric preservation.
+\item Delete a successful occurrence and restart; block unsupported
+transport rather than inferring activity or inactivity numerically.
+\item Mark a symbol inactive only when all its occurrences are absent,
+then build backend work from the final fused program.
+\end{enumerate}
+Source-to-IR correctness is a precondition of the guarantee, not a
+consequence of finite-sample tests. Additive angle splitting is valid
+for rotations about the same generator; splitting a noncommuting
+sum is not permitted. Product angles such as
+$\theta x$ are not common-output candidates. Additive same-axis
+angles may be exactly decomposed, but that standard identity is not
+an independent theoretical novelty.
+
+Pointwise equality implies equal retained kernel derivatives.
+A deterministic optimizer preserves its retained-parameter trajectory
+if updates depend only on these kernels and derivatives with identical
+retained state, schedules and tie rules. Regularizers, stopping rules,
+optimizer couplings, or random-number consumption involving deleted
+coordinates require separate treatment. This is not a bitwise
+floating-point guarantee. Source-adapter numerical validation also
+does not replace a formal source-to-IR proof.

@@ -1,0 +1,138 @@
+{
+  "manifest_mismatches": [],
+  "settings": [
+    {
+      "setting": "kyriienko_n2_local_xyz",
+      "payload_sha256_ok": true,
+      "minor_order": 4,
+      "stored_value": 4,
+      "integer_det_matches": true,
+      "rational_det_matches": true,
+      "nonzero": true,
+      "certified_r": 4,
+      "upper": 4
+    },
+    {
+      "setting": "kyriienko_n2_local_z",
+      "payload_sha256_ok": true,
+      "minor_order": 4,
+      "stored_value": 4,
+      "integer_det_matches": true,
+      "rational_det_matches": true,
+      "nonzero": true,
+      "certified_r": 4,
+      "upper": 4
+    },
+    {
+      "setting": "kyriienko_n2_pauli_weight_le_2",
+      "payload_sha256_ok": true,
+      "minor_order": 0,
+      "stored_value": 0,
+      "integer_det_matches": true,
+      "rational_det_matches": true,
+      "nonzero": true,
+      "certified_r": 0,
+      "upper": 0
+    },
+    {
+      "setting": "kyriienko_n4_local_xyz",
+      "payload_sha256_ok": true,
+      "minor_order": 10,
+      "stored_value": 10,
+      "integer_det_matches": true,
+      "rational_det_matches": true,
+      "nonzero": true,
+      "certified_r": 10,
+      "upper": 10
+    },
+    {
+      "setting": "kyriienko_n4_local_z",
+      "payload_sha256_ok": true,
+      "minor_order": 8,
+      "stored_value": 8,
+      "integer_det_matches": true,
+      "rational_det_matches": true,
+      "nonzero": true,
+      "certified_r": 8,
+      "upper": 8
+    },
+    {
+      "setting": "kyriienko_n4_pauli_weight_le_2",
+      "payload_sha256_ok": true,
+      "minor_order": 10,
+      "stored_value": 10,
+      "integer_det_matches": true,
+      "rational_det_matches": true,
+      "nonzero": true,
+      "certified_r": 10,
+      "upper": 10
+    },
+    {
+      "setting": "kyriienko_n6_local_xyz",
+      "payload_sha256_ok": true,
+      "minor_order": 16,
+      "stored_value": 16,
+      "integer_det_matches": true,
+      "rational_det_matches": true,
+      "nonzero": true,
+      "certified_r": 16,
+      "upper": 16
+    },
+    {
+      "setting": "kyriienko_n6_local_z",
+      "payload_sha256_ok": true,
+      "minor_order": 12,
+      "stored_value": 12,
+      "integer_det_matches": true,
+      "rational_det_matches": true,
+      "nonzero": true,
+      "certified_r": 12,
+      "upper": 12
+    },
+    {
+      "setting": "kyriienko_n6_pauli_weight_le_2",
+      "payload_sha256_ok": true,
+      "minor_order": 16,
+      "stored_value": 16,
+      "integer_det_matches": true,
+      "rational_det_matches": true,
+      "nonzero": true,
+      "certified_r": 16,
+      "upper": 16
+    },
+    {
+      "setting": "kyriienko_n8_local_xyz",
+      "payload_sha256_ok": true,
+      "minor_order": 22,
+      "stored_value": 22,
+      "integer_det_matches": true,
+      "rational_det_matches": true,
+      "nonzero": true,
+      "certified_r": 22,
+      "upper": 22
+    },
+    {
+      "setting": "kyriienko_n8_local_z",
+      "payload_sha256_ok": true,
+      "minor_order": 16,
+      "stored_value": 16,
+      "integer_det_matches": true,
+      "rational_det_matches": true,
+      "nonzero": true,
+      "certified_r": 16,
+      "upper": 16
+    },
+    {
+      "setting": "kyriienko_n8_pauli_weight_le_2",
+      "payload_sha256_ok": true,
+      "minor_order": 22,
+      "stored_value": 22,
+      "integer_det_matches": true,
+      "rational_det_matches": true,
+      "nonzero": true,
+      "certified_r": 22,
+      "upper": 22
+    }
+  ],
+  "passed": true
+}

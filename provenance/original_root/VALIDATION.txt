@@ -1,0 +1,44 @@
+Integrated delivery checks, October 7, 2026
+=========================================
+Local environment: macOS arm64, Python 3.9.6, NumPy 1.24.4,
+SymPy 1.13.3, Qiskit 1.2.4 (the pinned reviewer environment).
+
+Fresh checks of this integrated entry point:
+- integrity: passed (root manifest plus original frozen-plan validation).
+- smoke: 97 unit tests passed across the original core and three later modules;
+  endpoint sanity checks and frozen-plan verification also passed.
+- core-audit: passed; the 24 saved pilot certificates were replayed, source
+  checks and nonlinear checks completed, and the stored 54-setting census was
+  reaggregated. This is not a fresh discovery run of all 54 settings.
+- recovery: numerical experiment, exact controls, certificate recheck,
+  strong-baseline follow-up and correlation control all completed successfully.
+- shots-pilot: passed; 4 records verified.
+- shots-full: passed; 60 records verified at all four budgets, 256 replicates.
+  All 144 paired analytical summary rows matched the original Linux reference
+  within atol=rtol=1e-10; maximum absolute difference was 4.741e-13.
+- product: passed; 1,440 records with 256 replicates; all panel summary values
+  matched the supplied previous product-control results exactly.
+- ad-summary: passed; saved category means, bootstrap intervals and matched
+  eight-category contrast were reaggregated. This does not replay raw scores.
+
+Scope limits:
+The new integrated core-full command has not been run as part of this delivery.
+The earlier core package contains its separate full-run validation records.
+No new QPU experiment, raw-image inference, or historical 18,900-fit timing
+study was performed. This delivery is not an independent implementation,
+formal proof verification, new scientific dataset, or Linux validation of
+the newly assembled wrapper.
+
+Distribution QA:
+- Manuscript compiles to 51 pages with no unresolved citations/references,
+  multiply-defined labels or overfull boxes; ordinary underfull warnings remain.
+- Added DOI hyperlinks were checked in the compiled PDF.
+- The four-file manuscript patch preserves all theorem/proof blocks, figures,
+  and existing scientific result values.
+- The archive excludes generated runs and Python caches, and contains no file
+  at or above GitHub's 100 MiB per-file threshold.
+- A basic credential-pattern scan found no matching embedded credentials;
+  this is not a guarantee against every possible sensitive-data pattern.
+
+Original unit counts: pilot 16, extension 22, Gram 11, scaling 14,
+normalizer 6, survey 6, recovery 8, shots 10, product 4.

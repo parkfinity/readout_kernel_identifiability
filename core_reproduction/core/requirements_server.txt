@@ -1,0 +1,7 @@
+# Server pins (Python 3.8.10). Tested locally on Python 3.8.20 with exactly these pins (pip resolved
+# rustworkx 0.15.1, symengine 0.13.0, stevedore 5.3.0, dill 0.4.0, python-dateutil 2.9.0.post0).
+numpy==1.24.4
+sympy==1.13.3
+mpmath==1.3.0
+qiskit==1.2.4
+scipy==1.10.1

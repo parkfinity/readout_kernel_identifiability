@@ -1,0 +1,10 @@
+panel0_yz_point0 seconds 0.07 targets 4
+panel0_kyri_point0 seconds 0.11 targets 6
+panel0_hub_z_point0 seconds 0.1 targets 4
+panel0_hub_zz_point0 seconds 0.19 targets 4
+{
+  "output": "/workspace/journal_extension/quantum_submission_update_20261007/github/readout-kernel-identifiability/runs/shots-pilot_20261007T113735_651171Z/work/readout_metric_shot_design_v2/results/pilot_20261007T113735_865195Z",
+  "complete": true,
+  "records": 4,
+  "elapsed_seconds": 0.520519
+}

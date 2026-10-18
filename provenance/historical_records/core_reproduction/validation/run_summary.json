@@ -1,0 +1,122 @@
+[
+  {
+    "run": "smoke_20261004T120402_379059Z",
+    "verdict": {
+      "passed": true,
+      "mode": "smoke",
+      "elapsed_seconds": 6.886179167,
+      "core_verdict": null,
+      "core_warnings": 0,
+      "stages": 8,
+      "scope": "See README.txt and CLAIM_MAP.txt; audit and smoke are NOT full reruns."
+    },
+    "unit_tests": {
+      "survey_tests": 6,
+      "gram_tests": 11,
+      "scaling_tests": 14,
+      "normalizer_tests": 6,
+      "extension_tests": 22,
+      "pilot_tests": 16
+    }
+  },
+  {
+    "run": "audit_20261004T115923_273846Z",
+    "verdict": {
+      "passed": true,
+      "mode": "audit",
+      "elapsed_seconds": 94.483028334,
+      "core_verdict": null,
+      "core_warnings": 0,
+      "stages": 15,
+      "scope": "See README.txt and CLAIM_MAP.txt; audit and smoke are NOT full reruns."
+    },
+    "unit_tests": {
+      "survey_tests": 6,
+      "gram_tests": 11,
+      "scaling_tests": 14,
+      "normalizer_tests": 6,
+      "extension_tests": 22,
+      "pilot_tests": 16
+    }
+  },
+  {
+    "run": "diagnostics_20261004T115735_776224Z",
+    "verdict": {
+      "passed": true,
+      "mode": "diagnostics",
+      "elapsed_seconds": 0.23915462499999998,
+      "stages": 1,
+      "scope": "See README.txt and CLAIM_MAP.txt; audit and smoke are NOT full reruns."
+    },
+    "unit_tests": {}
+  },
+  {
+    "run": "full_20261004T115639_635626Z",
+    "verdict": {
+      "passed": true,
+      "mode": "full",
+      "elapsed_seconds": 615.570453333,
+      "stages": 19,
+      "scope": "See README.txt and CLAIM_MAP.txt; audit and smoke are NOT full reruns."
+    },
+    "unit_tests": {
+      "survey_tests": 6,
+      "gram_tests": 11,
+      "scaling_tests": 14,
+      "normalizer_tests": 6,
+      "extension_tests": 22,
+      "pilot_tests": 16
+    }
+  },
+  {
+    "run": "resources_20261004T115837_750179Z",
+    "verdict": {
+      "passed": true,
+      "mode": "resources",
+      "elapsed_seconds": 39.152926791,
+      "stages": 3,
+      "scope": "See README.txt and CLAIM_MAP.txt; audit and smoke are NOT full reruns."
+    },
+    "unit_tests": {}
+  },
+  {
+    "run": "timing-archive_20261004T115646_043822Z",
+    "verdict": {
+      "passed": true,
+      "mode": "timing-archive",
+      "elapsed_seconds": 10.310948250000001,
+      "stages": 1,
+      "scope": "See README.txt and CLAIM_MAP.txt; audit and smoke are NOT full reruns."
+    },
+    "unit_tests": {}
+  },
+  {
+    "run": "timing-smoke_20261004T115836_633693Z",
+    "verdict": {
+      "passed": true,
+      "mode": "timing-smoke",
+      "elapsed_seconds": 3.10443775,
+      "stages": 1,
+      "scope": "See README.txt and CLAIM_MAP.txt; audit and smoke are NOT full reruns."
+    },
+    "unit_tests": {}
+  },
+  {
+    "run": "full_20261004T115307_693574Z",
+    "verdict": {
+      "passed": true,
+      "mode": "full",
+      "elapsed_seconds": 593.173377291,
+      "stages": 18,
+      "scope": "See README.txt and CLAIM_MAP.txt; audit and smoke are NOT full reruns."
+    },
+    "unit_tests": {
+      "survey_tests": 6,
+      "gram_tests": 11,
+      "scaling_tests": 14,
+      "normalizer_tests": 6,
+      "extension_tests": 22,
+      "pilot_tests": 16
+    }
+  }
+]

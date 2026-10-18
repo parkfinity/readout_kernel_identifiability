@@ -1,0 +1,130 @@
+\section{Archived learning and candidate-reuse controls}
+\label{app:legacy_controls}
+These controls come from the archived experiments.
+We reaggregate the saved per-trial records and inspect their source
+protocols; no new training or QPU execution is claimed here. Three
+CSVs and their hashes accompany the reproduction script. These results
+are separate from the compiler benchmarks.
+
+\subsection{Matched classical feature learning}
+The supervised control uses five qubits, ten trainable PQK parameters
+and five local Z expectations. The classical map has five features
+$z_j(x)=\cos(\alpha_j r_j^Tx+\beta_j)$, with fixed unit-norm
+projections $r_j$ and ten trainable scales and biases. Both maps use
+the same Gaussian kernel with $\gamma=1$, kernel-target alignment,
+50 finite-difference optimization steps, learning rate 0.3,
+minibatch size 16, and a precomputed-kernel SVM.
+
+The datasets are one fixed 80-point two-moons realization (noise 0.15,
+generation seed 3), and Wine classes 0 and 1 (130 points, first five
+features). For each of ten paired randomized trials, the 60/40
+stratified split precedes scaling. Scaling is fit on training inputs
+alone; test inputs are transformed and clipped to $[0,\pi]$.
+Trials vary split, initialization and minibatch randomness; they are
+not independent newly sampled datasets. The models share the training
+budget and split protocol, not identical initial feature maps.
+
+\begin{table}[tb]
+\caption{Archived matched feature-learning control. Accuracy is mean
+$\pm$ sample SD over ten trials, in percent; KTA is the mean before
+and after training. These are descriptive small-benchmark results,
+not evidence of quantum advantage or a statistical equivalence claim.}
+\label{tab:legacy_classical}
+\begin{tabular}{llcc}
+\toprule
+Data & Map & KTA before/after & Accuracy\\
+Moons & Classical & .2892/.3974 & $90.63\pm6.75$\\
+      & PQK       & .3076/.3335 & $91.25\pm5.47$\\
+Wine  & Classical & .2212/.3497 & $91.35\pm3.65$\\
+      & PQK       & .3175/.4076 & $93.46\pm2.60$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Matched embedding placement}
+The second control changes only the order of the same gate multiset.
+Let D denote a data block and P a parameter block. Chronologically,
+the Type II circuit is D-D-P-P-D and the interleaved Type III circuit
+is D-P-D-P-D. Both use five qubits, three identical data blocks,
+two identical parameter blocks and 20 trainable parameters. Logical
+block depth is matched before compilation; equal physical compiled
+cost is not assumed. These are fidelity kernels, not the preceding
+projected kernels.
+
+The datasets and train-only scaling follow the preceding protocol.
+The ten trials pair initial parameters, split and minibatch order.
+Training uses 30 KTA steps, learning rate 0.2, batch size 16 and
+central finite differences of step $10^{-4}$. Nonzero gradients occur
+in both structures (Table~\ref{tab:legacy_order}); interleaving does
+not produce a universal accuracy ordering. The results do not assert
+that every Type II or Type III circuit is trainable, nor that a
+state-QFI rank has been recovered.
+
+\begin{table}[tb]
+\caption{Archived embedding-placement control, ten paired trials.
+Initial gradient norm and post-training KTA are means. Accuracy is
+mean $\pm$ sample SD in percent. Equal means do not establish equal
+predictions, statistical equivalence, or equality on other tasks.}
+\label{tab:legacy_order}
+\begin{tabular}{llccc}
+\toprule
+Data & Order & $\|\nabla_\theta\mathrm{KTA}\|$ & KTA & Accuracy\\
+Moons & II  & .0589 & .3544 & $94.69\pm3.62$\\
+      & III & .0561 & .3455 & $94.69\pm3.62$\\
+Wine  & II  & .1253 & .3950 & $94.04\pm3.20$\\
+      & III & .1086 & .3878 & $94.04\pm3.68$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Terminal-heavy fidelity candidate reuse}
+An earlier fixed candidate set varies the input-independent output
+block in $U_\theta(x)=W_\theta E(x)$ across 36 circuits. The fidelity
+overlap cancels $W_\theta$, so an embedding-specific key permits reuse
+within four conservative groups. Four keys do not prove four minimal
+inequivalent kernels: further equivalences between embeddings are
+not excluded. This is a static candidate-set audit, not a test of
+adaptive search with later data gates.
+
+The saved replay has 1,692 candidate--category records (36 candidates
+in 47 categories), each with four support and twenty query inputs.
+Evaluating one representative per key avoids 32 of 36 candidate
+evaluations, or 88.9\%. The unbatched support--query entry schedule
+changes from 135,360 to 15,040 pair tasks. The maximum recorded
+kernel discrepancy is $6.00\times10^{-15}$, and all recorded
+stabilized AUROCs agree within a group. The algebraic suffix identity
+justifies equality; the finite replay only checks this implementation.
+Multiplying those task counts by an assumed shot count would be a
+workload model, not measured shot savings or equal-precision evidence.
+
+The associated safe reuse procedure is to identify an exactly
+certified common suffix, construct a key including the residual
+embedding, preprocessing and kernel specification, and cache only
+the current candidate's evaluations. Any subsequent data-dependent
+extension must be re-certified. A state-QFI computation is neither
+required for suffix cancellation nor a substitute for this
+kernel-equivalence check. Because an ordinary suffix baseline already
+finds this reduction, it is not incremental evidence for the new
+internal certificate or a contradiction of the later zero-increment
+PQK resource surveys.
+
+\subsection{Hardware provenance and mitigation scope}
+The archived hardware CSV has 141 rows (47 categories at 2, 4 and
+8 qubits) and reports a mean eight-qubit support--query correlation
+near 0.125. This is not a mitigated result. In the inspected export,
+the backend field is redacted and matching raw counts, calibration
+records and job identifiers have not been established. The inspected
+legacy script constructs compute--uncompute fidelity circuits for
+support--support entries; it does not by itself establish the
+provenance of all support--query values in the CSV. We therefore do
+not use that summary as a verified hardware resource endpoint here.
+
+Measurement mitigation such as M3~\cite{m3} or Twirled Readout Error
+eXtinction (TREX)~\cite{ibmtrex} could be assessed in a separately
+specified experiment. TREX targets expectation-value readout errors
+through measurement twirling and calibration; applying it to a
+projected-feature experiment is not the same experiment as correcting
+compute--uncompute counts. Neither method establishes recovery from
+all gate and decoherence errors. Calibration effort and estimator
+variance must be included, and improvement in kernel accuracy or
+downstream classification must be measured rather than assumed.

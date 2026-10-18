@@ -1,0 +1,11 @@
+test_checker_signs_exhaustive (test_normalizer.NormalizerTests) ... ok
+test_checker_tamper_rejected (test_normalizer.NormalizerTests) ... ok
+test_h_y_sign (test_normalizer.NormalizerTests) ... ok
+test_nonadjacent_merge (test_normalizer.NormalizerTests) ... ok
+test_noncommuting_barrier (test_normalizer.NormalizerTests) ... ok
+test_random_signed_unitaries (test_normalizer.NormalizerTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.660s
+
+OK

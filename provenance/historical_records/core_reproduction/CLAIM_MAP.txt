@@ -1,0 +1,102 @@
+CLAIM-TO-ARTIFACT MAP (manuscript reference tables)
+============================================
+Paths beginning JE below mean core/journal_extension/ inside the package.
+All generated artifacts are in a run's work/ mirror unless stated otherwise.
+
+1. Finite fixed-basis coefficient-Gram theorem and gauge classification
+Text: fourier_gram.tex, gauge_classification.tex, gram_appendix.tex.
+Code: JE/fourier_gram_identifiability_v1/experiment/{fourier_gram.py,test_fourier_gram.py};
+      JE/manuscript_checks/check_extensions.py.
+Command: smoke (unit tests); audit (bounded analytic checks); full (30 settings).
+Scope: computational support, not machine-checked proof of the general theorem.
+The locality-preserving unitary classification is attributed prior work, not a
+new result of this package. Read all fixed-basis/exact-subclass assumptions.
+
+2. The first 24-setting census, including ChebyshevRx r=4 and ParamZ exceptions
+Text: dimension_results.tex and dimension_theory.tex.
+Code: JE/certified_dimension_pilot_v1/.
+Frozen inputs: frozen_inputs/; immutable reference: results/pilot_20261001T161006_106481Z/.
+Command: audit replays stored exact identities and feasible interval minors;
+         full discovers them afresh then replays and source-checks them.
+Output: pilot_replay.json, pilot_source_check.json, census_54.csv.
+Scope: no floating-rank threshold is accepted as a lower-bound certificate.
+JE/manuscript_checks/verify_exact_claims.py additionally verifies the displayed
+ChebyshevRx closed-form r=4 algebraic minor and four global null directions
+(smoke/audit/full); its identity-to-source link is checked by the global run.
+
+3. Thirty additional settings and closure of all three Kyriienko intervals
+Text: extension_results.tex, fourier_gram.tex (Kyriienko subsection).
+Code: JE/fourier_gram_identifiability_v1/experiment/.
+Input: JE/certified_dimension_extension_v1/frozen_inputs/.
+Reference: core/reference_results/fourier_gram/20261002T044925Z/.
+Command: full; output: work/runs/<UTC>/fourier_gram/, core_comparison_verdict.json.
+Scope: the old bounded extension pass and its three open intervals are historical
+intermediates. The final 30-setting Gram result closes them; do not use the old
+intermediate summary as the final census. Structural/two-copy closure of a
+timed-out identity is not completion of the symbolic Gram expansion itself.
+The audit/full command also recomputes the strong-baseline optimizer and the
+zero incremental resource counts on all 30 frozen inputs (extension_resource_check.json).
+
+4. Nonlinear grouped Hubregtsen example, r=2 while four coordinates are active
+Text: extension_theory.tex, family_extension.tex.
+Code: JE/certified_dimension_extension_v1/nonlinear_hubregtsen.py;
+      check_nonlinear.py, source_core/.
+Command: audit or full.
+Output: nonlinear_exact.json, nonlinear_source_check.json.
+Scope: exact identities/minor plus 1,000 numerical source pairs and 100 gradient
+points. The concrete computation supports, but does not replace, the written
+all-size grouped-family proof. Not an extra inactive-gate/shot-saving result.
+
+5. Kyriienko scaling / endpoint exception / universal bound
+Text: family_extension.tex, kyriienko_scaling_appendix.tex.
+Code: JE/kyriienko_scaling_v1/kyriienko_scaling.py, test_kyriienko_scaling.py;
+      JE/manuscript_checks/check_n2_endpoint.py.
+Command: full; endpoint sanity checks also in smoke.
+Output: work/runs/<UTC>/kyriienko_scaling/, core_comparison_verdict.json.
+Scope: exact lower witnesses at n=2,4,6,8 only; universal upper bound is analytic.
+The representative n=2 endpoint check is not a new independent circuit family.
+The separate diagnostics command recomputes the direct-summand scan including
+the constant mode; this sampled-rank diagnostic is explicitly NOT a certificate.
+
+6. Zero extra fused-angle work after strong global normalization; 102-slot survey
+Text: global_results.tex, resource_details.tex, additional_scope.tex.
+Code: JE/global_pauli_reparameterization_v1/ and JE/cross_family_resource_v1/.
+Input: frozen source defaults, frozen_scope.json; original small archives in evidence/.
+Command: resources or full.
+Output: resource_survey/, global_normalization/, resource_comparison.json.
+Scope: deterministic ideal features, gradients, recorded rewrite checks and
+schedule counts. Not a hardware measurement or a fixed-precision shot bound.
+102 distinct settings are from 120 nominal slots, not 120 independent circuits.
+
+7. Earlier repeated simulator training/timing comparison
+Text: resource_details.tex, additional_scope.tex (full timing details).
+Code: JE/interior_incremental_v1/; immutable 15 preprocessed tasks and manifests.
+Data: WDBC, Ionosphere, Auto MPG; five splits each, 64 train + 64 test per task.
+Command: timing-smoke or explicitly timing-full (no fresh download required).
+Original evidence: OPTIONAL quantum_reviewer_timing_evidence_v1.zip (~268 MiB).
+Command: timing-archive --archive <path> reproduces paired summaries from that ZIP.
+Output: timing_reaggregation.json; raw fresh fits in the timing module's results/.
+Scope: supplied preprocessed arrays bypass original raw-data preprocessing.
+Historical CPU percentages depend on hardware, ordering and backend. Do not
+interpret them as speedup over the later global-normalization baseline.
+
+8. QFI distinction, legacy moons/Wine and 36->4 candidate reuse
+Text: geometry_scope.tex, legacy_controls.tex.
+Code: JE/manuscript_checks/review_checks.py and analysis/review_inputs/*.csv.
+Command: audit or full; output: analysis/review_checks.json in working copy.
+Scope: exact QFI counterexample + descriptive aggregation of archived CSVs;
+NO fresh legacy training, candidate kernel evaluation, or hardware execution.
+The 36->4 count is a conservative reuse key in a terminal-heavy search space,
+not a minimum-class proof or general adaptive QCAS acceleration.
+
+9. Historical vision/hardware results and early certificate/library validations
+Text: appendices.tex, legacy_controls.tex, resource_details.tex as applicable.
+Status: not separately reproduced by this release's one-command workflow.
+The newer resource survey checks source/kernel/gradient consistency but is not
+the identical earlier 1,440-row validation or 4,590-array library rerun.
+Raw industrial images, private embedding caches and QPU job access are omitted.
+These require a separately curated dataset/license-aware supplement or access
+arrangement if requested by the editor. No fresh hardware claim is made here.
+
+This map is a disclosure of coverage, not a claim that missing historical
+assets are reproduced by reading a summary or by re-running a newer experiment.

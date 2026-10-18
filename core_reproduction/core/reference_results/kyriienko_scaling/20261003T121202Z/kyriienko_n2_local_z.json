@@ -1,0 +1,706 @@
+{
+  "setting": "kyriienko_n2_local_z",
+  "family": "kyriienko_nonlinear_encoding_circuit",
+  "n": 2,
+  "readout": "local_z",
+  "K": 6,
+  "conjecture_3n_minus_2": 4,
+  "observables": 2,
+  "ir_sha256": "fd9a42d130df940eebfe05b24840c3db29eaf59402542a2848e08c2af3e12ed0",
+  "structure": {
+    "formula_equivalent": true,
+    "kappa": [
+      {
+        "qubit": 0,
+        "feature": [
+          0
+        ],
+        "kappa": 6
+      },
+      {
+        "qubit": 1,
+        "feature": [
+          1
+        ],
+        "kappa": 6
+      }
+    ],
+    "fixed_frequency": true,
+    "kyriform_euler_blocks": true,
+    "each_parameter_once": true,
+    "entangler": [
+      [
+        0,
+        1
+      ]
+    ],
+    "entangler_commutes_Z0": true,
+    "entangler_commutes_X_last": true,
+    "unit_weights": true,
+    "readout_words": 2
+  },
+  "certified_lower_bound": {
+    "value": 4,
+    "method": "nonzero exact minor of the d^2 Jacobian at an exact feasible point",
+    "theta_point": {
+      "u": [
+        "2/5",
+        "1/2",
+        "4/7",
+        "5/8",
+        "2/3",
+        "7/10"
+      ],
+      "attempt": 0,
+      "formula": "theta_k = 4*arctan(u_k) = 2*arctan(t_k), t_k = 2u_k/(1-u_k^2); exp(i theta_k/2) = (1+i u_k)^2/(1+u_k^2) is a Gaussian rational"
+    },
+    "input_points": [
+      {
+        "s": [
+          "1/2",
+          "5/3"
+        ],
+        "x": [
+          "3/5",
+          "-8/17"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "4/5",
+          "3/4"
+        ],
+        "x": [
+          "9/41",
+          "7/25"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "1/2",
+          "3"
+        ],
+        "x": [
+          "3/5",
+          "-4/5"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "4/3",
+          "1/3"
+        ],
+        "x": [
+          "-7/25",
+          "4/5"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "3",
+          "5/4"
+        ],
+        "x": [
+          "-4/5",
+          "-9/41"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "5/2",
+          "4"
+        ],
+        "x": [
+          "-21/29",
+          "-15/17"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "4",
+          "5/3"
+        ],
+        "x": [
+          "-15/17",
+          "-8/17"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "3/5",
+          "1/3"
+        ],
+        "x": [
+          "8/17",
+          "4/5"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "1/3",
+          "5/4"
+        ],
+        "x": [
+          "4/5",
+          "-9/41"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      },
+      {
+        "s": [
+          "4/5",
+          "5/2"
+        ],
+        "x": [
+          "9/41",
+          "-21/29"
+        ],
+        "formula": "x_b = cos(phi_b), phi_b = 2*arctan(s_b) in (0, pi); x_b = (1-s_b^2)/(1+s_b^2)"
+      }
+    ],
+    "pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        8,
+        9
+      ]
+    ],
+    "minor_rows_pair_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "minor_rows_pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "minor_columns_theta": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "excluded_columns_theta": [
+      2,
+      5
+    ],
+    "integer_minor_determinant": "-38157407824923318192151118202453788754534143879083527955904840533367082987803703447176248078349436306067786834343527589874178361231522102677073428898168104656339543218352268205338352401878175",
+    "integer_minor_digits": 191,
+    "row_scale_product": "60633787657476816851009891715113457700821279802713440256/1725107955882030462008070390330734474576965907579939338887897444647845806066661651101154442902207552835766506841531787136636576271802382094385832619186627068882750591758623414363977010315828093446234247861949262503600266427383758127689361572265625",
+    "rational_minor_determinant": "-4728971059367365199155951162547004705261184471729471003853164901888821653829621243692108704887586382053851663416180724022745699046549073776014997070112744558001480903483997399981396122927104/3526057352664561936875404479025984283073483947973713819229122628671788422675693839679494827698008590180953809911135325878007081838688303038144541468913717441324706669547595083713531494140625",
+    "rational_minor_log10_abs": 0.12747728421712168,
+    "sympy_domainmatrix_det_equal": true,
+    "residues": {
+      "2305843009213693951": {
+        "det_mod_p": 591332780764004384,
+        "bareiss_mod_p": 591332780764004384
+      },
+      "4611686018427387847": {
+        "det_mod_p": 4073353562957162740,
+        "bareiss_mod_p": 4073353562957162740
+      },
+      "9223372036854775783": {
+        "det_mod_p": 3542896479303699004,
+        "bareiss_mod_p": 3542896479303699004
+      }
+    },
+    "selection": "row echelon modulo p=2^61-1 (exact integer arithmetic); determinant exact (Bareiss) and re-checked",
+    "jacobian_file": "kyriienko_n2_local_z_jacobian.json.gz",
+    "jacobian_payload_sha256": "bb6b1adc4f8a00d30cd3539b145f9cf67add9584b66318541f977abaa6f17eb2",
+    "attempts": [
+      {
+        "theta_attempt": 0,
+        "points": 10,
+        "pairs": 45,
+        "rank_mod_p": 4,
+        "field_upper": 4,
+        "exact_state_seconds": 0.0,
+        "rows_seconds": 0.0009841670000001468,
+        "selection_seconds": 0.00018920799999988525
+      }
+    ]
+  },
+  "upper_bound": {
+    "value": 4,
+    "machine_certificate": {
+      "deleted_coordinates": [
+        {
+          "parameter": 5,
+          "gate_index": 7,
+          "generator": "IZ",
+          "output_generator": "ZZ"
+        },
+        {
+          "parameter": 2,
+          "gate_index": 3,
+          "generator": "ZI",
+          "output_generator": "ZI"
+        }
+      ],
+      "virtual_fields": [],
+      "family_rank_at_theta_star": 2,
+      "upper": 4,
+      "exact_null_vectors_at_theta_star": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "seconds": 0.002498499999999959,
+      "logic": "Each deleted angle is globally inactive (transported generator P with [Omega,P(x)I+I(x)P]=0, exact Pauli algebra). Each virtual field v(theta) obeys J(theta)v(theta)=0 for all theta (SymPy Euler identity + exact two-copy invariance of the transported inserted generator). Family rank m at theta* is <= its generic rank, so generic r <= K-m (analyticity)."
+    },
+    "manuscript_value": null,
+    "manuscript_reference": "none in the manuscript for local Z at this size; upper bound is the machine certificate (exact deletion of the n trailing Rz angles, whose output generators are Z strings commuting with every Z readout)"
+  },
+  "certified_r": 4,
+  "status": "CERTIFIED_EQUAL",
+  "interval": [
+    4,
+    4
+  ],
+  "exact_consistency_at_theta_star": {
+    "null_vectors_annihilate_all_rows": [
+      true,
+      true
+    ],
+    "exact_rank_at_theta_star": 4,
+    "note": "one-point consistency (rank at theta* equals the certified generic value), not an extra proof"
+  },
+  "cross_checks": {
+    "features_exact_vs_float_ir_engine_max_abs": 1.887379141862766e-15,
+    "features_exact_vs_dense_source_statevector_max_abs": 2.220446049250313e-16,
+    "features_exact_vs_qiskit_source_statevector_max_abs": 2.220446049250313e-16,
+    "gradient_exact_vs_float_tangent_max_abs": 3.400058012914542e-16,
+    "exact_d2_first_pairs": [
+      "2131186344714598170067638344015786813882840896239414352643021805735017796/620695913320271403914312612040653708703874767585557736456394195556640625",
+      "56438482756303129059171073419005763879408859904861184/27508860777190931404506086129808463156223297119140625"
+    ]
+  },
+  "numerical_not_certified": {
+    "certified": false,
+    "label": "NOT a certificate (floating SVD / random-point residuals)",
+    "tolerance_relative": 1e-09,
+    "trials": [
+      {
+        "seed": 11,
+        "pairs": 60,
+        "rank": 4,
+        "sigma_max": 9.256167292544836,
+        "reference_scale": 9.256167292544836,
+        "sigma_r_rel": 3.90593968578211e-05,
+        "sigma_r1_rel": 1.1996293022073334e-17,
+        "singular_values_rel": [
+          1.0,
+          0.6654550725023392,
+          0.4180117314278937,
+          3.90593968578211e-05,
+          1.1996293022073334e-17,
+          0.0
+        ],
+        "gauge_fields": [
+          {
+            "field": [
+              "deleted",
+              "5"
+            ],
+            "relative_residual": 0.0,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 0.37046312885212507
+          },
+          {
+            "field": [
+              "deleted",
+              "2"
+            ],
+            "relative_residual": 0.0,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 0.5553834405923418
+          }
+        ]
+      },
+      {
+        "seed": 12,
+        "pairs": 60,
+        "rank": 4,
+        "sigma_max": 17.702500463300066,
+        "reference_scale": 17.702500463300066,
+        "sigma_r_rel": 0.0006252169052121814,
+        "sigma_r1_rel": 1.6174467482306398e-17,
+        "singular_values_rel": [
+          1.0,
+          0.47877565250084836,
+          0.19760564951902504,
+          0.0006252169052121814,
+          1.6174467482306398e-17,
+          0.0
+        ],
+        "gauge_fields": [
+          {
+            "field": [
+              "deleted",
+              "5"
+            ],
+            "relative_residual": 0.0,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 0.30063671459031277
+          },
+          {
+            "field": [
+              "deleted",
+              "2"
+            ],
+            "relative_residual": 0.0,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 0.6276962357480244
+          }
+        ]
+      },
+      {
+        "seed": 13,
+        "pairs": 60,
+        "rank": 4,
+        "sigma_max": 15.338199852681031,
+        "reference_scale": 15.338199852681031,
+        "sigma_r_rel": 0.007042578938886637,
+        "sigma_r1_rel": 5.913721452959784e-18,
+        "singular_values_rel": [
+          1.0,
+          0.7072155655226576,
+          0.41623845108489865,
+          0.007042578938886637,
+          5.913721452959784e-18,
+          0.0
+        ],
+        "gauge_fields": [
+          {
+            "field": [
+              "deleted",
+              "5"
+            ],
+            "relative_residual": 0.0,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 0.24566273530856622
+          },
+          {
+            "field": [
+              "deleted",
+              "2"
+            ],
+            "relative_residual": 0.0,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 0.5372052171796261
+          }
+        ]
+      },
+      {
+        "seed": 14,
+        "pairs": 60,
+        "rank": 4,
+        "sigma_max": 15.672384458715515,
+        "reference_scale": 15.672384458715515,
+        "sigma_r_rel": 0.15262326297027876,
+        "sigma_r1_rel": 2.291680755781375e-18,
+        "singular_values_rel": [
+          1.0,
+          0.5666420877519435,
+          0.33810036863010023,
+          0.15262326297027876,
+          2.291680755781375e-18,
+          0.0
+        ],
+        "gauge_fields": [
+          {
+            "field": [
+              "deleted",
+              "5"
+            ],
+            "relative_residual": 0.0,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 0.19773266229803438
+          },
+          {
+            "field": [
+              "deleted",
+              "2"
+            ],
+            "relative_residual": 0.0,
+            "control": "e_k + e_(k-1)",
+            "control_relative_residual": 0.5751233217146138
+          }
+        ]
+      }
+    ],
+    "rank": 4,
+    "min_rank": 4,
+    "max_gauge_relative_residual": 0.0,
+    "min_control_relative_residual": 0.19773266229803438,
+    "note": "relative residual ||J v|| / (max(||J||_F, max d^2) ||v||); controls are perturbed fields that should NOT be null (they are null only when J itself vanishes)"
+  },
+  "timings_seconds": {
+    "structure_checks": 0.003982000000000152,
+    "upper_bound_certificate": 0.0024996250000000053,
+    "exact_states_total_cache": 0.004607666000000288,
+    "bareiss_det": 1.2125000000029473e-05,
+    "sympy_det": 3.5832999999874104e-05,
+    "exact_null_vector_check": 0.000265874999999971,
+    "cross_checks": 0.0034941250000000146,
+    "numerical_checks": 0.0028428750000000225,
+    "total": 0.015798957999999974
+  },
+  "peak_rss_mb_process": 121.3125,
+  "timing_note": "exact states/features are computed once per n for the union (weight<=2) readout and cached; exact_states_total_cache is cumulative and is charged to the first readout processed at that n",
+  "source_route": {
+    "module": "kyriienko_nonlinear_encoding_circuit",
+    "entry": {
+      "module": "kyriienko_nonlinear_encoding_circuit",
+      "class": "KyriienkoEncodingCircuit",
+      "path": "vendor/src/squlearn/encoding_circuit/circuit_library/kyriienko_nonlinear_encoding_circuit.py",
+      "class_line": 13,
+      "constructor_line": 68,
+      "has_layers": false,
+      "configuration_required": null
+    },
+    "constructor_kwargs": {
+      "num_qubits": 2
+    },
+    "signature": "(self, num_qubits: int, num_features: int = None, encoding_style: str = 'chebyshev_tower', variational_arrangement: str = 'HEA', num_encoding_layers: int = 1, num_variational_layers: int = 1, rotation_gate: str = 'ry', block_width: int = 2, block_depth: int = 1) -> None",
+    "get_params": "{'num_qubits': 2, 'num_features': None, 'num_encoding_layers': 1, 'num_variational_layers': 1, 'variational_arrangement': 'HEA', 'encoding_style': 'chebyshev_tower', 'block_width': 2, 'block_depth': 1, 'rotation_gate': 'ry'}",
+    "initial_parameters": "generate_initial_parameters(num_features=2, seed=0)",
+    "vendored_commit": "0f6cb0982fdbe80dcd0ea6cb0acd68c59e362de4",
+    "qiskit": "1.2.4",
+    "compile": {
+      "optimization_level": 3,
+      "seed_transpiler": 71,
+      "approximation_degree": 1.0,
+      "num_processes": 1,
+      "basis_gates": [
+        "h",
+        "cx",
+        "rx",
+        "ry",
+        "rz",
+        "rxx",
+        "ryy",
+        "rzz",
+        "rzx"
+      ]
+    },
+    "native_operations": 11,
+    "global_phase_ignored": "0.0",
+    "seconds": {
+      "construct": 0.014682000000000084,
+      "transpile": 0.007413874999999903,
+      "adapt": 0.0038013750000001068
+    }
+  }
+}

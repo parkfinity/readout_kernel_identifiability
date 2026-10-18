@@ -1,0 +1,17 @@
+[RUN] pilot_tests
+[PASS] pilot_tests 0.2s
+[RUN] extension_tests
+[PASS] extension_tests 0.4s
+[RUN] gram_tests
+[PASS] gram_tests 1.1s
+[RUN] scaling_tests
+[PASS] scaling_tests 1.8s
+[RUN] normalizer_tests
+[PASS] normalizer_tests 0.7s
+[RUN] survey_tests
+[PASS] survey_tests 0.3s
+[RUN] endpoint_exact_minor
+[PASS] endpoint_exact_minor 0.0s
+[RUN] representative_exact_r4
+[PASS] representative_exact_r4 0.3s
+PASS — results: /workspace/journal_extension/quantum_submission_update_20261007/github/readout-kernel-identifiability/runs/smoke_20261007T113723_866817Z/core_output/smoke_20261007T113723_954825Z

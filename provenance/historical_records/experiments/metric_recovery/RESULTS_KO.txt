@@ -1,0 +1,134 @@
+식별 가능성 복원 설계 실험: 1차 결과 (2026-10-04)
+
+결론
+추가 측정 없이 metric을 바꿔 커널 식별성을 복원하는 사례를 확보했다.
+동시에 metric만으로는 복원할 수 없는 상한을 정확히 보였고, 같은 측정
+basis의 joint bit strings에서 상관관계를 추가해 그 상한을 넘는 사례도
+확보했다. 다만 복잡한 rank 기반 선택 알고리즘의 우월성은 입증되지 않았다.
+
+1. 무엇을 실행했는가
+기존 frozen IR의 YZ-CX, Hubregtsen, Kyriienko 세 계열, 10개 회로,
+local Z / local XYZ / weight<=2 readout의 30개 설정을 모두 조사했다.
+2/4큐비트, 기존 inventory의 1/2층 설정을 그대로 사용했다.
+입력은 (-0.95,0.95)^2의 합성 연속값이며, 원래 회로의 raw/arccos 인코딩을
+적용했다. 분류 label, 이상 탐지 데이터나 새 성능 지표를 사용하지 않았다.
+설계용 theta 3개, 검증용 theta 5개와 입력을 분리했다. 각 theta에 96쌍.
+모든 metric은 trace=1, 양의 정부호이며 condition number는 4 이하다.
+
+2. 고정 readout에서 metric 변경
+30개 중 고정된 단순 비등방성 대각 metric으로 16개에서 수치 rank가 증가했다.
+일반 SPD metric은 17개에서 증가했다. 5개 검증 theta 및 세 rank tolerance에서
+주 비교의 rank가 모두 일치했다. 이 30개 수치는 우선 수치 진단이다.
+
+local XYZ의 고정 대각 metric에 대해서는 10개 회로 전부 generic rank=K를
+정확히 인증했다. 서로 다른 두 소수에서 0이 아닌 Fourier-Gram minor와
+보편적 상한 K를 결합했다. 아래 새 rank는 numerical-only가 아니다.
+
+계열 / n / 층                기존 등방 rank    새 고정대각 rank (=K)
+Hubregtsen / 2 / 1                  0                 2
+Hubregtsen / 2 / 2                  2                 4
+Hubregtsen / 4 / 1                  8                 8
+Hubregtsen / 4 / 2                 16                16
+Kyriienko / 2 / 1                   4                 6
+Kyriienko / 4 / 1                  10                12
+YZ-CX / 2 / 1                       3                 4
+YZ-CX / 2 / 2                       7                 8
+YZ-CX / 4 / 1                       6                 8
+YZ-CX / 4 / 2                      14                16
+
+기존 등방 rank는 원고의 기존 인증값과 재실행 수치가 일치한다.
+generic rank는 모든 theta에서의 rank를 뜻하지 않는다. 특이점은 있을 수 있다.
+추가 측정 basis가 필요 없다는 뜻이지, 같은 정확도의 shot 수가 같거나
+줄어든다는 뜻은 아니다. 커널 자체를 바꾸므로 동치 보존 컴파일과도 다르다.
+
+3. 가장 의미 있는 설명 사례: Hubregtsen 4q1L local Z
+f_q(x)=-sin(theta_q) cos(x_{q mod 2}), q=0,...,3를 frozen IR의
+정확한 Fourier 전개와 직접 대조했다. 마지막 4개 파라미터는 Z readout에
+영향을 주지 않는다. 현재 4개 Z feature의 centered-feature rank는 4다.
+
+변경                              generic kernel rank    측정 basis 수
+4개 local Z, 등방/양의 대각 metric          2                    1
+같은 4개 Z, 선택한 dense SPD metric         3                    1
+4개 Z + 6개 ZZ 상관관계, 고정 대각 metric   4                    1
+
+local Z의 어떤 고정 dense metric으로도 rank>3은 불가능하다.
+비상수 데이터 기저가 cos(x0), cos(x1) 두 개라서 대칭 Gram 행렬의
+독립 원소가 3개뿐이기 때문이다. 특정 유리수 SPD metric에서 0이 아닌
+3x3 유리수 minor를 얻어 3이 달성 가능함을 확인했다.
+행렬 M=(32 I+u u^T)/158, u=(1,2,3,4)^T, trace M=1.
+하한 minor = -835727837184/978271035584375 !=0.
+
+반면 Zq Zr 상관관계 6개를 더하면 rank=4가 된다. 두 소수의 비영 minor와
+정확한 feature 전개에서 theta4,...,theta7이 없는 상한 4를 결합했다.
+이는 이미 ZZZZ basis로 얻은 joint bit strings에서 계산할 수 있다.
+단, marginal 평균 네 개만 저장했다면 ZZ 평균을 사후 복원할 수 없다.
+분산/목표오차별 shot 효율은 이 결과에서 따라오지 않는다.
+
+따라서 'metric 변경으로 복원 가능 / 현재 feature만으로는 불가능 /
+추가 상관 feature로 복원 가능'이라는 세 단계가 한 회로에서 구분된다.
+같은 rank의 대각 metric끼리도 nullspace 방향은 달라질 수 있다.
+rank가 2로 유지된다는 말을 '어떤 방향도 바뀌지 않는다'로 해석하면 안 된다.
+Z와 ZZ만으로 나머지 source 파라미터 4개까지 복원된다는 주장도 하지 않는다.
+
+4. readout 설계와 강한 기준선
+weight<=2 Pauli bank에서 product basis 1/2/3개를 선택했다.
+같은 bit string의 모든 호환 parity를 재사용했고, observable 하나를
+측정 설정 하나로 잘못 세지 않았다. rank/conditioning greedy의 단일
+basis 설계는 10/10 회로에서 generic rank=K를 정확 인증했다.
+
+하지만 강한 기준선도 성공한다. all-X는 8/10, all-Y도 8/10에서
+검증 rank=K이며, 세 uniform basis 중 최선은 10/10이다.
+따라서 현재 inventory에서는 81개 basis를 탐색하는 복잡한 설계가
+X/Y/Z 세 후보만 검사하는 방법보다 rank가 좋다는 증거가 없다.
+단순 최대 feature variance 기준선의 성공은 3/10이었다.
+16개 무작위 단일 basis 중 full-rank 성공 수는 회로별 2/16~13/16이었다.
+이 설정/seed들은 독립적인 데이터셋 발견의 수가 아니다.
+선택 알고리즘은 전역 최적/새 SOTA라고 쓰지 않는다.
+
+5. 유한-shot 검증
+YZ-CX 2q1L local XYZ, Kyriienko 2q1L local XYZ,
+Hubregtsen 4q1L local Z를 미리 선택했다.
+이상적 joint 측정 샘플링 128회, theta의 국소 방향으로 총 0.1 rad 변화,
+16개 입력 쌍을 사용했다. basis별 covariance를 유지했고 독립 반쪽 샘플의
+bilinear estimator로 거리 제곱의 plug-in bias를 피했다.
+요청 shots/input/state=256,1024,4096. 세 basis의 실제 4096 요청은 4092
+shots, Z 한 basis는 4096 shots를 사용한다. 총 비용은 모든 입력과 양쪽
+파라미터 상태를 포함해 회당 64배이며, 단순히 4096 shots짜리 실험이 아니다.
+
+4096 요청에서 selected metric의 단일 반복 signal/SD:
+YZ-CX 0.370, Kyriienko 0.957, Hubregtsen 0.874.
+rank가 복원되어도 강한 식별 신호가 보장되지 않았다. 이것은 실제 장비
+결과도, hypothesis-test power도, 예측 정확도 결과도 아니다.
+추가 baseline별 결과는 strong_baseline_followup/finite_shot_baselines.json.
+방향과 contrast는 selected metric에서 정한 국소 진단이므로 이를
+그 metric의 보편적 통계 효율 우월성으로 해석하면 안 된다.
+
+6. 검증 상태
+8개 단위 테스트 통과: 독립 dense simulator, analytic gradient,
+측정 basis, 공동 outcome covariance, unbiased distance 등.
+전체 설정의 feature 최대 오차 2.22e-16, finite-difference gradient 최대
+오차 5.70e-11. 두 local Python 환경에서 재실행했다
+(NumPy 1.24.4, SymPy 1.14.0 및 1.13.3).
+10개 metric + 10개 basis의 40개 modular minor를 별도의 SymPy 정수
+행렬식 계산으로 재검사했다. 세 계열의 2q1L metric 사례는 완전 유리수
+minor도 재구성했다. 형식 증명기/독립 연구자의 검증을 뜻하지는 않는다.
+Linux 서버 재현은 아직 하지 않았다.
+
+7. 원고에 사용할 방향과 아직 하지 않은 일
+유망한 기여: '커널 식별성 손실을 언제 metric으로, 언제 feature 보강으로
+복원할 수 있는지, 그리고 무엇은 한 고정 metric으로 불가능한지'.
+아직 지지되지 않는 기여: 새로운 복잡한 선택 알고리즘의 우월성,
+정확도 개선, 유한-shot 효율/하드웨어 우위, 일반적 QCAS 가속.
+관측량 학습/metric learning 자체는 기존 연구가 있다.
+https://arxiv.org/abs/2501.05663
+https://arxiv.org/abs/2211.05225
+
+다음 우선순위:
+(a) THEORY_SCOPE.txt의 조건과 예외를 독립적으로 증명 검토.
+(b) 같은 shot 예산에서 최약 방향의 신호/분산을 목표로 한 설계와
+    단순 anisotropy/X/Y/Z 기준선을 비교. rank만으로 선택하지 않을 것.
+(c) 그 다음 고정된 label task에서 supervised metric-learning 기준선과
+    일반화 성능을 검증. 이번 파일럿에는 이 실험이 포함되지 않았다.
+확인된 정확 결과는 진단의 설계 함의로 본문에 추가할 수 있지만,
+주 기여를 새 알고리즘으로 바꾸기에는 아직 근거가 부족하다.
+실험 결과와 해석 범위는 위 항목에 정리했다.

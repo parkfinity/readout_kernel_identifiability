@@ -1,0 +1,8 @@
+[
+  {
+    "stage": "sampled_direct_summand_diagnostic",
+    "exit_code": 0,
+    "elapsed_seconds": 0.237943542,
+    "log": "logs/sampled_direct_summand_diagnostic.log"
+  }
+]

@@ -1,0 +1,26 @@
+Classical product-feature estimator control, v1
+
+Scope fixed before execution: the three frozen Hubregtsen panels from shot v2,
+all five held-out points, four frozen target directions, all six previously
+selected metric arms, and budgets 256/1024/4096/16384. Use 256 replicates.
+Do not select new metrics, points, directions, or contrasts using outcomes.
+Keep the original direct-parity oracle contrast for both estimators.
+
+Compare direct Z/ZZ parity means with products of local-Z sample means,
+computed from the SAME two independent halves of joint ZZZZ outcomes.
+The original local-Z dense-metric ceiling remains rank three; the two
+lifted estimators have the same ideal rank-four representation and metric.
+
+The frozen family has product computational-basis probabilities, despite
+its diagonal entangling tail. Under this assumption both estimators are
+unbiased, and products of sample means have exact covariance obtained
+from independent one-qubit sample means. Check the assumption directly
+against dense-state probabilities at every tested displaced state.
+Compare exact contrast variances, Monte Carlo variance calibration, and
+paired error. Verify direct-parity samples against the existing Linux v2
+archive. Report ratios by panel, not thousands of independent discoveries.
+
+This is a additional, local follow-up, not a preregistered experiment,
+new hardware run, or independent server reproduction of the product arm.
+The product estimator is not valid for general correlated Z distributions.
+No classification, general quantum advantage, or reduced-shot claim.

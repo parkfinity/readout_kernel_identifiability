@@ -1,0 +1,6 @@
+{
+  "python": "3.9.6",
+  "numpy": "1.24.4",
+  "sympy": "1.13.3",
+  "platform": "macOS-26.7-arm64-arm-64bit"
+}

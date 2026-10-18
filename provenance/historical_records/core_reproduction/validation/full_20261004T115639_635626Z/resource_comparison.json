@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "distinct_survey_slots": 102,
+  "nominal_slots": 120,
+  "global_settings": 12,
+  "incremental_resource_positive_slots": [],
+  "scope": "Fresh ideal-simulator validation and schedule counts, not QPU/shots or timing advantage."
+}

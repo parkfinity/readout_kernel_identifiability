@@ -1,0 +1,23 @@
+{
+  "plan.json": "87cc8f6fd5447b2bc46995ebf7170d83d1fcc0e12c0b863a9aad8c26724831b7",
+  "MANUSCRIPT_UPDATE_PLAN_KO.txt": "aaf4209c501cdcf7b732fcc2e40c7105c624effeba4c97d4dfd4c9a3d5449402",
+  "experiment.py": "28bcd91e5de5674a424756040c395efb0ffa9566c547b3d50439d6af524fd25b",
+  "LOCAL_QA.json": "4631a4dc413b12a6e31b0ff8f00455bee4a562d13ffa57c601482052c98fbc92",
+  "README_KO.txt": "324dc6ce985c0a5afa447c31540f840c9db62e6da4a7182dfb1fb0655566875a",
+  "PROTOCOL.txt": "fef1d432117ae305ba5658612ffd5a2e3e560bce896271933bb4dd7ddda9f67b",
+  "prepare.py": "ee7271e08d6dc9644fb0cb13ac5e830debd2ee56c639549d6ba80a8b5aec7eda",
+  "core.py": "7ea8bc92cb7abd759cee856cf91f283eb4fb037e6da248b08794ffb770ca9d1d",
+  "analyze.py": "6e6438148c32e1632f69085d0ba057a7c0fe128c7e0f3576debad1e1cb5cb78d",
+  "package.py": "fa4148ba6f74e9442629567986c7695861e821837cf7a7ba0368d3e586580c94",
+  "requirements_py38.txt": "b3eeb84b1770b5a7eea38facc60a2ccb5e7bfa948938919b1baec8b545cf645f",
+  "PACKAGE_MANIFEST.json": "e09f76887a62379d87ca1d4d4b2da7201abd933f6aec7cad5be2ebbdfba299ef",
+  "test_shots.py": "923010d77cb556e1ac8f247b3d1e73146c12082ad03a938b675253a21a9c3001",
+  "FROZEN_MANIFEST.json": "a040d8105f55b160ad422b1b00476e30c629e9200f8a601629870d21758626cf",
+  "run.sh": "dd8548fdefea34d8f865b24ccac27696edd1e83345c8c9dbdb23eb98f16e2bda",
+  "legacy_design.py": "1ba3817a36470d7b1b4a9d2ab2d0e5a5b4531fac93cfa4c92e5d64f0ef1acd42",
+  "frozen_inputs/kyriienko_nonlinear_encoding_circuit_n2_l1_local_xyz.json": "bb94df413d984e45c826763dcf08f7933920923c2f57780706a8cc7e597477d1",
+  "frozen_inputs/yz_cx_encoding_circuit_n2_l1_local_xyz.json": "3eff723027d1e17f5631a4dc1597fde21886e77d0226dbba199718a2a2b926a8",
+  "frozen_inputs/hubregtsen_encoding_circuit_n4_l1_local_z.json": "4bf5c7cb70a970332c1824bcb5444656e7b219dbb757833f588e6d6409f9c735",
+  "vendor/fourier_gram.py": "d457d17fa016c497ff161673cb9baf68b5c114ab243491b4dd7e40497a50e9fc",
+  "vendor/copied_from_extension_v1/exact_engine.py": "01d52e292e472b98d9e3616a95168d6f40125603de6312a272e9e1bf2cee85bf"
+}

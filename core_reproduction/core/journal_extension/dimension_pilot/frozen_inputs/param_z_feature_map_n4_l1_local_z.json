@@ -1,0 +1,98 @@
+{
+  "n": 4,
+  "count": 4,
+  "program": [
+    {
+      "op": "H",
+      "wires": [
+        0
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "ZIII",
+      "terms": [
+        [
+          1.0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "op": "H",
+      "wires": [
+        1
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IZII",
+      "terms": [
+        [
+          1.0,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "op": "H",
+      "wires": [
+        2
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIZI",
+      "terms": [
+        [
+          1.0,
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "op": "H",
+      "wires": [
+        3
+      ]
+    },
+    {
+      "op": "R",
+      "pauli": "IIIZ",
+      "terms": [
+        [
+          1.0,
+          3,
+          3
+        ]
+      ]
+    }
+  ],
+  "ids": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "data_expressions": [
+    "a0",
+    "a1",
+    "a0",
+    "a1"
+  ],
+  "observables": [
+    "ZIII",
+    "IZII",
+    "IIZI",
+    "IIIZ"
+  ],
+  "weights": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ]
+}

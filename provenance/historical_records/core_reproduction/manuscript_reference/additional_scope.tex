@@ -1,0 +1,45 @@
+\section{Additional optimizer, search, and prediction scope}
+\label{app:additional_scope}
+The internal transport algorithm is incomplete. For example, the chronological circuit
+$R_x(a),R_y(b),R_y(-b),R_x(-a)$ is identically the identity, but the
+restricted transport rules with $Z$ readout certify neither symbol.
+An ordinary inverse-cancellation compiler can resolve it. Kernel-aware
+certification supplements rather than replaces conventional compilation.
+
+Nor does current equivalence license pruning all search descendants.
+Preparing $R_y(x)|0\rangle$ followed by $R_z(t)$ leaves the current
+$Z$ feature independent of $t$. Appending $R_y(x)$ changes that feature
+to $\cos^2x-\sin^2x\cos t$. Candidate extensions require
+re-certification or a separate preservation theorem. We do not claim
+general adaptive-search acceleration.
+
+Trainable circuit angles also do not constitute the entire fitted
+predictor. A kernel SVM generally uses
+$h(x)=\sum_{i\in\mathrm{SV}}a_i k_\theta(x_i,x)+b$ and must retain
+coefficients and reference inputs or their usable feature
+representations. Our vision scorer instead uses
+$a(x)=1-n_s^{-1}\sum_i k_\theta(s_i,x)$ over normal support examples;
+it likewise requires those references. Caching projected features
+uses $n_s m$ feature values in addition to the angles, kernel settings
+and preprocessing. For four supports and 24 features, that is 96
+reference-feature values, not a predictor specified by 48 angles
+alone. A classical Gaussian kernel can use the same prototype scorer;
+it is not intrinsically tied to a support-vector classifier.
+Any memory comparison must separate trainable parameters, stored
+references, preprocessing and inference work for matched learners.
+
+Finally, ideal-expectation equality does not guarantee equal noisy
+circuits or finite-shot kernel estimators. The source-derived examples
+are small and purposefully selected. They do not establish a generic
+prevalence rate, quantum advantage, lower hardware shot counts, or
+better predictive performance. Kernel-alignment subsampling addresses
+cost through a different strategy \cite{sahin2024subsampling}; the
+present timings are not a head-to-head superiority result.
+
+The preservation contract permits a compiler to target the specified
+kernel rather than every state or feature distinction. The supported
+internal rule has one demonstrated circuit family beyond the fused
+boundary baseline. Additional circuit sizes are not independent
+families. The analysis establishes where work is removed in the tested
+implementations and where it is not; it does not establish broad runtime
+or hardware savings.
