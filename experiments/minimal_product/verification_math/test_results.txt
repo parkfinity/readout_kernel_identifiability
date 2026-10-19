@@ -1,0 +1,33 @@
+Independent one-product verification, 2026-10-19
+
+Command (from workspace root):
+python3 -m unittest discover -s journal_extension/quantum_recovery_revision_20261019/verification_math -v
+
+Result: 17 tests passed, 0 failures, 0 errors.
+Recorded execution: Ran 17 tests in 0.338s; OK.
+Environment: Python 3 with SymPy 1.14.0.
+All rank and determinant calculations use exact symbolic, rational, or
+algebraic arithmetic. No numerical rank tolerance enters the certificates.
+
+Coverage:
+  - fixed metric SPD, eigenvalues, principal minors and trace;
+  - signed augmented features and exact coefficient Gram;
+  - amplitude determinant and direct angular chain-rule verification;
+  - pi/6 witness and unit-trace normalization;
+  - affine data-basis independence at actual-domain points;
+  - finite actual-input-pair distance Jacobian witness;
+  - pure Fourier-basis conversion including constant offset;
+  - original fixed-metric rank ceiling;
+  - all 10 single products/squares under symbolic positive diagonal weights;
+  - counterexample to extending that ceiling to arbitrary scalar lifts;
+  - exceptional points and distinct positive regular points with the same Gram;
+  - exact product-state Z-parity identity;
+  - finite-shot parity/product-estimator distinction.
+
+Generate the exact machine-readable certificate:
+python3 journal_extension/quantum_recovery_revision_20261019/verification_math/verify_one_product.py --output journal_extension/quantum_recovery_revision_20261019/verification_math/results.json
+
+The proof fragment is explanatory TeX, not included in the manuscript.
+The script does not independently recompile the source quantum circuit;
+it verifies the exact supplied local-feature formulas and their stated
+product-pre-tail/diagonal-tail measurement implication.

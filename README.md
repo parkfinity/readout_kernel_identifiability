@@ -9,6 +9,9 @@ was sanitized as documented in provenance/PUBLIC_METADATA_CHANGES.json.
 A separate numerical follow-up adds the missing Kyriienko (n,k)=(5,3) setting. The
 Kyriienko verifier includes a Python integer-serialization compatibility fix;
 its exact change and the pre-fix source hashes are recorded in provenance.
+The integrated recovery extension adds the exact single product result,
+a matched comparison of zero/one/two/six products, and an evidence index
+for the existing 54 census settings. It does not replace the earlier studies.
 
 ## Quick start
 
@@ -57,10 +60,45 @@ untrusted network input.
 | `python reproduce.py product` | Product-feature covariance and paired simulation controls | Uses archived direct estimates for comparison |
 | `python reproduce.py ad-summary` | Category-level AD reaggregation and bootstrap intervals | Not raw-score replay, image inference or training |
 | `python reproduce.py kyriienko-weight3` | Fresh (5,3) scan, five seeds, dense and pinned-source checks, saved-array comparison | Numerical rank 13, not an exact certificate |
+| `python reproduce.py minimal-product-check` | Exact single product algebra, covariance tests, and 54-setting evidence index | Not a fresh simulation or full census generation |
+| `python reproduce.py minimal-product` | The same checks plus fresh replay of all 480 matched simulation records | Ideal model; no QPU, prediction or shot-optimality claim |
 
 The smoke workflow contains 97 unit tests plus endpoint and frozen-plan checks.
 Integrity checking detects changed files; it is not scientific verification.
 See `VALIDATION.txt` for which workflows were actually retested after packaging.
+
+## Added minimal product recovery study
+
+The original four local Z means are retained. With a fixed positive definite
+metric, adding f0*f2 gives generic differential rank four; no added coordinate
+can give more than rank three. This is a restricted minimum of one appended
+scalar, not global injectivity or rank four at every point.
+
+The matched study compares 0/1/2/6 products at the same 15 original evaluation
+points, 16 input pairs, four shot budgets, two estimators and one ZZZZ basis.
+All 480 records and paired samples are included. A minimum representation
+does not imply maximum finite-shot sensitivity. No raw image data or QPU
+account is needed for this study.
+
+Use a separate lightweight environment to match the extension's reference
+dependencies; keep the historical environment above for historical workflows:
+
+```bash
+python3.11 -m venv .venv_recovery
+source .venv_recovery/bin/activate
+python -m pip install -r requirements-minimal-product.txt
+python reproduce.py integrity
+python reproduce.py minimal-product-check
+python reproduce.py minimal-product
+python reproduce.py integrity
+```
+
+The final integrity check must still pass: all new outputs go under `runs/`.
+The reference extension used Python 3.9.6, NumPy 1.26.4 and SymPy 1.14.0.
+The index uses the unchanged baseline evidence in this same repository.
+The additional files are under `experiments/minimal_product/`; no second
+repository checkout or separately downloaded supplementary ZIP is required.
+Use the root commands, not the preserved standalone `experiment/replay.py`.
 
 ## Public directory layout
 
@@ -71,6 +109,7 @@ experiments/
   product_control/    Classical product-feature control
   shot_reference/     Original paired direct-estimator samples
   kyriienko_weight3/  Five-seed (5,3) numerical follow-up and full sampled arrays
+  minimal_product/   Exact single product proof checks, matched 480-record study, census index
 core_reproduction/    Dimension certificates, scaling and resource audits
 reference_results/    Reported numerical evidence
 tools/                Supporting analysis
@@ -114,6 +153,8 @@ workflow uses the public layout directly.
 - Finite-shot sensitivity does not establish classification accuracy, detection
   probability, universal metric-selection superiority or hardware savings.
 - The product-estimator control assumes a factorized ideal Z distribution.
+- The additional single product result is generic and local. Its numerical
+  sensitivity comparisons do not assert optimal shots or predictive benefits.
 - AD is a diagnostic/negative learning control, not a test of rank recovery.
 
 Raw industrial images, embeddings, original QPU jobs, credentials and the large
@@ -139,7 +180,7 @@ Do not upload `runs/`, virtual environments, or credentials. After uploading,
 download a fresh ZIP and repeat integrity, smoke, core-audit, and
 `python reproduce.py kyriienko-weight3`. Enable public
 visibility and test the exact manuscript URL while logged out before submission.
-The repository was still private when this release was prepared.
+This packaging operation does not push to GitHub or change repository visibility.
 
 Cite the manuscript and the repository commit used for reproduction. A Zenodo
 DOI can be added after a public GitHub release has been archived; no DOI has

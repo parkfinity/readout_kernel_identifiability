@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "phase": "post-run audit; no design modification",
+  "tests_run": 8,
+  "unit_test_output": "test_angle_jacobian (test_experiment.Tests) ... ok\ntest_conditional_expectation_two_shots (test_experiment.Tests) ... ok\ntest_dense_source_and_tail (test_experiment.Tests) ... ok\ntest_distance_variance_exhaustive_one_shot_halves (test_experiment.Tests) ... ok\ntest_exhaustive_feature_covariance_two_shots (test_experiment.Tests) ... ok\ntest_fixed_metrics_and_target (test_experiment.Tests) ... ok\ntest_frozen_original_inputs (test_experiment.Tests) ... ok\ntest_same_counts_and_shot_accounting (test_experiment.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.242s\n\nOK\n",
+  "records": 480,
+  "scientific_checks": {
+    "max_covariance_asymmetry": 0.0,
+    "minimum_covariance_eigenvalue": 3.912391861903123e-12,
+    "max_variance_recomputed_error": 0.0,
+    "max_sample_mean_recomputed_error": 0.0,
+    "max_sample_variance_recomputed_error": 0.0,
+    "max_whitening_recomputed_error": 0.0
+  },
+  "result_manifest_sha256": "f83fe0190484dbb05f67a47bf24edb24c580dc6fe78c80a9a472add9b5c66707",
+  "frozen_manifest_sha256": "b2844c1f27977f6576e8099397c8a7da9de9c72e454fa040b59e45ce415ca5b6"
+}

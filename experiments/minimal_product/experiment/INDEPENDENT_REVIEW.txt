@@ -1,0 +1,24 @@
+Post-run read-only review, 2026-10-19
+===================================
+Reviewer: separate verify_one_product agent, which did not implement this
+experiment. This is a code/math consistency review, not independent data,
+cross-platform validation, external peer review or a new statistical test.
+
+Reported review findings:
+- No substantive issue found. All eight unit tests rerun successfully.
+- One-product J reconstructed independently from the four Gram coordinates
+  and monomial pair design at all 15 original-angle points: maximum absolute
+  discrepancy 4.16e-17.
+- Saved W=0.1*J/sqrt(2*nu) recomputed: maximum discrepancy zero.
+- All 480 records have the expected 16-pair dimensions and 32B shots for one
+  state / 64B for two states across the disjoint pairs.
+- Panel/comparison summaries regenerate identically; all RESULT_MANIFEST
+  hashes match.
+- Direct/product covariance formulas agree with factorized-distribution
+  moments and the independent-half split-distance variance identity.
+- Minimum eigenvalue of Cov_direct-Cov_product over the tested designs,
+  panels and budgets: -5.56e-17, consistent with floating-point roundoff.
+- Protocol discloses informed follow-up, no feature-count-only causal
+  attribution, and no calibrated detection, QPU or hardware-shot-saving claim.
+
+The reviewer made no changes to the experiment or manuscript.

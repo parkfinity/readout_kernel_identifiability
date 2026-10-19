@@ -87,7 +87,8 @@ def weight_three(out):
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('mode',choices=['integrity','smoke','core-audit','core-full',
-        'recovery','shots-pilot','shots-full','product','ad-summary','scaling-verify','kyriienko-weight3'])
+        'recovery','shots-pilot','shots-full','product','ad-summary','scaling-verify','kyriienko-weight3',
+        'minimal-product-check','minimal-product'])
     ap.add_argument('--workers',type=int,default=2)
     args = ap.parse_args()
     if args.workers < 1: ap.error('--workers must be positive')
@@ -98,6 +99,14 @@ def main():
     if args.mode == 'integrity': return
     out = ROOT/'runs'/(args.mode+'_'+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S_%fZ'))
     out.mkdir(parents=True)
+    if args.mode in ('minimal-product-check','minimal-product'):
+        from tools.recovery_extension import run
+        try:
+            run(ROOT,out,replay=(args.mode == 'minimal-product'))
+        except Exception as error:
+            save(out/'verdict.json',dict(passed=False,mode=args.mode,error=str(error)))
+            raise
+        return
     if args.mode == 'kyriienko-weight3':
         weight_three(out)
         return

@@ -1,0 +1,170 @@
+{
+  "python_version": "3.9.6",
+  "sympy_version": "1.14.0",
+  "arithmetic": "Exact symbolic, rational and algebraic; no floating-point rank tests",
+  "data_basis": [
+    "u=cos(x0)",
+    "v=cos(x1)",
+    "u^2"
+  ],
+  "parameter_order": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "gram_coordinate_order": [
+    "G_uu",
+    "G_uv",
+    "G_vv",
+    "G_u2u2"
+  ],
+  "metric": [
+    [
+      "2",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "2",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  ],
+  "metric_eigenvalues_with_multiplicity": {
+    "3": 1,
+    "1": 4
+  },
+  "metric_leading_principal_minors": [
+    "2",
+    "3",
+    "3",
+    "3",
+    "3"
+  ],
+  "metric_trace": "7",
+  "metric_condition_number": "3",
+  "gram": [
+    [
+      "2*a**2 + c**2",
+      "a*b",
+      "0"
+    ],
+    [
+      "a*b",
+      "2*b**2 + d**2",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "a**2*c**2"
+    ]
+  ],
+  "amplitude_jacobian": [
+    [
+      "4*a",
+      "0",
+      "2*c",
+      "0"
+    ],
+    [
+      "b",
+      "a",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "4*b",
+      "0",
+      "2*d"
+    ],
+    [
+      "2*a*c**2",
+      "0",
+      "2*a**2*c",
+      "0"
+    ]
+  ],
+  "amplitude_determinant": "-8*a**2*c*d*(2*a**2 - c**2)",
+  "angular_determinant": "-8*(2*sin(theta0)**2 - sin(theta2)**2)*sin(theta0)**2*sin(theta2)*sin(theta3)*cos(theta0)*cos(theta1)*cos(theta2)*cos(theta3)",
+  "angular_witness_theta": [
+    "pi/6",
+    "pi/6",
+    "pi/6",
+    "pi/6"
+  ],
+  "angular_witness_determinant": "-9/128",
+  "unit_trace_metric_scale": "1/7",
+  "unit_trace_angular_witness_determinant": "-9/307328",
+  "pure_fourier_basis": [
+    "cos(x0)",
+    "cos(x1)",
+    "cos(2*x0)"
+  ],
+  "pure_fourier_angular_witness_determinant": "-9/512",
+  "pure_fourier_unit_trace_witness_determinant": "-9/1229312",
+  "actual_domain": "(-1,1)^2; more generally the (u,v) image contains an open set",
+  "affine_basis_witness_determinant": "-3*sqrt(3)/8 - sqrt(6)/16 + sqrt(2)/8 + 5/8",
+  "distance_design_witness_determinant": "(-2 + sqrt(3))**2*(-1392*sqrt(3) - 112*sqrt(6) + 194*sqrt(2) + 2411)/(256*(-7 + 4*sqrt(3)))",
+  "finite_distance_angular_witness_determinant": "-9*(-2 + sqrt(3))**2*(-1392*sqrt(3) - 112*sqrt(6) + 194*sqrt(2) + 2411)/(32768*(-7 + 4*sqrt(3)))",
+  "generic_rank": 4,
+  "global_injectivity": false,
+  "positive_regular_nonunique_amplitudes": [
+    [
+      "1/2",
+      "1/4",
+      "1/2",
+      "1/2"
+    ],
+    [
+      "sqrt(2)/4",
+      "sqrt(2)/4",
+      "sqrt(2)/2",
+      "sqrt(2)/4"
+    ]
+  ],
+  "common_gram_coordinates_at_nonunique_points": [
+    "3/4",
+    "1/8",
+    "3/8",
+    "1/16"
+  ],
+  "amplitude_determinants_at_nonunique_points": [
+    "-1/8",
+    "1/16"
+  ],
+  "restricted_minimum_appended_scalar_count": 1,
+  "minimality_scope": "Keep the original four local means and use a fixed input- and parameter-independent SPD quadratic metric; zero appended outputs have rank <=3 and the specified single product attains generic rank4.",
+  "one_pairwise_product_with_fixed_positive_diagonal_metric_rank_ceiling": 3,
+  "diagonal_ceiling_scope_warning": "This is not a ceiling for an arbitrary single scalar feature. g=f0*f2+f1*f3 has generic rank4 under positive diagonal weighting.",
+  "sum_product_diagonal_counterexample_determinant": "-16*a*b*c*d*w4**2*(a**2*w0 - c**2*w2)*(b**2*w1 - d**2*w3)",
+  "measurement_information": "f0*f2 equals <Z0 Z2> for the product-pre-tail/diagonal-tail family; it is determined by exact local means. Direct parity and products of finite-shot sample means are distinct estimators.",
+  "scope": "Generic differential identifiability of four retained angles only; not every parameter point, global uniqueness, tail-angle recovery, shot efficiency, statistical conditioning, or a universal feature-design optimum."
+}

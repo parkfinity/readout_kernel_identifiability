@@ -1,0 +1,627 @@
+{
+  "passed": true,
+  "mode": "mapping_consistency_not_certificate_replay",
+  "settings": 54,
+  "pilot_settings": 24,
+  "extension_settings": 30,
+  "pilot_nonzero_interval_minors": 22,
+  "pilot_rank_zero": 2,
+  "extension_modular_records": 60,
+  "extension_nonempty_modular_minors": 54,
+  "extension_rank_zero": 3,
+  "rational_records": 7,
+  "nonempty_rational_minors": 6,
+  "active_entries": 327,
+  "inactive_entries": 87,
+  "manifest_matched_files": 114,
+  "modular_replay": {
+    "passed": true,
+    "settings": 30,
+    "modular_records": 60,
+    "numpy_version": "1.26.4",
+    "engine_sha256": "d457d17fa016c497ff161673cb9baf68b5c114ab243491b4dd7e40497a50e9fc",
+    "scope": "Fresh modular coefficients/Jacobians and replay of stored minor choices/activity residues using the released implementation; no upper-proof replay or independent implementation.",
+    "results": [
+      {
+        "setting": "hubregtsen_encoding_circuit_n2_l1_local_xyz",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 0,
+            "det_mod_p": 1,
+            "int64_contraction_bound": 144115102176522752,
+            "float64_integer_binning_bound": 10871632728
+          },
+          {
+            "prime": 134217649,
+            "rank": 0,
+            "det_mod_p": 1,
+            "int64_contraction_bound": 144115016277215232,
+            "float64_integer_binning_bound": 10871629488
+          }
+        ]
+      },
+      {
+        "setting": "hubregtsen_encoding_circuit_n2_l1_local_z",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 2,
+            "det_mod_p": 11220521,
+            "int64_contraction_bound": 144115102176522752,
+            "float64_integer_binning_bound": 10871632728
+          },
+          {
+            "prime": 134217649,
+            "rank": 2,
+            "det_mod_p": 74662185,
+            "int64_contraction_bound": 144115016277215232,
+            "float64_integer_binning_bound": 10871629488
+          }
+        ]
+      },
+      {
+        "setting": "hubregtsen_encoding_circuit_n2_l1_pauli_weight_le_2",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 0,
+            "det_mod_p": 1,
+            "int64_contraction_bound": 270215816580980160,
+            "float64_integer_binning_bound": 10871632728
+          },
+          {
+            "prime": 134217649,
+            "rank": 0,
+            "det_mod_p": 1,
+            "int64_contraction_bound": 270215655519778560,
+            "float64_integer_binning_bound": 10871629488
+          }
+        ]
+      },
+      {
+        "setting": "hubregtsen_encoding_circuit_n2_l2_local_xyz",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 2,
+            "det_mod_p": 41272088,
+            "int64_contraction_bound": 144115102176522752,
+            "float64_integer_binning_bound": 83886055000
+          },
+          {
+            "prime": 134217649,
+            "rank": 2,
+            "det_mod_p": 13396793,
+            "int64_contraction_bound": 144115016277215232,
+            "float64_integer_binning_bound": 83886030000
+          }
+        ]
+      },
+      {
+        "setting": "hubregtsen_encoding_circuit_n2_l2_local_z",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 4,
+            "det_mod_p": 37740695,
+            "int64_contraction_bound": 144115102176522752,
+            "float64_integer_binning_bound": 83886055000
+          },
+          {
+            "prime": 134217649,
+            "rank": 4,
+            "det_mod_p": 127986440,
+            "int64_contraction_bound": 144115016277215232,
+            "float64_integer_binning_bound": 83886030000
+          }
+        ]
+      },
+      {
+        "setting": "hubregtsen_encoding_circuit_n2_l2_pauli_weight_le_2",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 2,
+            "det_mod_p": 81176918,
+            "int64_contraction_bound": 270215816580980160,
+            "float64_integer_binning_bound": 83886055000
+          },
+          {
+            "prime": 134217649,
+            "rank": 2,
+            "det_mod_p": 118200583,
+            "int64_contraction_bound": 270215655519778560,
+            "float64_integer_binning_bound": 83886030000
+          }
+        ]
+      },
+      {
+        "setting": "hubregtsen_encoding_circuit_n4_l1_local_xyz",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 8,
+            "det_mod_p": 27015683,
+            "int64_contraction_bound": 576460408706091008,
+            "float64_integer_binning_bound": 83886055000
+          },
+          {
+            "prime": 134217649,
+            "rank": 8,
+            "det_mod_p": 132099696,
+            "int64_contraction_bound": 576460065108860928,
+            "float64_integer_binning_bound": 83886030000
+          }
+        ]
+      },
+      {
+        "setting": "hubregtsen_encoding_circuit_n4_l1_local_z",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 2,
+            "det_mod_p": 63947410,
+            "int64_contraction_bound": 576460408706091008,
+            "float64_integer_binning_bound": 83886055000
+          },
+          {
+            "prime": 134217649,
+            "rank": 2,
+            "det_mod_p": 32158414,
+            "int64_contraction_bound": 576460065108860928,
+            "float64_integer_binning_bound": 83886030000
+          }
+        ]
+      },
+      {
+        "setting": "hubregtsen_encoding_circuit_n4_l1_pauli_weight_le_2",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 8,
+            "det_mod_p": 83494268,
+            "int64_contraction_bound": 1188949592956312704,
+            "float64_integer_binning_bound": 83886055000
+          },
+          {
+            "prime": 134217649,
+            "rank": 8,
+            "det_mod_p": 58079887,
+            "int64_contraction_bound": 1188948884287025664,
+            "float64_integer_binning_bound": 83886030000
+          }
+        ]
+      },
+      {
+        "setting": "hubregtsen_encoding_circuit_n4_l2_local_xyz",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 16,
+            "det_mod_p": 87684314,
+            "int64_contraction_bound": 576460408706091008,
+            "float64_integer_binning_bound": 880602250968
+          },
+          {
+            "prime": 134217649,
+            "rank": 16,
+            "det_mod_p": 68081115,
+            "int64_contraction_bound": 576460065108860928,
+            "float64_integer_binning_bound": 880601988528
+          }
+        ]
+      },
+      {
+        "setting": "hubregtsen_encoding_circuit_n4_l2_local_z",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 12,
+            "det_mod_p": 12936447,
+            "int64_contraction_bound": 576460408706091008,
+            "float64_integer_binning_bound": 880602250968
+          },
+          {
+            "prime": 134217649,
+            "rank": 12,
+            "det_mod_p": 35303594,
+            "int64_contraction_bound": 576460065108860928,
+            "float64_integer_binning_bound": 880601988528
+          }
+        ]
+      },
+      {
+        "setting": "hubregtsen_encoding_circuit_n4_l2_pauli_weight_le_2",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 16,
+            "det_mod_p": 120283763,
+            "int64_contraction_bound": 1188949592956312704,
+            "float64_integer_binning_bound": 880602250968
+          },
+          {
+            "prime": 134217649,
+            "rank": 16,
+            "det_mod_p": 100762001,
+            "int64_contraction_bound": 1188948884287025664,
+            "float64_integer_binning_bound": 880601988528
+          }
+        ]
+      },
+      {
+        "setting": "kyriienko_nonlinear_encoding_circuit_n2_l1_local_xyz",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 4,
+            "det_mod_p": 49868791,
+            "int64_contraction_bound": 144115102176522752,
+            "float64_integer_binning_bound": 10871632728
+          },
+          {
+            "prime": 134217649,
+            "rank": 4,
+            "det_mod_p": 12623737,
+            "int64_contraction_bound": 144115016277215232,
+            "float64_integer_binning_bound": 10871629488
+          }
+        ]
+      },
+      {
+        "setting": "kyriienko_nonlinear_encoding_circuit_n2_l1_local_z",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 4,
+            "det_mod_p": 119937213,
+            "int64_contraction_bound": 144115102176522752,
+            "float64_integer_binning_bound": 10871632728
+          },
+          {
+            "prime": 134217649,
+            "rank": 4,
+            "det_mod_p": 91122250,
+            "int64_contraction_bound": 144115016277215232,
+            "float64_integer_binning_bound": 10871629488
+          }
+        ]
+      },
+      {
+        "setting": "kyriienko_nonlinear_encoding_circuit_n2_l1_pauli_weight_le_2",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 0,
+            "det_mod_p": 1,
+            "int64_contraction_bound": 270215816580980160,
+            "float64_integer_binning_bound": 10871632728
+          },
+          {
+            "prime": 134217649,
+            "rank": 0,
+            "det_mod_p": 1,
+            "int64_contraction_bound": 270215655519778560,
+            "float64_integer_binning_bound": 10871629488
+          }
+        ]
+      },
+      {
+        "setting": "kyriienko_nonlinear_encoding_circuit_n4_l1_local_xyz",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 10,
+            "det_mod_p": 91447677,
+            "int64_contraction_bound": 576460408706091008,
+            "float64_integer_binning_bound": 1965081170008
+          },
+          {
+            "prime": 134217649,
+            "rank": 10,
+            "det_mod_p": 98924750,
+            "int64_contraction_bound": 576460065108860928,
+            "float64_integer_binning_bound": 1965080584368
+          }
+        ]
+      },
+      {
+        "setting": "kyriienko_nonlinear_encoding_circuit_n4_l1_local_z",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 8,
+            "det_mod_p": 30349791,
+            "int64_contraction_bound": 576460408706091008,
+            "float64_integer_binning_bound": 1965081170008
+          },
+          {
+            "prime": 134217649,
+            "rank": 8,
+            "det_mod_p": 97607809,
+            "int64_contraction_bound": 576460065108860928,
+            "float64_integer_binning_bound": 1965080584368
+          }
+        ]
+      },
+      {
+        "setting": "kyriienko_nonlinear_encoding_circuit_n4_l1_pauli_weight_le_2",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 10,
+            "det_mod_p": 97117376,
+            "int64_contraction_bound": 1188949592956312704,
+            "float64_integer_binning_bound": 1965081170008
+          },
+          {
+            "prime": 134217649,
+            "rank": 10,
+            "det_mod_p": 107978496,
+            "int64_contraction_bound": 1188948884287025664,
+            "float64_integer_binning_bound": 1965080584368
+          }
+        ]
+      },
+      {
+        "setting": "yz_cx_encoding_circuit_n2_l1_local_xyz",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 3,
+            "det_mod_p": 73264339,
+            "int64_contraction_bound": 144115102176522752,
+            "float64_integer_binning_bound": 83886055000
+          },
+          {
+            "prime": 134217649,
+            "rank": 3,
+            "det_mod_p": 88142525,
+            "int64_contraction_bound": 144115016277215232,
+            "float64_integer_binning_bound": 83886030000
+          }
+        ]
+      },
+      {
+        "setting": "yz_cx_encoding_circuit_n2_l1_local_z",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 2,
+            "det_mod_p": 93557963,
+            "int64_contraction_bound": 144115102176522752,
+            "float64_integer_binning_bound": 83886055000
+          },
+          {
+            "prime": 134217649,
+            "rank": 2,
+            "det_mod_p": 21870295,
+            "int64_contraction_bound": 144115016277215232,
+            "float64_integer_binning_bound": 83886030000
+          }
+        ]
+      },
+      {
+        "setting": "yz_cx_encoding_circuit_n2_l1_pauli_weight_le_2",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 2,
+            "det_mod_p": 62134249,
+            "int64_contraction_bound": 270215816580980160,
+            "float64_integer_binning_bound": 83886055000
+          },
+          {
+            "prime": 134217649,
+            "rank": 2,
+            "det_mod_p": 101305671,
+            "int64_contraction_bound": 270215655519778560,
+            "float64_integer_binning_bound": 83886030000
+          }
+        ]
+      },
+      {
+        "setting": "yz_cx_encoding_circuit_n2_l2_local_xyz",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 7,
+            "det_mod_p": 6023792,
+            "int64_contraction_bound": 144115102176522752,
+            "float64_integer_binning_bound": 880602250968
+          },
+          {
+            "prime": 134217649,
+            "rank": 7,
+            "det_mod_p": 25437031,
+            "int64_contraction_bound": 144115016277215232,
+            "float64_integer_binning_bound": 880601988528
+          }
+        ]
+      },
+      {
+        "setting": "yz_cx_encoding_circuit_n2_l2_local_z",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 6,
+            "det_mod_p": 120167950,
+            "int64_contraction_bound": 144115102176522752,
+            "float64_integer_binning_bound": 880602250968
+          },
+          {
+            "prime": 134217649,
+            "rank": 6,
+            "det_mod_p": 107968380,
+            "int64_contraction_bound": 144115016277215232,
+            "float64_integer_binning_bound": 880601988528
+          }
+        ]
+      },
+      {
+        "setting": "yz_cx_encoding_circuit_n2_l2_pauli_weight_le_2",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 6,
+            "det_mod_p": 57998250,
+            "int64_contraction_bound": 270215816580980160,
+            "float64_integer_binning_bound": 880602250968
+          },
+          {
+            "prime": 134217649,
+            "rank": 6,
+            "det_mod_p": 123650474,
+            "int64_contraction_bound": 270215655519778560,
+            "float64_integer_binning_bound": 880601988528
+          }
+        ]
+      },
+      {
+        "setting": "yz_cx_encoding_circuit_n4_l1_local_xyz",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 6,
+            "det_mod_p": 64411691,
+            "int64_contraction_bound": 576460408706091008,
+            "float64_integer_binning_bound": 880602250968
+          },
+          {
+            "prime": 134217649,
+            "rank": 6,
+            "det_mod_p": 86647178,
+            "int64_contraction_bound": 576460065108860928,
+            "float64_integer_binning_bound": 880601988528
+          }
+        ]
+      },
+      {
+        "setting": "yz_cx_encoding_circuit_n4_l1_local_z",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 4,
+            "det_mod_p": 93773722,
+            "int64_contraction_bound": 576460408706091008,
+            "float64_integer_binning_bound": 880602250968
+          },
+          {
+            "prime": 134217649,
+            "rank": 4,
+            "det_mod_p": 88632687,
+            "int64_contraction_bound": 576460065108860928,
+            "float64_integer_binning_bound": 880601988528
+          }
+        ]
+      },
+      {
+        "setting": "yz_cx_encoding_circuit_n4_l1_pauli_weight_le_2",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 6,
+            "det_mod_p": 47963541,
+            "int64_contraction_bound": 1188949592956312704,
+            "float64_integer_binning_bound": 880602250968
+          },
+          {
+            "prime": 134217649,
+            "rank": 6,
+            "det_mod_p": 40062514,
+            "int64_contraction_bound": 1188948884287025664,
+            "float64_integer_binning_bound": 880601988528
+          }
+        ]
+      },
+      {
+        "setting": "yz_cx_encoding_circuit_n4_l2_local_xyz",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 14,
+            "det_mod_p": 3271708,
+            "int64_contraction_bound": 576460408706091008,
+            "float64_integer_binning_bound": 11209995519448
+          },
+          {
+            "prime": 134217649,
+            "rank": 14,
+            "det_mod_p": 12362658,
+            "int64_contraction_bound": 576460065108860928,
+            "float64_integer_binning_bound": 11209992178608
+          }
+        ]
+      },
+      {
+        "setting": "yz_cx_encoding_circuit_n4_l2_local_z",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 12,
+            "det_mod_p": 84652713,
+            "int64_contraction_bound": 576460408706091008,
+            "float64_integer_binning_bound": 11209995519448
+          },
+          {
+            "prime": 134217649,
+            "rank": 12,
+            "det_mod_p": 46207363,
+            "int64_contraction_bound": 576460065108860928,
+            "float64_integer_binning_bound": 11209992178608
+          }
+        ]
+      },
+      {
+        "setting": "yz_cx_encoding_circuit_n4_l2_pauli_weight_le_2",
+        "passed": true,
+        "modular_certificates": [
+          {
+            "prime": 134217689,
+            "rank": 14,
+            "det_mod_p": 113599842,
+            "int64_contraction_bound": 1188949592956312704,
+            "float64_integer_binning_bound": 11209995519448
+          },
+          {
+            "prime": 134217649,
+            "rank": 14,
+            "det_mod_p": 84499076,
+            "int64_contraction_bound": 1188948884287025664,
+            "float64_integer_binning_bound": 11209992178608
+          }
+        ]
+      }
+    ]
+  }
+}

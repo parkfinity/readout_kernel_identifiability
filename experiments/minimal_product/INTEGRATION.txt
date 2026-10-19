@@ -1,0 +1,21 @@
+This directory preserves the previously verified supplement, byte for byte.
+Its README and replay.py describe standalone use in the original environment.
+For this integrated repository, use the repository root commands instead:
+
+  python reproduce.py minimal-product-check
+  python reproduce.py minimal-product
+
+The root launcher locates the baseline evidence in this same repository.
+All tests and calculations run in new runs/ directories. Supplied frozen
+inputs and reference files are never overwritten. The integrated comparator
+excludes only environment and elapsed-time metadata from scientific comparison;
+integer ranks/structure remain exact and floating values use rtol=1e-9,
+atol=1e-11. Source-validation error magnitudes (including finite differences)
+are checked against the original frozen engine's 1e-8 threshold rather than
+required to have the same roundoff error on different numerical libraries.
+Existing source programs and frozen hashes are unchanged.
+
+Use requirements-minimal-product.txt in a separate environment to match the
+new study's NumPy/SymPy versions. The older requirements.txt remains unchanged
+for historical Qiskit and census workflows. The original direct replay.py is
+intentionally retained as provenance, not the supported integrated entry point.

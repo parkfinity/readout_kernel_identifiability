@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "mode": "mapping_consistency_not_certificate_replay",
+  "settings": 54,
+  "pilot_settings": 24,
+  "extension_settings": 30,
+  "pilot_nonzero_interval_minors": 22,
+  "pilot_rank_zero": 2,
+  "extension_modular_records": 60,
+  "extension_nonempty_modular_minors": 54,
+  "extension_rank_zero": 3,
+  "rational_records": 7,
+  "nonempty_rational_minors": 6,
+  "active_entries": 327,
+  "inactive_entries": 87,
+  "manifest_matched_files": 114
+}

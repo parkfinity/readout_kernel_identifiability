@@ -1,0 +1,73 @@
+\subsection{Three additional source families and structural closure}
+\label{sec:extension}
+We next fixed 30 disjoint combinations of circuits and readouts from YZ-CX,
+Hubregtsen, and Kyriienko source modules
+\cite{squlearn,hubregtsen2022,kyriienko2021}: ten source circuit
+configurations under the same three readouts. The first two modules
+use two/four qubits and one/two layers; Kyriienko retains the inventory's
+default one-encoding-layer, one-variational-layer construction.
+Exact half-integer coefficients from controlled-rotation decompositions
+are admitted, without restoring approximate constants to multiples of
+$\pi$. Scope, witnesses and resource definitions were fixed before the
+run; the nonlinear analysis in Sec.~\ref{sec:nonlinearhub} followed
+the observed rank gap.
+
+The bounded Fourier pass completed in 13 settings. Across 252 source
+symbol entries it certified 25 exact inactive identities and 195
+feasible activity witnesses, leaving 32 entries undecided because
+symbolic expansion exceeded its fixed budget. We retain those outcomes
+rather than interpreting a budget failure as activity. A separate
+structural closure then recovered all 32 remaining inactive entries
+using a stronger baseline: global signed Pauli normalization,
+common-output isometry deletion, and observable-commutant deletion
+that also permits data-dependent rotation angles. All 57 previously
+inactive entries in this subset are recovered, and no new inactive
+coordinate lies beyond this baseline.
+
+Combining its exact angle-coefficient upper bound with feasible
+Jacobian minors closes the rank in 26 settings. The explicit nonlinear
+factorization in Sec.~\ref{sec:nonlinearhub} closes one further setting.
+At that stage three Kyriienko bounds remained open; activity of every
+retained coordinate does not settle these combination ranks. The
+post-hoc coefficient-Gram minors and output-gauge proof in
+Sec.~\ref{sec:gramkyri} close those three intervals, completing all
+30 ranks in this extension and all 54 across the two studies.
+For the 26 matching structural bounds, this baseline already attains
+the minimum smooth parameter-factor dimension of the tested kernel
+family. This does not certify optimal gate, measurement, or shot counts.
+
+\begin{table}[htbp]
+\caption{Generic kernel differential rank in the 30-setting extension.
+$K$ is the original symbol count. Exact values combine feasible
+lower bounds with structural or symbolic upper bounds. Stars mark
+the three new coefficient-Gram/gauge closures. The dagger
+uses the nonlinear factorization of Eq.~\eqref{eq:hubbeta}.
+Rank zero means independence from trainable parameters, not necessarily
+a constant function of the inputs.}
+\label{tab:extension}
+\begin{tabular}{lrrrrrr}
+\toprule
+Family & $n$ & $L$ & $K$ & $r_{XYZ}$ & $r_Z$ & $r_{\le2}$\\
+YZ-CX &2&1&4&3&2&2\\
+ &2&2&8&7&6&6\\
+ &4&1&8&6&4&6\\
+ &4&2&16&14&12&14\\
+Hubregtsen &2&1&2&0&2&0\\
+ &2&2&4&2&4&2\\
+ &4&1&8&8&$2^\dagger$&8\\
+ &4&2&16&16&12&16\\
+Kyriienko &2&1&6&$4^*$&4&0\\
+ &4&1&12&$10^*$&8&$10^*$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+In all 30 settings, zeroing the additionally Fourier-certified
+inactive coordinates after this strengthened baseline produces zero
+incremental reduction in Pauli rotation tasks, trainable angle tasks,
+or the corresponding two-shift feature-evaluation schedule. These are
+ideal operation counts, not executed hardware shots or a fixed-error
+shot guarantee. In particular, the nonlinear two-coordinate example
+does not constitute another successful internal gate-deletion family.
+It instead shows why individual activity and constant-linear null-space
+analysis can both miss a nonlinear kernel factorization.

@@ -1,0 +1,137 @@
+[
+  {
+    "panel": 0,
+    "point": 0,
+    "probability_factorization": 8.881784197001252e-16,
+    "ideal_features": 1.5543122344752192e-15,
+    "probability_normalization": 1.5543122344752192e-15,
+    "angle_derivative_finite_difference": 5.459643848126916e-11,
+    "tail_derivative_finite_difference": 4.996003610813204e-11
+  },
+  {
+    "panel": 0,
+    "point": 1,
+    "probability_factorization": 9.43689570931383e-16,
+    "ideal_features": 2.1094237467877974e-15,
+    "probability_normalization": 2.1094237467877974e-15,
+    "angle_derivative_finite_difference": 9.132550271573336e-11,
+    "tail_derivative_finite_difference": 6.661338147750939e-11
+  },
+  {
+    "panel": 0,
+    "point": 2,
+    "probability_factorization": 8.881784197001252e-16,
+    "ideal_features": 1.3322676295501878e-15,
+    "probability_normalization": 1.3322676295501878e-15,
+    "angle_derivative_finite_difference": 7.701239645996338e-11,
+    "tail_derivative_finite_difference": 4.4408920985006255e-11
+  },
+  {
+    "panel": 0,
+    "point": 3,
+    "probability_factorization": 6.661338147750939e-16,
+    "ideal_features": 1.2212453270876722e-15,
+    "probability_normalization": 1.3322676295501878e-15,
+    "angle_derivative_finite_difference": 6.045711847812996e-11,
+    "tail_derivative_finite_difference": 4.996003610813204e-11
+  },
+  {
+    "panel": 0,
+    "point": 4,
+    "probability_factorization": 4.996003610813204e-16,
+    "ideal_features": 1.7763568394002505e-15,
+    "probability_normalization": 1.6653345369377348e-15,
+    "angle_derivative_finite_difference": 4.6243231466291945e-11,
+    "tail_derivative_finite_difference": 3.469446951953614e-11
+  },
+  {
+    "panel": 1,
+    "point": 0,
+    "probability_factorization": 4.440892098500626e-16,
+    "ideal_features": 1.1102230246251565e-15,
+    "probability_normalization": 1.3322676295501878e-15,
+    "angle_derivative_finite_difference": 7.371658838906114e-11,
+    "tail_derivative_finite_difference": 4.4408920985006255e-11
+  },
+  {
+    "panel": 1,
+    "point": 1,
+    "probability_factorization": 8.881784197001252e-16,
+    "ideal_features": 1.5543122344752192e-15,
+    "probability_normalization": 1.5543122344752192e-15,
+    "angle_derivative_finite_difference": 5.846234607531642e-11,
+    "tail_derivative_finite_difference": 5.551115123125782e-11
+  },
+  {
+    "panel": 1,
+    "point": 2,
+    "probability_factorization": 4.163336342344337e-16,
+    "ideal_features": 1.1102230246251565e-15,
+    "probability_normalization": 1.887379141862766e-15,
+    "angle_derivative_finite_difference": 4.996003610813204e-11,
+    "tail_derivative_finite_difference": 3.885780586188048e-11
+  },
+  {
+    "panel": 1,
+    "point": 3,
+    "probability_factorization": 7.771561172376096e-16,
+    "ideal_features": 1.5543122344752192e-15,
+    "probability_normalization": 1.5543122344752192e-15,
+    "angle_derivative_finite_difference": 7.216449660063518e-11,
+    "tail_derivative_finite_difference": 5.551115123125782e-11
+  },
+  {
+    "panel": 1,
+    "point": 4,
+    "probability_factorization": 4.718447854656915e-16,
+    "ideal_features": 1.3322676295501878e-15,
+    "probability_normalization": 1.7763568394002505e-15,
+    "angle_derivative_finite_difference": 5.551115123125782e-11,
+    "tail_derivative_finite_difference": 4.996003610813204e-11
+  },
+  {
+    "panel": 2,
+    "point": 0,
+    "probability_factorization": 8.881784197001252e-16,
+    "ideal_features": 1.7763568394002505e-15,
+    "probability_normalization": 1.7763568394002505e-15,
+    "angle_derivative_finite_difference": 6.661338147750939e-11,
+    "tail_derivative_finite_difference": 4.4408920985006255e-11
+  },
+  {
+    "panel": 2,
+    "point": 1,
+    "probability_factorization": 6.661338147750939e-16,
+    "ideal_features": 1.2212453270876722e-15,
+    "probability_normalization": 1.1102230246251565e-15,
+    "angle_derivative_finite_difference": 6.661338147750939e-11,
+    "tail_derivative_finite_difference": 6.661338147750939e-11
+  },
+  {
+    "panel": 2,
+    "point": 2,
+    "probability_factorization": 6.106226635438361e-16,
+    "ideal_features": 1.7763568394002505e-15,
+    "probability_normalization": 1.6653345369377348e-15,
+    "angle_derivative_finite_difference": 4.1633363423443364e-11,
+    "tail_derivative_finite_difference": 4.1633363423443364e-11
+  },
+  {
+    "panel": 2,
+    "point": 3,
+    "probability_factorization": 8.326672684688674e-16,
+    "ideal_features": 1.5543122344752192e-15,
+    "probability_normalization": 1.7763568394002505e-15,
+    "angle_derivative_finite_difference": 7.066813800804539e-11,
+    "tail_derivative_finite_difference": 4.996003610813204e-11
+  },
+  {
+    "panel": 2,
+    "point": 4,
+    "probability_factorization": 6.661338147750939e-16,
+    "ideal_features": 1.3322676295501878e-15,
+    "probability_normalization": 1.6653345369377348e-15,
+    "angle_derivative_finite_difference": 5.474287689821722e-11,
+    "tail_derivative_finite_difference": 4.996003610813204e-11
+  }
+]

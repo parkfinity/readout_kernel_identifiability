@@ -1,0 +1,140 @@
+% Independent proof fragment; not automatically included in the manuscript.
+% Basis and coordinate order matter for the reported determinant.
+\begin{proposition}[One-product recovery and restricted minimality]
+Retain the four local means
+\[
+ f=(-au,-bv,-cu,-dv)^T,\qquad
+ (a,b,c,d)=(\sin\theta_0,\sin\theta_1,
+           \sin\theta_2,\sin\theta_3),
+\]
+where $u=\cos x_0$, $v=\cos x_1$ and the $(u,v)$ image of the
+input domain contains a nonempty open set. The four angles are
+independently variable, and the kernel bandwidth $\gamma>0$ is fixed.
+Among designs that retain these four means, append scalar features,
+and use one input- and parameter-independent positive-definite
+quadratic metric, the minimum number of appended scalar features
+needed for generic kernel differential rank four is one. It is
+attained by $\widetilde f=(f^T,f_0f_2)^T$ and the unit-trace metric
+\[
+ M=\frac{1}{7}M_0,\qquad
+ M_0=\begin{pmatrix}
+ 2&1&0&0&0\\1&2&0&0&0\\0&0&1&0&0\\
+ 0&0&0&1&0\\0&0&0&0&1
+ \end{pmatrix}.
+\]
+In contrast, appending only one pairwise product $f_if_j$ cannot
+achieve rank four with a fixed positive diagonal metric.
+\end{proposition}
+\begin{proof}
+With no appended feature, every fixed metric gives a symmetric
+$2\times2$ coefficient Gram on the data basis $(u,v)$, so the kernel
+differential rank is at most three. The same bound persists for any
+fixed affine expansion of these four means, since its effective
+quadratic metric leaves the data basis unchanged.
+
+For the stated construction, $f_0f_2=ac\,u^2$. The functions
+$1,u,v,u^2$ are linearly independent: a polynomial relation on an
+open set in $(u,v)$ forces every coefficient to vanish. In
+particular, on the actual domain $x\in(-1,1)^2$ the image contains
+$(\cos1,1)^2$. Thus the coefficient-Gram theorem applies to
+$h=(u,v,u^2)^T$, even though $u^2$ has a constant Fourier component.
+The eigenvalues of $M_0$ are $3,1,1,1,1$, so $M\succ0$ and
+$\operatorname{tr}M=1$. The unnormalized coefficient Gram is
+\[
+ G_0=\begin{pmatrix}
+ 2a^2+c^2&ab&0\\ab&2b^2+d^2&0\\0&0&a^2c^2
+ \end{pmatrix},\qquad G=G_0/7.
+\]
+For the four entries in the order
+$(G_{0,uu},G_{0,uv},G_{0,vv},G_{0,u^2u^2})$, the Jacobian in
+$(a,b,c,d)$ is
+\[
+ \begin{pmatrix}
+ 4a&0&2c&0\\b&a&0&0\\0&4b&0&2d\\
+ 2ac^2&0&2a^2c&0
+ \end{pmatrix},
+\]
+whose determinant is
+\[
+ -8a^2cd(2a^2-c^2).
+\]
+The angle Jacobian multiplies this by
+$\prod_{q=0}^3\cos\theta_q$. At
+$\theta_0=\theta_1=\theta_2=\theta_3=\pi/6$ its determinant is
+$-9/128$. For the unit-trace metric the corresponding determinant is
+\[
+ -\frac{9}{128\,7^4}=-\frac{9}{307328}\ne0.
+\]
+Analyticity therefore gives generic rank four. No more than four
+independent retained angles occur, giving the matching upper bound.
+Zero appended coordinates cannot suffice and this one coordinate
+does, establishing the stated restricted minimum.
+
+For the diagonal-metric restriction, any one pairwise product has
+the separable form $p(\theta)g(x)$ with
+$g\in\{u^2,uv,v^2\}$. The resulting squared distances depend on
+at most the three scalar coefficients
+\[
+ w_a a^2+w_c c^2,\qquad w_b b^2+w_d d^2,\qquad
+ w_p p(\theta)^2.
+\]
+Their differential rank is at most three, for every fixed choice of
+positive diagonal weights.
+\end{proof}
+
+\paragraph{Scope of the minimum.}
+The minimum counts appended scalar outputs while retaining the
+original four means and using a fixed quadratic metric. It is not a
+minimum over arbitrary replacement representations, input-dependent
+or parameter-dependent metrics, trainable postprocessing, or other
+kernel families. The diagonal-metric obstruction is specifically
+for one \emph{pairwise-product coordinate}, not an arbitrary scalar
+coordinate. Indeed,
+\[
+ g=f_0f_2+f_1f_3=ac\,u^2+bd\,v^2
+\]
+is one scalar whose coefficient Gram under positive diagonal weights
+already exposes
+\[
+ w_a a^2+w_c c^2,\quad w_g a^2c^2,\quad
+ w_b b^2+w_d d^2,\quad w_g b^2d^2.
+\]
+The two $(a,c)$ and $(b,d)$ Jacobian blocks are generically
+nonsingular. Hence this different one-scalar lift attains rank four
+even with fixed positive diagonal weighting.
+
+\paragraph{Generic rank does not imply global uniqueness.}
+The displayed determinant vanishes at exceptional points; for
+example all distance first derivatives vanish when all four sines
+are zero. Even away from the exceptional set, global uniqueness
+fails. The distinct positive amplitude tuples
+\[
+ (a,b,c,d)=(1/2,1/4,1/2,1/2),\qquad
+ (a,b,c,d)=(1/(2\sqrt2),\sqrt2/4,1/\sqrt2,\sqrt2/4)
+\]
+are both regular and give the same ordered four Gram entries
+$(3/4,1/8,3/8,1/16)$ for $G_0$. Sine periodicity and sign ambiguities
+provide further nonuniqueness. The result identifies the four
+retained angles locally at generic points, not the diagonal-tail
+symbols, and makes no conditioning, shot-efficiency, or predictive
+performance claim.
+
+\paragraph{No additional ideal measurement information.}
+In the stated circuit family the state before the diagonal tail is
+a product, and the tail commutes with every Z string. Consequently
+$\langle Z_0Z_2\rangle=\langle Z_0\rangle\langle Z_2\rangle=f_0f_2$.
+The appended ideal feature is therefore a nonlinear classical
+function of the four local means. It can also be estimated as a
+parity using the same Z-basis outcomes. Direct parity averages and
+products of local sample means are different finite-shot estimators;
+the ideal identity alone does not equate their precision. General
+correlated states need not satisfy this identity.
+
+\paragraph{Basis convention for exact certificates.}
+The determinants above use $h=(u,v,u^2)$. If a strictly nonconstant
+Fourier-mode basis $(\cos x_0,\cos x_1,\cos2x_0)$ is used instead,
+the last coefficient is $ac/2$ and the last feature has offset $ac/2$.
+The corresponding Gram-entry Jacobian minor is smaller by a factor
+of four: its angular value is $-9/512$ before trace normalization,
+or $-9/1229312$ after normalization. This basis change does not
+alter the kernel or its rank.

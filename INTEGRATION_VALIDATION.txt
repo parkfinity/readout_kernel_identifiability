@@ -1,0 +1,28 @@
+Integrated recovery package, 2026-10-19
+
+Changes from the public baseline:
+- Existing scientific programs, inputs, arrays, licenses and certificate payloads unchanged.
+- Added the previously verified recovery supplement under experiments/minimal_product/.
+- Added root entry points, comparator rejection tests, documentation and manifest coverage.
+- New calculations run in isolated runs/ folders; distributed references remain immutable.
+
+Prepared-directory checks passed:
+- integrity and 1009 original source-map checks
+- original smoke: 97 unit tests plus endpoint and frozen-plan checks
+- original core-audit: certificate replay and census aggregation
+- minimal-product: 17 exact tests, 8 experiment tests, 6 census-index tests,
+  8 integration tests, the 54-setting index, and fresh calculation of 480 records
+- Same-environment new arrays and paired samples match the reference exactly.
+- New workflow also passed with baseline NumPy 1.24.4 / SymPy 1.13.3.
+  Source-validation roundoff magnitudes are tested against the original 1e-8
+  acceptance bound, not required to be identical between numerical libraries.
+
+Environments used: Python 3.9.6; baseline NumPy 1.24.4, SymPy 1.13.3,
+Qiskit 1.2.4; extension reference NumPy 1.26.4, SymPy 1.14.0.
+Recommended separate dependency sets are documented in README.md.
+
+Final ZIP extraction checks are recorded in the accompanying release validation
+report. The older VALIDATION.txt retains the baseline's historical validation.
+This integration did not rerun full census generation, hardware jobs, image
+inference, historical training or every optional workflow. No remote repository
+was changed. Publishing this ZIP's contents is a separate user action.

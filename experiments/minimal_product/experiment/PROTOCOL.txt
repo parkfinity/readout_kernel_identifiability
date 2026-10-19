@@ -1,0 +1,95 @@
+Minimal-product matched finite-shot diagnostic, version 1 (2026-10-19).
+
+Status and scope
+This is an informed, local follow-up to the already published frozen finite-shot
+and product-estimator controls, and to the new one-product rank argument. It is
+not independent preregistration, a new source census, or new held-out data.
+This protocol and all evaluation inputs/metrics are frozen before this run.
+No metric, point, direction, estimator or budget is selected from its outcomes.
+The task is conditioning/finite-shot sensitivity, not detection or prediction.
+
+Source and points
+Use the frozen four-qubit, one-layer Hubregtsen local-Z compiler program from
+readout_kernel_identifiability/experiments/finite_shot/frozen_inputs and all
+three original panels, five original held-out points per panel, and sixteen
+disjoint input pairs per point in the historical finite_shot/plan.json. Verify
+the original plan/program hashes against finite_shot/FROZEN_MANIFEST.json.
+Keep all eight original theta coordinates and original x/phi in frozen_inputs;
+only the first four angles vary. The four tail angles are fixed at each point.
+Original test-generation seeds: 2026100521 + 100*panel; there is no new design
+seed or new parameter/input sampling. Original x is uniform in (-.95,.95)^2.
+The data encoding is raw: u=cos(x0), v=cos(x1), with local means
+(-sin(theta0)*u,-sin(theta1)*v,-sin(theta2)*u,-sin(theta3)*v).
+Use Q=I4 in the original angle Euclidean norm, not amplitude coordinates or a
+separately selected lifted-feature tangent basis. Save the four coordinate
+directions explicitly. Dense propagation of the actual frozen gate program must
+verify local means, all ZZ means, factorized Z probabilities, and derivatives.
+
+Four fixed metrics and ordered features
+All metrics are fixed once, not tuned on original design points or new results.
+All have trace one. Start with [f0,f1,f2,f3].
+  0 products: M=(32 I4 + w w^T)/158, w=(1,2,3,4), the manuscript rank-three
+    dense control, without added features.
+  1 product: append f0*f2; M=( [[2,1],[1,2]] direct-sum I3 )/7.
+  2 products: append [f0*f2,f1*f3]; M=diag(linspace(1,4,6))/sum(linspace).
+  6 products: append [f0*f1,f0*f2,f0*f3,f1*f2,f1*f3,f2*f3];
+    M=diag(linspace(1,4,10))/sum(linspace).
+The latter two use the public fixed-diagonal convention, not optimized weights.
+These intentionally compare complete fixed designs (representation and metric),
+not a controlled feature-count-only effect. Condition numbers are also reported.
+
+Measurement, estimators and budgets
+Use one common ZZZZ basis, B in [256,1024,4096,16384] actual shots per input and
+parameter state. Divide into two independent halves N=B/2. No extra shots are
+charged for extra features; all observables/estimators reuse identical counts.
+For each half and nonempty feature set I, direct parity estimates E[prod Zq]
+by its sample parity mean; product-of-marginals uses prod(sample mean Zq).
+Under the verified factorized ideal model both estimate the same feature.
+Retain both even for 0 products, where they are exactly equal.
+For independent input pairs, estimate d^2=delta_half1^T M delta_half2 without
+clipping or kernel exponentiation. With delta the ideal difference and S the
+sum of the two input half-covariances, exact variance is
+nu=2 delta^T M S M delta+tr(M S M S).
+Direct feature covariance: (mu_(I symmetric-difference J)-mu_I*mu_J)/N.
+Product feature second moment: prod_shared(mu_q^2+(1-mu_q^2)/N)
+times prod_symmetric-difference(mu_q); subtract mu_I*mu_J.
+Full cross-feature covariance is required; no independent-feature approximation.
+
+Primary outcomes
+For all 15 points, 4 designs, 2 estimators, 4 budgets retain the distance Jacobian
+J (16x4), full four singular values, rank under relative tolerances
+[1e-8,1e-9,1e-10] and absolute floor 1e-11, exact pair variances and covariances.
+At epsilon=.1 define W=epsilon*diag((2nu)^(-1/2))*J*I4. The factor two models
+independent state estimates in the local limit. Report all four singular values,
+smallest retained value, and whole-space weakest value (zero if rank<4).
+These use an exact model at the unperturbed point, not a finite-displacement
+power estimate or a calibrated detection threshold. No required-shot or hardware
+savings estimate is made. Total actual shots are 32B for one parameter state and
+64B for two independent states over all 16 pairs (one replicate).
+Summaries are separate panel medians of five points, at every budget; paired
+one/two and one/six weakest-sensitivity ratios include every point and report
+ranges and counts above/below one. Never compare rank-three retained sensitivity
+to rank-four weakest sensitivity as if they were the same target quantity.
+Keep 0-product whole-space weakness zero. Check non-increasing product-estimator
+variance and all ordered whitened singular values for the same fixed design.
+
+Optional prespecified Monte Carlo sanity (included in this version)
+At each unperturbed original point and each budget, use 256 independent
+replicates of two shot halves. RNG is NumPy default_rng(SeedSequence([
+2026101901,panel,point,B])). Draw full 16-outcome counts input by input and half
+by half. All four metrics and both estimators reuse the counts. Save all paired
+distance samples, empirical means/variances and empirical/exact variance ratios.
+These checks calibrate the split-distance variance only, not detection power.
+Quantiles are descriptive across correlated cells, not confidence intervals or
+independent discoveries. No sample fitted direction or contrast is used.
+
+Validation and provenance
+Freeze protocol, selected points, full source JSON, fixed matrices/directions,
+and script/test hashes in FROZEN_MANIFEST.json before executing outcomes.
+Do not overwrite the freeze or result directory. Retain environment versions,
+complete point-level results, source checks and all summaries. Unit tests cover
+exact two-shot enumeration, covariance and distance variance, metric scales,
+analytic derivatives, source probabilities, matched budgets and freeze hashes.
+Numerical rank checks do not replace the separate exact rank proof. This run is
+local ideal-model validation only; no server/QPU, supervised task, generalization,
+uniform superiority, or hardware-shot reduction claim follows.
